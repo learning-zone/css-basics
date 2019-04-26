@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid and flexbox</title>
+  </head>
+  <style>
+    /**
+      1.The basic difference between CSS Grid Layout and CSS Flexbox Layout is that 
+        flexbox was designed for layout in one dimension - either a row or a column. 
+        Grid was designed for two-dimensional layout - rows, and columns at the same time. 
+    
+      2.CSS Grid’s approach is layout-first while Flexbox’ approach is content-first. 
+
+      3.Flexbox layout is most appropriate to small-scale layouts, while the Grid layout 
+        is intended for larger scale layouts which aren’t linear in their design.
+
+    **/
+    
+    /* Grid layout */
+    .row {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 5px;
+    }
+    .col-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Flexbox layout */
+    .wrapper {
+        border: 2px solid #f76707;
+        border-radius: 5px;
+        background-color: #fff4e6;
+    }
+    .wrapper > div {
+        border: 2px solid #ffa94d;
+        border-radius: 5px;
+        background-color: #ffd8a8;
+        padding: 1em;
+        color: #d9480f;
+    }
+    .wrapper {
+        display: flex;
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    .wrapper > div {
+        flex: 1 1 150px;
+    }
+  </style>
+  <body>
+    <p><h1>Grid Layout Example</h1></p>
+    <div class="row">
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+    </div>
+
+    <p><h1>flexbox Layout Example</h1></p>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+  </body>
+</html>
