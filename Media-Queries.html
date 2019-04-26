@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Design:- Media Queries</title>
+</head>
+<style>
+    img {
+        color: #333;
+        border: 1px solid #333;
+        width: 500px; /* dafault screen width */
+        height: 500px;
+        background-color: orangered;
+        padding: 5px 5px;
+        margin: 5px 3px 2px;
+    }
+    @media only screen and (min-width: 400px) and (max-width: 700px) { /* Image Width changes based on screen size */
+        img {
+            color: #333;
+            border: 1px solid #333;
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            padding: 5px 5px;
+            margin: 5px 3px 2px;
+        }
+    }
+    @media only screen and (orientation: landscape) { /* Landscape Mode*/
+        body {
+            background-color: lightblue;
+        }
+    }
+    @media screen, print { /* Print Screen */
+        body {
+            color: aquamarine;
+        }
+    }
+</style>
+<body>
+    <div id="parent">
+        <img src="lib/7.jpg" alt="Horse" />
+    </div>
+</body>
+</html>
