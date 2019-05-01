@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS pseudo-class selectors</title>
+  </head>
+  <style>
+    /**
+        A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). 
+    **/
+
+    /* unvisited link */
+    a:link {
+      color: red;
+    }
+
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+
+    /* selected link */
+    a:active {
+      color: blue;
+    }
+
+    #mouser-over {
+      background-color: green;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    #mouser-over:hover {
+      background-color: blue;
+    }
+
+    /** :first-child and :last-child selector  **/
+    li {
+      padding: 10px;
+      border-radius: 5px;
+    }
+    li:first-child{ background: greenyellow;}
+    li:last-child{ background: lightsalmon;}
+
+   /** The :lang pseudo-class allows to define special rules for different languages. **/
+    q:lang(no) {
+      quotes: "~" "~";
+    }
+
+    /** :checked selector  **/
+    input:checked {
+      height: 30px;
+      width: 30px;
+    }
+
+    /** :disabled selector **/
+    input[type=text]:disabled {
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    /** :nth-child selector **/
+    .module:nth-child(2n) {
+      margin-right: 0;
+      color: blueviolet;
+      font-weight: bold;
+    }
+
+    /** :empty selector **/
+    div:empty {
+      display: none;
+    }
+
+    /** ::first-letter selector **/
+    .paragraph::first-letter {
+      initial-letter: 2;
+      font-weight: bold;
+      color: red;
+      font-size: 200%;
+    }
+
+    /** ::before **/
+    .paragraph::before {
+      content: "Read this:- ";
+    }
+
+    /** **/
+    .paragraph::first-line { 
+      color: darkviolet;
+    }
+  </style>
+  <body>
+    <!-- :first-child & :last-child selector -->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul><br/><br/>
+
+    <div>
+      <a href="#">Anchor Tag Pseudo-Class Example</a>
+    </div><br/><br/>
+
+    <!-- :hover selector -->
+    <div id="mouser-over">DIV Pseudo-Class Example</div><br/><br/>
+
+    <!-- :lang selector -->
+    <p>The <strong>:lang</strong> pseudo class example: <q lang="no">A quote in a paragraph</q></p>
+
+    <!-- :checked selector -->
+    <div><input type="radio" checked="checked" value="male" name="gender"> Radio button using :checked example</div><br/>
+    <div><input type="checkbox" checked="checked" value="Bike"> Check Box using :checked example</div><br/>
+    <div><input type="text" disabled="disabled" value="Disabled Text"> Input Box using :disabled example</div><br/><br/>
+    
+    <!-- :nth-child selector -->
+    <section class="grid"> The :nth-child selector example 
+      <article class="module">One</article>
+      <article class="module">Two</article>
+      <article class="module">Three</article>
+      <article class="module">Four</article>
+      <article class="module">Five</article>
+    </section>
+
+    <!-- ::first-letter selector -->
+    <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it to make a type 
+      specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+      remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets 
+      containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+      including versions of Lorem Ipsum.</p>
+  </body>
+</html>
