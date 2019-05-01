@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS z-index Property</title>
+    <style>
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 5px 2px;
+        margin: 5px 1px 2px;
+        z-index: -1;
+      }
+
+      p {
+        color: red;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The z-index Property</h1>
+    <img src="lib/7.jpg" alt="Hourse Image" />
+    <p>Because the image has a z-index of -1, it will be placed behind the heading.</p>
+  </body>
+</html>
