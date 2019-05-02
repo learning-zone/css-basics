@@ -40,6 +40,15 @@
     .grid > .module {
         background-color: yellow;
     }
+
+    /** Contextual Selector 
+
+          Contextual selectors define styles that are only applied when certain tags are nested within other tags.
+    **/
+    .example_contextual p {
+        background: tan;
+    }
+
   </style>
   <body>
      
@@ -80,7 +89,9 @@
       <article class="module">Three</article>
       <article class="module">Four</article>
       <article class="module">Five</article>
-    </section>
+    </section> <br/><br/>
 
+    <!-- Contextual Selector -->
+    <div class="example_contextual"><p>Contextual Selector Example </p></div>
   </body>
 </html>
