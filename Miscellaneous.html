@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miscellaneous Features in CSS</title>
+    <style>
+        /**
+            Tweening in CSS
+
+            Short for in-betweening, the process of generating intermediate frames between two images 
+            to give the appearance that the first image evolves smoothly into the second image. Tweening 
+            is a key process in all types of animation, including computer animation. Sophisticated animation 
+            software enables you to identify specific objects in an image and define how they should move and 
+            change during the tweening process.
+        **/
+
+        /**
+            Counters ( Counters in CSS are basically variables which can be used for numbering and values of CSS counters may be incremented by CSS rules. )
+
+                1) counter-reset        -- Creates or resets a counter
+                2) counter-increment    -- Increments a counter value
+                3) content              -- Inserts generated content
+                4) counter()/counters() -- function - Adds the value of a counter to an element
+        **/
+
+        body {
+          counter-reset: section;
+        }
+
+        h3::before {
+          counter-increment: section;
+          content: "Section " counter(section) ": ";
+        }
+
+        /**
+            Specificity 
+            
+            Specificity is the means by which browsers decide which CSS property values are the most relevant to an element. 
+            Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
+
+            Specificity Hierarchy
+
+                1) Inline styles
+                2) IDs
+                3) Classes, attributes and pseudo-classes
+                4) Elements and pseudo-elements 
+
+                
+        **/
+
+        /** Specificity Example **/
+        #container { /* prority goes to ID selector */
+          background-color: gold;
+          padding: 20px;
+          width: 10%;
+        } 
+        div {
+          background-color: red;
+          padding: 20px;
+          width: 10%;
+        }
+    </style>
+  </head>
+  <body>
+        <!-- CSS Counters -->
+        <h2>Using CSS Counters:</h1>
+        <h3>HTML Tutorial</h2>
+        <h3>CSS Tutorial</h2>
+        <h3>JavaScript Tutorial</h2>
+
+        <div id="container">CSS Specificity Example</div>
+  </body>
+</html>
