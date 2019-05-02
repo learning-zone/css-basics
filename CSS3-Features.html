@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Features in CSS-3</title>
+  </head>
+  <style>
+    /**
+            New Features in CSS-3
+
+                1) CSS-3 Selectors
+                2) Pseudo-classes
+                3) CSS-3 Colors
+                4) Drop Shadows
+                5) Text Shadow
+                6) Linear Gradients
+                7) Radial Gradients
+                8) Multiple Background Images
+                9) Border Image
+                10) Animations and Transitions
+                11) Calculating Values With calc()
+                12) Flexbox
+                13) Rounded Corners
+        **/
+
+    /** CSS-3 Selectors **/
+    /** 
+        [attr^=val] --  matches a DOM element with the attribute attr and a value starting with val
+        [attr$=val] --  matches a DOM element with the attribute attr and a value ending with the suffix val
+        [attr*=val] --  matches a DOM element with the attribute attr and a value containing the substring val
+    **/
+    body {
+      font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+    }
+
+    p[title^='car'] {
+      color: red;
+    }
+
+    img[src*='birth'] {
+      border: 3px solid green;
+    }
+
+    .elem {
+      width: 30px;
+      height: 30px;
+      margin: 4px;
+      background-color: #a0dfac;
+      float: left;
+    }
+
+    .elem span {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border: 2px solid #fff;
+    }
+
+    /* Selectors for matching the first letter and line: */
+    p::first-letter {
+      background-color: #666;
+      color: #fff;
+      font-size: 24px;
+      font-style: normal;
+      display: inline-block;
+      padding: 0 5px;
+      border-radius: 3px;
+      margin-right: 2px;
+      font-family: serif;
+    }
+
+    p::first-line {
+      font-size: 18px;
+      text-transform: smallcaps;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+    /* Make the first and last elements purple */
+    .elem:first-child,
+    .elem:last-child {
+      background-color: #948bd8;
+    }
+
+    /* Make every other element rounded */
+    .elem:nth-child(odd) {
+      border-radius: 50%;
+    }
+
+    /* Make the sixth element red */
+    .elem:nth-child(6) {
+      background-color: #cb6364;
+    }
+
+    /* Style the element which contains the span */
+    .elem:not(:empty) {
+      background-color: #444;
+      position: relative;
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+    }
+
+    /* Target elements by attribute */
+    .elem[data-foo='bar1'] {
+      background-color: #aaa;
+    }
+
+    .elem[data-foo='bar2'] {
+      background-color: #d7cb89;
+    }
+
+    /* The attribute value should start with bar. */
+    .elem[data-foo^='bar'] {
+      width: 16px;
+      height: 16px;
+      margin: 11px;
+    }
+
+    /* The element that follows after the one with data-foo="bar2" attribute */
+    .elem[data-foo='bar2'] + .elem {
+      background-color: #78ccd2;
+    }
+
+    /** CSS3 Colors **/
+    div.halfalpha {
+      background-color: rgb(12, 232, 159, 0.9);
+      color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    
+    /** CSS3 box-shadow **/
+    .example_boxshadow {
+      width:200px;
+      height:100px;
+      background-color:blue;
+      box-shadow: 5px 5px 5px #555555;
+      padding: 20px;
+      color:aliceblue;
+    }
+    
+    /** CSS3 Rounded Corner **/
+    .example_borderradius {
+      width:200px;
+      height:100px;
+      background-color:red;
+      padding: 20px;
+      border-radius:15px;
+    }
+
+    /** CSS3 Text-Shadow **/
+    .example_textshadow {
+      font-size:32px;
+      text-shadow:3px 3px 3px #555555;
+    }
+
+    .img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0.5;
+      padding: 5px 2px;
+      margin: 5px 1px 2px;
+      z-index: -1;
+    }
+
+     /** CSS3 Opacity **/
+    .example_opacity {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        font-size: 20px;
+        width: 250px;
+        padding: 20px;
+        color: #f30808;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+     /** CSS3 Gradient **/
+    .example_gradient {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      color:aliceblue;
+      border-radius: 15px;
+      margin-top: 10%;
+      background: -webkit-linear-gradient(to bottom,rgba(36,4,3,.8) 41%,rgba(0,0,0,0) 100%);
+      background: linear-gradient(to bottom,rgba(36,4,3,.8) 41%,rgba(0,0,0,0) 100%);
+    }
+
+     /** CSS3 Transition **/
+    .example_transition {
+      color: white;
+      background: #2db34a;
+      border-radius: 6px;
+      cursor: pointer;
+      height: 100px;
+      line-height: 95px;
+      text-align: center;
+      transition-property: background;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      width: 200px;
+    }
+
+    .example_transition:hover {
+       background: #ff7b29; 
+    }
+
+    /** CSS3 Animation **/
+    @keyframes slide {
+        0% {
+            left: 0;
+            top: 0;
+        }
+        50% {
+            left: 244px;
+            top: 100px;
+        }
+        100% {
+            left: 488px;
+            top: 0;
+        }
+    }
+    .example_animation {
+        background: #eaeaed;
+        border-radius: 6px;
+        height: 150px;
+        position: relative;
+        width: 600px;
+    }
+    .example_animation:hover .ball {
+        animation: slide 2s linear;
+    }
+    .ball {
+        background: #2db34a;
+        border-radius: 50%;
+        height: 50px;
+        position: absolute;
+        width: 50px;
+    }
+  </style>
+  <body>
+    <!-- CSS-3 Selectors -->
+    <div class="code">
+      <img src="lib/7.jpg" alt="Image" height="50" />
+      <p title="container"> I am displaying a container. And this attribute won't match me.</p>
+      <p title="carousel">This carousel will match</p>
+    </div>
+
+    <p>This is a regular paragraph of text, which has a number of awesome CSS3 styles applied.. </p>
+    <br /><br />
+
+    <div class="container">
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"><span></span></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+      <div class="elem" data-foo="bar1"></div>
+      <div class="elem" data-foo="bar2"></div>
+      <div class="elem"></div>
+      <div class="elem"></div>
+    </div>
+    <br/>
+    
+    <br/><br/>
+    <div class="halfalpha">CSS-3 color Example </div> 
+    
+    <br/><br/>
+    <div class="example_boxshadow">Box Shadow</div>
+
+    <br/><br/>
+    <div class="example_borderradius">Rounded Corners</div>
+
+    <br/><br/>
+    <div class="example_textshadow">CSS-3 Text Shadow Example</div>
+
+    <br/><br/>
+    <div class="example_opacity"><img class="img"  src="lib/7.jpg" alt="Horse Image" height="200px" />The z-index property</div>
+    
+    <br/><br/>
+    <div class="example_gradient">Gradients</div>
+    
+    <br/><br/>
+    <div class="example_transition">CSS-3 Transitions</div>
+
+    <br/><br/>
+    <div class="example_animation">
+        <figure class="ball"></figure>
+    </div>
+  </body>
+</html>
