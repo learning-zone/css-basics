@@ -1,34 +1,4 @@
-#### CSS
-
----
-
-#### What is CSS?
-* CSS stands for Cascading Style Sheet.
-* Styles define how to display HTML elements
-* Styles were added to HTML 4.0 to solve a problem
-* External Style Sheets can save a lot of work
-* External Style Sheets are stored in CSS files
-
-
----
-
-#### Where to define styles? How can you integrate/import CSS on a web page?
-* Inline, used to style only a small piece of code
-        ```
-            <p style="color:blue">
-                Hello CSS
-            </p>
-        ```
-* Internal/Embedded, style sheets are put between the <head>...</head>
-        ```
-            <style> 
-                p{color:blue}
-            </style>
-        ```
-* External
-        ```
-            <link rel="stylesheet" type="text/css" href="style.css"
-        ```
+# CSS Questions
 
 ---
 #### What is Property?
@@ -66,12 +36,6 @@ The selection of an element based on its occurrence in relation to another eleme
 * General Sibling Combinator
     * The element that is adjacent, but not immediately to another element.
         
-
----
-
-#### Why background and color are the separate properties if they should always be set together?
-Color is an inherited property while background is not. So this can make confusion further.
-
 
 ---
 
@@ -132,26 +96,6 @@ These must be chained to the Element and never alone however, or there will be s
 
 ```
 
-###### References
-    * https://css-tricks.com/bem-101/
----
-
-#### How do you organize CSS files?
-
-
----
-
-#### What are the advantages of External Style Sheets?
-* You can create classes for reusing it in many documents.
-* By using it, you can control the styles of multiple documents from one file.
-* In complex situations, you can use selectors and grouping methods to apply styles.
-
-
----
-
-#### What is RWD (Responsive web design) ?
-This technique is used to display the designed page perfectly on every screen size and device. For example: Mobile, Tablet, desktop, laptop etc. You don't need to create a different page for each device. 
-    
 
 ---
 
@@ -178,15 +122,6 @@ CSS sprites combine multiple images into one single larger image. It is a common
 * Icon Fonts
 
 * SVGs
-
-
-###### References
-
-* https://css-tricks.com/css-sprites/
-
-* https://css-tricks.com/spriting-img/
-
-* http://css-tricks.com/data-uris/
 
 
 ---
@@ -308,9 +243,6 @@ It is a pre-planned libraries, which allows easier and more standards-compliant 
 
 * ```sticky``` - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-###### References
-
-    * https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
 
 ---
 
@@ -3230,3 +3162,17 @@ The DOM (Document Object Model) is a cross-platform API that treats HTML and XML
 ---
 
 #### If you were hiring someone in this role, what would you look for?  What sort of interview questions would you ask? Do you have a favorite question?
+
+
+---
+
+###### References
+* https://css-tricks.com/bem-101/
+
+* https://css-tricks.com/css-sprites/
+
+* https://css-tricks.com/spriting-img/
+
+* http://css-tricks.com/data-uris/
+
+* https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/
