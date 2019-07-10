@@ -209,13 +209,13 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 ---
 
-#### How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
+#### Q. How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
 * The ```z-index``` property specifies the stack order of elements. An element with a higher ```z-index``` stack order is always rendered in front of an element with a lower ```z-index``` stack order on the screen. ```z-index``` only works on positioned elements ```position: absolute```, ```position: relative```, or ```position: fixed```. The default stack order of non-positioned elements is their order in the document.
     
 
 ---
 
-#### What is the purpose of the ```z-index``` and how is it used?
+#### Q. What is the purpose of the ```z-index``` and how is it used?
 
 * The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number.
 
@@ -230,7 +230,7 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 ---
 
-#### How works absolute / relative / fixed / static position? 
+#### Q. How works absolute / relative / fixed / static position? 
 
 ```absolute```, place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
 
@@ -246,15 +246,7 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 ---
 
-#### How is behave absolute element if it is inside fixed element/relative/absolute element
-
----
-
-#### What are the pros and cons of using absolute positioning?
-
----
-
-#### The difference between block / inline / inline-block element
+#### Q. The difference between block / inline / inline-block element?
     
 * Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
     That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
@@ -279,8 +271,37 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 ---
 
-#### What are counters in CSS3 ?
+#### Q. What are counters in CSS3?
 
+* CSS counters let you adjust the appearance of content based on its location in a document. 
+
+* To use a CSS counter, it must first be initialized to a value with the counter-reset property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
+
+* **CSS**
+
+```
+body {
+  counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+}
+
+h3::before {
+  counter-increment: section;                   /* Increment the value of section counter by 1 */
+  content: "Section " counter(section) ": ";    /* Display the word 'Section ', the value of 
+                                                   section counter, and a colon before the content
+                                                   of each h3 */
+}
+
+
+```
+
+* **HTML**
+
+```
+<h3>Introduction</h3>
+<h3>Body</h3>
+<h3>Conclusion</h3>
+
+```
 
 ---
 
