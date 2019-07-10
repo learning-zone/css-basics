@@ -395,6 +395,22 @@ p::first-line {
 
 #### Q. How to center align a div inside another div?
 
+```
+.container{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+```
+
 
 ---
 
@@ -527,14 +543,14 @@ tr:nth-child(even) {
 
 ```
 p {
-color: rgba(37, 84, 127, 1);
+  color: rgba(37, 84, 127, 1);
 }
 ```
 * **HEX**
 
 ```
 p {
-color: #25547f;
+  color: #25547f;
 }
 ```
 
@@ -542,19 +558,13 @@ color: #25547f;
 
 ```
 p {
-color: hsla(209, 55%, 32%, 1);
+  color: hsla(209, 55%, 32%, 1);
 }
 ```
 
 ---
 
-#### What are the reasons to use preprocessor
-
-* you write css in high level with some special syntax (declaring variable, nested syntax, mathematical operations, etc.) and that is compiled to css. Preprocessor helps you to speed up develop, maintain, ensure best practices and also confirms concatenation, compression, etc.
-
----
-
-#### What is CSS preprocessor and why to user one?
+#### Q. What is CSS preprocessor and why to user one?
 
 * A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
 
@@ -567,7 +577,7 @@ color: hsla(209, 55%, 32%, 1);
 
 ---
 
-#### What are the advantages/disadvantages of using CSS preprocessors?
+#### Q. What are the advantages/disadvantages of using CSS preprocessors?
 
 
 *Advantages:*
@@ -593,29 +603,14 @@ color: hsla(209, 55%, 32%, 1);
 
 ---
 
-#### Describe what you like and dislike about the CSS preprocessors you have used.
-
-**Likes:**
-
-* Mostly the advantages mentioned above.
-* Less is written in JavaScript, which plays well with Node.
-
-**Dislikes:**
-
-* I use Sass via `node-sass`, which is a binding for LibSass written in C++. I have to frequently recompile it when switching between node versions.
-* In Less, variable names are prefixed with `@`, which can be confused with native CSS keywords like `@media`, `@import` and `@font-face` rule.
-
-
----
-
-#### What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
+#### Q. What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Resetting - Resetting is meant to strip all default browser styling on elements. For e.g. margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
 
 * Normalizing - Normalizing preserves useful default styles rather than "unstyling" everything. It also corrects bugs for common browser dependencies.
 
 ---
 
-#### Describe Floats and how they work.
+#### Q. Describe Floats and how they work.
 
 Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements (e.g. text will flow around floated elements), unlike `position: absolute` elements, which are removed from the flow of the page.
 
@@ -643,7 +638,7 @@ Alternatively, give `overflow: auto` or `overflow: hidden` property to the paren
 
 ---
 
-#### Describe BFC(Block Formatting Context) and how it works.
+#### Q. Describe BFC(Block Formatting Context) and how it works.
 A Block Formatting Context (BFC) is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, `inline-blocks`, `table-cells`, `table-caption`s, and elements with `overflow` other than `visible` (except when that value has been propagated to the viewport) establish new block formatting contexts.
 
 A BFC is an HTML box that satisfies at least one of the following conditions:
@@ -664,7 +659,7 @@ Vertical margins between adjacent block-level boxes in a BFC collapse. Read more
 
 ---
 
-#### What are the various clearing techniques and which is appropriate for what context? How works .clearfix?
+#### Q. What are the various clearing techniques and which is appropriate for what context? How works .clearfix?
 
 
 * Empty `div` method - `<div style="clear:both;"></div>`.
@@ -676,28 +671,44 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 
 ---
 
-#### What are your favourite image replacement techniques and which do you use when?
-
-
----
-
-#### Does ```overflow: hidden``` create a new block formatting context?
+#### Q. Does ```overflow: hidden``` create a new block formatting context?
 
 * Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
 
 ---
 
-#### How would you approach fixing browser-specific styling issues?
+#### Q. How would you approach fixing browser-specific styling issues?
 
 * After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though.
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
 * Use Reset CSS or Normalize.css.
 
+```Example: 01
+.box-shadow {
+  background-color: red;
+  background-image: url(gradient-slice.png);
+  background-image: -webkit-linear-gradient(top right, #A60000, #FFFFFF); /*Chrome and Safari*/
+  background-image: -moz-linear-gradient(top right, #A60000, #FFFFFF); 	  /*Firefox*/
+  background-image: -ms-linear-gradient(top right, #A60000, #FFFFFF);     /*Internet Explorer*/
+  background-image: -o-linear-gradient(top right, #A60000, #FFFFFF);      /*Opera*/
+  background-image: linear-gradient(top right, #A60000, #FFFFFF);
+}
+
+Example: 02
+
+.box {
+	-moz-border-radius: 15px;    /* Firefox */
+	-webkit-border-radius: 15px; /* Safari and Chrome */
+	border-radius: 15px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+}
+
+```
+
 
 
 ---
 
-#### What are your favorite image replacement techniques and which do you use when?
+#### Q. What are your favorite image replacement techniques and which do you use when?
 
 * lazy loading.
 
@@ -705,11 +716,7 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 
 ---
 
-#### What techniques/processes do you use for building sites?
-
----
-
-#### How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
+#### Q. How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
 
 
 * Graceful degradation - The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
@@ -722,7 +729,7 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 
 ---
 
-#### What are the different ways to visually hide content (and make it available only for screen readers)?
+#### Q. What are the different ways to visually hide content (and make it available only for screen readers)?
 
 These techniques are related to accessibility (a11y).
 
@@ -741,20 +748,10 @@ Even if WAI-ARIA is the ideal solution, I would go with the `absolute` positioni
 * https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
 * http://a11yproject.com/
 
----
-
-#### Have you ever used a grid system, and if so, what do you prefer? Explain how a grid system works
-
-I like the `float`-based grid system because it still has the most browser support among the alternative existing systems (flex, grid). It has been used in Bootstrap for years and has been proven to work.
 
 ---
 
-#### Have you used or implemented media queries or mobile specific layouts/CSS?
-
-
----
-
-#### How could you apply css rules specific to a media?
+#### Q. How could you apply css rules specific to a media?
 
 * ```@media (max-width: 700px){...}``` means you want to apply rules to those media whose max-width is 700 px. this means every smaller device will have this rule.
 
@@ -762,7 +759,7 @@ I like the `float`-based grid system because it still has the most browser suppo
 
 ---
 
-#### What is the use of ```@media only screen```?
+#### Q. What is the use of ```@media only screen```?
 
 * hide style sheets from older user agents.
 
@@ -771,25 +768,13 @@ https://stackoverflow.com/questions/8549529/what-is-the-difference-between-scree
 
 ---
 
-#### Can you name the four types of ```@media``` properties?
-
-
-* ```all```, which applies to all media type devices
-* ```print```, which only applies to printers
-* ```screen```, which only applies to screens (desktops, tablets, mobile etc.)
-* ```speech```, which only applies to screenreaders
-
-
-
----
-
-#### Does the ```screen``` keyword apply to the device's physical screen or the browser's viewport?
+#### Q. Does the ```screen``` keyword apply to the device's physical screen or the browser's viewport?
 
 * Browser's Viewport
 
 ---
 
-#### Are you familiar with styling SVG?
+#### Q. Are you familiar with styling SVG?
 
 Yes, there are several ways to color shapes (including specifying attributes on the object) using inline CSS, an embedded CSS section, or an external CSS file. Most SVG you'll find around the web use inline CSS, but there are advantages and disadvantages associated with each type.
 
@@ -807,7 +792,7 @@ Basic coloring can be done by setting two attributes on the node: `fill` and `st
 
 ---
 
-#### Can you give an example of an @media property other than screen?
+#### Q. Can you give an example of an @media property other than screen?
 
 Yes, there are four types of @media properties (including _screen_):
 
@@ -830,21 +815,16 @@ Here is an example of `print` media type's usage:
 
 * https://developer.mozilla.org/en-US/docs/Web/CSS/@media#Syntax
 
----
-
-#### How do you optimize your webpages for print?
-
-Remove and reduce colors to grayscale and black and whites if possible. Also printing gray’s can reduce the amount of black ink needed – so that’s a bonus if you want to really be nice. Add styling if you want the URLs to print out:
 
 ---
 
-#### How would you implement a web design comp that uses non-standard fonts?
+#### Q. How would you implement a web design comp that uses non-standard fonts?
 
 Use `@font-face` and define `font-family` for different `font-weight`s.
 
 ---
 
-#### Explain how a browser determines what elements match a CSS selector.
+#### Q. Explain how a browser determines what elements match a CSS selector?
 
 This part is related to the above about [writing efficient CSS](#what-are-some-of-the-gotchas-for-writing-efficient-css). Browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector.
 
@@ -852,7 +832,7 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 ---
 
-#### What are the some pseudo classed u have used?
+#### Q. What are the some pseudo classed u have used?
 
 * pseudo class tells you specific state of an element. allow to style element dynamically. The most popular one is ```:hover```. Besides i have used :visited, ```:focus```, ```:nth-child```, ```nth-of-type```, ```:link```, etc.
 
@@ -861,7 +841,7 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 ---
 
-#### How do you optimize css selectors?
+#### Q. How do you optimize css selectors?
 
 * This is very open and depend on what you are trying to achieve. If i order selectors in terms of render speed it would be like id, class, tag, siblings, child, descendant, universal, attribute, pseudo. Speed of ID and class is very close. However your code should be readable, maintainable and DRY along with highly performant.
 
@@ -869,13 +849,13 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 ---
 
-#### How can you load css resources conditionally?
+#### Q. How can you load css resources conditionally?
 
 ```@import``` allows you to load/import stylesheet by using a path (uri) representing the location of the file. You can define one or more media by comma separation for which you want to load the stylesheet. If browser dont support the media stylesheet will not be loaded.
 
 ---
 
-#### Describe pseudo-elements and discuss what they are used for.
+#### Q. Describe pseudo-elements and discuss what they are used for.
 
 
 A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). They can be used for decoration (`:first-line`, `:first-letter`) or adding elements to the markup (combined with `content: ...`) without having to modify the markup (`:before`, `:after`).
@@ -890,7 +870,7 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 
 ---
 
-#### What are the properties related to box model
+#### Q. What are the properties related to box model?
 
 * Technically, height, width, padding and border are part of box model and margin is related to it.
 
@@ -898,7 +878,7 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 
 ---
 
-#### Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models.
+#### Q. Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models?
 * The content of the space taken by an element. Each element has an inner and outer height/width calculated based on the content, padding, border and margin.
 
     ```content-box``` default. Excludes padding, border and margin from the inner dimensions.
@@ -928,7 +908,7 @@ The box model has the following rules:
 
 ---
 
-#### What does  ```* { box-sizing: border-box; }``` do? What are its advantages?
+#### Q. What does  ```* { box-sizing: border-box; }``` do? What are its advantages?
 * Make every element in the document include the padding and border in the element's inner dimensions; 
     making it easier to reason about the layout of elements on the page.
 
@@ -944,39 +924,14 @@ The box model has the following rules:
 
 ---
 
-#### List as many values for the display property that you can remember.
+#### Q. List as many values for the display property that you can remember.
 
 * `none`, `block`, `inline`, `inline-block`, `table`, `table-row`, `table-cell`, `list-item`.
 
----
-
-#### The 'C' in CSS stands for Cascading. How is priority determined in assigning styles (a few examples)? How can you use this system to your advantage?
-
 
 ---
 
-#### Can you explain the differences between em, rem, px?
-
-
----
-
-#### What's ```#target```.
-
-
----
-
-#### What existing CSS frameworks have you used locally, or in production? How would you change/improve them?
-
-
-
----
-
-#### What are most common tested browsers and devices?
-
-
----
-
-#### Have you played around with the new CSS Flexbox or Grid specs?
+#### Q. Have you played around with the new CSS Flexbox or Grid specs?
 
 * Flexbox or Flexible boxes, is a new layout mode in CSS3 Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
 
@@ -987,7 +942,7 @@ The box model has the following rules:
 
 ---
 
-#### How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?
+#### Q. How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?
 
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
 
@@ -1003,7 +958,7 @@ Adaptive design is more like the modern definition of progressive enhancement. I
 
 ---
 
-#### What is aspect ratio?
+#### Q. What is aspect ratio?
 
     https://css-tricks.com/aspect-ratio-boxes
 
@@ -1011,7 +966,7 @@ Adaptive design is more like the modern definition of progressive enhancement. I
 
 ---
 
-#### Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?
+#### Q. Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?
 
 _Retina_ is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. The key thing to know is that using a pixel ratio means these displays are emulating a lower resolution screen in order to show elements with the same size. Nowadays we consider all mobile devices _retina_ defacto displays.
 
@@ -1047,7 +1002,7 @@ For icons, I would also opt to use SVGs and icon fonts where possible, as they r
 
 ---
 
-#### Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
+#### Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
 
 
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
@@ -1061,23 +1016,13 @@ When using `translate()`, the element still occupies its original space (sort of
 
 ---
 
-#### The translate() function can move the position of an element on the z-axis.
+#### Q. The translate() function can move the position of an element on the z-axis.
 
 * False
 
 ---
 
-#### Do you subscribe to any particular CSS structure? (SMACSS, OOCSS)
-
-
----
-
-#### What is browser Compatibility?
-
-
----
-
-#### Tell what each of these tags do, if there are alternatives, which are preferable, why?
+#### Q. Tell what each of these tags do, if there are alternatives, which are preferable, why?
 ```css
 <em>
 <b>
@@ -1092,7 +1037,7 @@ When using `translate()`, the element still occupies its original space (sort of
 
 ---
 
-#### What is At-Rule
+#### Q. What is At-Rule?
 * An at-rule is an instruction given in a CSS document using the ```@``` character. An at-rule could have a declaration block or a simple string of text. The example below has two different at-rules:
 ```css
 @import url(secondary.css);
@@ -1108,7 +1053,7 @@ The at-rule is not just the ```@media``` or ```@import``` part at the beginning;
 
 ---
 
-#### What is Combinator selector
+#### Q. What is Combinator selector?
 
 * A combinator is the character in a selector that connects two selectors together. There are four types of combinators. These four combinators help create descendant selectors (with a space character), child selectors (with the ```>``` character), adjacent sibling selectors (with the ```+``` character), and general sibling selectors (with the ```~``` character). To dispel any confusion, here are those four combinators in use:
 ```css
@@ -1134,7 +1079,7 @@ div~p {
 
 ---
 
-#### What is RuleSet?
+#### Q. What is RuleSet?
 * A rule set is a single section of CSS including the selector, the curly braces, and the different lines with properties and values. The code in the example below comprises one rule set:
 
 ```css
@@ -1155,7 +1100,7 @@ body {
 
 ---
 
-#### Provide CSS so that three lines are displayed red, then green, then blue (2):
+#### Q. Provide CSS so that three lines are displayed red, then green, then blue (2):
 ```css
 <div class="rgb">
     <span>Red</span>
@@ -1165,7 +1110,7 @@ body {
 
 ---
 
-#### Provided following HTML and CSS, what will be displayed (1)?
+#### Q. Provided following HTML and CSS, what will be displayed (1)?
 ```css
 <div class="red">Hi, I'm Blue</div>
 
@@ -1176,27 +1121,8 @@ div { font-weight: bold; }
 
 ---
 
-#### What is Declaration
-* The set of property names and values like: background: red;
 
-
----
-
-#### What is Declaration Block
-
-* A declaration block is the section of CSS where the property/value pairs appear. In the example below, everything found between the curly braces (not including the comments) is a declaration block:
-```css
-body {
-  font-family: Arial, sans-serif; /*  starts with this line */
-  color: #555;
-  font-size: 14px;
-  line-height: 20px; /*  ends here, before the closing curly brace */
-}
-```
-
----
-
-#### What is Universal Selector
+#### Q. What is Universal Selector?
 
 * The universal selector matches any element within the context in which it’s placed in a selector. 
     In the example below, the ```*``` character is the universal selector:
@@ -1215,35 +1141,15 @@ body {
 
 ---
 
-#### How can the gap under the image be removed?
+#### Q. How can the gap under the image be removed?
 * As images being inline elements are treated same as texts, so there is a gap left, which can be   removed by:
 ```css
 img { display: block ; }
 ```
 
-
 ---
 
-#### How comments can be added in CSS?
-* The comments in CSS can be added with /*  and */.
-
-
----
-
-#### Define Attribute Selector ?
-* It is defined by a set of elements, value and its parts.
-
-
----
-
-#### Define property?
-* A style, that helps in influencing CSS. E.g. FONT. They have corresponding values or properties within them, 
-    like FONT has different style like bold, italic etc.    
-
-
----
-
-#### What is graceful degradation?
+#### Q. What is graceful degradation?
 * In case the component fails, it will continue to work properly in the presence of a graceful degradation.
      The latest browser application is used when a webpage is designed. As it is not available to everyone,
       there is a basic functionality, which enables its use to a wider audience. 
@@ -1252,7 +1158,7 @@ img { display: block ; }
 
 ---
 
-#### What is progressive enhancement?
+#### Q. What is progressive enhancement?
 * It’s an alternative to graceful degradation, which concentrates on the matter of the web. 
     The functionality is same, but it provides an extra edge to users having the latest bandwidth. 
     It has been into prominent use recently with mobile internet connections expanding their base.
@@ -1260,7 +1166,7 @@ img { display: block ; }
 
 ---
 
-#### What is progressive rendering?
+#### Q. What is progressive rendering?
 
 * Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
 
@@ -1283,12 +1189,7 @@ http://stackoverflow.com/questions/33651166/what-is-progressive-rendering
 
 ---
 
-#### What is feature detection (vs browser detection)?
-
-
----
-
-#### What is an ```iframe``` and how it works?
+#### Q. What is an ```iframe``` and how it works?
 
 * An ```iframe``` is an HTML document which can be embedded inside another HTML page.
 
@@ -1300,7 +1201,7 @@ http://stackoverflow.com/questions/33651166/what-is-progressive-rendering
 
 ---
 
-#### What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy
+#### Q. What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
 
 Note that these two 2 approaches are not exclusive.
 
@@ -1340,7 +1241,7 @@ A mobile-first strategy has 2 main advantages:
 
 ----
 
-### How is responsive design different from adaptive design?
+### Q. How is responsive design different from adaptive design?
 
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
 
@@ -1357,12 +1258,7 @@ Adaptive design is more like the modern definition of progressive enhancement. I
 
 ---
 
-#### What is accessibility/usability? What experience do you have with web accessibility? 
-
-
----
-
-#### What does Accessibility (a11y) mean?
+#### Q. What does Accessibility (a11y) mean?
 
 Accessibility (a11y) is a measure of a computer system's accessibility is to all people, including those with disabilities or impairments. It concerns both software and hardware and how they are configured in order to enable a disabled or impaired person to use that computer system successfully.
 
@@ -1373,7 +1269,7 @@ Accessibility is also known as assistive technology.
 
 ---
 
-#### What is accessibility & ARIA role means in a web application?
+#### Q. What is accessibility & ARIA role means in a web application?
 
 Accessibility means letting the user navigate and interact with a website by any means. Let it be a keyboard, a mouse or people with disabilities or impairments.
 
@@ -1384,15 +1280,9 @@ Accessibility means letting the user navigate and interact with a website by any
 * ARIA provides a extra information to screen readers via HTML attributes.
 * ARIA doesn't affect how an element is rendered in a browser.
 
-
 ---
 
-#### What is SEO
-
-
----
-
-#### What is UI/UX
+#### Q. What is UI/UX?
 * UI—or User Interface—is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
     But UX—or User Experience—is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
     So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
@@ -1400,8 +1290,7 @@ Accessibility means letting the user navigate and interact with a website by any
 
 ---
 
-#### What is semantic 
-
+#### Q. What is semantic?
 Semantic HTML, or "semantically-correct HTML", is HTML where the tags used to structure content are selected and applied appropriately to the meaning of the content.
 
 For example, <b></b> (for bold), and <i></i> (for italic) should never be used, because they’re to do with formatting, not with the meaning or structure of the content. Instead, use the replacements <strong></strong> and <em></em> (meaning emphasis), which by default will turn text bold and italic (but don’t have to do so in all browsers), while adding meaning to the structure of the content
@@ -1409,7 +1298,7 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
 
 ---
 
-#### Why you would like to use semantic tag. Why Semantic HTML is Important?
+#### Q. Why you would like to use semantic tag. Why Semantic HTML is Important?
 
 * Search Engine Optimization, accessibility, repurposing, light code. 
 
@@ -1426,32 +1315,28 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
 
 ---
 
-#### How Can I Get Indexed Better by Search Engines?
-
----
-
-#### What does “semantically correct” mean?
+#### Q. What does “semantically correct” mean?
 
 https://stackoverflow.com/questions/1294493/what-does-semantically-correct-mean/1294512#1294512
 
 ---
 
-#### What is typography  
+#### Q. What is typography? 
 
 
 ---
 
-#### What are web standards
+#### Q. What are web standards?
 
 
 ---
 
-#### What is valid HTML i CSS? (Who determines standards and criteria)
+#### Q. What is valid HTML i CSS? (Who determines standards and criteria)
 
 
 ---
 
-#### Which of listed CSS properties are inherited?
+#### Q. Which of listed CSS properties are inherited?
 * position
 * font-size
 * color
@@ -1460,54 +1345,53 @@ https://stackoverflow.com/questions/1294493/what-does-semantically-correct-mean/
 
 ---
 
-#### Enlist image types used in web, their properties and usage
+#### Q. Enlist image types used in web, their properties and usage
 
 ---
 
-#### Which property is used to change the face of a font?
+#### Q. Which property is used to change the face of a font?
 * The font-family property is used to change the face of a font.
 
 
 ---
 
-#### Which property is used to make a font italic or oblique?
+#### Q. Which property is used to make a font italic or oblique?
 * The font-style property is used to make a font italic or oblique.
 
 
 ---
 
-#### Which property is used to create a small-caps effect?
+#### Q. Which property is used to create a small-caps effect?
 * The font-variant property is used to create a small-caps effect.
 
 
 ---
 
-#### Which property is used to increase or decrease how bold or light a font appears?
+#### Q. Which property is used to increase or decrease how bold or light a font appears?
 * The font-weight property is used to increase or decrease how bold or light a font appears.
 
 
 ---
 
-#### Which property is used to add or subtract space between the letters that make up a word?
-
+#### Q. Which property is used to add or subtract space between the letters that make up a word?
 * The letter-spacing property is used to add or subtract space between the letters that make up a word.
 
 
 ---
 
-#### Which property is used to add or subtract space between the words of a sentence?
+#### Q. Which property is used to add or subtract space between the words of a sentence?
 * The word-spacing property is used to add or subtract space between the words of a sentence.
 
 
 ---
 
-#### Which property is used to indent the text of a paragraph?
+#### Q. Which property is used to indent the text of a paragraph?
 * The text-indent property is used to indent the text of a paragraph.
 
 
 ---
 
-#### Which property is used to align the text of a document?
+#### Q. Which property is used to align the text of a document?
 * The text-align property is used to align the text of a document.
 
 * ```text-align: center``` will do the horizontal alignment but vertical-align: middle will not work here. there are couple of different ways to solve this problem and one of them are positioning. You make the parent as relative position and child as absolute positioning. And then define all position parameter as sero and width 50% and height 30% (sounds messy look at the example and read ref) 
@@ -1515,25 +1399,25 @@ https://stackoverflow.com/questions/1294493/what-does-semantically-correct-mean/
 
 ---
 
-#### Which property is used to underline, overline, and strikethrough text?
+#### Q. Which property is used to underline, overline, and strikethrough text?
 * The text-decoration property is used to underline, overline, and strikethrough text.
 
 
 ---
 
-#### Which property is used to capitalize text or convert text to uppercase or lowercase letters?
+#### Q. Which property is used to capitalize text or convert text to uppercase or lowercase letters?
 * The text-transform property is used to capitalize text or convert text to uppercase or lowercase letters.
 
 
 ---
 
-#### Which property allows you to control the shape or appearance of the marker of a list?
+#### Q. Which property allows you to control the shape or appearance of the marker of a list?
 * The list-style-type allows you to control the shape or appearance of the marker.
 
 
 ---
 
-#### How do I restore the default value of a property?
+#### Q. How do I restore the default value of a property?
 * Initially CSS didn't provide a "default" keyword and the only way to restore the default value of a property is to explicitly re-declare that property
     This has changed with CSS 2; the keyword 'initial' is now a valid value for a CSS property. 
     It resets it to its default value, which is defined in the CSS specification of the given property.
@@ -1541,7 +1425,7 @@ https://stackoverflow.com/questions/1294493/what-does-semantically-correct-mean/
 
 ---
 
-#### How do I assign multiple classes to an element?
+#### Q. How do I assign multiple classes to an element?
 * HTML elements can be assigned multiple classes by listing the classes in the class attribute, with a blank space to separate them.
 ```html
 <style type="text/css">
@@ -1556,20 +1440,15 @@ https://stackoverflow.com/questions/1294493/what-does-semantically-correct-mean/
 
 ---
 
-#### What are preferred rules for specificity?
+#### Q. What is specificity? How do u calculate specificity?
 
-
----
-
-#### What is specificity? How do u calculate specificity?
-
-* a process of determining which css rule will be applied to an element. it actually determines which rules will take precedence.
+* A process of determining which css rule will be applied to an element. it actually determines which rules will take precedence.
 
 * inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity.
 
 ---
 
-#### What is selector specificity (selector importance) and how it works? How do u calculate specificity?
+#### Q. What is selector specificity (selector importance) and how it works? How do u calculate specificity?
 * https://developer.mozilla.org/en/docs/Web/CSS/Specificity
     
 * https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/
@@ -1606,11 +1485,11 @@ The universal selector has a specificity of 0, 0, 0, 0.
 
 ---
 
-#### What is CSS selector specificity and how does it work?
+#### Q. What is CSS selector specificity and how does it work?
 
 ---
 
-#### What do you know about transition?
+#### Q. What do you know about transition?
 
 * transition allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
 
@@ -1625,7 +1504,7 @@ The universal selector has a specificity of 0, 0, 0, 0.
 
 ---
 
-#### Enlist the various fonts properties?
+#### Q. Enlist the various fonts properties?
 * font-style
 * font-variant
 * font-weight
@@ -1637,47 +1516,41 @@ The universal selector has a specificity of 0, 0, 0, 0.
 
 ---
 
-#### Enlist the position / display / overflow properties and what are defaults
+#### Q. Enlist the position / display / overflow properties and what are defaults
 
 
 ---
 
-#### Enlist the various CSS background properties.
+#### Q. Enlist the various CSS background properties.
  
 
 ---
 
-#### Image paths in CSS vs HTML 
+#### Q. Image paths in CSS vs HTML 
  
 
 ---
 
-#### What is transition & transform? 
+#### Q. What is transition & transform? 
  
 
 ---
 
-#### What is used flexbox / transforms / transitions / animations?
+#### Q. What is used flexbox / transforms / transitions / animations?
 
 
 ---
 
-#### What exposure do you have to CSS3 animations and transitions
+#### Q. What exposure do you have to CSS3 animations and transitions
 
 
 ---
 
-#### Can you export contents from PSD / Sketch?
-
-
----
-
-#### What kind of challenges do you run into formatting a site for Mobile devices?
-
+#### Q. Can you export contents from PSD / Sketch?
 
 ---
 
-#### Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?
+#### Q. Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?
     
 * ```Floats``` specifies that an element should be taken from the normal flow and placed along the left or right side of its container, 
     where text and inline elements will wrap around it.
@@ -1688,12 +1561,12 @@ The universal selector has a specificity of 0, 0, 0, 0.
 
 ---
 
-#### What font units are available in CSS?
+#### Q. What font units are available in CSS?
 
 
 ---
 
-#### What is the difference between ```em``` and ```rem``` units?
+#### Q. What is the difference between ```em``` and ```rem``` units?
 
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
 
@@ -1702,17 +1575,10 @@ Both em and rem units are based on the font-size CSS property. The only differen
 
 In most browsers, the font-size of the root element is set to 16px by default.
 
----
-
-#### What are Benefits of using ```em``` and ```rem``` units
 
 ---
 
-#### What is the difference between padding and margins?
-
----
-
-#### What is the difference between ```span``` and ```div```?
+#### Q. What is the difference between ```span``` and ```div```?
 
 ```div``` is a block element and ```span``` is inline element.
 
@@ -1720,24 +1586,19 @@ It is illegal to put block element inside inline element. div can have a p tag a
 
 ---
 
-#### What does !important mean in CSS?
+#### Q. What does !important mean in CSS?
 * It overrides the cascade and gives the style rule the highest precedence.
 
 
 ---
 
-#### What is cross-browser compatibility? 
-
-
----
-
-#### What are optional closing tag? and why would u use it?
+#### Q. What are optional closing tag? and why would u use it?
 
 ```p, li, td, tr, th, html, body```, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. However, you have to be careful to escape it.
 
 ---
 
-#### What is a self closing tag?
+#### Q. What is a self closing tag?
 
 In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren’t required to have specific closing tags are called “self closing” tags.
 
@@ -1751,28 +1612,18 @@ An example of a self closing tag is something like a line break (```<br />```) o
 
 ---
 
-#### How do you test cross-browser compatibility of your site?
-
-
----
-
-#### How can you make a site responsive?
-
-
----
-
 #### The Difference Between Responsive and Adaptive Design
     https://css-tricks.com/the-difference-between-responsive-and-adaptive-design/
 
 
 ---
 
-#### What do you know about text shadows, box shadows?
+#### Q. What do you know about text shadows, box shadows?
 
 
 ---
 
-#### How can u highlight text in html?
+#### Q. How can u highlight text in html?
 
 use mark element.
 
@@ -1782,54 +1633,54 @@ use mark element.
 
 ---
 
-#### What is the difference between CSS variables and preprocessor variables?
+#### Q. What is the difference between CSS variables and preprocessor variables?
     https://css-tricks.com/difference-between-types-of-css-variables/
 
 
 ---
 
-#### The Difference Between :nth-child and :nth-of-type
+#### Q. The Difference Between :nth-child and :nth-of-type
     https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type/
     
 
 ---
 
-#### What selects ul[class] > li:nth-child(2n+1)    
+#### Q. What selects ul[class] > li:nth-child(2n+1)    
     
 
 ---
 
-#### What is the difference between “word-break: break-all” versus “word-wrap: break-word” in CSS
+#### Q. What is the difference between “word-break: break-all” versus “word-wrap: break-word” in CSS
     
 
 ---
 
-#### How is word-wrap different from white-space ?
+#### Q. How is word-wrap different from white-space ?
     https://css-tricks.com/almanac/properties/w/whitespace/
 
 
 ---
 
-#### What is ```<pre>``` ?
+#### Q. What is ```<pre>``` ?
 
 
 ---
 
-#### How is ```<b>``` different from ```<strong>``` ?
+#### Q. How is ```<b>``` different from ```<strong>``` ?
     
 
 ---
 
-#### What does minification do?
+#### Q. What does minification do?
 
 
 ---
 
-#### What are some ways to make websites faster? Name as many different techniques as you can.
+#### Q. What are some ways to make websites faster? Name as many different techniques as you can.
 
 ---
 
-#### Does the following trigger http request at the time of page load?
+#### Q. Does the following trigger http request at the time of page load?
 
 ```css
 <img src="mypic.jpg" style="visibility: hidden" alt="My photo">
@@ -1845,7 +1696,7 @@ use mark element.
 
 ---
 
-#### Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?
+#### Q. Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?
 
 ```css
 <head>
@@ -1862,7 +1713,7 @@ use mark element.
 
 ---
 
-#### Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+#### Q. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
 
 ```css
 <head>
@@ -1875,18 +1726,14 @@ use mark element.
 
 ---
 
-#### Can u apply css rule to a part of html document?
+#### Q. Can u apply css rule to a part of html document?
 
 yes. by using "scopped" in the style tag.
 
----
-
-#### How do you test the performance of your code and/or web pages?
-
 
 ---
 
-#### What are some rules for writing efficient CSS    
+#### Q. What are some rules for writing efficient CSS?  
     
 Firstly, understand that browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector. Hence avoid key selectors that are tag and universal selectors. They match a large number of elements and browsers will have to do more work in determining if the parents do match.
 
@@ -1924,17 +1771,15 @@ Be aware of which CSS properties trigger reflow, repaint, and compositing. Avoid
 
 ---
 
-#### What are you favorite features in SASS?
-
-#### Explain nested selectors in Sass
+#### Q. Explain nested selectors in Sass?
     
-#### How do you refer to a parent selector in the SASS?
+#### Q. How do you refer to a parent selector in the SASS?
     
-#### Explain what Sass Maps are and how they are use?
+#### Q. Explain what Sass Maps are and how they are use?
 
-#### Explain the @import function and how it is used
+#### Q. Explain the @import function and how it is used?
 
-#### Explain the @include, @mixin, @function functions and how they are used. What is %placeholder
+#### Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
     
 * ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
 
@@ -1994,25 +1839,16 @@ body, p {
 }
 ```
 
+#### What are the CSS positioning?
 
----
-
-#### What are some considerations in selecting font sizes? // This question is focused on accessibility
-
-
----
-
-#### As an organisation we aim to meet WCAG AA standards for accessibility. What experience do you have with developing accessible websites?
-
-
----
-
-#### How do you approach developing an accessible website?
-
-
----
-
-#### What are some of the common accessibility pitfalls when developing a website? How would you go about fixing them?
-
-
+|Keyword    | Value                 |Description                                                                           |
+|:----------|:----------------------|:-------------------------------------------------------------------------------------|
+|position 	|static 				|The default mode, block element is positioned in the flow. Top, left etc. are ignored.|
+|position 	|relative 				|The block element is positioned relative to its position in the flow.                 |
+|position 	|absolute 				|Block element is positioned relative to its container.                                |
+|position 	|fixed 					|Block element is positioned relative to the window and won’t scroll.                  |
+|top 		|Number [px, cm, in…] 	|Positions the block down from the reference point at the specified distance.          |
+|bottom 	|Number [px, cm, in…] 	|Positions the block up from the reference point at the specified distance.            |
+|left 		|Number [px, cm, in…] 	|Positions the block right from the reference point at the specified distance.         |
+|right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
