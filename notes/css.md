@@ -305,29 +305,27 @@ h3::before {
 
 ---
 
-#### Are CSS rule names case sensitive?
+#### Q. Are CSS rule names case sensitive?
 
 * No
 
 
 ---
 
-#### Does margin-top or margin-bottom has effect on inline element?
+#### Q. Does margin-top or margin-bottom has effect on inline element?
 
 * No
 
 ---
 
-#### Does padding-top or padding-bottom has effect on inline element?
+#### Q. Does padding-top or padding-bottom has effect on inline element?
 
 * No
 
 ---
 
-#### Which one would you prefer among px, em % or pt and why?
+#### Q. Which one would you prefer among px, em % or pt and why?
 
-
-it depends on what you are trying to do.
 
 * ```px``` gives fine grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade, this means if parent font-size is 20px and child 16px. child would be 16px.
 
@@ -340,19 +338,19 @@ it depends on what you are trying to do.
 
 ---
 
-#### Does padding-left or padding-right or margin-left or margin-right has effect on inline element?
+#### Q. Does padding-left or padding-right or margin-left or margin-right has effect on inline element?
 
 * Yes
 
 ---
 
-#### If you have a <p> element with font-size: 10rem, will the text be responsive when the user resizes / drags the browser window?
+#### Q. If you have a <p> element with font-size: 10rem, will the text be responsive when the user resizes / drags the browser window?
 
 * No
 
 ---
 
-#### Describe pseudo-elements and discuss what they are used for.
+#### Q. Describe pseudo-elements and discuss what they are used for.
 * https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-elements
 
 * A CSS pseudo-element is used to style specified parts of an element.
@@ -372,55 +370,55 @@ p::first-line {
 
 ---
 
-#### In a HTML document, the pseudo class :root always refers to the <html> element
+#### Q. In a HTML document, the pseudo class :root always refers to the <html> element?
 
 * True
 
 ---
 
-#### What is pseudo element? what is pseudo class?
+#### Q. What is pseudo element? what is pseudo class?
 
 * pseudo elements helps you to add cosmetics contents. pseudo elements generates content where as pseudo class deals with state of the element. for example, you can style ```:first-letter``` of every paragraph. similarly, ```:first-line``` and fancy stuff with ```:before```, ```:after```
 
 ---
 
-#### The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.
+#### Q. The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.
 
 * False
 
 ---
 
-#### How to center align a paragraph?
+#### Q. How to center align a paragraph?
 
 
 ---
 
-#### How to center align a div inside another div?
+#### Q. How to center align a div inside another div?
 
 
 ---
 
-#### How to make a two column Web page? a three column Web page?
+#### Q. How to make a two column Web page? a three column Web page?
 
 
 ---
 
-#### How to draw a triangle? a circle? a colored square?
+#### Q. How to draw a triangle? a circle? a colored square?
 
 
 ---
 
-#### How to make a tab view?
+#### Q. How to make a tab view?
 
 
 ---
 
-#### How do you define multiple background images through CSS?
+#### Q. How do you define multiple background images through CSS?
 
 
 ---
 
-#### Explain the CSS “box model” and the layout components that it consists of. Provide some usage examples.
+#### Q. Explain the CSS “box model” and the layout components that it consists of. Provide some usage examples.
 * The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
     ```Content``` The content of the box, where text and images appear
@@ -447,7 +445,7 @@ p::first-line {
 
 ---
 
-#### Explain what elements will match each of the following CSS selectors:
+#### Q. Explain what elements will match each of the following CSS selectors:
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
 * div ```p``` Selects all ```<p>``` elements that are anywhere inside a <div> element
 * div > ```p``` Selects all ```<p>``` elements where the immediate parent is a <div> element
@@ -457,7 +455,7 @@ p::first-line {
 
 ---
 
-#### Explain the meaning of each of these CSS units for expressing length:
+#### Q. Explain the meaning of each of these CSS units for expressing length:
 ```cm``` centimeters
 ```em``` elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)
 ```in``` inches
@@ -470,7 +468,7 @@ p::first-line {
 
 ---
 
-#### In CSS3, how would you select:
+#### Q. In CSS3, how would you select:
 
 * Every ```<a>``` element whose href attribute value begins with “https”.
     * a[href^="https"]
@@ -484,12 +482,27 @@ p::first-line {
 
 ---
 
-#### How does CSS actually work (under the hood of browser)?
+#### Q. How does CSS actually work (under the hood of browser)?
     https://github.com/FAQGURU/FAQGURU/blob/master/topics/en/css.md#how-does-css-actually-work-under-the-hood-of-browser
 
 ---
 
-#### What is the purpose of the box-sizing property? What are it's possible values?
+#### Q. What is the purpose of the box-sizing property? What are it's possible values?
+
+* The box-sizing CSS property sets how the total width and height of an element is calculated.
+
+1. **content-box**: the default. Width and height values apply to the element's content only. The padding and border are added to the outside of the box.
+1. **padding-box**: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
+1. **border-box**: Width and height values apply to the content, padding, and border.
+1. **inherit**: inherits the box sizing of the parent element.
+
+```
+box-sizing: content-box;
+width: 100%;
+border: solid #5B6DCD 10px;
+padding: 5px;
+
+```
 
 
 ---
