@@ -18,7 +18,7 @@ The way you declare which elements the styles should apply to. There are differe
 
 ---
 
-#### What are Combinators?
+#### Q. What are Combinators?
 
 The selection of an element based on its occurrence in relation to another element (chosen by the choice of combinator: whitespace, >, +, or ~). You can have:
 
@@ -34,18 +34,18 @@ The selection of an element based on its occurrence in relation to another eleme
 
 ---
 
-#### What is the difference between class selectors and id selectors?
+#### Q. What is the difference between class selectors and id selectors?
 An overall block is given to class selector while id selectors take only a single element differing from other element
   
 
 ---
 
-#### When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you heard/used BEM, OOCS or SMACSS)?    
+#### Q. When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you heard/used BEM, OOCS or SMACSS)?    
     
 
 ---
 
-#### What is CSS BEM
+#### Q. What is CSS BEM?
 
 The BEM methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. BEM stands for Block Element Modifier which is an explanation for its structure. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
 
@@ -94,7 +94,7 @@ These must be chained to the Element and never alone however, or there will be s
 
 ---
 
-#### Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?    
+#### Q. Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?    
     
 CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. How to implement it:
 
@@ -121,7 +121,7 @@ CSS sprites combine multiple images into one single larger image. It is a common
 
 ---
 
-#### What are the benefits of CSS sprites?
+#### Q. What are the benefits of CSS sprites?
 If a web page has large no. of images that takes a longer time to load because each image separately sends out an ```HTTP``` request. The concept of CSS sprites is used to reduce the loading time for a web page because it combines the various small images into one image. It reduces the number of ```HTTP``` requests and hence the loading time. 
     
 CSS sprites combine multiple images into one image, limiting the number of HTTP requests a browser has to make, thus improving load times. Even under the new HTTP/2 protocol, this remains true.
@@ -136,7 +136,7 @@ To utilize a spritesheet in CSS, one would use certain properties, such as ```ba
 
 ---
 
-#### What is the CSS Box model and what are its elements?
+#### Q. What is the CSS Box model and what are its elements?
 * The CSS box model is used to define the design and layout of elements of CSS.
 * The elements are:
    * Margin
@@ -147,7 +147,7 @@ To utilize a spritesheet in CSS, one would use certain properties, such as ```ba
     
 ---
 
-#### What is the float property and what float do.
+#### Q. What is the float property and what float do?
 * The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. It doesn't change the property of the elements used before it
 
 * float pushes an element to the sides of a page with text wrapped around it. you can create entire page or a smaller area by using float. if size of a floated element changes, text around it will re-flow to accommodate the changes. You can have float left, right, none or inherit.
@@ -157,13 +157,13 @@ To utilize a spritesheet in CSS, one would use certain properties, such as ```ba
 
 ---
 
-#### How can you clear sides of a floating element?
+#### Q. How can you clear sides of a floating element?
 
 If you clear a slide of an element, floating elements will not be accepted on that side. With 'clear' set to 'left', an element will be moved below any floating element on the left side. clear is used to stop wrap of an element around a floating element.
 
 ---
 
-#### What is tweening?
+#### Q. What is tweening?
 
 * It is the process of generating intermediate frames between two images.
 
@@ -176,13 +176,13 @@ If you clear a slide of an element, floating elements will not be accepted on th
 
 ---
 
-#### Who maintains the CSS specifications? What do you understand by W3C?
+#### Q. Who maintains the CSS specifications? What do you understand by W3C?
 W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the Web to its full potential by developing relevant protocols and guidelines.This is achieved primarily by creating and publishing Web standards. By adopting the Web standards created by the W3C, hardware manufacturers and software developers can ensure their equipment and programs work with the latest Web technologies. For example, most Web browsers incorporate several W3C standards, which allows them to interpret the latest versions of HTML and CSS code. When browsers conform to the W3C standards, it also helps Web pages appear consistent across different browsers.
 
 
 ---
 
-#### Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?
+#### Q. Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?
 
 * ```visibility: hidden``` simply hides the element but it will occupy space and affect the layout of the document.
 
@@ -190,7 +190,22 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 ---
 
-#### What is re-flow?
+#### Q. What is re-flow?
+
+* Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
+
+* Reflow occurs when you:
+
+    1. insert, remove or update an element in the DOM
+    1. modify content on the page, e.g. the text in an input box
+    1. move a DOM element
+    1. animate a DOM element
+    1. take measurements of an element such as offsetHeight or getComputedStyle
+    1. change a CSS style
+    1. change the className of an element
+    1. add or remove a stylesheet
+    1. resize the window
+    1. scroll
 
 ---
 
