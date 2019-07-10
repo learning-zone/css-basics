@@ -497,6 +497,8 @@ p::first-line {
 1. **inherit**: inherits the box sizing of the parent element.
 
 ```
+Example:
+
 box-sizing: content-box;
 width: 100%;
 border: solid #5B6DCD 10px;
@@ -504,16 +506,10 @@ padding: 5px;
 
 ```
 
-
----
-
-#### Provide an example of content-box vs border-box box-sizing
-
-
 ---
 
 
-#### How to create a zebra striped table with CSS?
+#### Q. How to create a zebra striped table with CSS?
 
 To create a zebra-striped table, use the nth-child() selector and add a background-color to all even (or odd) table rows:
 
@@ -525,8 +521,33 @@ tr:nth-child(even) {
 
 ---
 
-#### What is the difference between RGBa and HSLa? When would you use one vs the other?
+#### Q. What is the difference between RGBa, HEX and HSLa?
 
+* **RGB** or Red/Green/Blue is a color model.
+
+```
+p {
+color: rgba(37, 84, 127, 1);
+}
+
+```
+* **HEX**
+
+```
+p {
+color: #25547f;
+}
+
+```
+
+* **HSLa (Hue Saturation Lightness alpha)**
+
+```
+p {
+color: hsla(209, 55%, 32%, 1);
+}
+
+```
 
 ---
 
