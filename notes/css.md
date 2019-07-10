@@ -529,7 +529,6 @@ tr:nth-child(even) {
 p {
 color: rgba(37, 84, 127, 1);
 }
-
 ```
 * **HEX**
 
@@ -537,7 +536,6 @@ color: rgba(37, 84, 127, 1);
 p {
 color: #25547f;
 }
-
 ```
 
 * **HSLa (Hue Saturation Lightness alpha)**
@@ -546,7 +544,6 @@ color: #25547f;
 p {
 color: hsla(209, 55%, 32%, 1);
 }
-
 ```
 
 ---
