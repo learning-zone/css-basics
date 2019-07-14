@@ -1270,19 +1270,19 @@ Be aware of which CSS properties trigger reflow, repaint, and compositing. Avoid
 
 #### SASS basic concepts
 
-* Variables: Variables in SASS start with $ sign
+* **Variables**: Variables in SASS start with $ sign
 
-* Nesting: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
+* **Nesting**: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
 
-* mixins: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
+* **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
 
-* Inheritance: extends are useful for sharing a generic definition with selectors rather than copying it in.
+* **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
 
 * If/Else Statements and loops
 
-* import: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
+* **import**: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
 
-* Math operations: can be used for standard arithmetic or unit conversions.
+* **Math operations**: can be used for standard arithmetic or unit conversions.
 
 
 #### Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
@@ -1357,4 +1357,3 @@ body, p {
 |bottom 	|Number [px, cm, in…] 	|Positions the block up from the reference point at the specified distance.            |
 |left 		|Number [px, cm, in…] 	|Positions the block right from the reference point at the specified distance.         |
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
-
