@@ -293,11 +293,6 @@ h3::before {
 * Yes
 
 
-#### Q. If you have a <p> element with font-size: 10rem, will the text be responsive when the user resizes / drags the browser window?
-
-* No
-
-
 #### Q. Describe pseudo-elements and discuss what they are used for.
 * https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-elements
 
