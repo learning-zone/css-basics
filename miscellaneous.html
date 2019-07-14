@@ -13,8 +13,26 @@
             change during the tweening process.
         **/
 
+        p {
+          animation-duration: 3s;
+          animation-name: slidein;
+        }
+
+        @keyframes slidein {
+          from {
+            margin-left: 100%;
+            width: 300%; 
+          }
+
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+        }
+
         /**
-            Counters ( Counters in CSS are basically variables which can be used for numbering and values of CSS counters may be incremented by CSS rules. )
+            Counters ( Counters in CSS are basically variables which can be used for numbering and values of 
+            CSS counters may be incremented by CSS rules. )
 
                 1) counter-reset        -- Creates or resets a counter
                 2) counter-increment    -- Increments a counter value
@@ -68,5 +86,7 @@
         <h3>JavaScript Tutorial</h2>
 
         <div id="container">CSS Specificity Example</div>
+
+        <p>Tweening Example</p>
   </body>
 </html>
