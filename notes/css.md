@@ -1,7 +1,7 @@
 # CSS Notes
 
 
-#### Q. How to draw a cirecle inside Square using single DIV in css?
+#### Q. How to draw a circle inside Square using single DIV in css?
 
 #### Q. What are the css Selectors? 
 
