@@ -1,7 +1,52 @@
 # CSS Notes
 
+#### Q. What are the background properties in css?
+
+|Property	               | Description                                                                    |
+|------------------------|--------------------------------------------------------------------------------|
+|background	             | Sets all the background properties in one declaration                          |
+|background-attachment	 | Sets whether a background image is fixed or scrolls with the rest of the page  |
+|background-clip	       | Specifies the painting area of the background                                  |
+|background-color	       | Sets the background color of an element                                        |
+|background-image	       | Sets the background image for an element                                       |
+|background-origin	     | Specifies where the background image(s) is/are positioned                      |
+|background-position     |	Sets the starting position of a background image                              |
+|background-repeat	     | Sets how a background image will be repeated                                   |
+|background-size	       | Specifies the size of the background image(s)                                  |
 
 #### Q. How to draw a circle inside Square using single DIV in css?
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Circle inside Square</title>
+  </head>
+  <style>
+    .rectangle {    
+        border-radius: 10px;
+        display: inline-block;
+        width: 205px;
+        height: 205px;
+        border: 1px solid #000;
+        background-color: white;
+    }
+    .rectangle:before {
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        content: '';
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #eee;
+    }
+    </style>
+    <body>
+        <div class="rectangle"></div>
+    </body>
+</html>
+```
 
 #### Q. What are the css Selectors? 
 
