@@ -428,12 +428,12 @@ p::first-line {
 ```
 
 #### Q. Explain the CSS “box model” and the layout components that it consists of. Provide some usage examples.
-* The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
+The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
-    * **Content**: The content of the box, where text and images appear
-    * **Padding**: A transparent area surrounding the content (i.e., the amount of space between the border and the content)
-    * **Border**: A border surrounding the padding (if any) and content
-    * **Margin**: A transparent area surrounding the border (i.e., the amount of space between the border and any neighboring elements)
+* **Content**: The content of the box, where text and images appear
+* **Padding**: A transparent area surrounding the content (i.e., the amount of space between the border and the content)
+* **Border**: A border surrounding the padding (if any) and content
+* **Margin**: A transparent area surrounding the border (i.e., the amount of space between the border and any neighboring elements)
 
     ```css
     /* top   right  bottom left  */
