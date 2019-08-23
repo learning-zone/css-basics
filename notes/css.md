@@ -488,14 +488,12 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 1. **border-box**: Width and height values apply to the content, padding, and border.
 1. **inherit**: inherits the box sizing of the parent element.
 
-```
 Example:
-
+```css
 box-sizing: content-box;
 width: 100%;
 border: solid #5B6DCD 10px;
 padding: 5px;
-
 ```
 
 #### Q. How to create a zebra striped table with CSS?
@@ -512,14 +510,14 @@ tr:nth-child(even) {
 
 * **RGB** or Red/Green/Blue is a color model.
 
-```
+```css
 p {
   color: rgba(37, 84, 127, 1);
 }
 ```
 * **HEX**
 
-```
+```css
 p {
   color: #25547f;
 }
@@ -527,15 +525,13 @@ p {
 
 * **HSLa (Hue Saturation Lightness alpha)**
 
-```
+```css
 p {
   color: hsla(209, 55%, 32%, 1);
 }
 ```
 
-
 #### Q. What is CSS preprocessor and why to user one?
-
 * A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
 
 * Here are a few of the most popular CSS preprocessors:
@@ -609,7 +605,7 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 
 In a BFC, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch).
 
-Vertical margins between adjacent block-level boxes in a BFC collapse. Read more on [collapsing margins](https://www.sitepoint.com/web-foundations/collapsing-margins/).
+Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
 
 #### Q. What are the various clearing techniques and which is appropriate for what context? How works .clearfix?
@@ -620,11 +616,8 @@ Vertical margins between adjacent block-level boxes in a BFC collapse. Read more
 
 In large projects, I would write a utility `.clearfix` class and use them in places where I need it. `overflow: hidden` might clip children if the children is taller than the parent and is not very ideal.
 
-
 #### Q. Does ```overflow: hidden``` create a new block formatting context?
-
 * Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
-
 
 #### Q. How would you approach fixing browser-specific styling issues?
 
@@ -632,7 +625,8 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
 * Use Reset CSS or Normalize.css.
 
-```Example: 01
+Example: 01
+```css
 .box-shadow {
   background-color: red;
   background-image: url(gradient-slice.png);
@@ -643,14 +637,13 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
   background-image: linear-gradient(top right, #A60000, #FFFFFF);
 }
 
-Example: 02
+/*Example: 02*/
 
 .box {
 	-moz-border-radius: 15px;    /* Firefox */
 	-webkit-border-radius: 15px; /* Safari and Chrome */
 	border-radius: 15px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
 }
-
 ```
 
 #### Q. What are your favorite image replacement techniques and which do you use when?
@@ -845,20 +838,16 @@ For icons, I would also opt to use SVGs and icon fonts where possible, as they r
 
 
 #### Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
-
-
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
 
 When using `translate()`, the element still occupies its original space (sort of like `position: relative`), unlike in changing the absolute positioning.
 
 
 #### Q. The translate() function can move the position of an element on the z-axis.
-
 * False
 
-
 #### Q. Tell what each of these tags do, if there are alternatives, which are preferable, why?
-```css
+```html
 <em>
 <b>
 <abbr>
@@ -869,7 +858,6 @@ When using `translate()`, the element still occupies its original space (sort of
 <strong>
 <article>
 ```    
-
 
 #### Q. What is At-Rule?
 * An at-rule is an instruction given in a CSS document using the ```@``` character. An at-rule could have a declaration block or a simple string of text. The example below has two different at-rules:
@@ -925,7 +913,7 @@ body {
 
 
 #### Q. Provide CSS so that three lines are displayed red, then green, then blue (2):
-```css
+```html
 <div class="rgb">
     <span>Red</span>
     <span>Green<b>Blue</b></span>
@@ -1048,7 +1036,6 @@ A mobile-first strategy has 2 main advantages:
 
 
 ### Q. How is responsive design different from adaptive design?
-
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
 
 Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.
@@ -1057,14 +1044,12 @@ Adaptive design is more like the modern definition of progressive enhancement. I
 
 
 #### Q. What does Accessibility (a11y) mean?
-
 Accessibility (a11y) is a measure of a computer system's accessibility is to all people, including those with disabilities or impairments. It concerns both software and hardware and how they are configured in order to enable a disabled or impaired person to use that computer system successfully.
 
 Accessibility is also known as assistive technology.
 
 
 #### Q. What is accessibility & ARIA role means in a web application?
-
 Accessibility means letting the user navigate and interact with a website by any means. Let it be a keyboard, a mouse or people with disabilities or impairments.
 
 
@@ -1088,7 +1073,6 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
 
 
 #### Q. Why you would like to use semantic tag. Why Semantic HTML is Important?
-
 * Search Engine Optimization, accessibility, repurposing, light code. 
 
 * Many visually impaired person rely on browser speech and semantic tag helps to interpret page content clearly.
@@ -1175,14 +1159,12 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
 ```
 
 #### Q. What is specificity? How do u calculate specificity?
-
 * A process of determining which css rule will be applied to an element. it actually determines which rules will take precedence.
 
 * inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity.
 
 
 #### Q. What is selector specificity (selector importance) and how it works? How do u calculate specificity?
-
 ID selectors have a higher specificity than attribute selectors.
 
 ```css
@@ -1211,14 +1193,13 @@ The universal selector has a specificity of 0, 0, 0, 0.
 
 
 #### Q. What do you know about transition?
-
 * transition allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
 
 
 #### What are the different css filter you can use?
     https://developer.mozilla.org/en/docs/Web/CSS/filter
 
-* css filter allows u to render DOM element, image, or video. u can choose from: grayscale, blur, opacity, brightness, contrast.
+* css filter allows to render DOM element, image, or video. u can choose from: grayscale, blur, opacity, brightness, contrast.
 
 
 #### Q. Enlist the various fonts properties?
@@ -1262,7 +1243,6 @@ It is illegal to put block element inside inline element. div can have a p tag a
 
 
 #### Q. What are optional closing tag? and why would u use it?
-
 ```p, li, td, tr, th, html, body```, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. However, you have to be careful to escape it.
 
 
@@ -1272,7 +1252,7 @@ In HTML5 it is not strictly necessary to close certain HTML tags. The tags that 
 
 An example of a self closing tag is something like a line break (```<br />```) or the meta tag (```<meta>```). This means that the following are both acceptable:
 
-```css
+```html
 <meta charset="UTF-8">
 ...
 <meta charset="UTF-8" />
@@ -1282,17 +1262,14 @@ An example of a self closing tag is something like a line break (```<br />```) o
 
 use mark element.
 
-```css
+```html
 <p>Some part of this paragraph is <mark>highlighted</mark> by using mark element.</p>
 ```
 
 #### Q. Does the following trigger http request at the time of page load?
-
-```css
+```html
 <img src="mypic.jpg" style="visibility: hidden" alt="My photo">
-```    
 
-```css
 <div style="display: none;">
     <img src="mypic.jpg" alt="My photo">
 </div>
@@ -1302,8 +1279,7 @@ use mark element.
 
 
 #### Q. Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?
-
-```css
+```html
 <head>
     <link href="style1.css" rel="stylesheet">
 </head>
@@ -1318,8 +1294,7 @@ use mark element.
 
 
 #### Q. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
-
-```css
+```html
 <head>
     <link href="style1.css" rel="stylesheet">
     <link href="style2.css" rel="stylesheet">
@@ -1376,7 +1351,6 @@ Be aware of which CSS properties trigger reflow, repaint, and compositing. Avoid
 ```css
 .box { @include border-radius(10px); }
 ```
-        
 
 * ```@extend``` directive provides a simple way to allow a selector to inherit/extend the styles of another one.
 ```css
