@@ -1034,15 +1034,6 @@ A mobile-first strategy has 2 main advantages:
 * It's more performant on mobile devices, since all the rules applied for them don't have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-
-### Q. How is responsive design different from adaptive design?
-Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
-
-Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.
-
-Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible design, adaptive design detects the device and other features and then provides the appropriate feature and layout based on a predefined set of viewport sizes and other characteristics. The site detects the type of device used and delivers the pre-set layout for that device. Instead of a single ball going through several different-sized hoops, you'd have several different balls to use depending on the hoop size.
-
-
 #### Q. What does Accessibility (a11y) mean?
 Accessibility (a11y) is a measure of a computer system's accessibility is to all people, including those with disabilities or impairments. It concerns both software and hardware and how they are configured in order to enable a disabled or impaired person to use that computer system successfully.
 
@@ -1065,12 +1056,10 @@ Accessibility means letting the user navigate and interact with a website by any
     But UX—or User Experience—is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
     So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
 
-
 #### Q. What is semantic?
 Semantic HTML, or "semantically-correct HTML", is HTML where the tags used to structure content are selected and applied appropriately to the meaning of the content.
 
 For example, <b></b> (for bold), and <i></i> (for italic) should never be used, because they’re to do with formatting, not with the meaning or structure of the content. Instead, use the replacements <strong></strong> and <em></em> (meaning emphasis), which by default will turn text bold and italic (but don’t have to do so in all browsers), while adding meaning to the structure of the content
-
 
 #### Q. Why you would like to use semantic tag. Why Semantic HTML is Important?
 * Search Engine Optimization, accessibility, repurposing, light code. 
