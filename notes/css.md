@@ -330,7 +330,7 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 * **CSS**
 
-```
+```css
 body {
   counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
 }
@@ -347,7 +347,7 @@ h3::before {
 
 * **HTML**
 
-```
+```html
 <h3>Introduction</h3>
 <h3>Body</h3>
 <h3>Conclusion</h3>
