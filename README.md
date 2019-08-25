@@ -1396,9 +1396,4 @@ body, p {
 |left 		|Number [px, cm, in…] 	|Positions the block right from the reference point at the specified distance.         |
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
-#### Q. What are the CSS text properties?
 
-```css
-word-wrap: break-word;
-white-space: normal;
-```
