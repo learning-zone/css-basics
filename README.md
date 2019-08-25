@@ -1,4 +1,4 @@
-# CSS Notes
+## CSS Notes
 
 #### Q. What are the text properties in css?
 
