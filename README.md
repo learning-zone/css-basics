@@ -1,4 +1,4 @@
-## CSS Notes
+## CSS Interview Questions and Answers
 
 #### Q. What are the text properties in css?
 
