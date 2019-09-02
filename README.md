@@ -30,7 +30,7 @@
 |26. |[Which one would you prefer among px, em % or pt and why?](#q-which-one-would-you-prefer-among-px-em-or-pt-and-why)|
 |27. |[Does padding-left or padding-right or margin-left or margin-right has effect on inline element?](#q-does-padding-left-or-padding-right-or-margin-left-or-margin-right-has-effect-on-inline-element)|
 |28. |[Describe pseudo-elements and discuss what they are used for.](#q-describe-pseudo-elements-and-discuss-what-they-are-used-for)
-|29. |[In a HTML document, the pseudo class :root always refers to the <html> element?](#q-in-a-html-document-the-pseudo-class-root-always-refers-to-the-html-element)|
+|29. |[In a HTML document the pseudo class :root always refers to the <html> element?](#q-in-a-html-document-the-pseudo-class-root-always-refers-to-the-html-element)|
 |30. |[What is pseudo element? what is pseudo class?](#q-what-is-pseudo-element-what-is-pseudo-class)|
 |31. |[The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.](#q-the-pseudo-class-checked-will-select-inputs-with-type-radio-or-checkbox-but-not-option-elements)
 |32. |[How to center align a div inside another div?](#q-how-to-center-align-a-div-inside-another-div)|
@@ -526,7 +526,7 @@ p::first-line {
 }
 ```
 
-#### Q. In a HTML document, the pseudo class :root always refers to the <html> element?
+#### Q. In a HTML document the pseudo class :root always refers to the <html> element?
 * True
 
 #### Q. What is pseudo element? what is pseudo class?
