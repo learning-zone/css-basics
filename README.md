@@ -1,5 +1,129 @@
 ## CSS3 Interview Questions and Answers
 
+|Sl.No| CSS3 Interview Questions|
+|-----|-------------------------|
+|01. |[What are the text properties in css?](#q-what-are-the-text-properties-in-css)|
+|02. |[What are the border properties in css?](#q-what-are-the-border-properties-in-css)|
+|03. |[What are the background properties in css?](#q-what-are-the-background-properties-in-css)|
+|04. |[How to draw a circle inside Square using single DIV in css?](#q-how-to-draw-a-circle-inside-square-using-single-div-in-css)|
+|05. |[What are the css Selectors?](#q-what-are-the-css-selectors)|
+|06. |[What are Combinators?](#q-what-are-combinators)|
+|07. |[What is the difference between class selectors and id selectors?](#q-what-is-the-difference-between-class-selectors-and-id-selectors)|
+|08. |[When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you heard/used BEM, OOCS or SMACSS)?](#q-when-working-on-a-large-codebase-css-it-can-quickly-become-unwieldly-and-difficult-to-maintain-how-do-you-approach-this-problem--how-do-you-architect-your-css--and-have-you-heard-used-bem--oocs-or-smacss)||
+|09. |[What is CSS BEM?](#q-what-is-css-bem)|
+|10. |[Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?](#q-explain-css-sprites--and-how-you-would-implement-them-on-a-page-or-site-how-do-you-go-about-creating-them--what-are-possible-alternatives-to-sprites)|
+|11. |[What are the benefits of CSS sprites?](#q-what-are-the-benefits-of-css-sprites)|
+|12. |[What is the float property and what float do?](#q-what-is-the-float-property-and-what-float-do)|
+|13. |[How can you clear sides of a floating element?](#q-how-can-you-clear-sides-of-a-floating-element)|
+|14. |[What is tweening?](#q-what-is-tweening)|
+|15. |[Who maintains the CSS specifications? What do you understand by W3C?](#q-who-maintains-the-css-specifications--what-do-you-understand-by-w3c)|
+|16. |[Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?](#q-explain-the-difference-between-visibility-hidden-and-display-none-what-are-the-pros-and-cons-of-using-display-none)|
+|17. |[What is re-flow?](#q-what-is-re-flow)|
+|18. |[How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?](#q-how-does-z-index-relate-to-positioning-describe-z-index-and-how-stacking-context-is-formed)|
+|19. |[What is the purpose of the ```z-index``` and how is it used?](#q-what-is-the-purpose-of-the-z-index-and-how-is-it-used)|
+|20. |[How works absolute / relative / fixed / static position?](#q-how-works-absolute-relative-fixed-static-position)|
+|21. |[The difference between block / inline / inline-block element?](#q-the-difference-between-block-inline-inline-block-element)|
+|22. |[What are counters in CSS3?](#q-what-are-counters-in-css3)|
+|23. |[Are CSS rule names case sensitive?](#q-are-css-rule-names-case-sensitive)|
+|24. |[Does margin-top or margin-bottom has effect on inline element?](#q-does-margin-top-or-margin-bottom-has-effect-on-inline-element)|
+|25. |[Does padding-top or padding-bottom has effect on inline element?](#q-does-padding-top-or-padding-bottom-has-effect-on-inline-element)|
+|26. |[Which one would you prefer among px, em % or pt and why?](#q-which-one-would-you-prefer-among-px-em-or-pt-and-why)|
+|27. |[Does padding-left or padding-right or margin-left or margin-right has effect on inline element?](#q-does-padding-left-or-padding-right-or-margin-left-or-margin-right-has-effect-on-inline-element)|
+|28. |[Describe pseudo-elements and discuss what they are used for.](#q-describe-pseudo-elements-and-discuss-what-they-are-used-for)
+|29. |[In a HTML document, the pseudo class :root always refers to the <html> element?](#q-in-a-html-document--the-pseudo-class--root-always-refers-to-the--html--element)|
+|30. |[What is pseudo element? what is pseudo class?](#q-what-is-pseudo-element--what-is-pseudo-class)|
+|31. |[The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.](#q-the-pseudo-class--checked-will-select-inputs-with-type-radio-or-checkbox--but-not--option--elements)
+|32. |[How to center align a div inside another div?](#q-how-to-center-align-a-div-inside-another-div)|
+|33. |[Explain the CSS “box model” and the layout components that it consists of. Provide some usage examples.](#q-explain-the-css--box-model--and-the-layout-components-that-it-consists-of-provide-some-usage-examples)
+|34. |[Explain what elements will match each of the following CSS selectors:](#q-explain-what-elements-will-match-each-of-the-following-css-selectors)|
+|35. |[Explain the meaning of each of these CSS units for expressing length:](#q-explain-the-meaning-of-each-of-these-css-units-for-expressing-length)|
+|36. |[In CSS3, how would you select:](#q-in-css3--how-would-you-select)|
+|37. |[What is the purpose of the box-sizing property? What are it's possible values?](#q-what-is-the-purpose-of-the-box-sizing-property--what-are-it-s-possible-values)|
+|38. |[How to create a zebra striped table with CSS?](#q-how-to-create-a-zebra-striped-table-with-css)|
+|39. |[What is the difference between RGBa, HEX and HSLa?](#q-what-is-the-difference-between-rgba--hex-and-hsla)|
+|40. |[What is CSS preprocessor and why to user one?](#q-what-is-css-preprocessor-and-why-to-user-one)|
+|41. |[What are the advantages/disadvantages of using CSS preprocessors?](#q-what-are-the-advantages-disadvantages-of-using-css-preprocessors)|
+|42. |[What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?](#q-what-s-the-difference-between--resetting--and--normalizing--css--which-would-you-choose--and-why)|
+|43. |[Describe Floats and how they work.](#q-describe-floats-and-how-they-work)
+|44. |[Describe BFC(Block Formatting Context) and how it works.](#q-describe-bfc-block-formatting-context--and-how-it-works)
+|45. |[What are the various clearing techniques and which is appropriate for what context? How works .clearfix?](#q-what-are-the-various-clearing-techniques-and-which-is-appropriate-for-what-context--how-works-clearfix)|
+|46. |[Does ```overflow: hidden``` create a new block formatting context?](#q-does----overflow--hidden----create-a-new-block-formatting-context)|
+|47. |[How would you approach fixing browser-specific styling issues?](#q-how-would-you-approach-fixing-browser-specific-styling-issues)|
+|48. |[What are your favorite image replacement techniques and which do you use when?](#q-what-are-your-favorite-image-replacement-techniques-and-which-do-you-use-when)|
+|49. |[How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?](#q-how-do-you-serve-your-pages-for-feature-constrained-browsers--what-techniques-processes-do-you-use)|
+|50. |[What are the different ways to visually hide content (and make it available only for screen readers)?](#q-what-are-the-different-ways-to-visually-hide-content--and-make-it-available-only-for-screen-readers)||
+|51. |[How could you apply css rules specific to a media?](#q-how-could-you-apply-css-rules-specific-to-a-media)|
+|52. |[What is the use of ```@media only screen```?](#q-what-is-the-use-of-media-only-screen)||
+|53. |[Does the ```screen``` keyword apply to the device's physical screen or the browser's viewport?](#q-does-the----screen----keyword-apply-to-the-device-s-physical-screen-or-the-browser-s-viewport)|
+|54. |[Are you familiar with styling SVG?](#q-are-you-familiar-with-styling-svg)|
+|55. |[Can you give an example of an @media property other than screen?](#q-can-you-give-an-example-of-an--media-property-other-than-screen)|
+|56. |[How would you implement a web design comp that uses non-standard fonts?](#q-how-would-you-implement-a-web-design-comp-that-uses-non-standard-fonts)|
+|57. |[Explain how a browser determines what elements match a CSS selector?](#q-explain-how-a-browser-determines-what-elements-match-a-css-selector)|
+|58. |[What are the some pseudo classed u have used?](#q-what-are-the-some-pseudo-classed-u-have-used)|
+|59. |[How do you optimize css selectors?](#q-how-do-you-optimize-css-selectors)|
+|60. |[How can you load css resources conditionally?](#q-how-can-you-load-css-resources-conditionally)|
+|61. |[Describe pseudo-elements and discuss what they are used for.](#q-describe-pseudo-elements-and-discuss-what-they-are-used-for-1)
+|62. |[What are the properties related to box model?](#q-what-are-the-properties-related-to-box-model)|
+|63. |[What does  ```* { box-sizing: border-box; }``` do? What are its advantages?](#q-what-does-box-sizing-border-box-------do--what-are-its-advantages)|
+|64. |[List as many values for the display property that you can remember.](#q-list-as-many-values-for-the-display-property-that-you-can-remember)
+|65. |[Have you played around with the new CSS Flexbox or Grid specs?](#q-have-you-played-around-with-the-new-css-flexbox-or-grid-specs)|
+|66. |[How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?](#q-how-is-responsive-design-different-from-adaptive-design--what-is-responsive-design--what-is-the-difference-between-fixed-and-fluid-layouts--what-are-some-of-the-pros-and-cons-with-these-designs)|
+|67. |[Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?](#q-have-you-ever-worked-with-retina-graphics--if-so--when-and-what-techniques-did-you-use--what-kind-of-techniques-do-you-use-to-handle-images-for-retina-screens)|
+|68. |[Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?](#q-is-there-any-reason-you-d-want-to-use-translate---instead-of-absolute-positioning--or-vice-versa--and-why)|
+|69. |[The translate() function can move the position of an element on the z-axis.](#q-the-translate---function-can-move-the-position-of-an-element-on-the-z-axis)
+|70. |[Tell what each of these tags do, if there are alternatives, which are preferable, why?](#q-tell-what-each-of-these-tags-do--if-there-are-alternatives--which-are-preferable--why)|
+|71. |[What is At-Rule?](#q-what-is-at-rule)|
+|72. |[What is Combinator selector?](#q-what-is-combinator-selector)|
+|73. |[What is RuleSet?](#q-what-is-ruleset)|
+|74. |[Provide CSS so that three lines are displayed red, then green, then blue (2):](#q-provide-css-so-that-three-lines-are-displayed-red--then-green--then-blue--2)||
+|75. |[Provided following HTML and CSS, what will be displayed (1)?](#q-provided-following-html-and-css--what-will-be-displayed--1)||
+|76. |[What is Universal Selector?](#q-what-is-universal-selector)|
+|77. |[How can the gap under the image be removed?](#q-how-can-the-gap-under-the-image-be-removed)|
+|78. |[What is graceful degradation?](#q-what-is-graceful-degradation)|
+|79. |[What is progressive enhancement?](#q-what-is-progressive-enhancement)|
+|80. |[What is progressive rendering?](#q-what-is-progressive-rendering)|
+|81. |[What is an ```iframe``` and how it works?](#q-what-is-an----iframe----and-how-it-works)|
+|82. |[What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?](#q-what-is-mobile-first--can-you-explain-the-difference-between-coding-a-website-to-be-responsive-versus-using-a-mobile-first-strategy)|
+|83. |[What does Accessibility (a11y) mean?](#q-what-does-accessibility--a11y--mean)|
+|84. |[What is accessibility & ARIA role means in a web application?](#q-what-is-accessibility---aria-role-means-in-a-web-application)|
+|85. |[What is UI/UX?](#q-what-is-ui-ux)|
+|86. |[What is semantic?](#q-what-is-semantic)|
+|87. |[Why you would like to use semantic tag. Why Semantic HTML is Important?](#q-why-you-would-like-to-use-semantic-tag-why-semantic-html-is-important)|
+|88. |[Which of listed CSS properties are inherited?](#q-which-of-listed-css-properties-are-inherited)|
+|89. |[Which property is used to change the face of a font?](#q-which-property-is-used-to-change-the-face-of-a-font)|
+|90. |[Which property is used to make a font italic or oblique?](#q-which-property-is-used-to-make-a-font-italic-or-oblique)|
+|91. |[Which property is used to create a small-caps effect?](#q-which-property-is-used-to-create-a-small-caps-effect)|
+|92. |[Which property is used to increase or decrease how bold or light a font appears?](#q-which-property-is-used-to-increase-or-decrease-how-bold-or-light-a-font-appears)|
+|93. |[Which property is used to add or subtract space between the letters that make up a word?](#q-which-property-is-used-to-add-or-subtract-space-between-the-letters-that-make-up-a-word)|
+|94. |[Which property is used to add or subtract space between the words of a sentence?](#q-which-property-is-used-to-add-or-subtract-space-between-the-words-of-a-sentence)|
+|95. |[Which property is used to indent the text of a paragraph?](#q-which-property-is-used-to-indent-the-text-of-a-paragraph)|
+|96. |[Which property is used to align the text of a document?](#q-which-property-is-used-to-align-the-text-of-a-document)|
+|97. |[Which property is used to underline, overline, and strikethrough text?](#q-which-property-is-used-to-underline--overline--and-strikethrough-text)|
+|98. |[Which property is used to capitalize text or convert text to uppercase or lowercase letters?](#q-which-property-is-used-to-capitalize-text-or-convert-text-to-uppercase-or-lowercase-letters)|
+|99. |[Which property allows you to control the shape or appearance of the marker of a list?](#q-which-property-allows-you-to-control-the-shape-or-appearance-of-the-marker-of-a-list)|
+|101. |[How do I restore the default value of a property?](#q-how-do-i-restore-the-default-value-of-a-property)|
+|102. |[How do I assign multiple classes to an element?](#q-how-do-i-assign-multiple-classes-to-an-element)|
+|103. |[What is specificity? How do u calculate specificity?](#q-what-is-specificity--how-do-u-calculate-specificity)|
+|104. |[What is selector specificity (selector importance) and how it works? How do u calculate specificity?](#q-what-is-selector-specificity--selector-importance--and-how-it-works--how-do-u-calculate-specificity)|
+|105. |[What do you know about transition?](#q-what-do-you-know-about-transition)|
+|106. |[What are the different css filter you can use?](#what-are-the-different-css-filter-you-can-use)|
+|107. |[Enlist the various fonts properties?](#q-enlist-the-various-fonts-properties)|
+|108. |[Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?](#q-describe-floats-and-flexbox-and-how-each-works-why-flexbox-is-a-better-solution-for-web-layouts)|
+|109. |[What is the difference between ```em``` and ```rem``` units?](#q-what-is-the-difference-between----em----and----rem----units)|
+|110. |[What is the difference between ```span``` and ```div```?](#q-what-is-the-difference-between----span----and----div--)||
+|111. |[What does !important mean in CSS?](#q-what-does--important-mean-in-css)|
+|112. |[What are optional closing tag? and why would u use it?](#q-what-are-optional-closing-tag--and-why-would-u-use-it)|
+|113. |[What is a self closing tag?](#q-what-is-a-self-closing-tag)|
+|114. |[How can u highlight text in html?](#q-how-can-u-highlight-text-in-html)|
+|115. |[Does the following trigger http request at the time of page load?](#q-does-the-following-trigger-http-request-at-the-time-of-page-load)|
+|116. |[Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?](#q-does-style2css-have-to-be-downloaded-and-parsed-before-paragraph-1-is-rendered-on-the-page)|
+|117. |[Does style1.css have to be downloaded and parsed before style2.css can be fetched?](#q-does-style1css-have-to-be-downloaded-and-parsed-before-style2css-can-be-fetched)|
+|118. |[Can u apply css rule to a part of html document?](#q-can-u-apply-css-rule-to-a-part-of-html-document)|
+|119. |[What are some rules for writing efficient CSS?](#q-what-are-some-rules-for-writing-efficient-css)|
+|120. |[SASS basic concepts](#sass-basic-concepts)
+|121. |[Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?](#q-explain-the--include---mixin---function-functions-and-how-they-are-used-what-is--placeholder)|
+|122. |[What are the CSS positioning?](#q-what-are-the-css-positioning)|
+
 #### Q. What are the text properties in css?
 
 |Property	           |     Description                                                |
