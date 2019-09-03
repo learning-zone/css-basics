@@ -110,7 +110,7 @@
 |107. |[Enlist the various fonts properties?](#q-enlist-the-various-fonts-properties)|
 |108. |[Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?](#q-describe-floats-and-flexbox-and-how-each-works-why-flexbox-is-a-better-solution-for-web-layouts)|
 |109. |[What is the difference between ```em``` and ```rem``` units?](#q-what-is-the-difference-between-em-and-rem-units)|
-|110. |[What is the difference between ```span``` and ```div```?](#q-what-is-the-difference-between-span-and-div-)||
+|110. |[What is the difference between ```span``` and ```div```?](#q-what-is-the-difference-between-span-and-div)|
 |111. |[What does !important mean in CSS?](#q-what-does-important-mean-in-css)|
 |112. |[What are optional closing tag? and why would u use it?](#q-what-are-optional-closing-tag-and-why-would-u-use-it)|
 |113. |[What is a self closing tag?](#q-what-is-a-self-closing-tag)|
@@ -127,7 +127,7 @@
 |124. |[Explain new features in CSS3?](#q-explain-new-features-in-css3)|
 |125. |[What are gradients in CSS?](#q-what-are-gradients-in-css)|
 |126. |[What is CSS opacity?](#q-what-is-css-opacity)|
-|127. |[Write all the position states used in CSS.](#q-write-all-the-position-states-used-in-css)
+|127. |[Write all the position states used in CSS.](#q-write-all-the-position-states-used-in-css)|
 |128. |[Enlist the various Media types used?](#q-enlist-the-various-media-types-used)|
 |129. |[What is contextual selector?](#q-what-is-contextual-selector)|
 
