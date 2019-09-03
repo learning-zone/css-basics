@@ -123,6 +123,13 @@
 |120. |[SASS basic concepts](#sass-basic-concepts)
 |121. |[Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?](#q-explain-the-include-mixin-function-functions-and-how-they-are-used-what-is-placeholder)|
 |122. |[What are the CSS positioning?](#q-what-are-the-css-positioning)|
+|123. |[What is the difference between padding and margin?](#q-what-is-the-difference-between-padding-and-margin)|
+|124. |[Explain new features in CSS3?](#q-explain-new-features-in-css3)|
+|125. |[What are gradients in CSS?](#q-what-are-gradients-in-css)|
+|126. |[What is CSS opacity?](#q-what-is-css-opacity)|
+|127. |[Write all the position states used in CSS.](#q-write-all-the-position-states-used-in-css)
+|128. |[Enlist the various Media types used?](#q-enlist-the-various-media-types-used)|
+|129. |[What is contextual selector?](#q-what-is-contextual-selector)|
 
 #### Q. What are the text properties in css?
 
@@ -1520,4 +1527,10 @@ body, p {
 |left 		|Number [px, cm, in…] 	|Positions the block right from the reference point at the specified distance.         |
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
-
+#### Q. What is the difference between padding and margin?
+#### Q. Explain new features in CSS3?
+#### Q. What are gradients in CSS?
+#### Q. What is CSS opacity?
+#### Q. Write all the position states used in CSS.
+#### Q. Enlist the various Media types used?
+#### Q. What is contextual selector?
