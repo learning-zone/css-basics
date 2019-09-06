@@ -1,5 +1,7 @@
 ## CSS3 Interview Questions and Answers
 
+> Click :star:if you like the project. Pull Request are highly appreciated. 
+
 |Sl.No| CSS3 Interview Questions|
 |-----|-------------------------|
 |01. |[What are the text properties in css?](#q-what-are-the-text-properties-in-css)|
