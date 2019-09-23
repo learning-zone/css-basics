@@ -1530,9 +1530,16 @@ body, p {
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
 #### Q. What is the difference between padding and margin?
+*TODO*
 #### Q. Explain new features in CSS3?
+*TODO*
 #### Q. What are gradients in CSS?
+*TODO*
 #### Q. What is CSS opacity?
+*TODO*
 #### Q. Write all the position states used in CSS.
+*TODO*
 #### Q. Enlist the various Media types used?
+*TODO*
 #### Q. What is contextual selector?
+*TODO*
