@@ -678,22 +678,18 @@ p {
 
 **Advantages:**
 
-    * CSS is made more maintainable.
-    * Easy to write nested selectors.
-    * Variables for consistent theming. Can share theme files across different projects.
-    * Mixins to generate repeated CSS.
-    * Splitting your code into multiple files. CSS files can be split up too but doing so will require an HTTP request to download each CSS file.
+* CSS is made more maintainable.
+* Easy to write nested selectors.
+* Variables for consistent theming. Can share theme files across different projects.
+* Mixins to generate repeated CSS.
+* Splitting your code into multiple files. CSS files can be split up too but doing so will require an HTTP request to download each CSS file.
 
 **Disadvantages:**
 
-    * Requires tools for preprocessing. Re-compilation time can be slow.
-
+* Requires tools for preprocessing. Re-compilation time can be slow.
 * Advantages of SASS/LESS: Use of variables, mixins, nesting, looping, partials and more.
-
 * Advantages POSTCSS: Use of future syntax. Ability to select only the plugins you need for a particular project. Writing plain CSS and applying the plugin to output necessary syntax that suits your needs – which in turn allows for the ability to remove or update that plugin if at any time it is not useful anymore. In other words, POSTCSS offers a lot of flexibility AND all of the features SASS/LESS offer. Versions of POSTCSS have been developed for both Grunt and Gulp.
-
 * Disadvantage POSTCSS: Keeping track of plugins for older projects could get hairy, though you have a package.json to reference.
-
 * Disdvantages of SASS/LESS: They are monolithic, and you need to learn a new language.
 
 
