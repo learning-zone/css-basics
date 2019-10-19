@@ -1127,8 +1127,6 @@ http://stackoverflow.com/questions/33651166/what-is-progressive-rendering
 
 #### Q. What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
 
-Note that these two 2 approaches are not exclusive.
-
 Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device's screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
 ```css
