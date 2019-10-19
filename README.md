@@ -1513,7 +1513,7 @@ body, p {
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
 #### Q. What is the difference between padding and margin?
-**Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.
+**Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.  
 **Padding** is applied to the inside of your element hence effecting how far your element's content is away from the border.
 
 Also, using margin will not affect your element's dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
