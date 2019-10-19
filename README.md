@@ -263,7 +263,6 @@ The selection of an element based on its occurrence in relation to another eleme
 
 #### Q. What is the difference between class selectors and id selectors?
 An overall block is given to class selector while id selectors take only a single element differing from other element
-  
 
 #### Q. When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you used BEM, OOCS or SMACSS)?    
 
@@ -359,62 +358,48 @@ To utilize a spritesheet in CSS, one would use certain properties, such as ```ba
 </div>
 
 #### Q. How can you clear sides of a floating element?
-
 If you clear a slide of an element, floating elements will not be accepted on that side. With 'clear' set to 'left', an element will be moved below any floating element on the left side. clear is used to stop wrap of an element around a floating element.
 
-
 #### Q. What is tweening?
-
 * It is the process of generating intermediate frames between two images.
-
 * It gives the impression that the first image has smoothly evolved into the second one.
-
 * It is an important method used in all types of animations.
-
 * In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
-
 
 #### Q. Who maintains the CSS specifications? What do you understand by W3C?
 W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the Web to its full potential by developing relevant protocols and guidelines.This is achieved primarily by creating and publishing Web standards. By adopting the Web standards created by the W3C, hardware manufacturers and software developers can ensure their equipment and programs work with the latest Web technologies. For example, most Web browsers incorporate several W3C standards, which allows them to interpret the latest versions of HTML and CSS code. When browsers conform to the W3C standards, it also helps Web pages appear consistent across different browsers.
 
-
 #### Q. Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?
 
 * ```visibility: hidden``` simply hides the element but it will occupy space and affect the layout of the document.
-
 * ```display: none``` removes the element from the normal layout flow (causes DOM reflow). It will not affect the layout of the document nor occupy space.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 #### Q. What is re-flow?
-
 * Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
 
 * Reflow occurs when you:
 
-    1. insert, remove or update an element in the DOM
-    1. modify content on the page, e.g. the text in an input box
-    1. move a DOM element
-    1. animate a DOM element
-    1. take measurements of an element such as offsetHeight or getComputedStyle
-    1. change a CSS style
-    1. change the className of an element
-    1. add or remove a stylesheet
-    1. resize the window
-    1. scroll
-
+  1. insert, remove or update an element in the DOM
+  1. modify content on the page, e.g. the text in an input box
+  1. move a DOM element
+  1. animate a DOM element
+  1. take measurements of an element such as offsetHeight or getComputedStyle
+  1. change a CSS style
+  1. change the className of an element
+  1. add or remove a stylesheet
+  1. resize the window
+  1. scroll
 
 #### Q. How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
 * The ```z-index``` property specifies the stack order of elements. An element with a higher ```z-index``` stack order is always rendered in front of an element with a lower ```z-index``` stack order on the screen. ```z-index``` only works on positioned elements ```position: absolute```, ```position: relative```, or ```position: fixed```. The default stack order of non-positioned elements is their order in the document.
     
-
 #### Q. What is the purpose of the ```z-index``` and how is it used?
 
 * The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number.
-
 * An element with a higher ```z-index``` is always stacked above than a lower index.
-
 * ```z-index``` can take the following values:
 
    * Auto: Sets the stack order equal to its parents.
@@ -437,7 +422,6 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 
 * ```sticky``` - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
-
 
 #### Q. The difference between block / inline / inline-block element?
     
@@ -768,14 +752,10 @@ Example: 01
 </div>
 
 #### Q. What are your favorite image replacement techniques and which do you use when?
-
 * lazy loading.
 * progressive image loading placeholders.
 
-
 #### Q. How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
-
-
 * Graceful degradation - The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
 * Progressive enhancement - The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
 * Use [caniuse.com](https://caniuse.com/) to check for feature support.
@@ -797,7 +777,6 @@ These techniques are related to accessibility (a11y).
 Even if WAI-ARIA is the ideal solution, I would go with the `absolute` positioning approach, as it has the least caveats, works for most elements and it's an easy technique.
 
 #### Q. How could you apply css rules specific to a media?
-
 * ```@media (max-width: 700px){...}``` means you want to apply rules to those media whose max-width is 700 px. this means every smaller device will have this rule.
 
 ```@media (max-width: 700px) and (orientation: landscape){...}``` will apply rules for media smaller than 700px and in landscape orientation.
@@ -846,26 +825,22 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 
 #### Q. What are the some pseudo classed u have used?
-
 * pseudo class tells you specific state of an element. allow to style element dynamically. The most popular one is ```:hover```. Besides i have used :visited, ```:focus```, ```:nth-child```, ```nth-of-type```, ```:link```, etc.
 
 * pseudo classes is better if you don't want to mess up with javaScript however, pseudo-classes is slow to process and apply rules.
 
 
 #### Q. How do you optimize css selectors?
-
 * This is very open and depend on what you are trying to achieve. If i order selectors in terms of render speed it would be like id, class, tag, siblings, child, descendant, universal, attribute, pseudo. Speed of ID and class is very close. However your code should be readable, maintainable and DRY along with highly performant.
 
 * The best practices in general are: avoid universal selectors, don't repeat yourself, remove redundant selectors, be as specific as possible, and keep learning.
 
 
 #### Q. How can you load css resources conditionally?
-
 ```@import``` allows you to load/import stylesheet by using a path (uri) representing the location of the file. You can define one or more media by comma separation for which you want to load the stylesheet. If browser dont support the media stylesheet will not be loaded.
 
 
 #### Q. Describe pseudo-elements and discuss what they are used for.
-
 A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). They can be used for decoration (`:first-line`, `:first-letter`) or adding elements to the markup (combined with `content: ...`) without having to modify the markup (`:before`, `:after`).
 
 * `:first-line` and `:first-letter` can be used to decorate text.
@@ -901,7 +876,6 @@ making it easier to reason about the layout of elements on the page.
 
 
 #### Q. How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?
-
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
 
 Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.
@@ -912,7 +886,6 @@ Adaptive design is more like the modern definition of progressive enhancement. I
 </div>
 
 #### Q. Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?
-
 _Retina_ is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. The key thing to know is that using a pixel ratio means these displays are emulating a lower resolution screen in order to show elements with the same size. Nowadays we consider all mobile devices _retina_ defacto displays.
 
 Browsers by default render DOM elements according to the device resolution, except for images.
