@@ -1400,7 +1400,28 @@ Also, using margin will not affect your element's dimensions whereas padding wil
 
 *Note:* **Top/Bottom margins are collapsible:** if you have a 20px margin at the bottom of an element and a 30px margin at the top of the next element, the margin between the two elements will be 30px rather than 50px. This does not apply to left/right margin or padding.
 #### Q. Explain new features in CSS3?
-*TODO*
+**1. CSS3 Selectors:**
+1. Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value.
+```css
+E[attr^=val]
+// Ex 
+a[href^='http://sales.']{color: teal;}
+```
+2.Matches any element E whose attribute attr ends in val. In other words, the val matches the end of the attribute value.
+```css
+E[attr$=val]
+eg. 
+a[href$='.jsp']{color: purple;}
+```
+3.Matches any element E whose attribute attr matches val anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word.
+```css
+E[attr*=val]  
+eg. 
+img[src*='artwork']{
+        border-color: #C3B087 #FFF #FFF #C3B087;
+}
+```
+
 #### Q. What are gradients in CSS?
 *TODO*
 #### Q. What is CSS opacity?
