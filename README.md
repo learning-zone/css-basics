@@ -1513,7 +1513,14 @@ body, p {
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
 #### Q. What is the difference between padding and margin?
-*TODO*
+**Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.
+**Padding** is applied to the inside of your element hence effecting how far your element's content is away from the border.
+
+Also, using margin will not affect your element's dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
+
+![alt text](https://github.com/learning-zone/css-interview-questions/blob/master/assets/box-model.gif "Box Model")
+
+*Note:* **Top/Bottom margins are collapsible:** if you have a 20px margin at the bottom of an element and a 30px margin at the top of the next element, the margin between the two elements will be 30px rather than 50px. This does not apply to left/right margin or padding.
 #### Q. Explain new features in CSS3?
 *TODO*
 #### Q. What are gradients in CSS?
