@@ -1275,12 +1275,10 @@ The universal selector has a specificity of 0, 0, 0, 0.
 </div>
 
 #### Q. What do you know about transition?
-* transition allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
+**transition** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
 
 
 #### What are the different css filter you can use?
-    https://developer.mozilla.org/en/docs/Web/CSS/filter
-
 * css filter allows to render DOM element, image, or video. u can choose from: grayscale, blur, opacity, brightness, contrast.
 
 #### Q. Enlist the various fonts properties?
