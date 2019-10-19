@@ -1289,38 +1289,30 @@ css filter allows to render DOM element, image, or video. u can choose from: gra
 * caption
 * icon
 
-
 #### Q. Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?
     
 * ```Floats``` specifies that an element should be taken from the normal flow and placed along the left or right side of its container, 
     where text and inline elements will wrap around it.
-    
 * ```Flexbox``` consists of flex containers and flex items. Flex containers wrap a set of flex items and define how they are laid out. 
-    Flex items has properites that define how they interact with sibling flex elements and can also be flex containers themselves.
-
+Flex items has properites that define how they interact with sibling flex elements and can also be flex containers themselves.
 
 #### Q. What is the difference between ```em``` and ```rem``` units?
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
-
 * ```em``` units inherit their value from the font-size of the parent element
 * ```rem``` units inherit their value from the font-size of the root element (html)
 
 In most browsers, the font-size of the root element is set to 16px by default.
 
-
 #### Q. What is the difference between ```span``` and ```div```?
-
 ```div``` is a block element and ```span``` is inline element.
 
 It is illegal to put block element inside inline element. div can have a p tag and a p tag can have a span. However, span can't have a div or p tag inside.
-
 
 #### Q. What does !important mean in CSS?
 * It overrides the cascade and gives the style rule the highest precedence.
 
 #### Q. What are optional closing tag? and why would u use it?
 ```p, li, td, tr, th, html, body```, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. However, you have to be careful to escape it.
-
 
 #### Q. What is a self closing tag?
 In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren’t required to have specific closing tags are called “self closing” tags.
@@ -1334,7 +1326,6 @@ An example of a self closing tag is something like a line break (```<br />```) o
 ```
 
 #### Q. How can u highlight text in html?
-
 use mark element.
 
 ```html
@@ -1374,7 +1365,6 @@ use mark element.
     <link href="style2.css" rel="stylesheet">
 </head>
 ```
-
 * No
 
 #### Q. Can u apply css rule to a part of html document?
