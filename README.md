@@ -64,7 +64,6 @@
 |58. |[What are the some pseudo classed u have used?](#q-what-are-the-some-pseudo-classed-u-have-used)|
 |59. |[How do you optimize css selectors?](#q-how-do-you-optimize-css-selectors)|
 |60. |[How can you load css resources conditionally?](#q-how-can-you-load-css-resources-conditionally)|
-|61. |[Describe pseudo-elements and discuss what they are used for.](#q-describe-pseudo-elements-and-discuss-what-they-are-used-for-1)
 |62. |[What are the properties related to box model?](#q-what-are-the-properties-related-to-box-model)|
 |63. |[What does  ```* { box-sizing: border-box; }``` do? What are its advantages?](#q-what-does-box-sizing-border-box-do-what-are-its-advantages)|
 |64. |[List as many values for the display property that you can remember.](#q-list-as-many-values-for-the-display-property-that-you-can-remember)
@@ -514,24 +513,6 @@ h3::before {
 #### Q. Does padding-left or padding-right or margin-left or margin-right has effect on inline element?
 
 * Yes
-
-
-#### Q. Describe pseudo-elements and discuss what they are used for.
-* https://developer.mozilla.org/en-US/docs/Web/CSS/pseudo-elements
-
-* A CSS pseudo-element is used to style specified parts of an element.
-
-For example, it can be used to:
-
-    Style the first letter, or line, of an element
-    Insert content before, or after, the content of an element
-
-```css
-p::first-line {
-    color: #ff0000;
-    font-variant: small-caps;
-}
-```
 
 #### Q. In a HTML document the pseudo class :root always refers to the html element?
 * True
