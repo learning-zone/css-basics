@@ -871,31 +871,25 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 * `:first-line` and `:first-letter` can be used to decorate text.
 * Used in the `.clearfix` hack as shown above to add a zero-space element with `clear: both`.
 * Triangular arrows in tooltips use `:before` and `:after`. Encourages separation of concerns because the triangle is considered part of styling and not really the DOM. It's not really possible to draw a triangle with just CSS styles without using an additional HTML element.
-
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 #### Q. What are the properties related to box model?
-
 * Technically, height, width, padding and border are part of box model and margin is related to it.
-
 * Everything in a web page is a box where you can control size, position, background, etc. Each box/ content area is optionally surrounded by padding, border and margin. When you set height and width of an element, you set content height and width.
-
-
 
 #### Q. What does  ```* { box-sizing: border-box; }``` do? What are its advantages?
 * Make every element in the document include the padding and border in the element's inner dimensions; 
-    making it easier to reason about the layout of elements on the page.
-
+making it easier to reason about the layout of elements on the page.
 * By default, elements have `box-sizing: content-box` applied, and only the content size is being accounted for.
 * `box-sizing: border-box` changes how the `width` and `height` of elements are being calculated, `border` and `padding` are also being included in the calculation.
 * The `height` of an element is now calculated by the content's `height` + vertical `padding` + vertical `border` width.
 * The `width` of an element is now calculated by the content's `width` + horizontal `padding` + horizontal `border` width.
 * Taking into account `padding`s and `border`s as part of our box model resonates better with how designers actually imagine content in grids.
 
-
 #### Q. List as many values for the display property that you can remember.
-
 * `none`, `block`, `inline`, `inline-block`, `table`, `table-row`, `table-cell`, `list-item`.
-
 
 #### Q. Have you played around with the new CSS Flexbox or Grid specs?
 
@@ -1023,7 +1017,6 @@ body {
 }
 /*  ends with the closing curly brace above */
 ```
-
 
 #### Q. Provide CSS so that three lines are displayed red, then green, then blue (2):
 ```html
