@@ -40,7 +40,7 @@
 |34. |[Explain what elements will match each of the following CSS selectors:](#q-explain-what-elements-will-match-each-of-the-following-css-selectors)|
 |35. |[Explain the meaning of each of these CSS units for expressing length:](#q-explain-the-meaning-of-each-of-these-css-units-for-expressing-length)|
 |36. |[In CSS3, how would you select:](#q-in-css3-how-would-you-select)|
-|37. |[What is the purpose of the box-sizing property? What are it's possible values?](#q-what-is-the-purpose-of-the-box-sizing-property-what-are-it-s-possible-values)|
+|37. |[What is the purpose of the box-sizing property?](#q-what-is-the-purpose-of-the-box-sizing-property)|
 |38. |[How to create a zebra striped table with CSS?](#q-how-to-create-a-zebra-striped-table-with-css)|
 |39. |[What is the difference between RGBa, HEX and HSLa?](#q-what-is-the-difference-between-rgba-hex-and-hsla)|
 |40. |[What is CSS preprocessor and why to user one?](#q-what-is-css-preprocessor-and-why-to-user-one)|
@@ -612,7 +612,7 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
     * a[href*="css"]
 
 
-#### Q. What is the purpose of the box-sizing property? What are it's possible values?
+#### Q. What is the purpose of the box-sizing property?
 
 * The box-sizing CSS property sets how the total width and height of an element is calculated.
 
