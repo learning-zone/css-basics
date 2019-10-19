@@ -1420,14 +1420,10 @@ use mark element.
 
 * No
 
-
 #### Q. Can u apply css rule to a part of html document?
-
 yes. by using "scopped" in the style tag.
 
-
-#### Q. What are some rules for writing efficient CSS?  
-    
+#### Q. What are some rules for writing efficient CSS?      
 Firstly, understand that browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector. Hence avoid key selectors that are tag and universal selectors. They match a large number of elements and browsers will have to do more work in determining if the parents do match.
 
 [BEM (Block Element Modifier)](https://bem.info/) methodology recommends that everything has a single class, and, where you need hierarchy, that gets baked into the name of the class as well, this naturally makes the selector efficient and easy to override.
@@ -1436,21 +1432,13 @@ Be aware of which CSS properties trigger reflow, repaint, and compositing. Avoid
 
 
 #### SASS basic concepts
-
 * **Variables**: Variables in SASS start with $ sign
-
 * **Nesting**: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
-
 * **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
-
 * **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
-
 * If/Else Statements and loops
-
 * **import**: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
-
 * **Math operations**: can be used for standard arithmetic or unit conversions.
-
 
 #### Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
     
