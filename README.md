@@ -1179,9 +1179,10 @@ Accessibility means letting the user navigate and interact with a website by any
 
 
 #### Q. What is UI/UX?
-* UI—or User Interface—is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
-    But UX—or User Experience—is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
-    So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
+**UI or User Interface**:  is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
+
+**UX or User Experience**: is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
+So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
 
 #### Q. What is semantic?
 Semantic HTML, or "semantically-correct HTML", is HTML where the tags used to structure content are selected and applied appropriately to the meaning of the content.
