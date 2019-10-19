@@ -625,7 +625,7 @@ Example:
 ```css
 box-sizing: content-box;
 width: 100%;
-border: solid #5B6DCD 10px;
+border: solid rgb(90,107,204) 10px;
 padding: 5px;
 ```
 
