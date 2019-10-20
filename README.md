@@ -1454,7 +1454,45 @@ div.halfalpha {
   color: #000000;
 }
 ``` 
-
+**4. Rounded Corners: border-radius**
+```css
+border-radius: 25px;
+```
+**5 Drop Shadows**
+```css
+box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
+```
+**6. Text Shadow**  
+```css
+text-shadow: topOffset leftOffset blurRadius color;
+```
+**7. Linear Gradients**
+```css
+Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
+/* Example */   
+#grad {
+  background: linear-gradient(to right, red , yellow);
+}
+```
+**8. Radial Gradients**  
+```css
+Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
+/* Example */      
+#grad {
+  background: radial-gradient(red, yellow, green);
+}//Default       
+#grad {
+  background: radial-gradient(circle, red, yellow, green);
+}//Circle
+```
+**9. Multiple Background Images**
+In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
+```css
+background-image:
+url(firstImage.jpg),
+url(secondImage.gif),
+url(thirdImage.png);
+```
 
 #### Q. What are gradients in CSS?
 *TODO*
