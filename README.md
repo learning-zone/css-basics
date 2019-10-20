@@ -1494,7 +1494,7 @@ url(secondImage.gif),
 url(thirdImage.png);
 ```
 #### Q. What are gradients in CSS?
-CSS gradients are represented by the <gradient> data type, a special type of <image> made of a progressive transition between two or more colors. There are three types of gradients: 
+CSS gradients are represented by the `<gradient>` data type, a special type of `<image>` made of a progressive transition between two or more colors. There are three types of gradients: 
 * linear (created with the `linear-gradient()` function), 
 * radial (created with `radial-gradient()`), and 
 * conic (created with the `conic-gradient()` function).  
