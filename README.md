@@ -127,7 +127,7 @@
 1. [What is contextual selector?](#q-what-is-contextual-selector)
 1. [How is the concept of inheritance applied in CSS?](#q-how-is-the-concept-of-inheritance-applied-in-css?)
 1. [How do you handle browser differences in your user base?](#q-how-do-you-handle-browser-differences-in-your-user-base)
-1. [What is Cascade](#q-what-is-cascade)
+1. [What is Cascade?](#q-what-is-cascade)
 1. [How Do I Have A Fixed (non-scrolling) Background Image](#q-how-do-i-have-a-fixed-non-scrolling-background-image)
 1. [Describe the following common CSS units of length: cm, em, in, mm, pc, pt, and px.](#q-describe-the-following-common-css-units-of-length-cm-em-in-mm-pc-pt-and-px.)
 1. [What are CSS vendor prefixes?](#q-what-are-css-vendor-prefixes)
