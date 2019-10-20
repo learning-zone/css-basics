@@ -126,6 +126,7 @@
 1. [What are gradients in CSS?](#q-what-are-gradients-in-css)
 1. [What is CSS opacity?](#q-what-is-css-opacity)
 1. [What is contextual selector?](#q-what-is-contextual-selector)
+1. [How is the concept of inheritance applied in CSS?](#q-how-is-the-concept-of-inheritance-applied-in-css?)
 
 #### Q. What are the text properties in css?
 
@@ -1552,6 +1553,20 @@ It also check the context of the class in the html tree, assigning the style to 
 Example
 ```css
 table p { property: value; } 
+```
+
+#### Q. How is the concept of inheritance applied in CSS?
+Inheritance is a concept in which the child class will inherit the properties of its parent class. It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children class if the child uses the same name.
+
+Example
+```css
+span {
+  color: blue;
+  border: 1px solid black;
+}
+.extra span {
+  color: inherit;
+}
 ```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
