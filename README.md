@@ -66,7 +66,7 @@
 1. [What does  ```* { box-sizing: border-box; }``` do? What are its advantages?](#q-what-does-box-sizing-border-box-do-what-are-its-advantages)
 1. [List as many values for the display property that you can remember.](#q-list-as-many-values-for-the-display-property-that-you-can-remember)
 1. [Have you played around with the new CSS Flexbox or Grid specs?](#q-have-you-played-around-with-the-new-css-flexbox-or-grid-specs)
-1. [How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?](#q-how-is-responsive-design-different-from-adaptive-design-what-is-responsive-design-what-is-the-difference-between-fixed-and-fluid-layouts-what-are-some-of-the-pros-and-cons-with-these-designs)
+1. [How is responsive design different from adaptive design?](#q-how-is-responsive-design-different-from-adaptive-design)
 1. [Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?](#q-have-you-ever-worked-with-retina-graphics-if-so-when-and-what-techniques-did-you-use-what-kind-of-techniques-do-you-use-to-handle-images-for-retina-screens)
 1. [Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?](#q-is-there-any-reason-you-d-want-to-use-translate-instead-of-absolute-positioning-or-vice-versa-and-why)
 1. [The translate() function can move the position of an element on the z-axis.](#q-the-translate-function-can-move-the-position-of-an-element-on-the-z-axis)
@@ -867,7 +867,7 @@ making it easier to reason about the layout of elements on the page.
 * Grid specs CSS Grid Layout is a specification for creating two-dimensional grids Grid is a companion to the Flexible Box Module (flexbox). Flexbox is designed for one-dimensional layout, so things can be arranged in an unbroken line. Grid is designed for two-dimensional layout, meaning the items don't need to sit next to each other. In the future we're likely to use both: Grid Layout for main page areas, and flexbox for the smaller UI elements it excels with.
 
 
-#### Q. How is responsive design different from adaptive design? What is responsive design? What is the difference between fixed and fluid layouts? What are some of the pros and cons with these designs?
+#### Q. How is responsive design different from adaptive design? 
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
 
 Responsive design works on the principle of flexibility - a single fluid website that can look good on any device. Responsive websites use media queries, flexible grids, and responsive images to create a user experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.
