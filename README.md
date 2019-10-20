@@ -10,7 +10,6 @@
 1. [What are the css Selectors?](#q-what-are-the-css-selectors)
 1. [What are Combinators?](#q-what-are-combinators)
 1. [What is the difference between class selectors and id selectors?](#q-what-is-the-difference-between-class-selectors-and-id-selectors)
-1. [When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you used BEM, OOCS or SMACSS)?](#q-when-working-on-a-large-codebase-css-it-can-quickly-become-unwieldly-and-difficult-to-maintain-how-do-you-approach-this-problem-how-do-you-architect-your-css-and-have-you-used-bem-oocs-or-smacss)
 1. [What is CSS BEM?](#q-what-is-css-bem)
 1. [Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?](#q-explain-css-sprites-and-how-you-would-implement-them-on-a-page-or-site-how-do-you-go-about-creating-them-what-are-possible-alternatives-to-sprites)
 1. [What are the benefits of CSS sprites?](#q-what-are-the-benefits-of-css-sprites)
@@ -260,8 +259,6 @@ The selection of an element based on its occurrence in relation to another eleme
 
 #### Q. What is the difference between class selectors and id selectors?
 An overall block is given to class selector while id selectors take only a single element differing from other element
-
-#### Q. When working on a large codebase CSS it can quickly become unwieldly and difficult to maintain. How do you approach this problem? How do you architect your CSS (and have you used BEM, OOCS or SMACSS)?    
 
 #### Q. What is CSS BEM?
 
