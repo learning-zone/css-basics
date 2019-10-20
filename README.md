@@ -128,6 +128,7 @@
 1. [What is contextual selector?](#q-what-is-contextual-selector)
 1. [How is the concept of inheritance applied in CSS?](#q-how-is-the-concept-of-inheritance-applied-in-css?)
 1. [How do you handle browser differences in your user base?](#q-how-do-you-handle-browser-differences-in-your-user-base)
+1. [What is Cascade](#q-what-is-cascade)
 
 #### Q. What are the text properties in css?
 
@@ -1578,6 +1579,14 @@ The `@supports` query in CSS can be very useful to scan if the user’s current 
   }
 }
 ```
+
+#### Q. What is Cascade?
+Cascade is a method of defining the weight (importance) of individual styling rules thus allowing conflicting rules to be sorted out should such rules apply to the same selector.
+```css
+P {color: white ! important} /* increased weight */
+P (color: black} /* normal weight */
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
