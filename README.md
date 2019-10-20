@@ -11,8 +11,7 @@
 1. [What are Combinators?](#q-what-are-combinators)
 1. [What is the difference between class selectors and id selectors?](#q-what-is-the-difference-between-class-selectors-and-id-selectors)
 1. [What is CSS BEM?](#q-what-is-css-bem)
-1. [Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?](#q-explain-css-sprites-and-how-you-would-implement-them-on-a-page-or-site-how-do-you-go-about-creating-them-what-are-possible-alternatives-to-sprites)
-1. [What are the benefits of CSS sprites?](#q-what-are-the-benefits-of-css-sprites)
+1. [What are the benefits of using CSS sprites?](#q-what-are-the-benefits-of-using-css-sprites)
 1. [What is the float property and what float do?](#q-what-is-the-float-property-and-what-float-do)
 1. [How can you clear sides of a floating element?](#q-how-can-you-clear-sides-of-a-floating-element)
 1. [What is tweening?](#q-what-is-tweening)
@@ -309,7 +308,7 @@ These must be chained to the Element and never alone however, or there will be s
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain CSS sprites, and how you would implement them on a page or site. How do you go about creating them? What are possible alternatives to sprites?    
+#### Q. What are the benefits of using CSS sprites? 
     
 CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. How to implement it:
 
