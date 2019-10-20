@@ -130,6 +130,7 @@
 1. [How do you handle browser differences in your user base?](#q-how-do-you-handle-browser-differences-in-your-user-base)
 1. [What is Cascade](#q-what-is-cascade)
 1. [How Do I Have A Fixed (non-scrolling) Background Image](#q-how-do-i-have-a-fixed-non-scrolling-background-image)
+1. [Describe the following common CSS units of length: cm, em, in, mm, pc, pt, and px.](#q-describe-the-following-common-css-units-of-length-cm-em-in-mm-pc-pt-and-px.)
 
 #### Q. What are the text properties in css?
 
@@ -1596,6 +1597,17 @@ body {
   color: black ;
 }
 ```
+
+#### Q. Describe the following common CSS units of length: cm, em, in, mm, pc, pt, and px.
+There are many ways to express units of length within CSS, but these are just some of the more common ones.
+* **cm**: centimeters
+* **em**: a relative unit of measurement based on the size of a font
+* **in**: inches
+* **mm**: millimeters
+* **pc**: pica, a unit of length equivalent to 12 points, or 1/6 of an inch
+* **pt**: 1/72 of an inch
+* **px**: a device-specific relative measurement equivalent to a certain number of pixels on a display
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
