@@ -1493,9 +1493,18 @@ url(firstImage.jpg),
 url(secondImage.gif),
 url(thirdImage.png);
 ```
-
 #### Q. What are gradients in CSS?
-*TODO*
+CSS gradients are represented by the <gradient> data type, a special type of <image> made of a progressive transition between two or more colors. There are three types of gradients: 
+* linear (created with the `linear-gradient()` function), 
+* radial (created with `radial-gradient()`), and 
+* conic (created with the `conic-gradient()` function). 
+We can also create repeating gradients with the `repeating-linear-gradient()`, `repeating-radial-gradient()`, and `repeating-conic-gradient()` functions.
+```css
+.simple-linear {
+  background: linear-gradient(blue, pink);
+}
+```
+
 #### Q. What is CSS opacity?
 *TODO*
 #### Q. Write all the position states used in CSS.
