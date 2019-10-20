@@ -1611,10 +1611,11 @@ There are many ways to express units of length within CSS, but these are just so
 
 #### Q. What are CSS vendor prefixes?
 Vendor prefixes are extensions to CSS standards that can be added to these features to prevent incompatibilities from arising when the standard is extended. CSS vendor prefixes for some common platforms are listed below.
-**-webkit-**: Android, Chrome, iOS, and Safari
-**-moz-**: Mozilla Firefox
-**-ms-**: Internet Explorer
-**-o-**: Opera
+
+* **-webkit-**: Android, Chrome, iOS, and Safari
+* **-moz-**: Mozilla Firefox
+* **-ms-**: Internet Explorer
+* **-o-**: Opera
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
