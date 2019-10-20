@@ -1,5 +1,8 @@
 ## SCSS Interview Questions and Answers
 
+#### Q. What are Sass, Less, and Stylus? Why do people use them? How does something like Compass relate to Sass?
+They are CSS preprocessors. They are an abstraction layer on top of CSS. They are a special syntax/language that compile down into CSS. They make managing CSS easier, with things like variables and mixins to handle vendor prefixes (among other things). They make doing best practices easier, like concatenating and compressing CSS.
+
 #### Q. What is file splitting and why should you use it?
 File splitting helps organize your CSS into multiple files, decreasing page load time and making things easier to manage. How you decide to split them up is up to you, but it can be useful to separate files by component. For example, we can have all button styles in a file called `_buttons.scss` or all your header-specific styles in a file called `_header.scss`, main file, say _app.scss, and we can import those files by writing @import 'buttons';
 
