@@ -1497,7 +1497,8 @@ url(thirdImage.png);
 CSS gradients are represented by the <gradient> data type, a special type of <image> made of a progressive transition between two or more colors. There are three types of gradients: 
 * linear (created with the `linear-gradient()` function), 
 * radial (created with `radial-gradient()`), and 
-* conic (created with the `conic-gradient()` function). 
+* conic (created with the `conic-gradient()` function).  
+ 
 We can also create repeating gradients with the `repeating-linear-gradient()`, `repeating-radial-gradient()`, and `repeating-conic-gradient()` functions.
 ```css
 .simple-linear {
