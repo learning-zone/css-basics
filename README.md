@@ -22,7 +22,7 @@
 1. [How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?](#q-how-does-z-index-relate-to-positioning-describe-z-index-and-how-stacking-context-is-formed)
 1. [What is the purpose of the ```z-index``` and how is it used?](#q-what-is-the-purpose-of-the-z-index-and-how-is-it-used)
 1. [Exaplain CSS position Property?](#q-exaplain-css-position-property)
-1. [The difference between block / inline / inline-block element?](#q-the-difference-between-block-inline-inline-block-element)
+1. [The difference between block, inline and inline-block element?](#q-the-difference-between-block-inline-and-inline-block-element)
 1. [What are counters in CSS3?](#q-what-are-counters-in-css3)
 1. [Are CSS rule names case sensitive?](#q-are-css-rule-names-case-sensitive)
 1. [Does margin-top or margin-bottom has effect on inline element?](#q-does-margin-top-or-margin-bottom-has-effect-on-inline-element)
@@ -415,7 +415,7 @@ W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the 
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-#### Q. The difference between block / inline / inline-block element?
+#### Q. The difference between block, inline and inline-block element?
     
 * Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
     That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
