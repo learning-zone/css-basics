@@ -1485,6 +1485,10 @@ url(firstImage.jpg),
 url(secondImage.gif),
 url(thirdImage.png);
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What are gradients in CSS?
 CSS gradients are represented by the `<gradient>` data type, a special type of `<image>` made of a progressive transition between two or more colors. There are three types of gradients: 
 * linear (created with the `linear-gradient()` function), 
@@ -1518,6 +1522,10 @@ We can also create repeating gradients with the `repeating-linear-gradient()`, `
    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%); 
 }
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is CSS opacity?
 The `opacity` CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
 ```css
