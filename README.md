@@ -725,8 +725,8 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
 * Use Reset CSS or Normalize.css.
 
-Example: 01
 ```css
+/*Example: 01*/
 .box-shadow {
   background-color: red;
   background-image: url(gradient-slice.png);
@@ -738,7 +738,6 @@ Example: 01
 }
 
 /*Example: 02*/
-
 .box {
 	-moz-border-radius: 15px;    /* Firefox */
 	-webkit-border-radius: 15px; /* Safari and Chrome */
