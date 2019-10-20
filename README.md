@@ -1498,14 +1498,34 @@ CSS gradients are represented by the <gradient> data type, a special type of <im
 * linear (created with the `linear-gradient()` function), 
 * radial (created with `radial-gradient()`), and 
 * conic (created with the `conic-gradient()` function).  
- 
+
 We can also create repeating gradients with the `repeating-linear-gradient()`, `repeating-radial-gradient()`, and `repeating-conic-gradient()` functions.
 ```css
+/* Example - 01: A basic linear gradient */
 .simple-linear {
   background: linear-gradient(blue, pink);
 }
-```
 
+/* Example - 02: Changing the direction */
+.horizontal-gradient {
+  background: linear-gradient(to right, blue, pink);
+}
+
+/* Example - 03: Diagonal gradients */
+.diagonal-gradient {
+  background: linear-gradient(to bottom right, blue, pink);
+}
+
+/* Example - 04: Using angles */
+.angled-gradient {
+  background: linear-gradient(70deg, blue, pink);
+}
+
+/* Example - 05: Creating hard lines */
+.striped { 
+   background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%); 
+}
+```
 #### Q. What is CSS opacity?
 *TODO*
 #### Q. Write all the position states used in CSS.
