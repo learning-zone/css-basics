@@ -129,6 +129,7 @@
 1. [How is the concept of inheritance applied in CSS?](#q-how-is-the-concept-of-inheritance-applied-in-css?)
 1. [How do you handle browser differences in your user base?](#q-how-do-you-handle-browser-differences-in-your-user-base)
 1. [What is Cascade](#q-what-is-cascade)
+1. [How Do I Have A Fixed (non-scrolling) Background Image](#q-how-do-i-have-a-fixed-non-scrolling-background-image)
 
 #### Q. What are the text properties in css?
 
@@ -1587,6 +1588,14 @@ P {color: white ! important} /* increased weight */
 P (color: black} /* normal weight */
 ```
 
+#### Q. How Do I Have A Fixed (non-scrolling) Background Image?
+In CSS, we can use the background-attachment property. The background attachment can be included in the shorthand background property, as in this example:
+```css
+body {
+  background: white url(example.gif) fixed ;
+  color: black ;
+}
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
