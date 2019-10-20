@@ -1543,7 +1543,14 @@ div { background-color: yellow; }
 <div class="heavy">This is very easy to see.</div>
 ```
 #### Q. What is contextual selector?
-*TODO*
+Contextual selector addresses specific occurrence of an element. It is a string of individual selectors separated by white space (search pattern), where only the last element in the pattern is addressed providing it matches the specified contex.
+
+It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
+
+Example
+```css
+table p { property: value; } 
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
