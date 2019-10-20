@@ -1441,6 +1441,20 @@ The negation pseudo-class selector, `:not` can be coupled with almost any other 
 ```css
 img:not([border]){border: 1;}
 ```
+**3. CSS3 Colors**  
+The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: **HSL**, **HSLA**, **RGBA** and **Opacity**.
+```css
+div.halfopaque {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  color: #000000;
+}
+div.halfalpha {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+``` 
+
 
 #### Q. What are gradients in CSS?
 *TODO*
