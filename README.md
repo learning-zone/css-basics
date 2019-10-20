@@ -131,6 +131,7 @@
 1. [What is Cascade](#q-what-is-cascade)
 1. [How Do I Have A Fixed (non-scrolling) Background Image](#q-how-do-i-have-a-fixed-non-scrolling-background-image)
 1. [Describe the following common CSS units of length: cm, em, in, mm, pc, pt, and px.](#q-describe-the-following-common-css-units-of-length-cm-em-in-mm-pc-pt-and-px.)
+1. [What are CSS vendor prefixes?](#q-what-are-css-vendor-prefixes)
 
 #### Q. What are the text properties in css?
 
@@ -1607,6 +1608,13 @@ There are many ways to express units of length within CSS, but these are just so
 * **pc**: pica, a unit of length equivalent to 12 points, or 1/6 of an inch
 * **pt**: 1/72 of an inch
 * **px**: a device-specific relative measurement equivalent to a certain number of pixels on a display
+
+#### Q. What are CSS vendor prefixes?
+Vendor prefixes are extensions to CSS standards that can be added to these features to prevent incompatibilities from arising when the standard is extended. CSS vendor prefixes for some common platforms are listed below.
+**-webkit-**: Android, Chrome, iOS, and Safari
+**-moz-**: Mozilla Firefox
+**-ms-**: Internet Explorer
+**-o-**: Opera
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
