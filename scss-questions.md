@@ -1,6 +1,9 @@
 ## SCSS Interview Questions and Answers
 
-#### SASS basic concepts
+#### Q. What is file splitting and why should you use it?
+File splitting helps organize your CSS into multiple files, decreasing page load time and making things easier to manage. How you decide to split them up is up to you, but it can be useful to separate files by component. For example, we can have all button styles in a file called `_buttons.scss` or all your header-specific styles in a file called `_header.scss`, main file, say _app.scss, and we can import those files by writing @import 'buttons';
+
+#### Q. What are the SASS basic features?
 * **Variables**: Variables in SASS start with $ sign
 * **Nesting**: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
 * **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
