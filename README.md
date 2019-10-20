@@ -1571,7 +1571,20 @@ span {
 ```
 
 #### Q. How do you handle browser differences in your user base?
+The `@supports` query in CSS can be very useful to scan if the user’s current browser has a certain feature. The `@supports` CSS at-rule lets you specify declarations that depend on a browser's support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
+```css
+@supports (display: grid) {
+  div {
+    display: grid;
+  }
+}
 
+@supports not (display: grid) {
+  div {
+    float: right;
+  }
+}
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
