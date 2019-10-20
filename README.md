@@ -127,6 +127,7 @@
 1. [What is CSS opacity?](#q-what-is-css-opacity)
 1. [What is contextual selector?](#q-what-is-contextual-selector)
 1. [How is the concept of inheritance applied in CSS?](#q-how-is-the-concept-of-inheritance-applied-in-css?)
+1. [How do you handle browser differences in your user base?](#q-how-do-you-handle-browser-differences-in-your-user-base)
 
 #### Q. What are the text properties in css?
 
@@ -1568,6 +1569,9 @@ span {
   color: inherit;
 }
 ```
+
+#### Q. How do you handle browser differences in your user base?
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
