@@ -92,3 +92,11 @@ body, p {
 |– Variable names are prefaced with the @symbol	    |– Variable name are prefaced with $ symbol
 |– LESS does not inherit multiple selectors with one set of properties | – Sass inherits multiple selectors with one set of properties |
 |– LESS does not work with “unknown” units neither it returns syntax error notification for incompatible units or maths related syntax error|	– Sass allows you to work with “unknown” units also returns a syntax error notification for incompatible units|
+
+#### Q. Why Sass is considered better than LESS?
+* Saas allows you to write reusable methods and use logic statements, e., loops, and conditionals
+* Saas user can access Compass library and use some awesome features like dynamic sprite map generation, legacy browser hacks * and cross-browser support for CSS3 features
+* Compass also allows you to add an external framework like Blueprint, Foundation or Bootstrap on top
+* In LESS, you can write a basic logic statement using a ‘guarded mixin’, which is equivalent to Sass if statements
+* In LESS, you can loop through numeric values using recursive functions while Sass allows you to iterate any kind of data
+* In Sass, you can write your own handy functions
