@@ -42,7 +42,7 @@
 1. [How to create a zebra striped table with CSS?](#q-how-to-create-a-zebra-striped-table-with-css)
 1. [What is the difference between RGBa, HEX and HSLa?](#q-what-is-the-difference-between-rgba-hex-and-hsla)
 1. [What is CSS preprocessor and why to user one?](#q-what-is-css-preprocessor-and-why-to-user-one)
-1. [What are the advantages/disadvantages of using CSS preprocessors?](#q-what-are-the-advantages-disadvantages-of-using-css-preprocessors)
+1. [What are the advantages and disadvantages of using CSS preprocessors?](#q-what-are-the-advantages-and-disadvantages-of-using-css-preprocessors)
 1. [What is the difference between "resetting" and "normalizing" CSS? Which would you choose and why?](#q-what-is-the-difference-between-resetting-and-normalizing-css-which-would-you-choose-and-why)
 1. [Describe Floats and how they work.](#q-describe-floats-and-how-they-work)
 1. [Describe BFC(Block Formatting Context) and how it works.](#q-describe-bfc-block-formatting-context-and-how-it-works)
@@ -637,7 +637,7 @@ p {
     * Stylus
     * PostCSS
 
-#### Q. What are the advantages/disadvantages of using CSS preprocessors?
+#### Q. What are the advantages and disadvantages of using CSS preprocessors?
 
 **Advantages:**
 
