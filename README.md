@@ -119,7 +119,6 @@
 1. [Does style1.css have to be downloaded and parsed before style2.css can be fetched?](#q-does-style1css-have-to-be-downloaded-and-parsed-before-style2css-can-be-fetched)
 1. [Can u apply css rule to a part of html document?](#q-can-u-apply-css-rule-to-a-part-of-html-document)
 1. [What are some rules for writing efficient CSS?](#q-what-are-some-rules-for-writing-efficient-css)
-1. [SASS basic concepts](#sass-basic-concepts)
 1. [Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?](#q-explain-the-include-mixin-function-functions-and-how-they-are-used-what-is-placeholder)
 1. [What are the CSS positioning?](#q-what-are-the-css-positioning)
 1. [What is the difference between padding and margin?](#q-what-is-the-difference-between-padding-and-margin)
