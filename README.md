@@ -1474,7 +1474,7 @@ Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
   background: linear-gradient(to right, red , yellow);
 }
 ```
-**8. Radial Gradients**  
+**8. Radial Gradients**    
 ```css
 Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
 /* Example */      
@@ -1485,7 +1485,7 @@ Syntax : background: radial-gradient(shape size at position, start-color, ..., l
   background: radial-gradient(circle, red, yellow, green);
 }//Circle
 ```
-**9. Multiple Background Images**
+**9. Multiple Background Images**   
 In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
 ```css
 background-image:
