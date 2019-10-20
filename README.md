@@ -117,7 +117,7 @@
 1. [Does the following trigger http request at the time of page load?](#q-does-the-following-trigger-http-request-at-the-time-of-page-load)
 1. [Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?](#q-does-style2css-have-to-be-downloaded-and-parsed-before-paragraph-1-is-rendered-on-the-page)
 1. [Does style1.css have to be downloaded and parsed before style2.css can be fetched?](#q-does-style1css-have-to-be-downloaded-and-parsed-before-style2css-can-be-fetched)
-1. [Can u apply css rule to a part of html document?](#q-can-u-apply-css-rule-to-a-part-of-html-document)
+1. [Is it possible to apply css rule to a part of html document?](#q-is-it-possible-to-apply-css-rule-to-a-part-of-html-document)
 1. [What are some rules for writing efficient CSS?](#q-what-are-some-rules-for-writing-efficient-css)
 1. [Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?](#q-explain-the-include-mixin-function-functions-and-how-they-are-used-what-is-placeholder)
 1. [What are the CSS positioning?](#q-what-are-the-css-positioning)
@@ -1270,7 +1270,7 @@ The universal selector has a specificity of 0, 0, 0, 0.
 **transition** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
 
 #### Q. What are the different css filter you can use?
-css filter allows to render DOM element, image, or video. u can choose from: grayscale, blur, opacity, brightness, contrast.
+css filter allows to render DOM element, image, or video. We can choose from: grayscale, blur, opacity, brightness, contrast.
 
 #### Q. Enlist the various fonts properties?
 * font-style
@@ -1282,7 +1282,6 @@ css filter allows to render DOM element, image, or video. u can choose from: gra
 * icon
 
 #### Q. Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?
-    
 * ```Floats``` specifies that an element should be taken from the normal flow and placed along the left or right side of its container, 
     where text and inline elements will wrap around it.
 * ```Flexbox``` consists of flex containers and flex items. Flex containers wrap a set of flex items and define how they are laid out. 
@@ -1359,7 +1358,7 @@ use mark element.
 ```
 * No
 
-#### Q. Can u apply css rule to a part of html document?
+#### Q. Is it possible to apply css rule to a part of html document?
 yes. by using "scopped" in the style tag.
 
 #### Q. What are some rules for writing efficient CSS?      
