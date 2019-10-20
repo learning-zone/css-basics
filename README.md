@@ -1421,6 +1421,26 @@ img[src*='artwork']{
         border-color: #C3B087 #FFF #FFF #C3B087;
 }
 ```
+**2. Pseudo-classes**  
+CSS2 supports user interaction pseudo-classes, namely `:link`, `:visited`, `:hover`, `:active`, and `:focus`.  
+A few more pseudo-class selectors were added in CSS3. One is the `:root` selector, which allows designers to point to the root element of a document.
+```css
+:root{overflow:auto;}
+```
+As a complement to the `:first-child` selector, the `:last-child` was added. With it one can select the last element named of a parent element.
+```css
+div.article > p:last-child{font-style: italic;}
+```
+A new user interaction pseudo-class selector was added, the `:target` selector.
+```html
+span.notice:target{font-size: 2em; font-style: bold;}
+<a href='#section2'>Section 2</a>
+<p id='section2'>...</p>
+```
+The negation pseudo-class selector, `:not` can be coupled with almost any other selector that has been implemented.
+```css
+img:not([border]){border: 1;}
+```
 
 #### Q. What are gradients in CSS?
 *TODO*
