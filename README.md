@@ -128,7 +128,6 @@
 |124. |[Explain new features in CSS3?](#q-explain-new-features-in-css3)|
 |125. |[What are gradients in CSS?](#q-what-are-gradients-in-css)|
 |126. |[What is CSS opacity?](#q-what-is-css-opacity)|
-|128. |[Enlist the various Media types used?](#q-enlist-the-various-media-types-used)|
 |129. |[What is contextual selector?](#q-what-is-contextual-selector)|
 
 #### Q. What are the text properties in css?
@@ -1543,8 +1542,6 @@ div { background-color: yellow; }
 <div class="medium">This is easier to see.</div>
 <div class="heavy">This is very easy to see.</div>
 ```
-#### Q. Enlist the various Media types used?
-*TODO*
 #### Q. What is contextual selector?
 *TODO*
 <div align="right">
