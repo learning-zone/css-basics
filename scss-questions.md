@@ -18,7 +18,19 @@ body {
 }
 ```
 #### Q. What are the SASS basic features?
-* **Variables**: Variables in SASS start with $ sign
+* **Variables**: Variables in SASS start with `$` sign
+Example
+```css
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
+
 * **Nesting**: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
 * **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
 * **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
