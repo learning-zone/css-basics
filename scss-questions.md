@@ -8,7 +8,7 @@ File splitting helps organize your CSS into multiple files, decreasing page load
 
 #### Q. What are variables used for?
 Variables are super useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones, not 4 different versions of roughly the same color.
-```css
+```scss
 $primary-font-stack: 'Helvetica', sans-serif;
 $primary-color: #fccd48;
 
@@ -19,7 +19,7 @@ body {
 ```
 #### Q. What are the SCSS basic features?
 * **Variables**: Variables in SCSS start with `$` sign
-```css
+```scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -31,7 +31,7 @@ body {
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
 * **Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
-```css
+```scss
 nav {
   ul {
     margin: 0;
@@ -51,7 +51,7 @@ nav {
 * **Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
 
 * **Modules**: This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
-```css
+```scss
 // _base.scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
@@ -61,7 +61,7 @@ body {
   color: $primary-color;
 }
 ```
-```css
+```scss
 // styles.scss
 @use 'base';
 
@@ -71,7 +71,7 @@ body {
 }
 ```
 * **mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
-```css
+```scss
 @mixin transform($property) {
   -webkit-transform: $property;
   -ms-transform: $property;
@@ -80,7 +80,7 @@ body {
 .box { @include transform(rotate(30deg)); }
 ```
 * **Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
-```css
+```scss
 /* This CSS will print because %message-shared is extended. */
 %message-shared {
   border: 1px solid #ccc;
@@ -114,7 +114,7 @@ body {
 }
 ```
 * **Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.
-```css
+```scss
 .container {
   width: 100%;
 }
@@ -133,7 +133,7 @@ aside[role="complementary"] {
     
 * ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
 
-```css
+```scss
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -142,12 +142,12 @@ aside[role="complementary"] {
 }
 ```
 
-```css
+```scss
 .box { @include border-radius(10px); }
 ```
 
 * ```@extend``` directive provides a simple way to allow a selector to inherit/extend the styles of another one.
-```css
+```scss
 .message {
   border: 1px solid #ccc;
   padding: 10px;
@@ -167,7 +167,7 @@ aside[role="complementary"] {
         
 
 ```%placeholder``` are classes that aren’t output when your SCSS is compiled
-```css
+```scss
 %awesome {
     width: 100%;
     height: 100%;
@@ -180,7 +180,7 @@ p {
 }
 ```
 
-```css
+```scss
 /* Output */
 body, p {
     width: 100%;
