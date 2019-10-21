@@ -104,7 +104,6 @@
 1. [How do I restore the default value of a property?](#q-how-do-i-restore-the-default-value-of-a-property)
 1. [How do I assign multiple classes to an element?](#q-how-do-i-assign-multiple-classes-to-an-element)
 1. [What is specificity? How do u calculate specificity?](#q-what-is-specificity-how-do-u-calculate-specificity)
-1. [What is selector specificity (selector importance) and how it works? How do u calculate specificity?](#q-what-is-selector-specificity-selector-importance-and-how-it-works-how-do-u-calculate-specificity)
 1. [What do you know about transition?](#q-what-do-you-know-about-transition)
 1. [What are the different css filter you can use?](#what-are-the-different-css-filter-you-can-use)
 1. [Enlist the various fonts properties?](#q-enlist-the-various-fonts-properties)
@@ -1235,8 +1234,6 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
 
 * inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity.
 
-
-#### Q. What is selector specificity (selector importance) and how it works? How do u calculate specificity?
 ID selectors have a higher specificity than attribute selectors.
 
 ```css
