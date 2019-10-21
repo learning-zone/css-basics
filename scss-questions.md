@@ -79,8 +79,40 @@ body {
 }
 .box { @include transform(rotate(30deg)); }
 ```
+* **Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
+```css
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
 
-* **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}
+```
 * If/Else Statements and loops
 * **import**: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
 * **Math operations**: can be used for standard arithmetic or unit conversions.
