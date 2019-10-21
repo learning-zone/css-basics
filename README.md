@@ -2,7 +2,9 @@
 
 *Click <img src="https://github.com/learning-zone/css-interview-questions/blob/master/assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
-1. [SCSS Interview Questions and Answers](scss-questions.md)
+* [SCSS Interview Questions and Answers](scss-questions.md)  
+
+
 1. [What are the text properties in css?](#q-what-are-the-text-properties-in-css)
 1. [What are the border properties in css?](#q-what-are-the-border-properties-in-css)
 1. [What are the background properties in css?](#q-what-are-the-background-properties-in-css)
