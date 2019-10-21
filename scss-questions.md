@@ -70,7 +70,16 @@ body {
   color: white;
 }
 ```
-* **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
+* **mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
+```css
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); }
+```
+
 * **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
 * If/Else Statements and loops
 * **import**: separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase.
