@@ -17,9 +17,8 @@ body {
     font-family: $primary-font-stack;
 }
 ```
-#### Q. What are the SASS basic features?
-* **Variables**: Variables in SASS start with `$` sign
-Example
+#### Q. What are the SCSS basic features?
+* **Variables**: Variables in SCSS start with `$` sign
 ```css
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
@@ -31,7 +30,26 @@ body {
 ```
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
-* **Nesting**: CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability.
+* **Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
+```css
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+```
+* **Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like _partial.scss. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
+
 * **mixins**: mixins are used to include a bunch of properties or group declarations together. It allows for the easy reuse of blocks of code. Use include to
 * **Inheritance**: extends are useful for sharing a generic definition with selectors rather than copying it in.
 * If/Else Statements and loops
