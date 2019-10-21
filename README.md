@@ -103,7 +103,7 @@
 1. [Which property allows you to control the shape or appearance of the marker of a list?](#q-which-property-allows-you-to-control-the-shape-or-appearance-of-the-marker-of-a-list)
 1. [How do I restore the default value of a property?](#q-how-do-i-restore-the-default-value-of-a-property)
 1. [How do I assign multiple classes to an element?](#q-how-do-i-assign-multiple-classes-to-an-element)
-1. [What is specificity? How do u calculate specificity?](#q-what-is-specificity-how-do-u-calculate-specificity)
+1. [What is specificity? How to calculate specificity?](#q-what-is-specificity-how-to-calculate-specificity)
 1. [What do you know about transition?](#q-what-do-you-know-about-transition)
 1. [What are the different css filter you can use?](#what-are-the-different-css-filter-you-can-use)
 1. [Enlist the various fonts properties?](#q-enlist-the-various-fonts-properties)
@@ -1229,12 +1229,8 @@ For example, <b></b> (for bold), and <i></i> (for italic) should never be used, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is specificity? How do u calculate specificity?
-* A process of determining which css rule will be applied to an element. it actually determines which rules will take precedence.
-
-* inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity.
-
-ID selectors have a higher specificity than attribute selectors.
+#### Q. What is specificity? How to calculate specificity?
+A process of determining which css rule will be applied to an element. it actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
 
 ```css
 /*wins*/
