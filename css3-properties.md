@@ -246,3 +246,14 @@
 | 04. |transform 	        |Applies a 2D or 3D transformation to an element.|
 | 05. |transform-origin 	|Defines the origin of transformation for an element.|
 | 06. |transform-style  	|Specifies how nested elements are rendered in 3D space.|
+
+
+#### Transitions Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |transition 	        |Defines the transition between two states of an element.|
+| 02. |transition-delay 	|Specifies when the transition effect will start.|
+| 03. |transition-duration 	|Specifies the number of seconds or milliseconds a transition effect should take to complete.|
+| 04. |transition-property 	|Specifies the names of the CSS properties to which a transition effect should be applied.|
+| 05. |transition-timing-function |	Specifies the speed curve of the transition effect.|
