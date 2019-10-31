@@ -188,3 +188,12 @@
 | 03. |padding-left	        |Sets the padding to the left side of an element.|
 | 04. |padding-right	    |Sets the padding to the right side of an element.|
 | 05. |padding-top	        |Sets the padding to the top side of an element.|
+
+
+#### Print Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |page-break-after	    |Insert a page breaks after an element. |
+| 02. |page-break-before	|Insert a page breaks before an element.|
+| 03. |page-break-inside	|Insert a page breaks inside an element.|
