@@ -178,3 +178,13 @@
 | 04. |outline-style	    |Sets a style for an outline.|
 | 05. |outline-width	    |Sets the width of the outline.|
 
+
+#### Padding Properties
+
+|Sl.No|Property	            |Description                                       |
+|-----|---------------------|--------------------------------------------------|
+| 01. |padding	            |Sets the padding on all four sides of the element.|
+| 02. |padding-bottom	    |Sets the padding to the bottom side of an element.|
+| 03. |padding-left	        |Sets the padding to the left side of an element.|
+| 04. |padding-right	    |Sets the padding to the right side of an element.|
+| 05. |padding-top	        |Sets the padding to the top side of an element.|
