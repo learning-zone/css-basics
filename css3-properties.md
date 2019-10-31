@@ -96,3 +96,21 @@
 | 02. |quotes	     |Specifies quotation marks for embedded quotations.|
 | 03. |counter-reset |Creates or resets one or more counters.|
 | 04. |counter-increment| Increments one or more counter values.|
+
+
+#### Flexible Box Layout
+
+|Sl.No|Property	      |Description                                 |
+|-----|---------------|--------------------------------------------|
+| 01. |align-content  |Specifies the alignment of flexible container's items within the flex container.|
+| 02. |align-items 	  |Specifies the default alignment for items within the flex container.|
+| 03. |align-self 	  |Specifies the alignment for selected items within the flex container.|
+| 04. |flex 	      |Specifies the components of a flexible length.|
+| 05. |flex-basis 	  |Specifies the initial main size of the flex item.|
+| 06. |flex-direction |Specifies the direction of the flexible items.|
+| 07. |flex-flow 	  |A shorthand property for the flex-direction and the flex-wrap properties.|
+| 08. |flex-grow 	  |Specifies how the flex item will grow relative to the other items inside the flex container.|
+| 09. |flex-shrink 	  |Specifies how the flex item will shrink relative to the other items inside the flex container.|
+| 10. |flex-wrap 	  |Specifies whether the flexible items should wrap or not.|
+| 11. |justify-content|Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths  and auto margins have been resolved.|
+| 12. |order 	      |Specifies the order in which a flex items are displayed and laid out within a flex container.|
