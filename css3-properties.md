@@ -66,3 +66,12 @@
 | 30. |border-top-style	      |Sets the style of the top border of an element.|
 | 31. |border-top-width	      |Sets the width of the top border of an element.|
 | 32. |border-width	          |Sets the width of the border on all the four sides of an element.|
+
+
+#### Color Properties
+
+|Sl.No|Property	     |Description                                 |
+|-----|--------------|--------------------------------------------|
+|01.  |color	     |Specify the color of the text of an element.|
+|02.  |opacity 	     |Specifies the transparency of an element.|
+
