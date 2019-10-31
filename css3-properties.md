@@ -234,3 +234,15 @@
 | 18. |white-space	         |Specifies how white space inside the element is handled.|
 | 19. |word-break 	         |Specifies how to break lines within words.|
 | 20. |word-wrap 	         |Specifies whether to break words when the content overflows the boundaries of its container.|
+
+
+#### Transform Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |backface-visibility |Specifies whether or not the "back" side of a transformed element is visible when facing the user.|
+| 02. |perspective          |Defines the perspective from which all child elements of the object are viewed.|
+| 03. |perspective-origin 	|Defines the origin (the vanishing point for the 3D space) for the perspective property.|
+| 04. |transform 	        |Applies a 2D or 3D transformation to an element.|
+| 05. |transform-origin 	|Defines the origin of transformation for an element.|
+| 06. |transform-style  	|Specifies how nested elements are rendered in 3D space.|
