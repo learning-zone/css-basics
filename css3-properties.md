@@ -86,3 +86,13 @@
 | 04. |min-height	 |Specify the minimum height of an element.|
 | 05. |min-width	 |Specify the minimum width of an element.|
 | 06. |width	     |Specify the width of an element.|
+
+
+#### Generated Content Properties
+
+|Sl.No|Property	     |Description                                 |
+|-----|--------------|--------------------------------------------|
+| 01. |content	     |Inserts generated content.|
+| 02. |quotes	     |Specifies quotation marks for embedded quotations.|
+| 03. |counter-reset |Creates or resets one or more counters.|
+| 04. |counter-increment| Increments one or more counter values.|
