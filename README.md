@@ -2,6 +2,7 @@
 
 *Click <img src="https://github.com/learning-zone/css-interview-questions/blob/master/assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
+* [CSS3 Properties](css3-properties.md) 
 * [SCSS Interview Questions and Answers](scss-questions.md)  
 
 
