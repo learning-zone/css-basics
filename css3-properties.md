@@ -128,3 +128,14 @@
 | 06. |font-style	  |Defines the font style for the text.|
 | 07. |font-variant	  |Specify the font variant.|
 | 08. |font-weight	  |Specify the font weight of the text.|
+
+
+#### List Properties
+
+|Sl.No|Property	            |Description                                            |
+|-----|---------------------|-------------------------------------------------------|
+| 01. |list-style	        |Defines the display style for a list and list elements.|
+| 02. |list-style-image	    |Specifies the image to be used as a list-item marker.|
+| 03. |list-style-position	|Specifies the position of the list-item marker.|
+| 04. |list-style-type	    |Specifies the marker style for a list-item.|
+
