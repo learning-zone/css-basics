@@ -208,3 +208,29 @@
 | 03. |caption-side	        |Specify the position of table's caption.|
 | 04. |empty-cells	        |Show or hide borders and backgrounds of empty table cells.|
 | 05. |table-layout	        |Specifies a table layout algorithm.|
+
+
+#### Text Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |direction	        |Define the text direction/writing direction.|
+| 02. |tab-size 	        |Specifies the length of the tab character.|
+| 03. |text-align	        |Sets the horizontal alignment of inline content.|
+| 04. |text-align-last 	    |Specifies how the last line of a block or a line right before a forced line break is aligned when |     |text-align is justify.|
+| 05. |text-decoration	    |Specifies the decoration added to text.|
+| 06. |text-decoration-color  |Specifies the color of the text-decoration-line.|
+| 07. |text-decoration-line  |Specifies what kind of line decorations are added to the element.|
+| 08. |text-decoration-style  |Specifies the style of the lines specified by the text-decoration-line property|
+| 09. |text-indent	         |Indent the first line of text.|
+| 10. |text-justify 	     |Specifies the justification method to use when the text-align property is set to justify.|
+| 11. |text-overflow 	     |Specifies how the text content will be displayed, when it overflows the block containers.|
+| 12. |text-shadow 	         |Applies one or more shadows to the text content of an element.|
+| 13. |text-transform	     |Transforms the case of the text.|
+| 14. |line-height	         |Sets the height between lines of text.|
+| 15. |vertical-align	     |Sets the vertical positioning of an element relative to the current text baseline.|
+| 16. |letter-spacing	     |Sets the extra spacing between letters.|
+| 17. |word-spacing	         |Sets the spacing between words.|
+| 18. |white-space	         |Specifies how white space inside the element is handled.|
+| 19. |word-break 	         |Specifies how to break lines within words.|
+| 20. |word-wrap 	         |Specifies whether to break words when the content overflows the boundaries of its container.|
