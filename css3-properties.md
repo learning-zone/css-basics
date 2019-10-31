@@ -4,7 +4,7 @@
 #### Animation Properties
 
 |Sl.No| Property            | Description                     |
-|-----|---------------------|---------------------------------||
+|-----|---------------------|---------------------------------|
 | 01. |animation 	        |Specifies the keyframe-based animations.|
 | 02. |animation-delay 	    |Specifies when the animation will start.|
 | 03. |animation-direction 	|Specifies whether the animation should play in reverse on alternate cycles or not.|
