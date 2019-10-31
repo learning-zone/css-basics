@@ -257,3 +257,27 @@
 | 03. |transition-duration 	|Specifies the number of seconds or milliseconds a transition effect should take to complete.|
 | 04. |transition-property 	|Specifies the names of the CSS properties to which a transition effect should be applied.|
 | 05. |transition-timing-function |	Specifies the speed curve of the transition effect.|
+
+
+#### Visual formatting Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |display	            |Specifies how an element is displayed onscreen.|
+| 02. |position	            |Specifies how an element is positioned.|
+| 03. |top	                |Specify the location of the top edge of the positioned element.|
+| 04. |right	            |Specify the location of the right edge of the positioned element.|
+| 05. |bottom	            |Specify the location of the bottom edge of the positioned element.|
+| 06. |left	                |Specify the location of the left edge of the positioned element.|
+| 07. |float	            |Specifies whether or not a box should float.|
+| 08. |clear	            |Specifies the placement of an element in relation to floating elements.|
+| 09. |z-index	            |Specifies a layering or stacking order for positioned elements.|
+| 10. |overflow	            |Specifies the treatment of content that overflows the element's box.|
+| 11. |overflow-x 	        |Specifies how to manage the content when it overflows the width of the element's content area.|
+| 12. |overflow-y 	        |Specifies how to manage the content when it overflows the height of the element's content area.|
+| 13. |resize 	            |Specifies whether or not an element is resizable by the user.|
+| 14. |clip	                |Defines the clipping region.|
+| 15. |visibility	        |Specifies whether or not an element is visible.|
+| 16. |cursor	            |Specify the type of cursor.|
+| 17. |box-shadow 	        |Applies one or more drop-shadows to the element's box.|
+| 18. |box-sizing 	        |Alter the default CSS box model.|
