@@ -114,3 +114,17 @@
 | 10. |flex-wrap 	  |Specifies whether the flexible items should wrap or not.|
 | 11. |justify-content|Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths  and auto margins have been resolved.|
 | 12. |order 	      |Specifies the order in which a flex items are displayed and laid out within a flex container.|
+
+
+#### Font Properties
+
+|Sl.No|Property	      |Description                                                 |
+|-----|---------------|------------------------------------------------------------|
+| 01. |font	          |Defines a variety of font properties within one declaration.|
+| 02. |font-family	  |Defines a list of fonts for element.|
+| 03. |font-size	  |Defines the font size for the text.|
+| 04. |font-size-adjust| 	Preserves the readability of text when font fallback occurs.|
+| 05. |font-stretch   |Selects a normal, condensed, or expanded face from a font.|
+| 06. |font-style	  |Defines the font style for the text.|
+| 07. |font-variant	  |Specify the font variant.|
+| 08. |font-weight	  |Specify the font weight of the text.|
