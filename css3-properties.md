@@ -149,3 +149,20 @@
 | 03. |margin-left	        |Sets the left margin of the element.|
 | 04. |margin-right	        |Sets the right margin of the element.|
 | 05. |margin-top	        |Sets the top margin of the element.|
+
+
+
+#### Multi-column Layout Properties
+
+|Sl.No|Property	            |Description                                      |
+|-----|---------------------|-------------------------------------------------|
+| 01. |column-count 	    |Specifies the number of columns in a multi-column element.|
+| 02. |column-fill 	        |Specifies how columns will be filled.|
+| 03. |column-gap 	        |Specifies the gap between the columns in a multi-column element.|
+| 04. |column-rule 	        |Specifies a straight line, or "rule", to be drawn between each column in a multi-column element.|
+| 05. |column-rule-color 	|Specifies the color of the rules drawn between columns in a multi-column layout.|
+| 06. |column-rule-style 	|Specifies the style of the rule drawn between the columns in a multi-column layout.|
+| 07. |column-rule-width 	|Specifies the width of the rule drawn between the columns in a multi-column layout.|
+| 08. |column-span 	        |Specifies how many columns an element spans across in a multi-column layout.|
+| 09. |column-width 	    |Specifies the optimal width of the columns in a multi-column element.|
+| 10. |columns 	            |A shorthand property for setting column-width and column-count properties.|
