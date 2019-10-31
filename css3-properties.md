@@ -75,3 +75,14 @@
 |01.  |color	     |Specify the color of the text of an element.|
 |02.  |opacity 	     |Specifies the transparency of an element.|
 
+
+#### Dimension Properties
+
+|Sl.No|Property	     |Description                                 |
+|-----|--------------|--------------------------------------------|
+| 01. |height	     |Specify the height of an element.|
+| 02. |max-height	 |Specify the maximum height of an element.|
+| 03. |max-width	 |Specify the maximum width of an element.|
+| 04. |min-height	 |Specify the minimum height of an element.|
+| 05. |min-width	 |Specify the minimum width of an element.|
+| 06. |width	     |Specify the width of an element.|
