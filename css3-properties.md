@@ -166,3 +166,15 @@
 | 08. |column-span 	        |Specifies how many columns an element spans across in a multi-column layout.|
 | 09. |column-width 	    |Specifies the optimal width of the columns in a multi-column element.|
 | 10. |columns 	            |A shorthand property for setting column-width and column-count properties.|
+
+
+#### Outline Properties
+
+|Sl.No|Property	            |Description                                                                 |
+|-----|---------------------|----------------------------------------------------------------------------|
+| 01. |outline	            |Sets the width, style, and color for all four sides of an element's outline.|
+| 02. |outline-color	    |Sets the color of the outline.|
+| 03. |outline-offset 	    |Set the space between an outline and the border edge of an element.|
+| 04. |outline-style	    |Sets a style for an outline.|
+| 05. |outline-width	    |Sets the width of the outline.|
+
