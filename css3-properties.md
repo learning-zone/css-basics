@@ -197,3 +197,14 @@
 | 01. |page-break-after	    |Insert a page breaks after an element. |
 | 02. |page-break-before	|Insert a page breaks before an element.|
 | 03. |page-break-inside	|Insert a page breaks inside an element.|
+
+
+#### Table Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |border-collapse	    |Specifies whether table cell borders are connected or separated.|
+| 02. |border-spacing	    |Sets the spacing between the borders of adjacent table cells.|
+| 03. |caption-side	        |Specify the position of table's caption.|
+| 04. |empty-cells	        |Show or hide borders and backgrounds of empty table cells.|
+| 05. |table-layout	        |Specifies a table layout algorithm.|
