@@ -139,3 +139,13 @@
 | 03. |list-style-position	|Specifies the position of the list-item marker.|
 | 04. |list-style-type	    |Specifies the marker style for a list-item.|
 
+
+#### Margin Properties
+
+|Sl.No|Property	            |Description                                      |
+|-----|---------------------|-------------------------------------------------|
+| 01. |margin	            |Sets the margin on all four sides of the element.|
+| 02. |margin-bottom	    |Sets the bottom margin of the element.|
+| 03. |margin-left	        |Sets the left margin of the element.|
+| 04. |margin-right	        |Sets the right margin of the element.|
+| 05. |margin-top	        |Sets the top margin of the element.|
