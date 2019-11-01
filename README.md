@@ -514,24 +514,56 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
 #### Q. The difference between block, inline and inline-block element?
 Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
 That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
-    
-**block**  
-  * respect all of those
-  * force a line break after the block element
-  * breaks the flow
-        
-**inline**    
-  * respect left & right margins and padding, but not top & bottom
-  * cannot have a width and height set
-  * margin and padding will push other elements horizontally not vertically
-  * allow other elements to sit to their left and right.
-  * elements do not break the flow
-        
-**inline-block**  
-  * allow other elements to sit to their left and right
-  * respect top & bottom margins and padding
-  * respect height and width
 
+**Block Elements**  
+The block elements always start on a new line. They will also take space of an entire row or width. It means that there can be no other HTML elements that can stand side by side with block level elements. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
+
+Example:
+```html
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem,
+  consequatur deleniti nobis beatae quo dolore nemo corporis. Ad delectus
+  dignissimos pariatur illum eveniet dolor rem eius laborum sed iure!
+</p>
+
+<p>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem,
+  consequatur deleniti nobis beatae quo dolore nemo corporis. Ad delectus
+  dignissimos pariatur illum eveniet dolor rem eius laborum sed iure!
+</p>
+```
+
+**Inline Elements**  
+Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are `<a>`, `<span>` , `<strong>`, and `<img>` tags.
+
+When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
+
+Example:
+```html
+<a href="#">Link</a>
+<img src="https://picsum.photos/30" />
+<span>Span</span>
+<strong>Strong Player</strong>
+```
+
+**Inline-Block Elements**  
+Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides.
+One common use for using inline-block is for creating navigation links horizontally. Some examples of inline-block elements are `<input>`, `<button>`, `<select>`, `<textarea>` etc.
+```css
+input {
+  width: 300px;
+  height: 50px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+}
+```
+```html
+<input type="text" /> <button>Submit</button>
+```
 [Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
 
 <div align="right">
