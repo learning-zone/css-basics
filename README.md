@@ -77,7 +77,16 @@ ul {
   <li>Maple Syrup</li>
 </ul>
 ```
-
+**ID Selector**: This selector matches any HTML element that has an ID attribute with the same value as that of the selector.
+```css
+#container {
+   width: 960px;
+   margin: 0 auto;
+}
+```
+```html
+<div id="container"></div>
+```
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
