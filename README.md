@@ -361,11 +361,69 @@ CSS sprites combine multiple images into one single larger image. It is a common
 </div>
 
 #### Q. What is the float property and what float do?
-* The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. It doesn't change the property of the elements used before it
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
 
-* float pushes an element to the sides of a page with text wrapped around it. you can create entire page or a smaller area by using float. if size of a floated element changes, text around it will re-flow to accommodate the changes. You can have float left, right, none or inherit.
+**Syntax**  
+```css
+/* Keyword values */
+float: left;
+float: right;
+float: none;
+float: inline-start;
+float: inline-end;
 
-* if you set, 'float: left;' for an image, it will move to the left until the margin, padding or border of another block-level element is reached. The normal flow will wrap around on the right side.  
+/* Global values */
+float: inherit;
+float: initial;
+float: unset;
+```
+**Property Values**  
+|Sl.No| Value  | Description| 
+|-----|--------|------------|
+| 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
+| 02. |left	   |The element floats to the left of its container	|
+| 03. |right	 |The element floats the right of its container	|
+| 04. |initial |Sets this property to its default value.    	|
+| 05. |inherit |Inherits this property from its parent element. |
+
+Example:
+```css
+section {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}
+```
+```html
+<section>
+  <div class="left">1</div>
+  <div class="left">2</div>
+  <div class="right">3</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Morbi tristique sapien ac erat tincidunt, sit amet dignissim
+     lectus vulputate. Donec id iaculis velit. Aliquam vel
+     malesuada erat. Praesent non magna ac massa aliquet tincidunt
+     vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
+</section>
+```
+
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
