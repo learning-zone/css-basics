@@ -251,7 +251,27 @@ The selection of an element based on its occurrence in relation to another eleme
     * The element that is adjacent, but not immediately to another element.
 
 #### Q. What is the difference between class selectors and id selectors?
-An overall block is given to class selector while id selectors take only a single element differing from other element
+In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+```css
+#top {
+    background-color: #ccc;
+    padding: 20px
+}
+
+.intro {
+    color: red;
+    font-weight: bold;
+}
+```
+```html
+<div id="top">
+
+<h1>Chocolate curry</h1>
+<p class="intro">This is my recipe for making curry purely with chocolate</p>
+<p class="intro">Mmm mm mmmmm</p>
+
+</div>
+```
 
 #### Q. What is CSS BEM?
 
