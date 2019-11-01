@@ -184,7 +184,12 @@ input[type] {
    width: 200px;
 }
 ```
-
+**Pseudo-class**: A pseudo-class uses a colon character to identify a pseudo-state that an element might be in—for example, the state of being hovered, or the state of being activated.
+```css
+a:hover {
+   color: red;
+}
+```
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
