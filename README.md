@@ -590,6 +590,8 @@ h3::before {
 <h3>Body</h3>
 <h3>Conclusion</h3>
 ```
+[Live Example](https://learning-zone.github.io/css-interview-questions/counters.html) 
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
