@@ -512,26 +512,25 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
 #### Q. The difference between block, inline and inline-block element?
+Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
+That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
     
-* Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
-    That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
-    
-* ```block```:
-    * respect all of those
-    * force a line break after the block element
-    * breaks the flow
+**block**  
+  * respect all of those
+  * force a line break after the block element
+  * breaks the flow
         
-* ```inline```:
-    * respect left & right margins and padding, but not top & bottom
-    * cannot have a width and height set
-    * margin and padding will push other elements horizontally not vertically
-    * allow other elements to sit to their left and right.
-    * elements do not break the flow
+**inline**    
+  * respect left & right margins and padding, but not top & bottom
+  * cannot have a width and height set
+  * margin and padding will push other elements horizontally not vertically
+  * allow other elements to sit to their left and right.
+  * elements do not break the flow
         
-* ```inline-block```:
-    * allow other elements to sit to their left and right
-    * respect top & bottom margins and padding
-    * respect height and width
+**inline-block**  
+  * allow other elements to sit to their left and right
+  * respect top & bottom margins and padding
+  * respect height and width
 
 [Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
 
