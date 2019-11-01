@@ -98,6 +98,23 @@ ul {
 ```html
 <div class="box"></div>
 ```
+**Descendant Combinator**: The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.
+```css
+#container .box {
+   float: left;
+   padding-bottom: 15px;
+}
+```
+This declaration block will apply to all elements that have a class of box that are inside an element with an ID of `container`. It’s worth noting that the `.box` element doesn’t have to be an immediate child: there could be another element wrapping `.box`, and the styles would still apply.
+```html
+<div id="container">
+  <div class="box"></div>
+
+  <div class="box-2"></div>
+</div>
+
+<div class="box"></div>
+```
 
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
