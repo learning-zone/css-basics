@@ -208,11 +208,6 @@ a:hover {
         font-size: xx-large;
       }
 
-      p.intro::first-letter {
-        color: #ff0000;
-        font-size:200%;
-      }
-
       h1::before {
         content: url(smiley.gif);
       }
