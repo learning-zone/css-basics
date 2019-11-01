@@ -460,21 +460,21 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is re-flow?
-* Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
+#### Q. What is DOM reflow?
+Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
 
-* Reflow occurs when you:
+Reflow occurs when you:
 
-  1. insert, remove or update an element in the DOM
-  1. modify content on the page, e.g. the text in an input box
-  1. move a DOM element
-  1. animate a DOM element
-  1. take measurements of an element such as offsetHeight or getComputedStyle
-  1. change a CSS style
-  1. change the className of an element
-  1. add or remove a stylesheet
-  1. resize the window
-  1. scroll
+  * insert, remove or update an element in the DOM
+  * modify content on the page, e.g. the text in an input box
+  * move a DOM element
+  * animate a DOM element
+  * take measurements of an element such as offsetHeight or getComputedStyle
+  * change a CSS style
+  * change the className of an element
+  * add or remove a stylesheet
+  * resize the window
+  * scroll
 
 #### Q. How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
 * The ```z-index``` property specifies the stack order of elements. An element with a higher ```z-index``` stack order is always rendered in front of an element with a lower ```z-index``` stack order on the screen. ```z-index``` only works on positioned elements ```position: absolute```, ```position: relative```, or ```position: fixed```. The default stack order of non-positioned elements is their order in the document.
