@@ -87,6 +87,18 @@ ul {
 ```html
 <div id="container"></div>
 ```
+**Class Selector**: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.
+```css
+.box {
+   padding: 20px;
+   margin: 10px;
+   width: 240px;
+}
+```
+```html
+<div class="box"></div>
+```
+
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
