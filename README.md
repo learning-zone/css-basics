@@ -482,20 +482,19 @@ Reflow occurs when you:
 * Minimize CSS rules, and remove unused CSS rules.
 * If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
 * Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
-
-#### Q. How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
-* The ```z-index``` property specifies the stack order of elements. An element with a higher ```z-index``` stack order is always rendered in front of an element with a lower ```z-index``` stack order on the screen. ```z-index``` only works on positioned elements ```position: absolute```, ```position: relative```, or ```position: fixed```. The default stack order of non-positioned elements is their order in the document.
     
 #### Q. What is the purpose of the ```z-index``` and how is it used?
+The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number. An element with a higher ```z-index``` is always stacked above than a lower index.
 
-* The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number.
-* An element with a higher ```z-index``` is always stacked above than a lower index.
-* ```z-index``` can take the following values:
+```z-index``` can take the following values:
 
-   * Auto: Sets the stack order equal to its parents.
-   * Number: Orders the stack order.
-   * Initial: Sets this property to its default value (0).
-   * Inherit: Inherits this property from its parent element.
+  * **Auto**: Sets the stack order equal to its parents.
+  * **Number**: Orders the stack order.
+  * **Initial**: Sets this property to its default value (0).
+  * **Inherit**: Inherits this property from its parent element.
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/z-index.html) 
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
