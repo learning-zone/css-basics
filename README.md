@@ -429,12 +429,28 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is tweening?
-* It is the process of generating intermediate frames between two images.
-* It gives the impression that the first image has smoothly evolved into the second one.
-* It is an important method used in all types of animations.
-* In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
+#### Q. What is tweening in css?
+The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
 
+Example:
+```css
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+```
 #### Q. Who maintains the CSS specifications? What do you understand by W3C?
 W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the Web to its full potential by developing relevant protocols and guidelines.This is achieved primarily by creating and publishing Web standards. By adopting the Web standards created by the W3C, hardware manufacturers and software developers can ensure their equipment and programs work with the latest Web technologies. For example, most Web browsers incorporate several W3C standards, which allows them to interpret the latest versions of HTML and CSS code. When browsers conform to the W3C standards, it also helps Web pages appear consistent across different browsers.
 
