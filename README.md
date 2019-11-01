@@ -429,9 +429,6 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. How can you clear sides of a floating element?
-If you clear a slide of an element, floating elements will not be accepted on that side. With 'clear' set to 'left', an element will be moved below any floating element on the left side. clear is used to stop wrap of an element around a floating element.
-
 #### Q. What is tweening?
 * It is the process of generating intermediate frames between two images.
 * It gives the impression that the first image has smoothly evolved into the second one.
