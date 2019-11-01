@@ -451,10 +451,8 @@ p {
   }
 }
 ```
-#### Q. Who maintains the CSS specifications? What do you understand by W3C?
-W3C stands for World Wide Web Consortium. The mission of the W3C is to lead the Web to its full potential by developing relevant protocols and guidelines.This is achieved primarily by creating and publishing Web standards. By adopting the Web standards created by the W3C, hardware manufacturers and software developers can ensure their equipment and programs work with the latest Web technologies. For example, most Web browsers incorporate several W3C standards, which allows them to interpret the latest versions of HTML and CSS code. When browsers conform to the W3C standards, it also helps Web pages appear consistent across different browsers.
 
-#### Q. Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?
+#### Q. Explain the difference between **visibility: hidden;** and ```display: none;```? What are the pros and cons of using ```display:none```?
 
 * ```visibility: hidden``` simply hides the element but it will occupy space and affect the layout of the document.
 * ```display: none``` removes the element from the normal layout flow (causes DOM reflow). It will not affect the layout of the document nor occupy space.
