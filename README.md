@@ -148,7 +148,25 @@ In this example, all paragraph elements (`<p>`) will be styled with the specifie
   <p>Paragraph example.</p>
 </div>
 ```
+**Adjacent Sibling Combinator**: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+```css
+p + p {
+   text-indent: 1.5em;
+   margin-bottom: 0;
+}
+```
+In this example will apply the specified styles only to paragraph elements that immediately follow other paragraph elements. This means the first paragraph element on a page would not receive these styles. Also, if another element appeared between two paragraphs, the second paragraph of the two wouldn’t have the styles applied.
+```html
+<h2>Title</h2>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
 
+<div class="box">
+  <p>Paragraph example.</p>
+  <p>Paragraph example.</p>
+</div>
+```
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
