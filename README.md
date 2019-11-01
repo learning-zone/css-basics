@@ -78,7 +78,8 @@ ul {
 </ul>
 ```
 
-Example: [CSS Selectors](selector.html) 
+
+Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
