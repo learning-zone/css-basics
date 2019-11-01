@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;   /* Set a counter named 'section', and its initial value is 0. */
+}
+
+h3::before {
+  counter-increment: section;   /* Increment the value of section counter by 1 */
+  content: "Section " counter(section) ": ";  /* Display the word 'Section ', the value of 
+                                                 section counter, and a colon before the content
+                                                 of each h3 */
+}
+</style>
+</head>
+<body>
+
+<h3>Introduction</h3>
+<h3>Body</h3>
+<h3>Conclusion</h3>
+
+</body>
+</html>
