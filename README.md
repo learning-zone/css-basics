@@ -378,6 +378,7 @@ float: initial;
 float: unset;
 ```
 **Property Values**  
+
 |Sl.No| Value  | Description| 
 |-----|--------|------------|
 | 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
