@@ -132,6 +132,23 @@ The selector will match all elements that have a class of `box` and that are imm
   </div>
 </div>
 ```
+**General Sibling Combinator**: A selector that uses a general sibling combinator matches elements based on sibling relationships. The selected elements are beside each other in the HTML.
+```css
+h2 ~ p {
+   margin-bottom: 20px;
+}
+```
+In this example, all paragraph elements (`<p>`) will be styled with the specified rules, but only if they are siblings of `<h2>` elements. There could be other elements in between the `<h2>` and `<p>`, and the styles would still apply.
+```html
+<h2>Title</h2>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
+<p>Paragraph example.</p>
+<div class="box">
+  <p>Paragraph example.</p>
+</div>
+```
+
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
