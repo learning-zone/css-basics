@@ -115,7 +115,23 @@ This declaration block will apply to all elements that have a class of box that 
 
 <div class="box"></div>
 ```
+**Child Combinator**: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
+```css
+#container > .box {
+   float: left;
+   padding-bottom: 15px;
+}
+```
+The selector will match all elements that have a class of `box` and that are immediate children of the `#container` element. That means, unlike the descendant combinator, there can’t be another element wrapping `.box`—it has to be a direct child element.
+```html
+<div id="container">
+  <div class="box"></div>
 
+  <div>
+    <div class="box"></div>
+  </div>
+</div>
+```
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
