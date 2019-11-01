@@ -45,7 +45,7 @@
 #### Q. What are the css selectors? 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
-* **Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
+**Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
 ```css
 * {
    color: green;
@@ -53,7 +53,7 @@ A CSS selector is the part of a CSS rule set that actually selects the content y
    line-height: 25px;
 }
 ```
-* **Element Type Selector**: This selector match one or more HTML elements of the same name. 
+**Element Type Selector**: This selector match one or more HTML elements of the same name. 
 ```css
 ul {
    list-style: none;
