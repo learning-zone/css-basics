@@ -42,17 +42,43 @@
 </html>
 ```
 
-#### Q. What are the css Selectors? 
+#### Q. What are the css selectors? 
+A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
-* **Class**: The most commonly used selector. E.g. “.cloudy” to select an element with classname cloudy. There can be more than 1 element with the same classname.
+* **Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
+```css
+* {
+   color: green;
+   font-size: 20px;
+   line-height: 25px;
+}
+```
+* **Element Type Selector**: This selector match one or more HTML elements of the same name. 
+```css
+ul {
+   list-style: none;
+   border: solid 1px #ccc;
+}
+```
+```html
+<ul>
+  <li>Fish</li>
+  <li>Apples</li>
+  <li>Cheese</li>
+</ul>
 
-* **ID**: Use this sparingly. You cannot reuse an ID within the same page and used only to identify an element uniquely. E.g. ```<div id=lovelyweather></div>```
+<div class="example">
+  <p>Example paragraph text.</p>
+</div>
 
-* **Attribute Selector**: If you use any attribute other than class or id to identify an element in a stylesheet, you would be using Attribute Selectors. You can also do basic pattern matching within an attribute selector (so if you would like to do basic pattern matching for selectors using class or ID attributes, you would want to use attribute selectors).
+<ul>
+  <li>Water</li>
+  <li>Juice</li>
+  <li>Maple Syrup</li>
+</ul>
+```
 
-* **Pseudo-Classes**: Classes that are applied to elements based on information that is not present in the markup, e.g. :first-child or :last-child. Do note that the selectors are parsed from right to left (see the demo). You cannot use section ```article:first-child``` to select the first occurrence of article, if the first child of section is h1 and not article. Likewise with the :nth-child, and :last-child pseudo-classes.
-
-* **Pseudo-Elements**: Pseudo-elements differ from Pseudo-Classes in that they actually create an element in the document tree. This is almost the first instance of CSS modifying the HTML document tree. You should ideally use pseudo-elements with “::” instead of “:” (but most browsers accept “:” notation for CSS 2.1 pseudo-elements). Pseudo-elements are: ```::first-line```, ```::first-letter```, ```::before```, ```::after```.
+Example: [CSS Selectors](selector.html) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
