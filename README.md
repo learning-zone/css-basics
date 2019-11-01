@@ -241,13 +241,13 @@ Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions
 
 The selection of an element based on its occurrence in relation to another element (chosen by the choice of combinator: whitespace, >, +, or ~). You can have:
 
-* Descendant Combinator
+* **Descendant Combinator**
     * This is the most common usage, e.g. #lovelyweather h1.
-* Child Combinator
+* **Child Combinator**
     * Select an element if it is a direct child of another element (and not a grandchild of that element).
-* Adjacent Sibling Combinator
+* **Adjacent Sibling Combinator**
     * The element that is immediately adjacent to another element.
-* General Sibling Combinator
+* **General Sibling Combinator**
     * The element that is adjacent, but not immediately to another element.
 
 #### Q. What is the difference between class selectors and id selectors?
