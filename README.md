@@ -167,6 +167,24 @@ In this example will apply the specified styles only to paragraph elements that 
   <p>Paragraph example.</p>
 </div>
 ```
+**Attribute Selector**: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets
+```css
+input[type="text"] {
+   background-color: #444;
+   width: 200px;
+}
+```
+```html
+<input type="text">
+```
+The attribute selector can also be declared using just the attribute itself, with no value, like this:
+```css
+input[type] {
+   background-color: #444;
+   width: 200px;
+}
+```
+
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
