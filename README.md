@@ -571,26 +571,20 @@ button {
 </div>
 
 #### Q. What are counters in CSS3?
-
-* CSS counters let you adjust the appearance of content based on its location in a document. 
-
-* To use a CSS counter, it must first be initialized to a value with the counter-reset property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
-
-* **CSS**
+CSS counters let you adjust the appearance of content based on its location in a document. To use a CSS counter, it must first be initialized to a value with the counter-reset property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
 
 ```css
 body {
-  counter-reset: section;                       /* Set a counter named 'section', and its initial value is 0. */
+  counter-reset: section;   /* Set a counter named 'section', and its initial value is 0. */
 }
 
 h3::before {
-  counter-increment: section;                   /* Increment the value of section counter by 1 */
-  content: "Section " counter(section) ": ";    /* Display the word 'Section ', the value of 
-                                                   section counter, and a colon before the content
-                                                   of each h3 */
+  counter-increment: section;   /* Increment the value of section counter by 1 */
+  content: "Section " counter(section) ": ";  /* Display the word 'Section ', the value of 
+                                                 section counter, and a colon before the content
+                                                 of each h3 */
 }
 ```
-* **HTML**
 ```html
 <h3>Introduction</h3>
 <h3>Body</h3>
