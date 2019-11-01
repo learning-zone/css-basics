@@ -195,6 +195,7 @@ a:hover {
 * Style the first letter, or line, of an element
 * Insert content before, or after, the content of an element 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
     <style>
