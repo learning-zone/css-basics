@@ -190,6 +190,26 @@ a:hover {
    color: red;
 }
 ```
+**Pseudo-element**: A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
+
+* Style the first letter, or line, of an element
+* Insert content before, or after, the content of an element 
+```html
+<html>
+  <head>
+    <style>
+      p::first-line {
+        color: #ff0000;
+        font-variant: small-caps;
+      }
+    </style>
+  </head>
+<body>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</body>
+</html>
+```
+
 
 Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
