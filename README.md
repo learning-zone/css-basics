@@ -319,11 +319,7 @@ These must be chained to the Element and never alone however, or there will be s
 
 #### Q. What are the benefits of using CSS sprites? 
     
-CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. How to implement it:
-
-* Use a sprite generator that packs multiple images into one and generate the appropriate CSS for it.
-* Each image would have a corresponding CSS class with `background-image`, `background-position` and `background-size` properties defined.
-* To use that image, add the corresponding class to your element.
+CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. 
 
 **Advantages:**
 
