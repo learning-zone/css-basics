@@ -230,9 +230,7 @@ make a type specimen book.<h1></p>
 </body>
 </html>
 ```
-
-
-Example: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/selector.html) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -279,6 +277,8 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 * For many applications, the flexible box model provides an improvement over the block model in that it does not use floats, nor do the flex container's margins collapse with the margins of its contents.
 
 * Grid specs CSS Grid Layout is a specification for creating two-dimensional grids Grid is a companion to the Flexible Box Module (flexbox). Flexbox is designed for one-dimensional layout, so things can be arranged in an unbroken line. Grid is designed for two-dimensional layout, meaning the items don't need to sit next to each other. In the future we're likely to use both: Grid Layout for main page areas, and flexbox for the smaller UI elements it excels with.
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
 
 #### Q. What is CSS BEM?
 The BEM (**Block Element Modifier**) methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
