@@ -476,6 +476,13 @@ Reflow occurs when you:
   * resize the window
   * scroll
 
+**Minimizing browser reflow**  
+
+* Reduce unnecessary DOM depth. Changes at one level in the DOM tree can cause changes at every level of the tree - all the way up to the root, and all the way down into the children of the modified node. This leads to more time being spent performing reflow.
+* Minimize CSS rules, and remove unused CSS rules.
+* If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
+* Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
+
 #### Q. How does ```z-index``` relate to positioning? Describe ```z-index``` and how stacking context is formed?
 * The ```z-index``` property specifies the stack order of elements. An element with a higher ```z-index``` stack order is always rendered in front of an element with a lower ```z-index``` stack order on the screen. ```z-index``` only works on positioned elements ```position: absolute```, ```position: relative```, or ```position: fixed```. The default stack order of non-positioned elements is their order in the document.
     
