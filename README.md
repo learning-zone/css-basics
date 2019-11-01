@@ -532,6 +532,9 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
     * allow other elements to sit to their left and right
     * respect top & bottom margins and padding
     * respect height and width
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
