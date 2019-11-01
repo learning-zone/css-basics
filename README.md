@@ -202,6 +202,29 @@ a:hover {
         color: #ff0000;
         font-variant: small-caps;
       }
+
+      p::first-letter {
+        color: #ff0000;
+        font-size: xx-large;
+      }
+
+      p.intro::first-letter {
+        color: #ff0000;
+        font-size:200%;
+      }
+
+      h1::before {
+        content: url(smiley.gif);
+      }
+
+      h1::after {
+        content: url(smiley.gif);
+      }
+
+      ::selection {
+        color: red;
+        background: yellow;
+      }
     </style>
   </head>
 <body>
