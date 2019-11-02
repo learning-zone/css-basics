@@ -824,7 +824,6 @@ Vertical margins between adjacent block-level boxes in a BFC collapse.
 
 
 #### Q. What are the various clearing techniques and which is appropriate for what context? How works .clearfix?
-
 * Empty `div` method - `<div style="clear:both;"></div>`.
 * Clearfix method - Refer to the `.clearfix` class above.
 * `overflow: auto` or `overflow: hidden` method - Parent will establish a new block formatting context and expand to contains its floated children.
