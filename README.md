@@ -696,7 +696,6 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 
 
 #### Q. What is the purpose of the box-sizing property?
-
 The box-sizing CSS property sets how the total width and height of an element is calculated.
 
 1. **content-box**: the default. Width and height values apply to the element's content only. The padding and border are added to the outside of the box.
