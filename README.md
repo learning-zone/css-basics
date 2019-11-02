@@ -685,7 +685,6 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 </div>
 
 #### Q. In CSS3, how would you select:
-
 * Every ```<a>``` element whose href attribute value begins with “https”.
     * a[href^="https"]
     
