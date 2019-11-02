@@ -235,9 +235,8 @@ make a type specimen book.<h1></p>
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What are Combinators?
-
-The selection of an element based on its occurrence in relation to another element (chosen by the choice of combinator: whitespace, >, +, or ~). You can have:
+#### Q. What is Combinator selector?
+A combinator is the character in a selector that connects two selectors together. There are four types of combinators. These four combinators help create descendant selectors (with a space character), child selectors (with the ```>``` character), adjacent sibling selectors (with the ```+``` character), and general sibling selectors (with the ```~``` character). To dispel any confusion, here are those four combinators in use:
 
 * **Descendant Combinator**
     * This is the most common usage, e.g. #lovelyweather h1.
@@ -247,6 +246,24 @@ The selection of an element based on its occurrence in relation to another eleme
     * The element that is immediately adjacent to another element.
 * **General Sibling Combinator**
     * The element that is adjacent, but not immediately to another element.
+
+```css
+div p {
+  color: #222;
+}
+
+div > p {
+  color: #333;
+}
+
+div + p {
+  color: #444;
+}
+
+div ~ p {
+  color: #555;
+}
+```
 
 #### Q. What is the difference between class selectors and id selectors?
 In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
