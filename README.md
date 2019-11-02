@@ -1047,29 +1047,6 @@ When using `translate()`, the element still occupies its original space (sort of
 ```
 The at-rule is not just the ```@media``` or ```@import``` part at the beginning; the entire instruction comprises the complete at-rule.
 
-
-#### Q. What is Combinator selector?
-* A combinator is the character in a selector that connects two selectors together. There are four types of combinators. These four combinators help create descendant selectors (with a space character), child selectors (with the ```>``` character), adjacent sibling selectors (with the ```+``` character), and general sibling selectors (with the ```~``` character). To dispel any confusion, here are those four combinators in use:
-```css
-/*  In all 4 examples */
-/*  whatever appears between "div" and "p" is a combinator */
-/*  in the first example, the combinator is a space character */
-div p {
-  color: #222;
-}
-
-div>p {
-  color: #333;
-}
-
-div+p {
-  color: #444;
-}
-
-div~p {
-  color: #555;
-}
-```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
