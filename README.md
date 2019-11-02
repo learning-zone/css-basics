@@ -939,16 +939,13 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 * pseudo classes is better if you don't want to mess up with javaScript however, pseudo-classes is slow to process and apply rules.
 
-
 #### Q. How do you optimize css selectors?
 * This is very open and depend on what you are trying to achieve. If i order selectors in terms of render speed it would be like id, class, tag, siblings, child, descendant, universal, attribute, pseudo. Speed of ID and class is very close. However your code should be readable, maintainable and DRY along with highly performant.
 
 * The best practices in general are: avoid universal selectors, don't repeat yourself, remove redundant selectors, be as specific as possible, and keep learning.
 
-
 #### Q. How can you load css resources conditionally?
 ```@import``` allows you to load/import stylesheet by using a path (uri) representing the location of the file. You can define one or more media by comma separation for which you want to load the stylesheet. If browser dont support the media stylesheet will not be loaded.
-
 
 #### Q. Describe pseudo-elements and discuss what they are used for.
 A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). They can be used for decoration (`:first-line`, `:first-letter`) or adding elements to the markup (combined with `content: ...`) without having to modify the markup (`:before`, `:after`).
