@@ -613,7 +613,6 @@ h3::before {
 
 
 #### Q. Does padding-left or padding-right or margin-left or margin-right has effect on inline element?
-
 * Yes
 
 #### Q. In a HTML document the pseudo class :root always refers to the html element?
