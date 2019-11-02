@@ -1049,7 +1049,6 @@ The at-rule is not just the ```@media``` or ```@import``` part at the beginning;
 
 
 #### Q. What is Combinator selector?
-
 * A combinator is the character in a selector that connects two selectors together. There are four types of combinators. These four combinators help create descendant selectors (with a space character), child selectors (with the ```>``` character), adjacent sibling selectors (with the ```+``` character), and general sibling selectors (with the ```~``` character). To dispel any confusion, here are those four combinators in use:
 ```css
 /*  In all 4 examples */
