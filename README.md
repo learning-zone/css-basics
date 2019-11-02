@@ -712,7 +712,6 @@ padding: 5px;
 ```
 
 #### Q. How to create a zebra striped table with CSS?
-
 To create a zebra-striped table, use the nth-child() selector and add a background-color to all even (or odd) table rows:
 
 ```css
