@@ -834,7 +834,6 @@ In large projects, I would write a utility `.clearfix` class and use them in pla
 * Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
 
 #### Q. How would you approach fixing browser-specific styling issues?
-
 * After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though.
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
 * Use Reset CSS or Normalize.css.
