@@ -528,6 +528,8 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
+[Live Example](https://learning-zone.github.io/css-interview-questions/position-index.html) 
+
 #### Q. The difference between block, inline and inline-block element?
 Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
 That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
