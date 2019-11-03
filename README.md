@@ -682,6 +682,7 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
     /* top padding 25px; right/left padding 50px; bottom padding 75px */
     padding: 25px 50px 75px;
     ```
+[Live Example](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
 
 #### Q. Explain what elements will match each of the following CSS selectors:
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
