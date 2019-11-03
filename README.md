@@ -1200,6 +1200,9 @@ A mobile-first strategy has 2 main advantages:
 
 * It's more performant on mobile devices, since all the rules applied for them don't have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/media-query.html) 
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
