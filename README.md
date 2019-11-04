@@ -891,13 +891,18 @@ Example
  ```
 
 #### Q. Describe floats and how they work?
+**The float Property**  
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
 
-The CSS `clear` property can be used to be positioned below `left`/`right`/`both` floated elements.
+|Sl.No| Properties     | Description  |
+|-----|----------------|--------------|
+| 01. | float: left    |The element floats to the left of its container|
+| 02. | float: right   |The element floats to the right of its container|
+| 03. | float: none    |The element does not float (will be displayed just where it occurs in the text).|
+| 04. | float: inherit |The element inherits the float value of its parent|
 
-If a parent element contains nothing but floated elements, its height will be collapsed to nothing. It can be fixed by clearing the float after the floated elements in the container but before the close of the container.
+**The clear Property**  
 
-The `.clearfix` hack uses a clever CSS [pseudo selector](#describe-pseudo-elements-and-discuss-what-they-are-used-for) (`:after`) to clear floats. Rather than setting the overflow on the parent, you apply an additional class `clearfix` to it. Then apply this CSS:
 
 ```css
 .clearfix:after {
