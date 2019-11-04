@@ -931,7 +931,9 @@ div {
 </div>
 
 #### Q. Explain CSS Block Formatting Context?
-A Block Formatting Context (BFC) is part of the visual CSS rendering of a web page in which block boxes are laid out. Floats, absolutely positioned elements, `inline-blocks`, `table-cells`, `table-caption`s, and elements with `overflow` other than `visible` (except when that value has been propagated to the viewport) establish new block formatting contexts.
+Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
+
+In a block formatting context, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch)
 
 A BFC is an HTML box that satisfies at least one of the following conditions:
 
