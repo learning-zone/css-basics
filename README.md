@@ -899,7 +899,8 @@ The float CSS property places an element on the left or right side of its contai
 | 01. | float: left    |The element floats to the left of its container|
 | 02. | float: right   |The element floats to the right of its container|
 | 03. | float: none    |The element does not float (will be displayed just where it occurs in the text).|
-| 04. | float: inherit |The element inherits the float value of its parent|
+| 04. | float: inline-start |The element must float on the start side of its containing block. That is the left side with ltr scripts, and the right side with rtl scripts.|
+| 05. | float: inline-end |The element must float on the end side of its containing block. That is the right side with ltr scripts, and the left side with rtl scripts.|
 
 **The clear Property**  
 
