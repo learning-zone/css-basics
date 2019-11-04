@@ -6,59 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <style type="text/css">
-      * {
-        box-sizing: border-box;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      body {
-        margin: 40px;
-        background-color: #fff;
-        color: #444;
-        font: 1.4em Arial, sans-serif;
-      }
+    body {
+      margin: 40px;
+      background-color: #fff;
+      color: #444;
+      font: 1.4em Arial, sans-serif;
+    }
 
-      .outer {
-        border: 5px dotted rgb(214, 129, 137);
-        border-radius: 5px;
-        width: 450px;
-        padding: 10px;
-        margin-bottom: 40px;
-      }
+    .outer {
+      background-color: #ccc;
+      margin: 0 0 40px 0;
+    }
 
-      .float {
-        padding: 10px;
-        border: 5px solid rgba(214, 129, 137, 0.4);
-        border-radius: 5px;
-        background-color: rgba(233, 78, 119, 0.4);
-        color: #fff;
-        float: left;
-        width: 200px;
-        margin: 0 20px 0 0;
-      }
+    p {
+      padding: 0;
+      margin: 20px 0 20px 0;
+      background-color: rgb(233, 78, 119);
+      color: #fff;
+    }
 
-      .overflow {
-        overflow: auto;
-      }
+    .overflow {
+      overflow: auto;
+    }
   </style>
-<body>
-    <h2>Floated: plenty of text</h2>
+  <body>
+    <h2>no BFC</h2>
     <div class="outer">
-      <div class="float">I am a floated element.</div>
-      I am text inside the outer box. If there is enough text then the text will
-      wrap around the floated element. The border on the outer will then wrap
-      around the text.
+      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
     </div>
 
-    <h2>Floated: not enough text</h2>
-    <div class="outer">
-      <div class="float">I am a floated element.</div>
-      I am text inside the outer box.
-    </div>
+    <h2>With a BFC</h2>
 
-    <h2>Floated: with a BFC</h2>
     <div class="outer overflow">
-      <div class="float">I am a floated element.</div>
-      The outer has overflow: auto.
+      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
     </div>
-</body>
+  </body>
 </html>
