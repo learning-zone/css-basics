@@ -890,7 +890,7 @@ Example
  h1 {  font-size: 2em;  margin: 0.67em 0;}
  ```
 
-#### Q. Describe floats and how they work?
+#### Q. Describe floats and clear?
 **The float Property**  
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
 
@@ -903,7 +903,15 @@ The float CSS property places an element on the left or right side of its contai
 | 05. | float: inline-end |The element must float on the end side of its containing block. That is the right side with ltr scripts, and the left side with rtl scripts.|
 
 **The clear Property**  
+The clear property specifies what elements can float beside the cleared element and on which side.
 
+|Sl.No| Properties     | Description  |
+|-----|----------------|--------------|
+| 01. |claer: none     |Allows floating elements on both sides. This is default|
+| 02. |claer: left     |No floating elements allowed on the left side|
+| 03. |claer: right    |No floating elements allowed on the right side|
+| 04. |claer: both     |No floating elements allowed on either the left or the right side|
+| 05. |claer: inherit  |The element inherits the clear value of its parent|
 
 ```css
 .clearfix:after {
