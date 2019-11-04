@@ -838,17 +838,15 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is CSS preprocessor and why to user one?
-* A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+#### Q. What is CSS preprocessor?
+Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets. After development, these specific files are compiled into regular CSS that any browser can understand. Pre-processor help writing reusable, easily maintainable and extensible codes in CSS. 
 
-* Here are a few of the most popular CSS preprocessors:
+**CSS preprocessors**
 
-    * SASS (SCSS)
-    * LESS
-    * Stylus
-    * PostCSS
-
-#### Q. What are the advantages and disadvantages of using CSS preprocessors?
+  * SASS (SCSS)
+  * LESS
+  * Stylus
+  * PostCSS
 
 **Advantages:**
 
