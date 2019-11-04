@@ -942,9 +942,9 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 * The value of `display` is `table-cell`, `table-caption`, `inline-block`, `flex`, or `inline-flex`.
 * The value of `overflow` is not `visible`.
 
-In a BFC, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch).
+In a BFC, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-Vertical margins between adjacent block-level boxes in a BFC collapse. 
+[Live Example](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
 
 #### Q. Does ```overflow: hidden``` create a new block formatting context?
 * Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
