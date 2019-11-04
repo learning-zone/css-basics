@@ -1041,10 +1041,10 @@ h1.technique-four {
 h1.technique-five {
 	width: 350px; height: 75px;
 	background: url("images/header-image.jpg");
-	}
-	h1.technique-five span {
-		display: none;
-	}
+}
+h1.technique-five span {
+  display: none;
+}
 ```
 ```html
 <h1 class="technique-five">
@@ -1072,13 +1072,13 @@ h1.technique-six {
 h1.technique-seven {
 	width: 350px; height: 75px;
 	background: url("images/header-image.jpg") no-repeat;
-	}
-	h1.technique-seven span {
-		display: block;
-		width: 0;
-		height: 0;
-		overflow: hidden;
-	}
+}
+h1.technique-seven span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 ```
 ```html
 <h1 class="technique-seven">
@@ -1090,13 +1090,13 @@ h1.technique-seven {
 h1.technique-eight {
 	width: 350px; height: 75px;
 	position: relative;
-	}
-	h1.technique-eight span {
-		background: url("images/header-image.jpg");
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
+}
+h1.technique-eight span {
+  background: url("images/header-image.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 ```
 ```html
 <h1 class="technique-eight">
