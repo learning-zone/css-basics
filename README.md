@@ -902,6 +902,13 @@ The float CSS property places an element on the left or right side of its contai
 | 04. | float: inline-start |The element must float on the start side of its containing block. That is the left side with ltr scripts, and the right side with rtl scripts.|
 | 05. | float: inline-end |The element must float on the end side of its containing block. That is the right side with ltr scripts, and the left side with rtl scripts.|
 
+Example
+```css
+img {
+  float: left;
+}
+```
+
 **The clear Property**  
 The clear property specifies what elements can float beside the cleared element and on which side.
 
@@ -913,13 +920,10 @@ The clear property specifies what elements can float beside the cleared element 
 | 04. |clear: both     |No floating elements allowed on either the left or the right side|
 | 05. |clear: inherit  |The element inherits the clear value of its parent|
 
+Example
 ```css
-.clearfix:after {
-  content: ' ';
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
+div {
+  clear: left;
 }
 ```
 
