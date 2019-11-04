@@ -997,7 +997,8 @@ h1#technique-one span {
 **Technique: 02**  
 ```css
 h1.technique-two {
-  width: 2350px; height: 75px;
+  width: 2350px; 
+  height: 75px;
   background: url("images/header-image.jpg") top right;
   margin: 0 0 0 -2000px;
 }
@@ -1024,7 +1025,8 @@ h1.technique-three {
 **Technique: 04**  
 ```css
 h1.technique-four {
-	width: 350px; height: 75px;
+	width: 350px; 
+  height: 75px;
 	background: url("images/header-image.jpg");
 	text-indent: -9999px;
 }
@@ -1039,7 +1041,8 @@ h1.technique-four {
 **Technique: 05**  
 ```css
 h1.technique-five {
-	width: 350px; height: 75px;
+	width: 350px; 
+  height: 75px;
 	background: url("images/header-image.jpg");
 }
 h1.technique-five span {
@@ -1070,7 +1073,8 @@ h1.technique-six {
 **Technique: 07**  
 ```css
 h1.technique-seven {
-	width: 350px; height: 75px;
+	width: 350px; 
+  height: 75px;
 	background: url("images/header-image.jpg") no-repeat;
 }
 h1.technique-seven span {
@@ -1088,7 +1092,8 @@ h1.technique-seven span {
 **Technique: 08**  
 ```css
 h1.technique-eight {
-	width: 350px; height: 75px;
+	width: 350px; 
+  height: 75px;
 	position: relative;
 }
 h1.technique-eight span {
@@ -1106,7 +1111,8 @@ h1.technique-eight span {
 **Technique: 09**
 ```css
 h1.technique-nine {
-  width: 350px; height: 75px;
+  width: 350px; 
+  height: 75px;
   background: url("images/header-image.jpg") no-repeat;
   font-size: 1px;
   color: white;
