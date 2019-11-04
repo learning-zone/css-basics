@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Centering with CSS</title>
+    <style>
+      h1, h3 {
+        text-align: center;
+      }
+
+      .blue-square-container {
+        text-align: center;
+      }
+
+      .blue-square {
+        background-color: #0074d9;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+
+      .yellow-square {
+        background-color: #ffdc00;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+      }
+
+      .green-square {
+        background-color: #3d9970;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Centering with CSS</h1>
+
+    <h3>Text-Align Method</h3>
+    <div class="blue-square-container">
+      <div class="blue-square"></div>
+    </div>
+
+    <h3>Margin Auto Method</h3>
+    <div class="yellow-square"></div>
+
+    <h3>Absolute Positioning Method</h3>
+    <div class="green-square"></div>
+  </body>
+</html>
