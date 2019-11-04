@@ -890,7 +890,7 @@ Example
  h1 {  font-size: 2em;  margin: 0.67em 0;}
  ```
 
-#### Q. Describe Floats and how they work?
+#### Q. Describe floats and how they work?
 Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements (e.g. text will flow around floated elements), unlike `position: absolute` elements, which are removed from the flow of the page.
 
 The CSS `clear` property can be used to be positioned below `left`/`right`/`both` floated elements.
