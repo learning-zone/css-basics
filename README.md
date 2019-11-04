@@ -531,11 +531,9 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
 [Live Example](https://learning-zone.github.io/css-interview-questions/position-index.html) 
 
 #### Q. The difference between block, inline and inline-block element?
-Elements with ```display: inline-block``` are like ```display: inline elements```, but they can have a width and a height. 
-That means that you can use an ```inline-block``` element as a block while flowing it within text or other elements.
 
 **Block Elements**  
-The block elements always start on a new line. They will also take space of an entire row or width. It means that there can be no other HTML elements that can stand side by side with block level elements. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
+The block elements always start on a new line. They will also take space of an entire row or width. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
 
 Example:
 ```html
