@@ -709,7 +709,7 @@ For example, it can be used to:
 
 
 
-#### Q. The pseudo class :checked will select inputs with type radio or checkbox, but not `<option> elements.
+#### Q. The pseudo class `:checked` will select inputs with type radio or checkbox, but not `<option>` elements.
 * False
 
 #### Q. How to center align a div inside another div?
