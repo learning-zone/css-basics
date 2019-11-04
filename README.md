@@ -812,14 +812,14 @@ tr:nth-child(even) {
 
 #### Q. What is the difference between RGBa, HEX and HSLa?
 
-* **RGB** or Red/Green/Blue is a color model.
+* **RGB** (Red/Green/Blue) is a color model.
 
 ```css
 p {
   color: rgba(37, 84, 127, 1);
 }
 ```
-* **HEX**
+* **HEX (Hexadecimal color values)**
 
 ```css
 p {
