@@ -891,7 +891,7 @@ Example
  ```
 
 #### Q. Describe floats and how they work?
-Float is a CSS positioning property. Floated elements remain a part of the flow of the page, and will affect the positioning of other elements (e.g. text will flow around floated elements), unlike `position: absolute` elements, which are removed from the flow of the page.
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
 
 The CSS `clear` property can be used to be positioned below `left`/`right`/`both` floated elements.
 
