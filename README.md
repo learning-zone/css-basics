@@ -946,8 +946,8 @@ In a BFC, each box's left outer edge touches the left edge of the containing blo
 
 [Live Example](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
 
-#### Q. Does ```overflow: hidden``` create a new block formatting context?
-* Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
+#### Q. Does `overflow: hidden` create a new block formatting context?
+Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
 
 #### Q. How would you approach fixing browser-specific styling issues?
 * After identifying the issue and the offending browser, use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though.
