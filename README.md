@@ -644,10 +644,72 @@ h3::before {
 #### Q. In a HTML document the pseudo class :root always refers to the html element?
 * True
 
-#### Q. What is pseudo element? what is pseudo class?
-* pseudo elements helps you to add cosmetics contents. pseudo elements generates content where as pseudo class deals with state of the element. for example, you can style ```:first-letter``` of every paragraph. similarly, ```:first-line``` and fancy stuff with ```:before```, ```:after```
+#### Q. What is pseudo element? What is pseudo class?
+**Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
 
-#### Q. The pseudo class :checked will select inputs with type radio or checkbox, but not <option> elements.
+For example, it can be used to:
+
+* Style the first letter, or line, of an element
+* Insert content before, or after, the content of an element
+
+**CSS Pseudo Elements**  
+
+|Sl.No|Selector	      |Example	        |description|
+|-----|---------------|-----------------|-------------|
+| 01. |::after	      |p::after	        |Insert something after the content of each <p> element|
+| 02. |::before	      |p::before	      |Insert something before the content of each <p> element|
+| 03. |::first-letter	|p::first-letter	|Selects the first letter of each <p> element|
+| 04. |::first-line	  |p::first-line	  |Selects the first line of each <p> element|
+| 05. |::selection	  |p::selection	    |Selects the portion of an element that is selected by a user|
+
+
+**Pseudo-classes**: A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+* Style an element when a user mouses over it
+* Style visited and unvisited links differently
+* Style an element when it gets focus
+
+**CSS Pseudo Classes**  
+
+| Sl.No |Selector	         | Example	              |description|
+|-------|------------------|------------------------|-----------|
+| 01.  |:active	           |a:active	              |Selects the active link|
+| 02.  |:checked	         |input:checked	          |Selects every checked `<input>` element|
+| 03.  |:disabled	         |input:disabled	        |Selects every disabled `<input>` element|
+| 04.  |:empty	           |p:empty	                |Selects every `<p>` element that has no children|
+| 05.  |:enabled	         |input:enabled	          |Selects every enabled `<input>` element|
+| 06.  |:first-child	     |p:first-child	          |Selects every `<p>` elements that is the first child of its parent|
+| 07.  |:first-of-type	   |p:first-of-type	        |Selects every `<p>` element that is the first `<p>` element of its parent|
+| 08.  |:focus	           |input:focus	            |Selects the `<input>` element that has focus|
+| 09.  |:hover	           |a:hover	                |Selects links on mouse over|
+| 10.  |:in-range	         |input:in-range	        |Selects `<input>` elements with a value within a specified range|
+| 11.  |:invalid	         |input:invalid	          |Selects all `<input>` elements with an invalid value|
+| 12.  |:lang(language)	   |p:lang(it)	            |Selects every `<p>` element with a lang attribute value starting with "it"|
+| 13.  |:last-child	       |p:last-child	          |Selects every `<p>` elements that is the last child of its parent|
+| 14.  |:last-of-type	     |p:last-of-type	        |Selects every `<p>` element that is the last `<p>` element of its parent|
+| 15.  |:link	             |a:link	                |Selects all unvisited links|
+| 16.  |:not(selector)	   |:not(p)	                |Selects every element that is not a `<p>` element|
+| 17.  |:nth-child(n)	     |p:nth-child(2)	        |Selects every `<p>` element that is the second child of its parent|
+| 18.  |:nth-last-child(n) |p:nth-last-child(2)	    |Selects every `<p>` element that is the second child of its parent, |counting from the last child|
+| 19.  |:nth-last-of-type(n) |p:nth-last-of-type(2)	|Selects every `<p>` element that is the second `<p>` element of its parent, counting from the last child|
+| 20.  |:nth-of-type(n)	    |p:nth-of-type(2)	      |Selects every `<p>` element that is the second `<p>` element of its parent|
+| 21.  |:only-of-type	      |p:only-of-type	        |Selects every `<p>` element that is the only `<p>` element of its parent|
+| 22.  |:only-child	        |p:only-child	          |Selects every `<p>` element that is the only child of its parent|
+| 23.  |:optional	          |input:optional	        |Selects `<input>` elements with no "required" attribute|
+| 24.  |:out-of-range	      |input:out-of-range	    |Selects `<input>` elements with a value outside a specified range|
+| 25.  |:read-only	        |input:read-only	      |Selects `<input>` elements with a "readonly" attribute specified|
+| 26.  |:read-write	        |input:read-write	      |Selects `<input>` elements with no "readonly" attribute|
+| 27.  |:required	          |input:required	        |Selects `<input>` elements with a "required" attribute specified|
+| 28.  |:root	root	        |                       |Selects the document's root element|
+| 29.  |:target	            |#news:target	          |Selects the current active #news element (clicked on a URL containing that anchor name)|
+| 30.  |:valid	            |input:valid	          |Selects all `<input>` elements with a valid value|
+| 31.  |:visited	          |a:visited	            |Selects all visited links|
+
+
+
+#### Q. The pseudo class :checked will select inputs with type radio or checkbox, but not `<option> elements.
 * False
 
 #### Q. How to center align a div inside another div?
