@@ -607,6 +607,15 @@ h3::before {
 <h3>Body</h3>
 <h3>Conclusion</h3>
 ```
+
+**CSS Counter Properties**  
+
+|Property	        |Description  |
+|-----------------|-------------------------------------------------------------------------------|
+|content	        |Used with the ::before and ::after pseudo-elements, to insert generated content|
+|counter-increment|Increments one or more counter values|
+|counter-reset	  |Creates or resets one or more counters|
+
 [Live Example](https://learning-zone.github.io/css-interview-questions/counters.html) 
 
 <div align="right">
