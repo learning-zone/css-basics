@@ -944,14 +944,6 @@ In a BFC, each box's left outer edge touches the left edge of the containing blo
 
 Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-
-#### Q. What are the various clearing techniques and which is appropriate for what context? How works .clearfix?
-* Empty `div` method - `<div style="clear:both;"></div>`.
-* Clearfix method - Refer to the `.clearfix` class above.
-* `overflow: auto` or `overflow: hidden` method - Parent will establish a new block formatting context and expand to contains its floated children.
-
-In large projects, I would write a utility `.clearfix` class and use them in places where I need it. `overflow: hidden` might clip children if the children is taller than the parent and is not very ideal.
-
 #### Q. Does ```overflow: hidden``` create a new block formatting context?
 * Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
 
