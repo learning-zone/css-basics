@@ -907,11 +907,11 @@ The clear property specifies what elements can float beside the cleared element 
 
 |Sl.No| Properties     | Description  |
 |-----|----------------|--------------|
-| 01. |claer: none     |Allows floating elements on both sides. This is default|
-| 02. |claer: left     |No floating elements allowed on the left side|
-| 03. |claer: right    |No floating elements allowed on the right side|
-| 04. |claer: both     |No floating elements allowed on either the left or the right side|
-| 05. |claer: inherit  |The element inherits the clear value of its parent|
+| 01. |clear: none     |Allows floating elements on both sides. This is default|
+| 02. |clear: left     |No floating elements allowed on the left side|
+| 03. |clear: right    |No floating elements allowed on the right side|
+| 04. |clear: both     |No floating elements allowed on either the left or the right side|
+| 05. |clear: inherit  |The element inherits the clear value of its parent|
 
 ```css
 .clearfix:after {
