@@ -926,8 +926,6 @@ div {
   clear: left;
 }
 ```
-
-Alternatively, give `overflow: auto` or `overflow: hidden` property to the parent element which will establish a new block formatting context inside the children and it will expand to contain its children.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
