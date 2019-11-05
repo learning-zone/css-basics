@@ -19,44 +19,50 @@
       color: yellow;
     }
 
-   @-moz-document url-prefix() { /* Firefox */
+    @-moz-document url-prefix() {
+      /* Firefox */
       p {
-            font-family: "Times New Roman", Times, serif;
-            font-style: italic;
-            font-size: 24px;
-            text-align: justify;
-            color: brown;
-        }
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 24px;
+        text-align: justify;
+        color: brown;
+      }
     }
 
-    @media screen and (-webkit-min-device-pixel-ratio:0) { /* Chrome */ 
-        p {
-            font-family: "Times New Roman", Times, serif;
-            font-style: italic;
-            font-size: 24px;
-            text-align: left;
-            color: #333333;
-        }
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      /* Chrome */
+      p {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 24px;
+        text-align: left;
+        color: #333333;
+      }
     }
-    
-    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* IE */ 
-        p {
-            font-family: "Times New Roman", Times, serif;
-            font-style: italic;
-            font-size: 24px;
-            text-align: right;
-            color: cornflowerblue;
-        }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      /* IE */
+      p {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 24px;
+        text-align: right;
+        color: cornflowerblue;
+      }
     }
-    @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) { /* Safari 10.1+ */ 
+    @media not all and (min-resolution: 0.001dpcm) {
+      @supports (-webkit-appearance: none) {
+        /* Safari 10.1+ */
         p {
-            font-family: "Times New Roman", Times, serif;
-            font-style: italic;
-            font-size: 24px;
-            text-align: initial;
-            color: blue;
+          font-family: "Times New Roman", Times, serif;
+          font-style: italic;
+          font-size: 24px;
+          text-align: initial;
+          color: blue;
         }
-    }}
+      }
+    }
   </style>
   <body>
     <p>
