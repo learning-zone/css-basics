@@ -1271,7 +1271,7 @@ if (window.matchMedia('screen and (min-width: 600px)')) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What does  ```* { box-sizing: border-box; }``` do? What are its advantages?
+#### Q. What does  `* { box-sizing: border-box; }` do? What are its advantages?
 * Make every element in the document include the padding and border in the element's inner dimensions; 
 making it easier to reason about the layout of elements on the page.
 * By default, elements have `box-sizing: content-box` applied, and only the content size is being accounted for.
