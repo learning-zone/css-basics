@@ -1245,16 +1245,10 @@ Browser's Viewport
 #### Q. How would you implement a web design comp that uses non-standard fonts?
 Use `@font-face` and define `font-family` for different `font-weight`s.
 
-#### Q. Explain how a browser determines what elements match a CSS selector?
+#### Q. How a browser determines what elements match a CSS selector?
 Browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector.
 
 For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
-
-
-#### Q. What are the some pseudo classed u have used?
-* pseudo class tells you specific state of an element. allow to style element dynamically. The most popular one is ```:hover```. Besides i have used :visited, ```:focus```, ```:nth-child```, ```nth-of-type```, ```:link```, etc.
-
-* pseudo classes is better if you don't want to mess up with javaScript however, pseudo-classes is slow to process and apply rules.
 
 #### Q. How do you optimize css selectors?
 * This is very open and depend on what you are trying to achieve. If i order selectors in terms of render speed it would be like id, class, tag, siblings, child, descendant, universal, attribute, pseudo. Speed of ID and class is very close. However your code should be readable, maintainable and DRY along with highly performant.
