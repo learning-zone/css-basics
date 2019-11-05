@@ -1144,9 +1144,7 @@ These techniques are related to accessibility (a11y).
 * **WAI-ARIA**: A W3C technical specification that specifies how to increase the accessibility of web pages.
 
 #### Q. What is media queries? How could you apply css rules specific to a media?
-* ```@media (max-width: 700px){...}``` means you want to apply rules to those media whose max-width is 700 px. this means every smaller device will have this rule.
-
-```@media (max-width: 700px) and (orientation: landscape){...}``` will apply rules for media smaller than 700px and in landscape orientation.
+Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
 
 **Media Types**
 
@@ -1159,43 +1157,43 @@ These techniques are related to accessibility (a11y).
 
 **Media Features**  
 
-|Sl.No| Value            | Description          |
+|Sl.No | Value           | Description          |
 |------|-----------------|----------------------|  
-|  01. |any-hover	       | Does any available input mechanism allow the user to hover over elements? 
-|  02. |any-pointer	     | Is any available input mechanism a pointing device, and if so, how accurate is it? 
-|  03. |aspect-ratio	   | The ratio between the width and the height of the viewport
-|  04. |color	           | The number of bits per color component for the output device
-|  05. |color-gamut	     | The approximate range of colors that are supported by the user agent and output device
-|  06. |color-index	     | The number of colors the device can display
-|  07. |grid	           | Whether the device is a grid or bitmap
-|  08. |height	         | The viewport height
-|  09. |hover	           | Does the primary input mechanism allow the user to hover over elements? 
-|  10. |inverted-colors	 | Is the browser or underlying OS inverting colors? 
-|  11. |light-level	     | Current ambient light level 
-|  12. |max-aspect-ratio |	The maximum ratio between the width and the height of the display area
-|  13. |max-color	       | The maximum number of bits per color component for the output device
-|  14. |max-color-index	 | The maximum number of colors the device can display
-|  15. |max-height	     | The maximum height of the display area, such as a browser window
-|  16. |max-monochrome	 | The maximum number of bits per "color" on a monochrome (greyscale) device
-|  17. |max-resolution	 | The maximum resolution of the device, using dpi or dpcm
-|  18. |max-width	       | The maximum width of the display area, such as a browser window
-|  19. |min-aspect-ratio |	The minimum ratio between the width and the height of the display area
-|  20. |min-color	       | The minimum number of bits per color component for the output device
-|  21. |min-color-index	 | The minimum number of colors the device can display
-|  22. |min-height	     | The minimum height of the display area, such as a browser window
-|  23. |min-monochrome	 | The minimum number of bits per "color" on a monochrome (greyscale) device
-|  24. |min-resolution	 | The minimum resolution of the device, using dpi or dpcm
-|  25. |min-width	       | The minimum width of the display area, such as a browser window
-|  26. |monochrome	     | The number of bits per "color" on a monochrome (greyscale) device
-|  27. |orientation	     | The orientation of the viewport (landscape or portrait mode)
-|  28. |overflow-block	 | How does the output device handle content that overflows the viewport along the block axis 
-|  29. |overflow-inline	 | Can content that overflows the viewport along the inline axis be scrolled 
-|  30. |pointer	         | Is the primary input mechanism a pointing device, and if so, how accurate is it? 
-|  31. |resolution	     | The resolution of the output device, using dpi or dpcm
-|  32. |scan	           | The scanning process of the output device
-|  33. |scripting	       | Is scripting (e.g. JavaScript) available? 
-|  34. |update	         | How quickly can the output device modify the appearance of the content 
-|  35. |width	           | The viewport width
+| 01.  |any-hover	       | Does any available input mechanism allow the user to hover over elements? |
+| 02.  |any-pointer	     | Is any available input mechanism a pointing device, and if so, how accurate is it? |
+| 03.  |aspect-ratio	   | The ratio between the width and the height of the viewport|
+| 04.  |color	           | The number of bits per color component for the output device|
+| 05.  |color-gamut	     | The approximate range of colors that are supported by the user agent and output device|
+| 06.  |color-index	     | The number of colors the device can display|
+| 07.  |grid	           | Whether the device is a grid or bitmap|
+| 08.  |height	         | The viewport height|
+| 09.  |hover	           | Does the primary input mechanism allow the user to hover over elements? |
+| 10.  |inverted-colors	 | Is the browser or underlying OS inverting colors? |
+| 11.  |light-level	     | Current ambient light level |
+| 12.  |max-aspect-ratio |	The maximum ratio between the width and the height of the display area|
+| 13.  |max-color	       | The maximum number of bits per color component for the output device|
+| 14.  |max-color-index	 | The maximum number of colors the device can display|
+| 15.  |max-height	     | The maximum height of the display area, such as a browser window|
+| 16.  |max-monochrome	 | The maximum number of bits per "color" on a monochrome (greyscale) device|
+| 17.  |max-resolution	 | The maximum resolution of the device, using dpi or dpcm|
+| 18.  |max-width	       | The maximum width of the display area, such as a browser window|
+| 19.  |min-aspect-ratio |	The minimum ratio between the width and the height of the display area|
+| 20.  |min-color	       | The minimum number of bits per color component for the output device|
+| 21.  |min-color-index	 | The minimum number of colors the device can display|
+| 22.  |min-height	     | The minimum height of the display area, such as a browser window|
+| 23.  |min-monochrome	 | The minimum number of bits per "color" on a monochrome (greyscale) device|
+| 24.  |min-resolution	 | The minimum resolution of the device, using dpi or dpcm|
+| 25.  |min-width	       | The minimum width of the display area, such as a browser window|
+| 26.  |monochrome	     | The number of bits per "color" on a monochrome (greyscale) device|
+| 27.  |orientation	     | The orientation of the viewport (landscape or portrait mode)|
+| 28.  |overflow-block	 | How does the output device handle content that overflows the viewport along the block axis| 
+| 29.  |overflow-inline	 | Can content that overflows the viewport along the inline axis be scrolled |
+| 30.  |pointer	         | Is the primary input mechanism a pointing device, and if so, how accurate is it? |
+| 31.  |resolution	     | The resolution of the output device, using dpi or dpcm|
+| 32.  |scan	           | The scanning process of the output device|
+| 33.  |scripting	       | Is scripting (e.g. JavaScript) available? |
+| 34.  |update	         | How quickly can the output device modify the appearance of the content |
+| 35.  |width	           | The viewport width |
 
 
 Example:
@@ -1206,17 +1204,6 @@ Example:
 
 @media screen {
   body { font-size: 13px; }
-}
-
-@media screen, print {
-  body { line-height: 1.2; }
-}
-
-@media only screen 
-  and (min-width: 320px) 
-  and (max-width: 480px)
-  and (resolution: 150dpi) {
-    body { line-height: 1.4; }
 }
 
 @media only screen and (max-width: 600px) {
