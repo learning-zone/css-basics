@@ -1341,25 +1341,13 @@ Adaptive is useful for retrofitting an existing site in order to make it more mo
 </div>
 
 #### Q. What is retina graphics? What kind of techniques do you use to handle images for retina screens?
-_Retina_ is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. The key thing to know is that using a pixel ratio means these displays are emulating a lower resolution screen in order to show elements with the same size. Nowadays we consider all mobile devices _retina_ defacto displays.
-
-Browsers by default render DOM elements according to the device resolution, except for images.
-
 In order to have crisp, good-looking graphics that make the best of retina displays we need to use high resolution images whenever possible. However using always the highest resolution images will have an impact on performance as more bytes will need to be sent over the wire.
 
 To overcome this problem, we can use responsive images, as specified in HTML5. It requires making available different resolution files of the same image to the browser and let it decide which image is best, using the html attribute `srcset` and optionally `sizes`, for instance:
 
 ```html
 <div responsive-background-image>  
-  <img src="/images/test-1600.jpg"
-    sizes="
-      (min-width: 768px) 50vw,
-      (min-width: 1024px) 66vw,
-      100vw"
-    srcset="
-      /images/test-400.jpg 400w,
-      /images/test-800.jpg 800w,
-      /images/test-1200.jpg 1200w">
+  <img src="/images/foo.png" alt="bar" srcset="/images/foo.png 2x" />
 </div>
 ```
 
