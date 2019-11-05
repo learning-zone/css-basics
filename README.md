@@ -1281,7 +1281,7 @@ making it easier to reason about the layout of elements on the page.
 * Taking into account `padding`s and `border`s as part of our box model resonates better with how designers actually imagine content in grids.
 
 #### Q. List display property in CSS?
-The display property specifies the display behavior (the type of rendering box) of an element.
+The display property specifies the display behavior (the type of rendering box) of an element.  
 Example:
 ```css
 p.ex1 {display: none;}
