@@ -1236,7 +1236,7 @@ Example:
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { }
 ```
-#### Q. What is the use of ```@media only screen```?
+#### Q. What is the use of `@media only screen`?
 It hide style sheets from older user agents.
 
 #### Q. Does the ```screen``` keyword apply to the device's physical screen or the browser's viewport?
