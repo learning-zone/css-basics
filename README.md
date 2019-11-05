@@ -1349,12 +1349,29 @@ To overcome this problem, we can use responsive images, as specified in HTML5. I
 <div responsive-background-image>  
   <img src="/images/foo.png" alt="bar" srcset="/images/foo.png 2x" />
 </div>
+
+<!-- It enable the browser to use a medium and large image based on 
+     the sizes of the image in the viewport
+-->
+<img
+  src="/images/foo.png"
+  alt="bar"
+  srcset="/images/foo-medium.png 1024w,
+               /images/foo-large.png 2048w,
+               /images/foo.png 800w"
+/>
 ```
 
-It is important to note that browsers which don't support HTML5's `srcset` (i.e. IE11) will ignore it and use `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript polyfill, e.g. Picturefill (link in the references).
+The browsers which does not support HTML5's `srcset` (i.e. IE11) will ignore it and uses `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript `polyfill`.
 
-For icons, I would also opt to use SVGs and icon fonts where possible, as they render very crisply regardless of resolution.
-
+**HTML5 picture Element**  
+```html
+<picture>
+   <source media="(min-width: 1024px)" srcset="foo-large.jpg  1024w, foo-medium.jpg 640w, foo-small.jpg 320w" sizes="50vw" />
+   <source srcset="foo@2x.jpg 2x, foo.jpg 1x" />
+   <img src="foo.jpg" alt="Bar" />
+</picture>
+```
 #### Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? And why?
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
 
