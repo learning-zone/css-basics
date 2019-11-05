@@ -1340,7 +1340,7 @@ Adaptive is useful for retrofitting an existing site in order to make it more mo
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Have you ever worked with retina graphics? If so, when and what techniques did you use? What kind of techniques do you use to handle images for retina screens?
+#### Q. What is retina graphics? What kind of techniques do you use to handle images for retina screens?
 _Retina_ is just a marketing term to refer to high resolution screens with a pixel ratio bigger than 1. The key thing to know is that using a pixel ratio means these displays are emulating a lower resolution screen in order to show elements with the same size. Nowadays we consider all mobile devices _retina_ defacto displays.
 
 Browsers by default render DOM elements according to the device resolution, except for images.
