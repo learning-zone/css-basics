@@ -1367,7 +1367,7 @@ The browsers which does not support HTML5's `srcset` (i.e. IE11) will ignore it 
 **HTML5 picture Element**  
 ```html
 <picture>
-   <source media="(min-width: 1024px)" srcset="foo-large.jpg  1024w, foo-medium.jpg 640w, foo-small.jpg 320w" sizes="50vw" />
+   <source media="(min-width: 1024px)" srcset="foo-large.jpg  1024w, foo-medium.jpg 640w" sizes="50vw" />
    <source srcset="foo@2x.jpg 2x, foo.jpg 1x" />
    <img src="foo.jpg" alt="Bar" />
 </picture>
