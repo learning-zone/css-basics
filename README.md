@@ -1251,7 +1251,7 @@ Browsers match selectors from rightmost (key selector) to left. Browsers filter 
 For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
 
 #### Q. How can you load css resources conditionally?
-**@import**:  allows to load/import stylesheet by using a path (uri) representing the location of the file. 
+**@import**:  allows to load stylesheet by using a path (uri) representing the location of the file. 
 ```css
 /* By default, include the "light" color theme for syntax highlighting */
 @import "cdn.com/atom-one-light.min.css";
