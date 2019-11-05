@@ -1211,6 +1211,15 @@ Example:
     background-color: lightblue;
   }
 }
+
+/* Nested within another conditional at-rule */
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    article {
+      display: flex;
+    }
+  }
+}
 ```
 #### Q. What is the use of ```@media only screen```?
 It hide style sheets from older user agents.
