@@ -1271,10 +1271,6 @@ if (window.matchMedia('screen and (min-width: 600px)')) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What are the properties related to box model?
-* Technically, height, width, padding and border are part of box model and margin is related to it.
-* Everything in a web page is a box where you can control size, position, background, etc. Each box/ content area is optionally surrounded by padding, border and margin. When you set height and width of an element, you set content height and width.
-
 #### Q. What does  ```* { box-sizing: border-box; }``` do? What are its advantages?
 * Make every element in the document include the padding and border in the element's inner dimensions; 
 making it easier to reason about the layout of elements on the page.
