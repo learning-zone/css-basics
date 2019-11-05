@@ -1320,9 +1320,12 @@ p.ex4 {display: inline-block;}
 
 
 #### Q. How is responsive design different from adaptive design? 
-Responsive design uses `CSS media queries` to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.
+**Responsive design** uses `CSS media queries` to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.
 
-Adaptive design, on the other hand, uses static layouts based on breakpoints which don’t respond once they’re initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it – generally you would design an adaptive site for six common screen widths:
+Responsive doesn’t offer as much control as adaptive, but takes much less work to both build and maintain. Responsive layouts are also fluid and whilst adaptive can and do use percentages to give a more fluid feel when scaling, these can again cause a jump when a window is resized. 
+
+**Adaptive design** uses static layouts based on breakpoints which don’t respond once they’re initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it.
+Generally adaptive site uses six common screen widths:
 
 * 320 px
 * 480 px
@@ -1330,6 +1333,9 @@ Adaptive design, on the other hand, uses static layouts based on breakpoints whi
 * 960 px
 * 1200 px
 * 1600 px
+
+Adaptive is useful for retrofitting an existing site in order to make it more mobile-friendly. This allows you to take control of the design and develop for specific, multiple viewports. 
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
