@@ -1251,7 +1251,22 @@ Browsers match selectors from rightmost (key selector) to left. Browsers filter 
 For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
 
 #### Q. How can you load css resources conditionally?
-```@import``` allows you to load/import stylesheet by using a path (uri) representing the location of the file. You can define one or more media by comma separation for which you want to load the stylesheet. If browser dont support the media stylesheet will not be loaded.
+**@import**:  allows to load/import stylesheet by using a path (uri) representing the location of the file. 
+```css
+/* By default, include the "light" color theme for syntax highlighting */
+@import "cdn.com/atom-one-light.min.css";
+/* And if you’re in dark mode, have those rules superseded via a different stylesheet */
+@media (prefers-color-scheme: dark) {
+  @import "cdn.com/atom-one-dark.min.css";
+}
+```
+
+**matchMedia()**: Using matchMedia lets you execute blocks of JavaScript only when a certain media query condition is met. This means you can just write out the CSS when and if the query is true:
+```javascript
+if (window.matchMedia('screen and (min-width: 600px)')) {
+  document.write('<link rel="stylesheet" href="css/small.css">');
+}
+```
 
 #### Q. Describe pseudo-elements and discuss what they are used for.
 A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected element(s). They can be used for decoration (`:first-line`, `:first-letter`) or adding elements to the markup (combined with `content: ...`) without having to modify the markup (`:before`, `:after`).
