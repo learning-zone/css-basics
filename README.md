@@ -1143,7 +1143,7 @@ These techniques are related to accessibility (a11y).
 * **Metadata**: For example by using Schema.org, RDF, and JSON-LD.
 * **WAI-ARIA**: A W3C technical specification that specifies how to increase the accessibility of web pages.
 
-#### Q. What is media queries? How could you apply css rules specific to a media?
+#### Q. What are media queries? How could you apply css rules specific to a media?
 Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
 
 **Media Types**
