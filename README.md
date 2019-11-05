@@ -1280,8 +1280,44 @@ making it easier to reason about the layout of elements on the page.
 * The `width` of an element is now calculated by the content's `width` + horizontal `padding` + horizontal `border` width.
 * Taking into account `padding`s and `border`s as part of our box model resonates better with how designers actually imagine content in grids.
 
-#### Q. List as many values for the display property that you can remember.
-* `none`, `block`, `inline`, `inline-block`, `table`, `table-row`, `table-cell`, `list-item`.
+#### Q. List display property in CSS?
+The display property specifies the display behavior (the type of rendering box) of an element.
+Example:
+```css
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+```
+
+**Property Values**  
+
+|Sl.No|Value	   |Description	
+|-----|---------------|------------------
+| 01. |inline	|Displays an element as an inline element (like <span>). Any height and width properties will have no effect|	
+| 02. |block	|Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width	|
+| 03. |contents|Makes the container disappear, making the child elements children of the element the next level up in the DOM	|
+| 04. |flex	          |Displays an element as a block-level flex container	|
+| 05. |grid	          |Displays an element as a block-level grid container	|
+| 06. |inline-block   |Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values|	
+| 07. |inline-flex	   |Displays an element as an inline-level flex container	|
+| 08. |inline-grid	   |Displays an element as an inline-level grid container	|
+| 09. |inline-table    |The element is displayed as an inline-level table	|
+| 10. |list-item	     |Let the element behave like a <li> element	|
+| 11. |run-in	         |Displays an element as either block or inline, depending on context	|
+| 12. |table	         |Let the element behave like a <table> element	|
+| 13. |table-caption	 |Let the element behave like a <caption> element	|
+| 14. |table-column-group	|Let the element behave like a <colgroup> element	|
+| 15. |table-header-group	|Let the element behave like a <thead> element	|
+| 16. |table-footer-group	|Let the element behave like a <tfoot> element	|
+| 17. |table-row-group	  |Let the element behave like a <tbody> element	|
+| 18. |table-cell	        |Let the element behave like a <td> element	|
+| 19. |table-column	      |Let the element behave like a <col> element	|
+| 20. |table-row	        |Let the element behave like a <tr> element	|
+| 21. |none	              |The element is completely removed	|
+| 22. |initial	          |Sets this property to its default value. Read about initial	|
+| 23. |inherit	          |Inherits this property from its parent element. Read about inherit|
+
 
 #### Q. How is responsive design different from adaptive design? 
 Both responsive and adaptive design attempt to optimize the user experience across different devices, adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.
