@@ -1239,8 +1239,8 @@ Example:
 #### Q. What is the use of `@media only screen`?
 It hide style sheets from older user agents.
 
-#### Q. Does the ```screen``` keyword apply to the device's physical screen or the browser's viewport?
-* Browser's Viewport
+#### Q. Does the `screen` keyword apply to the device's physical screen or the browser's viewport?
+Browser's Viewport
 
 #### Q. Are you familiar with styling SVG?
 Yes, there are several ways to color shapes (including specifying attributes on the object) using inline CSS, an embedded CSS section, or an external CSS file. Most SVG you'll find around the web use inline CSS, but there are advantages and disadvantages associated with each type.
