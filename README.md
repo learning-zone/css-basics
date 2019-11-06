@@ -1422,7 +1422,7 @@ False
 
 #### Q. Tell what each of these tags do, if there are alternatives, which are preferable, why?
 
-`**<em>**`: The HTML `<em>` tag represents stress emphasis of its contents.
+**`<em>`**: The HTML `<em>` tag represents stress emphasis of its contents.
 ```html
 <em>Emphasized content...</em>
 ```
