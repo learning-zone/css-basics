@@ -1427,17 +1427,17 @@ False
 <em>Emphasized content...</em>
 ```
 
-`<b>`: The `<b>` tag specifies bold text without any extra importance.
+**`<b>`**: The `<b>` tag specifies bold text without any extra importance.
 ```html
 <p>This is normal text - <b>and this is bold text</b>.</p>
 ```
 
-`<abbr>`: The HTML Abbreviation element (`<abbr>`) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation.
+**`<abbr>`**: The HTML Abbreviation element (`<abbr>`) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation.
 ```html
 The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 ```
 
-`<nav>`: The `<nav>` tag defines a set of navigation links.
+**`<nav>`**: The `<nav>` tag defines a set of navigation links.
 ```html
 <nav>
   <a href="/html/">HTML</a> |
@@ -1447,23 +1447,23 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 </nav>
 ```
 
-`<i>`: The content of the `<i>` tag is usually displayed in italic.
+**`<i>`**: The content of the `<i>` tag is usually displayed in italic.
 ```html
 <p>I looked at it and thought <i>This can't be real!</i></p>
 ```
 
-`<link>`: The HTML `<link>` tag is used for defining a link to an external resource. It is placed in in the `<head>` section of the HTML document.
+**`<link>`**: The HTML `<link>` tag is used for defining a link to an external resource. It is placed in in the `<head>` section of the HTML document.
 ```html
 <head>
   <link rel="stylesheet" type="text/css" href="theme.css">
 </head>
 ```
 
-`<strong>`: The `<strong>` element is used to identify text that is of greater importance than the surrounding text. By default, all browsers render `<strong>` text in a bold typeface.
+**`<strong>`**: The `<strong>` element is used to identify text that is of greater importance than the surrounding text. By default, all browsers render `<strong>` text in a bold typeface.
 ```html
 <strong>Strong text</strong>
 ```
-`<article>`: The `<article>` tag specifies independent, self-contained content.
+**`<article>`**: The `<article>` tag specifies independent, self-contained content.
 ```html
 <article>
   <h1>Google Chrome</h1>
