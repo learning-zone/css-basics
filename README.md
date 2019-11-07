@@ -1509,15 +1509,6 @@ As images being inline elements are treated same as texts, so there is a gap lef
 img { display: block ; }
 ```
 
-#### Q. What is graceful degradation?
-In case the component fails, it will continue to work properly in the presence of a graceful degradation. The latest browser application is used when a webpage is designed. As it is not available to everyone, there is a basic functionality, which enables its use to a wider audience. In case the image is unavailable for viewing, text is shown with the alt tag.
-
-#### Q. What is progressive enhancement?
-* It’s an alternative to graceful degradation, which concentrates on the matter of the web. 
-    The functionality is same, but it provides an extra edge to users having the latest bandwidth. 
-    It has been into prominent use recently with mobile internet connections expanding their base.
-
-
 #### Q. What is progressive rendering?
 
 * Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
