@@ -1499,39 +1499,6 @@ body {
 }
 /*  ends with the closing curly brace above */
 ```
-
-#### Q. Provide CSS so that three lines are displayed red, then green, then blue (2):
-```html
-<div class="rgb">
-    <span>Red</span>
-    <span>Green<b>Blue</b></span>
-</div>
-```
-
-#### Q. Provided following HTML and CSS, what will be displayed (1)?
-```css
-<div class="red">Hi, I'm Blue</div>
-
-div.red { color: green; }
-div { font-weight: bold; }
-.red { color: yellow; font-weight: normal; }
-```
-
-#### Q. What is Universal Selector?
-
-* The universal selector matches any element within the context in which it’s placed in a selector. 
-    In the example below, the ```*``` character is the universal selector:
-```css
-/*  the asterisk character is the universal selector */
-.navigation *ul {
-  width: 100px;
-  float: left;
-}
-```
-
-* So, any element that appears as a child descendant of the unordered list element inside an element that has a class of “navigation” will receive the declared styles.
-
-* Universal selectors are generally discouraged for performance reasons.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
