@@ -1657,16 +1657,13 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
 </div>
 
 #### Q. Which property is used to underline, overline, and strikethrough text?
-* The text-decoration property is used to underline, overline, and strikethrough text.
-
+The `text-decoration` property is used to underline, overline, and strikethrough text.
 
 #### Q. Which property is used to capitalize text or convert text to uppercase or lowercase letters?
-* The text-transform property is used to capitalize text or convert text to uppercase or lowercase letters.
-
+The `text-transform` property is used to capitalize text or convert text to uppercase or lowercase letters.
 
 #### Q. Which property allows you to control the shape or appearance of the marker of a list?
-* The list-style-type allows you to control the shape or appearance of the marker.
-
+The `list-style-type` allows you to control the shape or appearance of the marker.
 
 #### Q. How do I restore the default value of a property?
 The keyword `initial` can be used to resets it to its default value, which is defined in the CSS specification of the given property.
