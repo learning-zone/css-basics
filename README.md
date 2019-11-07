@@ -1488,7 +1488,7 @@ The at-rule is not just the ```@media``` or ```@import``` part at the beginning;
 </div>
 
 #### Q. What is RuleSet?
-* A rule set is a single section of CSS including the selector, the curly braces, and the different lines with properties and values. The code in the example below comprises one rule set:
+A rule set is a single section of CSS including the selector, the curly braces, and the different lines with properties and values. The code in the example below comprises one rule set:
 
 ```css
 /*  the rule set starts with the line below */
