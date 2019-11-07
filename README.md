@@ -1471,7 +1471,7 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 </article>
 ```
 #### Q. What is At-Rule?
-* An at-rule is an instruction given in a CSS document using the ```@``` character. An at-rule could have a declaration block or a simple string of text. The example below has two different at-rules:
+An at-rule is an instruction given in a CSS document using the ```@``` character. An at-rule could have a declaration block or a simple string of text. The example below has two different at-rules:
 ```css
 @import url(secondary.css);
 
