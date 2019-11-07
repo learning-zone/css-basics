@@ -1534,7 +1534,6 @@ img { display: block ; }
 ```
 
 #### Q. What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
-
 Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device's screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
 ```css
@@ -1597,11 +1596,6 @@ Accessibility means letting the user navigate and interact with a website by any
 
 **UX or User Experience**: is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
 So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
-
-#### Q. What is semantic?
-Semantic HTML, or "semantically-correct HTML", is HTML where the tags used to structure content are selected and applied appropriately to the meaning of the content.
-
-For example, <b></b> (for bold), and <i></i> (for italic) should never be used, because they’re to do with formatting, not with the meaning or structure of the content. Instead, use the replacements <strong></strong> and <em></em> (meaning emphasis), which by default will turn text bold and italic (but don’t have to do so in all browsers), while adding meaning to the structure of the content
 
 #### Q. Why you would like to use semantic tag. Why Semantic HTML is Important?
 * Search Engine Optimization, accessibility, repurposing, light code. 
