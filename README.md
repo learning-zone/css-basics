@@ -1524,10 +1524,9 @@ img { display: block ; }
     <b><a href="#">↥ back to top</a></b>
 </div>   
 
-#### Q. What is an ```iframe``` and how it works?
+#### Q. What is an iframe and how it works?
 
 * An ```iframe``` is an HTML document which can be embedded inside another HTML page.
-
 * The IFrame HTML element is often used to insert content from another source, such as an advertisement, into a Web page.
 
 ```css
