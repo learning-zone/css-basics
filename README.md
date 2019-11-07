@@ -1769,8 +1769,8 @@ An example of a self closing tag is something like a line break (```<br />```) o
 <meta charset="UTF-8" />
 ```
 
-#### Q. How can u highlight text in html?
-use mark element.
+#### Q. How can you highlight text in html?
+Using mark tag.
 
 ```html
 <p>Some part of this paragraph is <mark>highlighted</mark> by using mark element.</p>
