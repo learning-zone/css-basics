@@ -1504,17 +1504,13 @@ body {
 </div>
 
 #### Q. How can the gap under the image be removed?
-* As images being inline elements are treated same as texts, so there is a gap left, which can be   removed by:
+As images being inline elements are treated same as texts, so there is a gap left, which can be removed by:
 ```css
 img { display: block ; }
 ```
 
 #### Q. What is graceful degradation?
-* In case the component fails, it will continue to work properly in the presence of a graceful degradation.
-     The latest browser application is used when a webpage is designed. As it is not available to everyone,
-      there is a basic functionality, which enables its use to a wider audience. 
-    In case the image is unavailable for viewing, text is shown with the alt tag.
-
+In case the component fails, it will continue to work properly in the presence of a graceful degradation. The latest browser application is used when a webpage is designed. As it is not available to everyone, there is a basic functionality, which enables its use to a wider audience. In case the image is unavailable for viewing, text is shown with the alt tag.
 
 #### Q. What is progressive enhancement?
 * It’s an alternative to graceful degradation, which concentrates on the matter of the web. 
