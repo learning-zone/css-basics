@@ -1747,13 +1747,13 @@ Both em and rem units are based on the font-size CSS property. The only differen
 
 In most browsers, the font-size of the root element is set to 16px by default.
 
-#### Q. What is the difference between ```span``` and ```div```?
+#### Q. What is the difference between `span` and `div`?
 ```div``` is a block element and ```span``` is inline element.
 
 It is illegal to put block element inside inline element. div can have a p tag and a p tag can have a span. However, span can't have a div or p tag inside.
 
 #### Q. What does !important mean in CSS?
-* It overrides the cascade and gives the style rule the highest precedence.
+It overrides the cascade and gives the style rule the highest precedence.
 
 #### Q. What are optional closing tag? and why would u use it?
 ```p, li, td, tr, th, html, body```, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. However, you have to be careful to escape it.
