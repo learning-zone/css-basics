@@ -1814,13 +1814,6 @@ use mark element.
 #### Q. Is it possible to apply css rule to a part of html document?
 yes. by using "scopped" in the style tag.
 
-#### Q. What are some rules for writing efficient CSS?      
-Firstly, understand that browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector. Hence avoid key selectors that are tag and universal selectors. They match a large number of elements and browsers will have to do more work in determining if the parents do match.
-
-[BEM (Block Element Modifier)](https://bem.info/) methodology recommends that everything has a single class, and, where you need hierarchy, that gets baked into the name of the class as well, this naturally makes the selector efficient and easy to override.
-
-Be aware of which CSS properties trigger reflow, repaint, and compositing. Avoid writing styles that change the layout (trigger reflow) where possible.
-
 #### Q. What are the CSS positioning?
 
 |Keyword    | Value                 |Description                                                                           |
