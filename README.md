@@ -1669,10 +1669,7 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
 
 
 #### Q. How do I restore the default value of a property?
-* Initially CSS didn't provide a "default" keyword and the only way to restore the default value of a property is to explicitly re-declare that property
-    This has changed with CSS 2; the keyword 'initial' is now a valid value for a CSS property. 
-    It resets it to its default value, which is defined in the CSS specification of the given property.
-
+The keyword `initial` can be used to resets it to its default value, which is defined in the CSS specification of the given property.
 
 #### Q. How do I assign multiple classes to an element?
 HTML elements can be assigned multiple classes by listing the classes in the class attribute, with a blank space to separate them.
