@@ -1641,17 +1641,14 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
 
 
 #### Q. Which property is used to add or subtract space between the words of a sentence?
-* The word-spacing property is used to add or subtract space between the words of a sentence.
-
+The `word-spacing` property is used to add or subtract space between the words of a sentence.
 
 #### Q. Which property is used to indent the text of a paragraph?
-* The text-indent property is used to indent the text of a paragraph.
-
+The `text-indent` property is used to indent the text of a paragraph.
 
 #### Q. Which property is used to align the text of a document?
-* The text-align property is used to align the text of a document.
+The `text-align` property is used to align the text of a document.
 
-* ```text-align: center``` will do the horizontal alignment but vertical-align: middle will not work here. there are couple of different ways to solve this problem and one of them are positioning. You make the parent as relative position and child as absolute positioning. And then define all position parameter as sero and width 50% and height 30% (sounds messy look at the example and read ref) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
