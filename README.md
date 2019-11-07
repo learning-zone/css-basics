@@ -1619,26 +1619,20 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
 * color
 * background-color
 
-
 #### Q. Which property is used to change the face of a font?
-* The font-family property is used to change the face of a font.
-
+The `font-family` property is used to change the face of a font.
 
 #### Q. Which property is used to make a font italic or oblique?
-* The font-style property is used to make a font italic or oblique.
-
+The `font-style` property is used to make a font italic or oblique.
 
 #### Q. Which property is used to create a small-caps effect?
-* The font-variant property is used to create a small-caps effect.
-
+The `font-variant` property is used to create a small-caps effect.
 
 #### Q. Which property is used to increase or decrease how bold or light a font appears?
-* The font-weight property is used to increase or decrease how bold or light a font appears.
-
+The `font-weight` property is used to increase or decrease how bold or light a font appears.
 
 #### Q. Which property is used to add or subtract space between the letters that make up a word?
-* The letter-spacing property is used to add or subtract space between the letters that make up a word.
-
+The `letter-spacing` property is used to add or subtract space between the letters that make up a word.
 
 #### Q. Which property is used to add or subtract space between the words of a sentence?
 The `word-spacing` property is used to add or subtract space between the words of a sentence.
