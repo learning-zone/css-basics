@@ -1675,7 +1675,7 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
 
 
 #### Q. How do I assign multiple classes to an element?
-* HTML elements can be assigned multiple classes by listing the classes in the class attribute, with a blank space to separate them.
+HTML elements can be assigned multiple classes by listing the classes in the class attribute, with a blank space to separate them.
 ```html
 <style type="text/css">
 .news { background: black; color: white; }
