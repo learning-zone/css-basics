@@ -1492,23 +1492,6 @@ At-rules are `CSS statements` that instructs CSS how to behave. They begin with 
 | 07. |@font-face |Describes the aspect of an external font to be downloaded.|
 | 08. |@keyframes |Describes the aspect of intermediate steps in a CSS animation sequence.|
 
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-#### Q. What is RuleSet?
-A rule set is a single section of CSS including the selector, the curly braces, and the different lines with properties and values. The code in the example below comprises one rule set:
-
-```css
-/*  the rule set starts with the line below */
-body {
-  font-family: Arial, sans-serif;
-  color: #555;
-  font-size: 14px;
-}
-/*  ends with the closing curly brace above */
-```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
