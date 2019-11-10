@@ -1498,8 +1498,10 @@ At-rules are `CSS statements` that instructs CSS how to behave. They begin with 
 
 #### Q. How can the gap under the image be removed?
 As images being inline elements are treated same as texts, so there is a gap left, which can be removed by:
-```css
-img { display: block ; }
+```html
+<figure>
+  <img style="display: block" src="..." alt="">
+</figure>
 ```
 
 #### Q. What is progressive rendering?
