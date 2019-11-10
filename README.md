@@ -1516,15 +1516,6 @@ As images being inline elements are treated same as texts, so there is a gap lef
     <b><a href="#">↥ back to top</a></b>
 </div>   
 
-#### Q. What is an iframe and how it works?
-
-* An ```iframe``` is an HTML document which can be embedded inside another HTML page.
-* The IFrame HTML element is often used to insert content from another source, such as an advertisement, into a Web page.
-
-```css
-<iframe src="https://github.com" height="300px" width="300px"></iframe>
-```
-
 #### Q. What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
 Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device's screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
