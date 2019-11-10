@@ -1597,18 +1597,6 @@ Accessibility means letting the user navigate and interact with a website by any
 **UX or User Experience**: is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
 So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
 
-#### Q. Why you would like to use semantic tag. Why Semantic HTML is Important?
-* Search Engine Optimization, accessibility, repurposing, light code. 
-
-* Many visually impaired person rely on browser speech and semantic tag helps to interpret page content clearly.
-
-* Search engine needs to understand page content to rank and semantic tag helps.
-
-* semantic code aids accessibility. Specially, many people whose eyes are not good rely on speech browsers to read pages to them. These programs cannot interpret pages very well unless they are clearly explained.
-
-* Help Search engines to better understand pages. Search engine need to understand what your content is about when rank you properly on search engines. Semantic code tends to improve your placement on search engines, as it is easier for the "search engine spiders" to understand.
-
-* It’s easier to read and edit, which saves time and money during maintenance.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
