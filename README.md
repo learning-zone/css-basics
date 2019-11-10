@@ -1471,17 +1471,27 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 </article>
 ```
 #### Q. What is At-Rule?
-An at-rule is an instruction given in a CSS document using the ```@``` character. An at-rule could have a declaration block or a simple string of text. The example below has two different at-rules:
+At-rules are `CSS statements` that instructs CSS how to behave. They begin with an at sign, `@` followed by an identifier and includes everything up to the next semicolon, `;` or the next CSS block, whichever comes first.
 ```css
-@import url(secondary.css);
+/* General structure */
+@IDENTIFIER (RULE);
 
-@media print {
-  #container {
-    width: 500px;
-  }
+/* Example: tells browser to use UTF-8 character set */
+@charset "utf-8";
 }
 ```
-The at-rule is not just the ```@media``` or ```@import``` part at the beginning; the entire instruction comprises the complete at-rule.
+
+|Sl.No| at-rules  | Description |
+|-----|-----------|-------------|
+| 01. |@charset   |Defines the character set used by the style sheet.|
+| 02. |@import    |Tells the CSS engine to include an external style sheet.|
+| 03. |@namespace |Tells the CSS engine that all its content must be considered prefixed with an XML namespace.|
+| 04. |@media     |A conditional group rule that will apply its content if the device meets the criteria of the condition defined using a media query.|
+| 05. |@supports  |A conditional group rule that will apply its content if the browser meets the criteria of the given condition.|
+| 06. |@page      |Describes the aspect of layout changes that will be applied when printing the document.|
+| 07. |@font-face |Describes the aspect of an external font to be downloaded.|
+| 08. |@keyframes |Describes the aspect of intermediate steps in a CSS animation sequence.|
+
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
