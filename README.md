@@ -1558,9 +1558,13 @@ A mobile-first strategy has 2 main advantages:
 </div>
 
 #### Q. What does Accessibility (a11y) mean?
-Accessibility (a11y) is a measure of a computer system's accessibility is to all people, including those with disabilities or impairments. It concerns both software and hardware and how they are configured in order to enable a disabled or impaired person to use that computer system successfully.
+Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as:
 
-Accessibility is also known as assistive technology.
+* Visual impairment
+* Hearing loss
+* Limited dexterity
+
+For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments. 
 
 
 #### Q. What is accessibility & ARIA role means in a web application?
