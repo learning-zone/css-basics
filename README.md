@@ -1557,7 +1557,7 @@ A mobile-first strategy has 2 main advantages:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What does Accessibility (a11y) mean?
+#### Q. What is Accessibility (a11y) in a web application?
 Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as:
 
 * Visual impairment
@@ -1566,16 +1566,10 @@ Accessibility refers to how software or hardware combinations are designed to ma
 
 For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments. 
 
-
-#### Q. What is accessibility & ARIA role means in a web application?
-Accessibility means letting the user navigate and interact with a website by any means. Let it be a keyboard, a mouse or people with disabilities or impairments.
-
-
-* ARIA stands for Accessible Rich Internet Application.
-* ARIA is a spec from W3C.
-* ARIA is created to improve accessibility in web applications.
-* ARIA provides a extra information to screen readers via HTML attributes.
-* ARIA doesn't affect how an element is rendered in a browser.
+```html
+<div id="percent-loaded" role="progressbar" aria-valuenow="75" 
+     aria-valuemin="0" aria-valuemax="100" />
+```
 
 
 #### Q. What is UI/UX?
