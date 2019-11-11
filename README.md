@@ -1566,12 +1566,6 @@ Accessibility refers to how software or hardware combinations are designed to ma
 
 For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments. 
 
-```html
-<div id="percent-loaded" role="progressbar" aria-valuenow="75" 
-     aria-valuemin="0" aria-valuemax="100" />
-```
-
-
 #### Q. What is UI/UX?
 **UI or User Interface**:  is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
 
