@@ -1676,6 +1676,7 @@ div {
   transition: width 2s;
 }
 ```
+[Live Example](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
 
 #### Q. What are the different css filter you can use?
 css filter allows to render DOM element, image, or video. We can choose from: grayscale, blur, opacity, brightness, contrast.
