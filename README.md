@@ -1616,18 +1616,6 @@ The `list-style-type` allows you to control the shape or appearance of the marke
 #### Q. How do I restore the default value of a property?
 The keyword `initial` can be used to resets it to its default value, which is defined in the CSS specification of the given property.
 
-#### Q. How do I assign multiple classes to an element?
-HTML elements can be assigned multiple classes by listing the classes in the class attribute, with a blank space to separate them.
-```html
-<style type="text/css">
-.news { background: black; color: white; }
-.today { font-weight: bold; }
-</style>
-
-<div class="news today">
-... content of today's news ...
-</div>
-```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
