@@ -1653,8 +1653,29 @@ html body div div h2 p {}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What do you know about transitions?
-**transition** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
+#### Q. What do you know about CSS Transitions?
+**CSS Transitions** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start.
+
+**CSS Transition Properties**  
+
+|Sl.No| Property                  | Description                       |
+|-----|---------------------------|-----------------------------------|
+| 01. |transition	                |A shorthand property for setting the four transition properties into a single property|
+| 02. |transition-delay	          |Specifies a delay (in seconds) for the transition effect|
+| 03. |transition-duration	      |Specifies how many seconds or milliseconds a transition effect takes to complete|
+| 04. |transition-property	      |Specifies the name of the CSS property the transition effect is for|
+| 05. |transition-timing-function	|Specifies the speed curve of the transition effect|
+
+Example:
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -webkit-transition: width 2s; /* Safari prior 6.1 */
+  transition: width 2s;
+}
+```
 
 #### Q. What are the different css filter you can use?
 css filter allows to render DOM element, image, or video. We can choose from: grayscale, blur, opacity, brightness, contrast.
