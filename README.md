@@ -1620,7 +1620,15 @@ The keyword `initial` can be used to resets it to its default value, which is de
 </div>
 
 #### Q. What is specificity? How to calculate specificity?
-A process of determining which css rule will be applied to an element. it actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+A process of determining which css rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+
+**Selector Types**  
+
+The following list of selector types increases by specificity:
+
+* **Type selectors** (e.g., h1) and pseudo-elements (e.g., ::before).
+* **Class selectors** (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+* **ID selectors** (e.g., #example).
 
 ```css
 /*wins*/
