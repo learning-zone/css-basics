@@ -1653,7 +1653,7 @@ html body div div h2 p {}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What do you know about transition?
+#### Q. What do you know about transitions?
 **transition** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start. you can transition more than one property by comma separation
 
 #### Q. What are the different css filter you can use?
