@@ -1615,7 +1615,6 @@ The `list-style-type` allows you to control the shape or appearance of the marke
 
 #### Q. How do I restore the default value of a property?
 The keyword `initial` can be used to resets it to its default value, which is defined in the CSS specification of the given property.
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
