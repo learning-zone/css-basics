@@ -1681,6 +1681,13 @@ div {
 #### Q. What are the different css filters you can use?
 The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
 
+Example:
+```css
+img {
+  -webkit-filter: brightness(200%); /* Safari 6.0 - 9.0 */
+  filter: brightness(200%);
+}
+```
 **Filter Functions**  
 
 |Sl.No|Filter        | Description                       |
