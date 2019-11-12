@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+        transition: width 2s, height 2s, transform 2s;
+      }
+      div:hover {
+        -webkit-transform: rotate(3600deg); /* Safari */
+        transform: rotate(3600deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition + Transform</h1>
+    <p>Hover over the div element below:</p>
+
+    <div></div>
+  </body>
+</html>
