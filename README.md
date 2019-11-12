@@ -1651,7 +1651,6 @@ A class selector beats any number of element selectors.
 .introduction {} //wins
 html body div div h2 p {}
 ```
-The universal selector has a specificity of 0, 0, 0, 0.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
