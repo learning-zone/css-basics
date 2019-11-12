@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        -webkit-transition-property: width; /* Safari */
+        -webkit-transition-duration: 5s; /* Safari */
+        transition-property: width;
+        transition-duration: 5s;
+      }
+      div:hover {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The transition-duration Property</h1>
+
+    <p>
+      Hover over the div element below, to see the transition effect (the
+      transition effect will lasts for 5 seconds):
+    </p>
+    <div></div>
+  </body>
+</html>
