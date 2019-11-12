@@ -1576,12 +1576,6 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Which of listed CSS properties are inherited?
-* position
-* font-size
-* color
-* background-color
-
 #### Q. Which property is used to change the face of a font?
 The `font-family` property is used to change the face of a font.
 
