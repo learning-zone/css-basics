@@ -1678,8 +1678,27 @@ div {
 ```
 [Live Example](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
 
-#### Q. What are the different css filter you can use?
-css filter allows to render DOM element, image, or video. We can choose from: grayscale, blur, opacity, brightness, contrast.
+#### Q. What are the different css filters you can use?
+The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+
+**Filter Functions**  
+
+|Sl.No|Filter        | Description                       |
+|-----|--------------|-----------------------------------|
+| 01. |none	         |Default value. Specifies no effects|
+| 02. |blur(px)	     |Applies a blur effect to the image. A larger value will create more blur.|
+| 03. |brightness(%) |Adjusts the brightness of the image.|
+| 04. |contrast(%)	 |Adjusts the contrast of the image.	|
+| 05. |drop-shadow(h-shadow v-shadow blur spread color)|Applies a drop shadow effect to the image.|
+| 06. |grayscale(%)	 |Converts the image to grayscale.|
+| 07. |hue-rotate(deg)|	Applies a hue rotation on the image. The value defines the number of degrees around the color circle| the image samples will be adjusted. 0deg is default, and represents the original image.|
+| 08. |invert(%)	   |Inverts the samples in the image.|
+| 09. |opacity(%)	   |Sets the opacity level for the image. The opacity-level describes the transparency-level|
+| 10. |saturate(%)	 |Saturates the image.|
+| 11. |sepia(%)	     |Converts the image to sepia.|
+| 12. |url()	       |The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. Example: filter: url(svg-url#element-id)	|
+| 13. |initial	     |Sets this property to its default value.|
+| 14. |inherit	     |Inherits this property from its parent element.|
 
 #### Q. Enlist the various fonts properties?
 * font-style
