@@ -1636,9 +1636,7 @@ a#a-02 { background-image : url(n.gif); }
 a[id="a-02"] { background-image : url(n.png); }
 ```
 
-Contextual selectors are more specific than a single element selector.
-The embedded style sheet is closer to the element to be styled.
-The last rule defined overrides any previous, conflicting rules.
+Contextual selectors are more specific than a single element selector.The embedded style sheet is closer to the element to be styled. The last rule defined overrides any previous, conflicting rules.
 
 ```css
 p { color: red; background: yellow }
