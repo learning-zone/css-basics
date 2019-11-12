@@ -1703,7 +1703,7 @@ img {
 | 09. |opacity(%)	   |Sets the opacity level for the image. The opacity-level describes the transparency-level|
 | 10. |saturate(%)	 |Saturates the image.|
 | 11. |sepia(%)	     |Converts the image to sepia.|
-| 12. |url()	       |The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. Example: filter: url(svg-url#element-id)	|
+| 12. |url()	       |The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. **Example**: `filter: url(svg-url#element-id)`	|
 | 13. |initial	     |Sets this property to its default value.|
 | 14. |inherit	     |Inherits this property from its parent element.|
 
