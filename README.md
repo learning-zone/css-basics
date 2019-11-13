@@ -1716,12 +1716,60 @@ img {
 * caption
 * icon
 
-#### Q. What is the difference between ```em``` and ```rem``` units?
+#### Q. What is the difference between `em` and `rem` units?
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
-* ```em``` units inherit their value from the font-size of the parent element
-* ```rem``` units inherit their value from the font-size of the root element (html)
+* `em` units inherit their value from the font-size of the parent element
+```css
+.parent {
+  font-size: 18px;
+}
+.child {
+  font-size: 1.5em;
+}
+```
+```html
+<div class="parent">
+  I'm 15px
+  <div class="child">
+  I'm 30px, as expected
+    <div class="child">
+    I'm 60px, trouble starts!
+      <div class="child">
+      I'm 120px, now we're really in trouble!
+      </div>
+    </div>
+  </div>
+</div>
+```
 
-In most browsers, the font-size of the root element is set to 16px by default.
+* `rem` units inherit their value from the font-size of the root element (html)
+```css
+.html {
+  font-size: 16px;
+}
+.parent {
+  font-size: 15px;
+}
+.child-rem {
+  font-size: 2rem;
+}
+```
+```html
+<div class="parent">
+  I'm 15px
+  <div class="child-rem">
+  I'm 32px, as expected
+    <div class="child-rem">
+    I'm 32px, yep!
+      <div class="child-rem">
+      I'm 32px, like clockwork!
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+*Note: In most browsers, the font-size of the root element is set to 16px by default.*
 
 #### Q. What is the difference between `span` and `div`?
 ```div``` is a block element and ```span``` is inline element.
