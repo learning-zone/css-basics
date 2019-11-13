@@ -1795,37 +1795,12 @@ p {
 ```html
 <p id="thing">Will be RED.</p>
 ```
-
-#### Q. What are optional closing tag? and why would u use it?
-`<p>, <li>, <td>, <tr>, <th>, <html>, <body>`, etc. don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. 
-
-#### Q. What is a self closing tag?
-In HTML5 it is not strictly necessary to close certain HTML tags. The tags that aren’t required to have specific closing tags are called “self closing” tags.
-
-An example of a self closing tag is something like a line break (`<br />`) or the meta tag (`<meta>`). This means that the following are both acceptable:
-
-```html
-<meta charset="UTF-8">
-...
-<meta charset="UTF-8" />
-```
-
 #### Q. How can you highlight text in html?
 Using mark tag.
 
 ```html
 <p>Some part of this paragraph is <mark>highlighted</mark> by using mark element.</p>
 ```
-
-#### Q. Does the following trigger http request at the time of page load?
-```html
-<img src="mypic.jpg" style="visibility: hidden" alt="My photo">
-
-<div style="display: none;">
-    <img src="mypic.jpg" alt="My photo">
-</div>
-```
-* Yes
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
