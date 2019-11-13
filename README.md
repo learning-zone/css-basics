@@ -1772,9 +1772,16 @@ Both em and rem units are based on the font-size CSS property. The only differen
 *Note: In most browsers, the font-size of the root element is set to 16px by default.*
 
 #### Q. What is the difference between `span` and `div`?
-```div``` is a block element and ```span``` is inline element.
+`div` is a block element and `span` is inline element.
 
-It is illegal to put block element inside inline element. div can have a p tag and a p tag can have a span. However, span can't have a div or p tag inside.
+The `<span>` tag usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a `<div>` (division) element is block-line (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code.
+
+Example:
+```html
+<div>This a large main division, with <span>a small bit</span> of spanned text!</div>
+```
+
+*Note: It is illegal to put block element inside inline element. For example div can have a p tag but, span can not have a div or p tag inside.*
 
 #### Q. What does !important mean in CSS?
 It overrides the cascade and gives the style rule the highest precedence.
