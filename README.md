@@ -1716,12 +1716,6 @@ img {
 * caption
 * icon
 
-#### Q. Describe Floats and Flexbox and how each works. Why Flexbox is a better solution for web layouts?
-* ```Floats``` specifies that an element should be taken from the normal flow and placed along the left or right side of its container, 
-    where text and inline elements will wrap around it.
-* ```Flexbox``` consists of flex containers and flex items. Flex containers wrap a set of flex items and define how they are laid out. 
-Flex items has properites that define how they interact with sibling flex elements and can also be flex containers themselves.
-
 #### Q. What is the difference between ```em``` and ```rem``` units?
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
 * ```em``` units inherit their value from the font-size of the parent element
