@@ -1784,6 +1784,18 @@ Example:
 #### Q. What does !important mean in CSS?
 It overrides the cascade and gives the style rule the highest precedence.
 
+```css
+p {
+    color: red !important;
+}
+#thing {
+    color: green;
+}
+```
+```html
+<p id="thing">Will be RED.</p>
+```
+
 #### Q. What are optional closing tag? and why would u use it?
 ```p, li, td, tr, th, html, body```, etc. you don't have to provide end tag. Whenever browser hits a new tag it automatically ends the previous tag. However, you have to be careful to escape it.
 
