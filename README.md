@@ -236,35 +236,40 @@ make a type specimen book.<h1></p>
 </div>
 
 #### Q. What is Combinator selector?
-A combinator is the character in a selector that connects two selectors together. There are four types of combinators. These four combinators help create descendant selectors (with a space character), child selectors (with the ```>``` character), adjacent sibling selectors (with the ```+``` character), and general sibling selectors (with the ```~``` character). To dispel any confusion, here are those four combinators in use:
+A combinator is the character in a selector that connects two selectors together. There are four types of combinators. 
 
-* **Descendant Combinator**
-    * This is the most common usage, e.g. #lovelyweather h1.
-* **Child Combinator**
-    * Select an element if it is a direct child of another element (and not a grandchild of that element).
-* **Adjacent Sibling Combinator**
-    * The element that is immediately adjacent to another element.
-* **General Sibling Combinator**
-    * The element that is adjacent, but not immediately to another element.
+* **Descendant Combinator (space)**: The descendant selector matches all elements that are descendants of a specified element.
 
+The following example selects all <p> elements inside <div> elements: 
 ```css
 div p {
-  color: #222;
-}
-
-div > p {
-  color: #333;
-}
-
-div + p {
-  color: #444;
-}
-
-div ~ p {
-  color: #555;
+  background-color: yellow;
 }
 ```
+* **Child Combinator (>)**: The child selector selects all elements that are the children of a specified element.
 
+The following example selects all <p> elements that are children of a <div> element:
+```css
+div > p {
+  background-color: yellow;
+}
+```
+* **Adjacent Sibling Combinator (+)**: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+
+The following example selects all <p> elements that are placed immediately after <div> elements:
+```css
+div + p {
+  background-color: yellow;
+}
+```
+* **General Sibling Combinator (~)**: The general sibling selector selects all elements that are siblings of a specified element.
+
+The following example selects all <p> elements that are siblings of <div> elements: 
+```css
+div ~ p {
+  background-color: yellow;
+}
+```
 #### Q. What is the difference between class selectors and id selectors?
 In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
 ```css
