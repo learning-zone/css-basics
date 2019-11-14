@@ -1810,9 +1810,6 @@ p {
 ```
 * No
 
-#### Q. Is it possible to apply css rule to a part of html document?
-yes. by using "scopped" in the style tag.
-
 #### Q. What are the CSS positioning?
 
 |Keyword    | Value                 |Description                                                                           |
