@@ -1784,12 +1784,6 @@ p {
 ```html
 <p id="thing">Will be RED.</p>
 ```
-#### Q. How can you highlight text in html?
-Using mark tag.
-
-```html
-<p>Some part of this paragraph is <mark>highlighted</mark> by using mark element.</p>
-```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
