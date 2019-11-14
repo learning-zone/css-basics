@@ -41,6 +41,21 @@
     </body>
 </html>
 ```
+#### Q. How to center align a div inside another div?
+```css
+.container{
+	width: 500px;
+	height: 500px;
+	background-color: red;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+```
+[Live Example](https://learning-zone.github.io/css-interview-questions/center-div.html) 
 
 #### Q. What are the css selectors? 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
@@ -717,21 +732,6 @@ For example, it can be used to:
 #### Q. The pseudo class `:checked` will select inputs with type radio or checkbox, but not `<option>` elements.
 * False
 
-#### Q. How to center align a div inside another div?
-```css
-.container{
-	width: 500px;
-	height: 500px;
-	background-color: red;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-```
-[Live Example](https://learning-zone.github.io/css-interview-questions/center-div.html) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
