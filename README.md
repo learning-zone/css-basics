@@ -1505,7 +1505,7 @@ As images being inline elements are treated same as texts, so there is a gap lef
 ```
 
 #### Q. What is progressive rendering?
-* Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
+Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
 
 **Examples:**
 
