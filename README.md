@@ -1129,7 +1129,7 @@ h1.technique-nine {
 </h1>
 ```
 
-#### Q. How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
+#### Q. How do you serve your pages for feature-constrained browsers? What techniques do you use?
 * **Graceful degradation**: The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
 * **Progressive enhancement**: The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
 * **[caniuse](https://caniuse.com/)**: to check for feature support.
