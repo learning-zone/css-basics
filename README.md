@@ -1788,6 +1788,10 @@ Both em and rem units are based on the font-size CSS property. The only differen
 ```
 *Note: In most browsers, the font-size of the root element is set to 16px by default.*
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What does !important mean in CSS?
 It overrides the cascade and gives the style rule the highest precedence.
 
@@ -2043,6 +2047,9 @@ The `@supports` query in CSS can be very useful to scan if the user’s current 
   }
 }
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 #### Q. What is Cascade?
 Cascade is a method of defining the weight (importance) of individual styling rules thus allowing conflicting rules to be sorted out should such rules apply to the same selector.
