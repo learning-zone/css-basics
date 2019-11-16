@@ -489,7 +489,7 @@ p {
 }
 ```
 
-#### Q. Explain the difference between ```visibility: hidden;``` and ```display: none;```? What are the pros and cons of using ```display:none```?
+#### Q. Explain the difference between `visibility: hidden;` and `display: none;`? What are the pros and cons of using `display:none`?
 
 **visibility: hidden** simply hides the element but it will occupy space and affect the layout of the document.  
 **display: none** removes the element from the normal layout flow (causes DOM reflow). It will not affect the layout of the document nor occupy space.
