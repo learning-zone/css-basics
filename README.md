@@ -1423,7 +1423,7 @@ In this case, we are translating the coordinates of the element by `50px` along 
 </div>
 
 #### Q. The translate() function can move the position of an element on the z-axis.
-False
+* False
 
 #### Q. Tell what each of these tags do, if there are alternatives, which are preferable, why?
 
