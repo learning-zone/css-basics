@@ -727,7 +727,6 @@ For example, it can be used to:
 | 30.  |:valid	            |input:valid	          |Selects all `<input>` elements with a valid value|
 | 31.  |:visited	          |a:visited	            |Selects all visited links|
 
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -1240,6 +1239,10 @@ Example:
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { }
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is the use of `@media only screen`?
 It hide style sheets from older user agents.
 
@@ -1322,6 +1325,9 @@ p.ex4 {display: inline-block;}
 | 22. |initial	          |Sets this property to its default value. Read about initial	|
 | 23. |inherit	          |Inherits this property from its parent element. Read about inherit|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 #### Q. How is responsive design different from adaptive design? 
 **Responsive design** uses `CSS media queries` to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.
@@ -1394,6 +1400,10 @@ The browsers which does not support HTML5's `srcset` (i.e. IE11) will ignore it 
     /* Retina-specific stuff here */
 }
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? 
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
 
