@@ -759,7 +759,7 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
     ```
 [Live Example](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
 
-#### Q. Explain what elements will match each of the following CSS selectors:
+#### Q. What elements will match each of the following CSS selectors:
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
 * div ```p``` Selects all ```<p>``` elements that are anywhere inside a <div> element
 * div > ```p``` Selects all ```<p>``` elements where the immediate parent is a <div> element
