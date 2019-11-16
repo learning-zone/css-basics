@@ -1484,6 +1484,10 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
   <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
 </article>
 ```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. What is At-Rule?
 At-rules are `CSS statements` that instructs CSS how to behave. They begin with an at sign, `@` followed by an identifier and includes everything up to the next semicolon, `;` or the next CSS block, whichever comes first.
 ```css
