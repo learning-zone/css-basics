@@ -728,13 +728,12 @@ For example, it can be used to:
 | 31.  |:visited	          |a:visited	            |Selects all visited links|
 
 
-
-#### Q. The pseudo class `:checked` will select inputs with type radio or checkbox, but not `<option>` elements.
-* False
-
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
+#### Q. The pseudo class `:checked` will select inputs with type radio or checkbox, but not `<option>` elements.
+* False
 
 #### Q. Explain the CSS “box model” and the layout components that it consists of?
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
