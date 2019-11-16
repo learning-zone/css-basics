@@ -520,7 +520,7 @@ Reflow occurs when you:
 * If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
 * Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
     
-#### Q. What is the purpose of the ```z-index``` and how is it used?
+#### Q. What is the purpose of the `z-index` and how is it used?
 The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number. An element with a higher ```z-index``` is always stacked above than a lower index.
 
 ```z-index``` can take the following values:
@@ -736,7 +736,7 @@ For example, it can be used to:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. Explain the CSS “box model” and the layout components that it consists of. Provide some usage examples.
+#### Q. Explain the CSS “box model” and the layout components that it consists of?
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
 * **Content**: The content of the box, where text and images appear
