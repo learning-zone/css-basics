@@ -1,0 +1,79 @@
+{
+  "uid" : "c1f384990b5920e3",
+  "name" : "Validate place holder text in Quick Search text box",
+  "fullName" : "TI-28304 :Updating the placeholder text based upon which radio option.Validate place holder text in Quick Search text box",
+  "historyId" : "b175b3bc979d1d59b872b1948c316512",
+  "time" : {
+    "start" : 1573816966720,
+    "stop" : 1573816967872,
+    "duration" : 1152
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Fail:TI-28304 Validate place holder text in Quick Search text boxNoSuchElementError: No element found using locator: By(xpath, //*[@role='textbox'])",
+  "statusTrace" : "AssertionError: Fail:TI-28304 Validate place holder text in Quick Search text boxNoSuchElementError: No element found using locator: By(xpath, //*[@role='textbox'])\n                    at Context.<anonymous> (test\\diHome\\TI-28304.ts:49:14)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diHome\\TI-28304.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Fail:TI-28304 Validate place holder text in Quick Search text boxNoSuchElementError: No element found using locator: By(xpath, //*[@role='textbox'])",
+    "statusTrace" : "AssertionError: Fail:TI-28304 Validate place holder text in Quick Search text boxNoSuchElementError: No element found using locator: By(xpath, //*[@role='textbox'])\n                    at Context.<anonymous> (test\\diHome\\TI-28304.ts:49:14)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diHome\\TI-28304.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on Radio PPN",
+      "time" : {
+        "start" : 1573816966855,
+        "stop" : 1573816966855,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-28304 :Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-28304 :Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate place holder text in Quick Search text box"
+  }, {
+    "name" : "package",
+    "value" : "TI-28304 :Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c1f384990b5920e3.json",
+  "parameterValues" : [ ]
+}

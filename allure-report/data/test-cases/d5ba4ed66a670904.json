@@ -1,0 +1,79 @@
+{
+  "uid" : "d5ba4ed66a670904",
+  "name" : "Click on Previous to come back to previous screen",
+  "fullName" : "Load page test Help & onboarding: Take the tour.Click on Previous to come back to previous screen",
+  "historyId" : "11e22664c7c056707539ec15405e0873",
+  "time" : {
+    "start" : 1573816581986,
+    "stop" : 1573816584206,
+    "duration" : 2220
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "Test case 3 failedAssertionError: expected { Object (browser_, then, ...) } to equal true",
+  "statusTrace" : "AssertionError: Test case 3 failedAssertionError: expected { Object (browser_, then, ...) } to equal true\n                    at Context.<anonymous> (test\\diHelpAndOnboarding\\TI-30144-TI-31564.ts:127:24)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (dist\\test\\diHelpAndOnboarding\\TI-30144-TI-31564.js:5:58)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "Test case 3 failedAssertionError: expected { Object (browser_, then, ...) } to equal true",
+    "statusTrace" : "AssertionError: Test case 3 failedAssertionError: expected { Object (browser_, then, ...) } to equal true\n                    at Context.<anonymous> (test\\diHelpAndOnboarding\\TI-30144-TI-31564.ts:127:24)\n                    at Generator.next (<anonymous>)\n                    at fulfilled (dist\\test\\diHelpAndOnboarding\\TI-30144-TI-31564.js:5:58)",
+    "steps" : [ {
+      "name" : "Click is successful on click on previous",
+      "time" : {
+        "start" : 1573816582202,
+        "stop" : 1573816582202,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "testClass",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "testMethod",
+    "value" : "Click on Previous to come back to previous screen"
+  }, {
+    "name" : "package",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d5ba4ed66a670904.json",
+  "parameterValues" : [ ]
+}

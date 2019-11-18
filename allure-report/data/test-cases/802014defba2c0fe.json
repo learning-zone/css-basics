@@ -1,0 +1,70 @@
+{
+  "uid" : "802014defba2c0fe",
+  "name" : "TI-27528: Verify Add or remove search field row by using the `+/-` buttons",
+  "fullName" : "TI-27528: Search & Browse: Fielded Search.TI-27528: Verify Add or remove search field row by using the `+/-` buttons",
+  "historyId" : "6071c62c636da0d33ca873ad71d2f40f",
+  "time" : {
+    "start" : 1573817470968,
+    "stop" : 1573817471523,
+    "duration" : 555
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "FAIL: TI-27528 Verify Add or remove search field row by using the `+/-` buttonsError: getAttribute is not working for elementBy(xpath, .//mat-button-toggle[contains(.,'FIELDED')])NoSuchElementError: No element found using locator: By(xpath, .//mat-button-toggle[contains(.,'FIELDED')])",
+  "statusTrace" : "AssertionError: FAIL: TI-27528 Verify Add or remove search field row by using the `+/-` buttonsError: getAttribute is not working for elementBy(xpath, .//mat-button-toggle[contains(.,'FIELDED')])NoSuchElementError: No element found using locator: By(xpath, .//mat-button-toggle[contains(.,'FIELDED')])\n                    at C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\test\\diSearchAndBrowse\\TI-27528.ts:110:20\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27528.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "FAIL: TI-27528 Verify Add or remove search field row by using the `+/-` buttonsError: getAttribute is not working for elementBy(xpath, .//mat-button-toggle[contains(.,'FIELDED')])NoSuchElementError: No element found using locator: By(xpath, .//mat-button-toggle[contains(.,'FIELDED')])",
+    "statusTrace" : "AssertionError: FAIL: TI-27528 Verify Add or remove search field row by using the `+/-` buttonsError: getAttribute is not working for elementBy(xpath, .//mat-button-toggle[contains(.,'FIELDED')])NoSuchElementError: No element found using locator: By(xpath, .//mat-button-toggle[contains(.,'FIELDED')])\n                    at C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\test\\diSearchAndBrowse\\TI-27528.ts:110:20\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27528.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1cf339f7c213fca9",
+      "name" : "Screenshot",
+      "source" : "1cf339f7c213fca9.png",
+      "type" : "image/png",
+      "size" : 335767
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-27528: Verify Add or remove search field row by using the `+/-` buttons"
+  }, {
+    "name" : "package",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "802014defba2c0fe.json",
+  "parameterValues" : [ ]
+}

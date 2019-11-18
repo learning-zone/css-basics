@@ -1,0 +1,79 @@
+{
+  "uid" : "b9956eefddb1ff07",
+  "name" : "TI-27528 : Verify the three option buttons will enable in the search form",
+  "fullName" : "TI-27528: Search & Browse: Fielded Search.TI-27528 : Verify the three option buttons will enable in the search form",
+  "historyId" : "7ce5374e23fde47249158c35061bf5eb",
+  "time" : {
+    "start" : 1573817483078,
+    "stop" : 1573817485561,
+    "duration" : 2483
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "FAIL: TI-27528 Verify the three option buttons will enable in the search formNoSuchElementError: No element found using locator: By(xpath, //div[@class='content-footer-buttons']//span[text()=' Clear all ']/..)",
+  "statusTrace" : "AssertionError: FAIL: TI-27528 Verify the three option buttons will enable in the search formNoSuchElementError: No element found using locator: By(xpath, //div[@class='content-footer-buttons']//span[text()=' Clear all ']/..)\n                    at C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\test\\diSearchAndBrowse\\TI-27528.ts:194:20\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27528.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "FAIL: TI-27528 Verify the three option buttons will enable in the search formNoSuchElementError: No element found using locator: By(xpath, //div[@class='content-footer-buttons']//span[text()=' Clear all ']/..)",
+    "statusTrace" : "AssertionError: FAIL: TI-27528 Verify the three option buttons will enable in the search formNoSuchElementError: No element found using locator: By(xpath, //div[@class='content-footer-buttons']//span[text()=' Clear all ']/..)\n                    at C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\test\\diSearchAndBrowse\\TI-27528.ts:194:20\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27528.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Button Fielded is selected already",
+      "time" : {
+        "start" : 1573817483099,
+        "stop" : 1573817483099,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-27528 : Verify the three option buttons will enable in the search form"
+  }, {
+    "name" : "package",
+    "value" : "TI-27528: Search & Browse: Fielded Search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b9956eefddb1ff07.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,190 @@
+{
+  "uid" : "5962e3837ae28614",
+  "name" : "TI - 27963 -- Validating custom field between search screens",
+  "fullName" : "TI - 27963 -- Validating custom field between search screens.TI - 27963 -- Validating custom field between search screens",
+  "historyId" : "abe701c35acee06d68cdfc536a98fa91",
+  "time" : {
+    "start" : 1573819058773,
+    "stop" : 1573819090737,
+    "duration" : 31964
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "FAIL: TI-27963 Validating custom field between search screensError: Click is not successful on button Clearall WebDriverError: element click intercepted: Element <button _ngcontent-c26=\"\" class=\"but-xl but-link ps-button-1 mat-button mat-primary\" color=\"primary\" mat-button=\"\">...</button> is not clickable at point (923, 20). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"mat-snackbar-block mat-snackbar-banner mat-snackbar-message\" fxlayout=\"row\" fxlayoutalign=\"space-between\" style=\"flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-between; align-items: stretch;\">...</div>\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+  "statusTrace" : "AssertionError: FAIL: TI-27963 Validating custom field between search screensError: Click is not successful on button Clearall WebDriverError: element click intercepted: Element <button _ngcontent-c26=\"\" class=\"but-xl but-link ps-button-1 mat-button mat-primary\" color=\"primary\" mat-button=\"\">...</button> is not clickable at point (923, 20). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"mat-snackbar-block mat-snackbar-banner mat-snackbar-message\" fxlayout=\"row\" fxlayoutalign=\"space-between\" style=\"flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-between; align-items: stretch;\">...</div>\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diSearchResults\\TI-27963.ts:74:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchResults\\TI-27963.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "FAIL: TI-27963 Validating custom field between search screensError: Click is not successful on button Clearall WebDriverError: element click intercepted: Element <button _ngcontent-c26=\"\" class=\"but-xl but-link ps-button-1 mat-button mat-primary\" color=\"primary\" mat-button=\"\">...</button> is not clickable at point (923, 20). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"mat-snackbar-block mat-snackbar-banner mat-snackbar-message\" fxlayout=\"row\" fxlayoutalign=\"space-between\" style=\"flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-between; align-items: stretch;\">...</div>\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+    "statusTrace" : "AssertionError: FAIL: TI-27963 Validating custom field between search screensError: Click is not successful on button Clearall WebDriverError: element click intercepted: Element <button _ngcontent-c26=\"\" class=\"but-xl but-link ps-button-1 mat-button mat-primary\" color=\"primary\" mat-button=\"\">...</button> is not clickable at point (923, 20). Other element would receive the click: <div _ngcontent-c20=\"\" class=\"mat-snackbar-block mat-snackbar-banner mat-snackbar-message\" fxlayout=\"row\" fxlayoutalign=\"space-between\" style=\"flex-direction: row; box-sizing: border-box; display: flex; place-content: stretch space-between; align-items: stretch;\">...</div>\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diSearchResults\\TI-27963.ts:74:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchResults\\TI-27963.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573819058870,
+        "stop" : 1573819058870,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573819059171,
+        "stop" : 1573819059171,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Patent Search button is selected already",
+      "time" : {
+        "start" : 1573819059533,
+        "stop" : 1573819059533,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Button Fielded is selected already",
+      "time" : {
+        "start" : 1573819059552,
+        "stop" : 1573819059552,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on ",
+      "time" : {
+        "start" : 1573819059711,
+        "stop" : 1573819059711,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Search",
+      "time" : {
+        "start" : 1573819064403,
+        "stop" : 1573819064403,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573819090944,
+        "stop" : 1573819090944,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573819092506,
+        "stop" : 1573819092506,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "a0a92935e74524ab",
+      "name" : "Screenshot",
+      "source" : "a0a92935e74524ab.png",
+      "type" : "image/png",
+      "size" : 100559
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI - 27963 -- Validating custom field between search screens"
+  }, {
+    "name" : "testClass",
+    "value" : "TI - 27963 -- Validating custom field between search screens"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI - 27963 -- Validating custom field between search screens"
+  }, {
+    "name" : "package",
+    "value" : "TI - 27963 -- Validating custom field between search screens"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5962e3837ae28614.json",
+  "parameterValues" : [ ]
+}

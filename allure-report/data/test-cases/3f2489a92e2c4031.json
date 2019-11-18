@@ -1,0 +1,191 @@
+{
+  "uid" : "3f2489a92e2c4031",
+  "name" : "TI-32734: Validte the Busy-Indicator",
+  "fullName" : "TI-32734.TI-32734: Validte the Busy-Indicator",
+  "historyId" : "c5e5c4a186814324f500fb0ce9fa2d1",
+  "time" : {
+    "start" : 1573816311139,
+    "stop" : 1573816346716,
+    "duration" : 35577
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573816311272,
+        "stop" : 1573816311272,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573816311625,
+        "stop" : 1573816311625,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Patent Search button is selected already",
+      "time" : {
+        "start" : 1573816312893,
+        "stop" : 1573816312893,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Button Fielded is selected already",
+      "time" : {
+        "start" : 1573816312924,
+        "stop" : 1573816312924,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Link Change collection",
+      "time" : {
+        "start" : 1573816313143,
+        "stop" : 1573816313143,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Apply",
+      "time" : {
+        "start" : 1573816314143,
+        "stop" : 1573816314143,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Loading indicator is displayed for the patent search ",
+      "time" : {
+        "start" : 1573816324868,
+        "stop" : 1573816324868,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573816346930,
+        "stop" : 1573816346930,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573816349004,
+        "stop" : 1573816349004,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-32734"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-32734"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-32734: Validte the Busy-Indicator"
+  }, {
+    "name" : "package",
+    "value" : "TI-32734"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3f2489a92e2c4031.json",
+  "parameterValues" : [ ]
+}

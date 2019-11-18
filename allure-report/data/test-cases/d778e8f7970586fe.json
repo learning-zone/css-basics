@@ -1,0 +1,124 @@
+{
+  "uid" : "d778e8f7970586fe",
+  "name" : "US Class-Current-Main : Hide jump to for US Classification tool",
+  "fullName" : "TI-35248 : US Classification tool: Hide jump to for US Classification tool.US Class-Current-Main : Hide jump to for US Classification tool",
+  "historyId" : "ddc0f93f977ef1af1b53985d4801468e",
+  "time" : {
+    "start" : 1573818565219,
+    "stop" : 1573818625255,
+    "duration" : 60036
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-35248.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-35248.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-35248.js)",
+    "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-35248.js)",
+    "steps" : [ {
+      "name" : "Click is successful on ",
+      "time" : {
+        "start" : 1573818565466,
+        "stop" : 1573818565466,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on First lookup button",
+      "time" : {
+        "start" : 1573818577084,
+        "stop" : 1573818577084,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818625434,
+        "stop" : 1573818625434,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573818628227,
+        "stop" : 1573818628227,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-35248 : US Classification tool: Hide jump to for US Classification tool"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-35248 : US Classification tool: Hide jump to for US Classification tool"
+  }, {
+    "name" : "testMethod",
+    "value" : "US Class-Current-Main : Hide jump to for US Classification tool"
+  }, {
+    "name" : "package",
+    "value" : "TI-35248 : US Classification tool: Hide jump to for US Classification tool"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d778e8f7970586fe.json",
+  "parameterValues" : [ ]
+}

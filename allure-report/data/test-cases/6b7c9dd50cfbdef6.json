@@ -1,0 +1,52 @@
+{
+  "uid" : "6b7c9dd50cfbdef6",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-27054 : Home: Footer,TI-28344 : Home Page: Saved Work,TI-31488 : Home Page: Support list in the footer.\"before all\" hook: ret",
+  "historyId" : "baccce908da95786dfc9fd5d929a2876",
+  "time" : {
+    "start" : 1573816882548,
+    "stop" : 1573816882548,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-27054,TI-28344,TI-31488 : login is not happend sucessfullyUnsupportedOperationError: sendKeysToActiveElement\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+  "statusTrace" : "AssertionError: TI-27054,TI-28344,TI-31488 : login is not happend sucessfullyUnsupportedOperationError: sendKeysToActiveElement\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diHome\\TI-27054-TI-28344-TI-31488.ts:33:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diHome\\TI-27054-TI-28344-TI-31488.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27054 : Home: Footer,TI-28344 : Home Page: Saved Work,TI-31488 : Home Page: Support list in the footer"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27054 : Home: Footer,TI-28344 : Home Page: Saved Work,TI-31488 : Home Page: Support list in the footer"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-27054 : Home: Footer,TI-28344 : Home Page: Saved Work,TI-31488 : Home Page: Support list in the footer"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6b7c9dd50cfbdef6.json",
+  "parameterValues" : [ ]
+}

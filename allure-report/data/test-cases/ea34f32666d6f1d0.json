@@ -1,0 +1,48 @@
+{
+  "uid" : "ea34f32666d6f1d0",
+  "name" : "TI-31490 :: Home page: Derwent Innovation link for PRO user",
+  "fullName" : "TI-31490.TI-31490 :: Home page: Derwent Innovation link for PRO user",
+  "historyId" : "70578d45b569ca334e2e1e1f8aa2d31b",
+  "time" : {
+    "start" : 1573817114115,
+    "stop" : 1573817114115,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-31490"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-31490"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-31490 :: Home page: Derwent Innovation link for PRO user"
+  }, {
+    "name" : "package",
+    "value" : "TI-31490"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ea34f32666d6f1d0.json",
+  "parameterValues" : [ ]
+}

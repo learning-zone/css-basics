@@ -1,0 +1,52 @@
+{
+  "uid" : "e0418a5540945c15",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-28114 --- Collection schedule link.\"before all\" hook: ret",
+  "historyId" : "568b4eec9b557dd92589a0f18ae7e33f",
+  "time" : {
+    "start" : 1573817728824,
+    "stop" : 1573817788822,
+    "duration" : 59998
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-28114.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-28114.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-28114 --- Collection schedule link"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-28114 --- Collection schedule link"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-28114 --- Collection schedule link"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e0418a5540945c15.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,90 @@
+{
+  "uid" : "cb352440d5c6e913",
+  "name" : "TI-31489 :Validate the Pause and paly arrows on the tracking clock popup",
+  "fullName" : "TI-31489 Validate the Tracking clock in the header.TI-31489 :Validate the Pause and paly arrows on the tracking clock popup",
+  "historyId" : "58691661b50f80d062cad2a1b33eba35",
+  "time" : {
+    "start" : 1573817033503,
+    "stop" : 1573817033503,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Test ignored",
+    "statusTrace" : "undefined",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573817033632,
+        "stop" : 1573817033632,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573817035101,
+        "stop" : 1573817035101,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-31489 Validate the Tracking clock in the header"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-31489 Validate the Tracking clock in the header"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-31489 :Validate the Pause and paly arrows on the tracking clock popup"
+  }, {
+    "name" : "package",
+    "value" : "TI-31489 Validate the Tracking clock in the header"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cb352440d5c6e913.json",
+  "parameterValues" : [ ]
+}

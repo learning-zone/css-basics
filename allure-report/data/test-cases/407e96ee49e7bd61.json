@@ -1,0 +1,221 @@
+{
+  "uid" : "407e96ee49e7bd61",
+  "name" : "TI_27066 validate Fielded , Expert and PN tabs ",
+  "fullName" : "TI_27066 Validate the default tabs in Patentseach page.TI_27066 validate Fielded , Expert and PN tabs ",
+  "historyId" : "48f5a27a12b8e873c0b8d303766cb1a5",
+  "time" : {
+    "start" : 1573817259879,
+    "stop" : 1573817271545,
+    "duration" : 11666
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573817259990,
+        "stop" : 1573817259990,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573817260292,
+        "stop" : 1573817260292,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Patent Search tab is selected By system Deafults",
+      "time" : {
+        "start" : 1573817260768,
+        "stop" : 1573817260768,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fielded tab is selected By system Deafults ",
+      "time" : {
+        "start" : 1573817262791,
+        "stop" : 1573817262791,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fieldedsearch Tab containermain is displayed",
+      "time" : {
+        "start" : 1573817264822,
+        "stop" : 1573817264822,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Expert",
+      "time" : {
+        "start" : 1573817267209,
+        "stop" : 1573817267209,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Expert tab is selected ... ",
+      "time" : {
+        "start" : 1573817267306,
+        "stop" : 1573817267306,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button PPN Number",
+      "time" : {
+        "start" : 1573817269471,
+        "stop" : 1573817269471,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "PPN is selected ....",
+      "time" : {
+        "start" : 1573817269544,
+        "stop" : 1573817269544,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573817271644,
+        "stop" : 1573817271644,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573817273118,
+        "stop" : 1573817273118,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI_27066 Validate the default tabs in Patentseach page"
+  }, {
+    "name" : "testClass",
+    "value" : "TI_27066 Validate the default tabs in Patentseach page"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI_27066 validate Fielded , Expert and PN tabs "
+  }, {
+    "name" : "package",
+    "value" : "TI_27066 Validate the default tabs in Patentseach page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "407e96ee49e7bd61.json",
+  "parameterValues" : [ ]
+}

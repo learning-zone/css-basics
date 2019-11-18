@@ -1,0 +1,52 @@
+{
+  "uid" : "99cf9aadd9d27019",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI - 36731 -- Code Look up: Both the formats that can be searched today when doing a code search should be searchable when searching codes in the look up tool..\"before all\" hook: ret",
+  "historyId" : "60b7a323f7a96d4adaa17644bd100937",
+  "time" : {
+    "start" : 1573818860060,
+    "stop" : 1573818920071,
+    "duration" : 60011
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-36731.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-36731.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI - 36731 -- Code Look up: Both the formats that can be searched today when doing a code search should be searchable when searching codes in the look up tool."
+  }, {
+    "name" : "testClass",
+    "value" : "TI - 36731 -- Code Look up: Both the formats that can be searched today when doing a code search should be searchable when searching codes in the look up tool."
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI - 36731 -- Code Look up: Both the formats that can be searched today when doing a code search should be searchable when searching codes in the look up tool."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "99cf9aadd9d27019.json",
+  "parameterValues" : [ ]
+}

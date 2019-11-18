@@ -1,0 +1,52 @@
+{
+  "uid" : "2ba407ed291af446",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI- 27381 -- Validating Expert Tab UI validations.\"before all\" hook: ret",
+  "historyId" : "68f71d1ed26881cd170bfa508f1dac77",
+  "time" : {
+    "start" : 1573817445416,
+    "stop" : 1573817445426,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-27381 Logout is not happend sucessfullyNoSuchElementError: No element found using locator: By(xpath, .//span[contains(text(),'Welcome')]/../..)",
+  "statusTrace" : "AssertionError: TI-27381 Logout is not happend sucessfullyNoSuchElementError: No element found using locator: By(xpath, .//span[contains(text(),'Welcome')]/../..)\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-27381.ts:55:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27381.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI- 27381 -- Validating Expert Tab UI validations"
+  }, {
+    "name" : "testClass",
+    "value" : "TI- 27381 -- Validating Expert Tab UI validations"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI- 27381 -- Validating Expert Tab UI validations"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2ba407ed291af446.json",
+  "parameterValues" : [ ]
+}

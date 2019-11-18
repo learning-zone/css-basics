@@ -1,0 +1,52 @@
+{
+  "uid" : "8e47258476064fc2",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-28142 : Updating the placeholder text based upon which radio option.\"before all\" hook: ret",
+  "historyId" : "42718cce386d6bdc1a58e71ab5e3c2ba",
+  "time" : {
+    "start" : 1573817848827,
+    "stop" : 1573817908826,
+    "duration" : 59999
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-28142.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-28142.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-28142 : Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-28142 : Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-28142 : Updating the placeholder text based upon which radio option"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8e47258476064fc2.json",
+  "parameterValues" : [ ]
+}

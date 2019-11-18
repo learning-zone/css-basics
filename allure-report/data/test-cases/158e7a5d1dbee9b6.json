@@ -1,0 +1,236 @@
+{
+  "uid" : "158e7a5d1dbee9b6",
+  "name" : "TI_35062#4 validate the selected pills \"X\" icon on Patent collection screen",
+  "fullName" : "TI_35062 Validate the pills on Patent collection screen.TI_35062#4 validate the selected pills \"X\" icon on Patent collection screen",
+  "historyId" : "3653041c8beb90e0418775d2393f761d",
+  "time" : {
+    "start" : 1573818408874,
+    "stop" : 1573818415790,
+    "duration" : 6916
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573818408990,
+        "stop" : 1573818408990,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573818409319,
+        "stop" : 1573818409320,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Patent Search button is selected already",
+      "time" : {
+        "start" : 1573818409411,
+        "stop" : 1573818409411,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Button Fielded is selected already",
+      "time" : {
+        "start" : 1573818409438,
+        "stop" : 1573818409438,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Link Change collection",
+      "time" : {
+        "start" : 1573818409577,
+        "stop" : 1573818409577,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Link Clear All",
+      "time" : {
+        "start" : 1573818410488,
+        "stop" : 1573818410488,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Apply",
+      "time" : {
+        "start" : 1573818410910,
+        "stop" : 1573818410910,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "First value in selected collections pill is 'DWPI' ",
+      "time" : {
+        "start" : 1573818413452,
+        "stop" : 1573818413452,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "close length1:: 1",
+      "time" : {
+        "start" : 1573818415788,
+        "stop" : 1573818415788,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Selected  collection pills contains only one 'X' icon ",
+      "time" : {
+        "start" : 1573818415788,
+        "stop" : 1573818415788,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818415923,
+        "stop" : 1573818415923,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573818417727,
+        "stop" : 1573818417728,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI_35062 Validate the pills on Patent collection screen"
+  }, {
+    "name" : "testClass",
+    "value" : "TI_35062 Validate the pills on Patent collection screen"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI_35062#4 validate the selected pills \"X\" icon on Patent collection screen"
+  }, {
+    "name" : "package",
+    "value" : "TI_35062 Validate the pills on Patent collection screen"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "158e7a5d1dbee9b6.json",
+  "parameterValues" : [ ]
+}

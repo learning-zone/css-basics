@@ -1,0 +1,1287 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "",
+    "children" : [ {
+      "name" : "show tips missing",
+      "uid" : "4aff6485e2e4dcdf",
+      "parentUid" : "48d85075effc392b4b30cf2001bf14e6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573816289694,
+        "stop" : 1573816289694,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "48d85075effc392b4b30cf2001bf14e6"
+  }, {
+    "name" : "TI-32734",
+    "children" : [ {
+      "name" : "TI-32734: Validte the Busy-Indicator",
+      "uid" : "3f2489a92e2c4031",
+      "parentUid" : "3f2dc3316b7e5a80ba53b9b0e54c2092",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573816311139,
+        "stop" : 1573816346716,
+        "duration" : 35577
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3f2dc3316b7e5a80ba53b9b0e54c2092"
+  }, {
+    "name" : "TI- 34653 -- Logout page: Add \"PRODUCT LOGIN\" on \"Successful Logout\" dialogue box",
+    "children" : [ {
+      "name" : "TI - 34653 -- Validating Sorting Ascending Field column for standard fields tab",
+      "uid" : "984411e87dba5049",
+      "parentUid" : "e9ada07f9953b2c0728ad75ed0e06b9c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573816368141,
+        "stop" : 1573816430729,
+        "duration" : 62588
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e9ada07f9953b2c0728ad75ed0e06b9c"
+  }, {
+    "name" : "TI-36233",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "dcac409abce017f4",
+      "parentUid" : "41fc47c402be79fb614e0737f04f4059",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573816490727,
+        "stop" : 1573816550721,
+        "duration" : 59994
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "41fc47c402be79fb614e0737f04f4059"
+  }, {
+    "name" : "Load page test Help & onboarding: Take the tour",
+    "children" : [ {
+      "name" : "User can access the tour anytime by selecting Take the tour under Support menu",
+      "uid" : "6bcd649f0ac6f2d3",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816569361,
+        "stop" : 1573816579779,
+        "duration" : 10418
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on Continue to move on next screen",
+      "uid" : "bfb9084bcd9db61f",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816579779,
+        "stop" : 1573816581986,
+        "duration" : 2207
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on Previous to come back to previous screen",
+      "uid" : "d5ba4ed66a670904",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816581986,
+        "stop" : 1573816584206,
+        "duration" : 2220
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on skip tour to cancel pendo",
+      "uid" : "81370b4424eff1f2",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816584206,
+        "stop" : 1573816584210,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on complete on last screen to complete the tour",
+      "uid" : "a6cd26c4772a93d4",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816584210,
+        "stop" : 1573816599157,
+        "duration" : 14947
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Click on close icon to cancel the tour",
+      "uid" : "76441a7b9b7be317",
+      "parentUid" : "e3a2b68b70aa5e4a85d1539112e3da20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573816599157,
+        "stop" : 1573816614226,
+        "duration" : 15069
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e3a2b68b70aa5e4a85d1539112e3da20"
+  }, {
+    "name" : "Load page test Help & onboarding: Help tip, toggle and banner",
+    "children" : [ {
+      "name" : "Turn on Help tip and verify banner",
+      "uid" : "48bf6ad6f202141d",
+      "parentUid" : "a840724f010c76359f7d9957acb15cc6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573816650793,
+        "stop" : 1573816661445,
+        "duration" : 10652
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a840724f010c76359f7d9957acb15cc6"
+  }, {
+    "name" : "Footer validation",
+    "children" : [ {
+      "name" : "Validate footer for analyst Data",
+      "uid" : "7a22b455fb504b41",
+      "parentUid" : "f5d2d8c9a11e3280ddb80eda39a073b3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573816665507,
+        "stop" : 1573816665559,
+        "duration" : 52
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f5d2d8c9a11e3280ddb80eda39a073b3"
+  }, {
+    "name" : "TI-27030 : Global: Browser Container, TI-27031 : Home: Language Selector",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "3a5aeca2a24206bc",
+      "parentUid" : "5c3afc6e5b1c84c15402e5395c5c6323",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816668793,
+        "stop" : 1573816668793,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5c3afc6e5b1c84c15402e5395c5c6323"
+  }, {
+    "name" : "TI-27030 : Global: Browser Container",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "865f12440224f10c",
+      "parentUid" : "9c89010f99f67008cde338d609e9a38d",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816700363,
+        "stop" : 1573816700363,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9c89010f99f67008cde338d609e9a38d"
+  }, {
+    "name" : "TI-27031 : Home: Language Selector",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "d404377b3bab4390",
+      "parentUid" : "9b59dc778498e5a533e188fee4fb2293",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816732147,
+        "stop" : 1573816732147,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9b59dc778498e5a533e188fee4fb2293"
+  }, {
+    "name" : "TI-27032 : Home: User Profile Menu",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "6be2108a46ef8e7c",
+      "parentUid" : "aaaa3e83f54c6a52b0dde0392e4ebff6",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816763822,
+        "stop" : 1573816763822,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "aaaa3e83f54c6a52b0dde0392e4ebff6"
+  }, {
+    "name" : "Home: Global Navigation",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "dcc6aa0bba467d7d",
+      "parentUid" : "6d7ba8b78d12d11cc6e683dd58f1df91",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816797931,
+        "stop" : 1573816797931,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6d7ba8b78d12d11cc6e683dd58f1df91"
+  }, {
+    "name" : "TI-27033 : Home: Global Navigation",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "427bb065cae4d3d0",
+      "parentUid" : "1bd23ddae669cb2476ed727b5be22a38",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816829493,
+        "stop" : 1573816829493,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1bd23ddae669cb2476ed727b5be22a38"
+  }, {
+    "name" : "TI_27034 ",
+    "children" : [ {
+      "name" : "TI_27034 validate Smart/Quick Search Bar ",
+      "uid" : "153632eeea1984ff",
+      "parentUid" : "7a22b5f3510b89d6c770afac50008546",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816860929,
+        "stop" : 1573816862580,
+        "duration" : 1651
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "7a22b5f3510b89d6c770afac50008546"
+  }, {
+    "name" : "TI-27054 : Home: Footer,TI-28344 : Home Page: Saved Work,TI-31488 : Home Page: Support list in the footer",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "6b7c9dd50cfbdef6",
+      "parentUid" : "b966358ce73cbaa190726f956a789bd1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816882548,
+        "stop" : 1573816882548,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b966358ce73cbaa190726f956a789bd1"
+  }, {
+    "name" : "TI-27056 and TI-31580 --- Home: Popular Search Strategies ",
+    "children" : [ {
+      "name" : "TI-27056 and TI-31580 --- Validating Home Page Popular search links displaying in new window",
+      "uid" : "d617118928f39b76",
+      "parentUid" : "be6cd706f397298e2ae173c864a382be",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816913943,
+        "stop" : 1573816945869,
+        "duration" : 31926
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "be6cd706f397298e2ae173c864a382be"
+  }, {
+    "name" : "TI-28304 :Updating the placeholder text based upon which radio option",
+    "children" : [ {
+      "name" : "Validate default checked radio button is smart search",
+      "uid" : "3c8f40da5a575ebb",
+      "parentUid" : "d5d00f3c8b234ae6e52bcc97e4e57a5e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816966651,
+        "stop" : 1573816966720,
+        "duration" : 69
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validate place holder text in Quick Search text box",
+      "uid" : "c1f384990b5920e3",
+      "parentUid" : "d5d00f3c8b234ae6e52bcc97e4e57a5e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816966720,
+        "stop" : 1573816967872,
+        "duration" : 1152
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "validate the text in quick searchtextbox when smart search is selected",
+      "uid" : "759eb1fa721af6b9",
+      "parentUid" : "d5d00f3c8b234ae6e52bcc97e4e57a5e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816967872,
+        "stop" : 1573816968997,
+        "duration" : 1125
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d5d00f3c8b234ae6e52bcc97e4e57a5e"
+  }, {
+    "name" : "TI-28349 : Home Page: IP Services dropdown",
+    "children" : [ {
+      "name" : "TI-28349 Validate service enquiry menu item in IP Services menu",
+      "uid" : "369d78f281c1c22d",
+      "parentUid" : "009aefa12291e8dbb0858f31664681ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573816989887,
+        "stop" : 1573816989887,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-28349 Validate expert patent translation menu item in IP Services menu",
+      "uid" : "4e85ef1ef2a8819e",
+      "parentUid" : "009aefa12291e8dbb0858f31664681ac",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573816989888,
+        "stop" : 1573816989900,
+        "duration" : 12
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "009aefa12291e8dbb0858f31664681ac"
+  }, {
+    "name" : "TI-28350 : To validate Footer links- TI-27054",
+    "children" : [ {
+      "name" : "TI-28350 To click on Support Drop Down -->\"Help\" link and validate if new tab is opened",
+      "uid" : "78cafe91163566e6",
+      "parentUid" : "8eb3a2885b4ed414338442b1e0730960",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817012442,
+        "stop" : 1573817012446,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-28350 To click on Support Drop Down -->\"ViewTrainingCourses\" link and validate if new tab is opened",
+      "uid" : "d32147cd9f6f1b95",
+      "parentUid" : "8eb3a2885b4ed414338442b1e0730960",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817012446,
+        "stop" : 1573817012448,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-28350 To click on Support Drop Down-->\"Ask a question\" link and validate if new tab is opened",
+      "uid" : "befe8bfbbdab95e3",
+      "parentUid" : "8eb3a2885b4ed414338442b1e0730960",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817012448,
+        "stop" : 1573817012449,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-28350 To click on Support-->\"Contact Us\" link and validate if new tab is opened",
+      "uid" : "640240a6df45164",
+      "parentUid" : "8eb3a2885b4ed414338442b1e0730960",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817012449,
+        "stop" : 1573817012450,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "take tour is mising",
+      "uid" : "5de9d716cc6f38be",
+      "parentUid" : "8eb3a2885b4ed414338442b1e0730960",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573817012450,
+        "stop" : 1573817012450,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8eb3a2885b4ed414338442b1e0730960"
+  }, {
+    "name" : "TI-31489 Validate the Tracking clock in the header",
+    "children" : [ {
+      "name" : "TI-31489 :Validate the Pause and paly arrows on the tracking clock popup",
+      "uid" : "cb352440d5c6e913",
+      "parentUid" : "e03cd0873d2ceb7b25636f865fac1d23",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573817033503,
+        "stop" : 1573817033503,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e03cd0873d2ceb7b25636f865fac1d23"
+  }, {
+    "name" : "TI-31490",
+    "children" : [ {
+      "name" : "TI-31490 :: Home page: Derwent Innovation link for ANALYST user",
+      "uid" : "899ecf2feb4a3cba",
+      "parentUid" : "bca5529e436957fb49f8fadeb92b752b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817054116,
+        "stop" : 1573817114115,
+        "duration" : 59999
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-31490 :: Home page: Derwent Innovation link for PRO user",
+      "uid" : "ea34f32666d6f1d0",
+      "parentUid" : "bca5529e436957fb49f8fadeb92b752b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573817114115,
+        "stop" : 1573817114115,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-31490 :: Home page: Derwent Innovation link for EXPRESS user",
+      "uid" : "690aaa96665068b4",
+      "parentUid" : "bca5529e436957fb49f8fadeb92b752b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817114115,
+        "stop" : 1573817174114,
+        "duration" : 59999
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bca5529e436957fb49f8fadeb92b752b"
+  }, {
+    "name" : "TI-31491-27064 :Validation Tiles in Dashboard for respective User",
+    "children" : [ {
+      "name" : "Login as All User and validate Dashboard tile",
+      "uid" : "e82ad17ca47f94cf",
+      "parentUid" : "b2f90a6e04c7a3b406e79e3f4430c406",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817174119,
+        "stop" : 1573817175346,
+        "duration" : 1227
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b2f90a6e04c7a3b406e79e3f4430c406"
+  }, {
+    "name" : "TI_35661 ",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "7b4cbedc150d46e0",
+      "parentUid" : "acc38a1451624c709cc0a8689632ccd1",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817178761,
+        "stop" : 1573817238761,
+        "duration" : 60000
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "acc38a1451624c709cc0a8689632ccd1"
+  }, {
+    "name" : "TI_27066 Validate the default tabs in Patentseach page",
+    "children" : [ {
+      "name" : "TI_27066 validate Fielded , Expert and PN tabs ",
+      "uid" : "407e96ee49e7bd61",
+      "parentUid" : "38e419df2e22733aab3759b6d803ca72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817259879,
+        "stop" : 1573817271545,
+        "duration" : 11666
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "38e419df2e22733aab3759b6d803ca72"
+  }, {
+    "name" : "TI-27072: Search & Browse: Standard Fields",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "f21dc2bf87a91cf6",
+      "parentUid" : "3ee0fdc249f84da7eab5ad24d0b2549d",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817292202,
+        "stop" : 1573817292202,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3ee0fdc249f84da7eab5ad24d0b2549d"
+  }, {
+    "name" : "TI-27076: Search & Browse: Code Look-up",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "337069cff09042b9",
+      "parentUid" : "db47997db8941f019f11d8dd2dc9839d",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817324602,
+        "stop" : 1573817324602,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "db47997db8941f019f11d8dd2dc9839d"
+  }, {
+    "name" : "TI-27091 --- Search & Browse: Syntax Checker",
+    "children" : [ {
+      "name" : "TI-27091 --- Validating Check Syntax",
+      "uid" : "153e8ba617c466b8",
+      "parentUid" : "44d931c38541313632b5f9eca9dda970",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817356990,
+        "stop" : 1573817359919,
+        "duration" : 2929
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "44d931c38541313632b5f9eca9dda970"
+  }, {
+    "name" : "TI-27370/ TI-27076 ",
+    "children" : [ {
+      "name" : "TI-27370/ TI-27076 validate the LookUp button is displayed",
+      "uid" : "36b3466ffeb9def3",
+      "parentUid" : "e97080439bb6c5882b151d763aef4dbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817388587,
+        "stop" : 1573817417502,
+        "duration" : 28915
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e97080439bb6c5882b151d763aef4dbf"
+  }, {
+    "name" : "TI-27380 : Search fields ",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "3604e84f7c606ee6",
+      "parentUid" : "c8a55ae1a7c807f5c739ac3a2dd3a658",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817438241,
+        "stop" : 1573817442296,
+        "duration" : 4055
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c8a55ae1a7c807f5c739ac3a2dd3a658"
+  }, {
+    "name" : "TI- 27381 -- Validating Expert Tab UI validations",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "2ba407ed291af446",
+      "parentUid" : "375134aaa9821af87fcd6c640464d2c7",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817445416,
+        "stop" : 1573817445426,
+        "duration" : 10
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "375134aaa9821af87fcd6c640464d2c7"
+  }, {
+    "name" : "TI-27403 :Publication Number and DWPI Accession Number discrepancies' windows.",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "9e050fbf5cb37a5",
+      "parentUid" : "38af8a54229c0bb9621a726c778104d5",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817448555,
+        "stop" : 1573817448555,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "38af8a54229c0bb9621a726c778104d5"
+  }, {
+    "name" : "TI-27528: Search & Browse: Fielded Search",
+    "children" : [ {
+      "name" : "TI-27528: Toggle between FIELDED and EXPERT search forms",
+      "uid" : "9a5e83557fbc68e1",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817470445,
+        "stop" : 1573817470968,
+        "duration" : 523
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify Add or remove search field row by using the `+/-` buttons",
+      "uid" : "802014defba2c0fe",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817470968,
+        "stop" : 1573817471523,
+        "duration" : 555
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify the logical operators selection option",
+      "uid" : "a0fefa4e0cf628da",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817471523,
+        "stop" : 1573817475220,
+        "duration" : 3697
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify the `Look up` buttons in the Patent search fields",
+      "uid" : "4bf7f4f3a45d315d",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817475220,
+        "stop" : 1573817479088,
+        "duration" : 3868
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify the `Clear all` button in the search form",
+      "uid" : "d173a7f3f194c4ef",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817479088,
+        "stop" : 1573817482827,
+        "duration" : 3739
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify the `Revert` button in the search form",
+      "uid" : "a829afbdf0e07b6c",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817482827,
+        "stop" : 1573817483078,
+        "duration" : 251
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528 : Verify the three option buttons will enable in the search form",
+      "uid" : "b9956eefddb1ff07",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573817483078,
+        "stop" : 1573817485561,
+        "duration" : 2483
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI-27528: Verify the `Search` button in the search form",
+      "uid" : "66cf4cc642bcc94d",
+      "parentUid" : "3c2365ede1cb0a764103dfb1b010b337",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817485561,
+        "stop" : 1573817491688,
+        "duration" : 6127
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3c2365ede1cb0a764103dfb1b010b337"
+  }, {
+    "name" : "TI_27941",
+    "children" : [ {
+      "name" : "TI_27941 validate the Also search DWPI ",
+      "uid" : "5428ab637b1050fd",
+      "parentUid" : "44b1fcfa083c824fdaf772c98922dda4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573817515896,
+        "stop" : 1573817528179,
+        "duration" : 12283
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI_27941: validate `Also search DWPI checkbox` for non DWPI user ",
+      "uid" : "8dfd0059f79a6dd",
+      "parentUid" : "44b1fcfa083c824fdaf772c98922dda4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1573817528179,
+        "stop" : 1573817528179,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "44b1fcfa083c824fdaf772c98922dda4"
+  }, {
+    "name" : "TI-27993 ---  Search & Browse: Query Previewer: Global text component.",
+    "children" : [ {
+      "name" : "TI-27993 --- Validating More than 30K characters error message",
+      "uid" : "868780ea37447693",
+      "parentUid" : "f7e48b15f324ab6f08d170935a4a2ce8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817548819,
+        "stop" : 1573817668817,
+        "duration" : 119998
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f7e48b15f324ab6f08d170935a4a2ce8"
+  }, {
+    "name" : "TI-28114 --- Collection schedule link",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "e0418a5540945c15",
+      "parentUid" : "94105f46a951afa842c1d0214b2db9c9",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817728824,
+        "stop" : 1573817788822,
+        "duration" : 59998
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "94105f46a951afa842c1d0214b2db9c9"
+  }, {
+    "name" : "TI-28142 : Updating the placeholder text based upon which radio option",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "8e47258476064fc2",
+      "parentUid" : "c33cbe75cac7f378507daca2bb1cb141",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817848827,
+        "stop" : 1573817908826,
+        "duration" : 59999
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c33cbe75cac7f378507daca2bb1cb141"
+  }, {
+    "name" : "TI-28253 Confirmation_Modal for Close Icon",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "cab7f62492f57922",
+      "parentUid" : "5939700ad2e6c94aa1417c32a9e13ae3",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573817968831,
+        "stop" : 1573818028831,
+        "duration" : 60000
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5939700ad2e6c94aa1417c32a9e13ae3"
+  }, {
+    "name" : "TI-30288 Validate Search & Browse: Look-up guide link in the microcopy",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "1e8f5da945b4b417",
+      "parentUid" : "6be7a5aceaac0497992c8d4ca906c905",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818088836,
+        "stop" : 1573818174519,
+        "duration" : 85683
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "6be7a5aceaac0497992c8d4ca906c905"
+  }, {
+    "name" : "TI-34533 Validate IP Authenticated users should not access to create search template.",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "f119e86aa3cdd067",
+      "parentUid" : "e629313de11dae5bc76c04114459cef0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818240102,
+        "stop" : 1573818300198,
+        "duration" : 60096
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e629313de11dae5bc76c04114459cef0"
+  }, {
+    "name" : "TI - 34567 -- Search & Browse: Patent Collection - Pill box.",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "346cced8d28cb0b",
+      "parentUid" : "ee8d996e821de264b83a0c847c17642a",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573818303791,
+        "stop" : 1573818303791,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ee8d996e821de264b83a0c847c17642a"
+  }, {
+    "name" : "TI - 35052 -- Validating custom field between search screens",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "7bb8b71846f6fe8d",
+      "parentUid" : "29348916830b4c4f54bf527456220573",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818312866,
+        "stop" : 1573818372962,
+        "duration" : 60096
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "29348916830b4c4f54bf527456220573"
+  }, {
+    "name" : "TI_35062 Validate the pills on Patent collection screen",
+    "children" : [ {
+      "name" : "TI_35062#_1_2_3 validate the selected pills on Patent collection screen",
+      "uid" : "7f950f75131a0efb",
+      "parentUid" : "ae5e7f98cb2a2e81065e8046dd05c549",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573818391193,
+        "stop" : 1573818408874,
+        "duration" : 17681
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TI_35062#4 validate the selected pills \"X\" icon on Patent collection screen",
+      "uid" : "158e7a5d1dbee9b6",
+      "parentUid" : "ae5e7f98cb2a2e81065e8046dd05c549",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573818408874,
+        "stop" : 1573818415790,
+        "duration" : 6916
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ae5e7f98cb2a2e81065e8046dd05c549"
+  }, {
+    "name" : "TI-35248 : US Classification tool: Hide jump to for US Classification tool",
+    "children" : [ {
+      "name" : "Select Collections",
+      "uid" : "28434d6092263271",
+      "parentUid" : "96a483089d41d782b85c0580f651bb42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573818436832,
+        "stop" : 1573818445065,
+        "duration" : 8233
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "US Class : Hide jump to for US Classification tool",
+      "uid" : "daeb6c3c1dc80167",
+      "parentUid" : "96a483089d41d782b85c0580f651bb42",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818445065,
+        "stop" : 1573818505160,
+        "duration" : 60095
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "US Class-Current : Hide jump to for US Classification tool",
+      "uid" : "723d317244176bc7",
+      "parentUid" : "96a483089d41d782b85c0580f651bb42",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818505160,
+        "stop" : 1573818565219,
+        "duration" : 60059
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "US Class-Current-Main : Hide jump to for US Classification tool",
+      "uid" : "d778e8f7970586fe",
+      "parentUid" : "96a483089d41d782b85c0580f651bb42",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818565219,
+        "stop" : 1573818625255,
+        "duration" : 60036
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "74e37c0ff7793109",
+      "parentUid" : "96a483089d41d782b85c0580f651bb42",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573819369753,
+        "stop" : 1573819429760,
+        "duration" : 60007
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "96a483089d41d782b85c0580f651bb42"
+  }, {
+    "name" : "TI-35287",
+    "children" : [ {
+      "name" : "TI-35287 Validate the livelinks on Code_lookup table",
+      "uid" : "bd4d3308b529a282",
+      "parentUid" : "3005679fcdf7e2b5513f135134092d17",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818648408,
+        "stop" : 1573818708444,
+        "duration" : 60036
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3005679fcdf7e2b5513f135134092d17"
+  }, {
+    "name" : "Test to show error manager with report",
+    "children" : [ {
+      "name" : "Allure Test",
+      "uid" : "c90c68cd01c202fb",
+      "parentUid" : "1236e46c7e2c4412154d1b539b803ffd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573818731084,
+        "stop" : 1573818732086,
+        "duration" : 1002
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Allure Test2",
+      "uid" : "c1cdc0f28b47ff62",
+      "parentUid" : "1236e46c7e2c4412154d1b539b803ffd",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573818732086,
+        "stop" : 1573818734142,
+        "duration" : 2056
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1236e46c7e2c4412154d1b539b803ffd"
+  }, {
+    "name" : "TI - 35792 -- Fielded search form: Show the same watermark for fields which are shown in Production.",
+    "children" : [ {
+      "name" : "TI - 35792 -- Fielded search form: Show the same watermark for fields which are shown in Production.",
+      "uid" : "f1545a836ea4b03",
+      "parentUid" : "e5119352953806e6b98f34216fd538b0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818754845,
+        "stop" : 1573818814882,
+        "duration" : 60037
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e5119352953806e6b98f34216fd538b0"
+  }, {
+    "name" : "TI - 36038 -- Search & Browse: Code Look-up.",
+    "children" : [ {
+      "name" : "TI - 36038 -- Watermark to be used in query previewer on SELECTED tab \"Codes you select display here for review\".",
+      "uid" : "a474ad5bb63a6148",
+      "parentUid" : "d54284e52b30a52d8fc165f7d0eea7be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573818835761,
+        "stop" : 1573818848475,
+        "duration" : 12714
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d54284e52b30a52d8fc165f7d0eea7be"
+  }, {
+    "name" : "TI - 36731 -- Code Look up: Both the formats that can be searched today when doing a code search should be searchable when searching codes in the look up tool.",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "99cf9aadd9d27019",
+      "parentUid" : "e62d3117dd1381cbe1090c8926ce100d",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818860060,
+        "stop" : 1573818920071,
+        "duration" : 60011
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e62d3117dd1381cbe1090c8926ce100d"
+  }, {
+    "name" : "TI - 38458 -- Fielded search form: As a system, I must always show all the fields at all the times on search form for all the collections.",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "ea0df10510d346e9",
+      "parentUid" : "bcab9cd883077355e1326644d2a473be",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573818980085,
+        "stop" : 1573819040098,
+        "duration" : 60013
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bcab9cd883077355e1326644d2a473be"
+  }, {
+    "name" : "TI - 27963 -- Validating custom field between search screens",
+    "children" : [ {
+      "name" : "TI - 27963 -- Validating custom field between search screens",
+      "uid" : "5962e3837ae28614",
+      "parentUid" : "71ae50ca302d5fbdfcef8487a2b607a4",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573819058773,
+        "stop" : 1573819090737,
+        "duration" : 31964
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "71ae50ca302d5fbdfcef8487a2b607a4"
+  }, {
+    "name" : "Load page test TI-35707: Search & Browse: If user changes collections after performing search, disable subsearch.",
+    "children" : [ {
+      "name" : "Verify Subsearch before and after collection change",
+      "uid" : "710920f9bf2952d6",
+      "parentUid" : "5091b2ddd381ce9ca4565088cb461df1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1573819113600,
+        "stop" : 1573819153460,
+        "duration" : 39860
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5091b2ddd381ce9ca4565088cb461df1"
+  }, {
+    "name" : "ti-31481",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "d4d0162243031f1a",
+      "parentUid" : "b84c42f0e0d42a7b6a128411a3d6a95f",
+      "status" : "failed",
+      "time" : {
+        "start" : 1573819161081,
+        "stop" : 1573819161081,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b84c42f0e0d42a7b6a128411a3d6a95f"
+  }, {
+    "name" : "TI-38460",
+    "children" : [ {
+      "name" : "TI-38460: Validte reapply the filter after the subsearch.",
+      "uid" : "fa82203a6a654a63",
+      "parentUid" : "ec7df279d0284378848cec5fe9569ed2",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573819182969,
+        "stop" : 1573819302980,
+        "duration" : 120011
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ec7df279d0284378848cec5fe9569ed2"
+  }, {
+    "name" : "TI-35791 ",
+    "children" : [ {
+      "name" : "\"before all\" hook: ret",
+      "uid" : "20ff9657a565c91e",
+      "parentUid" : "192dcbde71fd9be653bf73b33af784bf",
+      "status" : "broken",
+      "time" : {
+        "start" : 1573819306338,
+        "stop" : 1573819366343,
+        "duration" : 60005
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "192dcbde71fd9be653bf73b33af784bf"
+  } ]
+}

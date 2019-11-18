@@ -1,0 +1,124 @@
+{
+  "uid" : "868780ea37447693",
+  "name" : "TI-27993 --- Validating More than 30K characters error message",
+  "fullName" : "TI-27993 ---  Search & Browse: Query Previewer: Global text component..TI-27993 --- Validating More than 30K characters error message",
+  "historyId" : "410b29c20095e3edf7753070213992e7",
+  "time" : {
+    "start" : 1573817548819,
+    "stop" : 1573817668817,
+    "duration" : 119998
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-27993.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-27993.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-27993.js)",
+    "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-27993.js)",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573817548928,
+        "stop" : 1573817548928,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573817549250,
+        "stop" : 1573817549250,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Patent Search button is selected already",
+      "time" : {
+        "start" : 1573817549603,
+        "stop" : 1573817549603,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Button Fielded is selected already",
+      "time" : {
+        "start" : 1573817549625,
+        "stop" : 1573817549625,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27993 ---  Search & Browse: Query Previewer: Global text component."
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27993 ---  Search & Browse: Query Previewer: Global text component."
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-27993 --- Validating More than 30K characters error message"
+  }, {
+    "name" : "package",
+    "value" : "TI-27993 ---  Search & Browse: Query Previewer: Global text component."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "868780ea37447693.json",
+  "parameterValues" : [ ]
+}

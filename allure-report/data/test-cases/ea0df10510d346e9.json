@@ -1,0 +1,52 @@
+{
+  "uid" : "ea0df10510d346e9",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI - 38458 -- Fielded search form: As a system, I must always show all the fields at all the times on search form for all the collections..\"before all\" hook: ret",
+  "historyId" : "91d85bad3bb7a2fca0f80ce14d5a8a73",
+  "time" : {
+    "start" : 1573818980085,
+    "stop" : 1573819040098,
+    "duration" : 60013
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-38458.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-38458.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI - 38458 -- Fielded search form: As a system, I must always show all the fields at all the times on search form for all the collections."
+  }, {
+    "name" : "testClass",
+    "value" : "TI - 38458 -- Fielded search form: As a system, I must always show all the fields at all the times on search form for all the collections."
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI - 38458 -- Fielded search form: As a system, I must always show all the fields at all the times on search form for all the collections."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ea0df10510d346e9.json",
+  "parameterValues" : [ ]
+}

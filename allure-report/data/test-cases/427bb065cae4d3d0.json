@@ -1,0 +1,52 @@
+{
+  "uid" : "427bb065cae4d3d0",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-27033 : Home: Global Navigation.\"before all\" hook: ret",
+  "historyId" : "a7b46d9536df1c771eb5b015ae9bfe8d",
+  "time" : {
+    "start" : 1573816829493,
+    "stop" : 1573816829493,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-27033 : login is not happend sucessfullyUnsupportedOperationError: sendKeysToActiveElement\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+  "statusTrace" : "AssertionError: TI-27033 : login is not happend sucessfullyUnsupportedOperationError: sendKeysToActiveElement\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diHome\\TI-27033.ts:36:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diHome\\TI-27033.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27033 : Home: Global Navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27033 : Home: Global Navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-27033 : Home: Global Navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "427bb065cae4d3d0.json",
+  "parameterValues" : [ ]
+}

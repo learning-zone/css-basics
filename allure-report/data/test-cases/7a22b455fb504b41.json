@@ -1,0 +1,52 @@
+{
+  "uid" : "7a22b455fb504b41",
+  "name" : "Validate footer for analyst Data",
+  "fullName" : "Footer validation.Validate footer for analyst Data",
+  "historyId" : "ee04c1f3d60991fd8511283c4f097be1",
+  "time" : {
+    "start" : 1573816665507,
+    "stop" : 1573816665559,
+    "duration" : 52
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "The \"url\" argument must be of type string. Received type undefined",
+  "statusTrace" : "TypeError [ERR_INVALID_ARG_TYPE]: The \"url\" argument must be of type string. Received type undefined\n                    at Url.parse (url.js:154:11)\n                    at urlParse (url.js:148:13)\n                    at Url.resolve (url.js:663:29)\n                    at Object.urlResolve [as resolve] (url.js:659:40)\n                    at ProtractorBrowser.get (node_modules\\protractor\\built\\browser.js:653:17)\n                    at Context.<anonymous> (test\\diHome\\footer.analyst.ts:22:23)\n                    at Generator.next (<anonymous>)\n                    at C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diHome\\footer.analyst.js:8:71\n                    at new Promise (<anonymous>)\n                    at __awaiter (dist\\test\\diHome\\footer.analyst.js:4:12)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Footer validation"
+  }, {
+    "name" : "testClass",
+    "value" : "Footer validation"
+  }, {
+    "name" : "testMethod",
+    "value" : "Validate footer for analyst Data"
+  }, {
+    "name" : "package",
+    "value" : "Footer validation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7a22b455fb504b41.json",
+  "parameterValues" : [ ]
+}

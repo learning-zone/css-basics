@@ -1,0 +1,52 @@
+{
+  "uid" : "f119e86aa3cdd067",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-34533 Validate IP Authenticated users should not access to create search template..\"before all\" hook: ret",
+  "historyId" : "13c1a4f0febefe94d8bfc6ae6018d357",
+  "time" : {
+    "start" : 1573818240102,
+    "stop" : 1573818300198,
+    "duration" : 60096
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-34533.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-34533.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-34533 Validate IP Authenticated users should not access to create search template."
+  }, {
+    "name" : "testClass",
+    "value" : "TI-34533 Validate IP Authenticated users should not access to create search template."
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-34533 Validate IP Authenticated users should not access to create search template."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f119e86aa3cdd067.json",
+  "parameterValues" : [ ]
+}

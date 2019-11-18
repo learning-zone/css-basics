@@ -1,0 +1,90 @@
+{
+  "uid" : "8dfd0059f79a6dd",
+  "name" : "TI_27941: validate `Also search DWPI checkbox` for non DWPI user ",
+  "fullName" : "TI_27941.TI_27941: validate `Also search DWPI checkbox` for non DWPI user ",
+  "historyId" : "139ffd0c2006fd549f4a27ae01265023",
+  "time" : {
+    "start" : 1573817528179,
+    "stop" : 1573817528179,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Test ignored",
+    "statusTrace" : "undefined",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573817528302,
+        "stop" : 1573817528302,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573817529804,
+        "stop" : 1573817529804,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI_27941"
+  }, {
+    "name" : "testClass",
+    "value" : "TI_27941"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI_27941: validate `Also search DWPI checkbox` for non DWPI user "
+  }, {
+    "name" : "package",
+    "value" : "TI_27941"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8dfd0059f79a6dd.json",
+  "parameterValues" : [ ]
+}

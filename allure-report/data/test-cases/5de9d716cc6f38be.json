@@ -1,0 +1,90 @@
+{
+  "uid" : "5de9d716cc6f38be",
+  "name" : "take tour is mising",
+  "fullName" : "TI-28350 : To validate Footer links- TI-27054.take tour is mising",
+  "historyId" : "309fe8201d59c8b78dcd2c9c3de65a07",
+  "time" : {
+    "start" : 1573817012450,
+    "stop" : 1573817012450,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "statusMessage" : "Test ignored",
+    "statusTrace" : "undefined",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573817012580,
+        "stop" : 1573817012580,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573817013981,
+        "stop" : 1573817013981,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-28350 : To validate Footer links- TI-27054"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-28350 : To validate Footer links- TI-27054"
+  }, {
+    "name" : "testMethod",
+    "value" : "take tour is mising"
+  }, {
+    "name" : "package",
+    "value" : "TI-28350 : To validate Footer links- TI-27054"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5de9d716cc6f38be.json",
+  "parameterValues" : [ ]
+}

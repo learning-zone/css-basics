@@ -1,0 +1,46 @@
+{
+  "uid" : "c90c68cd01c202fb",
+  "name" : "Allure Test",
+  "fullName" : "Test to show error manager with report.Allure Test",
+  "historyId" : "4eba90bc5677b4a375faeb6d110f80fa",
+  "time" : {
+    "start" : 1573818731084,
+    "stop" : 1573818732086,
+    "duration" : 1002
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Test to show error manager with report"
+  }, {
+    "name" : "testClass",
+    "value" : "Test to show error manager with report"
+  }, {
+    "name" : "testMethod",
+    "value" : "Allure Test"
+  }, {
+    "name" : "package",
+    "value" : "Test to show error manager with report"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c90c68cd01c202fb.json",
+  "parameterValues" : [ ]
+}

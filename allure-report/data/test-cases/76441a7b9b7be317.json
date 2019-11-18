@@ -1,0 +1,116 @@
+{
+  "uid" : "76441a7b9b7be317",
+  "name" : "Click on close icon to cancel the tour",
+  "fullName" : "Load page test Help & onboarding: Take the tour.Click on close icon to cancel the tour",
+  "historyId" : "694be3b636f62ebf073aa824cfc6992",
+  "time" : {
+    "start" : 1573816599157,
+    "stop" : 1573816614226,
+    "duration" : 15069
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click is successful on Support menu",
+      "time" : {
+        "start" : 1573816599368,
+        "stop" : 1573816599368,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSupportSubMenu Take the tour",
+      "time" : {
+        "start" : 1573816601731,
+        "stop" : 1573816601731,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on take tour",
+      "time" : {
+        "start" : 1573816607975,
+        "stop" : 1573816607975,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on click on close",
+      "time" : {
+        "start" : 1573816612224,
+        "stop" : 1573816612224,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "testClass",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "testMethod",
+    "value" : "Click on close icon to cancel the tour"
+  }, {
+    "name" : "package",
+    "value" : "Load page test Help & onboarding: Take the tour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "76441a7b9b7be317.json",
+  "parameterValues" : [ ]
+}

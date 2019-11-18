@@ -1,0 +1,94 @@
+{
+  "uid" : "1e8f5da945b4b417",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-30288 Validate Search & Browse: Look-up guide link in the microcopy.\"before all\" hook: ret",
+  "historyId" : "243cded28d5af7851e287cd4778108e8",
+  "time" : {
+    "start" : 1573818088836,
+    "stop" : 1573818174519,
+    "duration" : 85683
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-30288.js)",
+  "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-30288.js)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-30288.js)",
+    "statusTrace" : "Error: Timeout of 60000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\UC227138\\Desktop\\DI_Protractor\\DI_Git\\13_NOV\\diprotractor-master@2ef453ad8b9\\dist\\test\\diSearchAndBrowse\\TI-30288.js)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8ffe1a7486ac9e96",
+      "name" : "Screenshot",
+      "source" : "8ffe1a7486ac9e96.png",
+      "type" : "image/png",
+      "size" : 16607
+    }, {
+      "uid" : "5c7c0f1ba35a32f0",
+      "name" : "Screenshot",
+      "source" : "5c7c0f1ba35a32f0.png",
+      "type" : "image/png",
+      "size" : 16607
+    }, {
+      "uid" : "f0bff0175b619e06",
+      "name" : "Screenshot",
+      "source" : "f0bff0175b619e06.png",
+      "type" : "image/png",
+      "size" : 16607
+    }, {
+      "uid" : "be127bb0f438d8aa",
+      "name" : "Screenshot",
+      "source" : "be127bb0f438d8aa.png",
+      "type" : "image/png",
+      "size" : 16607
+    }, {
+      "uid" : "bad65ccb7b16ed40",
+      "name" : "Screenshot",
+      "source" : "bad65ccb7b16ed40.png",
+      "type" : "image/png",
+      "size" : 16607
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-30288 Validate Search & Browse: Look-up guide link in the microcopy"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-30288 Validate Search & Browse: Look-up guide link in the microcopy"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-30288 Validate Search & Browse: Look-up guide link in the microcopy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1e8f5da945b4b417.json",
+  "parameterValues" : [ ]
+}

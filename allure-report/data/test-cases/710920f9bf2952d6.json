@@ -1,0 +1,116 @@
+{
+  "uid" : "710920f9bf2952d6",
+  "name" : "Verify Subsearch before and after collection change",
+  "fullName" : "Load page test TI-35707: Search & Browse: If user changes collections after performing search, disable subsearch..Verify Subsearch before and after collection change",
+  "historyId" : "4e12d42686e13e436ef759d4131184f",
+  "time" : {
+    "start" : 1573819113600,
+    "stop" : 1573819153460,
+    "duration" : 39860
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573819113767,
+        "stop" : 1573819113767,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573819114146,
+        "stop" : 1573819114146,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on ",
+      "time" : {
+        "start" : 1573819116780,
+        "stop" : 1573819116780,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Search",
+      "time" : {
+        "start" : 1573819121430,
+        "stop" : 1573819121430,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Load page test TI-35707: Search & Browse: If user changes collections after performing search, disable subsearch."
+  }, {
+    "name" : "testClass",
+    "value" : "Load page test TI-35707: Search & Browse: If user changes collections after performing search, disable subsearch."
+  }, {
+    "name" : "testMethod",
+    "value" : "Verify Subsearch before and after collection change"
+  }, {
+    "name" : "package",
+    "value" : "Load page test TI-35707: Search & Browse: If user changes collections after performing search, disable subsearch."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "710920f9bf2952d6.json",
+  "parameterValues" : [ ]
+}

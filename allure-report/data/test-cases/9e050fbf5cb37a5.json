@@ -1,0 +1,94 @@
+{
+  "uid" : "9e050fbf5cb37a5",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI-27403 :Publication Number and DWPI Accession Number discrepancies' windows..\"before all\" hook: ret",
+  "historyId" : "4fdc46ed1ccd0040fe5fd9781e316d08",
+  "time" : {
+    "start" : 1573817448555,
+    "stop" : 1573817448555,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-27403 :   Login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+  "statusTrace" : "AssertionError: TI-27403 :   Login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-27403.ts:30:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27403.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "TI-27403 :   Login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+    "statusTrace" : "AssertionError: TI-27403 :   Login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-27403.ts:30:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27403.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573817449825,
+        "stop" : 1573817449825,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573817451254,
+        "stop" : 1573817451254,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27403 :Publication Number and DWPI Accession Number discrepancies' windows."
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27403 :Publication Number and DWPI Accession Number discrepancies' windows."
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI-27403 :Publication Number and DWPI Accession Number discrepancies' windows."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9e050fbf5cb37a5.json",
+  "parameterValues" : [ ]
+}

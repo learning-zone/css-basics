@@ -1,0 +1,48 @@
+{
+  "uid" : "369d78f281c1c22d",
+  "name" : "TI-28349 Validate service enquiry menu item in IP Services menu",
+  "fullName" : "TI-28349 : Home Page: IP Services dropdown.TI-28349 Validate service enquiry menu item in IP Services menu",
+  "historyId" : "e1b13eac8995f5bc13a9634e6a4cfe70",
+  "time" : {
+    "start" : 1573816989887,
+    "stop" : 1573816989887,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "skipped",
+  "statusMessage" : "Test ignored",
+  "statusTrace" : "undefined",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-28349 : Home Page: IP Services dropdown"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-28349 : Home Page: IP Services dropdown"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-28349 Validate service enquiry menu item in IP Services menu"
+  }, {
+    "name" : "package",
+    "value" : "TI-28349 : Home Page: IP Services dropdown"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "369d78f281c1c22d.json",
+  "parameterValues" : [ ]
+}

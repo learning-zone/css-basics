@@ -1,0 +1,94 @@
+{
+  "uid" : "d4d0162243031f1a",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "ti-31481.\"before all\" hook: ret",
+  "historyId" : "24ff00e282ea998ba3e5db42d59a7d5c",
+  "time" : {
+    "start" : 1573819161081,
+    "stop" : 1573819161081,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "ti-31481 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+  "statusTrace" : "AssertionError: ti-31481 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchResults\\ti-31481.ts:42:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchResults\\ti-31481.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "ti-31481 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+    "statusTrace" : "AssertionError: ti-31481 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchResults\\ti-31481.ts:42:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchResults\\ti-31481.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573819162383,
+        "stop" : 1573819162383,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573819163887,
+        "stop" : 1573819163887,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "ti-31481"
+  }, {
+    "name" : "testClass",
+    "value" : "ti-31481"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "ti-31481"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d4d0162243031f1a.json",
+  "parameterValues" : [ ]
+}

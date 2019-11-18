@@ -1,0 +1,220 @@
+{
+  "uid" : "346cced8d28cb0b",
+  "name" : "\"before all\" hook: ret",
+  "fullName" : "TI - 34567 -- Search & Browse: Patent Collection - Pill box..\"before all\" hook: ret",
+  "historyId" : "3bb33d6c7f5172194f16aad447ff9bbf",
+  "time" : {
+    "start" : 1573818303791,
+    "stop" : 1573818303791,
+    "duration" : 0
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-34567 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+  "statusTrace" : "AssertionError: TI-34567 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-34567.ts:24:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-34567.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "TI-34567 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)",
+    "statusTrace" : "AssertionError: TI-34567 login is not happend sucessfullyError: spochek111@i.ua is not entered on the EMAIL textbox Error: unable to claear the text on  [object Object]NoSuchElementError: No element found using locator: By(css selector, #tr-login-username)\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-34567.ts:24:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-34567.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305508,
+        "stop" : 1573818305508,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305526,
+        "stop" : 1573818305526,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305546,
+        "stop" : 1573818305546,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305563,
+        "stop" : 1573818305563,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305580,
+        "stop" : 1573818305580,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305596,
+        "stop" : 1573818305596,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on User Menu",
+      "time" : {
+        "start" : 1573818305620,
+        "stop" : 1573818305620,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Logout ",
+      "time" : {
+        "start" : 1573818307438,
+        "stop" : 1573818307438,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "307871ea75e3bf55",
+      "name" : "Screenshot",
+      "source" : "307871ea75e3bf55.png",
+      "type" : "image/png",
+      "size" : 222807
+    }, {
+      "uid" : "fc189fc8685ca2f2",
+      "name" : "Screenshot",
+      "source" : "fc189fc8685ca2f2.png",
+      "type" : "image/png",
+      "size" : 222807
+    }, {
+      "uid" : "da0be5ad25fcbd4e",
+      "name" : "Screenshot",
+      "source" : "da0be5ad25fcbd4e.png",
+      "type" : "image/png",
+      "size" : 222807
+    }, {
+      "uid" : "fc80bdb9cb2559e4",
+      "name" : "Screenshot",
+      "source" : "fc80bdb9cb2559e4.png",
+      "type" : "image/png",
+      "size" : 222807
+    }, {
+      "uid" : "d6e4a2f1ad17160",
+      "name" : "Screenshot",
+      "source" : "d6e4a2f1ad17160.png",
+      "type" : "image/png",
+      "size" : 222807
+    }, {
+      "uid" : "957e7b7dec429ebb",
+      "name" : "Screenshot",
+      "source" : "957e7b7dec429ebb.png",
+      "type" : "image/png",
+      "size" : 222807
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI - 34567 -- Search & Browse: Patent Collection - Pill box."
+  }, {
+    "name" : "testClass",
+    "value" : "TI - 34567 -- Search & Browse: Patent Collection - Pill box."
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook: ret"
+  }, {
+    "name" : "package",
+    "value" : "TI - 34567 -- Search & Browse: Patent Collection - Pill box."
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "346cced8d28cb0b.json",
+  "parameterValues" : [ ]
+}

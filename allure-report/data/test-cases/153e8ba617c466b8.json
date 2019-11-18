@@ -1,0 +1,139 @@
+{
+  "uid" : "153e8ba617c466b8",
+  "name" : "TI-27091 --- Validating Check Syntax",
+  "fullName" : "TI-27091 --- Search & Browse: Syntax Checker.TI-27091 --- Validating Check Syntax",
+  "historyId" : "eed26b737ca309c593193d72ed663296",
+  "time" : {
+    "start" : 1573817356990,
+    "stop" : 1573817359919,
+    "duration" : 2929
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "TI-27091 Validating Check SyntaxJavascriptError: javascript error: Cannot read property 'setValue' of undefined\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+  "statusTrace" : "AssertionError: TI-27091 Validating Check SyntaxJavascriptError: javascript error: Cannot read property 'setValue' of undefined\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-27091.ts:93:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27091.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "TI-27091 Validating Check SyntaxJavascriptError: javascript error: Cannot read property 'setValue' of undefined\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown",
+    "statusTrace" : "AssertionError: TI-27091 Validating Check SyntaxJavascriptError: javascript error: Cannot read property 'setValue' of undefined\n                  (Session info: chrome=78.0.3904.97)\n                Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\n                System info: host: 'BLR-80JR5Z1-7D', ip: '10.30.249.29', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'\n                Driver info: driver.version: unknown\n                    at Context.<anonymous> (test\\diSearchAndBrowse\\TI-27091.ts:93:20)\n                    at Generator.throw (<anonymous>)\n                    at rejected (dist\\test\\diSearchAndBrowse\\TI-27091.js:6:65)\n                    at process._tickCallback (internal/process/next_tick.js:68:7)",
+    "steps" : [ {
+      "name" : "Click is successful on Search Menu",
+      "time" : {
+        "start" : 1573817357089,
+        "stop" : 1573817357089,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on clickOnSubMenuPatent search",
+      "time" : {
+        "start" : 1573817357415,
+        "stop" : 1573817357415,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Expert",
+      "time" : {
+        "start" : 1573817358156,
+        "stop" : 1573817358156,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Link Change collection",
+      "time" : {
+        "start" : 1573817358472,
+        "stop" : 1573817358472,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click is successful on Button Apply",
+      "time" : {
+        "start" : 1573817359664,
+        "stop" : 1573817359664,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "TI-27091 --- Search & Browse: Syntax Checker"
+  }, {
+    "name" : "testClass",
+    "value" : "TI-27091 --- Search & Browse: Syntax Checker"
+  }, {
+    "name" : "testMethod",
+    "value" : "TI-27091 --- Validating Check Syntax"
+  }, {
+    "name" : "package",
+    "value" : "TI-27091 --- Search & Browse: Syntax Checker"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "153e8ba617c466b8.json",
+  "parameterValues" : [ ]
+}
