@@ -1498,7 +1498,6 @@ At-rules are `CSS statements` that instructs CSS how to behave. They begin with 
 
 /* Example: tells browser to use UTF-8 character set */
 @charset "utf-8";
-}
 ```
 
 |Sl.No| at-rules  | Description |
