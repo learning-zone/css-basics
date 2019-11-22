@@ -45,7 +45,7 @@
 
 #### Q. How to center align a div inside another div?
 ```css
-.container{
+.container {
 	width: 500px;
 	height: 500px;
 	background-color: red;
