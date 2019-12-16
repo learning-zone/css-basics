@@ -523,9 +523,9 @@ Reflow occurs when you:
 * Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
     
 #### Q. What is the purpose of the `z-index` and how is it used?
-The ```z-index``` helps specify the stack order of positioned elements that may overlap one another. The ```z-index``` default value is zero, and can take on either a positive or negative number. An element with a higher ```z-index``` is always stacked above than a lower index.
+The `z-index` helps specify the stack order of positioned elements that may overlap one another. The `z-index` default value is zero, and can take on either a positive or negative number. An element with a higher `z-index` is always stacked above than a lower index.
 
-```z-index``` can take the following values:
+`z-index` can take the following values:
 
   * **Auto**: Sets the stack order equal to its parents.
   * **Number**: Orders the stack order.
@@ -542,7 +542,7 @@ The ```z-index``` helps specify the stack order of positioned elements that may 
 
 * **absolute**, place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
 
-* **relative**, means "relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on it's positioning. It allows the use of ```z-index``` on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
+* **relative**, means "relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on it's positioning. It allows the use of `z-index` on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
 
 * **fixed**, element is positioned relative to viewport or the browser window itself. viewport doesn't changed if u scroll and hence fixed element will stay right in the same position.
 
