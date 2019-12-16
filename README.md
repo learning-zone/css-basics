@@ -897,6 +897,7 @@ Example
 
 #### Q. Describe floats and clear?
 **The float Property**  
+
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
 
 |Sl.No| Properties     | Description  |
@@ -915,6 +916,7 @@ img {
 ```
 
 **The clear Property**  
+
 The clear property specifies what elements can float beside the cleared element and on which side.
 
 |Sl.No| Properties     | Description  |
