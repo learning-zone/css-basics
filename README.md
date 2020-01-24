@@ -793,10 +793,10 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 #### Q. What is the purpose of the box-sizing property?
 The box-sizing CSS property sets how the total width and height of an element is calculated.
 
-1. **content-box**: the default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
-1. **padding-box**: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
-1. **border-box**: Width and height values apply to the content, padding, and border.
-1. **inherit**: inherits the box sizing of the parent element.
+* **content-box**: the default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
+* **padding-box**: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
+* **border-box**: Width and height values apply to the content, padding, and border.
+* **inherit**: inherits the box sizing of the parent element.
 
 Example:
 ```css
