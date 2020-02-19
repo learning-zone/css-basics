@@ -252,6 +252,9 @@ make a type specimen book.<h1></p>
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+#### Q. What is the difference between Pseudo-classes and pseudo-elements?
+*TODO*
+
 #### Q. What is Combinator selector?
 A combinator is the character in a selector that connects two selectors together. There are four types of combinators. 
 
