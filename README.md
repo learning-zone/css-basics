@@ -62,7 +62,7 @@
 #### Q. What are the css selectors? 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
-**Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
+**i) Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
 ```css
 * {
    color: green;
@@ -70,7 +70,7 @@ A CSS selector is the part of a CSS rule set that actually selects the content y
    line-height: 25px;
 }
 ```
-**Element Type Selector**: This selector match one or more HTML elements of the same name. 
+**ii) Element Type Selector**: This selector match one or more HTML elements of the same name. 
 ```css
 ul {
    list-style: none;
@@ -94,7 +94,7 @@ ul {
   <li>Maple Syrup</li>
 </ul>
 ```
-**ID Selector**: This selector matches any HTML element that has an ID attribute with the same value as that of the selector.
+**iii) ID Selector**: This selector matches any HTML element that has an ID attribute with the same value as that of the selector.
 ```css
 #container {
    width: 960px;
@@ -104,7 +104,7 @@ ul {
 ```html
 <div id="container"></div>
 ```
-**Class Selector**: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.
+**iv) Class Selector**: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.
 ```css
 .box {
    padding: 20px;
@@ -115,7 +115,7 @@ ul {
 ```html
 <div class="box"></div>
 ```
-**Descendant Combinator**: The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.
+**v) Descendant Combinator**: The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.
 ```css
 #container .box {
    float: left;
@@ -132,7 +132,7 @@ This declaration block will apply to all elements that have a class of box that 
 
 <div class="box"></div>
 ```
-**Child Combinator**: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
+**vi) Child Combinator**: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
 ```css
 #container > .box {
    float: left;
@@ -149,7 +149,7 @@ The selector will match all elements that have a class of `box` and that are imm
   </div>
 </div>
 ```
-**General Sibling Combinator**: A selector that uses a general sibling combinator matches elements based on sibling relationships. The selected elements are beside each other in the HTML.
+**vii) General Sibling Combinator**: A selector that uses a general sibling combinator matches elements based on sibling relationships. The selected elements are beside each other in the HTML.
 ```css
 h2 ~ p {
    margin-bottom: 20px;
@@ -165,7 +165,7 @@ In this example, all paragraph elements (`<p>`) will be styled with the specifie
   <p>Paragraph example.</p>
 </div>
 ```
-**Adjacent Sibling Combinator**: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+**viii) Adjacent Sibling Combinator**: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
 ```css
 p + p {
    text-indent: 1.5em;
@@ -184,7 +184,7 @@ In this example will apply the specified styles only to paragraph elements that 
   <p>Paragraph example.</p>
 </div>
 ```
-**Attribute Selector**: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets
+**ix) Attribute Selector**: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets
 ```css
 input[type="text"] {
    background-color: #444;
@@ -201,13 +201,13 @@ input[type] {
    width: 200px;
 }
 ```
-**Pseudo-class**: A pseudo-class uses a colon character to identify a pseudo-state that an element might be in—for example, the state of being hovered, or the state of being activated.
+**x) Pseudo-class**: A pseudo-class uses a colon character to identify a pseudo-state that an element might be in—for example, the state of being hovered, or the state of being activated.
 ```css
 a:hover {
    color: red;
 }
 ```
-**Pseudo-element**: A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
+**xi) Pseudo-element**: A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
 
 * Style the first letter, or line, of an element
 * Insert content before, or after, the content of an element 
