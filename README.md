@@ -309,7 +309,7 @@ Pseudo-elements effectively create new elements that are not specified in the ma
 #### Q. What is Combinator selector?
 A combinator is the character in a selector that connects two selectors together. There are four types of combinators. 
 
-**Descendant Combinator (space)**: The descendant selector matches all elements that are descendants of a specified element.
+**a) Descendant Combinator (space)**: The descendant selector matches all elements that are descendants of a specified element.
 
 The following example selects all `<p>` elements inside `<div>` elements: 
 ```css
@@ -317,7 +317,7 @@ div p {
   background-color: yellow;
 }
 ```
-**Child Combinator (>)**: The child selector selects all elements that are the children of a specified element.
+**b) Child Combinator (>)**: The child selector selects all elements that are the children of a specified element.
 
 The following example selects all `<p>` elements that are children of a `<div>` element:
 ```css
@@ -325,7 +325,7 @@ div > p {
   background-color: yellow;
 }
 ```
-**Adjacent Sibling Combinator (+)**: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+**c) Adjacent Sibling Combinator (+)**: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
 
 The following example selects all `<p>` elements that are placed immediately after `<div>` elements:
 ```css
@@ -333,7 +333,7 @@ div + p {
   background-color: yellow;
 }
 ```
-**General Sibling Combinator (~)**: The general sibling selector selects all elements that are siblings of a specified element.
+**d) General Sibling Combinator (~)**: The general sibling selector selects all elements that are siblings of a specified element.
 
 The following example selects all `<p>` elements that are siblings of `<div>` elements: 
 ```css
