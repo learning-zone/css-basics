@@ -556,7 +556,7 @@ p {
 #### Q. What is DOM reflow?
 Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
 
-Reflow occurs when you:
+**Reflow occurs when**
 
   * insert, remove or update an element in the DOM
   * modify content on the page, e.g. the text in an input box
