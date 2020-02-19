@@ -259,7 +259,7 @@ A pseudo-class is a selector that assists in the selection of something that can
 
 Pseudo-classes select regular elements but under certain conditions, like when their position relative to siblings or when they’re under a particular state. Here is a list of pseudo-classes in CSS3:
 
-**a). Dynamic pseudo-classes**  
+**a) Dynamic pseudo-classes**  
 
 * :link
 * :visited
@@ -267,7 +267,7 @@ Pseudo-classes select regular elements but under certain conditions, like when t
 * :active
 * :focus
 
-**b). UI element states pseudo-classes**  
+**b) UI element states pseudo-classes**  
 
 * :enabled
 * :disabled
