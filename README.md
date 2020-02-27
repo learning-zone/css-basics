@@ -24,7 +24,7 @@
         border: 1px solid #000;
         background-color: white;
     }
-    .rectangle:before {
+    .rectangle::before {
         display: block;
         position: absolute;
         left: 10px;
