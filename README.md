@@ -253,7 +253,7 @@ make a type specimen book.<h1></p>
 </div>
 
 #### Q. What is the difference between Pseudo-classes and pseudo-elements?
-A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a simple selector, for example `:hover`. A pseudo-element however allows us to create items that do not normally exist in the document tree, for example ``::after`.
+A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a simple selector, for example `:hover`. A pseudo-element however allows us to create items that do not normally exist in the document tree, for example `::after`.
 
 **Pseudo-classes**  
 
