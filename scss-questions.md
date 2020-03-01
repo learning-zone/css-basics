@@ -7,10 +7,10 @@
 
 | SCSS                                   | CSS                                  |
 |----------------------------------------|--------------------------------------|
-|`$font-stack:    Helvetica, sans-serif;`|`body {`                              |
-|`$primary-color: #333;`                 |  `font: 100% Helvetica, sans-serif;` |
-|                                        |  `color: #333;`                      |
-|`body {`                                |`}`                                   |
+|`$font-stack:    Helvetica, sans-serif;`|<code>body {                              |
+|`$primary-color: #333;`                 |  font: 100% Helvetica, sans-serif; |
+|                                        |  color: #333;                      |
+|`body {`                                |}</code>                                   |
 | `font: 100% $font-stack;`              |                                      |
 | `color: $primary-color;`               |                                      |
 |`}`
