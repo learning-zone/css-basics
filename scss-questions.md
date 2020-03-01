@@ -97,7 +97,9 @@ body {
   color: white;
 }
 ```
-* **mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
+* **Mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
+
+**SCSS Style**
 ```scss
 @mixin transform($property) {
   -webkit-transform: $property;
@@ -105,6 +107,15 @@ body {
   transform: $property;
 }
 .box { @include transform(rotate(30deg)); }
+```
+
+**CSS Style**
+```css
+.box {
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
 ```
 * **Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
 ```scss
