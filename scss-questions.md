@@ -24,7 +24,7 @@ body {
 
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
-* **Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
+**ii) Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
 
 **SCSS Style**
 ```scss
@@ -60,9 +60,9 @@ nav a {
   text-decoration: none;
 }
 ```
-* **Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
+**iii) Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
 
-* **Modules**: This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
+**iv) Modules**: This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
 
 **SCSS Style**
 ```scss
@@ -97,7 +97,7 @@ body {
   color: white;
 }
 ```
-* **Mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
+**v) Mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
 
 **SCSS Style**
 ```scss
@@ -117,7 +117,7 @@ body {
   transform: rotate(30deg);
 }
 ```
-* **Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
+**vi) Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
 ```scss
 /* This CSS will print because %message-shared is extended. */
 %message-shared {
@@ -151,7 +151,7 @@ body {
   border-color: yellow;
 }
 ```
-* **Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.
+**vii) Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.
 ```scss
 .container {
   width: 100%;
