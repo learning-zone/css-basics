@@ -1,18 +1,8 @@
 ## SCSS Interview Questions and Answers
 
-#### Q. What are variables used for?
-Variables are super useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones, not 4 different versions of roughly the same color.
-```scss
-$primary-font-stack: 'Helvetica', sans-serif;
-$primary-color: #fccd48;
 
-body {
-    color: $primary-color;
-    font-family: $primary-font-stack;
-}
-```
 #### Q. What are the SCSS basic features?
-* **Variables**: Variables in SCSS start with `$` sign
+* **Variables**: Variables are super useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones, not 4 different versions of roughly the same color. Variables in SCSS start with `$` sign
 ```scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
