@@ -63,6 +63,8 @@ nav a {
 * **Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
 
 * **Modules**: This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
+
+**SCSS Style**
 ```scss
 // _base.scss
 $font-stack:    Helvetica, sans-serif;
@@ -79,6 +81,19 @@ body {
 
 .inverse {
   background-color: base.$primary-color;
+  color: white;
+}
+```
+
+**CSS Style**
+```css
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+.inverse {
+  background-color: #333;
   color: white;
 }
 ```
