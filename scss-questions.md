@@ -117,7 +117,8 @@ body {
   transform: rotate(30deg);
 }
 ```
-**vi) Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
+**vi) Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.  
+
 **SCSS Style**
 ```scss
 /* This CSS will print because %message-shared is extended. */
