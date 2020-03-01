@@ -175,7 +175,9 @@ body {
   border-color: yellow;
 }
 ```
-**vii) Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.
+**vii) Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.  
+
+**SCSS Style**
 ```scss
 .container {
   width: 100%;
@@ -189,6 +191,23 @@ article[role="main"] {
 aside[role="complementary"] {
   float: right;
   width: 300px / 960px * 100%;
+}
+```
+
+**CSS Style**
+```css
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
 }
 ```
 *Note: Only Dart Sass currently supports `@use`. Users of other implementations must use the `@import` rule instead.*
