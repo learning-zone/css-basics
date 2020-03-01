@@ -118,6 +118,7 @@ body {
 }
 ```
 **vi) Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.
+**SCSS Style**
 ```scss
 /* This CSS will print because %message-shared is extended. */
 %message-shared {
@@ -148,6 +149,28 @@ body {
 
 .warning {
   @extend %message-shared;
+  border-color: yellow;
+}
+```
+
+**CSS Style**
+```css
+/* This CSS will print because %message-shared is extended. */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
   border-color: yellow;
 }
 ```
