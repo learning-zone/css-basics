@@ -4,16 +4,23 @@
 #### Q. What are the SCSS basic features?
 * **Variables**: Variables are super useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones, not 4 different versions of roughly the same color. Variables in SCSS start with `$` sign
 
+**SCSS Style**
+```scss
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
 
-| SCSS                                   | CSS                                  |
-|----------------------------------------|--------------------------------------|
-|`$font-stack:    Helvetica, sans-serif;`|<code>body {  font: 100% Helvetica, sans-serif; color: #333; } </code>  |
-|`$primary-color: #333;`                 |   |
-|                                        |                       |
-|`body {`                                |                               |
-| `font: 100% $font-stack;`              |                                      |
-| `color: $primary-color;`               |                                      |
-|`}`
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+```
+**CSS Style**
+```css
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+```
 
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
