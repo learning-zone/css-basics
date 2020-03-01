@@ -10,7 +10,7 @@
     <th>CSS</th>
  </tr>
     <th>
-      ```scss
+      
         $font-stack:    Helvetica, sans-serif;
         $primary-color: #333;
 
@@ -18,28 +18,20 @@
           font: 100% $font-stack;
           color: $primary-color;
         }
-      ```
+      
     </th>
     <th>
-    ```css
+    
        body {
         font: 100% Helvetica, sans-serif;
         color: #333;
       }
-    ```
+    
     </th>
  <tr>
  </tr>
 </table>
-```scss
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
-}
-```
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
 * **Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
