@@ -3,6 +3,34 @@
 
 #### Q. What are the SCSS basic features?
 * **Variables**: Variables are super useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones, not 4 different versions of roughly the same color. Variables in SCSS start with `$` sign
+
+<table>
+ <tr>
+    <th>SCSS</th>
+    <th>CSS</th>
+ </tr>
+    <th>
+      ```scss
+        $font-stack:    Helvetica, sans-serif;
+        $primary-color: #333;
+
+        body {
+          font: 100% $font-stack;
+          color: $primary-color;
+        }
+      ```
+    </th>
+    <th>
+    ```css
+       body {
+        font: 100% Helvetica, sans-serif;
+        color: #333;
+      }
+    ```
+    </th>
+ <tr>
+ </tr>
+</table>
 ```scss
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
