@@ -9,8 +9,8 @@
     <th>SCSS</th>
     <th>CSS</th>
  </tr>
-    <th>
-      
+    <td>
+      <pre>
         $font-stack:    Helvetica, sans-serif;
         $primary-color: #333;
 
@@ -18,16 +18,16 @@
           font: 100% $font-stack;
           color: $primary-color;
         }
-      
-    </th>
-    <th>
-    
+      </pre>
+    </td>
+    <td>
+    <pre>
        body {
         font: 100% Helvetica, sans-serif;
         color: #333;
       }
-    
-    </th>
+    </pre>
+    </td>
  <tr>
  </tr>
 </table>
