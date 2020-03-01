@@ -2,7 +2,7 @@
 
 
 #### Q. What are the SCSS basic features?
-* **Variables**: Variables are useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones. Variables in SCSS start with `$` sign
+**i) Variables**: Variables are useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones. Variables in SCSS start with `$` sign
 
 **SCSS Style**
 ```scss
