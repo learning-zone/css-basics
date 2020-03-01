@@ -228,7 +228,7 @@ i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want t
 .box { @include border-radius(10px); }
 ```
 
-* ```@extend``` directive provides a simple way to allow a selector to inherit/extend the styles of another one.
+ii) ```@extend``` directive provides a simple way to allow a selector to inherit/extend the styles of another one.
 ```scss
 .message {
   border: 1px solid #ccc;
@@ -248,7 +248,7 @@ i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want t
 ```
         
 
-```%placeholder``` are classes that aren’t output when your SCSS is compiled
+iii) ```%placeholder``` are classes that aren’t output when your SCSS is compiled
 ```scss
 %awesome {
     width: 100%;
