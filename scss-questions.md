@@ -213,7 +213,7 @@ aside[role="complementary"] {
 *Note: Only Dart Sass currently supports `@use`. Users of other implementations must use the `@import` rule instead.*
 #### Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
     
-* ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
+i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
 
 ```scss
 @mixin border-radius($radius) {
