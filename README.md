@@ -924,8 +924,8 @@ Pre-processors extend CSS with variables, operators, interpolations, functions, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. What is the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
-**Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
+#### Q. What is the difference between "resetting" and "normalizing" CSS? 
+**1. Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
 
 Example
 ```css
@@ -943,7 +943,7 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
 }
 ```
 
-**Normalizing**: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+**2. Normalizing**: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
 
 Example
 ```css
