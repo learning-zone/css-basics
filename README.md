@@ -1452,7 +1452,7 @@ The browsers which does not support HTML5's `srcset` (i.e. IE11) will ignore it 
 
 When using `translate()`, the element still occupies its original space (sort of like `position: relative`), unlike in changing the absolute positioning.
 
-Example:  
+**Example:**    
 If we combine `position:relative` with one of the offset properties `top`, `bottom`, `left` or `right` the element will be moved from its original place in the layout whilst preserving the space in the document it once occupied. The element will be moved on to a new layer and its “layer order” or its stacking order can then be controlled with the `z-index` property.
 ```css
 .thing {
