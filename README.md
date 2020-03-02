@@ -1888,8 +1888,8 @@ p {
 |right 		|Number [px, cm, in…] 	|Positions the block left from the reference point at the specified distance.          |
 
 #### Q. What is the difference between padding and margin?
-**a) Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.  
-**b) Padding** is applied to the inside of your element hence effecting how far your element's content is away from the border.
+**1) Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.  
+**2) Padding** is applied to the inside of your element hence effecting how far your element's content is away from the border.
 
 Also, using margin will not affect your element's dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
 
@@ -2055,7 +2055,7 @@ Contextual selector addresses specific occurrence of an element. It is a string 
 
 It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
 
-Example
+**Example:**
 ```css
 table p { property: value; } 
 ```
@@ -2063,7 +2063,7 @@ table p { property: value; }
 #### Q. How is the concept of inheritance applied in CSS?
 Inheritance is a concept in which the child class will inherit the properties of its parent class. It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children class if the child uses the same name.
 
-Example
+**Example:**
 ```css
 span {
   color: blue;
