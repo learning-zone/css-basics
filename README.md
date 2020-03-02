@@ -835,14 +835,19 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 
 #### Q. In CSS3, how would you select:
 * Every ```<a>``` element whose href attribute value begins with “https”.
-    * a[href^="https"]
+```css
+  a[href^="https"]
+```
     
 * Every ```<a>``` element whose href attribute value ends with “.pdf”.
-    * a[href$=".pdf"]
+```css
+  a[href$=".pdf"]
+```
     
 * Every ```<a>``` element whose href attribute value contains the substring “css”.
-    * a[href*="css"]
-
+```css
+  a[href*="css"]
+```
 
 #### Q. What is the purpose of the box-sizing property?
 The box-sizing CSS property sets how the total width and height of an element is calculated.
