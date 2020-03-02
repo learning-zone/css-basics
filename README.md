@@ -721,7 +721,7 @@ h3::before {
 * True
 
 #### Q. What is pseudo element? What is pseudo class?
-**Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
+**1. Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
 
 For example, it can be used to:
 
@@ -739,7 +739,7 @@ For example, it can be used to:
 | 05. |::selection	  |p::selection	    |Selects the portion of an element that is selected by a user|
 
 
-**Pseudo-classes**: A pseudo-class is used to define a special state of an element.
+**2. Pseudo-classes**: A pseudo-class is used to define a special state of an element.
 
 For example, it can be used to:
 
