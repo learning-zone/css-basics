@@ -10,3 +10,7 @@ list-unstyled
 ```
 false
 ```
+#### Q. To force the space between the elements to be the same, you use?
+```css
+nav-justified
+```
