@@ -30,3 +30,8 @@ Pixels; ems
 ```
 color
 ```
+#### Q. Fixed elements are considered to be absolutely positioned, but they're always positioned relative to the _____.
+```
+active viewport
+```
+#### Q. 
