@@ -26,3 +26,7 @@ rendering engines
 ```
 Pixels; ems
 ```
+#### Q. Saturation represents the amount of _____, with 100% being fully saturated and 0% being grayscale.
+```
+color
+```
