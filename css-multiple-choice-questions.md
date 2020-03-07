@@ -34,4 +34,3 @@ color
 ```
 active viewport
 ```
-#### Q. 
