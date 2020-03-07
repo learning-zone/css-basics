@@ -22,3 +22,7 @@ length
 ```
 rendering engines
 ```
+#### Q. _____ are fixed units, while _____ are relative units, which means that font size will be relative to a device's default size.
+```
+Pixels; ems
+```
