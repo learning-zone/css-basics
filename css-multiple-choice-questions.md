@@ -58,3 +58,13 @@ Answer: a.  True
 
 Explanation: The above statement is true. The @debug directive detects the errors and displays the SassScript expression values to the standard error output stream.
 ```
+#### Q. Which of the following directive is used to share rules and relationships between selectors?
+a. @extend  
+b. @media  
+c. @extend  
+d. None of the above  
+```
+Answer: a. @extend
+
+Explanation: The @extend directive is used to share rules and relationships between selectors. This directive extends all another class styles in one class and can also apply its own specific styles.
+```
