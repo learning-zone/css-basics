@@ -42,3 +42,11 @@ D. #primary-color: #888
 ```
 Answer: Option A. $primary-color: #888  
 ```
+#### Q. What are the data types that SassScript supports?
+A. Numbers  
+B. Strings of texts  
+C. Colors   
+D. All of these   
+```
+Answer: Option D
+```
