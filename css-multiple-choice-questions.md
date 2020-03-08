@@ -79,3 +79,14 @@ Answer: a. @at-root
 
 Explanation: The @at-root directive is a collection of nested rules, which is able to make style block at root of the document. This selector excludes the selector by default. By using @at-root, we can move the style outside of nested directive.
 ```
+#### Q. Which of the following directive displays the SassScript expression value as fatal error?
+
+a. @error  
+b. @warn   
+c. @at-root   
+d. None of the above   
+```
+Answer: a. @error
+
+Explanation: The @error directive displays the SassScript expression value as fatal error.
+```
