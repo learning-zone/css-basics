@@ -34,3 +34,11 @@ color
 ```
 active viewport
 ```
+#### Q. What is the correct way to define a variable in Sass?
+A. $primary-color: #888  
+B. @primary-color: #888  
+C. %primary-color: #888  
+D. #primary-color: #888  
+```
+Answer: Option A. $primary-color: #888  
+```
