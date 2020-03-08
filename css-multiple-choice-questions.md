@@ -90,3 +90,13 @@ Answer: a. @error
 
 Explanation: The @error directive displays the SassScript expression value as fatal error.
 ```
+#### Q. In __________ directive, a variable is defined which contains the value of each item in a list.
+a. @if  
+b. @each  
+c. @for   
+d. @while  
+```
+Answer: b. @each
+
+Explanation: In @each directive, a variable is defined which contains the value of each item in a list.
+```
