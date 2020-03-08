@@ -41,6 +41,11 @@ C. %primary-color: #888
 D. #primary-color: #888  
 ```
 Answer: Option A. $primary-color: #888  
+
+Explanation: Following is the correct way to define a variable in SASS,
+$primary-color: #888;
+
+SASS Variables allow you to define a value once and use it in multiple places. Variables begin with dollar signs and are set like CSS properties. You can change the value of the variable in one place, and all instances where it is used will be changed, too.
 ```
 #### Q. What are the data types that SassScript supports?
 A. Numbers  
