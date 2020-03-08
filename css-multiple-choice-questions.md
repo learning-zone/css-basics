@@ -68,3 +68,14 @@ Answer: a. @extend
 
 Explanation: The @extend directive is used to share rules and relationships between selectors. This directive extends all another class styles in one class and can also apply its own specific styles.
 ```
+#### Q. ___________ directive is a collection of nested rules, which is able to make style block at root of the document.
+
+a. @at-root  
+b. @media  
+c. @extend  
+d. None of the above  
+```
+Answer: a. @at-root
+
+Explanation: The @at-root directive is a collection of nested rules, which is able to make style block at root of the document. This selector excludes the selector by default. By using @at-root, we can move the style outside of nested directive.
+```
