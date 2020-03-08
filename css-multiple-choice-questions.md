@@ -105,3 +105,13 @@ Answer: b. @each
 
 Explanation: In @each directive, a variable is defined which contains the value of each item in a list.
 ```
+#### Q. Which of the following directive allows you to generate styles in a loop?
+a. @while  
+b. @if  
+c. @for  
+d. @each  
+```
+Answer: c. @for
+
+Explanation: The @for directive allows you to generate styles in a loop. The @for directive comes in two forms. The first option is @for $var from <start> through <end> which starts at <start> and loops "through" each iteration and ends at <end>. And the second option is @for $var from <start> to <end> which starts at <start> and loops through each iteration "to" <end> and stops. Once the directive hits the <end>, it stops the looping process and does not evaluate the loop that one last time.
+```
