@@ -115,3 +115,12 @@ Answer: c. @for
 
 Explanation: The @for directive allows you to generate styles in a loop. The @for directive comes in two forms. The first option is @for $var from <start> through <end> which starts at <start> and loops "through" each iteration and ends at <end>. And the second option is @for $var from <start> to <end> which starts at <start> and loops through each iteration "to" <end> and stops. Once the directive hits the <end>, it stops the looping process and does not evaluate the loop that one last time.
 ```
+#### Q. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin.
+
+a. True
+b. False
+```
+Answer: a. True
+
+Explanation: The above statement is true. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin. Mixins allow creating a group of styles, which are reusable throughout your stylesheet without any need to recreation of non-semantic classes.
+```
