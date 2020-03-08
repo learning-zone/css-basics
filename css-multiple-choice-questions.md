@@ -50,3 +50,11 @@ D. All of these
 ```
 Answer: Option D
 ```
+#### Q. @debug directive detects the errors and displays the SassScript expression values to the standard error output stream.
+a.  True
+b.  False
+```
+Answer: a.  True
+
+Explanation: The above statement is true. The @debug directive detects the errors and displays the SassScript expression values to the standard error output stream.
+```
