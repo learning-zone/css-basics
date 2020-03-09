@@ -134,3 +134,24 @@ d. None of the above
 Answer: b. Used to include the mixins in the document.
 ```
 **Explanation**: In Sass, the @include directive is used to include the mixins in the document. The styles defined by the mixin can be included into the current rule.
+
+#### Q. What is the use of the @return directive in Sass?
+a. Used to define the mixin.  
+b. Used to include the mixins in the document.  
+c. Used to call the return value for the function.  
+d. None of the above  
+```
+Answer: c. Used to call the return value for the function.
+```
+**Explanation**: In Sass, the @return directive is used to call the return value for the function.  
+
+#### Q. Which of the following operator provides the path for the CSS stylesheets in the application.
+
+a. :filename  
+b. :load_paths  
+c. :css_location  
+d. :template_location  
+```
+Answer: c. :css_location
+```
+**Explanation**: The :css_location operator provides the path for the CSS stylesheets in the application.
