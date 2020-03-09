@@ -123,3 +123,14 @@ b. False
 Answer: a. True
 ```
 **Explanation:** The above statement is true. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin. Mixins allow creating a group of styles, which are reusable throughout your stylesheet without any need to recreation of non-semantic classes.
+
+#### Q. What is the use of the @include directive in Sass?
+
+a. Used to define the mixin.  
+b. Used to include the mixins in the document.  
+c. All of the above  
+d. None of the above  
+```
+Answer: b. Used to include the mixins in the document.
+```
+**Explanation**: In Sass, the @include directive is used to include the mixins in the document. The styles defined by the mixin can be included into the current rule.
