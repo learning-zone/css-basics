@@ -117,7 +117,7 @@ Explanation: The @for directive allows you to generate styles in a loop. The @fo
 
 #### Q. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin.
 
-a. True
+a. True  
 b. False
 ```
 Answer: a. True
