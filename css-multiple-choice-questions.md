@@ -155,3 +155,11 @@ d. :template_location
 Answer: c. :css_location
 ```
 **Explanation**: The :css_location operator provides the path for the CSS stylesheets in the application.
+
+#### Q. "sass input.scss output.css" command is used to run the SASS code from the command line.
+
+a. True  
+b. False
+```
+Answer: a. True
+```
