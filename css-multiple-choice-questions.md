@@ -41,12 +41,12 @@ C. %primary-color: #888
 D. #primary-color: #888  
 ```
 Answer: Option A. $primary-color: #888  
-
+```
 Explanation: Following is the correct way to define a variable in SASS,
 $primary-color: #888;
 
 SASS Variables allow you to define a value once and use it in multiple places. Variables begin with dollar signs and are set like CSS properties. You can change the value of the variable in one place, and all instances where it is used will be changed, too.
-```
+
 #### Q. What are the data types that SassScript supports?
 A. Numbers  
 B. Strings of texts  
@@ -60,9 +60,9 @@ a.  True
 b.  False
 ```
 Answer: a.  True
-
-Explanation: The above statement is true. The @debug directive detects the errors and displays the SassScript expression values to the standard error output stream.
 ```
+Explanation: The above statement is true. The @debug directive detects the errors and displays the SassScript expression values to the standard error output stream.
+
 #### Q. Which of the following directive is used to share rules and relationships between selectors?
 a. @extend  
 b. @media  
@@ -70,9 +70,9 @@ c. @extend
 d. None of the above  
 ```
 Answer: a. @extend
-
-Explanation: The @extend directive is used to share rules and relationships between selectors. This directive extends all another class styles in one class and can also apply its own specific styles.
 ```
+Explanation: The @extend directive is used to share rules and relationships between selectors. This directive extends all another class styles in one class and can also apply its own specific styles.
+
 #### Q. ___________ directive is a collection of nested rules, which is able to make style block at root of the document.
 
 a. @at-root  
@@ -81,9 +81,9 @@ c. @extend
 d. None of the above  
 ```
 Answer: a. @at-root
-
-Explanation: The @at-root directive is a collection of nested rules, which is able to make style block at root of the document. This selector excludes the selector by default. By using @at-root, we can move the style outside of nested directive.
 ```
+Explanation: The @at-root directive is a collection of nested rules, which is able to make style block at root of the document. This selector excludes the selector by default. By using @at-root, we can move the style outside of nested directive.
+
 #### Q. Which of the following directive displays the SassScript expression value as fatal error?
 
 a. @error  
@@ -92,9 +92,9 @@ c. @at-root
 d. None of the above   
 ```
 Answer: a. @error
-
-Explanation: The @error directive displays the SassScript expression value as fatal error.
 ```
+Explanation: The @error directive displays the SassScript expression value as fatal error.
+
 #### Q. In __________ directive, a variable is defined which contains the value of each item in a list.
 a. @if  
 b. @each  
@@ -102,9 +102,9 @@ c. @for
 d. @while  
 ```
 Answer: b. @each
-
-Explanation: In @each directive, a variable is defined which contains the value of each item in a list.
 ```
+Explanation: In @each directive, a variable is defined which contains the value of each item in a list.
+
 #### Q. Which of the following directive allows you to generate styles in a loop?
 a. @while  
 b. @if  
@@ -112,15 +112,14 @@ c. @for
 d. @each  
 ```
 Answer: c. @for
-
-Explanation: The @for directive allows you to generate styles in a loop. The @for directive comes in two forms. The first option is @for $var from <start> through <end> which starts at <start> and loops "through" each iteration and ends at <end>. And the second option is @for $var from <start> to <end> which starts at <start> and loops through each iteration "to" <end> and stops. Once the directive hits the <end>, it stops the looping process and does not evaluate the loop that one last time.
 ```
+Explanation: The @for directive allows you to generate styles in a loop. The @for directive comes in two forms. The first option is @for $var from <start> through <end> which starts at <start> and loops "through" each iteration and ends at <end>. And the second option is @for $var from <start> to <end> which starts at <start> and loops through each iteration "to" <end> and stops. Once the directive hits the <end>, it stops the looping process and does not evaluate the loop that one last time.
+
 #### Q. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin.
 
 a. True
 b. False
 ```
 Answer: a. True
-
-Explanation: The above statement is true. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin. Mixins allow creating a group of styles, which are reusable throughout your stylesheet without any need to recreation of non-semantic classes.
 ```
+Explanation: The above statement is true. The SassScript values can be taken as arguments in mixins, which is given when mixin is included and available as variable within the mixin. Mixins allow creating a group of styles, which are reusable throughout your stylesheet without any need to recreation of non-semantic classes.
