@@ -1785,6 +1785,7 @@ img {
 #### Q. ***What is the difference between `em` and `rem` units?***
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
 * `em` units inherit their value from the font-size of the parent element
+
 ```css
 .parent {
   font-size: 18px;
@@ -1793,6 +1794,7 @@ Both em and rem units are based on the font-size CSS property. The only differen
   font-size: 1.5em;
 }
 ```
+
 ```html
 <div class="parent">
   I'm 15px
@@ -1809,6 +1811,7 @@ Both em and rem units are based on the font-size CSS property. The only differen
 ```
 
 * `rem` units inherit their value from the font-size of the root element (html)
+
 ```css
 .html {
   font-size: 16px;
@@ -1820,6 +1823,7 @@ Both em and rem units are based on the font-size CSS property. The only differen
   font-size: 2rem;
 }
 ```
+
 ```html
 <div class="parent">
   I'm 15px
@@ -1834,6 +1838,7 @@ Both em and rem units are based on the font-size CSS property. The only differen
   </div>
 </div>
 ```
+
 *Note: In most browsers, the font-size of the root element is set to 16px by default.*
 
 <div align="right">
