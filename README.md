@@ -61,7 +61,7 @@
 	margin: auto;
 }
 ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/center-div.html) 
+[Live Example](center-div.html) 
 
 #### Q. ***What are the css selectors?***
 
@@ -253,7 +253,7 @@ make a type specimen book.<h1></p>
 </body>
 </html>
 ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/selector.html) 
+[Live Example](selector.html) 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -376,12 +376,12 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 * Flexbox layout is most appropriate to the components of an application (as most of them are fundamentally linear), and **small-scale** layouts, while the Grid layout is intended for **larger-scale** layouts which aren’t linear in their design.
 * If you only need to define a layout as a row or a column, then you probably need flexbox. If you want to define a grid and fit content into it in two dimensions — you need the grid.
 
-![alt text](https://github.com/learning-zone/css-interview-questions/blob/master/assets/flex.png "One-Dimensional")
+<img src="assets/flex.png" alt="One-Dimensional" />
 
-![alt text](https://github.com/learning-zone/css-interview-questions/blob/master/assets/grid.png "Two-Dimensional")
+<img src="assets/grid.png" alt="Two-Dimensional" />
 
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
+[Live Example](grid-flexbox-layout.html) 
 
 #### Q. ***What is CSS BEM?***
 The BEM (**Block Element Modifier**) methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
@@ -592,7 +592,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/z-index.html) 
+[Live Example](z-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -610,7 +610,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/position-index.html) 
+[Live Example](position-index.html) 
 
 #### Q. ***The difference between block, inline and inline-block element?***
 
@@ -663,7 +663,7 @@ button {
 ```html
 <input type="text" /> <button>Submit</button>
 ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
+[Live Example](display-properties.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -698,7 +698,7 @@ h3::before {
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/counters.html) 
+[Live Example](counters.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -817,7 +817,7 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
     /* top padding 25px; right/left padding 50px; bottom padding 75px */
     padding: 25px 50px 75px;
     ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
+[Live Example](boxmodel-index.html)
 
 #### Q. ***What elements will match each of the following CSS selectors?***
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
@@ -996,7 +996,7 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 
 In a BFC, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
+[Live Example](block-formatting-context.html)
 
 #### Q. ***Does `overflow: hidden` create a new block formatting context?***
 Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
@@ -1617,7 +1617,7 @@ A mobile-first strategy has 2 main advantages:
 * It's more performant on mobile devices, since all the rules applied for them don't have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/media-query.html) 
+[Live Example](media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1742,7 +1742,7 @@ div {
   transition: width 2s;
 }
 ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
+[Live Example](transitions-index.html) 
 
 #### Q. ***What are the different css filters you can use?***
 The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
