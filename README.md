@@ -12,6 +12,7 @@
 
 
 #### Q. ***How to draw a circle inside Square using single DIV in css?***
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -44,7 +45,7 @@
     </body>
 </html>
 ```
-[Live Example](https://learning-zone.github.io/css-interview-questions/circle.html) 
+[Live Example](circle.html) 
 
 #### Q. ***How to center align a div inside another div?***
 ```css
@@ -62,7 +63,8 @@
 ```
 [Live Example](https://learning-zone.github.io/css-interview-questions/center-div.html) 
 
-#### Q. ***What are the css selectors?*** 
+#### Q. ***What are the css selectors?***
+
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
 **i) Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
