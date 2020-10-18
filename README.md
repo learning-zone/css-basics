@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-* *[CSS Practice](css-practice)*
+* *[CSS Practice](css-practice.md)*
 * *[CSS3 Properties](css3-properties.md)*
 * *[SCSS Interview Questions and Answers](scss-questions.md)* 
 * *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)*
