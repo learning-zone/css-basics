@@ -1,83 +1,20 @@
-# CSS Interview Questions and Answers
+# CSS Interview Questions
 
 *Click <img src="assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
-
 ## Table of Contents
 
+* *[CSS Practice](css-practice)*
 * *[CSS3 Properties](css3-properties.md)*
 * *[SCSS Interview Questions and Answers](scss-questions.md)* 
-* *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)* 
-
-
-## Q. ***How to draw a circle inside Square using single DIV in css?***
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Circle inside Square</title>
-  </head>
-  <style>
-    .rectangle {    
-        border-radius: 10px;
-        display: inline-block;
-        width: 205px;
-        height: 205px;
-        border: 1px solid #000;
-        background-color: white;
-    }
-    .rectangle::before {
-        display: block;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        content: '';
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background-color: #eee;
-    }
-    </style>
-    <body>
-        <div class="rectangle"></div>
-    </body>
-</html>
-```
-
-[Live Example](https://learning-zone.github.io/css-interview-questions/circle.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***How to center align a div inside another div?***
-
-```css
-.container {
-	width: 500px;
-	height: 500px;
-	background-color: red;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-```
-
-[Live Example](center-div.html) 
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
+* *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)*
 
 ## Q. ***What are the css selectors?***
 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
 **i) Universal Selector**: The universal selector works like a wild card character, selecting all elements on a page. Every HTML page is built on content placed within HTML tags. Each set of tags represents an element on the page.
+
 ```css
 * {
    color: green;
@@ -85,13 +22,16 @@ A CSS selector is the part of a CSS rule set that actually selects the content y
    line-height: 25px;
 }
 ```
-**ii) Element Type Selector**: This selector match one or more HTML elements of the same name. 
+
+**ii) Element Type Selector**: This selector match one or more HTML elements of the same name.
+
 ```css
 ul {
    list-style: none;
    border: solid 1px #ccc;
 }
 ```
+
 ```html
 <ul>
   <li>Fish</li>
@@ -109,17 +49,22 @@ ul {
   <li>Maple Syrup</li>
 </ul>
 ```
+
 **iii) ID Selector**: This selector matches any HTML element that has an ID attribute with the same value as that of the selector.
+
 ```css
 #container {
    width: 960px;
    margin: 0 auto;
 }
 ```
+
 ```html
 <div id="container"></div>
 ```
+
 **iv) Class Selector**: The class selector also matches all elements on the page that have their class attribute set to the same value as the class.
+
 ```css
 .box {
    padding: 20px;
@@ -127,17 +72,22 @@ ul {
    width: 240px;
 }
 ```
+
 ```html
 <div class="box"></div>
 ```
+
 **v) Descendant Combinator**: The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.
+
 ```css
 #container .box {
    float: left;
    padding-bottom: 15px;
 }
 ```
+
 This declaration block will apply to all elements that have a class of box that are inside an element with an ID of `container`. It’s worth noting that the `.box` element doesn’t have to be an immediate child: there could be another element wrapping `.box`, and the styles would still apply.
+
 ```html
 <div id="container">
   <div class="box"></div>
@@ -147,14 +97,18 @@ This declaration block will apply to all elements that have a class of box that 
 
 <div class="box"></div>
 ```
+
 **vi) Child Combinator**: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
+
 ```css
 #container > .box {
    float: left;
    padding-bottom: 15px;
 }
 ```
+
 The selector will match all elements that have a class of `box` and that are immediate children of the `#container` element. That means, unlike the descendant combinator, there can’t be another element wrapping `.box`—it has to be a direct child element.
+
 ```html
 <div id="container">
   <div class="box"></div>
@@ -164,13 +118,17 @@ The selector will match all elements that have a class of `box` and that are imm
   </div>
 </div>
 ```
+
 **vii) General Sibling Combinator**: A selector that uses a general sibling combinator matches elements based on sibling relationships. The selected elements are beside each other in the HTML.
+
 ```css
 h2 ~ p {
    margin-bottom: 20px;
 }
 ```
+
 In this example, all paragraph elements (`<p>`) will be styled with the specified rules, but only if they are siblings of `<h2>` elements. There could be other elements in between the `<h2>` and `<p>`, and the styles would still apply.
+
 ```html
 <h2>Title</h2>
 <p>Paragraph example.</p>
@@ -180,14 +138,18 @@ In this example, all paragraph elements (`<p>`) will be styled with the specifie
   <p>Paragraph example.</p>
 </div>
 ```
+
 **viii) Adjacent Sibling Combinator**: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+
 ```css
 p + p {
    text-indent: 1.5em;
    margin-bottom: 0;
 }
 ```
+
 In this example will apply the specified styles only to paragraph elements that immediately follow other paragraph elements. This means the first paragraph element on a page would not receive these styles. Also, if another element appeared between two paragraphs, the second paragraph of the two wouldn’t have the styles applied.
+
 ```html
 <h2>Title</h2>
 <p>Paragraph example.</p>
@@ -216,7 +178,9 @@ input[type] {
    width: 200px;
 }
 ```
+
 **x) Pseudo-class**: A pseudo-class uses a colon character to identify a pseudo-state that an element might be in—for example, the state of being hovered, or the state of being activated.
+
 ```css
 a:hover {
    color: red;
@@ -257,15 +221,27 @@ a:hover {
     </style>
   </head>
 <body>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-standard dummy text ever since the 1500s, <h1>when an unknown printer took a galley of type and scrambled it to 
-make a type specimen book.<h1></p>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, <h1>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<h1></p>
 </body>
 </html>
 ```
 
-[Live Example](selector.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/selector.html) 
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is contextual selector?***
+
+Contextual selector addresses specific occurrence of an element. It is a string of individual selectors separated by white space (search pattern), where only the last element in the pattern is addressed providing it matches the specified contex.
+
+It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
+
+**Example:**
+```css
+table p { property: value; } 
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -409,8 +385,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 
 <img src="assets/grid.png" alt="Two-Dimensional" />
 
-
-[Live Example](grid-flexbox-layout.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -433,7 +408,9 @@ The BEM (**Block Element Modifier**) methodology is a naming convention for CSS 
 .block__element--modifier {
 }
 ```
+
 Example
+
 ```css
 .button {
 	display: inline-block;
@@ -463,7 +440,9 @@ Example
 	Danger button
 </button>
 ```
+
 **Benefits**  
+
 * **Modularity**: Block styles are never dependent on other elements on a page, so you will never experience problems from cascading.
 * **Reusability**: Composing independent blocks in different ways, and reusing them intelligently, reduces the amount of CSS code that you will have to maintain.
 * **Structure**: BEM methodology gives your CSS code a solid structure that remains simple and easy to understand.
@@ -639,7 +618,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
-[Live Example](z-index.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/z-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -647,9 +626,9 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 ## Q. ***Exaplain CSS position Property?*** 
 
-* **absolute**, place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
+* **absolute**, place an element exactly where you want to place it. absolute position is actually set relative to the element\'s parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
 
-* **relative**, means "relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on it's positioning. It allows the use of `z-index` on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
+* **relative**, means "relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on it\'s positioning. It allows the use of `z-index` on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
 
 * **fixed**, element is positioned relative to viewport or the browser window itself. viewport doesn't changed if you scroll and hence fixed element will stay right in the same position.
 
@@ -657,7 +636,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-[Live Example](position-index.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/position-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -669,6 +648,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 The block elements always start on a new line. They will also take space of an entire row or width. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
 
 Example:
+
 ```html
 <p>
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem,
@@ -684,11 +664,12 @@ Example:
 ```
 
 **b) Inline Elements**  
-Inline elements don’t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are `<a>`, `<span>` , `<strong>`, and `<img>` tags.
+Inline elements don\'t start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are `<a>`, `<span>` , `<strong>`, and `<img>` tags.
 
 When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
 
 Example:
+
 ```html
 <a href="#">Link</a>
 <img src="https://picsum.photos/30" />
@@ -714,7 +695,7 @@ button {
 ```html
 <input type="text" /> <button>Submit</button>
 ```
-[Live Example](display-properties.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -722,7 +703,7 @@ button {
 
 ## Q. ***What are counters in CSS3?***
 
-CSS counters let you adjust the appearance of content based on its location in a document. To use a CSS counter, it must first be initialized to a value with the `counter-reset` property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter's value can be increased or decreased with counter-increment. The counter's name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
+CSS counters let you adjust the appearance of content based on its location in a document. To use a CSS counter, it must first be initialized to a value with the `counter-reset` property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter\'s value can be increased or decreased with counter-increment. The counter\'s name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
 
 ```css
 body {
@@ -750,18 +731,7 @@ h3::before {
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
 
-[Live Example](counters.html) 
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***Are CSS rule names case sensitive?***
-* No
-## Q. ***Does margin-top or margin-bottom has effect on inline element?***
-* No
-## Q. ***Does padding-top or padding-bottom has effect on inline element?***
-* No
+[Live Example](https://learning-zone.github.io/css-interview-questions/counters.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -781,13 +751,8 @@ h3::before {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Does padding-left or padding-right or margin-left or margin-right has effect on inline element?***
-* Yes
-
-## Q. ***In a HTML document the pseudo class :root always refers to the html element?***
-* True
-
 ## Q. ***What is pseudo element? What is pseudo class?***
+
 **1. Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
 
 For example, it can be used to:
@@ -845,7 +810,7 @@ For example, it can be used to:
 | 25.  |:read-only	        |input:read-only	      |Selects `<input>` elements with a "readonly" attribute specified|
 | 26.  |:read-write	        |input:read-write	      |Selects `<input>` elements with no "readonly" attribute|
 | 27.  |:required	          |input:required	        |Selects `<input>` elements with a "required" attribute specified|
-| 28.  |:root	root	        |                       |Selects the document's root element|
+| 28.  |:root	root	        |                       |Selects the document\'s root element|
 | 29.  |:target	            |#news:target	          |Selects the current active #news element (clicked on a URL containing that anchor name)|
 | 30.  |:valid	            |input:valid	          |Selects all `<input>` elements with a valid value|
 | 31.  |:visited	          |a:visited	            |Selects all visited links|
@@ -853,10 +818,6 @@ For example, it can be used to:
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
-
-## Q. ***The pseudo class `:checked` will select inputs with type radio or checkbox, but not `<option>` elements?***
-
-* False
 
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
@@ -867,32 +828,21 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 * **Border**: A border surrounding the padding (if any) and content
 * **Margin**: A transparent area surrounding the border (i.e., the amount of space between the border and any neighboring elements)
 
-    ```css
-    /* top   right  bottom left  */
-    padding: 25px  50px   75px   100px;
-    
-    /* same padding on all 4 sides: */
-    padding: 25px;
-    
-    /* top/bottom padding 25px; right/left padding 50px */
-    padding: 25px 50px;
-    
-    /* top padding 25px; right/left padding 50px; bottom padding 75px */
-    padding: 25px 50px 75px;
-    ```
-[Live Example](boxmodel-index.html)
+```css
+/* top   right  bottom left  */
+padding: 25px  50px   75px   100px;
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
+/* same padding on all 4 sides: */
+padding: 25px;
 
-## Q. ***What elements will match each of the following CSS selectors?***
+/* top/bottom padding 25px; right/left padding 50px */
+padding: 25px 50px;
 
-* div, ```p``` Selects all ```<div>``` elements and all <p> elements
-* div ```p``` Selects all ```<p>``` elements that are anywhere inside a <div> element
-* div > ```p``` Selects all ```<p>``` elements where the immediate parent is a <div> element
-* div + ```p``` Selects all ```<p>``` elements that are placed immediately after a <div> element
-* div ~ ```p``` Selects all ```<p>``` elements that are anywhere preceded by a <div> element
+/* top padding 25px; right/left padding 50px; bottom padding 75px */
+padding: 25px 50px 75px;
+```
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -900,13 +850,13 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 
 ## Q. ***Explain the meaning of each of these CSS units for expressing length?***
 
-```cm``` centimeters
-```em``` elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)
-```in``` inches
-```mm``` millimeters
-```pc``` picas (1 pc = 12 pt = 1/6th of an inch)
-```pt``` points (1 pt = 1/72nd of an inch)
-```px``` pixels (1 px = 1/96th of an inch)
+* ```cm``` centimeters
+* ```em``` elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)
+* ```in``` inches
+* ```mm``` millimeters
+* ```pc``` picas (1 pc = 12 pt = 1/6th of an inch)
+* ```pt``` points (1 pt = 1/72nd of an inch)
+* ```px``` pixels (1 px = 1/96th of an inch)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -937,31 +887,18 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 
 The box-sizing CSS property sets how the total width and height of an element is calculated.
 
-* **content-box**: the default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
-* **padding-box**: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
+* **content-box**: the default width and height values apply to the element\'s content only. The padding and border are added to the outside of the box.
+* **padding-box**: Width and height values apply to the element\'s content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.
 * **border-box**: Width and height values apply to the content, padding, and border.
 * **inherit**: inherits the box sizing of the parent element.
 
 Example:
+
 ```css
 box-sizing: content-box;
 width: 100%;
 border: solid rgb(90,107,204) 10px;
 padding: 5px;
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***How to create a zebra striped table with CSS?***
-
-To create a zebra-striped table, use the nth-child() selector and add a background-color to all even (or odd) table rows:
-
-```css
-tr:nth-child(even) {
-    background-color: #f2f2f2
-}
 ```
 
 <div align="right">
@@ -1080,7 +1017,7 @@ div {
 
 Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
 
-In a block formatting context, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch)
+In a block formatting context, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch)
 
 A BFC is an HTML box that satisfies at least one of the following conditions:
 
@@ -1089,9 +1026,9 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 * The value of `display` is `table-cell`, `table-caption`, `inline-block`, `flex`, or `inline-flex`.
 * The value of `overflow` is not `visible`.
 
-In a BFC, each box's left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
+In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-[Live Example](block-formatting-context.html)
+[Live Example](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1313,7 +1250,7 @@ These techniques are related to accessibility (a11y).
 
 ## Q. ***What are media queries? How could you apply css rules specific to a media?***
 
-Media queries are useful when you want to modify your site or app depending on a device's general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+Media queries are useful when you want to modify your site or app depending on a device\'s general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
 
 **Media Types**
 
@@ -1413,9 +1350,9 @@ Example:
 
 It hide style sheets from older user agents.
 
-## Q. ***Does the `screen` keyword apply to the device's physical screen or the browser's viewport?***
+## Q. ***Does the `screen` keyword apply to the device\'s physical screen or the browser\'s viewport?***
 
-Browser's Viewport
+Browser\'s Viewport
 
 ## Q. ***How would you implement a web design comp that uses non-standard fonts?***
 
@@ -1451,12 +1388,12 @@ if (window.matchMedia('screen and (min-width: 600px)')) {
 
 ## Q. ***What does  `* { box-sizing: border-box; }` do? What are its advantages?***
 
-* Make every element in the document include the padding and border in the element's inner dimensions; 
+* Make every element in the document include the padding and border in the element\'s inner dimensions; 
 making it easier to reason about the layout of elements on the page.
 * By default, elements have `box-sizing: content-box` applied, and only the content size is being accounted for.
 * `box-sizing: border-box` changes how the `width` and `height` of elements are being calculated, `border` and `padding` are also being included in the calculation.
-* The `height` of an element is now calculated by the content's `height` + vertical `padding` + vertical `border` width.
-* The `width` of an element is now calculated by the content's `width` + horizontal `padding` + horizontal `border` width.
+* The `height` of an element is now calculated by the content\'s `height` + vertical `padding` + vertical `border` width.
+* The `width` of an element is now calculated by the content\'s `width` + horizontal `padding` + horizontal `border` width.
 * Taking into account `padding`s and `border`s as part of our box model resonates better with how designers actually imagine content in grids.
 
 <div align="right">
@@ -1512,7 +1449,7 @@ p.ex4 {display: inline-block;}
 
 Responsive doesn’t offer as much control as adaptive, but takes much less work to both build and maintain. Responsive layouts are also fluid and whilst adaptive can and do use percentages to give a more fluid feel when scaling, these can again cause a jump when a window is resized. 
 
-**2) Adaptive design** uses static layouts based on breakpoints which don’t respond once they’re initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it.
+**2) Adaptive design** uses static layouts based on breakpoints which don\'t respond once they\’re initially loaded. Adaptive works to detect the screen size and load the appropriate layout for it.
 Generally adaptive site uses six common screen widths:
 
 * 320 px
@@ -1551,7 +1488,7 @@ To overcome this problem, we can use responsive images, as specified in HTML5. I
 />
 ```
 
-The browsers which does not support HTML5's `srcset` (i.e. IE11) will ignore it and uses `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript `polyfill`.
+The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it and uses `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript `polyfill`.
 
 **HTML5 picture Element**  
 ```html
@@ -1720,7 +1657,7 @@ Progressive rendering is the name given to techniques used to improve the perfor
 
 ## Q. ***What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?***
 
-Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device's screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
+Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device\'s screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
 ```css
 @media (min-width: 601px) {
@@ -1751,10 +1688,10 @@ A mobile-first strategy is also responsive, however it agrees we should default 
 
 A mobile-first strategy has 2 main advantages:
 
-* It's more performant on mobile devices, since all the rules applied for them don't have to be validated against any media queries.
+* It\'s more performant on mobile devices, since all the rules applied for them don\'t have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-[Live Example](media-query.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1768,7 +1705,7 @@ Accessibility refers to how software or hardware combinations are designed to ma
 * Hearing loss
 * Limited dexterity
 
-For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments. 
+For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1890,6 +1827,7 @@ html body div div h2 p {}
 | 05. |transition-timing-function	|Specifies the speed curve of the transition effect|
 
 Example:
+
 ```css
 div {
   width: 100px;
@@ -1899,7 +1837,8 @@ div {
   transition: width 2s;
 }
 ```
-[Live Example](transitions-index.html) 
+
+[Live Example](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1941,13 +1880,41 @@ img {
 
 ## Q. ***Enlist the various fonts properties?***
 
-* font-style
-* font-variant
-* font-weight
-* font-size/line-height
-* font-family
-* caption
-* icon
+|Property	             |Description                |
+|----------------------|---------------------------|
+|font-style	           | Specifies the font style. |
+|font-variant	         | Specifies the font variant. |
+|font-weight	         | Specifies the font weight. |
+|font-size/line-height | Specifies the font size and the line-height. |
+|font-family	         | Specifies the font family. Default value depends on the browser|
+|caption	             | Uses the font that are used by captioned controls (like buttons, drop-downs, etc.)|
+|icon	                 | Uses the font that are used by icon labels|
+|menu	                 | Uses the fonts that are used by dropdown menus|
+|message-box	         | Uses the fonts that are used by dialog boxes|
+|small-caption	       | A smaller version of the caption font|
+|status-bar	           | Uses the fonts that are used by the status bar|
+|initial	             | Sets this property to its default value.|
+|inherit	             | Inherits this property from its parent element.|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***Enlist the various background properties css?***
+
+
+|  Property             | Description                               |
+|-----------------------|-------------------------------------------|
+|background-color	      |Specifies the background color to be used	|
+|background-image	      |Specifies ONE or MORE background images to be used	|
+|background-position	  |Specifies the position of the background images	|
+|background-size	      |Specifies the size of the background images	|
+|background-repeat	    |Specifies how to repeat the background images	|
+|background-origin	    |Specifies the positioning area of the background images|
+|background-clip	      |Specifies the painting area of the background images|
+|background-attachment	|Specifies whether the background images are fixed or scrolls with the rest of the page|
+|initial	              |Sets this property to its default value.|
+|inherit	              |Inherits this property from its parent element|
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2088,9 +2055,9 @@ p {
 ## Q. ***What is the difference between padding and margin?***
 
 **1) Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.  
-**2) Padding** is applied to the inside of your element hence effecting how far your element's content is away from the border.
+**2) Padding** is applied to the inside of your element hence effecting how far your element\'s content is away from the border.
 
-Also, using margin will not affect your element's dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
+Also, using margin will not affect your element\'s dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
 
 <img src="assets/box-model.gif" alt="Box Model" />
 
@@ -2270,20 +2237,6 @@ div { background-color: yellow; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is contextual selector?***
-
-Contextual selector addresses specific occurrence of an element. It is a string of individual selectors separated by white space (search pattern), where only the last element in the pattern is addressed providing it matches the specified contex.
-
-It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
-
-**Example:**
-```css
-table p { property: value; } 
-```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***How is the concept of inheritance applied in CSS?***
 
 Inheritance is a concept in which the child class will inherit the properties of its parent class. It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children class if the child uses the same name.
@@ -2305,7 +2258,8 @@ span {
 
 ## Q. ***How do you handle browser differences in your user base?***
 
-The `@supports` query in CSS can be very useful to scan if the user’s current browser has a certain feature. The `@supports` CSS at-rule lets you specify declarations that depend on a browser's support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
+The `@supports` query in CSS can be very useful to scan if the user\'s current browser has a certain feature. The `@supports` CSS at-rule lets you specify declarations that depend on a browser\'s support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
+
 ```css
 @supports (display: grid) {
   div {
@@ -2319,6 +2273,7 @@ The `@supports` query in CSS can be very useful to scan if the user’s current 
   }
 }
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -2326,39 +2281,11 @@ The `@supports` query in CSS can be very useful to scan if the user’s current 
 ## Q. ***What is Cascade?***
 
 Cascade is a method of defining the weight (importance) of individual styling rules thus allowing conflicting rules to be sorted out should such rules apply to the same selector.
+
 ```css
 P {color: white ! important} /* increased weight */
 P (color: black} /* normal weight */
 ```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***How Do I Have A Fixed (non-scrolling) Background Image?***
-
-In CSS, we can use the background-attachment property. The background attachment can be included in the shorthand background property, as in this example:
-```css
-body {
-  background: white url(example.gif) fixed ;
-  color: black ;
-}
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***Describe the following common CSS units of length: cm, em, in, mm, pc, pt, and px?***
-
-There are many ways to express units of length within CSS, but these are just some of the more common ones.
-* **cm**: centimeters
-* **em**: a relative unit of measurement based on the size of a font
-* **in**: inches
-* **mm**: millimeters
-* **pc**: pica, a unit of length equivalent to 12 points, or 1/6 of an inch
-* **pt**: 1/72 of an inch
-* **px**: a device-specific relative measurement equivalent to a certain number of pixels on a display
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
