@@ -897,6 +897,10 @@ padding: 25px 50px 75px;
 
 ## Q. ***What is the purpose of the box-sizing property?***
 
+<p align="center">
+  <img src="assets/box-sizing.jpg" alt="One-Dimensional" width="50%" />
+</p>
+
 The box-sizing CSS property sets how the total width and height of an element is calculated.
 
 * **content-box**: the default width and height values apply to the element\'s content only. The padding and border are added to the outside of the box.
