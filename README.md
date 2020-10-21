@@ -2239,15 +2239,15 @@ We can also create repeating gradients with the `repeating-linear-gradient()`, `
 The `opacity` CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
 
 ```css
-div { background-color: yellow; }
+div { background-color: lightblue; }
 .light {
-  opacity: 20%; /* Barely see the text over the background */
+  opacity: 30%; /* Barely see the text over the background */
 }
 .medium {
-  opacity: 50%; /* See the text more clearly over the background */
+  opacity: 60%; /* See the text more clearly over the background */
 }
 .heavy {
-  opacity: 90%; /* See the text very clearly over the background */
+  opacity: 100%; /* See the text very clearly over the background */
 }
 ```
 
