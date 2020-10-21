@@ -625,7 +625,11 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Exaplain CSS position Property?*** 
+## Q. ***Exaplain CSS position Property?***
+
+<p align="center">
+  <img src="assets/css-position-all.png" alt="One-Dimensional" />
+</p>
 
 * **absolute**, place an element exactly where you want to place it. absolute position is actually set relative to the element\'s parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
 
@@ -693,9 +697,11 @@ button {
   margin-top: 20px;
 }
 ```
+
 ```html
 <input type="text" /> <button>Submit</button>
 ```
+
 [Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
 
 <div align="right">
@@ -718,6 +724,7 @@ h3::before {
                                                  of each h3 */
 }
 ```
+
 ```html
 <h3>Introduction</h3>
 <h3>Body</h3>
