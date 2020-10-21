@@ -381,9 +381,10 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 * Flexbox layout is most appropriate to the components of an application (as most of them are fundamentally linear), and **small-scale** layouts, while the Grid layout is intended for **larger-scale** layouts which aren’t linear in their design.
 * If you only need to define a layout as a row or a column, then you probably need flexbox. If you want to define a grid and fit content into it in two dimensions — you need the grid.
 
-<img src="assets/flex.png" alt="One-Dimensional" />
-
-<img src="assets/grid.png" alt="Two-Dimensional" />
+<p align="center">
+  <img src="assets/flex.png" alt="One-Dimensional" />
+  <img src="assets/grid.png" alt="Two-Dimensional" />
+</p>
 
 [Live Example](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
 
@@ -821,7 +822,9 @@ For example, it can be used to:
 
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
-<img src="assets/boxmodel.gif" alt="Box Model" width="100%" />
+<p align="center">
+  <img src="assets/boxmodel.gif" alt="Box Model" width="50%" />
+</p>
 
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
@@ -1528,8 +1531,10 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
 
 When using `translate()`, the element still occupies its original space (sort of like `position: relative`), unlike in changing the absolute positioning.
 
-**Example:**    
+**Example:**
+
 If we combine `position:relative` with one of the offset properties `top`, `bottom`, `left` or `right` the element will be moved from its original place in the layout whilst preserving the space in the document it once occupied. The element will be moved on to a new layer and its “layer order” or its stacking order can then be controlled with the `z-index` property.
+
 ```css
 .thing {
   position: relative;
@@ -1537,14 +1542,17 @@ If we combine `position:relative` with one of the offset properties `top`, `bott
   left: 50px;
 }
 ```
+
 In the above example the element will be moved 100px away from the top and 50px away from the left of its original position.
 
 When using `transform:translate(x,y)` we get a very similar visual result to using relative position. The same result as above could be achieved with the following snippet:
+
 ```css
 .thing {
   transform: translate(50px, 100px);
 }
 ```
+
 In this case, we are translating the coordinates of the element by `50px` along the x-axis and `100px` along the y-axis. The end result is visually the same as the previous `position` example.
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1637,11 +1645,16 @@ At-rules are `CSS statements` that instructs CSS how to behave. They begin with 
 ## Q. ***How can the gap under the image be removed?***
 
 As images being inline elements are treated same as texts, so there is a gap left, which can be removed by:
+
 ```html
 <figure>
   <img style="display: block" src="..." alt="">
 </figure>
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***What is progressive rendering?***
 
@@ -1655,7 +1668,7 @@ Progressive rendering is the name given to techniques used to improve the perfor
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
-</div>   
+</div>
 
 ## Q. ***What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?***
 
@@ -2061,7 +2074,9 @@ p {
 
 Also, using margin will not affect your element\'s dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
 
-<img src="assets/box-model.gif" alt="Box Model" />
+<p align="center">
+  <img src="assets/box-model.gif" alt="Box Model" />
+</p>
 
 *Note:* **Top/Bottom margins are collapsible:** if you have a 20px margin at the bottom of an element and a 30px margin at the top of the next element, the margin between the two elements will be 30px rather than 50px. This does not apply to left/right margin or padding.
 
