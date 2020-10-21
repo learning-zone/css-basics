@@ -221,7 +221,10 @@ a:hover {
     </style>
   </head>
 <body>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, <h1>when an unknown printer took a galley of type and scrambled it to make a type specimen book.<h1></p>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+  <h1>when an unknown printer took a galley of type and scrambled it to make a
+  type specimen book.<h1></p>
 </body>
 </html>
 ```
@@ -1087,6 +1090,7 @@ Yes. overflow property deals with the content if content size exceeds the alloca
 ## Q. ***What are your favorite image replacement techniques and which do you use when?***
 
 **Technique: 01**
+
 ```css
 h1#technique-one {
   width: 250px;
@@ -1097,6 +1101,7 @@ h1#technique-one span {
   display: none;
 }
 ```
+
 ```html
 <h1 id="technique-one">
   <span>CSS-Tricks</span>
