@@ -821,6 +821,8 @@ For example, it can be used to:
 
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
+<img src="assets/boxmodel.gif" alt="Box Model" width="100%" />
+
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
 * **Content**: The content of the box, where text and images appear
