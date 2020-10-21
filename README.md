@@ -1076,7 +1076,7 @@ Yes. overflow property deals with the content if content size exceeds the alloca
 .box {
 	-moz-border-radius: 15px;    /* Firefox */
 	-webkit-border-radius: 15px; /* Safari and Chrome */
-	border-radius: 15px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+	border-radius: 15px;
 }
 ```
 
