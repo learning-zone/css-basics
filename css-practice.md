@@ -1,4 +1,6 @@
-## CSS Practice
+# CSS Coding Practice
+
+<br/>
 
 ## Q. ***How to draw a circle inside Square using single DIV in css?***
 
@@ -77,9 +79,10 @@ tr:nth-child(even) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How Do I Have A Fixed (non-scrolling) Background Image?***
+## Q. ***How to make a fixed (non-scrolling) background image?***
 
 In CSS, we can use the background-attachment property. The background attachment can be included in the shorthand background property, as in this example:
+
 ```css
 body {
   background: white url(example.gif) fixed ;
@@ -98,6 +101,9 @@ body {
 * div > ```p``` Selects all ```<p>``` elements where the immediate parent is a <div> element
 * div + ```p``` Selects all ```<p>``` elements that are placed immediately after a <div> element
 * div ~ ```p``` Selects all ```<p>``` elements that are anywhere preceded by a <div> element
+
+## Q. ***How to style every element which has an adjacent item right before it?***
+## Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
