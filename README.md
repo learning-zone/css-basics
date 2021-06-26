@@ -9,6 +9,8 @@
 * *[SCSS Interview Questions and Answers](scss-questions.md)*
 * *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)*
 
+<br/>
+
 ## Q. ***What are the css selectors?***
 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
