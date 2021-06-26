@@ -1,12 +1,14 @@
 # CSS Interview Questions
 
+<br/>
+
 *Click <img src="assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
 ## Table of Contents
 
-* *[CSS Practice](css-practice.md)*
+* *[CSS Coding Practice](css-practice.md)*
 * *[CSS3 Properties](css3-properties.md)*
-* *[SCSS Interview Questions and Answers](scss-questions.md)* 
+* *[SCSS Interview Questions and Answers](scss-questions.md)*
 * *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)*
 
 ## Q. ***What are the css selectors?***
@@ -161,17 +163,22 @@ In this example will apply the specified styles only to paragraph elements that 
   <p>Paragraph example.</p>
 </div>
 ```
+
 **ix) Attribute Selector**: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets
+
 ```css
 input[type="text"] {
    background-color: #444;
    width: 200px;
 }
 ```
+
 ```html
 <input type="text">
 ```
+
 The attribute selector can also be declared using just the attribute itself, with no value, like this:
+
 ```css
 input[type] {
    background-color: #444;
@@ -186,6 +193,7 @@ a:hover {
    color: red;
 }
 ```
+
 **xi) Pseudo-element**: A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to:
 
 * Style the first letter, or line, of an element
@@ -242,9 +250,11 @@ Contextual selector addresses specific occurrence of an element. It is a string 
 It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
 
 **Example:**
+
 ```css
 table p { property: value; } 
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -297,7 +307,6 @@ Pseudo-classes select regular elements but under certain conditions, like when t
 
 Pseudo-elements effectively create new elements that are not specified in the markup of the document and can be manipulated much like a regular element. 
 
-
 * ::before
 * ::after
 * ::first-letter
@@ -314,7 +323,8 @@ A combinator is the character in a selector that connects two selectors together
 
 **a) Descendant Combinator (space)**: The descendant selector matches all elements that are descendants of a specified element.
 
-The following example selects all `<p>` elements inside `<div>` elements: 
+The following example selects all `<p>` elements inside `<div>` elements:
+
 ```css
 div p {
   background-color: yellow;
@@ -323,14 +333,17 @@ div p {
 **b) Child Combinator (>)**: The child selector selects all elements that are the children of a specified element.
 
 The following example selects all `<p>` elements that are children of a `<div>` element:
+
 ```css
 div > p {
   background-color: yellow;
 }
 ```
+
 **c) Adjacent Sibling Combinator (+)**: The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
 
 The following example selects all `<p>` elements that are placed immediately after `<div>` elements:
+
 ```css
 div + p {
   background-color: yellow;
@@ -363,6 +376,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
     font-weight: bold;
 }
 ```
+
 ```html
 <div id="top">
 
@@ -433,6 +447,7 @@ Example
 	color: #900;
 }
 ```
+
 ```html
 <button class="button">
 	Normal button
@@ -481,7 +496,8 @@ CSS sprites combine multiple images into one single larger image. It is a common
 
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
 
-**Syntax**  
+**Syntax**
+
 ```css
 /* Keyword values */
 float: left;
@@ -495,7 +511,8 @@ float: inherit;
 float: initial;
 float: unset;
 ```
-**Property Values**  
+
+**Property Values**
 
 |Sl.No| Value  | Description| 
 |-----|--------|------------|
@@ -506,6 +523,7 @@ float: unset;
 | 05. |inherit |Inherits this property from its parent element. |
 
 Example:
+
 ```css
 section {
   border: 1px solid blue;
@@ -529,6 +547,7 @@ div {
   background: cyan;
 }
 ```
+
 ```html
 <section>
   <div class="left">1</div>
@@ -551,6 +570,7 @@ div {
 The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images. It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
 
 Example:
+
 ```css
 p {
   animation-duration: 3s;
@@ -688,6 +708,7 @@ Example:
 **c) Inline-Block Elements**  
 Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides.
 One common use for using inline-block is for creating navigation links horizontally. Some examples of inline-block elements are `<input>`, `<button>`, `<select>`, `<textarea>` etc.
+
 ```css
 input {
   width: 300px;
@@ -734,7 +755,7 @@ h3::before {
 <h3>Conclusion</h3>
 ```
 
-**CSS Counter Properties**  
+**CSS Counter Properties**
 
 |Property	        |Description  |
 |-----------------|-------------------------------------------------------------------------------|
@@ -933,6 +954,7 @@ p {
   color: rgba(37, 84, 127, 1);
 }
 ```
+
 * **HEX (Hexadecimal color values)**
 
 ```css
@@ -948,6 +970,7 @@ p {
   color: hsla(209, 55%, 32%, 1);
 }
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -980,6 +1003,7 @@ Pre-processors extend CSS with variables, operators, interpolations, functions, 
 **1. Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
 
 Example
+
 ```css
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
 acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, 
@@ -1107,7 +1131,9 @@ h1#technique-one span {
   <span>CSS-Tricks</span>
 </h1>
 ```
-**Technique: 02**  
+
+**Technique: 02**
+
 ```css
 h1.technique-two {
   width: 2350px; 
@@ -1116,12 +1142,15 @@ h1.technique-two {
   margin: 0 0 0 -2000px;
 }
 ```
+
 ```html
 <h1 class="technique-two">
   CSS-Tricks
 </h1>
 ```
-**Technique: 03**  
+
+**Technique: 03**
+
 ```css
 h1.technique-three {
   width: 350px; 
@@ -1130,12 +1159,15 @@ h1.technique-three {
   text-indent: -9999px;
 }
 ```
+
 ```html
 <h1 class="technique-three">
   CSS-Tricks
 </h1>
 ```
-**Technique: 04**  
+
+**Technique: 04**
+
 ```css
 h1.technique-four {
 	width: 350px; 
@@ -1151,7 +1183,9 @@ h1.technique-four {
   </a>
 </h1>
 ```
-**Technique: 05**  
+
+**Technique: 05**
+
 ```css
 h1.technique-five {
 	width: 350px; 
@@ -1168,7 +1202,9 @@ h1.technique-five span {
   <span>CSS-Tricks</span>
 </h1>
 ```
-**Technique: 06**  
+
+**Technique: 06**
+
 ```css
 h1.technique-six {
 	width: 350px;
@@ -1178,12 +1214,15 @@ h1.technique-six {
 	overflow: hidden;
 }
 ```
+
 ```html
 <h1 class="technique-six">
   CSS-Tricks
 </h1>
 ```
-**Technique: 07**  
+
+**Technique: 07**
+
 ```css
 h1.technique-seven {
 	width: 350px; 
@@ -1197,12 +1236,15 @@ h1.technique-seven span {
   overflow: hidden;
 }
 ```
+
 ```html
 <h1 class="technique-seven">
 	<span>CSS-Tricks</span>
 </h1>
 ```
-**Technique: 08**  
+
+**Technique: 08**
+
 ```css
 h1.technique-eight {
 	width: 350px; 
@@ -1216,12 +1258,15 @@ h1.technique-eight span {
   height: 100%;
 }
 ```
+
 ```html
 <h1 class="technique-eight">
   <span></span>CSS-Tricks
 </h1>
 ```
+
 **Technique: 09**
+
 ```css
 h1.technique-nine {
   width: 350px; 
@@ -1231,6 +1276,7 @@ h1.technique-nine {
   color: white;
 }
 ```
+
 ```html
 <h1 class="technique-nine">
   CSS-Tricks
@@ -1324,6 +1370,7 @@ Media queries are useful when you want to modify your site or app depending on a
 
 
 Example:
+
 ```css
 @media print {
   body { font-size: 10pt; }
@@ -1363,6 +1410,7 @@ Example:
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { }
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -1387,7 +1435,8 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 
 ## Q. ***How can you load css resources conditionally?***
 
-**@import**:  allows to load stylesheet by using a path (uri) representing the location of the file. 
+**@import**:  allows to load stylesheet by using a path (uri) representing the location of the file.
+
 ```css
 /* By default, include the "light" color theme for syntax highlighting */
 @import "cdn.com/atom-one-light.min.css";
@@ -1398,11 +1447,13 @@ For example with this selector `p span`, browsers firstly find all the `<span>` 
 ```
 
 **matchMedia()**: Using matchMedia lets you execute blocks of JavaScript only when a certain media query condition is met. This means you can just write out the CSS when and if the query is true:
+
 ```javascript
 if (window.matchMedia('screen and (min-width: 600px)')) {
   document.write('<link rel="stylesheet" href="css/small.css">');
 }
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -1425,6 +1476,7 @@ making it easier to reason about the layout of elements on the page.
 
 The display property specifies the display behavior (the type of rendering box) of an element.  
 Example:
+
 ```css
 p.ex1 {display: none;}
 p.ex2 {display: inline;}
@@ -1432,7 +1484,7 @@ p.ex3 {display: block;}
 p.ex4 {display: inline-block;}
 ```
 
-**Property Values**  
+**Property Values**
 
 |Sl.No|Value	   |Description	
 |-----|---------------|------------------
@@ -1511,7 +1563,8 @@ To overcome this problem, we can use responsive images, as specified in HTML5. I
 
 The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it and uses `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript `polyfill`.
 
-**HTML5 picture Element**  
+**HTML5 picture Element**
+
 ```html
 <picture>
    <source media="(min-width: 1024px)" srcset="foo-large.jpg  1024w, foo-medium.jpg 640w" sizes="50vw" />
@@ -1520,7 +1573,8 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
 </picture>
 ```
 
-**Retina Display Media Query**  
+**Retina Display Media Query**
+
 ```css
 /* 1.25 dpr */
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { 
@@ -1537,6 +1591,7 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
     /* Retina-specific stuff here */
 }
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -1570,6 +1625,7 @@ When using `transform:translate(x,y)` we get a very similar visual result to usi
 ```
 
 In this case, we are translating the coordinates of the element by `50px` along the x-axis and `100px` along the y-axis. The end result is visually the same as the previous `position` example.
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -1581,21 +1637,25 @@ In this case, we are translating the coordinates of the element by `50px` along 
 ## Q. ***Tell what each of these tags do, if there are alternatives, which are preferable, why?***
 
 **`<em>`**: The HTML `<em>` tag represents stress emphasis of its contents.
+
 ```html
 <em>Emphasized content...</em>
 ```
 
 **`<b>`**: The `<b>` tag specifies bold text without any extra importance.
+
 ```html
 <p>This is normal text - <b>and this is bold text</b>.</p>
 ```
 
 **`<abbr>`**: The HTML Abbreviation element (`<abbr>`) represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation.
+
 ```html
 The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 ```
 
 **`<nav>`**: The `<nav>` tag defines a set of navigation links.
+
 ```html
 <nav>
   <a href="/html/">HTML</a> |
@@ -1782,6 +1842,7 @@ The `word-spacing` property is used to add or subtract space between the words o
 The `text-indent` property is used to indent the text of a paragraph.
 
 ## Q. ***Which property is used to align the text of a document?***
+
 The `text-align` property is used to align the text of a document.
 
 <div align="right">
@@ -2339,6 +2400,9 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
 * **-moz-**: Mozilla Firefox
 * **-ms-**: Internet Explorer
 * **-o-**: Opera
+
+## Q. ***What clearfix methods do you know?***
+## Q. ***What the code fragment has the greater CSS specificity?*** 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
