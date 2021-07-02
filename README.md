@@ -237,7 +237,7 @@ a:hover {
 </html>
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/selector.html) 
+Live demo: [css selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -403,7 +403,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
   <img src="assets/grid.png" alt="Two-Dimensional" />
 </p>
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -642,7 +642,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/z-index.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/z-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -664,7 +664,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/position-index.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/position-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -726,7 +726,7 @@ button {
 <input type="text" /> <button>Submit</button>
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -763,7 +763,7 @@ h3::before {
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/counters.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/counters.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -878,7 +878,7 @@ padding: 25px 50px;
 padding: 25px 50px 75px;
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
+[Live demo](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1071,7 +1071,7 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 
 In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
+[Live demo](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1782,7 +1782,7 @@ A mobile-first strategy has 2 main advantages:
 * It\'s more performant on mobile devices, since all the rules applied for them don\'t have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/media-query.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1930,7 +1930,7 @@ div {
 }
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
+[Live demo](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
