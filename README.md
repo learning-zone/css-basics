@@ -1,6 +1,6 @@
 # CSS Interview Questions
 
-*Click <img src="assets/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
+*Click <img src="assets/images/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
 ## Table of Contents
 
@@ -237,7 +237,7 @@ a:hover {
 </html>
 ```
 
-Live demo: [css selectors](https://learning-zone.github.io/css-interview-questions/selector.html) 
+Live demo: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -399,11 +399,11 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 * If you only need to define a layout as a row or a column, then you probably need flexbox. If you want to define a grid and fit content into it in two dimensions — you need the grid.
 
 <p align="center">
-  <img src="assets/flex.png" alt="One-Dimensional" />
-  <img src="assets/grid.png" alt="Two-Dimensional" />
+  <img src="assets/images/flex.png" alt="One-Dimensional" />
+  <img src="assets/images/grid.png" alt="Two-Dimensional" />
 </p>
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/grid-flexbox-layout.html) 
+Live demo: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -642,7 +642,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/z-index.html) 
+Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -651,7 +651,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 ## Q. ***Exaplain CSS position Property?***
 
 <p align="center">
-  <img src="assets/css-position-all.png" alt="One-Dimensional" />
+  <img src="assets/images/css-position-all.png" alt="One-Dimensional" />
 </p>
 
 * **absolute**, place an element exactly where you want to place it. absolute position is actually set relative to the element\'s parent. if no parent available then relatively place to the page itself (it will default all the way back up to the <html> element).
@@ -664,7 +664,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/position-index.html) 
+Live demo: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -726,7 +726,7 @@ button {
 <input type="text" /> <button>Submit</button>
 ```
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/display-properties.html) 
+Live demo: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -763,7 +763,7 @@ h3::before {
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/counters.html) 
+Live demo: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -854,7 +854,7 @@ For example, it can be used to:
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
 <p align="center">
-  <img src="assets/boxmodel.gif" alt="Box Model" width="50%" />
+  <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
 </p>
 
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
@@ -878,7 +878,7 @@ padding: 25px 50px;
 padding: 25px 50px 75px;
 ```
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/boxmodel-index.html)
+Live demo: [Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -922,7 +922,7 @@ padding: 25px 50px 75px;
 ## Q. ***What is the purpose of the box-sizing property?***
 
 <p align="center">
-  <img src="assets/box-sizing.jpg" alt="One-Dimensional" width="75%" />
+  <img src="assets/images/box-sizing.jpg" alt="One-Dimensional" width="75%" />
 </p>
 
 The box-sizing CSS property sets how the total width and height of an element is calculated.
@@ -1071,7 +1071,7 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 
 In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/block-formatting-context.html)
+Live demo: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1782,7 +1782,7 @@ A mobile-first strategy has 2 main advantages:
 * It\'s more performant on mobile devices, since all the rules applied for them don\'t have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/media-query.html) 
+Live demo: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1930,7 +1930,7 @@ div {
 }
 ```
 
-[Live demo](https://learning-zone.github.io/css-interview-questions/transitions-index.html) 
+Live demo: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2152,7 +2152,7 @@ p {
 Also, using margin will not affect your element\'s dimensions whereas padding will make your elements dimensions (set height + padding) so for example if you have a 100x100px div with a 5 px padding, your div will actually be 105x105px
 
 <p align="center">
-  <img src="assets/padding-margin.png" alt="Padding vs Margin" width="600px" />
+  <img src="assets/images/padding-margin.png" alt="Padding vs Margin" width="600px" />
 </p>
 
 *Note:* **Top/Bottom margins are collapsible:** if you have a 20px margin at the bottom of an element and a 30px margin at the top of the next element, the margin between the two elements will be 30px rather than 50px. This does not apply to left/right margin or padding.
@@ -2310,7 +2310,7 @@ We can also create repeating gradients with the `repeating-linear-gradient()`, `
 ## Q. ***What is CSS opacity?***
 
 <p align="center">
-  <img src="assets/box-opacity.jpg" alt="CSS Opacity" />
+  <img src="assets/images/box-opacity.jpg" alt="CSS Opacity" />
 </p>
 
 The `opacity` CSS property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
