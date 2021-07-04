@@ -2746,8 +2746,11 @@ The clearfix property allows a container to wrap its floated children. Without a
 **Example**
 
 ```html
+
+<!DOCTYPE html>
 <html>
 <head>
+  <title>CSS Clearfix property</title>
   <style>
     div {
       border: 3px solid #4CAF50;
@@ -2768,7 +2771,7 @@ The clearfix property allows a container to wrap its floated children. Without a
          alt="Running Horse" 
          width="250"
          height="180">
-    Running Horse
+        Running Horse
   </div>
 </body>
 </html>
