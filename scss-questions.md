@@ -2,6 +2,12 @@
 
 <br/>
 
+## Q. ***Explain what is Sass? How it can be used?***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***What are the SCSS basic features?***
 
 **i) Variables**: Variables are useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones. Variables in SCSS start with `$` sign
@@ -238,6 +244,12 @@ aside[role="complementary"] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***List out the data types that Sass supports?***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?***
 
 i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
@@ -346,6 +358,25 @@ File splitting helps organize your CSS into multiple files, decreasing page load
 ## Q. ***What is the @content directive used for?***
 ## Q. ***What is wrong with Sass nesting?*** 
 ## Q. ***What is variable interpolation in Sass?***
+## Q. ***What is the difference between SCSS and Sass?***
+## Q. ***What are the advantages/disadvantages of using CSS preprocessors?***
+## Q. ***Explain what is the use of the @import function in Sass?***
+## Q. ***Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?***
+## Q. ***Explain what Sass Maps is and what is the use of Sass Maps?***
+## Q. ***Explain how Sass comments are different from regular CSS?***
+## Q. ***Does Sass support inline comments?***
+## Q. ***Explain when can you use the %placeholders in Sass?***
+## Q. ***Is it possible to nest variables within variables in Sass?***
+## Q. ***What are Sass cons and pros?***
+## Q. ***Explain how Mixins is useful?***
+## Q. ***What are the similarities between LESS and Sass?***
+## Q. ***Explain what is the use of &combinator ?***
+## Q. ***What is the way to write a placeholder selector in Sass?***
+## Q. ***What are number operations in Sass?***
+## Q. ***Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?***
+## Q. ***Which directive displays an error message in SASS?***
+## Q. ***How many output styles are there in sass?***
+## Q. ***Which symbol is used to refer parent selector in sass?***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
