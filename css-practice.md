@@ -113,13 +113,33 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to style every element which has an adjacent item right before it?***
-## Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
-## Q. ***What are navigation bars in CSS?***
-## Q. ***How to overrule underlining Hyperlinks?***
-## Q. ***What happens if 100% width is used along with floats all across the page?***
-## Q. ***How can the gap under the image be removed?***
-
+#### Q. ***How to style every element which has an adjacent item right before it?***
+#### Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
+#### Q. ***What are navigation bars in CSS?***
+#### Q. ***How to overrule underlining Hyperlinks?***
+#### Q. ***What happens if 100% width is used along with floats all across the page?***
+#### Q. ***How can the gap under the image be removed?***
+#### Q. ***How to scroll a page with scrollbar in css?***
+#### Q. ***How to set responsive background image***
+#### Q. ***Align p tag to bottom of div***
+#### Q. ***css selector element with parent of class***
+#### Q. ***css background linear grad***
+#### Q. ***css body background fixed***
+#### Q. ***Remove spacing between flex items***
+#### Q. ***How to remove default number input arrow?***
+#### Q. ***inject html to play youtube video in background***
+#### Q. ***strikethrough text tag***
+#### Q. ***javascript elipsis***
+#### Q. ***css overflow how to get text to start a new line***
+#### Q. ***How to add child element in css***
+#### Q. ***css ränder abrunden***
+#### Q. ***css separacion entre letras***
+#### Q. ***color last letter of H1*** 
+#### Q. ***minmax with repeat css grid***
+#### Q. ***How to display word-wrap:break-word; to left*** 
+#### Q. ***css scrollbar in margin not padding*** 
+#### Q. ***How to remove number up down buttons input in html*** 
+#### Q. ***center wrapped flex children***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
