@@ -102,8 +102,24 @@ body {
 * div + ```p``` Selects all ```<p>``` elements that are placed immediately after a <div> element
 * div ~ ```p``` Selects all ```<p>``` elements that are anywhere preceded by a <div> element
 
+
+## Q. ***How to align image vertically in a division that spans vertically on the whole webpage?***
+
+<p align="center">
+  <img src="assets/images/verticle-image.png" alt="Verticle Image" width="500px" />
+</p>
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***How to style every element which has an adjacent item right before it?***
 ## Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
+## Q. ***What are navigation bars in CSS?***
+## Q. ***How to overrule underlining Hyperlinks?***
+## Q. ***What happens if 100% width is used along with floats all across the page?***
+## Q. ***How can the gap under the image be removed?***
+
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
