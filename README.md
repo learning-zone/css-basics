@@ -2725,7 +2725,7 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What clearfix methods do you know?***
+## Q. ***What is a clearfix in CSS?***
 
 A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
 
