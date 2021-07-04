@@ -377,6 +377,131 @@ a:hover {
 </html>
 ```
 
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Selectors</title>
+  </head>
+  <style>
+    /**
+        Simple selectors
+            * Type selector ( A )
+            * Class selector ( .A )
+            * ID selector ( #A )
+            * Universal selector ( * ns|* *|* )
+            * Attribute selector ( [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value] )
+
+        Combinators
+            * Adjacent sibling combinator ( A + B )
+            * General sibling combinator ( A ~ B )
+            * Child combinator ( A > B )
+            * Descendant combinator ( A B )
+
+    **/
+
+    /** Universal Selectors **/
+    * {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    /** Adjacent sibling combinator **/
+    div + p {
+      background-color: gold;
+    }
+
+    /** General sibling combinator **/
+    p ~ ul {
+      background: greenyellow;
+      list-style-type: none;
+      width: 200px;
+      border: 1px solid #555;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    li {
+      border-bottom: 1px solid #555;
+      margin: 0px;
+      padding: 8px;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+
+    li:hover {
+      background-color:#4CAF50;
+      color: white;
+    }
+
+    /** Child combinator **/
+    .grid > .module {
+      background-color: yellow;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    /** Contextual Selector 
+
+          Contextual selectors define styles that are only applied when certain tags are nested within other tags.
+    **/
+    .example_contextual p {
+      background: tan;
+    }
+
+  </style>
+  <body>
+     
+    <!-- Adjacent sibling combinator -->
+    <div>
+        <h2>Adjacent sibling combinator example</h2>
+        <p>This is second text.</p>
+    </div>
+        <p>This is third text.</p>
+        <p>This is fourth text.</p><br/><br/>
+
+    <!-- General sibling combinator -->
+    <div><h2>General sibling combinator example</h2></div>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <p><b>The first paragraph.</b></p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <h3>Another list</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul> <br/><br/>
+
+    <!-- Child combinator  -->
+    <section class="grid"> <h2> Child combinator example </h2> 
+      <article class="module">One</article>
+      <article class="module">Two</article>
+      <article class="module">Three</article>
+      <article class="module">Four</article>
+      <article class="module">Five</article>
+    </section> <br/><br/>
+
+    <!-- Contextual Selector -->
+    <div class="example_contextual"><p>Contextual Selector Example </p></div>
+  </body>
+</html>
+```
+
 Live demo: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
 
 <div align="right">
@@ -548,6 +673,89 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
   <img src="assets/images/flex.png" alt="One-Dimensional" />
   <img src="assets/images/grid.png" alt="Two-Dimensional" />
 </p>
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid vs Flexbox Layout</title>
+  </head>
+  <style>
+    /**
+      1.Flexbox was designed for layout in one dimension - either a row or a column. 
+        Grid was designed for two-dimensional layout - rows, and columns at the same time. 
+    
+      2.CSS Grid’s approach is layout-first while Flexbox’ approach is content-first. 
+
+      3.Flexbox layout is most appropriate to small-scale layouts, while the Grid layout 
+        is intended for larger scale layouts which aren’t linear in their design.
+
+    **/
+    
+    /* Grid layout */
+    .row {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: #2196f3;
+        padding: 5px;
+    }
+    .col-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Flexbox layout */
+    .wrapper {
+        border: 2px solid #f76707;
+        border-radius: 5px;
+        background-color: #fff4e6;
+    }
+    .wrapper > div {
+        border: 2px solid #ffa94d;
+        border-radius: 5px;
+        background-color: #ffd8a8;
+        padding: 1em;
+        color: #d9480f;
+    }
+    .wrapper {
+        display: flex;
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    .wrapper > div {
+        flex: 1 1 150px;
+    }
+  </style>
+  <body>
+    <p><h1>Grid Layout Example<hr/></h1></p>
+    <div class="row">
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+        <div class="col-item">Column - 1</div>
+        <div class="col-item">Column - 2</div>
+        <div class="col-item">Column - 3</div>
+    </div>
+
+    <p><h1><br/>Flexbox Layout Example<hr/></h1></p>
+    <div class="wrapper">
+        <div>One</div>
+        <div>Two</div>
+        <div>Three</div>
+        <div>Four</div>
+        <div>Five</div>
+    </div>
+  </body>
+</html>
+```
 
 Live demo: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
 
@@ -788,6 +996,38 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS z-index Property</title>
+    <style>
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 5px 2px;
+        margin: 5px 1px 2px;
+        z-index: -1;
+      }
+
+      p {
+        color: red;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The z-index Property</h1>
+    <img src="../images/horse.jpg" alt="Horse Image" />
+    <p>Because the image has a z-index of -1, it will be placed behind the heading.</p>
+  </body>
+</html>
+```
+
 Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
 
 <div align="right">
@@ -809,6 +1049,63 @@ Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/ass
 * **static** default for every single page element. The only reason you would ever set an element to position: static is to forcefully-remove some positioning that got applied to an element outside of your control.
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Attibutes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    a, a:link, a:hover, a:active {
+       color:inherit; 
+       text-decoration:none; 
+       cursor:pointer;  
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>CSS Attibutes</h2>          
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Attributes</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CSS Position</td>
+        <td>
+            <p><code><a href="static.html" target="_blank">static</a></code> -  It is always positioned according to the normal flow of the page</p>
+            <p><code><a href="relative.html" target="_blank">relative</a></code> - It is positioned relative to its normal position.</p>
+            <p><code><a href="fixed.html" target="_blank">fixed</a></code> -  It always stays in the same place even if the page is scrolled</p>
+            <p><code><a href="absolute.html" target="_blank">absolute</a></code> - It is positioned relative to the nearest positioned ancestor</p>
+            <p><code><a href="sticky.html" target="_blank">sticky</a></code> - It is positioned based on the user's scroll position</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="boxmodel" class="modal fade text-center">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
 
 Live demo: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
 
@@ -872,6 +1169,58 @@ button {
 <input type="text" /> <button>Submit</button>
 ```
 
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    span.a {
+      display: inline;
+        /* the default for span */
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+    span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+    span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <h1>The display Property</h1>
+  <h2>display: inline</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+      consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl
+      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+  <h2>display: inline-block</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+      consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl
+      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+  <h2>display: block</h2>
+  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+      consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl
+      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+</body>
+</html>
+```
+
 Live demo: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
 
 <div align="right">
@@ -908,6 +1257,33 @@ h3::before {
 |content	        |Used with the ::before and ::after pseudo-elements, to insert generated content|
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      counter-reset: section;   /* Set a counter named 'section', and its initial value is 0. */
+    }
+
+    h3::before {
+      counter-increment: section;   /* Increment the value of section counter by 1 */
+      content: "Section " counter(section) ": ";  /* Display the word 'Section ', the value of 
+                                                 section counter, and a colon before the content
+                                                 of each h3 */
+    }   
+  </style>
+</head>
+<body>
+  <h3>Introduction</h3>
+  <h3>Body</h3>
+  <h3>Conclusion</h3>
+</body>
+</html>
+```
 
 Live demo: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
 
@@ -999,10 +1375,6 @@ For example, it can be used to:
 
 ## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
 
-<p align="center">
-  <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
-</p>
-
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
 * **Content**: The content of the box, where text and images appear
@@ -1022,6 +1394,64 @@ padding: 25px 50px;
 
 /* top padding 25px; right/left padding 50px; bottom padding 75px */
 padding: 25px 50px 75px;
+```
+
+<p align="center">
+  <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
+</p>
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Box Model</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      font-size: 18px;
+    }
+    a, a:link, a:hover, a:active {
+       color:inherit; 
+       text-decoration:none; 
+       cursor:pointer;  
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>CSS Box Model</h2>          
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Attributes</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>  
+        <td><code><a href="boxmodel.html" data-toggle="modal" data-target="#boxmodel">Box-Model</a></code></td>
+        <td><p><code>Content</code> - The content of the box, where text and images appear</p>
+            <p><code>Padding</code> - Clears an area around the content.</p>
+            <p><code>Border</code> - A border that goes around the padding </p>
+            <p><code>Margin</code> - Clears an area outside the border.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="boxmodel" class="modal fade text-center">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 ```
 
 Live demo: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
@@ -1228,6 +1658,61 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 * The value of `overflow` is not `visible`.
 
 In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Block Formatting Context</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 40px;
+      background-color: #fff;
+      color: #444;
+      font: 1.4em Arial, sans-serif;
+    }
+
+    .outer {
+      background-color: #ccc;
+      margin: 0 0 40px 0;
+    }
+
+    p {
+      padding: 0;
+      margin: 20px 0 20px 0;
+      background-color: rgb(233, 78, 119);
+      color: #fff;
+    }
+
+    .overflow {
+      overflow: auto;
+    }
+  </style>
+  <body>
+    <h2>no BFC</h2>
+    <div class="outer">
+      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
+    </div>
+
+    <h2>With a BFC</h2>
+
+    <div class="outer overflow">
+      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
+    </div>
+  </body>
+</html>
+```
 
 Live demo: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
 
@@ -1946,6 +2431,32 @@ A mobile-first strategy has 2 main advantages:
 * It\'s more performant on mobile devices, since all the rules applied for them don\'t have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        background-color: lightgreen;
+    }
+
+    @media only screen and (max-width: 800px) {
+        body {
+            background-color: rgb(233, 50, 18);
+        }
+    }
+  </style>
+  </head>
+<body>
+    <h1>Resize the browser window</h1>
+    <h2>When the width of this document is 800px or less, the background-color is "green", otherwise it is "Red".</h2>
+</body>
+</html>
+```
+
 Live demo: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
 
 <div align="right">
@@ -2082,7 +2593,7 @@ html body div div h2 p {}
 | 04. |transition-property	      |Specifies the name of the CSS property the transition effect is for|
 | 05. |transition-timing-function	|Specifies the speed curve of the transition effect|
 
-Example:
+**Example: 01**
 
 ```css
 div {
@@ -2092,6 +2603,84 @@ div {
   -webkit-transition: width 2s; /* Safari prior 6.1 */
   transition: width 2s;
 }
+```
+
+**Example: 02**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Transitions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      font-size: 20px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    a, a:link, a:hover, a:active {
+       color:inherit; 
+       text-decoration:none; 
+       cursor:pointer;  
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>CSS Transitions</h2>          
+  <table class="table table-bordered table-hover table-striped">
+    <thead>
+      <tr>
+        <th>Sl.No</th>
+        <th>Property</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td><code><a href="transition.html" target="_blank">transition</a></code></td>
+        <td>A shorthand property for setting the four transition properties into a single property</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td><code><a href="transition-delay.html" target="_blank">transition-delay</a></code></td>
+        <td>Specifies a delay (in seconds) for the transition effect</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td><code><a href="transition-duration.html" target="_blank">transition-duration</a></code></td>
+        <td>Specifies how many seconds or milliseconds a transition effect takes to complete</td>
+      </tr>
+      <tr>
+        <td>04</td>
+        <td><code><a href="transition-property.html" target="_blank">transition-property</a></code></td>
+        <td>Specifies the name of the CSS property the transition effect is for</td>
+      </tr>
+      <tr>
+        <td>05</td>
+        <td><code><a href="transition-timing-function.html" target="_blank">transition-timing-function</a></code></td>
+        <td>Specifies the speed curve of the transition effect</td>
+      </tr>
+      <tr>
+        <td>06</td>
+        <td><code><a href="transform.html" target="_blank">Transform</a></code></td>
+        <td>The transform property allows to visually manipulate an element by skewing, rotating, translating, or scaling:</td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="boxmodel" class="modal fade text-center">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 ```
 
 Live demo: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
