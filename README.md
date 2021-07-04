@@ -2721,7 +2721,65 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
 * **-ms-**: Internet Explorer
 * **-o-**: Opera
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***What clearfix methods do you know?***
+
+A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
+
+The clearfix property allows a container to wrap its floated children. Without a clearfix, a container will not wrap around its floated children and will collapse, just as if its floated children had been positioned absolutely.
+
+<p align="center">
+  <img src="assets/images/clearfix.png" alt="CSS rule" width="800px;" />
+</p>
+
+**Syntax**
+
+```css
+.clearfix {
+  properties
+}
+```
+
+**Example**
+
+```html
+<html>
+<head>
+  <style>
+    div {
+      border: 3px solid #4CAF50;
+      padding: 5px;
+    }
+    .clearfix {
+      overflow: auto;
+    }
+    .img {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="clearfix">
+    <img class="img" 
+         src="./assets/images/horse.jpg" 
+         alt="Running Horse" 
+         width="250"
+         height="180">
+    Running Horse
+  </div>
+</body>
+</html>
+```
+
+Live demo: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***What the code fragment has the greater CSS specificity?*** 
 ## Q. ***Explain the three main ways to apply CSS styles to a web page?***
 ## Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
