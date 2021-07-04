@@ -1050,63 +1050,6 @@ Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/ass
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-**Example**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>CSS Attibutes</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    body{
-      font-size: 20px;
-      font-family: "Times New Roman", Times, serif;
-    }
-    a, a:link, a:hover, a:active {
-       color:inherit; 
-       text-decoration:none; 
-       cursor:pointer;  
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h2>CSS Attibutes</h2>          
-  <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th>Attributes</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CSS Position</td>
-        <td>
-            <p><code><a href="static.html" target="_blank">static</a></code> -  It is always positioned according to the normal flow of the page</p>
-            <p><code><a href="relative.html" target="_blank">relative</a></code> - It is positioned relative to its normal position.</p>
-            <p><code><a href="fixed.html" target="_blank">fixed</a></code> -  It always stays in the same place even if the page is scrolled</p>
-            <p><code><a href="absolute.html" target="_blank">absolute</a></code> - It is positioned relative to the nearest positioned ancestor</p>
-            <p><code><a href="sticky.html" target="_blank">sticky</a></code> - It is positioned based on the user's scroll position</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div id="boxmodel" class="modal fade text-center">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
-</body>
-</html>
-```
-
 Live demo: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
 
 <div align="right">
@@ -1167,58 +1110,6 @@ button {
 
 ```html
 <input type="text" /> <button>Submit</button>
-```
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    span.a {
-      display: inline;
-        /* the default for span */
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        border: 1px solid blue;
-        background-color: yellow;
-    }
-    span.b {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        border: 1px solid blue;
-        background-color: yellow;
-    }
-    span.c {
-        display: block;
-        width: 100px;
-        height: 100px;
-        padding: 5px;
-        border: 1px solid blue;
-        background-color: yellow;
-    }
-  </style>
-</head>
-<body>
-  <h1>The display Property</h1>
-  <h2>display: inline</h2>
-  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
-      consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl
-      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
-  <h2>display: inline-block</h2>
-  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
-      consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl
-      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
-  <h2>display: block</h2>
-  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
-      consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl
-      sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
-</body>
-</html>
 ```
 
 Live demo: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
@@ -1399,60 +1290,6 @@ padding: 25px 50px 75px;
 <p align="center">
   <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
 </p>
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>CSS Box Model</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    body{
-      font-size: 18px;
-    }
-    a, a:link, a:hover, a:active {
-       color:inherit; 
-       text-decoration:none; 
-       cursor:pointer;  
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h2>CSS Box Model</h2>          
-  <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th>Attributes</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>  
-        <td><code><a href="boxmodel.html" data-toggle="modal" data-target="#boxmodel">Box-Model</a></code></td>
-        <td><p><code>Content</code> - The content of the box, where text and images appear</p>
-            <p><code>Padding</code> - Clears an area around the content.</p>
-            <p><code>Border</code> - A border that goes around the padding </p>
-            <p><code>Margin</code> - Clears an area outside the border.</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <div id="boxmodel" class="modal fade text-center">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
-</body>
-</html>
-```
 
 Live demo: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
 
@@ -2603,84 +2440,6 @@ div {
   -webkit-transition: width 2s; /* Safari prior 6.1 */
   transition: width 2s;
 }
-```
-
-**Example: 02**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>CSS Transitions</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    body{
-      font-size: 20px;
-      font-family: "Times New Roman", Times, serif;
-    }
-    a, a:link, a:hover, a:active {
-       color:inherit; 
-       text-decoration:none; 
-       cursor:pointer;  
-    }
-  </style>
-</head>
-<body>
-<div class="container">
-  <h2>CSS Transitions</h2>          
-  <table class="table table-bordered table-hover table-striped">
-    <thead>
-      <tr>
-        <th>Sl.No</th>
-        <th>Property</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>01</td>
-        <td><code><a href="transition.html" target="_blank">transition</a></code></td>
-        <td>A shorthand property for setting the four transition properties into a single property</td>
-      </tr>
-      <tr>
-        <td>02</td>
-        <td><code><a href="transition-delay.html" target="_blank">transition-delay</a></code></td>
-        <td>Specifies a delay (in seconds) for the transition effect</td>
-      </tr>
-      <tr>
-        <td>03</td>
-        <td><code><a href="transition-duration.html" target="_blank">transition-duration</a></code></td>
-        <td>Specifies how many seconds or milliseconds a transition effect takes to complete</td>
-      </tr>
-      <tr>
-        <td>04</td>
-        <td><code><a href="transition-property.html" target="_blank">transition-property</a></code></td>
-        <td>Specifies the name of the CSS property the transition effect is for</td>
-      </tr>
-      <tr>
-        <td>05</td>
-        <td><code><a href="transition-timing-function.html" target="_blank">transition-timing-function</a></code></td>
-        <td>Specifies the speed curve of the transition effect</td>
-      </tr>
-      <tr>
-        <td>06</td>
-        <td><code><a href="transform.html" target="_blank">Transform</a></code></td>
-        <td>The transform property allows to visually manipulate an element by skewing, rotating, translating, or scaling:</td>
-      </tr>
-    </tbody>
-  </table>
-  <div id="boxmodel" class="modal fade text-center">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      </div>
-    </div>
-  </div>
-</body>
-</html>
 ```
 
 Live demo: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
