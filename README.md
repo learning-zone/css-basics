@@ -2767,7 +2767,7 @@ The clearfix property allows a container to wrap its floated children. Without a
 <body>
   <div class="clearfix">
     <img class="img" 
-         src="assets/images/horse.jpg" 
+         src="../images/horse.jpg" 
          alt="Running Horse" 
          width="250"
          height="180">
