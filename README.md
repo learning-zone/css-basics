@@ -11,6 +11,146 @@
 
 <br/>
 
+## Q. ***What is CSS?***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***Explain new features in CSS3?***
+
+### **1. CSS3 Selectors**
+
+ * Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value.
+
+```css
+E[attr^=val]
+/* Example */
+a[href^='http://sales.']{color: teal;}
+```
+
+ * Matches any element E whose attribute attr ends in val. In other words, the val matches the end of the attribute value.
+
+```css
+E[attr$=val]
+/* Example */
+a[href$='.jsp']{color: purple;}
+```
+
+ * Matches any element E whose attribute attr matches val anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word.
+
+```css
+E[attr*=val]  
+/* Example */
+img[src*='artwork']{
+        border-color: #C3B087 #FFF #FFF #C3B087;
+}
+```
+
+### **2. Pseudo-classes**
+
+CSS2 supports user interaction pseudo-classes, namely `:link`, `:visited`, `:hover`, `:active`, and `:focus`.  
+A few more pseudo-class selectors were added in CSS3. One is the `:root` selector, which allows designers to point to the root element of a document.
+
+```css
+  :root{overflow:auto;}
+```
+
+As a complement to the `:first-child` selector, the `:last-child` was added. With it one can select the last element named of a parent element.
+
+```css
+  div.article > p:last-child{font-style: italic;}
+```
+
+A new user interaction pseudo-class selector was added, the `:target` selector.
+
+```html
+<style>
+  span.notice:target { font-size: 2em; font-style: bold; }
+</style>
+
+<a href='#section2'>Section 2</a>
+<p id='section2'>...</p>
+```
+
+The negation pseudo-class selector, `:not` can be coupled with almost any other selector that has been implemented.
+
+```css
+  img:not([border]){ border: 1; }
+```
+
+### **3. CSS3 Colors**
+
+The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: **HSL**, **HSLA**, **RGBA** and **Opacity**.
+
+```css
+div.halfopaque {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+  color: #000000;
+}
+div.halfalpha {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+``` 
+
+### **4. Rounded Corners: border-radius**
+
+```css
+border-radius: 25px;
+```
+
+### **5 Drop Shadows**
+
+```css
+box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
+```
+
+### **6. Text Shadow**
+
+```css
+text-shadow: topOffset leftOffset blurRadius color;
+```
+
+### **7. Linear Gradients**
+
+```css
+Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
+/* Example */   
+#grad {
+  background: linear-gradient(to right, red , yellow);
+}
+```
+
+### **8. Radial Gradients**
+
+```css
+Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
+/* Example */      
+#grad {
+  background: radial-gradient(red, yellow, green);
+}//Default       
+#grad {
+  background: radial-gradient(circle, red, yellow, green);
+}//Circle
+```
+
+### **9. Multiple Background Images**
+
+In CSS3, there\'s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
+
+```css
+background-image:
+url(firstImage.jpg),
+url(secondImage.gif),
+url(thirdImage.png);
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***What are the css selectors?***
 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
@@ -391,6 +531,12 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What is CSS flexbox? Write all the properties of the flexbox.***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***When to use css grid and flexbox?***
 
 * CSS Grid Layout is a **two-dimensional** system, meaning it can handle both columns and rows, unlike flexbox which is largely a **one-dimensional** system (either in a column or a row).
@@ -631,7 +777,7 @@ Reflow is the name of the web browser process for re-calculating the positions a
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of the `z-index` and how is it used?***
+## Q. ***What is the purpose of the `z-index` and how a stacking context is formed?***
 
 The `z-index` helps specify the stack order of positioned elements that may overlap one another. The `z-index` default value is zero, and can take on either a positive or negative number. An element with a higher `z-index` is always stacked above than a lower index.
 
@@ -878,7 +1024,19 @@ padding: 25px 50px;
 padding: 25px 50px 75px;
 ```
 
-Live demo: [Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+Live demo: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How you would tell the browser in CSS to render your layout in different box models?***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What are the different units used in CSS?***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1072,6 +1230,12 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
 Live demo: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***Explain the purpose of clearing floats in CSS?***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2161,114 +2325,6 @@ Also, using margin will not affect your element\'s dimensions whereas padding wi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain new features in CSS3?***
-
-**1. CSS3 Selectors**
- * Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value.
-```css
-E[attr^=val]
-/* Example */
-a[href^='http://sales.']{color: teal;}
-```
- * Matches any element E whose attribute attr ends in val. In other words, the val matches the end of the attribute value.
-```css
-E[attr$=val]
-/* Example */
-a[href$='.jsp']{color: purple;}
-```
- * Matches any element E whose attribute attr matches val anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word.
-```css
-E[attr*=val]  
-/* Example */
-img[src*='artwork']{
-        border-color: #C3B087 #FFF #FFF #C3B087;
-}
-```
-**2. Pseudo-classes**  
-CSS2 supports user interaction pseudo-classes, namely `:link`, `:visited`, `:hover`, `:active`, and `:focus`.  
-A few more pseudo-class selectors were added in CSS3. One is the `:root` selector, which allows designers to point to the root element of a document.
-
-```css
-  :root{overflow:auto;}
-```
-As a complement to the `:first-child` selector, the `:last-child` was added. With it one can select the last element named of a parent element.
-
-```css
-  div.article > p:last-child{font-style: italic;}
-```
-A new user interaction pseudo-class selector was added, the `:target` selector.
-
-```html
-<style>
-  span.notice:target { font-size: 2em; font-style: bold; }
-</style>
-
-<a href='#section2'>Section 2</a>
-<p id='section2'>...</p>
-```
-
-The negation pseudo-class selector, `:not` can be coupled with almost any other selector that has been implemented.
-
-```css
-  img:not([border]){ border: 1; }
-```
-
-**3. CSS3 Colors**  
-The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: **HSL**, **HSLA**, **RGBA** and **Opacity**.
-```css
-div.halfopaque {
-  background-color: rgb(0, 0, 0);
-  opacity: 0.5;
-  color: #000000;
-}
-div.halfalpha {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #000000;
-}
-``` 
-**4. Rounded Corners: border-radius**
-```css
-border-radius: 25px;
-```
-**5 Drop Shadows**
-```css
-box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
-```
-**6. Text Shadow**  
-```css
-text-shadow: topOffset leftOffset blurRadius color;
-```
-**7. Linear Gradients**
-```css
-Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
-/* Example */   
-#grad {
-  background: linear-gradient(to right, red , yellow);
-}
-```
-**8. Radial Gradients**    
-```css
-Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
-/* Example */      
-#grad {
-  background: radial-gradient(red, yellow, green);
-}//Default       
-#grad {
-  background: radial-gradient(circle, red, yellow, green);
-}//Circle
-```
-**9. Multiple Background Images**   
-In CSS3, there’s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
-```css
-background-image:
-url(firstImage.jpg),
-url(secondImage.gif),
-url(thirdImage.png);
-```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What are gradients in CSS?***
 
 CSS gradients are represented by the `<gradient>` data type, a special type of `<image>` made of a progressive transition between two or more colors. There are three types of gradients: 
@@ -2403,6 +2459,25 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
 
 ## Q. ***What clearfix methods do you know?***
 ## Q. ***What the code fragment has the greater CSS specificity?*** 
+## Q. ***Explain the three main ways to apply CSS styles to a web page?***
+## Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
+## Q. ***Explain the usage of "table-layout" property***
+## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+## Q. ***Does margin-top or margin-bottom have an effect on inline elements***
+## Q. ***Can you name the four types of @media properties?***
+## Q. ***How does Calc() work?***
+## Q. ***What do CSS Custom properties variables mean?***
+## Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
+## Q. ***What is the use of ruleset?***
+## Q. ***How does CSS work under the hood?***
+## Q. ***What is file splitting? When is it used?***
+## Q. ***What are Vendor-Prefixes?***
+## Q. ***What is the property that is used for controlling image-scroll?***
+## Q. ***What is the overflow property in CSS used for?***
+## Q. ***How can we add icons to the web page?***
+## Q. ***What are the differences between relative and absolute in CSS?***
+## Q. ***What is word-wrapping in CSS3?***
+
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
