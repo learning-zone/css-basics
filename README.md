@@ -13,6 +13,23 @@
 
 ## Q. ***What is CSS?***
 
+**CSS** stands for **Cascading Style Sheets**. CSS is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes. CSS was intended to allow web professionals to separate the content and structure of a website\'s code from the visual design.
+
+CSS can be used for document text styling — for example changing the color and size of headings and links. It can be used to create layout — for example turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.
+
+**CSS Syntax**
+
+```css
+h1 {
+  color: red;
+  font-size: 5em;
+}
+
+p {
+  color: black;
+}
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
