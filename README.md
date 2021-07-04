@@ -2328,6 +2328,7 @@ A class selector beats any number of element selectors.
 .introduction {} //wins
 html body div div h2 p {}
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -2783,25 +2784,23 @@ Live demo: [CSS Clearfix](https://learning-zone.github.io/css-interview-question
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What the code fragment has the greater CSS specificity?*** 
-## Q. ***Explain the three main ways to apply CSS styles to a web page?***
-## Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
-## Q. ***Explain the usage of "table-layout" property***
-## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
-## Q. ***Does margin-top or margin-bottom have an effect on inline elements***
-## Q. ***Can you name the four types of @media properties?***
-## Q. ***How does Calc() work?***
-## Q. ***What do CSS Custom properties variables mean?***
-## Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
-## Q. ***How does CSS work under the hood?***
-## Q. ***What is file splitting? When is it used?***
-## Q. ***What are Vendor-Prefixes?***
-## Q. ***What is the property that is used for controlling image-scroll?***
-## Q. ***What is the overflow property in CSS used for?***
-## Q. ***How can we add icons to the web page?***
-## Q. ***What are the differences between relative and absolute in CSS?***
-## Q. ***What is word-wrapping in CSS3?***
-
+#### Q. ***Explain the three main ways to apply CSS styles to a web page?***
+#### Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
+#### Q. ***Explain the usage of "table-layout" property***
+#### Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+#### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
+#### Q. ***Can you name the four types of @media properties?***
+#### Q. ***How does Calc() work?***
+#### Q. ***What do CSS Custom properties variables mean?***
+#### Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
+#### Q. ***How does CSS work under the hood?***
+#### Q. ***What is file splitting? When is it used?***
+#### Q. ***What are Vendor-Prefixes?***
+#### Q. ***What is the property that is used for controlling image-scroll?***
+#### Q. ***What is the overflow property in CSS used for?***
+#### Q. ***How can we add icons to the web page?***
+#### Q. ***What are the differences between relative and absolute in CSS?***
+#### Q. ***What is word-wrapping in CSS3?***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
