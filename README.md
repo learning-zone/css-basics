@@ -2732,7 +2732,6 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
 ## Q. ***How does Calc() work?***
 ## Q. ***What do CSS Custom properties variables mean?***
 ## Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
-## Q. ***What is the use of ruleset?***
 ## Q. ***How does CSS work under the hood?***
 ## Q. ***What is file splitting? When is it used?***
 ## Q. ***What are Vendor-Prefixes?***
