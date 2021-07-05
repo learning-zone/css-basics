@@ -2856,7 +2856,156 @@ The link element in the example has three attributes. The first, `rel`, tells th
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
+## Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
+
+The Document Object Model (DOM) is a programming interface for HTML and XML(Extensible markup language) documents. It defines the logical structure of documents and the way a document is accessed and manipulated. This document enables Javascript to access and manipulate the elements and styles of a website. The model is built in a tree structure of objects and defines:
+
+* The HTML elements as objects
+* The properties of all HTML elements
+* The methods to access all HTML elements
+* The events for all HTML elements
+
+<p align="center">
+  <img src="assets/images/DOM.png" alt="Document Object Model" width="500px;" />
+</p>
+
+### **DOM Document**
+
+The DOM Document is the owner of all other objects in your webpage. That means if you want to access any object on your webpage you always have to start with the document. It also contains many important properties and methods that enable us to access and modify our website.
+
+### **Finding HTML Elements**
+
+|Methods           |Description |
+|------------------|-----------------|
+|getElementById()  |This method is used to get a single element by its id.|
+|getElementsByClassName() |This method returns an array of elements.      |
+|getElementsByTagName()   |This method is used to get a single element by its tag name|
+|querySelector()          |This method returns the first element that matches a specified CSS selector. It can get elements by id, class, tag and all other valid CSS selectors. |
+|querySelectorAll()       |This method is completely the same as the querySelector() except that it returns all elements that fit the CSS Selector.|
+
+### **Changing HTML Elements**
+
+The innerHTML property can be used to change the content of an HTML element. In this example we get the element with an id of header and set the inner content to "Hello World!".
+
+```js
+// Example: Using text
+document.getElementById("#header").innerHTML = "Hello World!";
+
+// Example: Using text with tag
+document.getElementsByTagName("div").innerHTML = "<h1>Hello World!</h1>"
+```
+
+**Changing a value of an attribute**
+
+We can also change the value of an attribute using the DOM.
+
+```js
+document.getElementsByTag("img").src = "image.jpg";
+```
+
+**Changing the style**
+
+To change the style of an HTML element we need to change the style property of our elements. The CSS properties need to be written in camelcase instead of the normal css property name.
+
+```js
+document.getElementsByTag("h1").style.borderBottom = "solid 3px #000";
+```
+
+### **Adding and deleting elements**
+
+**Adding elements**
+
+create a div element using the `createElement()` method which takes a tagname as a parameter and saves it into a variable. After that we just need to give it some content and then insert it into our DOM document.
+
+```js
+var div = document.createElement("div");
+
+var newContent = document.createTextNode("Hello World!"); 
+div.appendChild(newContent);
+document.body.insertBefore(div, currentDiv);
+```
+
+Here we create content using the createTextNode() method which takes a String as a parameter and then we insert our new div element before a div that already exists in our document.
+
+**Deleting elements**
+
+Here we get an element and delete it using the removeChild() method.
+
+```js
+var elem = document.querySelector('#header');
+elem.parentNode.removeChild(elem);
+```
+
+**Replace elements**
+
+```js
+var div = document.querySelector('#div');
+var newDiv = document.createElement('div');
+
+newDiv.innerHTML = "Hello World2";
+div.parentNode.replaceChild(newDiv, div);
+```
+
+Here we replace an element using the `replaceChild()` method. The first argument is the new element and the second argument is the element which we want to replace.
+
+### **Writing directly into the HTML output stream**
+
+We can also write HTML expressions and JavaScript directly into the HTML output stream using the write() method. The write() method can also take multiple arguments that will be appended to the document in order of their occurrence.
+
+```js
+// HTML Content
+document.write("<h1>Hello World!</h1><p>This is a paragraph!</p>");
+
+// date object
+document.write(Date());
+```
+
+### **Event Handlers**
+
+The HTML DOM also allows Javascript to react to HTML events. for example, mouse click, page load, mouse move, input field change etc.
+
+**Assign Events**
+
+You can define events directly in your js code. Here is an example of an onclick event:
+
+```js
+document.getElementById("btn").onclick = changeText();
+```
+
+**Assign Events Listeners**
+
+Here we just assigned a clickevent that calls the runEvent method when our btn element is clicked.
+
+```js
+document.getElementById("btn").addEventListener('click', runEvent);
+```
+
+### **Node Relationships**
+
+The nodes in the DOM Document have a hierarchical relationship to each other. This means that the nodes are structured like a tree. We use the terms parent, sibling and child to describe the relationship between nodes.
+
+The top node is called the root and is the only node that has no parent. The root in a normal HTML document is the `<html/>` tag because it has no parent and is the top tag of the document.
+
+**Navigating Between Nodes**
+
+We can navigate between nodes using these properties:
+
+* parentNode
+* childNodes
+* firstChild
+* lastChild
+* nextSibling
+
+**Example**
+
+```js
+var parent = document.getElementById("heading").parentNode
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***Explain the usage of "table-layout" property***
 #### Q. ***How do you specify units in the CSS? What are the different ways to do it?***
 #### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
