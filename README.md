@@ -2786,7 +2786,7 @@ Live demo: [CSS Clearfix](https://learning-zone.github.io/css-interview-question
 
 ## Q. ***What are the possible ways to apply CSS styles to a web page?***
 
-CSS can be applied to HTML or XHTML using three methods: Inline, internal, and external.
+There are three ways to apply CSS to HTML: Inline, internal, and external.
 
 ### **1. Inline CSS**
 
