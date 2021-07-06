@@ -3029,10 +3029,12 @@ table-layout: auto|fixed|initial|inherit;
         table-layout: fixed;       
         border-collapse: collapse;
       } 
+
       th, td {
         padding: 8px;
         border: 1px solid #dee2e6;
       }
+
       th {
         height: 40px;
         text-align: left;
@@ -3083,7 +3085,86 @@ table-layout: auto|fixed|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+
+There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
+
+The length unit in CSS is of two types:
+
+* Absolute length units.
+* Relative length units.
+
+### **Absolute length units**
+
+The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
+
+|Unit	        |Name	                |Equivalent to        |
+|-------------|---------------------|---------------------|
+|cm	          |Centimeters	        |1cm = 38px = 25/64in|
+|mm	          |Millimeters	        |1mm = 1/10th of 1cm|
+|Q	          |Quarter-millimeters	|1Q = 1/40th of 1cm|
+|in	          |Inches	              |1in = 2.54cm = 96px|
+|pc	          |Picas	              |1pc = 1/6th of 1in|
+|pt	          |Points	              |1pt = 1/72th of 1in|
+|px	          |Pixels	              |1px = 1/96th of 1in|
+
+### **Relative length units**
+
+Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
+
+|Unit	           |Relative to                                   |
+|----------------|----------------------------------------------|
+|em	             |Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.|
+|ex	             |x-height of the element's font.|
+|ch	             |The advance measure (width) of the glyph "0" of the element's font.|
+|rem	           |Font size of the root element.|
+|lh	             |Line height of the element.|
+|vw	             |1% of the viewport's width.|
+|vh	             |1% of the viewport's height.|
+|vmin	           |1% of the viewport's smaller dimension.|
+|vmax	           |1% of the viewport's larger dimension.|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>CSS Units</title>
+    <style>
+      .wrapper {
+        font-size: 1em;
+      }
+      
+      .px {
+        width: 200px;
+      }
+      
+      .vw {
+        width: 10vw;
+      }
+      
+      .em {
+        width: 10em;
+      }
+    </style>
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="box px">I am 200px wide</div>
+    <div class="box vw">I am 10vw wide</div>
+    <div class="box em">I am 10em wide</div>
+  </div>
+</body>
+</html>
+```
+
+**Live demo**: [CSS Units](https://learning-zone.github.io/css-interview-questions/assets/files/css-units.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
 #### Q. ***Can you name the four types of @media properties?***
 #### Q. ***How does Calc() work?***
