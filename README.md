@@ -781,7 +781,7 @@ float: unset;
 | 04. |initial |Sets this property to its default value.    	|
 | 05. |inherit |Inherits this property from its parent element. |
 
-Example:
+**Example**:
 
 ```css
 section {
@@ -828,7 +828,7 @@ div {
 
 The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images. It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
 
-Example:
+**Example**:
 
 ```css
 p {
@@ -966,7 +966,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 **a) Block Elements**  
 The block elements always start on a new line. They will also take space of an entire row or width. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
 
-Example:
+**Example**:
 
 ```html
 <p>
@@ -987,7 +987,7 @@ Inline elements don\'t start on a new line, they appear on the same line as the 
 
 When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
 
-Example:
+**Example**:
 
 ```html
 <a href="#">Link</a>
@@ -1262,7 +1262,7 @@ The box-sizing CSS property sets how the total width and height of an element is
 * **border-box**: Width and height values apply to the content, padding, and border.
 * **inherit**: inherits the box sizing of the parent element.
 
-Example:
+**Example**:
 
 ```css
 box-sizing: content-box;
@@ -1332,7 +1332,7 @@ Pre-processors extend CSS with variables, operators, interpolations, functions, 
 
 **1. Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
 
-Example
+**Example**
 
 ```css
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
@@ -1351,7 +1351,8 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
 
 **2. Normalizing**: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
 
-Example
+**Example**
+
 ```css
 /* 
   Correct the font size and margin on `h1` elements within `section`  
@@ -1376,7 +1377,7 @@ The clear property specifies what elements can float beside the cleared element 
 | 04. |clear: both     |No floating elements allowed on either the left or the right side|
 | 05. |clear: inherit  |The element inherits the clear value of its parent|
 
-Example
+**Example**
 ```css
 div {
   clear: left;
@@ -1760,7 +1761,7 @@ Media queries are useful when you want to modify your site or app depending on a
 | 35.  |width	           | The viewport width |
 
 
-Example:
+**Example**:
 
 ```css
 @media print {
@@ -1866,7 +1867,7 @@ making it easier to reason about the layout of elements on the page.
 ## Q. ***List display property in CSS?***
 
 The display property specifies the display behavior (the type of rendering box) of an element.  
-Example:
+**Example**:
 
 ```css
 p.ex1 {display: none;}
@@ -2358,7 +2359,8 @@ div {
 
 The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
 
-Example:
+**Example**:
+
 ```css
 img {
   -webkit-filter: brightness(200%); /* Safari 6.0 - 9.0 */
