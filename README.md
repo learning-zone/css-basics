@@ -2925,11 +2925,11 @@ div.appendChild(newContent);
 document.body.insertBefore(div, currentDiv);
 ```
 
-Here we create content using the createTextNode() method which takes a String as a parameter and then we insert our new div element before a div that already exists in our document.
+Here we create content using the `createTextNode()` method which takes a String as a parameter and then we insert our new div element before a div that already exists in our document.
 
 **Deleting elements**
 
-Here we get an element and delete it using the removeChild() method.
+Here we get an element and delete it using the `removeChild()` method.
 
 ```js
 var elem = document.querySelector('#header');
@@ -2950,7 +2950,7 @@ Here we replace an element using the `replaceChild()` method. The first argument
 
 ### **Writing directly into the HTML output stream**
 
-We can also write HTML expressions and JavaScript directly into the HTML output stream using the write() method. The write() method can also take multiple arguments that will be appended to the document in order of their occurrence.
+We can also write HTML expressions and JavaScript directly into the HTML output stream using the `write()` method. The `write()` method can also take multiple arguments that will be appended to the document in order of their occurrence.
 
 ```js
 // HTML Content
