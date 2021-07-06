@@ -606,6 +606,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
         background-color: #2196f3;
         padding: 5px;
     }
+
     .col-item {
         background-color: rgba(255, 255, 255, 0.8);
         border: 1px solid rgba(0, 0, 0, 0.8);
@@ -620,6 +621,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
         border-radius: 5px;
         background-color: #fff4e6;
     }
+
     .wrapper > div {
         border: 2px solid #ffa94d;
         border-radius: 5px;
@@ -627,11 +629,13 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
         padding: 1em;
         color: #d9480f;
     }
+
     .wrapper {
         display: flex;
         width: 500px;
         flex-wrap: wrap;
     }
+
     .wrapper > div {
         flex: 1 1 150px;
     }
@@ -2748,9 +2752,11 @@ The clearfix property allows a container to wrap its floated children. Without a
       border: 3px solid #4CAF50;
       padding: 5px;
     }
+
     .clearfix {
       overflow: auto;
     }
+    
     .img {
       float: right;
     }
