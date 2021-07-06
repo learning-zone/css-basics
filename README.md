@@ -418,7 +418,7 @@ a:hover {
 </html>
 ```
 
-Live demo: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
+**Live demo**: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -673,7 +673,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 </html>
 ```
 
-Live demo: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
+**Live demo**: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -944,7 +944,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 </html>
 ```
 
-Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
+**Live demo**: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -966,7 +966,7 @@ Live demo: [Z-Index](https://learning-zone.github.io/css-interview-questions/ass
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-Live demo: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
+**Live demo**: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1028,7 +1028,7 @@ button {
 <input type="text" /> <button>Submit</button>
 ```
 
-Live demo: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
+**Live demo**: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1092,7 +1092,7 @@ h3::before {
 </html>
 ```
 
-Live demo: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
+**Live demo**: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1207,7 +1207,7 @@ padding: 25px 50px 75px;
   <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
 </p>
 
-Live demo: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+**Live demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1467,7 +1467,7 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
 </html>
 ```
 
-Live demo: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
+**Live demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2210,7 +2210,7 @@ A mobile-first strategy has 2 main advantages:
 </html>
 ```
 
-Live demo: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
+**Live demo**: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2359,7 +2359,7 @@ div {
 }
 ```
 
-Live demo: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
+**Live demo**: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2778,7 +2778,7 @@ The clearfix property allows a container to wrap its floated children. Without a
 </html>
 ```
 
-Live demo: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
+**Live demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3006,7 +3006,92 @@ var parent = document.getElementById("heading").parentNode
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***Explain the usage of "table-layout" property***
+## Q. ***Explain the usage of "table-layout" property?***
+
+The **table-layout** CSS property sets the algorithm used to lay out `<table>` cells, rows, and columns. 
+
+**Syntax**
+
+```css
+table-layout: auto|fixed|initial|inherit;
+```
+
+### **Property Values**
+
+|Value          |Description          |
+|---------------|---------------------|
+|auto:          |It is used to set the automatic table layout on the browser. This property set the column width by unbreakable content in the cells.|
+|fixed:         |It is used to set a fixed table layout. The table and column widths are set by the widths of table and col or by the width of the first row of cells. Cells in other rows do not affect column widths. If no widths are present on the first row, the column widths are divided equally across the table according to content of table.|
+|initial:       |It is used to set its default value.|
+|inherit:       |It is used to inherit the property from its parent.|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>table-layout Property</title>
+    <style>
+      table {
+        width: 100%; 
+        table-layout: fixed;       
+        border-collapse: collapse;
+      } 
+      th, td {
+        padding: 8px;
+        border: 1px solid #dee2e6;
+      }
+      th {
+        height: 40px;
+        text-align: left;
+      }
+    </style>
+  </head>
+<body>
+<h2>table-layout Property</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>clarkkent@mail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td>johncarter@mail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>peterparker@mail.com</td>
+        </tr>            
+    </tbody>
+</table>
+</body>
+</html>
+```
+
+**Live demo**: [Table-layout Property](https://learning-zone.github.io/css-interview-questions/assets/files/table-layout.html)
+
+*Note: The main benefit of `table-layout: fixed;` is that the table renders much faster. On large tables, users will not see any part of the table until the browser has rendered the whole table. So, if you use `table-layout: fixed`, users will see the top of the table while the browser loads and renders rest of the table. This gives the impression that the page loads a lot quicker!*
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***How do you specify units in the CSS? What are the different ways to do it?***
 #### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
 #### Q. ***Can you name the four types of @media properties?***
