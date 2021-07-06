@@ -599,17 +599,6 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
     <title>Grid vs Flexbox Layout</title>
   </head>
   <style>
-    /**
-      1.Flexbox was designed for layout in one dimension - either a row or a column. 
-        Grid was designed for two-dimensional layout - rows, and columns at the same time. 
-    
-      2.CSS Grid’s approach is layout-first while Flexbox’ approach is content-first. 
-
-      3.Flexbox layout is most appropriate to small-scale layouts, while the Grid layout 
-        is intended for larger scale layouts which aren’t linear in their design.
-
-    **/
-    
     /* Grid layout */
     .row {
         display: grid;
@@ -697,7 +686,7 @@ The BEM (**Block Element Modifier**) methodology is a naming convention for CSS 
 }
 ```
 
-Example
+**Example**
 
 ```css
 .button {
