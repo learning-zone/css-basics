@@ -3172,6 +3172,39 @@ Relative length units specify a length relative to another length property. Rela
 </div>
 
 #### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
+
+Top and bottom margins do not affect inline elements because inline elements flow with content on the page. You can set left and right margins/padding on an inline element but not top or bottom because it would disrupt the flow of content. You can set margins on block (or inline-block but it will only look right if you set the vertical align right) because block level elements disrupt the flow of content.
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Separator</title>
+  </head>
+  <style>
+    .separator {
+      border: 1px solid #333;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div>
+        <span>Hello</span>
+        <span class="separator"></span>
+        <span>World</span>
+    </div>
+  </body>
+</html>
+```
+
+**Live Demo**: [Inline Elements](https://learning-zone.github.io/css-interview-questions/assets/files/separator.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***Can you name the four types of @media properties?***
 #### Q. ***How does Calc() work?***
 #### Q. ***What do CSS Custom properties variables mean?***
