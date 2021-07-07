@@ -3234,6 +3234,8 @@ The `calc()` function can be used to perform addition, subtraction, multiplicati
 
 ## Q. ***What do CSS Custom properties variables mean?***
 
+Custom properties (sometimes referred to as **CSS variables** or **cascading variables**) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black;`) and are accessed using the `var()` function (e.g., `color: var(--main-color);`).
+
 Property names that are prefixed with `--`, like `--example-name`, represent custom properties that contain a value that can be used in other declarations using the `var()` function.
 
 **Syntax**
