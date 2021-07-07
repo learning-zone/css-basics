@@ -418,7 +418,7 @@ a:hover {
 </html>
 ```
 
-**Live demo**: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
+**Live Demo**: [CSS Selectors](https://learning-zone.github.io/css-interview-questions/assets/files/selector.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -666,7 +666,7 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 </html>
 ```
 
-**Live demo**: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
+**Live Demo**: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -937,7 +937,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 </html>
 ```
 
-**Live demo**: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
+**Live Demo**: [Z-Index](https://learning-zone.github.io/css-interview-questions/assets/files/z-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -959,7 +959,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **sticky** - Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as `relative` positioned until it crosses a specified threshold, at which point it is treated as `fixed` positioned.
 
-**Live demo**: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
+**Live Demo**: [CSS Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/position-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1021,7 +1021,7 @@ button {
 <input type="text" /> <button>Submit</button>
 ```
 
-**Live demo**: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
+**Live Demo**: [Display Property](https://learning-zone.github.io/css-interview-questions/assets/files/display-properties.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1085,7 +1085,7 @@ h3::before {
 </html>
 ```
 
-**Live demo**: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
+**Live Demo**: [CSS Counters](https://learning-zone.github.io/css-interview-questions/assets/files/counters.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1200,7 +1200,7 @@ padding: 25px 50px 75px;
   <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
 </p>
 
-**Live demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+**Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1461,7 +1461,7 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
 </html>
 ```
 
-**Live demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
+**Live Demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2204,7 +2204,7 @@ A mobile-first strategy has 2 main advantages:
 </html>
 ```
 
-**Live demo**: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
+**Live Demo**: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2353,7 +2353,7 @@ div {
 }
 ```
 
-**Live demo**: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
+**Live Demo**: [CSS Transitions](https://learning-zone.github.io/css-interview-questions/assets/files/transitions-index.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2775,7 +2775,7 @@ The clearfix property allows a container to wrap its floated children. Without a
 </html>
 ```
 
-**Live demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
+**Live Demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3083,7 +3083,7 @@ table-layout: auto|fixed|initial|inherit;
 </html>
 ```
 
-**Live demo**: [Table-layout Property](https://learning-zone.github.io/css-interview-questions/assets/files/table-layout.html)
+**Live Demo**: [Table-layout Property](https://learning-zone.github.io/css-interview-questions/assets/files/table-layout.html)
 
 *Note: The main benefit of `table-layout: fixed;` is that the table renders much faster. On large tables, users will not see any part of the table until the browser has rendered the whole table. So, if you use `table-layout: fixed`, users will see the top of the table while the browser loads and renders rest of the table. This gives the impression that the page loads a lot quicker!*
 
@@ -3165,7 +3165,7 @@ Relative length units specify a length relative to another length property. Rela
 </html>
 ```
 
-**Live demo**: [CSS Units](https://learning-zone.github.io/css-interview-questions/assets/files/css-units.html)
+**Live Demo**: [CSS Units](https://learning-zone.github.io/css-interview-questions/assets/files/css-units.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
