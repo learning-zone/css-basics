@@ -3232,7 +3232,60 @@ The `calc()` function can be used to perform addition, subtraction, multiplicati
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What do CSS Custom properties variables mean?***
+## Q. ***What do CSS Custom properties variables mean?***
+
+Property names that are prefixed with `--`, like `--example-name`, represent custom properties that contain a value that can be used in other declarations using the `var()` function.
+
+**Syntax**
+
+```css
+--somekeyword: left;
+--somecolor: #0000ff;
+--somecomplexvalue: 3px 6px rgb(20, 32, 54);
+```
+
+**Example**
+
+```css
+:root {
+  --first-color: #16f;
+  --second-color: #ff7;
+}
+
+#firstParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+#secondParagraph {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+#container {
+  --first-color: #290;
+}
+
+#thirdParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+```
+
+```html
+<p id="firstParagraph">This paragraph should have a blue background and yellow text.</p>
+<p id="secondParagraph">This paragraph should have a yellow background and blue text.</p>
+<div id="container">
+  <p id="thirdParagraph">This paragraph should have a green background and yellow text.</p>
+</div>
+```
+
+**Live Demo**: [Custom Properties Variables](https://learning-zone.github.io/css-interview-questions/assets/files/custom-properties.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
 #### Q. ***How does CSS work under the hood?***
 #### Q. ***What is file splitting? When is it used?***
