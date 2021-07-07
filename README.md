@@ -3205,8 +3205,33 @@ Top and bottom margins do not affect inline elements because inline elements flo
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***Can you name the four types of @media properties?***
-#### Q. ***How does Calc() work?***
+## Q. ***How does Calc() work?***
+
+The `calc()` function can be used to perform addition, subtraction, multiplication, and division calculations with numeric property values. Specifically, it can be used with `<length>`, `<frequency>`, `<angle>`, `<time>`, `<number>`, or `<integer>` data types.
+
+**Example**
+
+```css
+/* Example - 1 */
+.main-content {
+  width: calc(100vh - 10px); /* Subtract 10px from 100vh */
+}
+
+/* Example - 2 */
+.container {
+  padding: calc(1vw + 1em);
+  width: calc(var(--variable-width) + 200px);
+  transform: rotate( calc(1turn + 28deg) );
+  background: hsl(100, calc(3 * 20%), 40%);
+  font-size: calc(50vw / 3);
+  border-radius: 15px calc(15px / 3) 4px 2px;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What do CSS Custom properties variables mean?***
 #### Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
 #### Q. ***How does CSS work under the hood?***
