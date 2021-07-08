@@ -3431,7 +3431,35 @@ CSS frameworks such as Foundation and Bootstrap use this approach. Both become q
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What are Vendor-Prefixes?***
+## Q. ***What are Vendor-Prefixes?***
+
+CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers.
+
+**Example**: `transition` property
+
+```css
+.myClass {
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear;
+}
+```
+
+### **CSS prefixes**
+
+The major browsers use the following prefixes:
+
+* `-webkit-` (Chrome, Safari, newer versions of Opera, almost all iOS browsers including Firefox for iOS; basically, any WebKit based browser)
+* `-moz-` (Firefox)
+* `-o-` (old pre-WebKit versions of Opera)
+* `-ms-` (Internet Explorer and Microsoft Edge)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What is the property that is used for controlling image-scroll?***
 #### Q. ***What is the overflow property in CSS used for?***
 #### Q. ***How can we add icons to the web page?***
