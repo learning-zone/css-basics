@@ -3288,7 +3288,57 @@ Property names that are prefixed with `--`, like `--example-name`, represent cus
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
+## Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
+
+SASS variables are replaced with their values as the preprocessor produces its CSS output long before the browser interprets the code, while CSS custom properties are evaluated by the browser at runtime.
+
+**Example**: Preprocessor Variable
+
+```css
+$brandColor: #F06D06;
+
+.main-header {
+  color: $brandColor;
+}
+.main-footer {
+  background-color: $brandColor;
+}
+```
+
+The above code would do nothing in a browser. The browser wouldn\'t understand the declarations and toss them out. Preprocessors need to compile into CSS to be used. This code would compile to:
+
+```css
+.main-header {
+  color: #F06D06;
+}
+.main-footer {
+  background-color: #F06D06;
+}
+```
+
+This is now valid CSS. The variable was part of the preprocessor language, not CSS itself. Once the code compiles, the variables are gone.
+
+**Example**: CSS Custom Property
+
+The native CSS has started supporting CSS variables, or "CSS Custom Properties". It allows you to work with variables directly in CSS. There is no compiling.
+
+```css
+:root {
+  --main-color: #F06D06;
+}
+
+.main-header {
+  color: var(--main-color);
+}
+.main-footer {
+  background-color: var(--main-color);
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***How does CSS work under the hood?***
 #### Q. ***What is file splitting? When is it used?***
 #### Q. ***What are Vendor-Prefixes?***
