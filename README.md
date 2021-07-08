@@ -3412,7 +3412,25 @@ Render tree construction follows the following order:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is file splitting? When is it used?***
+## Q. ***What is file splitting? When is it used?***
+
+A monolithic file is fine for solo developers or very small projects. For large projects—sites with multiple layouts and content types, or multiple brands under the same design umbrella—it\'s smarter to use a modular approach and split your CSS across multiple files.
+
+* **reset.css**: reset and normalization styles; minimal color, border, or font-related declarations
+* **typography.css**: font faces, weights, line heights, sizes, and styles for headings and body text
+* **layouts.css**: styles that manage page layouts and segments, including grids
+* **forms.css**: styles for form controls and labels
+* **lists.css**: list-specific styles
+* **tables.css**: table-specific styles
+* **carousel.css**: styles required for carousel components
+* **accordion.css**: styles for accordion components
+
+CSS frameworks such as Foundation and Bootstrap use this approach. Both become quite granular with separate files for progress bars, range inputs, close buttons, and tooltips. This allows developers to include only the components that they need for a project.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What are Vendor-Prefixes?***
 #### Q. ***What is the property that is used for controlling image-scroll?***
 #### Q. ***What is the overflow property in CSS used for?***
