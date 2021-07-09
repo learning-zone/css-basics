@@ -3633,7 +3633,7 @@ An element with `position: absolute;` will cause it to adjust its position with 
       height: 200px;
       border: 3px solid #2321ad;
     }  
-    
+
     div.absolute {
       position: absolute;
       top: 80px;
@@ -3647,8 +3647,8 @@ An element with `position: absolute;` will cause it to adjust its position with 
 <body>
     <h2>position: absolute;</h2>
 
-    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
-      positioned relative to the viewport, like fixed):</p>
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor 
+      (instead of positioned relative to the viewport, like fixed):</p>
 
     <div class="relative">This div element has position: relative;
         <div class="absolute">This div element has position: absolute;</div>
