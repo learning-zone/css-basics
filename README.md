@@ -3510,7 +3510,60 @@ background-attachment: scroll|fixed|local|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is the overflow property in CSS used for?***
+## Q. ***What is the overflow property in CSS used for?***
+
+The CSS overflow property specifies how to handle the content when it overflows its block level container.
+
+**Syntax**
+
+```css
+overflow: visible|hidden|scroll|auto|initial|inherit;
+```
+
+### **Property Values**
+
+|Value	   |Description	|
+|--------- |--------------------------------|
+|visible	 |The overflow is not clipped. It renders outside the element\'s box.                |	
+|hidden	   |The overflow is clipped, and the rest of the content will be invisible	            |
+|scroll	   |The overflow is clipped, but a scroll-bar is added to see the rest of the content	|
+|auto	     |If overflow is clipped, a scroll-bar should be added to see the rest of the content|	
+|initial	 |Sets this property to its default value. 	|
+|inherit	 |Inherits this property from its parent element. |
+|overflow-x|Specifies what to do with the left/right edges of the content if it overflows the element\'s content area|
+|overflow-y|Specifies what to do with the top/bottom edges of the content if it overflows the element\'s content area|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Overflow Property</title>
+    <style>
+      div {
+        background-color: #eee;
+        width: 200px;
+        height: 100px;
+        border: 1px dotted black;
+        overflow: scroll;
+        padding: 10px;
+      }
+    </style>
+  </head>
+<body>
+  <h2>CSS Overflow Property</h2>
+  <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box.</p>
+
+  <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</body>
+</html>
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***How can we add icons to the web page?***
 #### Q. ***What are the differences between relative and absolute in CSS?***
 #### Q. ***What is word-wrapping in CSS3?***
