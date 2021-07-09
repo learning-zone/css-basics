@@ -3553,9 +3553,14 @@ overflow: visible|hidden|scroll|auto|initial|inherit;
   </head>
 <body>
   <h2>CSS Overflow Property</h2>
-  <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box.</p>
+  <p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar
+     is added to scroll inside the box.
+  </p>
 
-  <div>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+  <div>You can use the overflow property when you want to have better control of 
+    the layout. The overflow property specifies what happens if content overflows 
+    an element's box.
+  </div>
 </body>
 </html>
 ```
