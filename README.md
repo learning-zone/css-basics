@@ -3460,7 +3460,56 @@ The major browsers use the following prefixes:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is the property that is used for controlling image-scroll?***
+## Q. ***What is the property that is used for controlling image-scroll?***
+
+The **background-attachment** property in CSS is used to specify the kind of attachment of the background image with respect to its container. It can be set to scroll or remain fixed. It can be applied to all HTML elements.
+
+**Syntax**
+
+```css
+background-attachment: scroll|fixed|local|initial|inherit;
+```
+
+### **Property Values**
+
+|Value	      |Description|
+|-------------|-------------------------------------------------------|
+|scroll	      |The background image will scroll with the page. This is default|
+|fixed	      |The background image will not scroll with the page|
+|local	      |The background image will scroll with the element\'s contents|
+|initial	    |Sets this property to its default value. Read about initial|
+|inherit	    |Inherits this property from its parent element. Read about inherit|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("../images/img_tree.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+<body>
+  <h1>The background-attachment Property</h1>
+
+  <p>The background-image is fixed. Try to scroll down the page.</p>
+    ...
+  <p>If you do not see any scrollbars, try to resize the browser window.</p>
+</body>
+</html>
+```
+
+**Live Demo**: [CSS background-attachment](https://learning-zone.github.io/css-interview-questions/assets/files/background-attachment.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What is the overflow property in CSS used for?***
 #### Q. ***How can we add icons to the web page?***
 #### Q. ***What are the differences between relative and absolute in CSS?***
