@@ -1525,28 +1525,6 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Describe clear Property in css?***
-
-The clear property specifies what elements can float beside the cleared element and on which side.
-
-|Sl.No| Properties     | Description  |
-|-----|----------------|--------------|
-| 01. |clear: none     |Allows floating elements on both sides. This is default|
-| 02. |clear: left     |No floating elements allowed on the left side|
-| 03. |clear: right    |No floating elements allowed on the right side|
-| 04. |clear: both     |No floating elements allowed on either the left or the right side|
-| 05. |clear: inherit  |The element inherits the clear value of its parent|
-
-**Example**
-```css
-div {
-  clear: left;
-}
-```
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain CSS Block Formatting Context?***
 
 Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
@@ -1618,6 +1596,30 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
 ```
 
 **Live Demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***Describe clear Property in css?***
+
+The clear property specifies what elements can float beside the cleared element and on which side.
+
+|Sl.No| Properties     | Description  |
+|-----|----------------|--------------|
+| 01. |clear: none     |Allows floating elements on both sides. This is default|
+| 02. |clear: left     |No floating elements allowed on the left side|
+| 03. |clear: right    |No floating elements allowed on the right side|
+| 04. |clear: both     |No floating elements allowed on either the left or the right side|
+| 05. |clear: inherit  |The element inherits the clear value of its parent|
+
+**Example**
+
+```css
+div {
+  clear: left;
+}
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
