@@ -144,6 +144,7 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
   </style>
   </head>
 <body>
+    <h2>Vertically Center the IMG in a DIV with CSS</h2>
     <!-- Alignment of undersized image -->
     <div class="outer-wrapper">
         <div class="frame">
