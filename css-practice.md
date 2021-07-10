@@ -192,7 +192,20 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
+## Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
+
+`[att$=val]` Represents an element with the att attribute whose value ends with the suffix “val”. If “val” is the empty string then the selector does not represent anything.
+
+```css
+a[href$=".zip" i]:after {
+  content: '↓'
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 #### Q. ***What are navigation bars in CSS?***
 #### Q. ***How to overrule underlining Hyperlinks?***
 #### Q. ***What happens if 100% width is used along with floats all across the page?***
