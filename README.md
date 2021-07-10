@@ -1452,79 +1452,6 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the float property and what float do?***
-
-The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
-
-**Syntax**
-
-```css
-/* Keyword values */
-float: left;
-float: right;
-float: none;
-float: inline-start;
-float: inline-end;
-
-/* Global values */
-float: inherit;
-float: initial;
-float: unset;
-```
-
-**Property Values**
-
-|Sl.No| Value  | Description| 
-|-----|--------|------------|
-| 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
-| 02. |left	   |The element floats to the left of its container	|
-| 03. |right	 |The element floats the right of its container	|
-| 04. |initial |Sets this property to its default value.    	|
-| 05. |inherit |Inherits this property from its parent element. |
-
-**Example**:
-
-```css
-section {
-  border: 1px solid blue;
-  width: 100%;
-  float: left;
-}
-
-div {
-  margin: 5px;
-  width: 50px;
-  height: 150px;
-}
-
-.left {
-  float: left;
-  background: pink;
-}
-
-.right {
-  float: right;
-  background: cyan;
-}
-```
-
-```html
-<section>
-  <div class="left">1</div>
-  <div class="left">2</div>
-  <div class="right">3</div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Morbi tristique sapien ac erat tincidunt, sit amet dignissim
-     lectus vulputate. Donec id iaculis velit. Aliquam vel
-     malesuada erat. Praesent non magna ac massa aliquet tincidunt
-     vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
-</section>
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain CSS Block Formatting Context?***
 
 Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
@@ -1596,6 +1523,79 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
 ```
 
 **Live Demo**: [CSS Block Formatting](https://learning-zone.github.io/css-interview-questions/assets/files/block-formatting-context.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is the float property and what float do?***
+
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+
+**Syntax**
+
+```css
+/* Keyword values */
+float: left;
+float: right;
+float: none;
+float: inline-start;
+float: inline-end;
+
+/* Global values */
+float: inherit;
+float: initial;
+float: unset;
+```
+
+**Property Values**
+
+|Sl.No| Value  | Description| 
+|-----|--------|------------|
+| 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
+| 02. |left	   |The element floats to the left of its container	|
+| 03. |right	 |The element floats the right of its container	|
+| 04. |initial |Sets this property to its default value.    	|
+| 05. |inherit |Inherits this property from its parent element. |
+
+**Example**:
+
+```css
+section {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}
+```
+
+```html
+<section>
+  <div class="left">1</div>
+  <div class="left">2</div>
+  <div class="right">3</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Morbi tristique sapien ac erat tincidunt, sit amet dignissim
+     lectus vulputate. Donec id iaculis velit. Aliquam vel
+     malesuada erat. Praesent non magna ac massa aliquet tincidunt
+     vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
+</section>
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
