@@ -3663,7 +3663,62 @@ An element with `position: absolute;` will cause it to adjust its position with 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is word-wrapping in CSS3?***
+## Q. ***What is word-wrapping in CSS?***
+
+The word-wrap property in CSS is used to break long word and wrap into the next line. It defines whether to break words when the content exceeds the boundaries of its container.
+
+**Syntax**
+
+```css
+word-wrap: normal|break-word|initial|inherit;
+```
+
+### **Property Values**
+
+|Value	      |Description                       |
+|-------------|----------------------------------|
+|normal	      |Break words only at allowed break points|
+|break-word	  |Allows unbreakable words to be broken|
+|initial	    |Sets this property to its default value. |
+|inherit	    |Inherits this property from its parent element.|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The word-wrap Property</title>
+    <style>
+        div {
+            width: 150px;
+            border: 1px solid #333;
+        }
+
+        div.a {
+            word-wrap: normal;
+        }
+
+        div.b {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>The word-wrap Property</h1>
+
+    <h2>word-wrap: normal (default):</h2>
+    <div class="a"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
+        break and wrap to the next line.</div>
+
+    <h2>word-wrap: break-word:</h2>
+    <div class="b"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
+        break and wrap to the next line.</div>
+</body>
+</html>
+```
+
+**Live Demo**: [The word-wrap Property](https://learning-zone.github.io/css-interview-questions/assets/files/word-wrap.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
