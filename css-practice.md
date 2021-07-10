@@ -161,7 +161,31 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***How to style every element which has an adjacent item right before it?***
+## Q. ***How to style every element which has an adjacent item right before it?***
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Combinator</title>
+    <style>
+        div + p {
+            background-color: yellow;
+        }
+    </style>
+  </head>
+<body>
+    <div>
+        <h2>My name is Donald</h2>
+        <p>I live in Duckburg.</p>
+    </div>
+
+    <p>My best friend is Mickey.</p>
+    <p>I will not be styled.</p>
+</body>
+</html>
+```
+
 #### Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
 #### Q. ***What are navigation bars in CSS?***
 #### Q. ***How to overrule underlining Hyperlinks?***
