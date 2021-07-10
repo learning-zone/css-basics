@@ -836,79 +836,6 @@ CSS sprites combine multiple images into one single larger image. It is a common
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the float property and what float do?***
-
-The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
-
-**Syntax**
-
-```css
-/* Keyword values */
-float: left;
-float: right;
-float: none;
-float: inline-start;
-float: inline-end;
-
-/* Global values */
-float: inherit;
-float: initial;
-float: unset;
-```
-
-**Property Values**
-
-|Sl.No| Value  | Description| 
-|-----|--------|------------|
-| 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
-| 02. |left	   |The element floats to the left of its container	|
-| 03. |right	 |The element floats the right of its container	|
-| 04. |initial |Sets this property to its default value.    	|
-| 05. |inherit |Inherits this property from its parent element. |
-
-**Example**:
-
-```css
-section {
-  border: 1px solid blue;
-  width: 100%;
-  float: left;
-}
-
-div {
-  margin: 5px;
-  width: 50px;
-  height: 150px;
-}
-
-.left {
-  float: left;
-  background: pink;
-}
-
-.right {
-  float: right;
-  background: cyan;
-}
-```
-
-```html
-<section>
-  <div class="left">1</div>
-  <div class="left">2</div>
-  <div class="right">3</div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-     Morbi tristique sapien ac erat tincidunt, sit amet dignissim
-     lectus vulputate. Donec id iaculis velit. Aliquam vel
-     malesuada erat. Praesent non magna ac massa aliquet tincidunt
-     vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
-</section>
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What is tweening in css?***
 
 The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images. It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
@@ -1520,6 +1447,79 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
 */
  h1 {  font-size: 2em;  margin: 0.67em 0;}
  ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is the float property and what float do?***
+
+The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
+
+**Syntax**
+
+```css
+/* Keyword values */
+float: left;
+float: right;
+float: none;
+float: inline-start;
+float: inline-end;
+
+/* Global values */
+float: inherit;
+float: initial;
+float: unset;
+```
+
+**Property Values**
+
+|Sl.No| Value  | Description| 
+|-----|--------|------------|
+| 01. |none	   |The element does not float, (will be displayed just where it occurs in the text).|	
+| 02. |left	   |The element floats to the left of its container	|
+| 03. |right	 |The element floats the right of its container	|
+| 04. |initial |Sets this property to its default value.    	|
+| 05. |inherit |Inherits this property from its parent element. |
+
+**Example**:
+
+```css
+section {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: left;
+  background: pink;
+}
+
+.right {
+  float: right;
+  background: cyan;
+}
+```
+
+```html
+<section>
+  <div class="left">1</div>
+  <div class="left">2</div>
+  <div class="right">3</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Morbi tristique sapien ac erat tincidunt, sit amet dignissim
+     lectus vulputate. Donec id iaculis velit. Aliquam vel
+     malesuada erat. Praesent non magna ac massa aliquet tincidunt
+     vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
+</section>
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
