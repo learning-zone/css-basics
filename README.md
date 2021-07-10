@@ -874,34 +874,6 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is DOM reflow?***
-
-Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
-
-**Reflow occurs when**
-
-  * insert, remove or update an element in the DOM
-  * modify content on the page, e.g. the text in an input box
-  * move a DOM element
-  * animate a DOM element
-  * take measurements of an element such as offsetHeight or getComputedStyle
-  * change a CSS style
-  * change the className of an element
-  * add or remove a stylesheet
-  * resize the window
-  * scroll
-
-**Minimizing browser reflow**  
-
-* Reduce unnecessary DOM depth. Changes at one level in the DOM tree can cause changes at every level of the tree - all the way up to the root, and all the way down into the children of the modified node. This leads to more time being spent performing reflow.
-* Minimize CSS rules, and remove unused CSS rules.
-* If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
-* Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What is the purpose of the `z-index` and how a stacking context is formed?***
 
 The `z-index` helps specify the stack order of positioned elements that may overlap one another. The `z-index` default value is zero, and can take on either a positive or negative number. An element with a higher `z-index` is always stacked above than a lower index.
@@ -3874,6 +3846,34 @@ A monolithic file is fine for solo developers or very small projects. For large 
 * **accordion.css**: styles for accordion components
 
 CSS frameworks such as Foundation and Bootstrap use this approach. Both become quite granular with separate files for progress bars, range inputs, close buttons, and tooltips. This allows developers to include only the components that they need for a project.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is DOM reflow?***
+
+Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
+
+**Reflow occurs when**
+
+  * insert, remove or update an element in the DOM
+  * modify content on the page, e.g. the text in an input box
+  * move a DOM element
+  * animate a DOM element
+  * take measurements of an element such as offsetHeight or getComputedStyle
+  * change a CSS style
+  * change the className of an element
+  * add or remove a stylesheet
+  * resize the window
+  * scroll
+
+**Minimizing browser reflow**  
+
+* Reduce unnecessary DOM depth. Changes at one level in the DOM tree can cause changes at every level of the tree - all the way up to the root, and all the way down into the children of the modified node. This leads to more time being spent performing reflow.
+* Minimize CSS rules, and remove unused CSS rules.
+* If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
+* Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
