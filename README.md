@@ -2057,34 +2057,6 @@ h1.technique-nine {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you serve your pages for feature-constrained browsers? What techniques do you use?***
-
-* **Graceful degradation**: The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
-* **Progressive enhancement**: The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
-* **[caniuse](https://caniuse.com/)**: to check for feature support.
-* **[Autoprefixer](https://autoprefixer.github.io/)**: for automatic vendor prefix insertion.
-* **Feature detection**: using [Modernizr](https://modernizr.com/).
-* **CSS Feature queries**: using [@support](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the different ways to visually hide content (and make it available only for screen readers)?***
-
-These techniques are related to accessibility (a11y).
-
-* `visibility: hidden`: However, the element is still in the flow of the page, and still takes up space.
-* `width: 0; height: 0`: Make the element not take up any space on the screen at all, resulting in not showing it.
-* `position: absolute; left: -99999px`: Position it outside of the screen.
-* `text-indent: -9999px`: This only works on text within the `block` elements.
-* **Metadata**: For example by using Schema.org, RDF, and JSON-LD.
-* **WAI-ARIA**: A W3C technical specification that specifies how to increase the accessibility of web pages.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What are media queries? How could you apply css rules specific to a media?***
 
 Media queries are useful when you want to modify your site or app depending on a device\'s general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
@@ -3827,6 +3799,34 @@ word-wrap: normal|break-word|initial|inherit;
 ```
 
 **Live Demo**: [The word-wrap Property](https://learning-zone.github.io/css-interview-questions/assets/files/word-wrap.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How do you serve your pages for feature-constrained browsers? What techniques do you use?***
+
+* **Graceful degradation**: The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
+* **Progressive enhancement**: The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
+* **[caniuse](https://caniuse.com/)**: to check for feature support.
+* **[Autoprefixer](https://autoprefixer.github.io/)**: for automatic vendor prefix insertion.
+* **Feature detection**: using [Modernizr](https://modernizr.com/).
+* **CSS Feature queries**: using [@support](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What are the different ways to visually hide content (and make it available only for screen readers)?***
+
+These techniques are related to accessibility (a11y).
+
+* `visibility: hidden`: However, the element is still in the flow of the page, and still takes up space.
+* `width: 0; height: 0`: Make the element not take up any space on the screen at all, resulting in not showing it.
+* `position: absolute; left: -99999px`: Position it outside of the screen.
+* `text-indent: -9999px`: This only works on text within the `block` elements.
+* **Metadata**: For example by using Schema.org, RDF, and JSON-LD.
+* **WAI-ARIA**: A W3C technical specification that specifies how to increase the accessibility of web pages.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
