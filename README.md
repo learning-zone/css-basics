@@ -1306,7 +1306,7 @@ The size of the box itself is calculated like this:
 </html>
 ```
 
-**Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+**Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
