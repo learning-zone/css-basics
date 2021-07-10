@@ -37,7 +37,7 @@
 </html>
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/circle.html)
+[Live Demo](https://learning-zone.github.io/css-interview-questions/assets/files/circle.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -47,19 +47,19 @@
 
 ```css
 .container {
-	width: 500px;
-	height: 500px;
-	background-color: red;
-	position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 ```
 
-[Live Example](https://learning-zone.github.io/css-interview-questions/center-div.html) 
+[Live Example](https://learning-zone.github.io/css-interview-questions/assets/files/center-div.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
