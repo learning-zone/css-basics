@@ -58,6 +58,78 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What are the possible ways to apply CSS styles to a web page?***
+
+There are three ways to apply CSS to HTML: Inline, internal, and external.
+
+### **1. Inline CSS**
+
+Inline CSS is specified directly in the opening tag of the element you want it to apply to. It is entered into the style attribute within HTML. This allows CSS properties on a "per tag" basis.
+
+**Example**
+
+```html
+<p style="font-weight:bold;">Bold Font</p>
+```
+
+This CSS type is not really recommended, as each HTML tag needs to be styled individually. However, inline CSS in HTML can be useful in some situations. For example, in cases where you don\'t have access to CSS files or need to apply styles for a single element only.
+
+### **2. Internal CSS**
+
+Internal or Embedded, styles are used for the whole page. Inside the head element, the style tags surround all of the styles for the page.
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Internal CSS Example</title>
+  <style>
+    p {
+        color: red;
+    }
+    
+    a {
+        color: blue;
+    }
+</style>
+...
+```
+
+This CSS style is an effective method of styling a single page. However, using this style for multiple pages is time-consuming as you need to put CSS rules to every page of your website.
+
+### **3. External CSS**
+
+In external CSS rules are stored in a separate file. To refer to that file from the HTML page, add the link element (and its closing element within XHTML) to the head element. This CSS type is a more efficient method, especially for styling a large website. By editing one **.css** file, you can change your entire site at once.
+
+**style.css**
+
+```css
+  p {
+      color: red;
+  }
+  
+  a {
+      color: blue;
+  }
+```
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+...
+```
+
+The link element in the example has three attributes. The first, `rel`, tells the browser the type of the target of the link. The second, `type`, tells the browser what type of stylesheet it is. And the third, `href`, tells the browser under which URL to find the stylesheet.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Explain new features in CSS3?***
 
 ### **1. CSS3 Selectors**
@@ -1847,6 +1919,66 @@ clear: none|left|right|both|inherit|inline-start|inline-end;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What is a clearfix in CSS?***
+
+A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
+
+The clearfix property allows a container to wrap its floated children. Without a clearfix, a container will not wrap around its floated children and will collapse, just as if its floated children had been positioned absolutely.
+
+<p align="center">
+  <img src="assets/images/clearfix.png" alt="CSS rule" width="800px;" />
+</p>
+
+**Syntax**
+
+```css
+.clearfix {
+  properties
+}
+```
+
+**Example**
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Clearfix property</title>
+  <style>
+    div {
+      border: 3px solid #4CAF50;
+      padding: 5px;
+    }
+
+    .clearfix {
+      overflow: auto;
+    }
+    
+    .img {
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="clearfix">
+    <img class="img" 
+         src="../images/horse.jpg" 
+         alt="Running Horse" 
+         width="250"
+         height="180">
+        Running Horse
+  </div>
+</body>
+</html>
+```
+
+**Live Demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Does `overflow: hidden` create a new block formatting context?***
 
 Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
@@ -3039,138 +3171,6 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
 * **-moz-**: Mozilla Firefox
 * **-ms-**: Internet Explorer
 * **-o-**: Opera
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is a clearfix in CSS?***
-
-A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
-
-The clearfix property allows a container to wrap its floated children. Without a clearfix, a container will not wrap around its floated children and will collapse, just as if its floated children had been positioned absolutely.
-
-<p align="center">
-  <img src="assets/images/clearfix.png" alt="CSS rule" width="800px;" />
-</p>
-
-**Syntax**
-
-```css
-.clearfix {
-  properties
-}
-```
-
-**Example**
-
-```html
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>CSS Clearfix property</title>
-  <style>
-    div {
-      border: 3px solid #4CAF50;
-      padding: 5px;
-    }
-
-    .clearfix {
-      overflow: auto;
-    }
-    
-    .img {
-      float: right;
-    }
-  </style>
-</head>
-<body>
-  <div class="clearfix">
-    <img class="img" 
-         src="../images/horse.jpg" 
-         alt="Running Horse" 
-         width="250"
-         height="180">
-        Running Horse
-  </div>
-</body>
-</html>
-```
-
-**Live Demo**: [CSS Clearfix](https://learning-zone.github.io/css-interview-questions/assets/files/clearfix.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the possible ways to apply CSS styles to a web page?***
-
-There are three ways to apply CSS to HTML: Inline, internal, and external.
-
-### **1. Inline CSS**
-
-Inline CSS is specified directly in the opening tag of the element you want it to apply to. It is entered into the style attribute within HTML. This allows CSS properties on a "per tag" basis.
-
-**Example**
-
-```html
-<p style="font-weight:bold;">Bold Font</p>
-```
-
-This CSS type is not really recommended, as each HTML tag needs to be styled individually. However, inline CSS in HTML can be useful in some situations. For example, in cases where you don\'t have access to CSS files or need to apply styles for a single element only.
-
-### **2. Internal CSS**
-
-Internal or Embedded, styles are used for the whole page. Inside the head element, the style tags surround all of the styles for the page.
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Internal CSS Example</title>
-  <style>
-    p {
-        color: red;
-    }
-    
-    a {
-        color: blue;
-    }
-</style>
-...
-```
-
-This CSS style is an effective method of styling a single page. However, using this style for multiple pages is time-consuming as you need to put CSS rules to every page of your website.
-
-### **3. External CSS**
-
-In external CSS rules are stored in a separate file. To refer to that file from the HTML page, add the link element (and its closing element within XHTML) to the head element. This CSS type is a more efficient method, especially for styling a large website. By editing one **.css** file, you can change your entire site at once.
-
-**style.css**
-
-```css
-  p {
-      color: red;
-  }
-  
-  a {
-      color: blue;
-  }
-```
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>External CSS Example</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-...
-```
-
-The link element in the example has three attributes. The first, `rel`, tells the browser the type of the target of the link. The second, `type`, tells the browser what type of stylesheet it is. And the third, `href`, tells the browser under which URL to find the stylesheet.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
