@@ -973,6 +973,99 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What are the differences between relative and absolute in CSS?***
+
+### **Relative Position**
+
+An element with `position: relative;` is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+<p align="center">
+  <img src="assets/images/relative-position.png" alt="CSS rule" width="250px;" />
+</p>
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Relative Position</title>
+  <style>
+    div.relative {
+      position: relative;
+      top: 20px;
+      left: 20px;
+      border: 3px solid #2321ad;
+    }
+  </style>
+</head>
+<body>
+    <h2>position: relative;</h2>
+    <p>An element with position: relative; is positioned relative to its normal position:</p>
+
+    <div class="relative">
+        This div element has position: relative;
+    </div>
+</body>
+</html>
+```
+
+**Live Demo**: [Relative Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/relative-position.html)
+
+### **Absolute Position**
+
+An element with `position: absolute;` will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
+
+<p align="center">
+  <img src="assets/images/absolute-position.png" alt="CSS rule" width="350px;" />
+</p>
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absolute Position</title>
+  <style>
+    div.relative {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      border: 3px solid #2321ad;
+    }  
+
+    div.absolute {
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: 100px;
+      border: 3px solid #ee0b0b;
+    }
+  </style>
+</head>
+<body>
+    <h2>position: absolute;</h2>
+
+    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor 
+      (instead of positioned relative to the viewport, like fixed):</p>
+
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+</body>
+</html>
+```
+
+**Live Demo**: [Absolute Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/absolute-position.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***The difference between block, inline and inline-block element?***
 
 **a) Block Elements**  
@@ -3793,100 +3886,6 @@ overflow: visible|hidden|scroll|auto|initial|inherit;
 </body>
 </html>
 ```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What are the differences between relative and absolute in CSS?***
-
-### **Relative Position**
-
-An element with `position: relative;` is positioned relative to its normal position.
-
-Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
-
-<p align="center">
-  <img src="assets/images/relative-position.png" alt="CSS rule" width="250px;" />
-</p>
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Relative Position</title>
-  <style>
-    div.relative {
-      position: relative;
-      top: 20px;
-      left: 20px;
-      border: 3px solid #2321ad;
-    }
-  </style>
-</head>
-<body>
-    <h2>position: relative;</h2>
-    <p>An element with position: relative; is positioned relative to its normal position:</p>
-
-    <div class="relative">
-        This div element has position: relative;
-    </div>
-</body>
-</html>
-```
-
-**Live Demo**: [Relative Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/relative-position.html)
-
-
-### **Absolute Position**
-
-An element with `position: absolute;` will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
-
-<p align="center">
-  <img src="assets/images/absolute-position.png" alt="CSS rule" width="350px;" />
-</p>
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Absolute Position</title>
-  <style>
-    div.relative {
-      position: relative;
-      width: 400px;
-      height: 200px;
-      border: 3px solid #2321ad;
-    }  
-
-    div.absolute {
-      position: absolute;
-      top: 80px;
-      right: 0;
-      width: 200px;
-      height: 100px;
-      border: 3px solid #ee0b0b;
-    }
-  </style>
-</head>
-<body>
-    <h2>position: absolute;</h2>
-
-    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor 
-      (instead of positioned relative to the viewport, like fixed):</p>
-
-    <div class="relative">This div element has position: relative;
-        <div class="absolute">This div element has position: absolute;</div>
-    </div>
-</body>
-</html>
-```
-
-**Live Demo**: [Absolute Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/absolute-position.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
