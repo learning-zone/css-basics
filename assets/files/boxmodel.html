@@ -1,21 +1,26 @@
-<style>
-div.box-model {
-    border: 10px solid #990;
-    padding: 50px;
-    margin: 2px;
-    text-align: justify;
-}
-</style>
-<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h3 class="modal-title">CSS Box Model</h3>
-      </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model</title>
+  <style>
+    div {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid rgb(3, 141, 233);
+      padding: 50px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Box Model</h2>
 
-      <div class="modal-body">
-          <div class="box-model">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+  <p>The CSS box model is essentially a box that wraps around every HTML element. 
+    It consists of: borders, padding, margins, and the actual content.</p>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-  </div>
-</div>
+  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>

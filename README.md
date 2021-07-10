@@ -1263,31 +1263,114 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 * **Border**: A border surrounding the padding (if any) and content
 * **Margin**: A transparent area surrounding the border (i.e., the amount of space between the border and any neighboring elements)
 
-```css
-/* top   right  bottom left  */
-padding: 25px  50px   75px   100px;
-
-/* same padding on all 4 sides: */
-padding: 25px;
-
-/* top/bottom padding 25px; right/left padding 50px */
-padding: 25px 50px;
-
-/* top padding 25px; right/left padding 50px; bottom padding 75px */
-padding: 25px 50px 75px;
-```
-
 <p align="center">
-  <img src="assets/images/boxmodel.gif" alt="Box Model" width="50%" />
+  <img src="assets/images/box-model.png" alt="CSS Box Model" width="400px;" />
 </p>
 
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model</title>
+  <style>
+    div {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid rgb(3, 141, 233);
+      padding: 50px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Box Model</h2>
+
+  <p>The CSS box model is essentially a box that wraps around every HTML element. 
+    It consists of: borders, padding, margins, and the actual content.</p>
+
+  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>
+```
+
 **Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
+
+The size of the box itself is calculated like this:
+
+|Property |Total                                                             |
+|---------|------------------------------------------------------------------|
+|Width    |width + padding-left + padding-right + border-left + border-right |
+|Height   |height + padding-top + padding-bottom + border-top + border-bottom|
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
 ## Q. ***How you would tell the browser in CSS to render your layout in different box models?***
+
+The **box-sizing** property allows us to include the padding and border in an element\'s total width and height. If you set `box-sizing: border-box;` on an element, padding and border are included in the width and height
+
+**Syntax**
+
+```css
+box-sizing: content-box|border-box|initial|inherit;
+```
+
+### **Property Values**
+
+|Value       |Description                              |
+|------------|-----------------------------------------|
+|content-box |Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included|
+|border-box	 |The width and height properties (and min/max properties) includes content, padding and border|
+|initial	   |Sets this property to its default value. Read about initial|
+|inherit	   |Inherits this property from its parent element. Read about inherit|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The box-sizing Property</title>
+  <style>
+    .content-box {
+        box-sizing: content-box;
+        width: 300px;
+        height: 100px;
+        padding: 30px;
+        border: 10px solid rgb(0, 89, 255);
+    }
+
+    .border-box {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        padding: 30px;
+        border: 10px solid rgb(255, 102, 0);
+    }
+  </style>
+</head>
+<body>
+    <h2>The box-sizing Property</h2>
+    <p>Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+    </p>
+
+    <h3>1. box-sizing: content-box (default):</h3>
+    <p>Width and height only apply to the content of the element:</p>
+    <div class="content-box">This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px
+        (left and right padding) = 380px!</div>
+
+    <h3>2. box-sizing: border-box:</h3>
+    <p>Width and height apply to all parts of the element: content, padding and borders:</p>
+    <div class="border-box">Here, the full width is 300px</div>
+</body>
+</html>
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The box-sizing Property</title>
+  <style>
+    .content-box {
+        box-sizing: content-box;
+        width: 300px;
+        height: 100px;
+        padding: 30px;
+        border: 10px solid rgb(0, 89, 255);
+    }
+
+    .border-box {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        padding: 30px;
+        border: 10px solid rgb(255, 102, 0);
+    }
+  </style>
+</head>
+<body>
+    <h2>The box-sizing Property</h2>
+    <p>Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+    </p>
+
+    <h3>1. box-sizing: content-box (default):</h3>
+    <p>Width and height only apply to the content of the element:</p>
+    <div class="content-box">This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px
+        (left and right padding) = 380px!</div>
+
+    <h3>2. box-sizing: border-box:</h3>
+    <p>Width and height apply to all parts of the element: content, padding and borders:</p>
+    <div class="border-box">Here, the full width is 300px</div>
+</body>
+</html>
