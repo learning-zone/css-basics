@@ -1285,7 +1285,7 @@ The size of the box itself is calculated like this:
     div {
       background-color: lightgrey;
       width: 300px;
-      border: 15px solid rgb(3, 141, 233);
+      border: 10px solid rgb(3, 141, 233);
       padding: 50px;
       margin: 20px;
     }
@@ -1297,7 +1297,7 @@ The size of the box itself is calculated like this:
   <p>The CSS box model is essentially a box that wraps around every HTML element. 
     It consists of: borders, padding, margins, and the actual content.</p>
 
-  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px blue 
+  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 10px blue 
     border.</div>
 </body>
 </html>
