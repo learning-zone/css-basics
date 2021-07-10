@@ -1297,10 +1297,11 @@ The size of the box itself is calculated like this:
   <p>The CSS box model is essentially a box that wraps around every HTML element. 
     It consists of: borders, padding, margins, and the actual content.</p>
 
-  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green 
+    border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+    deserunt mollit anim id est laborum.</div>
 </body>
 </html>
 ```
@@ -1357,13 +1358,13 @@ box-sizing: content-box|border-box|initial|inherit;
 </head>
 <body>
     <h2>The box-sizing Property</h2>
-    <p>Defines how the width and height of an element are calculated: should they include padding and borders, or not.
-    </p>
+    <p>Defines how the width and height of an element are calculated: should they include padding 
+      and borders, or not.</p>
 
     <h3>1. box-sizing: content-box (default):</h3>
     <p>Width and height only apply to the content of the element:</p>
-    <div class="content-box">This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px
-        (left and right padding) = 380px!</div>
+    <div class="content-box">This div has a width of 300px. But the full width is 300px + 20px 
+      (left and right border) + 60px (left and right padding) = 380px!</div>
 
     <h3>2. box-sizing: border-box:</h3>
     <p>Width and height apply to all parts of the element: content, padding and borders:</p>
