@@ -1681,14 +1681,15 @@ clear: none|left|right|both|inherit|inline-start|inline-end;
 <body>
     <h2>Without clear</h2>
     <div class="div1">div1</div>
-    <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is
-        floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.
+    <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. 
+      However, since div1 is floated to the left, this happens: the text in div2 is floated 
+      around div1, and div2 surrounds the whole thing.
     </div><br/>
 
     <h2>Using clear</h2>
     <div class="div3">div3</div>
-    <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements
-        floated to the left. You can also clear "right" and "both".</div>
+    <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value 
+      "left" clears elements floated to the left. You can also clear "right" and "both".</div>
 </body>
 </html>
 ```
