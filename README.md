@@ -626,7 +626,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
     <style>
         .flex-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             background-color: DodgerBlue;
         }
 
