@@ -1625,6 +1625,72 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
 
 ## Q. ***Explain the purpose of clearing floats in CSS?***
 
+The **clear** property is directly related to the float property. It specifies if an element should be next to the floated elements or if it should move below them. This property applies to both floated and non-floated elements.
+
+**CSS Syntax**
+
+```css
+clear: none|left|right|both|inherit|inline-start|inline-end;
+```
+
+### **Property Values**
+
+|Value       |Description	                                       |
+|------------|---------------------------------------------------|
+|none	       |The element is not moved down to clear past floats.|
+|left	       |The element is moved down to clear past left floats.|
+|right	     |The element is moved down to clear past right floats.|
+|Both 	     |The element is moved down to clear past both left and right floats.|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>clear Property</title>
+  <style>
+    .div1 {
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        border: 3px solid #73AD21;
+    }
+
+    .div2 {
+        border: 1px solid red;
+    }
+
+    .div3 {
+        float: left;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        border: 3px solid #73AD21;
+    }
+
+    .div4 {
+        border: 1px solid red;
+        clear: left;
+    }
+  </style>
+</head>
+<body>
+    <h2>Without clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is
+        floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.
+    </div>
+
+    <h2>Using clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements
+        floated to the left. You can also clear "right" and "both".</div>
+</body>
+</html>
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
