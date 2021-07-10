@@ -2531,6 +2531,7 @@ A mobile-first strategy has 2 main advantages:
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Media Query</title>
   <style>
     body {
         background-color: lightgreen;
@@ -2545,37 +2546,13 @@ A mobile-first strategy has 2 main advantages:
   </head>
 <body>
     <h1>Resize the browser window</h1>
-    <h2>When the width of this document is 800px or less, the background-color is "green", otherwise it is "Red".</h2>
+    <h2>When the width of this document is 800px or less, the background-color is "green", 
+      otherwise it is "Red".</h2>
 </body>
 </html>
 ```
 
 **Live Demo**: [Media Query](https://learning-zone.github.io/css-interview-questions/assets/files/media-query.html) 
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is Accessibility (a11y) in a web application?***
-
-Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as:
-
-* Visual impairment
-* Hearing loss
-* Limited dexterity
-
-For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is UI/UX?***
-
-**1) UI or User Interface**:  is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
-
-**2) UX or User Experience**: is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
-So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3799,6 +3776,31 @@ word-wrap: normal|break-word|initial|inherit;
 ```
 
 **Live Demo**: [The word-wrap Property](https://learning-zone.github.io/css-interview-questions/assets/files/word-wrap.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is Accessibility (a11y) in a web application?***
+
+Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as:
+
+* Visual impairment
+* Hearing loss
+* Limited dexterity
+
+For example, a website developed with accessibility in mind might have text-to-speech capabilities or output for special braille hardware geared toward individuals with visual impairments.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is UI/UX?***
+
+**1) UI or User Interface**:  is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
+
+**2) UX or User Experience**: is how you feel about using a product or a website. So, your love for the way the new Apple Watch looks or your excitement that there’s finally a tablet-sized iPhone to watch those Corgi videos you’re obsessed with are reflections of UX.
+So the new look of the Facebook news feed involves a change to UI, and the way you navigate that new page is the UX. 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
