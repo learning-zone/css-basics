@@ -102,12 +102,59 @@ body {
 * div + ```p``` Selects all ```<p>``` elements that are placed immediately after a <div> element
 * div ~ ```p``` Selects all ```<p>``` elements that are anywhere preceded by a <div> element
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***How to align image vertically in a division that spans vertically on the whole webpage?***
 
-<p align="center">
-  <img src="assets/images/verticle-image.png" alt="Verticle Image" width="500px" />
-</p>
+You can align an image vertically center inside a `<div>` by using the **CSS vertical-align** property in combination with the `display: table-cell;` on the containing div element.
+
+Additionally, since CSS margin property is not applicable to `display: table-cell;` elements, so we\'ve wrapped the containing DIV with another DIV (`.outer-wrapper`) and applied margin on it. This solution will work even for images with greater height than containing DIV.
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Vertically Center the IMG in a DIV with CSS</title>
+  <style>
+    .outer-wrapper {
+      display: inline-block; 
+      margin: 20px;
+    }
+
+    .frame {  
+      width: 250px;
+      height: 200px;
+      border: 1px solid black;
+      vertical-align: middle;
+      text-align: center;
+      display: table-cell;
+    } 
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  </head>
+<body>
+    <!-- Alignment of undersized image -->
+    <div class="outer-wrapper">
+        <div class="frame">
+            <img src="assets/images/club.jpg" alt="Club Card">
+        </div>
+    </div>
+</body>
+</html>
+```
+
+**Live Demo**: [CSS vertical-align Property](https://learning-zone.github.io/css-interview-questions/assets/files/vertical-align.html) 
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
