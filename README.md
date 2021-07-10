@@ -1267,6 +1267,13 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
   <img src="assets/images/box-model.png" alt="CSS Box Model" width="400px;" />
 </p>
 
+The size of the box itself is calculated like this:
+
+|Property |Total                                                             |
+|---------|------------------------------------------------------------------|
+|Width    |width + padding-left + padding-right + border-left + border-right |
+|Height   |height + padding-top + padding-bottom + border-top + border-bottom|
+
 **Example**
 
 ```html
@@ -1299,13 +1306,6 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 ```
 
 **Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel-index.html)
-
-The size of the box itself is calculated like this:
-
-|Property |Total                                                             |
-|---------|------------------------------------------------------------------|
-|Width    |width + padding-left + padding-right + border-left + border-right |
-|Height   |height + padding-top + padding-bottom + border-top + border-bottom|
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
