@@ -147,7 +147,7 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
     <!-- Alignment of undersized image -->
     <div class="outer-wrapper">
         <div class="frame">
-            <img src="assets/images/club.jpg" alt="Club Card">
+            <img src="../images/club.jpg" alt="Club Card">
         </div>
     </div>
 </body>
