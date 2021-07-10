@@ -1374,12 +1374,6 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the different units used in CSS?***
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***Explain the meaning of each of these CSS units for expressing length?***
 
 * ```cm``` centimeters
