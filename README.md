@@ -1192,6 +1192,86 @@ h3::before {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+
+There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
+
+The length unit in CSS is of two types:
+
+* Absolute length units.
+* Relative length units.
+
+### **Absolute length units**
+
+The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
+
+|Unit	        |Name	                |Equivalent to        |
+|-------------|---------------------|---------------------|
+|cm	          |Centimeters	        |1cm = 38px = 25/64in|
+|mm	          |Millimeters	        |1mm = 1/10th of 1cm|
+|Q	          |Quarter-millimeters	|1Q = 1/40th of 1cm|
+|in	          |Inches	              |1in = 2.54cm = 96px|
+|pc	          |Picas	              |1pc = 1/6th of 1in|
+|pt	          |Points	              |1pt = 1/72th of 1in|
+|px	          |Pixels	              |1px = 1/96th of 1in|
+
+### **Relative length units**
+
+Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
+
+|Unit	           |Relative to                                   |
+|----------------|----------------------------------------------|
+|em	             |Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.|
+|ex	             |x-height of the element's font.|
+|ch	             |The advance measure (width) of the glyph "0" of the element's font.|
+|rem	           |Font size of the root element.|
+|lh	             |Line height of the element.|
+|vw	             |1% of the viewport's width.|
+|vh	             |1% of the viewport's height.|
+|vmin	           |1% of the viewport's smaller dimension.|
+|vmax	           |1% of the viewport's larger dimension.|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>CSS Units</title>
+    <style>
+      .wrapper {
+        font-size: 1em;
+      }
+      
+      .px {
+        width: 200px;
+      }
+      
+      .vw {
+        width: 10vw;
+      }
+      
+      .em {
+        width: 10em;
+      }
+    </style>
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="box px">I am 200px wide</div>
+    <div class="box vw">I am 10vw wide</div>
+    <div class="box em">I am 10em wide</div>
+  </div>
+</body>
+</html>
+```
+
+**Live Demo**: [CSS Units](https://learning-zone.github.io/css-interview-questions/assets/files/css-units.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Which one would you prefer among px, em % or pt and why?***
 
 * ```px``` gives fine grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade, this means if parent font-size is 20px and child 16px. child would be 16px.
@@ -3413,87 +3493,7 @@ table-layout: auto|fixed|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
-
-There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
-
-The length unit in CSS is of two types:
-
-* Absolute length units.
-* Relative length units.
-
-### **Absolute length units**
-
-The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
-
-|Unit	        |Name	                |Equivalent to        |
-|-------------|---------------------|---------------------|
-|cm	          |Centimeters	        |1cm = 38px = 25/64in|
-|mm	          |Millimeters	        |1mm = 1/10th of 1cm|
-|Q	          |Quarter-millimeters	|1Q = 1/40th of 1cm|
-|in	          |Inches	              |1in = 2.54cm = 96px|
-|pc	          |Picas	              |1pc = 1/6th of 1in|
-|pt	          |Points	              |1pt = 1/72th of 1in|
-|px	          |Pixels	              |1px = 1/96th of 1in|
-
-### **Relative length units**
-
-Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
-
-|Unit	           |Relative to                                   |
-|----------------|----------------------------------------------|
-|em	             |Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.|
-|ex	             |x-height of the element's font.|
-|ch	             |The advance measure (width) of the glyph "0" of the element's font.|
-|rem	           |Font size of the root element.|
-|lh	             |Line height of the element.|
-|vw	             |1% of the viewport's width.|
-|vh	             |1% of the viewport's height.|
-|vmin	           |1% of the viewport's smaller dimension.|
-|vmax	           |1% of the viewport's larger dimension.|
-
-**Example**
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-      <title>CSS Units</title>
-    <style>
-      .wrapper {
-        font-size: 1em;
-      }
-      
-      .px {
-        width: 200px;
-      }
-      
-      .vw {
-        width: 10vw;
-      }
-      
-      .em {
-        width: 10em;
-      }
-    </style>
-  </head>
-<body>
-  <div class="wrapper">
-    <div class="box px">I am 200px wide</div>
-    <div class="box vw">I am 10vw wide</div>
-    <div class="box em">I am 10em wide</div>
-  </div>
-</body>
-</html>
-```
-
-**Live Demo**: [CSS Units](https://learning-zone.github.io/css-interview-questions/assets/files/css-units.html)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-#### Q. ***Does margin-top or margin-bottom have an effect on inline elements***
+## Q. ***Does margin-top or margin-bottom have an effect on inline elements***
 
 Top and bottom margins do not affect inline elements because inline elements flow with content on the page. You can set left and right margins/padding on an inline element but not top or bottom because it would disrupt the flow of content. You can set margins on block (or inline-block but it will only look right if you set the vertical align right) because block level elements disrupt the flow of content.
 
@@ -3656,98 +3656,6 @@ The native CSS has started supporting CSS variables, or "CSS Custom Properties".
   background-color: var(--main-color);
 }
 ```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***How does CSS work under the hood?***
-
-The CSS language is designed to be used alongside a "markup" language like HTML. CSS defines how HTML elements are formatted – controlling their layout, colors, fonts, and so on. When a browser displays a document, it must combine the document\'s content with its style information. It processes the document in a number of stages, which we\'ve listed below.
-
-1. The browser loads the HTML (e.g. receives it from the network).
-2. It converts the HTML into a DOM (Document Object Model).
-3. The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos and linked CSS.
-4. The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).
-5. The render tree is laid out in the structure it should appear in after the rules have been applied to it.
-6. The visual display of the page is shown on the screen (this stage is called painting).
-
-The following diagram also offers a simple view of the process.
-
-<p align="center">
-  <img src="assets/images/css-dom.png" alt="CSS DOM" width="500px;" />
-</p>
-
-### **The DOM and CSSOM**
-
-A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings. The browser undergo a process that includes conversion, tokenization, lexing, and parsing which ultimately constructs the DOM and CSSOM.
-
-* **Conversion**: Reading raw bytes of HTML and CSS off the disk or network.
-* **Tokenization**: Breaking input into chunks (ex: start tags, end tags, attribute names, attribute values), striping irrelevant characters such as whitespace and line breaks.
-* **Lexing**: Like the tokenizer, but it also identifies the type of each token (this token is a number, that token is a string literal, this other token is an equality operator).
-* **Parsing**: Takes the stream of tokens from the lexer, interprets the tokens using a specific grammar, and turns it into an abstract syntax tree.
-
-**Example**: DOM Representation
-
-```html
-<p>
-  Let's use:
-  <span>Cascading</span>
-  <span>Style</span>
-  <span>Sheets</span>
-</p>
-````
-
-In the DOM, the node corresponding to our `<p>` element is a parent. Its children are a text node and the three nodes corresponding to our `<span>` elements. The SPAN nodes are also parents, with text nodes as their children:
-
-```html
-P
-├─ "Let's use:"
-├─ SPAN
-|  └─ "Cascading"
-├─ SPAN
-|  └─ "Style"
-└─ SPAN
-   └─ "Sheets"
-```
-
-Applying CSS to the DOM
-
-```css
-span {
-  border: 1px solid black;
-  background-color: lime;
-}
-```
-
-Once both tree structures are created, the rendering engine then attaches the data structures into what\'s called a render tree as part of the layout process. The render tree is a visual representation of the document which enable painting the contents of the page in their correct order. 
-
-Render tree construction follows the following order:
-
-* Starting at the root of the DOM tree, traverse each visible node.
-* Omit non visible nodes.
-* For each visible node find the appropriate matching CSSOM rules and apply them.
-* Emit visible nodes with content and their computed styles.
-* Finally, output a render tree that contains both the content and style information of all visible content on the screen.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***What is file splitting? When is it used?***
-
-A monolithic file is fine for solo developers or very small projects. For large projects—sites with multiple layouts and content types, or multiple brands under the same design umbrella—it\'s smarter to use a modular approach and split your CSS across multiple files.
-
-* **reset.css**: reset and normalization styles; minimal color, border, or font-related declarations
-* **typography.css**: font faces, weights, line heights, sizes, and styles for headings and body text
-* **layouts.css**: styles that manage page layouts and segments, including grids
-* **forms.css**: styles for form controls and labels
-* **lists.css**: list-specific styles
-* **tables.css**: table-specific styles
-* **carousel.css**: styles required for carousel components
-* **accordion.css**: styles for accordion components
-
-CSS frameworks such as Foundation and Bootstrap use this approach. Both become quite granular with separate files for progress bars, range inputs, close buttons, and tooltips. This allows developers to include only the components that they need for a project.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -3947,6 +3855,98 @@ word-wrap: normal|break-word|initial|inherit;
 ```
 
 **Live Demo**: [The word-wrap Property](https://learning-zone.github.io/css-interview-questions/assets/files/word-wrap.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is file splitting? When is it used?***
+
+A monolithic file is fine for solo developers or very small projects. For large projects—sites with multiple layouts and content types, or multiple brands under the same design umbrella—it\'s smarter to use a modular approach and split your CSS across multiple files.
+
+* **reset.css**: reset and normalization styles; minimal color, border, or font-related declarations
+* **typography.css**: font faces, weights, line heights, sizes, and styles for headings and body text
+* **layouts.css**: styles that manage page layouts and segments, including grids
+* **forms.css**: styles for form controls and labels
+* **lists.css**: list-specific styles
+* **tables.css**: table-specific styles
+* **carousel.css**: styles required for carousel components
+* **accordion.css**: styles for accordion components
+
+CSS frameworks such as Foundation and Bootstrap use this approach. Both become quite granular with separate files for progress bars, range inputs, close buttons, and tooltips. This allows developers to include only the components that they need for a project.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How does CSS work under the hood?***
+
+The CSS language is designed to be used alongside a "markup" language like HTML. CSS defines how HTML elements are formatted – controlling their layout, colors, fonts, and so on. When a browser displays a document, it must combine the document\'s content with its style information. It processes the document in a number of stages, which we\'ve listed below.
+
+1. The browser loads the HTML (e.g. receives it from the network).
+2. It converts the HTML into a DOM (Document Object Model).
+3. The browser then fetches most of the resources that are linked to by the HTML document, such as embedded images and videos and linked CSS.
+4. The browser parses the fetched CSS, and sorts the different rules by their selector types into different "buckets", e.g. element, class, ID, and so on. Based on the selectors it finds, it works out which rules should be applied to which nodes in the DOM, and attaches style to them as required (this intermediate step is called a render tree).
+5. The render tree is laid out in the structure it should appear in after the rules have been applied to it.
+6. The visual display of the page is shown on the screen (this stage is called painting).
+
+The following diagram also offers a simple view of the process.
+
+<p align="center">
+  <img src="assets/images/css-dom.png" alt="CSS DOM" width="500px;" />
+</p>
+
+### **The DOM and CSSOM**
+
+A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings. The browser undergo a process that includes conversion, tokenization, lexing, and parsing which ultimately constructs the DOM and CSSOM.
+
+* **Conversion**: Reading raw bytes of HTML and CSS off the disk or network.
+* **Tokenization**: Breaking input into chunks (ex: start tags, end tags, attribute names, attribute values), striping irrelevant characters such as whitespace and line breaks.
+* **Lexing**: Like the tokenizer, but it also identifies the type of each token (this token is a number, that token is a string literal, this other token is an equality operator).
+* **Parsing**: Takes the stream of tokens from the lexer, interprets the tokens using a specific grammar, and turns it into an abstract syntax tree.
+
+**Example**: DOM Representation
+
+```html
+<p>
+  Let's use:
+  <span>Cascading</span>
+  <span>Style</span>
+  <span>Sheets</span>
+</p>
+````
+
+In the DOM, the node corresponding to our `<p>` element is a parent. Its children are a text node and the three nodes corresponding to our `<span>` elements. The SPAN nodes are also parents, with text nodes as their children:
+
+```html
+P
+├─ "Let's use:"
+├─ SPAN
+|  └─ "Cascading"
+├─ SPAN
+|  └─ "Style"
+└─ SPAN
+   └─ "Sheets"
+```
+
+Applying CSS to the DOM
+
+```css
+span {
+  border: 1px solid black;
+  background-color: lime;
+}
+```
+
+Once both tree structures are created, the rendering engine then attaches the data structures into what\'s called a render tree as part of the layout process. The render tree is a visual representation of the document which enable painting the contents of the page in their correct order. 
+
+Render tree construction follows the following order:
+
+* Starting at the root of the DOM tree, traverse each visible node.
+* Omit non visible nodes.
+* For each visible node find the appropriate matching CSSOM rules and apply them.
+* Emit visible nodes with content and their computed styles.
+* Finally, output a render tree that contains both the content and style information of all visible content on the screen.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
