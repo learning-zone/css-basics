@@ -574,6 +574,87 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 
 ## Q. ***What is CSS flexbox? Write all the properties of the flexbox.***
 
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
+
+Before the Flexbox Layout module, there were four layout modes:
+
+* **Block**, for sections in a webpage
+* **Inline**, for text
+* **Table**, for two-dimensional table data
+* **Positioned**, for explicit position of an element
+
+### **Flex Container**
+
+An area of a document laid out using flexbox is called a **flex container**. To create a flex container, we set the value of the area\'s container\'s `display` property to `flex` or `inline-flex`. As soon as we do this the direct children of that container become **flex items**.
+
+### **Flexbox Terminology**
+
+<p align="center">
+  <img src="assets/images/flex-terminology.png" alt="Flexbox Terminology" width="500px;" />
+</p>
+
+### **The CSS Flexbox Container Properties**
+
+|Property        |Values                                                            |
+|----------------|------------------------------------------------------------------|
+|display:        |flexbox, inline-flex;|
+|flex-direction: |row, row-reverse, column, column-reverse;|
+|flex-wrap:      |nowrap, wrap, wrap-reverse;|
+|flex-flow:      |<‘flex-direction’>, <‘flex-wrap’>|
+|justify-content:|flex-start, flex-end, center, space-between, space-around;|
+|align-items:    |flex-start, flex-end, center, baseline, stretch;|
+|align-content:  |flex-start, flex-end, center, space-between, space-around, stretch;|
+
+### **The CSS Flexbox Properties**
+
+|Property        |Values                                                  |
+|----------------|--------------------------------------------------------|
+|order:          |`<integer>`;                        |
+|flex-grow:      |`<number>`; /* default 0 */         |
+|flex-shrink:    |`<number>`; /* default 1 */         |
+|flex-basis:     |`<length>`, auto; /* default auto */|
+|flex:           |none, [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]|
+|align-self:     |auto, flex-start, flex-end, center, baseline, stretch;|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The flex-direction Property</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The flex-direction Property</h1>
+    <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+```
+
+**Live Demo**: [flex-direction Property](https://learning-zone.github.io/css-interview-questions/assets/files/flexbox.html)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
