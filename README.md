@@ -3708,12 +3708,12 @@ word-wrap: normal|break-word|initial|inherit;
     <h1>The word-wrap Property</h1>
 
     <h2>word-wrap: normal (default):</h2>
-    <div class="a"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
-        break and wrap to the next line.</div>
+    <div class="a"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. 
+      The long word will break and wrap to the next line.</div>
 
     <h2>word-wrap: break-word:</h2>
-    <div class="b"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will
-        break and wrap to the next line.</div>
+    <div class="b"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. 
+      The long word will break and wrap to the next line.</div>
 </body>
 </html>
 ```
