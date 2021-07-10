@@ -206,6 +206,35 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. Place a div to corner top-right of the page?
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Position</title>
+    <style>
+      .topheader {
+        position: relative;
+        height: 20px;
+      }
+
+      .message {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+<body>
+    <div class="topheader">
+      <div class="message">Hello World!</div>
+    </div>
+</body>
+</html>
+```
+
 #### Q. ***What are navigation bars in CSS?***
 #### Q. ***How to overrule underlining Hyperlinks?***
 #### Q. ***What happens if 100% width is used along with floats all across the page?***
