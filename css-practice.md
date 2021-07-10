@@ -155,7 +155,7 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
 </html>
 ```
 
-**Live Demo**: [CSS vertical-align Property](https://learning-zone.github.io/css-interview-questions/assets/files/vertical-align.html) 
+**Live Demo**: [CSS vertical-align Property](https://learning-zone.github.io/css-interview-questions/assets/files/vertical-align.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -185,6 +185,12 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
 </body>
 </html>
 ```
+
+**Live Demo**: [CSS Combinator](https://learning-zone.github.io/css-interview-questions/assets/files/combinator.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 #### Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
 #### Q. ***What are navigation bars in CSS?***
