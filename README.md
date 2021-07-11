@@ -725,7 +725,7 @@ This number can also be expressed as a function, or using the keywords even or o
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain CSS grid layout with example***
+## Q. ***Explain CSS grid layout with example?***
 
 *ToDo*
 
@@ -733,7 +733,7 @@ This number can also be expressed as a function, or using the keywords even or o
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS flexbox? Write all the properties of the flexbox.***
+## Q. ***What is CSS flexbox? Write all the properties of the flexbox?***
 
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
 
