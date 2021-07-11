@@ -659,6 +659,29 @@ button:focus { outline: 0; }
 .box { @include transform(rotate(30deg)); }
 ```
 
+## Q. **css rotate text**
+
+```css
+/* Answer to: "css rotate text" */
+
+.rotate {
+  
+  transform: rotate(-90deg);
+
+  /* Legacy vendor prefixes that you probably don't need... */
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
