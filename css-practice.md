@@ -57,7 +57,7 @@
 }
 ```
 
-**Live Demo**: [center div](https://learning-zone.github.io/css-interview-questions/assets/files/center-div.html)
+**Live Demo**: [center div](https://codepen.io/pradeep_vwa/pen/eYWdXMd)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
