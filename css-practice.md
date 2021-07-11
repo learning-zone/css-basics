@@ -235,6 +235,10 @@ a[href$=".zip" i]:after {
 </html>
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***You have 3 div\'s. You have to align first div in right side and other 2 div’s in left side. Write CSS to achieve this?***
 
 ### **using flexbox**
@@ -258,15 +262,38 @@ a[href$=".zip" i]:after {
 </div>
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q.***css media query code example***
 
 ```css
-@media screen and (min-width: 374px) {
-  section#rent_sectionn {
-    padding: 0 20px !important;
+@media screen and (min-width: 769px) {
+    /* STYLES HERE */
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+    /* STYLES HERE */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* STYLES HERE */
+}
+```
+
+```css
+@media only screen and (max-width: 1080px) {
+  /* place here CSS for when the screen is less than 1080px wide */
+  .card {
+    width: 100%;
   }
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***background color gray opacity css code example***
 
@@ -278,6 +305,10 @@ a[href$=".zip" i]:after {
     opacity: 0.5;
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***Place header at bottom of div***
 
@@ -298,13 +329,22 @@ a[href$=".zip" i]:after {
 }
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Gradient css background***
 
 ```css
 /*From bottom to top*/
+
 background: rgb(166,166,166);
 background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(255,255,255,1) 29%);
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***How to make fixed background image in css***
 
@@ -315,6 +355,10 @@ body {
   background-attachment: fixed;
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***Add space between flex items***
 
@@ -329,15 +373,29 @@ body {
 }
 ```
 
-## Q. ***How to disable arrows from Number input?***
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to disable arrows from input type number?***
 
 ```css
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## Q. ***How to get text to start a new line?***
 
@@ -347,11 +405,240 @@ input[type=number]::-webkit-outer-spin-button {
 }
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***How to select child element in css?***
 
 ```css
 .parent > .immediate-child {
   color: red;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***minmax with repeat css grid***
+
+```css
+/* To achieve wrapping, we can use the auto-fit or auto-fill keywords. */
+
+grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to make text not selectable in css***
+
+```css
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to make text not highlightable in css***
+
+```css
+-webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q.***center wrapped flex children***
+
+```css
+.container {
+  display: flex;
+  
+  justify-content: space-around;
+  /* OR */
+  justify-content: space-evenly;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***create a round button using css***
+
+```css
+.btn {
+  display:block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1px solid red; 
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How apply blur in background-image***
+
+```css
+
+backdrop-filter: blur(10px);
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***text-overflow ellipsis multiple lines***
+
+```css
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to create a fixed button at the bottom of page***
+
+```css
+#fixed_button {
+    position: fixed;
+    z-index: 999;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    display: none;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 1.875rem;
+    background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
+    background-size: auto;
+    background-size: 1.125rem 1.125rem;
+    text-indent: -9999px;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***center div in middle of page***
+
+```css
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***Sass @extend and Inheritance***
+
+```css
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+
+.button-submit  {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***css fade in example***
+
+```css
+/* Just add .fade-in class to element */
+
+.fade-in {
+  animation: fadeIn 2s;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***css set property with data attribute***
+
+```css
+div::after {
+  content: attr(data-whatever);
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***css remove highlight when click***
+
+```css
+button:focus { outline: 0; }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to select last nth child***
+
+```css
+#something a:nth-last-child(-n+3) {
+    /*declarations*/
 }
 ```
 
