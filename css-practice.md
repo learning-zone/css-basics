@@ -235,6 +235,29 @@ a[href$=".zip" i]:after {
 </html>
 ```
 
+## Q. ***You have 3 div\'s. You have to align first div in right side and other 2 div’s in left side. Write CSS to achieve this?***
+
+### **using flexbox**
+
+```css
+.example {
+    display: flex;
+    flex-direction: row;
+}
+
+.example > .a {order: 3; } /* Will be displayed third  */
+.example > .b {order: 1; } /* Will be displayed second */
+.example > .c {order: 2; } /* Will be displayed first  */
+```
+
+```html
+<div class="example">
+    <div class="a">First</div>
+    <div class="b">Second</div>
+    <div class="c">Third</div>
+</div>
+```
+
 #### Q. ***What are navigation bars in CSS?***
 #### Q. ***How to overrule underlining Hyperlinks?***
 #### Q. ***What happens if 100% width is used along with floats all across the page?***
