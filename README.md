@@ -673,6 +673,58 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What is the difference between the “nth-child()” and “nth-of-type()” selectors?***
+
+The `nth-child()` pseudo-class is used to match an element based on a number, which represents the element\'s position amongst it\'s siblings. More specifically, the number represents the number of siblings that exist before the element in the document tree (minus 1).
+
+**Example**
+
+```css
+.example :nth-child(5) { background: #ffdb3a; }
+```
+
+```html
+<div class="example">
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+	<div>This is a <em>divider</em>.</div> <!-- Element to select -->
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+</div>
+```
+
+The `nth-of-type()` pseudo-class, like nth-child(), is used to match an element based on a number. This number, however, represents the element's position within only those of its siblings that are of the same element type.
+
+This number can also be expressed as a function, or using the keywords even or odd.
+
+```css
+.example p:nth-of-type(odd) { background: #ffdb3a; }
+```
+
+```html
+<div class="example">
+	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
+	<div>This is a <em>divider</em>.</div>
+	<div>This is a <em>divider</em>.</div> 
+	<p>This is a <em>paragraph</em>.</p>
+	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
+	<div>This is a <em>divider</em>.</div>
+	<p>This is a <em>paragraph</em>.</p>
+	<div>This is a <em>divider</em>.</div>
+</div>
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***What is CSS flexbox? Write all the properties of the flexbox.***
 
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
