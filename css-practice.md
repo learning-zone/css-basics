@@ -1,7 +1,5 @@
 # CSS Coding Practice
 
-<br/>
-
 ## Q. ***How to draw a circle inside Square using single DIV in css?***
 
 ```html
