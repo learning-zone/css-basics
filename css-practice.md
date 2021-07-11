@@ -659,13 +659,17 @@ button:focus { outline: 0; }
 .box { @include transform(rotate(30deg)); }
 ```
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. **css rotate text**
 
 ```css
 /* Answer to: "css rotate text" */
 
 .rotate {
-  
+
   transform: rotate(-90deg);
 
   /* Legacy vendor prefixes that you probably don't need... */
@@ -680,6 +684,156 @@ button:focus { outline: 0; }
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **css blink**
+
+```css
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+```
+
+```html
+<div class="blink_me">BLINK ME</div>
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **css fix nav bar to top**
+
+```css
+.navigation {
+   /* fixed keyword is fine too */
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   /* z-index works pretty much like a layer:
+   the higher the z-index value, the greater
+   it will allow the navigation tag to stay on top
+   of other tags */
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **change input border color when selected**
+
+```css
+input:focus {
+	outline: none;
+  	border: 1px solid red;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **html import otf font**
+
+```css
+@font-face {
+    font-family: GraublauWeb;
+    src: url("path/GraublauWeb.otf") format("opentype");
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **css shadow on image**
+
+```css
+filter: drop-shadow(0px 10px 3px black);
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **sass conditional code**
+
+```css
+/** How to create an if-else clause in sass
+
+* First create a mixin, which is like a function in javaScript
+* And pass in an optional parameter to the mixin to hold the value
+* js ==> if, else if, else, while sass is ==> @if, @else if, @else
+* No brackets surrounding each condition in sass
+* Then pass in your block of styles to optionally load.
+* @mixin variable-name(optional parameter(s))
+*
+**/
+
+  @mixin border-stroke($val){
+    @if $val == light {
+      border: 1px solid black;
+    }
+    @else if $val == medium {
+      border: 3px solid black;
+    }
+    @else if $val == heavy {
+      border: 6px solid black;
+    }
+    @else{
+      border: none;
+    }
+  }
+
+  // Usage
+  // Call a mixin using the @include followed by the mixin name
+
+  h2{
+    @include border-stroke(medium)
+  }
+```
+
+```css
+/**
+* scss conditional style
+* 
+**/
+
+$p: 3;
+
+@while $p < 5 {
+  .item-#{$p} {
+        color: red;   
+        $p : $p + 1;
+    }
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. **How to disable mouseover in css**
+
+```css
+.noHover{
+    pointer-events: none;
+}
+```
+
+```html
+<a href='' class='btn noHover'>You cant touch ME !</a>
 ```
 
 <div align="right">
