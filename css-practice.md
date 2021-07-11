@@ -206,7 +206,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Place a div to corner top-right of the page?
+## Q. ***Place a div to corner top-right of the page?***
 
 ```html
 <!DOCTYPE html>
@@ -258,31 +258,102 @@ a[href$=".zip" i]:after {
 </div>
 ```
 
-#### Q. ***What are navigation bars in CSS?***
-#### Q. ***How to overrule underlining Hyperlinks?***
-#### Q. ***What happens if 100% width is used along with floats all across the page?***
-#### Q. ***How can the gap under the image be removed?***
-#### Q. ***How to scroll a page with scrollbar in css?***
-#### Q. ***How to set responsive background image***
-#### Q. ***Align p tag to bottom of div***
-#### Q. ***css selector element with parent of class***
-#### Q. ***css background linear grad***
-#### Q. ***css body background fixed***
-#### Q. ***Remove spacing between flex items***
-#### Q. ***How to remove default number input arrow?***
-#### Q. ***inject html to play youtube video in background***
-#### Q. ***strikethrough text tag***
-#### Q. ***javascript elipsis***
-#### Q. ***css overflow how to get text to start a new line***
-#### Q. ***How to add child element in css***
-#### Q. ***css ränder abrunden***
-#### Q. ***css separacion entre letras***
-#### Q. ***color last letter of H1*** 
-#### Q. ***minmax with repeat css grid***
-#### Q. ***How to display word-wrap:break-word; to left*** 
-#### Q. ***css scrollbar in margin not padding*** 
-#### Q. ***How to remove number up down buttons input in html*** 
-#### Q. ***center wrapped flex children***
+## Q.***css media query code example***
+
+```css
+@media screen and (min-width: 374px) {
+  section#rent_sectionn {
+    padding: 0 20px !important;
+  }
+}
+```
+
+## Q. ***background color gray opacity css code example***
+
+```css
+.transparent {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.transparent {
+    opacity: 0.5;
+}
+```
+
+## Q. ***Place header at bottom of div***
+
+```css
+#header {
+  position: relative;
+  min-height: 150px;
+}
+
+#header-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#header, #header * {
+  background: rgba(40, 40, 100, 0.25);
+}
+```
+
+## Q. ***Gradient css background***
+
+```css
+/*From bottom to top*/
+background: rgb(166,166,166);
+background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(255,255,255,1) 29%);
+```
+
+## Q. ***How to make fixed background image in css***
+
+```css
+body {
+  background-image: url("img_tree.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+```
+
+## Q. ***Add space between flex items***
+
+```css
+.flex-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.flex-gap > div {
+  margin: 6px; /* HERE WE ADD THE SPACE */
+}
+```
+
+## Q. ***How to disable arrows from Number input?***
+
+```css
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+```
+
+## Q. ***How to get text to start a new line?***
+
+```css
+.break-word {
+  word-wrap: break-word;
+}
+```
+
+## Q. ***How to select child element in css?***
+
+```css
+.parent > .immediate-child {
+  color: red;
+}
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
