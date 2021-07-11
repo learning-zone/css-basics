@@ -645,3 +645,20 @@ button:focus { outline: 0; }
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
+## Q. ***can i call mixin in html***
+
+```css
+/* sass mixin */
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+.box { @include transform(rotate(30deg)); }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
