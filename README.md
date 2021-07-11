@@ -130,6 +130,35 @@ The link element in the example has three attributes. The first, `rel`, tells th
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. ***What does the cascading portion of CSS mean?***
+
+The **cascading** in CSS refers to the fact that styling rules "cascade" down from several sources. This means that CSS has an inherent hierarchy and styles of a higher precedence will overwrite rules of a lower precedence.
+
+Even the simplest HTML document may have three or more style sheets associated with it including:
+
+* The browser\'s style sheet
+* The user\'s style sheet
+* The author\'s style sheet
+
+### **Browser style sheets**
+
+Browsers apply style sheets to all web documents. Although these style sheets vary from browser to browser, they all have common characteristics such as black text, blue links, purple visited links etc. These are referred to as a "default" browser stylesheet.
+
+As soon as you, the author, apply a style sheet to a document, it will override the browser's style sheet. This is because author style sheets will always override browser style sheets.
+
+### **User style sheets**
+
+Most modern browsers allow users to set their own style sheets within their browser. These style sheets will override the browsers default style sheets - for that user only.
+
+### **Author style sheets**
+
+As soon as you apply a basic style sheet or an inline style to a page, you have added what is referred to as an "author style sheet". Everything you do, from choosing fonts, colours and laying out pages in CSS is done using author style sheets.
+
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. ***Explain new features in CSS3?***
 
 ### **1. CSS3 Selectors**
