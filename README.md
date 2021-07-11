@@ -1408,7 +1408,7 @@ The CSS box model is a rectangular layout paradigm for HTML elements that consis
 * **Margin**: A transparent area surrounding the border (i.e., the amount of space between the border and any neighboring elements)
 
 <p align="center">
-  <img src="assets/images/box-model.png" alt="CSS Box Model" width="400px;" />
+  <img src="assets/images/box-model.png" alt="CSS Box Model" width="300px;" />
 </p>
 
 The size of the box itself is calculated like this:
@@ -1513,6 +1513,19 @@ box-sizing: content-box|border-box|initial|inherit;
 </body>
 </html>
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***What is the difference between border-box and content-box?***
+
+* **content-box** – Default box-sizing property. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+* **border-box** – The width and height properties (and min/max properties) includes content, padding and border.
+
+<p align="center">
+  <img src="assets/images/content-box-vs-border-box.png" alt="border-box vs content-box" width="600px;" />
+</p>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
