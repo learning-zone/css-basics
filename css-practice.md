@@ -35,7 +35,7 @@
 </html>
 ```
 
-**Live Demo**: [circle inside Square](https://codepen.io/pradeep_vwa/pen/zYwKbZo)
+**Live Demo**: [Circle inside Square](https://codepen.io/pradeep_vwa/pen/zYwKbZo)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
