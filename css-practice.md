@@ -375,7 +375,7 @@ body {
 }
 ```
 
-**Live Demo**: [Flexbox Gap](https://codepen.io/learning-zone/pen/ZEKBGoZ)
+**Live Demo**: [Flexbox Space](https://codepen.io/learning-zone/pen/ZEKBGoZ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -397,6 +397,8 @@ input[type=number] {
 }
 ```
 
+**Live Demo**: [Number Input Field](https://codepen.io/learning-zone/pen/vYmyOax)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -409,6 +411,8 @@ input[type=number] {
 }
 ```
 
+**Live Demo**: [CSS word-wrap Example](https://codepen.io/learning-zone/pen/GRmNJwM)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -420,6 +424,8 @@ input[type=number] {
   color: red;
 }
 ```
+
+**Live Demo**: [CSS select child element](https://codepen.io/learning-zone/pen/abWBOXv)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
