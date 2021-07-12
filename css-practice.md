@@ -411,7 +411,7 @@ input[type=number] {
 }
 ```
 
-**Live Demo**: [CSS word-wrap Example](https://codepen.io/learning-zone/pen/GRmNJwM)
+**Live Demo**: [CSS word-wrap](https://codepen.io/learning-zone/pen/GRmNJwM)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -439,7 +439,7 @@ input[type=number] {
 grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 ```
 
-**Live Demo**: [CSS grid-template-columns Example](https://codepen.io/learning-zone/pen/mdmOJYq)
+**Live Demo**: [CSS grid-template-columns](https://codepen.io/learning-zone/pen/mdmOJYq)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -459,18 +459,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 }
 ```
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. ***How to make text not highlightable in css***
-
-```css
--webkit-user-select: none; /* Safari */        
--moz-user-select: none; /* Firefox */
--ms-user-select: none; /* IE10+/Edge */
-user-select: none; /* Standard */
-```
+**Live Demo**: [Not Selectable Text](https://codepen.io/learning-zone/pen/gOWLaLj)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -488,21 +477,31 @@ user-select: none; /* Standard */
 }
 ```
 
+**Live Demo**: [flex children](https://codepen.io/learning-zone/pen/oNWYjWG)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***create a round button using css***
+## Q. ***create a rounded corner button using css***
 
 ```css
 .btn {
-  display:block;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  border: 1px solid red; 
+  background-color: #f44336;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 ```
+
+**Live Demo**: [Rounded Corner Button](https://codepen.io/learning-zone/pen/NWjbGaV)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
