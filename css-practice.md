@@ -35,7 +35,7 @@
 </html>
 ```
 
-**Live Demo**: [Circle inside Square](https://codepen.io/pradeep_vwa/pen/zYwKbZo)
+**Live Demo**: [Circle inside Square](https://codepen.io/learning-zone/pen/zYwKbZo)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -57,7 +57,7 @@
 }
 ```
 
-**Live Demo**: [center div](https://codepen.io/pradeep_vwa/pen/eYWdXMd)
+**Live Demo**: [center div](https://codepen.io/learning-zone/pen/eYWdXMd)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -73,6 +73,8 @@ tr:nth-child(even) {
 }
 ```
 
+**Live Demo**: [Zebra Striped](https://codepen.io/learning-zone/pen/zYwoxbM)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -87,6 +89,8 @@ body {
   color: black ;
 }
 ```
+
+**Live Demo**: [Fixed Background](https://codepen.io/learning-zone/pen/GRmNgbZ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -233,6 +237,8 @@ a[href$=".zip" i]:after {
 </html>
 ```
 
+**Live Demo**: [CSS Position](https://codepen.io/learning-zone/pen/wvdoBVd)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -260,11 +266,13 @@ a[href$=".zip" i]:after {
 </div>
 ```
 
+**Live Demo**: [Flexbox Example](https://codepen.io/learning-zone/pen/poPNJzL)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q.***css media query code example***
+## Q. ***CSS Media Query Example***
 
 ```css
 @media screen and (min-width: 769px) {
@@ -289,11 +297,13 @@ a[href$=".zip" i]:after {
 }
 ```
 
+**Live Demo**: [CSS Media Query](https://codepen.io/learning-zone/pen/poPNJjV)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***background color gray opacity css code example***
+## Q. ***CSS background-color gray opacity css code example***
 
 ```css
 .transparent {
@@ -303,6 +313,8 @@ a[href$=".zip" i]:after {
     opacity: 0.5;
 }
 ```
+
+**Live Demo**: [CSS Opacity](https://codepen.io/learning-zone/pen/OJmbVNm)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -331,14 +343,19 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Gradient css background***
+## Q. ***CSS Gradient Example***
 
 ```css
 /*From bottom to top*/
 
-background: rgb(166,166,166);
-background: linear-gradient(0deg, rgba(166,166,166,1) 0%, rgba(255,255,255,1) 29%);
+.container {
+  width: 500px;
+  padding: 4px;
+  background: linear-gradient(to top, red, yellow); 
+}
 ```
+
+**Live Demo**: [CSS Gradient](https://codepen.io/learning-zone/pen/mdmOJWR)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
