@@ -79,23 +79,6 @@ tr:nth-child(even) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to make a fixed (non-scrolling) background image?***
-
-In CSS, we can use the background-attachment property. The background attachment can be included in the shorthand background property, as in this example:
-
-```css
-body {
-  background: white url(example.gif) fixed ;
-  color: black ;
-}
-```
-
-**Live Demo**: [Fixed Background](https://codepen.io/learning-zone/pen/GRmNgbZ)
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
 ## Q. ***What elements will match each of the following CSS selectors?***
 
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
@@ -365,11 +348,15 @@ a[href$=".zip" i]:after {
 
 ```css
 body {
-  background-image: url("img_tree.gif");
+  background-image: url("../images/horse.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 ```
+
+**Live Demo**: [CSS fixed-background](https://codepen.io/learning-zone/pen/GRmNgbZ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -387,6 +374,8 @@ body {
   margin: 6px; /* HERE WE ADD THE SPACE */
 }
 ```
+
+**Live Demo**: [Flexbox Gap](https://codepen.io/learning-zone/pen/ZEKBGoZ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
