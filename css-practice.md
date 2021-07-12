@@ -439,6 +439,8 @@ input[type=number] {
 grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 ```
 
+**Live Demo**: [CSS grid-template-columns Example](https://codepen.io/learning-zone/pen/mdmOJYq)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
