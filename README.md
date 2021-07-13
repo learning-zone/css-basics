@@ -727,7 +727,110 @@ This number can also be expressed as a function, or using the keywords even or o
 
 ## Q. ***Explain CSS grid layout with example?***
 
-*ToDo*
+CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables us to align elements into columns and rows.
+
+### **Basic Terminologies**
+
+<p align="center">
+  <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="500px;" />
+</p>
+
+* **Grid Item**: The grid container contains the grid items.
+* **Grid Line**: The grid line is either a vertical or horizontal grid line that makes up the structure of the grid.
+* **Grid Cell**: The smallest unit on a grid is referred to as a Grid cell. It is the space between the two adjacent rows and columns.
+* **Rows**: The grid row is the horizontal track of the grid.
+* **Columns**: The grid column is the vertical track of the grid.
+* **Gutter**: A gutter is a space between the rows and columns in the grid.
+
+### **CSS Grid Properties**
+
+|Property         |Description                       |
+|-----------------|----------------------------------|
+|column-gap	      |Specifies the gap between the columns|
+|gap	            |A shorthand property for the row-gap and the column-gap properties|
+|grid	            |A shorthand property for the grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, and the grid-auto-flow properties|
+|grid-area	      |Either specifies a name for the grid item, or this property is a shorthand property for the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties|
+|grid-auto-columns|Specifies a default column size|
+|grid-auto-flow	  |Specifies how auto-placed items are inserted in the grid|
+|grid-auto-rows	  |Specifies a default row size|
+|grid-column	    |A shorthand property for the grid-column-start and the grid-column-end properties|
+|grid-column-end	|Specifies where to end the grid item|
+|grid-column-gap	|Specifies the size of the gap between columns|
+|grid-column-start|Specifies where to start the grid item|
+|grid-gap	        |A shorthand property for the grid-row-gap and grid-column-gap properties|
+|grid-row	        |A shorthand property for the grid-row-start and the grid-row-end properties|
+|grid-row-end	    |Specifies where to end the grid item|
+|grid-row-gap	    |Specifies the size of the gap between rows|
+|grid-row-start	  |Specifies where to start the grid item|
+|grid-template	  |A shorthand property for the grid-template-rows, grid-template-columns and grid-areas properties|
+|grid-template-areas|Specifies how to display columns and rows, using named grid items|
+|grid-template-columns	|Specifies the size of the columns, and how many columns in a grid layout|
+|grid-template-rows	    |Specifies the size of the rows in a grid layout|
+|row-gap	         |Specifies the gap between the grid rows|
+
+**Example**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    .item1 {
+        grid-area: header;
+    }
+
+    .item2 {
+        grid-area: menu;
+    }
+
+    .item3 {
+        grid-area: main;
+    }
+
+    .item4 {
+        grid-area: right;
+    }
+
+    .item5 {
+        grid-area: footer;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: rgba(155, 249, 249);
+        padding: 10px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(0, 150, 149);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+    }
+  </style>
+  </head>
+<body>
+  <h1>Grid Layout</h1>
+  <p>This grid layout contains six columns and three rows:</p>
+
+  <div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">main</div>
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+  </div>
+</body>
+</html>
+```
+
+**Live Demo**: [Grid Layout](https://learning-zone.github.io/css-interview-questions/assets/files/grid-layout.html)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
