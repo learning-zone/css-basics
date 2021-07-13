@@ -510,7 +510,21 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 ## Q. ***How apply blur in background-image***
 
 ```css
-filter: blur(5px);
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('../images/lL6tQfy.png');
+  width: 1200px;
+  height: 800px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
 ```
 
 **Live Demo**: [blur in background-image](https://codepen.io/learning-zone/pen/poPNqoy)
@@ -519,40 +533,51 @@ filter: blur(5px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***text-overflow ellipsis multiple lines***
+## Q. ***CSS text-overflow ellipsis multiple lines***
 
 ```css
 p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  border: 1px solid #ddd;
+  margin: 0;
 }
 ```
+
+**Live Demo**: [CSS text-overflow ellipsis](https://codepen.io/learning-zone/pen/NWjbeqW)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to create a fixed button at the bottom of page***
+## Q. ***How to place a fixed button at bottom right of the screen in html***
 
 ```css
-#fixed_button {
-    position: fixed;
-    z-index: 999;
-    right: 0.75rem;
-    bottom: 0.75rem;
-    display: none;
-    width: 2.625rem;
-    height: 2.625rem;
-    border-radius: 1.875rem;
-    background: #4f3cda url("../images/up-arrow.png") no-repeat center 47%;
-    background-size: auto;
-    background-size: 1.125rem 1.125rem;
-    text-indent: -9999px;
+.feedback {
+  background-color : #31B0D5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #46b8da;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
 }
 ```
+
+```html
+<div id="mybutton">
+  <button class="feedback">Feedback</button>
+</div>
+```
+
+**Live Demo**: [fixed button](https://codepen.io/learning-zone/pen/ExmNGVw)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
