@@ -510,9 +510,10 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 ## Q. ***How apply blur in background-image***
 
 ```css
-
-backdrop-filter: blur(10px);
+filter: blur(5px);
 ```
+
+**Live Demo**: [blur in background-image](https://codepen.io/learning-zone/pen/poPNqoy)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
