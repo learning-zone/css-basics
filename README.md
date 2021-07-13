@@ -729,7 +729,7 @@ This number can also be expressed as a function, or using the keywords even or o
 
 CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables us to align elements into columns and rows.
 
-### **Basic Terminologies**
+### **Basic Terminology**
 
 <p align="center">
   <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="500px;" />
