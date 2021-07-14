@@ -712,7 +712,7 @@ p:nth-last-child(3) {
 .box { @include transform(rotate(45deg)); }
 ```
 
-**Live Demo**: [CSS @mixin()](https://codepen.io/learning-zone/pen/OJmWOVz)
+**Live Demo**: [SASS @mixin()](https://codepen.io/learning-zone/pen/OJmWOVz)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
