@@ -907,6 +907,8 @@ $p: 3;
 <a href='' class='btn noHover'>You cant touch ME !</a>
 ```
 
+**Live Demo**: [CSS pointer-events](https://codepen.io/learning-zone/pen/ExmZoxW)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
