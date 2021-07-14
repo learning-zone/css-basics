@@ -807,7 +807,7 @@ input:focus {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **html import otf font**
+## Q. **CSS import otf font**
 
 ```css
 @font-face {
@@ -815,6 +815,8 @@ input:focus {
     src: url("path/GraublauWeb.otf") format("opentype");
 }
 ```
+
+**Live Demo**: [CSS @font-face](https://codepen.io/learning-zone/pen/YzVNEge)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
