@@ -632,22 +632,16 @@ p {
 ## Q. ***css fade in example***
 
 ```css
-/* Just add .fade-in class to element */
-
-.fade-in {
-  animation: fadeIn 2s;
-  opacity: 1;
+.fade-in-image {
+  animation: fadeIn 5s;
 }
-
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 ```
+
+**Live Demo**: [CSS fade-in](https://codepen.io/learning-zone/pen/MWmJEaQ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
