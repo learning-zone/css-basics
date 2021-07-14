@@ -679,11 +679,21 @@ button:focus { outline: 0; }
 
 ## Q. ***How to select last nth child***
 
+```html
+<p>The first paragraph.</p>
+<p>The second paragraph.</p>
+<p>The third paragraph.</p>
+<p>The fourth paragraph.</p>
+<p>The fifth paragraph.</p>
+```
+
 ```css
-#something a:nth-last-child(-n+3) {
-    /*declarations*/
+p:nth-last-child(3) {
+  background-color: yellow;
 }
 ```
+
+**Live Demo**: [CSS nth-last-child()](https://codepen.io/learning-zone/pen/poPRdoQ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
