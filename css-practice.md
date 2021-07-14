@@ -786,6 +786,8 @@ p:nth-last-child(3) {
 }
 ```
 
+**Live Demo**: [Sticky/Affix Navbar](https://codepen.io/learning-zone/pen/gOWgXzK)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
