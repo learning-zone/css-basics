@@ -825,8 +825,14 @@ input:focus {
 ## Q. **css shadow on image**
 
 ```css
-filter: drop-shadow(0px 10px 3px black);
+div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 ```
+
+**Live Demo**: [CSS box-shadow](https://codepen.io/learning-zone/pen/eYWgewZ)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
