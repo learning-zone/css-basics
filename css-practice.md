@@ -655,7 +655,7 @@ p {
 
 ```css
 [data-content]:before {
-	content: attr(data-content);
+  content: attr(data-content);
 }
 ```
 
@@ -670,6 +670,8 @@ p {
 ```css
 button:focus { outline: 0; }
 ```
+
+**Live Demo**: [CSS outline](https://codepen.io/learning-zone/pen/oNWBGrb)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
