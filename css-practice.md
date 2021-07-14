@@ -741,6 +741,8 @@ p:nth-last-child(3) {
 }
 ```
 
+**Live Demo**: [CSS rotate()](https://codepen.io/learning-zone/pen/LYyxOjx)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -748,7 +750,7 @@ p:nth-last-child(3) {
 ## Q. **css blink**
 
 ```css
-.blink_me {
+.blink {
   animation: blinker 1s linear infinite;
 }
 
@@ -760,8 +762,10 @@ p:nth-last-child(3) {
 ```
 
 ```html
-<div class="blink_me">BLINK ME</div>
+<div class="blink">Blink Text Example!</div>
 ```
+
+**Live Demo**: [CSS Animation](https://codepen.io/learning-zone/pen/NWjdwwE)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
