@@ -647,13 +647,19 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***css set property with data attribute***
+## Q. ***css get property with data attribute***
+
+```html
+<div data-content="data-attribute example in css"></div>
+```
 
 ```css
-div::after {
-  content: attr(data-whatever);
+[data-content]:before {
+	content: attr(data-content);
 }
 ```
+
+**Live Demo**: [CSS data-attribute](https://codepen.io/learning-zone/pen/eYWgGxx)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
