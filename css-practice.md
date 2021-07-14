@@ -792,7 +792,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **change input border color when selected**
+## Q. **Change input border color when selected**
 
 ```css
 input:focus {
@@ -800,6 +800,8 @@ input:focus {
   	border: 1px solid red;
 }
 ```
+
+**Live Demo**: [CSS focus](https://codepen.io/learning-zone/pen/eYWgePp)
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
