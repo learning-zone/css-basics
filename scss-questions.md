@@ -355,28 +355,28 @@ File splitting helps organize your CSS into multiple files, decreasing page load
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the @content directive used for?***
-## Q. ***What is wrong with Sass nesting?*** 
-## Q. ***What is variable interpolation in Sass?***
-## Q. ***What is the difference between SCSS and Sass?***
-## Q. ***What are the advantages/disadvantages of using CSS preprocessors?***
-## Q. ***Explain what is the use of the @import function in Sass?***
-## Q. ***Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?***
-## Q. ***Explain what Sass Maps is and what is the use of Sass Maps?***
-## Q. ***Explain how Sass comments are different from regular CSS?***
-## Q. ***Does Sass support inline comments?***
-## Q. ***Explain when can you use the %placeholders in Sass?***
-## Q. ***Is it possible to nest variables within variables in Sass?***
-## Q. ***What are Sass cons and pros?***
-## Q. ***Explain how Mixins is useful?***
-## Q. ***What are the similarities between LESS and Sass?***
-## Q. ***Explain what is the use of &combinator ?***
-## Q. ***What is the way to write a placeholder selector in Sass?***
-## Q. ***What are number operations in Sass?***
-## Q. ***Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?***
-## Q. ***Which directive displays an error message in SASS?***
-## Q. ***How many output styles are there in sass?***
-## Q. ***Which symbol is used to refer parent selector in sass?***
+#### Q. ***What is the @content directive used for?***
+#### Q. ***What is wrong with Sass nesting?*** 
+#### Q. ***What is variable interpolation in Sass?***
+#### Q. ***What is the difference between SCSS and Sass?***
+#### Q. ***What are the advantages/disadvantages of using CSS preprocessors?***
+#### Q. ***Explain what is the use of the @import function in Sass?***
+#### Q. ***Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?***
+#### Q. ***Explain what Sass Maps is and what is the use of Sass Maps?***
+#### Q. ***Explain how Sass comments are different from regular CSS?***
+#### Q. ***Does Sass support inline comments?***
+#### Q. ***Explain when can you use the %placeholders in Sass?***
+#### Q. ***Is it possible to nest variables within variables in Sass?***
+#### Q. ***What are Sass cons and pros?***
+#### Q. ***Explain how Mixins is useful?***
+#### Q. ***What are the similarities between LESS and Sass?***
+#### Q. ***Explain what is the use of &combinator ?***
+#### Q. ***What is the way to write a placeholder selector in Sass?***
+#### Q. ***What are number operations in Sass?***
+#### Q. ***Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?***
+#### Q. ***Which directive displays an error message in SASS?***
+#### Q. ***How many output styles are there in sass?***
+#### Q. ***Which symbol is used to refer parent selector in sass?***
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
