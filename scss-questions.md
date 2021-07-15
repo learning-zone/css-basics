@@ -4,6 +4,16 @@
 
 ## Q. ***Explain what is Sass? How it can be used?***
 
+When stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help. Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster.
+
+Sass works by writing your styles in .scss (or .sass) files, which will then get compiled into a regular CSS file. The newly compiled CSS file is what gets loaded to your browser to style your web application. This allows the browser to properly apply the styles to your web page.
+
+<p align="center">
+  <img src="assets/images/sass-process.png" alt="Sass Process" width="300px;" />
+</p>
+
+**Live Demo**: [Sass Example](https://codepen.io/learning-zone/pen/RwVprvO)
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
