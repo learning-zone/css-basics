@@ -228,6 +228,8 @@ Using `@extend` lets you share a set of CSS properties from one selector to anot
 }
 ```
 
+**Live Demo**: [Sass Inheritance](https://codepen.io/learning-zone/pen/ExmWKLG)
+
 ### **7. Operators**
 
 Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.  
