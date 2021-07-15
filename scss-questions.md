@@ -20,7 +20,9 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
 
 ## Q. ***What are the SCSS basic features?***
 
-**i) Variables**: Variables are useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones. Variables in SCSS start with `$` sign
+### **1. Variables**
+
+Variables are useful for things like colors, fonts, font sizes, and certain dimensions, as you can be sure always using the same ones. Variables in SCSS start with `$` sign
 
 **SCSS Style**
 
@@ -45,7 +47,11 @@ body {
 
 When the Sass is processed, it takes the variables we define for the `$font-stack` and `$primary-color` and outputs normal CSS with our variable values placed in the CSS. This can be extremely powerful when working with brand colors and keeping them consistent throughout the site.
 
-**ii) Nesting**: Basic nesting refers to the ability to have a declaration inside of a declaration.
+**Live Demo**: [Sass Variables](https://codepen.io/learning-zone/pen/LYyWNGM)
+
+### **2. Nesting**
+
+Basic nesting refers to the ability to have a declaration inside of a declaration.
 
 **SCSS Style**
 
@@ -85,9 +91,13 @@ nav a {
 }
 ```
 
-**iii) Partials**: The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
+### **3. Partials**
 
-**iv) Modules**: This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
+The partial Sass files contain little snippets of CSS that can be included in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@use` rule.
+
+### **4. Modules**
+
+This rule loads another Sass file as a module, which means we can refer to its variables, mixins, and functions in our Sass file with a namespace based on the filename. Using a file will also include the CSS it generates in your compiled output!
 
 **SCSS Style**
 
@@ -126,7 +136,9 @@ body {
 }
 ```
 
-**v) Mixins**: A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible. 
+### **5. Mixins**
+
+A mixin provide to make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible.
 
 **SCSS Style**
 
@@ -149,7 +161,9 @@ body {
 }
 ```
 
-**vi) Inheritance**: Using `@extend` lets you share a set of CSS properties from one selector to another.  
+### **6. Inheritance**
+
+Using `@extend` lets you share a set of CSS properties from one selector to another.  
 
 **SCSS Style**
 
@@ -210,7 +224,9 @@ body {
 }
 ```
 
-**vii) Operators**:  Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.  
+### **7. Operators**
+
+Sass has a handful of standard math operators like `+`, `-`, `*`, `/`, and `%`. In our example we're going to do some simple math to calculate widths for an aside & article.  
 
 **SCSS Style**
 
