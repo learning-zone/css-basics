@@ -4158,3 +4158,19 @@ Render tree construction follows the following order:
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+## Q. ***Name some CSS frameworks.***
+CSS frameworks are libraries that make web page styling easier. Some of them are Foundation, Bootstrap, Gumby, Ukit, Semantic UI, etc. 
+
+
+## Q. ***What is VH/VW (viewport height/ viewport width) in CSS?***
+It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+
+
+## Q. ***Difference between reset vs normalize CSS?. How do they differ?***
+Reset CSS: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. 
+Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+
+
+## Q. ***Tell us about CSS float property.***
+The float property of CSS positions an image to the right or left as needed, including text wrapping around it. All properties of elements used before it remain unchanged. 
+
