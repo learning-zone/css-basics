@@ -4155,9 +4155,6 @@ Render tree construction follows the following order:
 * Emit visible nodes with content and their computed styles.
 * Finally, output a render tree that contains both the content and style information of all visible content on the screen.
 
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
 	
 ## Q. ***Name some CSS frameworks.***
 CSS frameworks are libraries that make web page styling easier. Some of them are Foundation, Bootstrap, Gumby, Ukit, Semantic UI, etc. 
@@ -4175,3 +4172,6 @@ Normalize CSS: Normalize CSS aims to make built-in browser styling consistent ac
 ## Q. ***Tell us about CSS float property.***
 The float property of CSS positions an image to the right or left as needed, including text wrapping around it. All properties of elements used before it remain unchanged. 
 
+	<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
