@@ -349,7 +349,7 @@ body, p {
 
 |LESS	|Sass    |
 |-----|--------|
-|– LESS uses JavaScript and processed at client-side|	– Sass is coded in Ruby and thus processed to server-side
+|– LESS compiler is coded in Javascript |	– Sass compiler is coded in Dart
 |– Variable names are prefaced with the @symbol	    |– Variable name are prefaced with $ symbol
 |– LESS does not inherit multiple selectors with one set of properties | – Sass inherits multiple selectors with one set of properties |
 |– LESS does not work with “unknown” units neither it returns syntax error notification for incompatible units or maths related syntax error|	– Sass allows you to work with “unknown” units also returns a syntax error notification for incompatible units|
