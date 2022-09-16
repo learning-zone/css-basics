@@ -11,13 +11,13 @@
 
 <br/>
 
-## Q. ***What is CSS?***
+## Q. What is CSS?
 
 **CSS** stands for **Cascading Style Sheets**. CSS is used to define styles for web pages, including the design, layout and variations in display for different devices and screen sizes. CSS was intended to allow web professionals to separate the content and structure of a website\'s code from the visual design.
 
 CSS can be used for document text styling — for example changing the color and size of headings and links. It can be used to create layout — for example turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.
 
-**Example**
+**Example:**
 
 ```css
 h1 {
@@ -34,7 +34,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the use of css ruleset?***
+## Q. What is the use of css ruleset?
 
 CSS is a rule or set of rules that describe the formatting (change of appearance) of individual elements on a web page. The rule consists of two parts: the selector and the next declaration block. The image below shows the structure (syntax) of the rule:
 
@@ -58,15 +58,15 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the possible ways to apply CSS styles to a web page?***
+## Q. What are the possible ways to apply CSS styles to a web page?
 
 There are three ways to apply CSS to HTML: Inline, internal, and external.
 
-### **1. Inline CSS**
+**1. Inline CSS:**
 
 Inline CSS is specified directly in the opening tag of the element you want it to apply to. It is entered into the style attribute within HTML. This allows CSS properties on a "per tag" basis.
 
-**Example**
+**Example:**
 
 ```html
 <p style="font-weight:bold;">Bold Font</p>
@@ -74,11 +74,11 @@ Inline CSS is specified directly in the opening tag of the element you want it t
 
 This CSS type is not really recommended, as each HTML tag needs to be styled individually. However, inline CSS in HTML can be useful in some situations. For example, in cases where you don\'t have access to CSS files or need to apply styles for a single element only.
 
-### **2. Internal CSS**
+**2. Internal CSS:**
 
 Internal or Embedded, styles are used for the whole page. Inside the head element, the style tags surround all of the styles for the page.
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -99,11 +99,11 @@ Internal or Embedded, styles are used for the whole page. Inside the head elemen
 
 This CSS style is an effective method of styling a single page. However, using this style for multiple pages is time-consuming as you need to put CSS rules to every page of your website.
 
-### **3. External CSS**
+**3. External CSS:**
 
 In external CSS rules are stored in a separate file. To refer to that file from the HTML page, add the link element (and its closing element within XHTML) to the head element. This CSS type is a more efficient method, especially for styling a large website. By editing one **.css** file, you can change your entire site at once.
 
-**style.css**
+**style.css:**
 
 ```css
   p {
@@ -130,7 +130,7 @@ The link element in the example has three attributes. The first, `rel`, tells th
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What does the cascading portion of CSS mean?***
+## Q. What does the cascading portion of CSS mean?
 
 The **cascading** in CSS refers to the fact that styling rules "cascade" down from several sources. This means that CSS has an inherent hierarchy and styles of a higher precedence will overwrite rules of a lower precedence.
 
@@ -140,17 +140,17 @@ Even the simplest HTML document may have three or more style sheets associated w
 * The user\'s style sheet
 * The author\'s style sheet
 
-### **Browser style sheets**
+**1. Browser style sheets:**
 
 Browsers apply style sheets to all web documents. Although these style sheets vary from browser to browser, they all have common characteristics such as black text, blue links, purple visited links etc. These are referred to as a "default" browser stylesheet.
 
 As soon as you, the author, apply a style sheet to a document, it will override the browser's style sheet. This is because author style sheets will always override browser style sheets.
 
-### **User style sheets**
+**2. User style sheets:**
 
 Most modern browsers allow users to set their own style sheets within their browser. These style sheets will override the browsers default style sheets - for that user only.
 
-### **Author style sheets**
+**3. Author style sheets:**
 
 As soon as you apply a basic style sheet or an inline style to a page, you have added what is referred to as an "author style sheet". Everything you do, from choosing fonts, colours and laying out pages in CSS is done using author style sheets.
 
@@ -159,9 +159,9 @@ As soon as you apply a basic style sheet or an inline style to a page, you have 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain new features in CSS3?***
+## Q. Explain new features in CSS3?
 
-### **1. CSS3 Selectors**
+**1. CSS3 Selectors:**
 
  * Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value.
 
@@ -189,7 +189,7 @@ img[src*='artwork']{
 }
 ```
 
-### **2. Pseudo-classes**
+**2. Pseudo-classes:**
 
 CSS2 supports user interaction pseudo-classes, namely `:link`, `:visited`, `:hover`, `:active`, and `:focus`.  
 A few more pseudo-class selectors were added in CSS3. One is the `:root` selector, which allows designers to point to the root element of a document.
@@ -221,7 +221,7 @@ The negation pseudo-class selector, `:not` can be coupled with almost any other 
   img:not([border]){ border: 1; }
 ```
 
-### **3. CSS3 Colors**
+**3. CSS3 Colors:**
 
 The color keyword list has been extended in the CSS3 color module to include 147 additional keyword colors (that are generally well supported), CSS3 also provides us with a number of other options: **HSL**, **HSLA**, **RGBA** and **Opacity**.
 
@@ -235,27 +235,27 @@ div.halfalpha {
   background-color: rgba(0, 0, 0, 0.5);
   color: #000000;
 }
-``` 
+```
 
-### **4. Rounded Corners: border-radius**
+**4. Rounded Corners: border-radius:**
 
 ```css
 border-radius: 25px;
 ```
 
-### **5 Drop Shadows**
+**5 Drop Shadows:**
 
 ```css
 box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
 ```
 
-### **6. Text Shadow**
+**6. Text Shadow:**
 
 ```css
 text-shadow: topOffset leftOffset blurRadius color;
 ```
 
-### **7. Linear Gradients**
+**7. Linear Gradients:**
 
 ```css
 Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
@@ -265,7 +265,7 @@ Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
 }
 ```
 
-### **8. Radial Gradients**
+**8. Radial Gradients:**
 
 ```css
 Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
@@ -278,7 +278,7 @@ Syntax : background: radial-gradient(shape size at position, start-color, ..., l
 }//Circle
 ```
 
-### **9. Multiple Background Images**
+**9. Multiple Background Images:**
 
 In CSS3, there\'s no need to include an element for every background image; it provides us with the ability to add more than one background image to any element, even to pseudo-elements.
 
@@ -293,7 +293,7 @@ url(thirdImage.png);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the css selectors?***
+## Q. What are the css selectors?
 
 A CSS selector is the part of a CSS rule set that actually selects the content you want to style.
 
@@ -525,7 +525,7 @@ a:hover {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is contextual selector?***
+## Q. What is contextual selector?
 
 Contextual selector addresses specific occurrence of an element. It is a string of individual selectors separated by white space (search pattern), where only the last element in the pattern is addressed providing it matches the specified contex.
 
@@ -541,15 +541,15 @@ table p { property: value; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between Pseudo-classes and pseudo-elements?***
+## Q. What is the difference between Pseudo-classes and pseudo-elements?
 
 A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a simple selector, for example `:hover`. A pseudo-element however allows us to create items that do not normally exist in the document tree, for example `::after`.
 
-**Pseudo-classes**  
+**Pseudo-classes:**  
 
 Pseudo-classes select regular elements but under certain conditions, like when their position relative to siblings or when they’re under a particular state. Here is a list of pseudo-classes in CSS3:
 
-**a) Dynamic pseudo-classes**  
+**a) Dynamic pseudo-classes:**  
 
 * :link
 * :visited
@@ -557,13 +557,13 @@ Pseudo-classes select regular elements but under certain conditions, like when t
 * :active
 * :focus
 
-**b) UI element states pseudo-classes**  
+**b) UI element states pseudo-classes:**  
 
 * :enabled
 * :disabled
 * :checked
 
-**c) Structural pseudo-classes**  
+**c) Structural pseudo-classes:**  
 
 * :first-child
 * :nth-child(n)
@@ -578,14 +578,13 @@ Pseudo-classes select regular elements but under certain conditions, like when t
 * :root
 * :empty
 
-**d) Other pseudo-classes**  
+**d) Other pseudo-classes:**  
 
 :not(x)
 :target
 :lang(language)
 
-
-**Pseudo-elements**  
+**Pseudo-elements:**  
 
 Pseudo-elements effectively create new elements that are not specified in the markup of the document and can be manipulated much like a regular element. 
 
@@ -599,7 +598,7 @@ Pseudo-elements effectively create new elements that are not specified in the ma
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Combinator selector?***
+## Q. What is Combinator selector?
 
 A combinator is the character in a selector that connects two selectors together. There are four types of combinators. 
 
@@ -612,6 +611,7 @@ div p {
   background-color: yellow;
 }
 ```
+
 **b) Child Combinator (>)**: The child selector selects all elements that are the children of a specified element.
 
 The following example selects all `<p>` elements that are children of a `<div>` element:
@@ -631,9 +631,11 @@ div + p {
   background-color: yellow;
 }
 ```
+
 **d) General Sibling Combinator (~)**: The general sibling selector selects all elements that are siblings of a specified element.
 
-The following example selects all `<p>` elements that are siblings of `<div>` elements: 
+The following example selects all `<p>` elements that are siblings of `<div>` elements:
+
 ```css
 div ~ p {
   background-color: yellow;
@@ -644,9 +646,10 @@ div ~ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between class selectors and id selectors?***
+## Q. What is the difference between class selectors and id selectors?
 
 In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+
 ```css
 #top {
     background-color: #ccc;
@@ -673,11 +676,11 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between the “nth-child()” and “nth-of-type()” selectors?***
+## Q. What is the difference between the “nth-child()” and “nth-of-type()” selectors?
 
 The `nth-child()` pseudo-class is used to match an element based on a number, which represents the element\'s position amongst it\'s siblings. More specifically, the number represents the number of siblings that exist before the element in the document tree (minus 1).
 
-**Example**
+**Example:**
 
 ```css
 .example :nth-child(5) { background: #ffdb3a; }
@@ -725,11 +728,11 @@ This number can also be expressed as a function, or using the keywords even or o
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain CSS grid layout with example?***
+## Q. Explain CSS grid layout with example?
 
 CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size, position, and layer, between parts of a control built from HTML primitives. Like tables, grid layout enables us to align elements into columns and rows.
 
-### **Basic Terminology**
+**Basic Terminology:**
 
 <p align="center">
   <img src="assets/images/grid-term.jpg" alt="Grid Terminology" width="500px;" />
@@ -742,7 +745,7 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
 * **Columns**: The grid column is the vertical track of the grid.
 * **Gutter**: A gutter is a space between the rows and columns in the grid.
 
-### **CSS Grid Properties**
+**CSS Grid Properties:**
 
 |Property         |Description                       |
 |-----------------|----------------------------------|
@@ -768,7 +771,7 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
 |grid-template-rows	    |Specifies the size of the rows in a grid layout|
 |row-gap	         |Specifies the gap between the grid rows|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -836,7 +839,7 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS flexbox? Write all the properties of the flexbox?***
+## Q. What is CSS flexbox? Write all the properties of the flexbox?
 
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
 
@@ -847,17 +850,17 @@ Before the Flexbox Layout module, there were four layout modes:
 * **Table**, for two-dimensional table data
 * **Positioned**, for explicit position of an element
 
-### **Flex Container**
+**Flex Container:**
 
 An area of a document laid out using flexbox is called a **flex container**. To create a flex container, we set the value of the area\'s container\'s `display` property to `flex` or `inline-flex`. As soon as we do this the direct children of that container become **flex items**.
 
-### **Flexbox Terminology**
+**Flexbox Terminology:**
 
 <p align="center">
   <img src="assets/images/flex-terminology.png" alt="Flexbox Terminology" width="500px;" />
 </p>
 
-### **The CSS Flexbox Container Properties**
+**The CSS Flexbox Container Properties:**
 
 |Property        |Values                                                            |
 |----------------|------------------------------------------------------------------|
@@ -869,7 +872,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
 |align-items:    |flex-start, flex-end, center, baseline, stretch;|
 |align-content:  |flex-start, flex-end, center, space-between, space-around, stretch;|
 
-### **The CSS Flexbox Properties**
+**The CSS Flexbox Properties:**
 
 |Property        |Values                                                  |
 |----------------|--------------------------------------------------------|
@@ -880,7 +883,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
 |flex:           |none, [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]|
 |align-self:     |auto, flex-start, flex-end, center, baseline, stretch;|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -923,7 +926,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***When to use css grid and flexbox?***
+## Q. When to use css grid and flexbox?
 
 * CSS Grid Layout is a **two-dimensional** system, meaning it can handle both columns and rows, unlike flexbox which is largely a **one-dimensional** system (either in a column or a row).
 * A core difference between CSS Grid and Flexbox is that — CSS Grid’s approach is **layout-first** while Flexbox’ approach is **content-first**. If you are well aware of your content before making layout, then blindly opt for Flexbox and if not, opt for CSS Grid.
@@ -935,7 +938,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
   <img src="assets/images/grid.png" alt="Two-Dimensional" />
 </p>
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1017,7 +1020,7 @@ An area of a document laid out using flexbox is called a **flex container**. To 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS BEM?***
+## Q. What is CSS BEM?
 
 The BEM (**Block Element Modifier**) methodology is a naming convention for CSS classes in order to keep CSS more maintainable by defining namespaces to solve scoping issues. A Block is a standalone component that is reusable across projects and acts as a "namespace" for sub components (Elements). Modifiers are used as flags when a Block or Element is in a certain state or is different in structure or style.
 
@@ -1035,7 +1038,7 @@ The BEM (**Block Element Modifier**) methodology is a naming convention for CSS 
 }
 ```
 
-**Example**
+**Example:**
 
 ```css
 .button {
@@ -1068,7 +1071,7 @@ The BEM (**Block Element Modifier**) methodology is a naming convention for CSS 
 </button>
 ```
 
-**Benefits**  
+**Benefits:**  
 
 * **Modularity**: Block styles are never dependent on other elements on a page, so you will never experience problems from cascading.
 * **Reusability**: Composing independent blocks in different ways, and reusing them intelligently, reduces the amount of CSS code that you will have to maintain.
@@ -1078,7 +1081,7 @@ The BEM (**Block Element Modifier**) methodology is a naming convention for CSS 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the benefits of using CSS sprites?*** 
+## Q. What are the benefits of using CSS sprites? 
 
 CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons. 
 
@@ -1100,11 +1103,11 @@ CSS sprites combine multiple images into one single larger image. It is a common
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is tweening in css?***
+## Q. What is tweening in css?
 
 The pose-to-pose option is to create a few keyframes throughout the sequence, and then fill in the gaps later. Filling in these gaps is known as **tweening**. It is the process of generating intermediate frames between two images. It gives the impression that the first image has smoothly evolved into the second one. In CSS3, Transforms (matrix, translate, rotate, scale etc.) module can be used to achieve tweening.
 
-**Example**:
+**Example:**
 
 ```css
 p {
@@ -1129,7 +1132,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the difference between `visibility: hidden;` and `display: none;`? What are the pros and cons of using `display:none`?***
+## Q. Explain the difference between `visibility: hidden;` and `display: none;`? What are the pros and cons of using `display:none`?
 
 * **visibility: hidden** simply hides the element but it will occupy space and affect the layout of the document.  
 * **display: none** removes the element from the normal layout flow (causes DOM reflow). It will not affect the layout of the document nor occupy space.
@@ -1138,7 +1141,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of the `z-index` and how a stacking context is formed?***
+## Q. What is the purpose of the `z-index` and how a stacking context is formed?
 
 The `z-index` helps specify the stack order of positioned elements that may overlap one another. The `z-index` default value is zero, and can take on either a positive or negative number. An element with a higher `z-index` is always stacked above than a lower index.
 
@@ -1149,7 +1152,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
   * **Initial**: Sets this property to its default value (0).
   * **Inherit**: Inherits this property from its parent element.
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1187,7 +1190,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Exaplain CSS position Property?***
+## Q. Exaplain CSS position Property?
 
 <p align="center">
   <img src="assets/images/css-position-all.png" alt="One-Dimensional" />
@@ -1209,9 +1212,9 @@ The `z-index` helps specify the stack order of positioned elements that may over
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the differences between relative and absolute in CSS?***
+## Q. What are the differences between relative and absolute in CSS?
 
-### **Relative Position**
+**Relative Position**
 
 An element with `position: relative;` is positioned relative to its normal position.
 
@@ -1221,7 +1224,7 @@ Setting the top, right, bottom, and left properties of a relatively-positioned e
   <img src="assets/images/relative-position.png" alt="CSS rule" width="250px;" />
 </p>
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1250,7 +1253,7 @@ Setting the top, right, bottom, and left properties of a relatively-positioned e
 
 **Live Demo**: [Relative Position Property](https://learning-zone.github.io/css-interview-questions/assets/files/relative-position.html)
 
-### **Absolute Position**
+**Absolute Position:**
 
 An element with `position: absolute;` will cause it to adjust its position with respect to its parent. If no parent is present, then it uses the document body as parent.
 
@@ -1258,7 +1261,7 @@ An element with `position: absolute;` will cause it to adjust its position with 
   <img src="assets/images/absolute-position.png" alt="CSS rule" width="350px;" />
 </p>
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1302,12 +1305,12 @@ An element with `position: absolute;` will cause it to adjust its position with 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***The difference between block, inline and inline-block element?***
+## Q. The difference between block, inline and inline-block element?
 
 **a) Block Elements**  
 The block elements always start on a new line. They will also take space of an entire row or width. List of block elements are `<p>`, `<h1>`, `<div>`, `<header>`.
 
-**Example**:
+**Example:**
 
 ```html
 <p>
@@ -1328,7 +1331,7 @@ Inline elements don\'t start on a new line, they appear on the same line as the 
 
 When it comes to margins and padding, browsers treat inline elements differently. You can add space to the left and right on an inline element, but you cannot add height to the top or bottom padding or margin of an inline element.
 
-**Example**:
+**Example:**
 
 ```html
 <a href="#">Link</a>
@@ -1364,7 +1367,7 @@ button {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are counters in CSS3?***
+## Q. What are counters in CSS3?
 
 CSS counters let you adjust the appearance of content based on its location in a document. To use a CSS counter, it must first be initialized to a value with the `counter-reset` property (0 by default). The same property can also be used to change its value to any specific number. Once initialized, a counter\'s value can be increased or decreased with counter-increment. The counter\'s name must not be "none", "inherit", or "initial"; otherwise the declaration is ignored.
 
@@ -1387,7 +1390,7 @@ h3::before {
 <h3>Conclusion</h3>
 ```
 
-**CSS Counter Properties**
+**CSS Counter Properties:**
 
 |Property	        |Description  |
 |-----------------|-------------------------------------------------------------------------------|
@@ -1395,7 +1398,7 @@ h3::before {
 |counter-increment|Increments one or more counter values|
 |counter-reset	  |Creates or resets one or more counters|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1428,7 +1431,7 @@ h3::before {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you specify units in the CSS? What are the different ways to do it?***
+## Q. How do you specify units in the CSS? What are the different ways to do it?
 
 There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
 
@@ -1437,7 +1440,7 @@ The length unit in CSS is of two types:
 * Absolute length units.
 * Relative length units.
 
-### **Absolute length units**
+**Absolute length units:**
 
 The following are all absolute length units — they are not relative to anything else, and are generally considered to always be the same size.
 
@@ -1451,7 +1454,7 @@ The following are all absolute length units — they are not relative to anythin
 |pt	          |Points	              |1pt = 1/72th of 1in|
 |px	          |Pixels	              |1px = 1/96th of 1in|
 
-### **Relative length units**
+**Relative length units:**
 
 Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
 
@@ -1467,7 +1470,7 @@ Relative length units specify a length relative to another length property. Rela
 |vmin	           |1% of the viewport's smaller dimension.|
 |vmax	           |1% of the viewport's larger dimension.|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1508,7 +1511,7 @@ Relative length units specify a length relative to another length property. Rela
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Which one would you prefer among px, em % or pt and why?***
+## Q. Which one would you prefer among px, em % or pt and why?
 
 * ```px``` gives fine grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade, this means if parent font-size is 20px and child 16px. child would be 16px.
 
@@ -1522,7 +1525,7 @@ Relative length units specify a length relative to another length property. Rela
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is pseudo element? What is pseudo class?***
+## Q. What is pseudo element? What is pseudo class?
 
 **1. Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
 
@@ -1531,7 +1534,7 @@ For example, it can be used to:
 * Style the first letter, or line, of an element
 * Insert content before, or after, the content of an element
 
-**CSS Pseudo Elements**  
+**CSS Pseudo Elements:**  
 
 |Sl.No|Selector	      |Example	        |description|
 |-----|---------------|-----------------|-------------|
@@ -1550,7 +1553,7 @@ For example, it can be used to:
 * Style visited and unvisited links differently
 * Style an element when it gets focus
 
-**CSS Pseudo Classes**  
+**CSS Pseudo Classes:**  
 
 | Sl.No |Selector	         | Example	              |description|
 |-------|------------------|------------------------|-----------|
@@ -1590,7 +1593,7 @@ For example, it can be used to:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the CSS “box model” and the layout components that it consists of?***
+## Q. Explain the CSS “box model” and the layout components that it consists of?
 
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
@@ -1610,7 +1613,7 @@ The size of the box itself is calculated like this:
 |Width    |width + padding-left + padding-right + border-left + border-right |
 |Height   |height + padding-top + padding-bottom + border-top + border-bottom|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1645,17 +1648,17 @@ The size of the box itself is calculated like this:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How you would tell the browser in CSS to render your layout in different box models?***
+## Q. How you would tell the browser in CSS to render your layout in different box models?
 
 The **box-sizing** property allows us to include the padding and border in an element\'s total width and height. If you set `box-sizing: border-box;` on an element, padding and border are included in the width and height
 
-**Syntax**
+**Syntax:**
 
 ```css
 box-sizing: content-box|border-box|initial|inherit;
 ```
 
-### **Property Values**
+**Property Values:**
 
 |Value       |Description                              |
 |------------|-----------------------------------------|
@@ -1664,7 +1667,7 @@ box-sizing: content-box|border-box|initial|inherit;
 |initial	   |Sets this property to its default value. Read about initial|
 |inherit	   |Inherits this property from its parent element. Read about inherit|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1710,7 +1713,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between border-box and content-box?***
+## Q. What is the difference between border-box and content-box?
 
 * **content-box** – Default box-sizing property. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
 * **border-box** – The width and height properties (and min/max properties) includes content, padding and border.
@@ -1723,7 +1726,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the meaning of each of these CSS units for expressing length?***
+## Q. Explain the meaning of each of these CSS units for expressing length?
 
 * ```cm``` centimeters
 * ```em``` elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)
@@ -1737,7 +1740,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***In CSS3, how would you select?***
+## Q. In CSS3, how would you select?
 
 * Every ```<a>``` element whose href attribute value begins with “https”.
 ```css
@@ -1758,7 +1761,7 @@ box-sizing: content-box|border-box|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the purpose of the box-sizing property?***
+## Q. What is the purpose of the box-sizing property?
 
 <p align="center">
   <img src="assets/images/box-sizing.jpg" alt="One-Dimensional" width="75%" />
@@ -1771,7 +1774,7 @@ The box-sizing CSS property sets how the total width and height of an element is
 * **border-box**: Width and height values apply to the content, padding, and border.
 * **inherit**: inherits the box sizing of the parent element.
 
-**Example**:
+**Example:**
 
 ```css
 box-sizing: content-box;
@@ -1784,7 +1787,7 @@ padding: 5px;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between RGBa, HEX and HSLa?***
+## Q. What is the difference between RGBa, HEX and HSLa?
 
 * **RGB** (Red/Green/Blue) is a color model.
 
@@ -1814,11 +1817,11 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS preprocessor?***
+## Q. What is CSS preprocessor?
 
 Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other usable assets. After development, these specific files are compiled into regular CSS that any browser can understand. Pre-processor help writing reusable, easily maintainable and extensible codes in CSS. 
 
-**CSS preprocessors**
+**CSS preprocessors:**
 
   * SASS (SCSS)
   * LESS
@@ -1837,11 +1840,11 @@ Pre-processors extend CSS with variables, operators, interpolations, functions, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between "resetting" and "normalizing" CSS?***
+## Q. What is the difference between "resetting" and "normalizing" CSS?
 
 **1. Resetting**: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset to be the same. You will have to redeclare styling for common typographic elements.
 
-**Example**
+**Example:**
 
 ```css
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
@@ -1860,7 +1863,7 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
 
 **2. Normalizing**: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
 
-**Example**
+**Example:**
 
 ```css
 /* 
@@ -1874,7 +1877,7 @@ footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain CSS Block Formatting Context?***
+## Q. Explain CSS Block Formatting Context?
 
 Floats, absolutely positioned elements, block containers (such as inline-blocks, table-cells, and table-captions) that are not block boxes, and block boxes with 'overflow' other than 'visible' (except when that value has been propagated to the viewport) establish new block formatting contexts for their contents.
 
@@ -1889,7 +1892,7 @@ A BFC is an HTML box that satisfies at least one of the following conditions:
 
 In a BFC, each box\'s left outer edge touches the left edge of the containing block (for right-to-left formatting, right edges touch). Vertical margins between adjacent block-level boxes in a BFC collapse. 
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -1950,11 +1953,11 @@ In a BFC, each box\'s left outer edge touches the left edge of the containing bl
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the float property and what float do?***
+## Q. What is the float property and what float do?
 
 The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. 
 
-**Syntax**
+**Syntax:**
 
 ```css
 /* Keyword values */
@@ -1970,7 +1973,7 @@ float: initial;
 float: unset;
 ```
 
-**Property Values**
+**Property Values:**
 
 |Sl.No| Value  | Description| 
 |-----|--------|------------|
@@ -1980,7 +1983,7 @@ float: unset;
 | 04. |initial |Sets this property to its default value.    	|
 | 05. |inherit |Inherits this property from its parent element. |
 
-**Example**:
+**Example:**:
 
 ```css
 section {
@@ -2023,7 +2026,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Describe clear Property in css?***
+## Q. Describe clear Property in css?
 
 The clear property specifies what elements can float beside the cleared element and on which side.
 
@@ -2035,7 +2038,7 @@ The clear property specifies what elements can float beside the cleared element 
 | 04. |clear: both     |No floating elements allowed on either the left or the right side|
 | 05. |clear: inherit  |The element inherits the clear value of its parent|
 
-**Example**
+**Example:**
 
 ```css
 div {
@@ -2047,17 +2050,17 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the purpose of clearing floats in CSS?***
+## Q. Explain the purpose of clearing floats in CSS?
 
 The **clear** property is directly related to the float property. It specifies if an element should be next to the floated elements or if it should move below them. This property applies to both floated and non-floated elements.
 
-**CSS Syntax**
+**CSS Syntax:**
 
 ```css
 clear: none|left|right|both|inherit|inline-start|inline-end;
 ```
 
-### **Property Values**
+**Property Values:**
 
 |Value       |Description	                                       |
 |------------|---------------------------------------------------|
@@ -2066,7 +2069,7 @@ clear: none|left|right|both|inherit|inline-start|inline-end;
 |right	     |The element is moved down to clear past right floats.|
 |Both 	     |The element is moved down to clear past both left and right floats.|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -2124,7 +2127,7 @@ clear: none|left|right|both|inherit|inline-start|inline-end;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is a clearfix in CSS?***
+## Q. What is a clearfix in CSS?
 
 A **clearfix** is a way for an element to clear its child elements automatically without any additional markup. The clearfix property is generally used in float layouts where elements are floated to be stacked horizontally.
 
@@ -2134,7 +2137,7 @@ The clearfix property allows a container to wrap its floated children. Without a
   <img src="assets/images/clearfix.png" alt="CSS rule" width="800px;" />
 </p>
 
-**Syntax**
+**Syntax:**
 
 ```css
 .clearfix {
@@ -2142,7 +2145,7 @@ The clearfix property allows a container to wrap its floated children. Without a
 }
 ```
 
-**Example**
+**Example:**
 
 ```html
 
@@ -2184,11 +2187,11 @@ The clearfix property allows a container to wrap its floated children. Without a
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Does `overflow: hidden` create a new block formatting context?***
+## Q. Does `overflow: hidden` create a new block formatting context?
 
 Yes. overflow property deals with the content if content size exceeds the allocated size for the content. You can make extra content visible, hidden, scroll or auto (viewport default behavior).
 
-## Q. ***How would you approach fixing browser-specific styling issues?***
+## Q. How would you approach fixing browser-specific styling issues?
 
 * Use a separate style sheet that only loads when that specific browser is being used. This technique requires server-side rendering though.
 * Use `autoprefixer` to automatically add vendor prefixes to your code.
@@ -2218,9 +2221,9 @@ Yes. overflow property deals with the content if content size exceeds the alloca
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are your favorite image replacement techniques and which do you use when?***
+## Q. What are your favorite image replacement techniques and which do you use when?
 
-**Technique: 01**
+**Technique: 01:**
 
 ```css
 h1#technique-one {
@@ -2239,7 +2242,7 @@ h1#technique-one span {
 </h1>
 ```
 
-**Technique: 02**
+**Technique: 02:**
 
 ```css
 h1.technique-two {
@@ -2256,7 +2259,7 @@ h1.technique-two {
 </h1>
 ```
 
-**Technique: 03**
+**Technique: 03:**
 
 ```css
 h1.technique-three {
@@ -2273,7 +2276,7 @@ h1.technique-three {
 </h1>
 ```
 
-**Technique: 04**
+**Technique: 04:**
 
 ```css
 h1.technique-four {
@@ -2291,7 +2294,7 @@ h1.technique-four {
 </h1>
 ```
 
-**Technique: 05**
+**Technique: 05:**
 
 ```css
 h1.technique-five {
@@ -2303,6 +2306,7 @@ h1.technique-five span {
   display: none;
 }
 ```
+
 ```html
 <h1 class="technique-five">
   <img src="images/blank.gif" alt="CSS-Tricks" />
@@ -2310,7 +2314,7 @@ h1.technique-five span {
 </h1>
 ```
 
-**Technique: 06**
+**Technique: 06:**
 
 ```css
 h1.technique-six {
@@ -2328,7 +2332,7 @@ h1.technique-six {
 </h1>
 ```
 
-**Technique: 07**
+**Technique: 07:**
 
 ```css
 h1.technique-seven {
@@ -2350,7 +2354,7 @@ h1.technique-seven span {
 </h1>
 ```
 
-**Technique: 08**
+**Technique: 08:**
 
 ```css
 h1.technique-eight {
@@ -2372,7 +2376,7 @@ h1.technique-eight span {
 </h1>
 ```
 
-**Technique: 09**
+**Technique: 09:**
 
 ```css
 h1.technique-nine {
@@ -2394,11 +2398,11 @@ h1.technique-nine {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are media queries? How could you apply css rules specific to a media?***
+## Q. What are media queries? How could you apply css rules specific to a media?
 
 Media queries are useful when you want to modify your site or app depending on a device\'s general type (such as print vs. screen) or specific characteristics and parameters (such as screen resolution or browser viewport width). It uses the @media rule to include a block of CSS properties only if a certain condition is true.
 
-**Media Types**
+**Media Types:**
 
 |Sl.No| Value | Description          |
 |------|-------|---------------------|
@@ -2407,7 +2411,7 @@ Media queries are useful when you want to modify your site or app depending on a
 |  03. |screen |Used for computer screens, tablets, smart-phones etc.|
 |  04. |speech |Used for screenreaders that "reads" the page out loud|
 
-**Media Features**  
+**Media Features:**  
 
 |Sl.No | Value           | Description          |
 |------|-----------------|----------------------|  
@@ -2448,7 +2452,7 @@ Media queries are useful when you want to modify your site or app depending on a
 | 35.  |width	           | The viewport width |
 
 
-**Example**:
+**Example:**
 
 ```css
 @media print {
@@ -2494,25 +2498,25 @@ Media queries are useful when you want to modify your site or app depending on a
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the use of `@media only screen`?***
+## Q. What is the use of `@media only screen`?
 
 It hide style sheets from older user agents.
 
-## Q. ***Does the `screen` keyword apply to the device\'s physical screen or the browser\'s viewport?***
+## Q. Does the `screen` keyword apply to the device\'s physical screen or the browser\'s viewport?
 
 Browser\'s Viewport
 
-## Q. ***How would you implement a web design comp that uses non-standard fonts?***
+## Q. How would you implement a web design comp that uses non-standard fonts?
 
 Use `@font-face` and define `font-family` for different `font-weight`s.
 
-## Q. ***How a browser determines what elements match a CSS selector?***
+## Q. How a browser determines what elements match a CSS selector?
 
 Browsers match selectors from rightmost (key selector) to left. Browsers filter out elements in the DOM according to the key selector and traverse up its parent elements to determine matches. The shorter the length of the selector chain, the faster the browser can determine if that element matches the selector.
 
 For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
 
-## Q. ***How can you load css resources conditionally?***
+## Q. How can you load css resources conditionally?
 
 **@import**:  allows to load stylesheet by using a path (uri) representing the location of the file.
 
@@ -2537,7 +2541,7 @@ if (window.matchMedia('screen and (min-width: 600px)')) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What does  `* { box-sizing: border-box; }` do? What are its advantages?***
+## Q. What does  `* { box-sizing: border-box; }` do? What are its advantages?
 
 * Make every element in the document include the padding and border in the element\'s inner dimensions; 
 making it easier to reason about the layout of elements on the page.
@@ -2551,10 +2555,11 @@ making it easier to reason about the layout of elements on the page.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***List display property in CSS?***
+## Q. List display property in CSS?
 
 The display property specifies the display behavior (the type of rendering box) of an element.  
-**Example**:
+
+**Example:**
 
 ```css
 p.ex1 {display: none;}
@@ -2563,7 +2568,7 @@ p.ex3 {display: block;}
 p.ex4 {display: inline-block;}
 ```
 
-**Property Values**
+**Property Values:**
 
 |Sl.No|Value	   |Description	
 |-----|---------------|------------------
@@ -2595,7 +2600,7 @@ p.ex4 {display: inline-block;}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How is responsive design different from adaptive design?*** 
+## Q. How is responsive design different from adaptive design? 
 
 **1) Responsive design** uses `CSS media queries` to change styles based on the target device such as display type, width, height, etc., and only one of these is necessary for the site to adapt to different screens.
 
@@ -2617,7 +2622,7 @@ Adaptive is useful for retrofitting an existing site in order to make it more mo
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is retina graphics? What kind of techniques do you use to handle images for retina screens?***
+## Q. What is retina graphics? What kind of techniques do you use to handle images for retina screens?
 
 In order to have crisp, good-looking graphics that make the best of retina displays we need to use high resolution images whenever possible. However using always the highest resolution images will have an impact on performance as more bytes will need to be sent over the wire.
 
@@ -2642,7 +2647,7 @@ To overcome this problem, we can use responsive images, as specified in HTML5. I
 
 The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it and uses `src` instead. If we really need to support IE11 and we want to provide this feature for performance reasons, we can use a JavaScript `polyfill`.
 
-**HTML5 picture Element**
+**HTML5 picture Element:**
 
 ```html
 <picture>
@@ -2652,7 +2657,7 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
 </picture>
 ```
 
-**Retina Display Media Query**
+**Retina Display Media Query:**
 
 ```css
 /* 1.25 dpr */
@@ -2675,7 +2680,7 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa?*** 
+## Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? 
 
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
 
@@ -2709,11 +2714,11 @@ In this case, we are translating the coordinates of the element by `50px` along 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***The translate() function can move the position of an element on the z-axis?***
+## Q. The translate() function can move the position of an element on the z-axis?
 
 * False
 
-## Q. ***Tell what each of these tags do, if there are alternatives, which are preferable, why?***
+## Q. Tell what each of these tags do, if there are alternatives, which are preferable, why?
 
 **`<em>`**: The HTML `<em>` tag represents stress emphasis of its contents.
 
@@ -2745,11 +2750,13 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 ```
 
 **`<i>`**: The content of the `<i>` tag is usually displayed in italic.
+
 ```html
 <p>I looked at it and thought <i>This can't be real!</i></p>
 ```
 
 **`<link>`**: The HTML `<link>` tag is used for defining a link to an external resource. It is placed in in the `<head>` section of the HTML document.
+
 ```html
 <head>
   <link rel="stylesheet" type="text/css" href="theme.css">
@@ -2757,23 +2764,28 @@ The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
 ```
 
 **`<strong>`**: The `<strong>` element is used to identify text that is of greater importance than the surrounding text. By default, all browsers render `<strong>` text in a bold typeface.
+
 ```html
 <strong>Strong text</strong>
 ```
+
 **`<article>`**: The `<article>` tag specifies independent, self-contained content.
+
 ```html
 <article>
   <h1>Google Chrome</h1>
   <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
 </article>
 ```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is At-Rule?***
+## Q. What is At-Rule?
 
 At-rules are `CSS statements` that instructs CSS how to behave. They begin with an at sign, `@` followed by an identifier and includes everything up to the next semicolon, `;` or the next CSS block, whichever comes first.
+
 ```css
 /* General structure */
 @IDENTIFIER (RULE);
@@ -2797,7 +2809,7 @@ At-rules are `CSS statements` that instructs CSS how to behave. They begin with 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How can the gap under the image be removed?***
+## Q. How can the gap under the image be removed?
 
 As images being inline elements are treated same as texts, so there is a gap left, which can be removed by:
 
@@ -2811,7 +2823,7 @@ As images being inline elements are treated same as texts, so there is a gap lef
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is progressive rendering?***
+## Q. What is progressive rendering?
 
 Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content for display as quickly as possible.
 
@@ -2825,7 +2837,7 @@ Progressive rendering is the name given to techniques used to improve the perfor
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?***
+## Q. What is mobile-first? Can you explain the difference between coding a website to be responsive versus using a mobile-first strategy?
 
 Making a website responsive means the some elements will respond by adapting its size or other functionality according to the device\'s screen size, typically the viewport width, through CSS media queries, for example, making the font size smaller on smaller devices.
 
@@ -2861,7 +2873,7 @@ A mobile-first strategy has 2 main advantages:
 * It\'s more performant on mobile devices, since all the rules applied for them don\'t have to be validated against any media queries.
 * It forces to write cleaner code in respect to responsive CSS rules.
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -2895,35 +2907,35 @@ A mobile-first strategy has 2 main advantages:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Which property is used to change the face of a font?***
+## Q. Which property is used to change the face of a font?
 
 The `font-family` property is used to change the face of a font.
 
-## Q. ***Which property is used to make a font italic or oblique?***
+## Q. Which property is used to make a font italic or oblique?
 
 The `font-style` property is used to make a font italic or oblique.
 
-## Q. ***Which property is used to create a small-caps effect?***
+## Q. Which property is used to create a small-caps effect?
 
 The `font-variant` property is used to create a small-caps effect.
 
-## Q. ***Which property is used to increase or decrease how bold or light a font appears?***
+## Q. Which property is used to increase or decrease how bold or light a font appears?
 
 The `font-weight` property is used to increase or decrease how bold or light a font appears.
 
-## Q. ***Which property is used to add or subtract space between the letters that make up a word?***
+## Q. Which property is used to add or subtract space between the letters that make up a word?
 
 The `letter-spacing` property is used to add or subtract space between the letters that make up a word.
 
-## Q. ***Which property is used to add or subtract space between the words of a sentence?***
+## Q. Which property is used to add or subtract space between the words of a sentence?
 
 The `word-spacing` property is used to add or subtract space between the words of a sentence.
 
-## Q. ***Which property is used to indent the text of a paragraph?***
+## Q. Which property is used to indent the text of a paragraph?
 
 The `text-indent` property is used to indent the text of a paragraph.
 
-## Q. ***Which property is used to align the text of a document?***
+## Q. Which property is used to align the text of a document?
 
 The `text-align` property is used to align the text of a document.
 
@@ -2931,19 +2943,19 @@ The `text-align` property is used to align the text of a document.
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Which property is used to underline, overline, and strikethrough text?***
+## Q. Which property is used to underline, overline, and strikethrough text?
 
 The `text-decoration` property is used to underline, overline, and strikethrough text.
 
-## Q. ***Which property is used to capitalize text or convert text to uppercase or lowercase letters?***
+## Q. Which property is used to capitalize text or convert text to uppercase or lowercase letters?
 
 The `text-transform` property is used to capitalize text or convert text to uppercase or lowercase letters.
 
-## Q. ***Which property allows you to control the shape or appearance of the marker of a list?***
+## Q. Which property allows you to control the shape or appearance of the marker of a list?
 
 The `list-style-type` allows you to control the shape or appearance of the marker.
 
-## Q. ***How do I restore the default value of a property?***
+## Q. How do I restore the default value of a property?
 
 The keyword `initial` can be used to resets it to its default value, which is defined in the CSS specification of the given property.
 
@@ -2951,7 +2963,7 @@ The keyword `initial` can be used to resets it to its default value, which is de
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is specificity? How to calculate specificity?***
+## Q. What is specificity? How to calculate specificity?
 
 A process of determining which css rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
 
@@ -2987,7 +2999,7 @@ html body div div h2 p {}
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What do you know about CSS Transitions?***
+## Q. What do you know about CSS Transitions?
 
 **CSS Transitions** allows to add an effect while changing from one style to another. You can set the which property you want to transition, duration, how you want to transit (linear, ease, ease-in, ease-out, cubic-bezier) and delay when transition will start.
 
@@ -3019,11 +3031,11 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the different css filters you can use?***
+## Q. What are the different css filters you can use?
 
 The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
 
-**Example**:
+**Example:**
 
 ```css
 img {
@@ -3046,7 +3058,7 @@ img {
 | 09. |opacity(%)	   |Sets the opacity level for the image. The opacity-level describes the transparency-level|
 | 10. |saturate(%)	 |Saturates the image.|
 | 11. |sepia(%)	     |Converts the image to sepia.|
-| 12. |url()	       |The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. **Example**: `filter: url(svg-url#element-id)`	|
+| 12. |url()	       |The url() function takes the location of an XML file that specifies an SVG filter, and may include an anchor to a specific filter element. for example `filter: url(svg-url#element-id)`	|
 | 13. |initial	     |Sets this property to its default value.|
 | 14. |inherit	     |Inherits this property from its parent element.|
 
@@ -3054,7 +3066,7 @@ img {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Enlist the various fonts properties?***
+## Q. Enlist the various fonts properties?
 
 |Property	             |Description                |
 |----------------------|---------------------------|
@@ -3076,7 +3088,7 @@ img {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Enlist the various background properties css?***
+## Q. Enlist the various background properties css?
 
 
 |  Property             | Description                               |
@@ -3096,7 +3108,7 @@ img {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between `em` and `rem` units?***
+## Q. What is the difference between `em` and `rem` units?
 
 Both em and rem units are based on the font-size CSS property. The only difference is where they inherit their values from.
 * `em` units inherit their value from the font-size of the parent element
@@ -3160,7 +3172,7 @@ Both em and rem units are based on the font-size CSS property. The only differen
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What does !important mean in CSS?***
+## Q. What does !important mean in CSS?
 
 It overrides the cascade and gives the style rule the highest precedence.
 
@@ -3179,7 +3191,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?***
+## Q. Does style2.css have to be downloaded and parsed before Paragraph 1 is rendered on the page?
 
 ```html
 <head>
@@ -3197,7 +3209,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Does style1.css have to be downloaded and parsed before style2.css can be fetched?***
+## Q. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
 
 ```html
 <head>
@@ -3211,7 +3223,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the CSS positioning?***
+## Q. What are the CSS positioning?
 
 |Keyword    | Value                 |Description                                                                           |
 |:----------|:----------------------|:-------------------------------------------------------------------------------------|
@@ -3228,7 +3240,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between padding and margin?***
+## Q. What is the difference between padding and margin?
 
 **1) Margin** is applied to the outside of you element hence effecting how far your element is away from other elements.  
 **2) Padding** is applied to the inside of your element hence effecting how far your element\'s content is away from the border.
@@ -3245,7 +3257,7 @@ Also, using margin will not affect your element\'s dimensions whereas padding wi
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are gradients in CSS?***
+## Q. What are gradients in CSS?
 
 CSS gradients are represented by the `<gradient>` data type, a special type of `<image>` made of a progressive transition between two or more colors. There are three types of gradients: 
 * linear (created with the `linear-gradient()` function), 
@@ -3283,7 +3295,7 @@ We can also create repeating gradients with the `repeating-linear-gradient()`, `
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is CSS opacity?***
+## Q. What is CSS opacity?
 
 <p align="center">
   <img src="assets/images/box-opacity.jpg" alt="CSS Opacity" />
@@ -3314,11 +3326,12 @@ div { background-color: lightblue; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How is the concept of inheritance applied in CSS?***
+## Q. How is the concept of inheritance applied in CSS?
 
 Inheritance is a concept in which the child class will inherit the properties of its parent class. It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children class if the child uses the same name.
 
 **Example:**
+
 ```css
 span {
   color: blue;
@@ -3333,7 +3346,7 @@ span {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you handle browser differences in your user base?***
+## Q. How do you handle browser differences in your user base?
 
 The `@supports` query in CSS can be very useful to scan if the user\'s current browser has a certain feature. The `@supports` CSS at-rule lets you specify declarations that depend on a browser\'s support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
 
@@ -3355,7 +3368,7 @@ The `@supports` query in CSS can be very useful to scan if the user\'s current b
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Cascade?***
+## Q. What is Cascade?
 
 Cascade is a method of defining the weight (importance) of individual styling rules thus allowing conflicting rules to be sorted out should such rules apply to the same selector.
 
@@ -3368,7 +3381,7 @@ P (color: black} /* normal weight */
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are CSS vendor prefixes?***
+## Q. What are CSS vendor prefixes?
 
 Vendor prefixes are extensions to CSS standards that can be added to these features to prevent incompatibilities from arising when the standard is extended. CSS vendor prefixes for some common platforms are listed below.
 
@@ -3381,7 +3394,7 @@ Vendor prefixes are extensions to CSS standards that can be added to these featu
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is DOM (Document Object Model) and how is it linked to CSS?***
+## Q. What is DOM (Document Object Model) and how is it linked to CSS?
 
 The Document Object Model (DOM) is a programming interface for HTML and XML(Extensible markup language) documents. It defines the logical structure of documents and the way a document is accessed and manipulated. This document enables Javascript to access and manipulate the elements and styles of a website. The model is built in a tree structure of objects and defines:
 
@@ -3394,11 +3407,11 @@ The Document Object Model (DOM) is a programming interface for HTML and XML(Exte
   <img src="assets/images/DOM.png" alt="Document Object Model" width="500px;" />
 </p>
 
-### **DOM Document**
+**DOM Document**
 
 The DOM Document is the owner of all other objects in your webpage. That means if you want to access any object on your webpage you always have to start with the document. It also contains many important properties and methods that enable us to access and modify our website.
 
-### **Finding HTML Elements**
+**Finding HTML Elements**
 
 |Methods           |Description |
 |------------------|-----------------|
@@ -3408,7 +3421,7 @@ The DOM Document is the owner of all other objects in your webpage. That means i
 |querySelector()          |This method returns the first element that matches a specified CSS selector. It can get elements by id, class, tag and all other valid CSS selectors. |
 |querySelectorAll()       |This method is completely the same as the querySelector() except that it returns all elements that fit the CSS Selector.|
 
-### **Changing HTML Elements**
+**Changing HTML Elements**
 
 The innerHTML property can be used to change the content of an HTML element. In this example we get the element with an id of header and set the inner content to "Hello World!".
 
@@ -3436,7 +3449,7 @@ To change the style of an HTML element we need to change the style property of o
 document.getElementsByTag("h1").style.borderBottom = "solid 3px #000";
 ```
 
-### **Adding and deleting elements**
+**Adding and deleting elements**
 
 **Adding elements**
 
@@ -3473,7 +3486,7 @@ div.parentNode.replaceChild(newDiv, div);
 
 Here we replace an element using the `replaceChild()` method. The first argument is the new element and the second argument is the element which we want to replace.
 
-### **Writing directly into the HTML output stream**
+**Writing directly into the HTML output stream**
 
 We can also write HTML expressions and JavaScript directly into the HTML output stream using the `write()` method. The `write()` method can also take multiple arguments that will be appended to the document in order of their occurrence.
 
@@ -3485,7 +3498,7 @@ document.write("<h1>Hello World!</h1><p>This is a paragraph!</p>");
 document.write(Date());
 ```
 
-### **Event Handlers**
+**Event Handlers**
 
 The HTML DOM also allows Javascript to react to HTML events. for example, mouse click, page load, mouse move, input field change etc.
 
@@ -3505,7 +3518,7 @@ Here we just assigned a clickevent that calls the runEvent method when our btn e
 document.getElementById("btn").addEventListener('click', runEvent);
 ```
 
-### **Node Relationships**
+**Node Relationships**
 
 The nodes in the DOM Document have a hierarchical relationship to each other. This means that the nodes are structured like a tree. We use the terms parent, sibling and child to describe the relationship between nodes.
 
@@ -3521,7 +3534,7 @@ We can navigate between nodes using these properties:
 * lastChild
 * nextSibling
 
-**Example**
+**Example:**
 
 ```js
 var parent = document.getElementById("heading").parentNode
@@ -3531,7 +3544,7 @@ var parent = document.getElementById("heading").parentNode
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the usage of "table-layout" property?***
+## Q. Explain the usage of "table-layout" property?
 
 The **table-layout** CSS property sets the algorithm used to lay out `<table>` cells, rows, and columns. 
 
@@ -3541,7 +3554,7 @@ The **table-layout** CSS property sets the algorithm used to lay out `<table>` c
 table-layout: auto|fixed|initial|inherit;
 ```
 
-### **Property Values**
+**Property Values**
 
 |Value          |Description          |
 |---------------|---------------------|
@@ -3550,7 +3563,7 @@ table-layout: auto|fixed|initial|inherit;
 |initial:       |It is used to set its default value.|
 |inherit:       |It is used to inherit the property from its parent.|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -3619,11 +3632,11 @@ table-layout: auto|fixed|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Does margin-top or margin-bottom have an effect on inline elements***
+## Q. Does margin-top or margin-bottom have an effect on inline elements
 
 Top and bottom margins do not affect inline elements because inline elements flow with content on the page. You can set left and right margins/padding on an inline element but not top or bottom because it would disrupt the flow of content. You can set margins on block (or inline-block but it will only look right if you set the vertical align right) because block level elements disrupt the flow of content.
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -3653,11 +3666,11 @@ Top and bottom margins do not affect inline elements because inline elements flo
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How does Calc() work?***
+## Q. How does Calc() work?
 
 The `calc()` function can be used to perform addition, subtraction, multiplication, and division calculations with numeric property values. Specifically, it can be used with `<length>`, `<frequency>`, `<angle>`, `<time>`, `<number>`, or `<integer>` data types.
 
-**Example**
+**Example:**
 
 ```css
 /* Example - 1 */
@@ -3680,7 +3693,7 @@ The `calc()` function can be used to perform addition, subtraction, multiplicati
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What do CSS Custom properties variables mean?***
+## Q. What do CSS Custom properties variables mean?
 
 Custom properties (sometimes referred to as **CSS variables** or **cascading variables**) are entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black;`) and are accessed using the `var()` function (e.g., `color: var(--main-color);`).
 
@@ -3694,7 +3707,7 @@ Property names that are prefixed with `--`, like `--example-name`, represent cus
 --somecomplexvalue: 3px 6px rgb(20, 32, 54);
 ```
 
-**Example**
+**Example:**
 
 ```css
 :root {
@@ -3736,11 +3749,11 @@ Property names that are prefixed with `--`, like `--example-name`, represent cus
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?***
+## Q. What is the difference between CSS variables and preprocessor(SASS, LESS, Stylus) variables?
 
 SASS variables are replaced with their values as the preprocessor produces its CSS output long before the browser interprets the code, while CSS custom properties are evaluated by the browser at runtime.
 
-**Example**: Preprocessor Variable
+**Example:** Preprocessor Variable
 
 ```css
 $brandColor: #F06D06;
@@ -3766,7 +3779,7 @@ The above code would do nothing in a browser. The browser wouldn\'t understand t
 
 This is now valid CSS. The variable was part of the preprocessor language, not CSS itself. Once the code compiles, the variables are gone.
 
-**Example**: CSS Custom Property
+**Example:** CSS Custom Property
 
 The native CSS has started supporting CSS variables, or "CSS Custom Properties". It allows you to work with variables directly in CSS. There is no compiling.
 
@@ -3787,11 +3800,11 @@ The native CSS has started supporting CSS variables, or "CSS Custom Properties".
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are Vendor-Prefixes?***
+## Q. What are Vendor-Prefixes?
 
 CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way for browser makers to add support for new CSS features before those features are fully supported in all browsers.
 
-**Example**: `transition` property
+**Example:** `transition` property
 
 ```css
 .myClass {
@@ -3803,7 +3816,7 @@ CSS vendor prefixes, also sometimes known as or CSS browser prefixes, are a way 
 }
 ```
 
-### **CSS prefixes**
+**CSS prefixes**
 
 The major browsers use the following prefixes:
 
@@ -3816,7 +3829,7 @@ The major browsers use the following prefixes:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the property that is used for controlling image-scroll?***
+## Q. What is the property that is used for controlling image-scroll?
 
 The **background-attachment** property in CSS is used to specify the kind of attachment of the background image with respect to its container. It can be set to scroll or remain fixed. It can be applied to all HTML elements.
 
@@ -3826,7 +3839,7 @@ The **background-attachment** property in CSS is used to specify the kind of att
 background-attachment: scroll|fixed|local|initial|inherit;
 ```
 
-### **Property Values**
+**Property Values**
 
 |Value	      |Description|
 |-------------|-------------------------------------------------------|
@@ -3836,7 +3849,7 @@ background-attachment: scroll|fixed|local|initial|inherit;
 |initial	    |Sets this property to its default value. Read about initial|
 |inherit	    |Inherits this property from its parent element. Read about inherit|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -3866,7 +3879,7 @@ background-attachment: scroll|fixed|local|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is the overflow property in CSS used for?***
+## Q. What is the overflow property in CSS used for?
 
 The CSS overflow property specifies how to handle the content when it overflows its block level container.
 
@@ -3876,7 +3889,7 @@ The CSS overflow property specifies how to handle the content when it overflows 
 overflow: visible|hidden|scroll|auto|initial|inherit;
 ```
 
-### **Property Values**
+**Property Values**
 
 |Value	   |Description	|
 |--------- |--------------------------------|
@@ -3889,7 +3902,7 @@ overflow: visible|hidden|scroll|auto|initial|inherit;
 |overflow-x|Specifies what to do with the left/right edges of the content if it overflows the element\'s content area|
 |overflow-y|Specifies what to do with the top/bottom edges of the content if it overflows the element\'s content area|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -3925,7 +3938,7 @@ overflow: visible|hidden|scroll|auto|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is word-wrapping in CSS?***
+## Q. What is word-wrapping in CSS?
 
 The word-wrap property in CSS is used to break long word and wrap into the next line. It defines whether to break words when the content exceeds the boundaries of its container.
 
@@ -3935,7 +3948,7 @@ The word-wrap property in CSS is used to break long word and wrap into the next 
 word-wrap: normal|break-word|initial|inherit;
 ```
 
-### **Property Values**
+**Property Values**
 
 |Value	      |Description                       |
 |-------------|----------------------------------|
@@ -3944,7 +3957,7 @@ word-wrap: normal|break-word|initial|inherit;
 |initial	    |Sets this property to its default value. |
 |inherit	    |Inherits this property from its parent element.|
 
-**Example**
+**Example:**
 
 ```html
 <!DOCTYPE html>
@@ -3986,7 +3999,7 @@ word-wrap: normal|break-word|initial|inherit;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is Accessibility (a11y) in a web application?***
+## Q. What is Accessibility (a11y) in a web application?
 
 Accessibility refers to how software or hardware combinations are designed to make a system accessible to persons with disabilities, such as:
 
@@ -4000,7 +4013,7 @@ For example, a website developed with accessibility in mind might have text-to-s
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is UI/UX?***
+## Q. What is UI/UX?
 
 **1) UI or User Interface**:  is how a product or website is laid out and how you interact with it: Where the buttons are, how big the fonts are, and how menus are organized are all elements of UI.
 
@@ -4011,7 +4024,7 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How do you serve your pages for feature-constrained browsers? What techniques do you use?***
+## Q. How do you serve your pages for feature-constrained browsers? What techniques do you use?
 
 * **Graceful degradation**: The practice of building an application for modern browsers while ensuring it remains functional in older browsers.
 * **Progressive enhancement**: The practice of building an application for a base level of user experience, but adding functional enhancements when a browser supports it.
@@ -4024,7 +4037,7 @@ So the new look of the Facebook news feed involves a change to UI, and the way y
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the different ways to visually hide content (and make it available only for screen readers)?***
+## Q. What are the different ways to visually hide content (and make it available only for screen readers)?
 
 These techniques are related to accessibility (a11y).
 
@@ -4039,7 +4052,7 @@ These techniques are related to accessibility (a11y).
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is file splitting? When is it used?***
+## Q. What is file splitting? When is it used?
 
 A monolithic file is fine for solo developers or very small projects. For large projects—sites with multiple layouts and content types, or multiple brands under the same design umbrella—it\'s smarter to use a modular approach and split your CSS across multiple files.
 
@@ -4058,7 +4071,7 @@ CSS frameworks such as Foundation and Bootstrap use this approach. Both become q
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is DOM reflow?***
+## Q. What is DOM reflow?
 
 Reflow is the name of the web browser process for re-calculating the positions and geometries of elements in the document, for the purpose of re-rendering part or all of the document.
 
@@ -4086,7 +4099,7 @@ Reflow is the name of the web browser process for re-calculating the positions a
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How does CSS work under the hood?***
+## Q. How does CSS work under the hood?
 
 The CSS language is designed to be used alongside a "markup" language like HTML. CSS defines how HTML elements are formatted – controlling their layout, colors, fonts, and so on. When a browser displays a document, it must combine the document\'s content with its style information. It processes the document in a number of stages, which we\'ve listed below.
 
@@ -4103,7 +4116,7 @@ The following diagram also offers a simple view of the process.
   <img src="assets/images/css-dom.png" alt="CSS DOM" width="500px;" />
 </p>
 
-### **The DOM and CSSOM**
+**The DOM and CSSOM:**
 
 A DOM has a tree-like structure. Each element, attribute, and piece of text in the markup language becomes a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some elements are parents of child nodes, and child nodes have siblings. The browser undergo a process that includes conversion, tokenization, lexing, and parsing which ultimately constructs the DOM and CSSOM.
 
@@ -4112,7 +4125,7 @@ A DOM has a tree-like structure. Each element, attribute, and piece of text in t
 * **Lexing**: Like the tokenizer, but it also identifies the type of each token (this token is a number, that token is a string literal, this other token is an equality operator).
 * **Parsing**: Takes the stream of tokens from the lexer, interprets the tokens using a specific grammar, and turns it into an abstract syntax tree.
 
-**Example**: DOM Representation
+**Example:** DOM Representation
 
 ```html
 <p>
