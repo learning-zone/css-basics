@@ -644,7 +644,7 @@ div ~ p {
 
 ## Q. What is the difference between class selectors and id selectors?
 
-In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+In the CSS, a class selector is a name preceded by a full stop (".") and an ID selector is a name preceded by a hash character ("#"). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
 
 ```css
 #top {
@@ -660,11 +660,9 @@ In the CSS, a class selector is a name preceded by a full stop (“.”) and an 
 
 ```html
 <div id="top">
-
-<h1>Chocolate curry</h1>
-<p class="intro">This is my recipe for making curry purely with chocolate</p>
-<p class="intro">Mmm mm mmmmm</p>
-
+  <h1>Welcome to the CSS3 Tutorial</h1>
+  <p class="intro">Select element by class</p>
+  <p class="intro">Example for class selector paragraph</p>
 </div>
 ```
 
