@@ -677,21 +677,16 @@ The `nth-child()` pseudo-class is used to match an element based on a number, wh
 **Example:**
 
 ```css
-.example :nth-child(5) { background: #ffdb3a; }
+.example :nth-child(4) { background: #ffdb3a; }
 ```
 
 ```html
 <div class="example">
-	<p>This is a <em>paragraph</em>.</p>
-	<p>This is a <em>paragraph</em>.</p>
-	<p>This is a <em>paragraph</em>.</p>
-	<div>This is a <em>divider</em>.</div>
-	<div>This is a <em>divider</em>.</div> <!-- Element to select -->
-	<p>This is a <em>paragraph</em>.</p>
-	<p>This is a <em>paragraph</em>.</p>
-	<div>This is a <em>divider</em>.</div>
-	<p>This is a <em>paragraph</em>.</p>
-	<div>This is a <em>divider</em>.</div>
+  <p>This is a <em>paragraph</em>.</p>
+  <p>This is a <em>paragraph</em>.</p>
+  <p>This is a <em>paragraph</em>.</p>
+  <div>This is a <em>divider</em>.</div> <!-- Element to select -->
+  <div>This is a <em>divider</em>.</div> 
 </div>
 ```
 
@@ -705,16 +700,11 @@ This number can also be expressed as a function, or using the keywords even or o
 
 ```html
 <div class="example">
-	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
-	<p>This is a <em>paragraph</em>.</p>
-	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
-	<div>This is a <em>divider</em>.</div>
-	<div>This is a <em>divider</em>.</div> 
-	<p>This is a <em>paragraph</em>.</p>
-	<p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
-	<div>This is a <em>divider</em>.</div>
-	<p>This is a <em>paragraph</em>.</p>
-	<div>This is a <em>divider</em>.</div>
+  <p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
+  <p>This is a <em>paragraph</em>.</p>
+  <p>This is a <em>paragraph</em>.</p> <!-- Element to select -->
+  <div>This is a <em>divider</em>.</div>
+  <div>This is a <em>divider</em>.</div> <!-- Element to select -->
 </div>
 ```
 
