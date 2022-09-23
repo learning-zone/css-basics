@@ -144,7 +144,7 @@ Even the simplest HTML document may have three or more style sheets associated w
 
 Browsers apply style sheets to all web documents. Although these style sheets vary from browser to browser, they all have common characteristics such as black text, blue links, purple visited links etc. These are referred to as a "default" browser stylesheet.
 
-As soon as you, the author, apply a style sheet to a document, it will override the browser's style sheet. This is because author style sheets will always override browser style sheets.
+As soon as you, the author, apply a style sheet to a document, it will override the browser\'s style sheet. This is because author style sheets will always override browser style sheets.
 
 **2. User style sheets:**
 
@@ -258,16 +258,12 @@ text-shadow: topOffset leftOffset blurRadius color;
 **7. Linear Gradients:**
 
 ```css
-Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
-/* Example */   
 #grad {
-  background: linear-gradient(to right, red , yellow);
+  background: linear-gradient(to right, red, yellow);
 }
 ```
 
 **8. Radial Gradients:**
-
-**Syntax:** background: radial-gradient(shape size at position, start-color, ..., last-color);
 
 ```css  
 #grad {
@@ -547,7 +543,7 @@ A pseudo-class is a selector that assists in the selection of something that can
 
 **Pseudo-classes:**  
 
-Pseudo-classes select regular elements but under certain conditions, like when their position relative to siblings or when they’re under a particular state. Here is a list of pseudo-classes in CSS3:
+Pseudo-classes select regular elements but under certain conditions, like when their position relative to siblings or when they\'re under a particular state. Here is a list of pseudo-classes in CSS3:
 
 **a) Dynamic pseudo-classes:**  
 
@@ -701,7 +697,7 @@ The `nth-child()` pseudo-class is used to match an element based on a number, wh
 </div>
 ```
 
-The `nth-of-type()` pseudo-class, like nth-child(), is used to match an element based on a number. This number, however, represents the element's position within only those of its siblings that are of the same element type.
+The `nth-of-type()` pseudo-class, like nth-child(), is used to match an element based on a number. This number, however, represents the element\'s position within only those of its siblings that are of the same element type.
 
 This number can also be expressed as a function, or using the keywords even or odd.
 
@@ -1088,7 +1084,7 @@ CSS sprites combine multiple images into one single larger image. It is a common
 **Advantages:**
 
 * Reduce the number of ```HTTP``` requests for multiple images (only one single request is required per spritesheet). But with ```HTTP2```, loading multiple images is no longer much of an issue.
-* Advance downloading of assets that won't be downloaded until needed, such as images that only appear upon `:hover` pseudo-states. Blinking wouldn't be seen.
+* Advance downloading of assets that won\'t be downloaded until needed, such as images that only appear upon `:hover` pseudo-states. Blinking wouldn\'t be seen.
 
 
 * When you have multiple images/ icons, browser makes separate call to the server for each one of them. sprite is a technique to combine all/ some of them (usually similar one in terms of type of image. For example, you will put jpg in one sprite) in one image. To display the icon you set height, width and background position.
@@ -1200,7 +1196,7 @@ The `z-index` helps specify the stack order of positioned elements that may over
 
 * **relative**, means "relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on it\'s positioning. It allows the use of `z-index` on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned within that block.
 
-* **fixed**, element is positioned relative to viewport or the browser window itself. viewport doesn't changed if you scroll and hence fixed element will stay right in the same position.
+* **fixed**, element is positioned relative to viewport or the browser window itself. viewport doesn\'t changed if you scroll and hence fixed element will stay right in the same position.
 
 * **static** default for every single page element. The only reason you would ever set an element to position: static is to forcefully-remove some positioning that got applied to an element outside of your control.
 
@@ -1461,14 +1457,14 @@ Relative length units specify a length relative to another length property. Rela
 |Unit	           |Relative to                                   |
 |----------------|----------------------------------------------|
 |em	             |Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width.|
-|ex	             |x-height of the element's font.|
-|ch	             |The advance measure (width) of the glyph "0" of the element's font.|
+|ex	             |x-height of the element\'s font.|
+|ch	             |The advance measure (width) of the glyph "0" of the element\'s font.|
 |rem	           |Font size of the root element.|
 |lh	             |Line height of the element.|
-|vw	             |1% of the viewport's width.|
-|vh	             |1% of the viewport's height.|
-|vmin	           |1% of the viewport's smaller dimension.|
-|vmax	           |1% of the viewport's larger dimension.|
+|vw	             |1% of the viewport\'s width.|
+|vh	             |1% of the viewport\'s height.|
+|vmin	           |1% of the viewport\'s smaller dimension.|
+|vmax	           |1% of the viewport\'s larger dimension.|
 
 **Example:**
 
@@ -2516,6 +2512,10 @@ Browsers match selectors from rightmost (key selector) to left. Browsers filter 
 
 For example with this selector `p span`, browsers firstly find all the `<span>` elements and traverse up its parent all the way up to the root to find the `<p>` element. For a particular `<span>`, as soon as it finds a `<p>`, it knows that the `<span>` matches and can stop its matching.
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. How can you load css resources conditionally?
 
 **@import**:  allows to load stylesheet by using a path (uri) representing the location of the file.
@@ -2680,7 +2680,7 @@ The browsers which does not support HTML5\'s `srcset` (i.e. IE11) will ignore it
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. Is there any reason you'd want to use translate() instead of absolute positioning, or vice-versa? 
+## Q. Is there any reason you\'d want to use translate() instead of absolute positioning, or vice-versa? 
 
 `translate()` is a value of CSS `transform`. Changing `transform` or `opacity` does not trigger browser reflow or repaint but does trigger compositions; whereas changing the absolute positioning triggers `reflow`. `transform` causes the browser to create a GPU layer for the element but changing absolute positioning properties uses the CPU. Hence `translate()` is more efficient and will result in shorter paint times for smoother animations.
 
