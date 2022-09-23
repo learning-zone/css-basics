@@ -823,7 +823,7 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is CSS flexbox? Write all the properties of the flexbox?
+## Q. What is CSS flexbox?
 
 The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. Flexbox makes it simple to align items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill the space.
 
@@ -843,6 +843,12 @@ An area of a document laid out using flexbox is called a **flex container**. To 
 <p align="center">
   <img src="assets/images/flex-terminology.png" alt="Flexbox Terminology" width="500px;" />
 </p>
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Write all the properties of the flexbox?
 
 **The CSS Flexbox Container Properties:**
 
