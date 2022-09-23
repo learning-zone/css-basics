@@ -163,7 +163,7 @@ As soon as you apply a basic style sheet or an inline style to a page, you have 
 
 **1. CSS3 Selectors:**
 
- * Matches any element E whose attribute attr starts with the value val. In other words, the val matches the beginning of the attribute value.
+* Matches any element **E** whose attribute **attr** starts with the value **val**. In other words, the val matches the beginning of the attribute value.
 
 ```css
 E[attr^=val]
@@ -171,7 +171,7 @@ E[attr^=val]
 a[href^='http://sales.']{color: teal;}
 ```
 
- * Matches any element E whose attribute attr ends in val. In other words, the val matches the end of the attribute value.
+* Matches any element **E** whose attribute **attr** ends in **val**. In other words, the val matches the end of the attribute value.
 
 ```css
 E[attr$=val]
@@ -179,7 +179,7 @@ E[attr$=val]
 a[href$='.jsp']{color: purple;}
 ```
 
- * Matches any element E whose attribute attr matches val anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word.
+* Matches any element **E** whose attribute **attr** matches **val** anywhere within the attribute. It is similar to E[attr~=val], except the val can be part of a word.
 
 ```css
 E[attr*=val]  
@@ -267,9 +267,9 @@ Syntax: background: linear-gradient(direction, color-stop1, color-stop2, ...);
 
 **8. Radial Gradients:**
 
-```css
-Syntax : background: radial-gradient(shape size at position, start-color, ..., last-color);
-/* Example */      
+**Syntax:** background: radial-gradient(shape size at position, start-color, ..., last-color);
+
+```css  
 #grad {
   background: radial-gradient(red, yellow, green);
 }//Default       
