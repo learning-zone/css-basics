@@ -1705,8 +1705,13 @@ box-sizing: content-box|border-box|initial|inherit;
 
 ## Q. What is the difference between border-box and content-box?
 
-* **content-box** – Default box-sizing property. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
-* **border-box** – The width and height properties (and min/max properties) includes content, padding and border.
+**1. content-box:**
+
+Default box-sizing property. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+
+**2. border-box:**
+
+The width and height properties (and min/max properties) includes content, padding and border.
 
 <p align="center">
   <img src="assets/images/content-box-vs-border-box.png" alt="border-box vs content-box" width="600px;" />
