@@ -2,7 +2,7 @@
 
 <br/>
 
-## Q. ***Explain what is Sass? How it can be used?***
+## Q. Explain what is Sass?
 
 When stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help. Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. It also helps to keep things organised and allows you to create style sheets faster.
 
@@ -18,7 +18,7 @@ Sass works by writing your styles in .scss (or .sass) files, which will then get
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are the SCSS basic features?***
+## Q. What are the SCSS basic features?
 
 ### **1. Variables**
 
@@ -276,13 +276,13 @@ aside[role="complementary"] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***List out the data types that Sass supports?***
+## Q. List out the data types that Sass supports?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?***
+## Q. Explain the @include, @mixin, @function functions and how they are used. What is %placeholder?
 
 i) ```@mixin``` A mixin lets you make groups of CSS declarations that you want to reuse throughout your site
 
@@ -345,7 +345,7 @@ body, p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***List out the differences between LESS and Sass?***
+## Q. List out the differences between LESS and Sass?
 
 |LESS	|Sass    |
 |-----|--------|
@@ -358,7 +358,7 @@ body, p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Why Sass is considered better than LESS?***
+## Q. Why Sass is considered better than LESS?
 
 * Saas allows you to write reusable methods and use logic statements, e., loops, and conditionals
 * Saas user can access Compass library and use some awesome features like dynamic sprite map generation, legacy browser hacks * and cross-browser support for CSS3 features
@@ -371,7 +371,7 @@ body, p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What are Sass, Less, and Stylus? Why do people use them? How does something like Compass relate to Sass?***
+## Q. What are Sass, Less, and Stylus? Why do people use them? How does something like Compass relate to Sass?
 
 They are CSS preprocessors. They are an abstraction layer on top of CSS. They are a special syntax/language that compile down into CSS. They make managing CSS easier, with things like variables and mixins to handle vendor prefixes (among other things). They make doing best practices easier, like concatenating and compressing CSS.
 
@@ -379,7 +379,7 @@ They are CSS preprocessors. They are an abstraction layer on top of CSS. They ar
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What is file splitting and why should you use it?***
+## Q. What is file splitting and why should you use it?
 
 File splitting helps organize your CSS into multiple files, decreasing page load time and making things easier to manage. How you decide to split them up is up to you, but it can be useful to separate files by component. For example, we can have all button styles in a file called `_buttons.scss` or all your header-specific styles in a file called `_header.scss`, main file, say _app.scss, and we can import those files by writing @import 'buttons';
 
@@ -387,28 +387,28 @@ File splitting helps organize your CSS into multiple files, decreasing page load
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-#### Q. ***What is the @content directive used for?***
-#### Q. ***What is wrong with Sass nesting?*** 
-#### Q. ***What is variable interpolation in Sass?***
-#### Q. ***What is the difference between SCSS and Sass?***
-#### Q. ***What are the advantages/disadvantages of using CSS preprocessors?***
-#### Q. ***Explain what is the use of the @import function in Sass?***
-#### Q. ***Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?***
-#### Q. ***Explain what Sass Maps is and what is the use of Sass Maps?***
-#### Q. ***Explain how Sass comments are different from regular CSS?***
-#### Q. ***Does Sass support inline comments?***
-#### Q. ***Explain when can you use the %placeholders in Sass?***
-#### Q. ***Is it possible to nest variables within variables in Sass?***
-#### Q. ***What are Sass cons and pros?***
-#### Q. ***Explain how Mixins is useful?***
-#### Q. ***What are the similarities between LESS and Sass?***
-#### Q. ***Explain what is the use of &combinator ?***
-#### Q. ***What is the way to write a placeholder selector in Sass?***
-#### Q. ***What are number operations in Sass?***
-#### Q. ***Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?***
-#### Q. ***Which directive displays an error message in SASS?***
-#### Q. ***How many output styles are there in sass?***
-#### Q. ***Which symbol is used to refer parent selector in sass?***
+#### Q. What is the @content directive used for?
+#### Q. What is wrong with Sass nesting? 
+#### Q. What is variable interpolation in Sass?
+#### Q. What is the difference between SCSS and Sass?
+#### Q. What are the advantages/disadvantages of using CSS preprocessors?
+#### Q. Explain what is the use of the @import function in Sass?
+#### Q. Explain what is the use of Mixin function in Sass? What is the meaning of DRY-ing out a mixin?
+#### Q. Explain what Sass Maps is and what is the use of Sass Maps?
+#### Q. Explain how Sass comments are different from regular CSS?
+#### Q. Does Sass support inline comments?
+#### Q. Explain when can you use the %placeholders in Sass?
+#### Q. Is it possible to nest variables within variables in Sass?
+#### Q. What are Sass cons and pros?
+#### Q. Explain how Mixins is useful?
+#### Q. What are the similarities between LESS and Sass?
+#### Q. Explain what is the use of &combinator ?
+#### Q. What is the way to write a placeholder selector in Sass?
+#### Q. What are number operations in Sass?
+#### Q. Explain @if, @else, @for, @include, @at-root, @extend, @error, @debug directives?
+#### Q. Which directive displays an error message in SASS?
+#### Q. How many output styles are there in sass?
+#### Q. Which symbol is used to refer parent selector in sass?
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
