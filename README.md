@@ -2962,7 +2962,7 @@ The keyword `initial` can be used to resets it to its default value, which is de
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is specificity? How to calculate specificity?
+## Q. What is specificity?
 
 A process of determining which css rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
 
