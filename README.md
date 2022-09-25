@@ -2,12 +2,14 @@
 
 *Click <img src="assets/images/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
+<br/>
+
 ## Table of Contents
 
-* *[CSS Coding Practice](css-practice.md)*
-* *[CSS3 Properties](css3-properties.md)*
-* *[SCSS Interview Questions and Answers](scss-questions.md)*
-* *[CSS Multiple Choice Questions](css-multiple-choice-questions.md)*
+* [CSS Coding Practice](css-practice.md)
+* [CSS3 Properties](css3-properties.md)
+* [CSS Multiple Choice Questions](css-multiple-choice-questions.md)
+* [SCSS Basics](https://github.com/learning-zone/scss-basics)
 
 <br/>
 
