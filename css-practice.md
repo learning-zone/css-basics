@@ -1,6 +1,6 @@
 # CSS Coding Practice
 
-## Q. ***How to draw a circle inside Square using single DIV in css?***
+## Q. How to draw a circle inside Square using single DIV in css?
 
 ```html
 <!DOCTYPE html>
@@ -41,7 +41,7 @@
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to center align a div inside another div?***
+## Q. How to center align a div inside another div?
 
 ```css
 .container {
@@ -63,7 +63,7 @@
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to create a zebra striped table with CSS?***
+## Q. How to create a zebra striped table with CSS?
 
 To create a zebra-striped table, use the nth-child() selector and add a background-color to all even (or odd) table rows:
 
@@ -79,7 +79,7 @@ tr:nth-child(even) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***What elements will match each of the following CSS selectors?***
+## Q. What elements will match each of the following CSS selectors?
 
 * div, ```p``` Selects all ```<div>``` elements and all <p> elements
 * div ```p``` Selects all ```<p>``` elements that are anywhere inside a <div> element
@@ -91,7 +91,7 @@ tr:nth-child(even) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to align image vertically in a division that spans vertically on the whole webpage?***
+## Q. How to align image vertically in a division that spans vertically on the whole webpage?
 
 You can align an image vertically center inside a `<div>` by using the **CSS vertical-align** property in combination with the `display: table-cell;` on the containing div element.
 
@@ -146,7 +146,7 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to style every element which has an adjacent item right before it?***
+## Q. How to style every element which has an adjacent item right before it?
 
 ```html
 <!DOCTYPE html>
@@ -177,7 +177,7 @@ Additionally, since CSS margin property is not applicable to `display: table-cel
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.***
+## Q. Write down a selector that will match any links end in .zip, .ZIP, .Zip etc.
 
 `[att$=val]` Represents an element with the att attribute whose value ends with the suffix “val”. If “val” is the empty string then the selector does not represent anything.
 
@@ -191,7 +191,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Place a div to corner top-right of the page?***
+## Q. Place a div to corner top-right of the page?
 
 ```html
 <!DOCTYPE html>
@@ -226,7 +226,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***You have 3 div\'s. You have to align first div in right side and other 2 div’s in left side. Write CSS to achieve this?***
+## Q. You have 3 div\'s. You have to align first div in right side and other 2 div’s in left side. Write CSS to achieve this?
 
 ### **using flexbox**
 
@@ -255,7 +255,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***CSS Media Query Example***
+## Q. CSS Media Query Example
 
 ```css
 @media screen and (min-width: 769px) {
@@ -286,7 +286,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***CSS background-color gray opacity css code example***
+## Q. CSS background-color gray opacity css code example
 
 ```css
 .transparent {
@@ -303,7 +303,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Place header at bottom of div***
+## Q. Place header at bottom of div
 
 ```css
 #header {
@@ -326,7 +326,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***CSS Gradient Example***
+## Q. CSS Gradient Example
 
 ```css
 /*From bottom to top*/
@@ -344,7 +344,7 @@ a[href$=".zip" i]:after {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to make fixed background image in css***
+## Q. How to make fixed background image in css
 
 ```css
 body {
@@ -362,7 +362,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Add space between flex items***
+## Q. Add space between flex items
 
 ```css
 .flex-gap {
@@ -381,7 +381,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to disable arrows from input type number?***
+## Q. How to disable arrows from input type number?
 
 ```css
 /* Chrome, Safari, Edge, Opera */
@@ -403,7 +403,7 @@ input[type=number] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to get text to start a new line?***
+## Q. How to get text to start a new line?
 
 ```css
 .break-word {
@@ -417,7 +417,7 @@ input[type=number] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to select child element in css?***
+## Q. How to select child element in css?
 
 ```css
 .parent > .immediate-child {
@@ -431,7 +431,7 @@ input[type=number] {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***minmax with repeat css grid***
+## Q. minmax with repeat css grid
 
 ```css
 /* To achieve wrapping, we can use the auto-fit or auto-fill keywords. */
@@ -445,7 +445,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to make text not selectable in css***
+## Q. How to make text not selectable in css?
 
 ```css
 .noselect {
@@ -465,7 +465,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q.***center wrapped flex children***
+## Q.Center wrapped flex children?
 
 ```css
 .container {
@@ -483,7 +483,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***create a rounded corner button using css***
+## Q. Create a rounded corner button using css?
 
 ```css
 .btn {
@@ -507,7 +507,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How apply blur in background-image***
+## Q. How apply blur in background-image
 
 ```css
 .background-image {
@@ -533,7 +533,7 @@ grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***CSS text-overflow ellipsis multiple lines***
+## Q. CSS text-overflow ellipsis multiple lines
 
 ```css
 p {
@@ -553,7 +553,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to place a fixed button at bottom right of the screen in html***
+## Q. How to place a fixed button at bottom right of the screen in html
 
 ```css
 .feedback {
@@ -583,7 +583,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***center div in middle of page***
+## Q. How to place a div in center and middle of the page?
 
 ```css
 .centered {
@@ -600,7 +600,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Sass @extend and Inheritance***
+## Q. Sass @extend and Inheritance
 
 ```css
 .button-basic  {
@@ -629,7 +629,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***css fade in example***
+## Q. How to create css fade in?
 
 ```css
 .fade-in-image {
@@ -647,7 +647,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***css get property with data attribute***
+## Q. How to read property with data attribute?
 
 ```html
 <div data-content="data-attribute example in css"></div>
@@ -665,7 +665,7 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***css remove highlight when click***
+## Q. How to remove button highlight when click using CSS?
 
 ```css
 button:focus { outline: 0; }
@@ -677,7 +677,7 @@ button:focus { outline: 0; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***How to select last nth child***
+## Q. How to select last nth child
 
 ```html
 <p>The first paragraph.</p>
@@ -699,7 +699,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***can i call mixin in html***
+## Q. Can i call mixin in html?
 
 ```css
 /* sass mixin */
@@ -718,7 +718,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **css rotate text**
+## Q. How to rotate text using CSS?
 
 ```css
 /* Answer to: "css rotate text" */
@@ -747,7 +747,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **css blink**
+## Q. How to make text blink using css?**
 
 ```css
 .blink {
@@ -771,7 +771,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **css fix nav bar to top**
+## Q. How to fix nav bar to top using CSS?
 
 ```css
 .navigation {
@@ -792,7 +792,7 @@ p:nth-last-child(3) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **Change input border color when selected**
+## Q. How to change input border color when selected?
 
 ```css
 input:focus {
@@ -807,7 +807,7 @@ input:focus {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **CSS import otf font**
+## Q. How to import otf font in CSS?
 
 ```css
 @font-face {
@@ -822,7 +822,7 @@ input:focus {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **css shadow on image**
+## Q. Create image shadow using CSS?
 
 ```css
 div.polaroid {
@@ -838,7 +838,7 @@ div.polaroid {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **sass conditional code**
+## Q. How to create an if-else clause in SASS?
 
 ```css
 /** How to create an if-else clause in sass
@@ -895,7 +895,7 @@ $p: 3;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. **How to disable mouseover in css**
+## Q. How to disable mouseover in css?
 
 ```css
 .noHover{
@@ -912,3 +912,5 @@ $p: 3;
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+
+## Q. 
