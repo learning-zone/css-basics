@@ -913,4 +913,198 @@ $p: 3;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. 
+## Q. CSS Animation
+
+Which of the following would create the below animation? Moving the mouse over the div should double its size, and the animation should happen over 500s.
+
+```html
+<style>
+  div {
+    height: 50px;
+    width: 50px;
+    background: #3ba59b;
+    border-radius: 50%;
+  }
+</style>
+<div class="greyBall"></div>
+```
+
+<p align="left">
+  <img src="assets/images/grey-ball.png" alt="CSS Animation" width="300px;" />
+</p>
+
+Pick ONE OR MORE options
+
+```css
+1. .greyBall:hover {transform: scale(2); animate: 500ms;}
+
+2. .greyBall:hover {transform: scale(2); transition:500ms transform;}
+
+3. .greyBall:hover {transform: scale(2); transition: 0.5s;}
+
+4. .greyBall:hover {transform: scale(2); animate: 0.5S;}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS object-fit
+
+Which of the following are true about the CSSproperty 'object-fit'?
+
+Pick ONE OR MORE options
+
+```css
+1. 'object-fit: contain;' does not preserve the aspect ratio of the image; it stretches the image to cover the entire width and height of the container.
+
+2. 'object-fit: contain;' preserves the aspect ratio of the image and makes sure no clipping happens to the whole image.
+
+3. object-fit: cover;' avoids the image getting squeezed, but it could end up clipping the image.
+
+4. object-fit: cover;' avoids clipping the image by sacrificing the aspect ratio.
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS Ellipsis
+
+If an element extends beyond the allocated width, how do you truncate the sentence with an ellipsis (...) using CSS?
+
+For example, "Hello! I am an element, and my width is larger than the container..."
+
+Pick ONE OR MORE options
+
+```css
+1. { white-space: pre-wrap; overflow: ellipsis; }
+
+2. { text-overflow: ellipsis: white-space: wrap; visibility: hidden; }
+
+3. { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+4. None of the above 
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS Text Coloring
+
+Which of the following renders the text red?
+
+<p id="tagld">Please color me red</p>
+
+Pick ONE OR MORE options
+
+```css
+1. :root{ --text-color: red; } p { color: --text-color; }
+
+2. :root{ --text-color: red; } p { color: var(--text-color); }
+
+3. #tagId { color: red; } p { color: blue; }
+
+4. p { color: red !important; } #tagId { color: blue; }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS Selection
+
+How do you prevent the user from selecting the text rendered inside the following element?
+
+<p>I should not be selectable</p>
+
+Pick ONE OR MORE options
+
+```css
+1. p { cursor-event: none; }
+
+2. p { pointer-event: none; }
+
+3. p { user-select: none; }
+
+4. None of the above
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS Input Placeholder
+
+How do you hide the "placeholder" text of an `<input>` field?
+
+Pick ONE OR MORE options
+
+```css
+1. input::placeholder { visibility: clip; }
+
+2. input::placeholder { color: transparent; }
+
+3. input::placeholder { display: none; }
+
+4. input::placeholder { visibility: hidden; }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS Centering
+
+Which of the following options can position the div with the class name "child" exactly at the center of the page?
+
+```html
+<div class="parent" style="width: 100vw; height: 100vh;">
+  <div class="child" style="height: 100px; width: 100px; background: black"></div>
+</div>
+```
+
+Pick ONE OR MORE options
+
+```css
+1. .parent { display: flex; justify-content: center; align-items: center; }
+
+2. .parent { display: flex; justify-content: center; align-self: center; }
+
+3. .parent { position: relative; } .child { position: absolute; top: 50%; left: 50%; }
+
+4. .parent { position: relative; } .child { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. CSS verticle-align
+
+Which of the following are true about the CSS property 'vertical-align'?
+
+```html
+<p>
+  Let's
+  <span class="heroWord">Hack</span>
+  <img src=""/>
+</p>
+```
+
+Pick ONE OR MORE options
+
+```css
+1. .heroWord { verical-align: 25px; } moves the word "Hack" to the bottom, 25px lower than the <p> tag.
+
+2. .heroWord { verical-align: 25px; } moves the word "Hack" to the top, 25px heigher than the <p> tag.
+
+3. p img { vertical-align: text-bottom; } moves the image to the bottom with respect to the <p> tag.
+
+4. p img { vertical-align: text-bottom; } has no effect on the <img> tag.
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
