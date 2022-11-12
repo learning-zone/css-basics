@@ -1066,6 +1066,8 @@ Pick ONE OR MORE options
 3. object-fit: cover;' avoids the image getting squeezed, but it could end up clipping the image.
 ```
 
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-object-fit-l9y2iu?file=/index.html)**
+
 </details>
 
 <div align="right">
