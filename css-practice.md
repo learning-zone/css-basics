@@ -51,23 +51,86 @@
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. How to center align a div inside another div?
+## Q. How to center a div within another div?
 
-```css
-.container {
-  width: 500px;
-  height: 500px;
-  background-color: red;
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
+<details><summary><b>Answer</b></summary>
+
+**Solution 01:**
+
+```html
+<style>
+  .container {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+</style>
+
+<div class="container"></div>
 ```
 
-**Live Demo**: [center div](https://codepen.io/learning-zone/pen/eYWdXMd)
+**Solution 02:** Text-Align Method
+
+```html
+<style>
+.text-align-container {
+  text-align: center;
+}
+
+.text-align {
+  background-color: #0074d9;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+</style>
+
+<div class="text-align-container">
+  <div class="text-align"></div>
+</div>
+```
+
+**Solution 03:** Margin Auto Method
+
+```html
+<style>
+  .margin-auto {
+    background-color: #ffdc00;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+</style>
+
+<div class="margin-auto"></div>
+```
+
+**Solution 04:** Absolute Positioning Method
+
+```html
+<style>
+  .absolute-positioning {
+    background-color: #3d9970;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+  }
+</style>
+
+<div class="absolute-positioning"></div>
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-centering-div-80iz0w?file=/src/styles.css)**
+
+</details>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
