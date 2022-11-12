@@ -1210,6 +1210,24 @@ Pick ONE OR MORE options
 4. input::placeholder { visibility: hidden; }
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+input::placeholder {
+  color: transparent;
+}
+```
+
+```css
+input::placeholder {
+  visibility: hidden;
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-input-placeholder-bdpwyi?file=/src/styles.css)**
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
