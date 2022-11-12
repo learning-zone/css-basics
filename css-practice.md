@@ -1254,6 +1254,32 @@ Pick ONE OR MORE options
 4. .parent { position: relative; } .child { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
+
+```css
+.parent {
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-centering-xdj4lg?file=/src/styles.css)**
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
