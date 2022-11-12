@@ -1058,6 +1058,16 @@ Pick ONE OR MORE options
 4. object-fit: cover;' avoids clipping the image by sacrificing the aspect ratio.
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+2. 'object-fit: contain;' preserves the aspect ratio of the image and makes sure no clipping happens to the whole image.
+
+3. object-fit: cover;' avoids the image getting squeezed, but it could end up clipping the image.
+```
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
