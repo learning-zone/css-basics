@@ -1308,6 +1308,16 @@ Pick ONE OR MORE options
 4. p img { vertical-align: text-bottom; } has no effect on the <img> tag.
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+4. p img { vertical-align: text-bottom; } has no effect on the <img> tag.
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-verticle-align-hfbnym?file=/src/styles.css)**
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
