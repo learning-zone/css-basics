@@ -1114,7 +1114,9 @@ Pick ONE OR MORE options
 
 Which of the following renders the text red?
 
+```html
 <p id="tagld">Please color me red</p>
+```
 
 Pick ONE OR MORE options
 
@@ -1127,6 +1129,30 @@ Pick ONE OR MORE options
 
 4. p { color: red !important; } #tagId { color: blue; }
 ```
+
+<details><summary><b>Answer</b></summary>
+
+```css
+:root {
+  --text-color: red;
+}
+p {
+  color: var(--text-color);
+}
+```
+
+```css
+p {
+  color: red !important;
+}
+#tagId {
+  color: blue;
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-text-coloring-4qyf4d?file=/src/styles.css)**
+
+</details>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
