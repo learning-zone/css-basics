@@ -1,6 +1,14 @@
 # CSS Coding Practice
 
-## Q. How to draw a circle inside Square using single DIV in css?
+## Q. Draw a circle inside square using single DIV in css?
+
+**Example:**
+
+<p align="center">
+  <img src="assets/images/circle-inside-square.png" alt="circle inside square" width="250px" />
+</p>
+
+<details><summary><b>Answer</b></summary>
 
 ```html
 <!DOCTYPE html>
@@ -26,7 +34,7 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-color: #eee;
+        background-color: red;
     }
     </style>
     <body>
@@ -35,7 +43,9 @@
 </html>
 ```
 
-**Live Demo**: [Circle inside Square](https://codepen.io/learning-zone/pen/zYwKbZo)
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-circle-inside-square-xqfsuj?file=/index.html)**
+
+</details>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
