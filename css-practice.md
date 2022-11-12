@@ -1018,6 +1018,26 @@ Pick ONE OR MORE options
 4. .greyBall:hover {transform: scale(2); animate: 0.5S;}
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+.greyBall:hover {
+  transform: scale(2);
+  transition: 500ms transform;
+}
+```
+
+```css
+.greyBall:hover {
+  transform: scale(2);
+  transition: 0.5s;
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-animation-j0l6yb?file=/src/styles.css)**
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
