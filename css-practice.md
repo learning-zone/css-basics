@@ -1162,7 +1162,9 @@ p {
 
 How do you prevent the user from selecting the text rendered inside the following element?
 
+```html
 <p>I should not be selectable</p>
+```
 
 Pick ONE OR MORE options
 
@@ -1175,6 +1177,18 @@ Pick ONE OR MORE options
 
 4. None of the above
 ```
+
+<details><summary><b>Answer</b></summary>
+
+```css
+p {
+  user-select: none;
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-selection-kvuzpr?file=/src/styles.css)**
+
+</details>
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
