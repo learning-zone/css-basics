@@ -1092,6 +1092,20 @@ Pick ONE OR MORE options
 4. None of the above 
 ```
 
+<details><summary><b>Answer</b></summary>
+
+```css
+.container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codesandbox.io/s/css-ellipsis-xycj5r?file=/src/styles.css)**
+
+</details>
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
