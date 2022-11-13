@@ -1,4 +1,4 @@
-# CSS Interview Questions
+# CSS Basics
 
 *Click <img src="assets/images/star.png" width="18" height="18" align="absmiddle" title="Star" /> if you like the project. Pull Request are highly appreciated.*
 
