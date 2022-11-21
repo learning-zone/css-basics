@@ -1517,7 +1517,7 @@ Relative length units specify a length relative to another length property. Rela
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is pseudo element? What is pseudo class?
+## Q. What is pseudo element and pseudo class?
 
 **1. Pseudo Element**: A CSS pseudo-element is used to style specified parts of an element.
 
