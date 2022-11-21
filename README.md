@@ -1423,7 +1423,7 @@ h3::before {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. How do you specify units in the CSS? What are the different ways to do it?
+## Q. How do you specify units in the CSS?
 
 There are various units in CSS to express the measurement and length. A CSS unit is used to determine the property size, which we set for an element or its content. The units in CSS are required to define the measurement such as margin: 20px; in which the px (or pixel) is the CSS unit. They are used to set margin, padding, lengths, and so on.
 
