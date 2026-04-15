@@ -439,7 +439,7 @@ h2 ~ p { color: teal; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q22. A `transition` is set on an element but it doesn't animate. What is the MOST likely cause?
+### Q22. A `transition` is set on an element but it doesn\'t animate. What is the MOST likely cause?
 
 ```css
 .box {
@@ -473,7 +473,7 @@ h2 ~ p { color: teal; }
 }
 ```
 
-- A) Rotates, then translates, then scales — order doesn't matter  
+- A) Rotates, then translates, then scales — order doesn\'t matter  
 - B) Translates 50% right, rotates 15 degrees, and scales 1.2× — applied left-to-right  
 - C) Scales first, then rotates, then translates  
 - D) Only the last transform function applies  
@@ -527,7 +527,7 @@ h2 ~ p { color: teal; }
 
 **Answer: A) Styles apply when the page is printed or in print preview**
 
-> The `print` media type targets the styles used when the document is sent to a printer or displayed in a browser's print preview.
+> The `print` media type targets the styles used when the document is sent to a printer or displayed in a browser\'s print preview.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -536,13 +536,13 @@ h2 ~ p { color: teal; }
 ### Q27. Which unit is most appropriate for media query breakpoints?
 
 - A) `px` — fixed pixel values  
-- B) `em` — scales with the browser's base font size, respecting user preferences  
+- B) `em` — scales with the browser\'s base font size, respecting user preferences  
 - C) `vw` — viewport-based units  
 - D) `%` — percentage of the parent element  
 
 **Answer: B) `em`**
 
-> `em`-based breakpoints respect the user's browser font-size settings, making responsive layouts more accessible. `px`-based queries do not scale when users change their default font size.
+> `em`-based breakpoints respect the user\'s browser font-size settings, making responsive layouts more accessible. `px`-based queries do not scale when users change their default font size.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -604,13 +604,13 @@ color: var(--missing-color, navy);
 ### Q31. A developer uses `line-height: 1.5` without a unit. What does this mean?
 
 - A) 1.5 pixels  
-- B) 1.5 times the element's font size  
+- B) 1.5 times the element\'s font size  
 - C) 1.5em relative to the root font size  
-- D) 150% of the parent element's height  
+- D) 150% of the parent element\'s height  
 
-**Answer: B) 1.5 times the element's font size**
+**Answer: B) 1.5 times the element\'s font size**
 
-> A unitless `line-height` is a multiplier of the element's own `font-size`, which is the recommended approach as it scales correctly with inherited font sizes.
+> A unitless `line-height` is a multiplier of the element\'s own `font-size`, which is the recommended approach as it scales correctly with inherited font sizes.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -728,10 +728,10 @@ background: linear-gradient(to right, #ff0000, #0000ff);
 
 - A) Always, regardless of content size  
 - B) Never — `auto` disables scrollbars  
-- C) Only when content overflows the element's boundaries  
+- C) Only when content overflows the element\'s boundaries  
 - D) Only on touch devices  
 
-**Answer: C) Only when content overflows the element's boundaries**
+**Answer: C) Only when content overflows the element\'s boundaries**
 
 > `overflow: auto` adds scrollbars only when the content is larger than the container, unlike `overflow: scroll` which always shows scrollbars.
 
@@ -824,7 +824,7 @@ nav {
 
 **Answer: B) Reusable blocks of CSS that can be included in multiple selectors**
 
-> Mixins define a reusable set of declarations. Using `@include` injects the mixin's styles into the selector, reducing duplication.
+> Mixins define a reusable set of declarations. Using `@include` injects the mixin\'s styles into the selector, reducing duplication.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -935,7 +935,7 @@ button:hover {
 }
 ```
 
-- A) Reduces the element's opacity by 10%  
+- A) Reduces the element\'s opacity by 10%  
 - B) Decreases the lightness of the color by 10% in HSL space  
 - C) Subtracts 10 from each RGB channel  
 - D) Converts the color to grayscale  
@@ -1011,4 +1011,4 @@ body {
 
 **Answer: C) `@use` and `@forward`**
 
-> The Dart Sass team deprecated `@import` in favor of `@use` (for consuming a module) and `@forward` (for re-exporting a module's members). These provide better encapsulation and namespacing.
+> The Dart Sass team deprecated `@import` in favor of `@use` (for consuming a module) and `@forward` (for re-exporting a module\'s members). These provide better encapsulation and namespacing.
