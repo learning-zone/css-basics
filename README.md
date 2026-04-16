@@ -264,76 +264,7 @@ Render tree construction follows the following order:
 
 <br/>
 
-## Q. What is the CSS Box Model?
-
-Every HTML element is treated as a rectangular box by the browser. The **CSS Box Model** describes this rectangular box through four areas that wrap around the element\'s content: **content**, **padding**, **border**, and **margin**.
-
-```
-+------------------------------------------+
-|                  Margin                  |
-|  +------------------------------------+  |
-|  |             Border                 |  |
-|  |  +------------------------------+  |  |
-|  |  |          Padding             |  |  |
-|  |  |  +------------------------+  |  |  |
-|  |  |  |        Content         |  |  |  |
-|  |  |  +------------------------+  |  |  |
-|  |  +------------------------------+  |  |
-|  +------------------------------------+  |
-+------------------------------------------+
-```
-
-* **Content** – The area where the actual content (text, images, etc.) is displayed.
-* **Padding** – Transparent space between the content and the border.
-* **Border** – A line that wraps around the padding and content.
-* **Margin** – Transparent space outside the border, separating the element from others.
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. What is the difference between `box-sizing: content-box` and `box-sizing: border-box`?
-
-The `box-sizing` property controls how the total width and height of an element is calculated.
-
-| Property | Width Calculation |
-|---|---|
-| `content-box` (default) | `width` = content only. Padding and border are **added** on top. |
-| `border-box` | `width` = content + padding + border. They are **included** inside the declared width. |
-
-**Example:**
-
-```css
-/* content-box (default): total rendered width = 200 + 20 + 20 + 5 + 5 = 250px */
-.box-content {
-  box-sizing: content-box;
-  width: 200px;
-  padding: 20px;
-  border: 5px solid #333;
-}
-
-/* border-box: total rendered width = 200px */
-.box-border {
-  box-sizing: border-box;
-  width: 200px;
-  padding: 20px;
-  border: 5px solid #333;
-}
-```
-
-A common best practice is to apply `border-box` globally:
-
-```css
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-```
-
-<div align="right">
-    <b><a href="#">↥ back to top</a></b>
-</div>
-
-## Q. Explain the CSS “box model” and the layout components that it consists of?
+## Q. Explain the CSS "box model" and the layout components that it consists of?
 
 The CSS box model is a rectangular layout paradigm for HTML elements that consists of the following:
 
@@ -383,6 +314,47 @@ The size of the box itself is calculated like this:
 ```
 
 **Live Demo**: [CSS Box Model](https://learning-zone.github.io/css-interview-questions/assets/files/boxmodel.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `box-sizing: content-box` and `box-sizing: border-box`?
+
+The `box-sizing` property controls how the total width and height of an element is calculated.
+
+| Property | Width Calculation |
+|---|---|
+| `content-box` (default) | `width` = content only. Padding and border are **added** on top. |
+| `border-box` | `width` = content + padding + border. They are **included** inside the declared width. |
+
+**Example:**
+
+```css
+/* content-box (default): total rendered width = 200 + 20 + 20 + 5 + 5 = 250px */
+.box-content {
+  box-sizing: content-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+}
+
+/* border-box: total rendered width = 200px */
+.box-border {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+}
+```
+
+A common best practice is to apply `border-box` globally:
+
+```css
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -946,15 +918,15 @@ a:hover {
 
 ## Q. What is contextual selector?
 
-Contextual selector addresses specific occurrence of an element. It is a string of individual selectors separated by white space (search pattern), where only the last element in the pattern is addressed providing it matches the specified contex.
-
-It also check the context of the class in the html tree, assigning the style to the element through a specific route, taking into account the order of depth in the tree.
+A **contextual selector** targets an element only when it appears within a specific context (ancestor). It\'s a string of selectors separated by whitespace, where only the last element is styled — but only if it matches the specified ancestral path.
 
 **Example:**
 
 ```css
-table p { property: value; } 
+table p { color: red; }
 ```
+
+This styles `<p>` elements only when they are descendants of a `<table>` — not all `<p>` elements on the page.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1093,7 +1065,7 @@ In the CSS, a class selector is a name preceded by a full stop (".") and an ID s
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. What is the difference between the “nth-child()” and “nth-of-type()” selectors?
+## Q. What is the difference between the "nth-child()" and "nth-of-type()" selectors?
 
 The `nth-child()` pseudo-class is used to match an element based on a number, which represents the element\'s position amongst it\'s siblings. More specifically, the number represents the number of siblings that exist before the element in the document tree (minus 1).
 
@@ -1137,34 +1109,40 @@ This number can also be expressed as a function, or using the keywords even or o
 
 ## Q. What is specificity?
 
-A process of determining which css rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity. ID selectors have a higher specificity than attribute selectors.
+**Specificity** is the algorithm browsers use to determine which CSS rule takes precedence when multiple rules target the same element.
 
-**Selector Types**  
+**Specificity Hierarchy (lowest → highest)**
 
-The following list of selector types increases by specificity:
+| Selector Type | Example | Value |
+|---------------|---------|-------|
+| Universal selector | `*` | 0 |
+| Element / pseudo-element | `h1`, `::before` | 0-0-1 |
+| Class / attribute / pseudo-class | `.box`, `[type]`, `:hover` | 0-1-0 |
+| ID selector | `#header` | 1-0-0 |
+| Inline style | `style="..."` | Always wins |
+| `!important` | `color: red !important` | Overrides all |
 
-* **Type selectors** (e.g., h1) and pseudo-elements (e.g., ::before).
-* **Class selectors** (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
-* **ID selectors** (e.g., #example).
+**Key Rules**
+
+- **Higher specificity wins**, regardless of order.
+- If specificity is **equal**, the **last rule** declared wins.
+- A **class** beats any number of element selectors:
+
+  ```css
+  .intro {}              /* wins */
+  html body div div p {} /* loses */
+  ```
+- **ID** beats any number of classes:
+  ```css
+  #main { color: red; }       /* wins */
+  .box.card.active { color: blue; } /* loses */
+  ```
+
+**Example**
 
 ```css
-/*wins*/
-a#a-02 { background-image : url(n.gif); }
-a[id="a-02"] { background-image : url(n.png); }
-```
-
-Contextual selectors are more specific than a single element selector.The embedded style sheet is closer to the element to be styled. The last rule defined overrides any previous, conflicting rules.
-
-```css
-p { color: red; background: yellow }
-p { color: green } // wins
-```
-
-A class selector beats any number of element selectors.
-
-```css
-.introduction {} //wins
-html body div div h2 p {}
+a#nav-link.active:hover { color: red; }
+/* ID=1, Class=2 (active + hover), Element=1 → specificity: 1-2-1 */
 ```
 
 <div align="right">
@@ -1173,19 +1151,19 @@ html body div div h2 p {}
 
 ## Q. In CSS3, how would you select?
 
-* Every ```<a>``` element whose href attribute value begins with “https”.
+* Every ```<a>``` element whose href attribute value begins with "https".
 
 ```css
   a[href^="https"]
 ```
     
-* Every ```<a>``` element whose href attribute value ends with “.pdf”.
+* Every ```<a>``` element whose href attribute value ends with ".pdf".
 
 ```css
   a[href$=".pdf"]
 ```
     
-* Every ```<a>``` element whose href attribute value contains the substring “css”.
+* Every ```<a>``` element whose href attribute value contains the substring "css".
 
 ```css
   a[href*="css"]
@@ -6729,7 +6707,7 @@ When using `translate()`, the element still occupies its original space (sort of
 
 **Example:**
 
-If we combine `position:relative` with one of the offset properties `top`, `bottom`, `left` or `right` the element will be moved from its original place in the layout whilst preserving the space in the document it once occupied. The element will be moved on to a new layer and its “layer order” or its stacking order can then be controlled with the `z-index` property.
+If we combine `position:relative` with one of the offset properties `top`, `bottom`, `left` or `right` the element will be moved from its original place in the layout whilst preserving the space in the document it once occupied. The element will be moved on to a new layer and its "layer order" or its stacking order can then be controlled with the `z-index` property.
 
 ```css
 .thing {
