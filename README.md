@@ -1309,6 +1309,153 @@ An element with `position: absolute;` will cause it to adjust its position with 
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. What are all the ways to center an element horizontally and vertically in CSS?
+
+Centering is one of the most common CSS interview tasks. The best approach depends on context.
+
+**1. Flexbox (most common, recommended):**
+
+```css
+.parent {
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+}
+```
+
+**2. CSS Grid:**
+
+```css
+.parent {
+  display: grid;
+  place-items: center; /* shorthand for align-items + justify-items */
+}
+```
+
+**3. Absolute positioning + `transform` (does not require knowing dimensions):**
+
+```css
+.parent { position: relative; }
+
+.child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+
+**4. Absolute positioning + `inset` + `margin: auto` (modern, clean):**
+
+```css
+.parent { position: relative; }
+
+.child {
+  position: absolute;
+  inset: 0;          /* top: 0; right: 0; bottom: 0; left: 0 */
+  margin: auto;
+  width: 200px;      /* must have explicit dimensions */
+  height: 100px;
+}
+```
+
+**5. `margin: auto` for horizontal centering of block elements:**
+
+```css
+.child {
+  width: 300px;
+  margin: 0 auto; /* horizontally centers a block element */
+}
+```
+
+**6. `text-align: center` for inline/inline-block children:**
+
+```css
+.parent {
+  text-align: center;
+}
+.child {
+  display: inline-block;
+}
+```
+
+**7. CSS `table-cell` technique (legacy):**
+
+```css
+.parent {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+```
+
+| Technique | Horizontal | Vertical | Notes |
+|-----------|:----------:|:--------:|-------|
+| Flexbox | ✅ | ✅ | Best for most cases |
+| Grid `place-items` | ✅ | ✅ | Cleaner shorthand |
+| Absolute + transform | ✅ | ✅ | Works without known size |
+| Absolute + inset + margin | ✅ | ✅ | Needs explicit width/height |
+| `margin: auto` | ✅ | ❌ | Block elements only |
+| `text-align: center` | ✅ | ❌ | Inline children only |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How does `position: sticky` work and what are its common pitfalls?
+
+`position: sticky` is a hybrid between `relative` and `fixed`. The element is positioned relative to the normal flow until it crosses a specified threshold (e.g., `top: 0`), at which point it "sticks" and behaves like `position: fixed` **within its scroll container**.
+
+```css
+.sticky-header {
+  position: sticky;
+  top: 0;          /* sticks when it reaches the top of the viewport */
+  z-index: 100;
+  background: white;
+}
+```
+
+**How it differs from `position: fixed`:**
+
+| Feature | `sticky` | `fixed` |
+|---------|----------|---------|
+| Stays in document flow | **Yes** — occupies original space | No — removed from flow |
+| Constrained to parent | **Yes** — stops sticking when parent scrolls away | No — always relative to viewport |
+| Needs offset property | Yes (`top`, `left`, etc.) | Yes |
+
+**Common pitfalls:**
+
+1. **`overflow: hidden` or `overflow: auto` on an ancestor breaks sticky.** The sticky element scrolls with the overflow container, not the viewport.
+
+```css
+/* ❌ This breaks sticky */
+.parent { overflow: hidden; }
+.child  { position: sticky; top: 0; }
+
+/* ✅ Fix: remove overflow from the ancestor or use overflow: clip */
+.parent { overflow: clip; } /* clip does not create a scroll container */
+```
+
+2. **No explicit offset set** — `position: sticky` with no `top`/`bottom`/`left`/`right` behaves like `relative`.
+
+3. **Parent is not taller than the child** — sticking requires the parent to be scrollable past the child.
+
+4. **Missing `z-index`** — sticky elements may be covered by sibling elements that follow in the DOM.
+
+```css
+/* Sticky table headers */
+thead th {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## # 5. FLEXBOX
 
 <br/>
@@ -1401,6 +1548,119 @@ An area of a document laid out using flexbox is called a **flex container**. To 
 ```
 
 **Live Demo**: [flex-direction Property](https://learning-zone.github.io/css-interview-questions/assets/files/flexbox.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `flex-grow`, `flex-shrink`, and `flex-basis`?
+
+These three properties control how a flex item sizes itself relative to the available space in the flex container. The `flex` shorthand combines all three.
+
+| Property | Default | Description |
+|----------|---------|-------------|
+| `flex-grow` | `0` | How much the item **grows** relative to others when extra space is available |
+| `flex-shrink` | `1` | How much the item **shrinks** relative to others when space is insufficient |
+| `flex-basis` | `auto` | The **initial main size** of the item before growing/shrinking |
+
+**`flex-grow` example:**
+
+```css
+.container { display: flex; width: 600px; }
+
+.item-a { flex-grow: 1; }  /* takes 1/3 of extra space */
+.item-b { flex-grow: 2; }  /* takes 2/3 of extra space */
+.item-c { flex-grow: 0; }  /* does NOT grow (default) */
+```
+
+If all items have `flex-grow: 1`, they share the container equally. If one has `flex-grow: 2`, it gets twice as much of the remaining space.
+
+**`flex-shrink` example:**
+
+```css
+.container { display: flex; width: 400px; }
+
+.item-a { width: 300px; flex-shrink: 1; } /* shrinks normally */
+.item-b { width: 300px; flex-shrink: 3; } /* shrinks 3× as fast */
+/* Total content = 600px, container = 400px → 200px overflow to distribute */
+```
+
+**`flex-basis` example:**
+
+```css
+.item { flex-basis: 200px; }  /* start size is 200px before grow/shrink */
+.item { flex-basis: 0; }      /* size starts at 0; all space from grow/shrink */
+.item { flex-basis: auto; }   /* use the item\'s width/height (default) */
+```
+
+**The `flex` shorthand:**
+
+```css
+/* flex: <flex-grow> <flex-shrink> <flex-basis> */
+.item { flex: 1 1 auto; }   /* can grow and shrink, starts at auto size */
+.item { flex: 1; }          /* shorthand for: 1 1 0 (equal sizing) */
+.item { flex: none; }       /* shorthand for: 0 0 auto (no grow, no shrink) */
+.item { flex: auto; }       /* shorthand for: 1 1 auto */
+```
+
+> **`flex: 1` vs `flex: 1 1 auto`:** `flex: 1` sets `flex-basis: 0`, so items split the container total evenly. `flex: 1 1 auto` uses the item\'s intrinsic size as a starting point.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `align-items`, `align-content`, `align-self`, and `justify-content` in Flexbox?
+
+These properties control alignment along the **cross axis** (align-*) and **main axis** (justify-*).
+
+| Property | Applies to | Axis | What it aligns |
+|----------|-----------|------|----------------|
+| `justify-content` | Container | Main axis | All items as a group |
+| `align-items` | Container | Cross axis | Items in a **single** line |
+| `align-content` | Container | Cross axis | **Multiple lines** (only when `flex-wrap` is active) |
+| `align-self` | Individual item | Cross axis | Overrides `align-items` for that one item |
+| `justify-self` | Individual item | Main axis | Not supported in Flexbox (use `margin: auto`) |
+
+**`align-items` vs `align-content`:**
+
+```css
+/* align-items: controls how items align within their row */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;    /* centres items vertically within each row */
+}
+
+/* align-content: controls how rows align within the container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-between; /* distributes rows vertically with space */
+}
+```
+
+**`align-self` overriding `align-items`:**
+
+```css
+.container {
+  display: flex;
+  align-items: flex-start; /* default for all children */
+}
+
+.special {
+  align-self: flex-end;    /* this one item overrides to bottom */
+}
+```
+
+**Centering with `margin: auto` (justify-self workaround):**
+
+```css
+.container { display: flex; }
+
+/* Push last item to the far right (main-axis auto margin) */
+.push-right { margin-left: auto; }
+```
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -1610,6 +1870,156 @@ CSS Grid Layout excels at dividing a page into major regions or defining the rel
 ```
 
 **Live Demo**: [CSS Grid and flexbox](https://learning-zone.github.io/css-interview-questions/assets/files/grid-flexbox-layout.html)
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `auto-fill` and `auto-fit` in CSS Grid?
+
+Both are used with `repeat()` and `minmax()` to create **intrinsically responsive grids** without media queries. The difference lies in how they handle empty tracks.
+
+| Feature | `auto-fill` | `auto-fit` |
+|---------|-------------|------------|
+| Empty columns | Kept — adds extra empty tracks to fill the row | **Collapsed** to 0 width |
+| Items stretch to fill row | No | **Yes** — existing items expand |
+| Best for | Fixed-size item grids | Fluid grids where items should fill available space |
+
+**`auto-fill` example:**
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+/* With 2 items in a 700px container: creates 3 columns — 2 filled, 1 empty */
+```
+
+**`auto-fit` example:**
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+/* With 2 items in a 700px container: 2 columns that stretch to fill the space */
+```
+
+**The `minmax()` function:**
+
+`minmax(min, max)` defines a size range for a grid track. Tracks are at least `min` and at most `max`.
+
+```css
+/* Columns are at least 150px, grow to fill available space equally */
+grid-template-columns: repeat(3, minmax(150px, 1fr));
+
+/* A fully responsive grid — columns are at least 250px, never more than 1 equal fraction */
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+```
+
+**Real-world responsive card grid (no media queries needed):**
+
+```css
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 1.5rem;
+}
+```
+
+> `min(280px, 100%)` prevents overflow on viewports narrower than 280px by capping the minimum at `100%`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is CSS Subgrid and what problem does it solve?
+
+**Subgrid** (CSS Grid Level 2) allows a grid item that is itself a grid container to **inherit the track sizing of its parent grid** rather than define its own independent tracks. This solves the long-standing problem of aligning content across nested grid items.
+
+**The problem without subgrid:**
+
+```html
+<div class="cards">        <!-- 3-column grid -->
+  <div class="card">       <!-- each card is its own flex/grid, unaligned -->
+    <h2>Title One</h2>
+    <p>Short description</p>
+    <button>Action</button>
+  </div>
+  <div class="card">
+    <h2>Title Two With a Longer Name</h2>
+    <p>A much longer description that wraps multiple lines and pushes the button down.</p>
+    <button>Action</button>  <!-- buttons are misaligned across cards -->
+  </div>
+</div>
+```
+
+**Solution with subgrid:**
+
+```css
+/* Parent defines 3 columns */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Each card spans all 3 rows of the parent grid\'s row tracks */
+.card {
+  display: grid;
+  grid-row: span 3;               /* span 3 rows */
+  grid-template-rows: subgrid;    /* inherit parent\'s row sizing */
+  /* Now: title/description/button rows align perfectly across all cards */
+}
+
+.card h2      { align-self: start; }
+.card p       { align-self: start; }
+.card button  { align-self: end; margin-top: auto; }
+```
+
+**Browser support:** Chrome 117+, Firefox 71+, Safari 16+.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the `gap` property in CSS and how does it work in Flexbox and Grid?
+
+`gap` (formerly `grid-gap`) sets the spacing between rows and columns in Grid and Flexbox containers. It does **not** add space on the outer edges.
+
+**Syntax:**
+
+```css
+gap: <row-gap> <column-gap>;
+gap: <both>;          /* same for row and column */
+row-gap: 1rem;        /* vertical gaps */
+column-gap: 2rem;     /* horizontal gaps */
+```
+
+**Grid:**
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;           /* 1.5rem between rows AND columns */
+  gap: 1rem 2rem;        /* 1rem row-gap, 2rem column-gap */
+}
+```
+
+**Flexbox:**
+
+```css
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;   /* space between flex items — much cleaner than margin hacks */
+}
+```
+
+> **Key point:** `gap` works in both `flex` and `grid`. Before `gap` support in Flex (Chrome 84+, Firefox 63+), developers used `margin` on items, which required negative margins on the container to remove outer spacing. `gap` eliminates that hack.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -2804,6 +3214,100 @@ transform: matrix(
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. How do you style and animate SVG elements with CSS?
+
+Inline SVG can be targeted directly by CSS selectors. SVG loaded via `<img>` or `background-image` cannot be styled from an external stylesheet — use inline `<svg>` for full CSS control.
+
+**SVG-specific CSS properties:**
+
+| Property | Description |
+|----------|-------------|
+| `fill` | Interior color of a shape (like `background-color`) |
+| `stroke` | Outline color of a shape |
+| `stroke-width` | Thickness of the stroke |
+| `stroke-linecap` | Shape of open-path ends: `butt`, `round`, `square` |
+| `stroke-dasharray` | Pattern of dashes and gaps in a stroke |
+| `stroke-dashoffset` | Offset of the dash pattern — used for path-drawing animations |
+
+**Styling SVG with CSS:**
+
+```css
+/* Target SVG shapes with standard CSS selectors */
+svg circle {
+  fill: steelblue;
+  stroke: #1a1a1a;
+  stroke-width: 2;
+  transition: fill 0.3s ease;
+}
+
+svg circle:hover {
+  fill: coral;
+}
+
+/* Sync icon color with surrounding text using currentColor */
+.icon svg {
+  fill: currentColor;
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: middle;
+}
+```
+
+**SVG path-drawing animation (`stroke-dashoffset` technique):**
+
+```css
+.path-draw {
+  stroke: #3498db;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 500;    /* total path length */
+  stroke-dashoffset: 500;   /* start fully hidden */
+  animation: draw 2s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;   /* fully drawn */
+  }
+}
+```
+
+```html
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <path class="path-draw" d="M 10 80 C 40 10, 65 10, 95 80 S 150 150, 190 80" />
+</svg>
+```
+
+**Animating SVG attributes with `@keyframes`:**
+
+```css
+/* Rotate a group of SVG elements around its center */
+.spinner-arc {
+  transform-origin: 50% 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Pulse a shape using fill color */
+@keyframes pulse-fill {
+  0%, 100% { fill: #3498db; }
+  50%       { fill: #e74c3c; }
+}
+
+.pulsing-circle {
+  animation: pulse-fill 2s ease-in-out infinite;
+}
+```
+
+> **Note:** The SVG `d` property can be animated in Chrome 88+. For wider cross-browser support of complex morphing animations, use JavaScript libraries such as GSAP or anime.js.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 <br/>
 
 ## # 10. MEDIA QUERIES & RESPONSIVE DESIGN 
@@ -3747,6 +4251,69 @@ h1 {
   }
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What are CSS frameworks and how do component-based and utility-first frameworks differ?
+
+A CSS framework provides pre-written styles, components, and layout utilities to accelerate UI development and enforce consistency.
+
+**Two primary approaches:**
+
+| Approach | Examples | Description |
+|----------|----------|-------------|
+| **Component-based** | Bootstrap, Foundation, Bulma | Pre-built UI components (cards, navbars, modals) with an opinionated design. |
+| **Utility-first** | Tailwind CSS, Tachyons | Atomic single-purpose utility classes applied directly in HTML; no pre-built look. |
+
+**Bootstrap (component-based) example:**
+
+```html
+<div class="container">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">Some content here.</p>
+          <a href="#" class="btn btn-primary">Action</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+**Tailwind CSS (utility-first) example:**
+
+```html
+<div class="max-w-5xl mx-auto px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+    <div class="bg-white rounded-lg shadow-sm p-6">
+      <h5 class="text-lg font-semibold mb-2">Card Title</h5>
+      <p class="text-gray-600 mb-4">Some content here.</p>
+      <a href="#" class="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+        Action
+      </a>
+    </div>
+  </div>
+</div>
+```
+
+**Comparison:**
+
+| Feature | Bootstrap | Tailwind CSS |
+|---------|-----------|--------------|
+| Philosophy | Pre-built components | Utility classes |
+| CSS bundle (no purging) | ~170 KB | ~3 MB |
+| CSS bundle (with purging/JIT) | ~20–30 KB | ~5–20 KB |
+| Opinionated design | Yes | No |
+| Customisation | Sass variable overrides | `tailwind.config.js` |
+| Responsive prefix | `.col-md-*`, `.d-md-flex` | `md:grid-cols-2`, `md:flex` |
+| Learning curve | Low | Medium |
+
+> **When to choose:** Use Bootstrap for rapid prototyping or projects that need consistent built-in components. Use Tailwind when you need full design control and want to avoid writing custom CSS.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
@@ -5081,6 +5648,221 @@ p {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. What is `object-fit` and `object-position` in CSS?
+
+`object-fit` controls how a **replaced element** (`<img>`, `<video>`) fills its container, similar to how `background-size` works for background images.
+
+| Value | Description |
+|-------|-------------|
+| `fill` | Default — stretches to fill the box, may distort aspect ratio |
+| `contain` | Scales to fit **inside** the box, preserving aspect ratio (letterbox) |
+| `cover` | Scales to **cover** the box, preserving aspect ratio (may crop) |
+| `none` | Keeps the image at its natural size |
+| `scale-down` | Behaves as `none` or `contain`, whichever is smaller |
+
+**Example:**
+
+```css
+/* Card thumbnail that fills the box without distortion */
+.card-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;          /* crop to fill — most common for thumbnails */
+  object-position: center top; /* anchor the crop to the top-center */
+}
+
+/* Profile avatar — always shows the full image */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Logo — preserve full image, letterbox if needed */
+.logo {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+}
+```
+
+**`object-position`** accepts the same values as `background-position` and defines the focal point of the crop:
+
+```css
+img {
+  object-fit: cover;
+  object-position: 50% 20%;   /* centre horizontally, 20% from top */
+  object-position: right top; /* crop toward the top-right corner */
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the `aspect-ratio` property and why is it important?
+
+`aspect-ratio` sets a **preferred aspect ratio** for an element. The browser uses this to calculate one dimension automatically when only the other is specified, and to reserve layout space before the element\'s content loads (preventing Cumulative Layout Shift, CLS).
+
+**Syntax:**
+
+```css
+aspect-ratio: <width> / <height>;
+aspect-ratio: 16 / 9;
+aspect-ratio: 1;       /* square: 1 / 1 */
+aspect-ratio: auto;    /* default: use intrinsic ratio */
+```
+
+**Common use cases:**
+
+```css
+/* Responsive video embed — always 16:9 */
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Square avatar that scales with width */
+.avatar {
+  width: 80px;
+  aspect-ratio: 1;    /* height calculated automatically as 80px */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Reserve space for image before it loads (prevents CLS) */
+img.hero {
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  object-fit: cover;
+}
+```
+
+**Before `aspect-ratio` (the padding-top hack):**
+
+```css
+/* Legacy: 16:9 using padding-top percentage */
+.video-container {
+  position: relative;
+  padding-top: 56.25%; /* 9 / 16 = 56.25% */
+}
+.video-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+```
+
+`aspect-ratio` replaces this hack with a single readable property.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is `backdrop-filter` and how does it differ from `filter`?
+
+`backdrop-filter` applies graphical effects (blur, brightness, etc.) to the area **behind** an element, creating frosted-glass and overlay effects. `filter` applies effects to the **element itself and its children**.
+
+| Feature | `filter` | `backdrop-filter` |
+|---------|----------|-------------------|
+| Applies to | The element + its children | Everything **behind** the element |
+| Common use | Image effects, grayscale, brightness | Frosted glass, blurred overlays |
+| Requires transparency | No | **Yes** — background must be semi-transparent to see the effect |
+| Performance | Compositing | Compositing (same cost) |
+
+**Example — frosted glass card:**
+
+```css
+.glass-card {
+  background: rgba(255, 255, 255, 0.15); /* semi-transparent — required! */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%); /* Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+/* Sticky navigation with blur effect */
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+```
+
+**Supported filter functions (both properties):**
+
+`blur()`, `brightness()`, `contrast()`, `grayscale()`, `hue-rotate()`, `invert()`, `opacity()`, `saturate()`, `sepia()`, `drop-shadow()`
+
+> **Note:** `backdrop-filter` requires the element or an ancestor to create a stacking context. It is supported in Chrome 76+, Safari 9+ (with prefix), Firefox 103+.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is `mix-blend-mode` in CSS and when would you use it?
+
+`mix-blend-mode` defines how an element\'s content blends with the content **behind it** (its backdrop and parent\'s background). It works like Photoshop blending modes applied in CSS.
+
+**Common values:**
+
+| Value | Effect |
+|-------|--------|
+| `normal` | Default — no blending |
+| `multiply` | Darkens — multiplies color channels (like overlaying transparencies) |
+| `screen` | Lightens — inverse of multiply |
+| `overlay` | Combines multiply and screen — high contrast |
+| `difference` | Inverts based on difference between layers |
+| `luminosity` | Uses the luminance of the top layer with hue/saturation of the back |
+| `color` | Applies hue + saturation of the top layer |
+| `hard-light` | Like overlay but perspective shifted |
+
+**Example — text blending over an image:**
+
+```css
+/* Knockout text effect: text appears to cut through a colored overlay */
+.hero {
+  position: relative;
+  background: url('hero.jpg') center/cover;
+}
+
+.hero-overlay {
+  background: #e74c3c;
+  mix-blend-mode: multiply;  /* darkens by multiplying with the image */
+}
+
+.hero-title {
+  color: white;
+  mix-blend-mode: screen;    /* title appears lighter, creating a glow effect */
+  font-size: 4rem;
+}
+```
+
+**`background-blend-mode`** — blends a background image with the background color:
+
+```css
+.element {
+  background-image: url('texture.jpg');
+  background-color: #3498db;
+  background-blend-mode: overlay; /* blends the image with the color */
+}
+```
+
+> **Tip:** Use `isolation: isolate` on a container to prevent `mix-blend-mode` effects from bleeding outside the component boundary.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## # 14. Z-INDEX & STACKING CONTEXT
 
 <br/>
@@ -5806,6 +6588,80 @@ Absolutely positioned elements are **removed from the normal flow**, so `overflo
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. What is CSS masking and how does it differ from `clip-path`?
+
+CSS masking uses an image, gradient, or SVG element as a **mask layer**. Only the parts of the element where the mask is opaque (alpha masking) or bright (luminance masking) are visible — enabling **soft edges** and partial transparency that `clip-path` cannot produce.
+
+| Feature | `mask` | `clip-path` |
+|---------|--------|-------------|
+| Mask source | Image, gradient, SVG element | Geometric shape or SVG `path()` |
+| Soft edges | **Yes** — gradient masks fade smoothly | No — hard binary edges |
+| Partial transparency | **Yes** — semi-transparent mask = semi-visible element | No |
+| Performance | Slightly heavier (compositing layer) | Lighter |
+| Browser prefix | Requires `-webkit-mask-*` for Safari | No prefix needed |
+
+**Example — gradient fade-out:**
+
+```css
+/* Fade element to transparent at the bottom */
+.fade-out {
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Soft circular mask */
+.soft-vignette {
+  mask-image: radial-gradient(circle, black 50%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle, black 50%, transparent 80%);
+}
+
+/* Shape mask from an SVG file */
+.masked-image {
+  width: 300px;
+  height: 300px;
+  mask-image: url('star-mask.svg');
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url('star-mask.svg');
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+}
+```
+
+**CSS mask sub-properties:**
+
+| Property | Description |
+|----------|-------------|
+| `mask-image` | Image, gradient, or SVG used as the mask layer |
+| `mask-mode` | `alpha` (transparency channel) or `luminance` (brightness as opacity) |
+| `mask-repeat` | Whether the mask tiles (`no-repeat`, `repeat`, `repeat-x`, `repeat-y`) |
+| `mask-position` | Starting position of the mask |
+| `mask-size` | Size of the mask (`cover`, `contain`, explicit values) |
+| `mask-clip` | The area affected by the mask (`content-box`, `border-box`, etc.) |
+| `mask-origin` | Reference box for mask positioning |
+| `mask-composite` | How multiple mask layers are composited (`add`, `subtract`, `intersect`, `exclude`) |
+
+**Difference in output:**
+
+```css
+/* clip-path: hard-edged triangle — no soft edges possible */
+.clip {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* mask: gradient-edged triangle — smooth fade at edges */
+.mask {
+  mask-image: url('triangle-soft.svg');
+  mask-size: cover;
+  -webkit-mask-image: url('triangle-soft.svg');
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## # 16. DISPLAY & VISIBILITY
 
 <br/>
@@ -6011,6 +6867,53 @@ div { background-color: lightblue; }
 <div class="light">You can barely see this.</div>
 <div class="medium">This is easier to see.</div>
 <div class="heavy">This is very easy to see.</div>
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is `display: contents` and what does it do?
+
+`display: contents` makes an element act as if it is **not there** for layout purposes — it disappears from the box tree, but its children remain and participate in the parent\'s layout as if they were direct children.
+
+**Use case — unwrapping a semantic element for layout:**
+
+```html
+<ul class="grid-list">
+  <li class="group">       <!-- this wrapper breaks grid layout -->
+    <a href="#">Item 1</a>
+    <a href="#">Item 2</a>
+    <a href="#">Item 3</a>
+  </li>
+</ul>
+```
+
+```css
+/* Without display: contents — the <li> is a grid item, not the <a> elements */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* With display: contents — <li> box is removed, <a> elements become grid items */
+.group {
+  display: contents;
+}
+```
+
+**Important caveats:**
+
+* The element itself becomes invisible to layout — `padding`, `border`, `background`, and `margin` on it have **no visual effect**.
+* The element is still in the DOM and accessible to JavaScript.
+* **Accessibility warning:** Applying `display: contents` to certain semantic elements (`<button>`, `<a>`, `<summary>`) can strip their ARIA roles in some browsers, breaking accessibility.
+
+```css
+/* Safe use: purely structural wrapper with no semantic role */
+.layout-wrapper { display: contents; }
+
+/* Unsafe use: strips button role in some browsers */
+button { display: contents; } /* ❌ avoid */
 ```
 
 <div align="right">
@@ -7134,6 +8037,63 @@ span {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
+## Q. What are the CSS-wide value keywords `inherit`, `initial`, `unset`, and `revert`?
+
+These keywords can be applied to **any** CSS property and control how the property\'s value is resolved in the cascade.
+
+| Keyword | Description |
+|---------|-------------|
+| `inherit` | Forces the property to use the **same computed value as its parent element**, even for properties that are not normally inherited |
+| `initial` | Resets the property to its **CSS specification default** (not the browser stylesheet default) |
+| `unset` | Behaves as `inherit` for inherited properties; behaves as `initial` for non-inherited properties |
+| `revert` | Resets to the **user-agent (browser) stylesheet** value — restores browser default styling |
+
+**Example:**
+
+```css
+/* inherit: force a non-inherited property to use the parent\'s value */
+.child {
+  border-color: inherit;   /* border-color is NOT normally inherited */
+}
+
+/* initial: CSS spec default — may differ from browser default */
+h1 {
+  font-weight: initial;   /* 'normal' per spec; browser default is 'bold' */
+  display: initial;       /* 'inline' per spec; browser default is 'block' */
+}
+
+/* unset: smart inherit-or-reset */
+.reset {
+  color: unset;     /* inherits (color is an inherited property) */
+  display: unset;   /* becomes 'initial' (display is NOT inherited) */
+}
+
+/* revert: restore browser default styling */
+button {
+  all: revert;  /* strips all author styles, restores native button appearance */
+}
+```
+
+**The `all` shorthand property:**
+
+`all` applies one of the above keywords to every CSS property simultaneously (except `unicode-bidi` and `direction`), making it useful for fully resetting or isolating a component.
+
+```css
+/* Strip all author + inherited styles from a component */
+.isolated-widget {
+  all: unset;
+}
+
+/* Restore browser default styles (useful inside shadow DOM or CSS resets) */
+.unstyled {
+  all: revert;
+}
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
 ## Q. How do you handle browser differences in your user base?
 
 The `@supports` query in CSS can be very useful to scan if the user\'s current browser has a certain feature. The `@supports` CSS at-rule lets you specify declarations that depend on a browser\'s support for one or more specific CSS features. This is called a feature query. The rule may be placed at the top level of your code or nested inside any other conditional group at-rule.
@@ -7506,6 +8466,581 @@ Reflow is the name of the web browser process for re-calculating the positions a
 * Minimize CSS rules, and remove unused CSS rules.
 * If you make complex rendering changes such as animations, do so out of the flow. Use position-absolute or position-fixed to accomplish this.
 * Avoid unnecessary complex CSS selectors - descendant selectors in particular - which require more CPU power to do selector matching.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is CSS-in-JS and what are its advantages and disadvantages?
+
+**CSS-in-JS** is a pattern where component styles are written inside JavaScript files using libraries such as **styled-components**, **Emotion**, or handled at build time via **CSS Modules**. Styles are scoped automatically to the component, eliminating global class collisions.
+
+**Example — styled-components:**
+
+```javascript
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: ${props => props.primary ? '#3498db' : 'transparent'};
+  color: ${props => props.primary ? '#fff' : '#3498db'};
+  padding: 0.5rem 1rem;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+`;
+
+// Usage
+<Button primary>Primary</Button>
+<Button>Secondary</Button>
+```
+
+**Example — CSS Modules (build-time, zero runtime):**
+
+```css
+/* Button.module.css */
+.button   { padding: 0.5rem 1rem; border-radius: 4px; }
+.primary  { background-color: #3498db; color: #fff; }
+```
+
+```javascript
+import styles from './Button.module.css';
+
+<button className={`${styles.button} ${styles.primary}`}>Click me</button>
+```
+
+**Comparison:**
+
+| | styled-components / Emotion | CSS Modules |
+|---|---|---|
+| Scoping | Automatic (hashed class names) | Automatic (hashed class names) |
+| Dynamic styles | Easy — uses JS props/state | Requires `clsx` or conditional class toggling |
+| Runtime overhead | Yes — generates CSS at runtime | None — compiled at build time |
+| Server-side rendering | Supported with extra setup | Works out of the box |
+| Co-location | Styles live inside the component file | Separate `.module.css` file |
+| TypeScript support | First-class | First-class |
+
+**Pros and cons:**
+
+| Pros | Cons |
+|------|------|
+| Automatic local scope — no class collisions | Runtime overhead (styled-components injects CSS at runtime) |
+| Dynamic styling via JS props | CSS tooling (linters, browser DevTools) may be less ergonomic |
+| Co-location of component + styles | Styles not shareable via the cascade |
+| Tree-shaking — unused component styles are eliminated | Learning curve for CSS-first developers |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is PostCSS and how does it differ from CSS preprocessors like Sass?
+
+**PostCSS** is a tool that processes CSS using JavaScript plugins. Unlike Sass/Less — which introduce their own syntax and compile it to CSS — PostCSS works on **standard CSS** and transforms it via a plugin pipeline.
+
+| Feature | Sass / Less / Stylus | PostCSS |
+|---------|----------------------|---------|
+| Input syntax | Custom (`.scss`, `.less`) | Standard CSS |
+| Processing model | Compilation (custom syntax → CSS) | Plugin-based transformation |
+| Extensibility | Built-in features only | Any custom plugin |
+| Speed | Slower (full parse + transpile) | Very fast |
+| Usage | Pre-processing | Post-processing (or both with `postcss-preset-env`) |
+
+**Common PostCSS plugins:**
+
+| Plugin | Purpose |
+|--------|---------|
+| `autoprefixer` | Adds vendor prefixes automatically based on Browserslist |
+| `postcss-preset-env` | Converts modern CSS (nesting, custom media, etc.) to older syntax |
+| `cssnano` | Minifies CSS for production |
+| `postcss-custom-properties` | Polyfills CSS custom properties for older browsers |
+
+**Example — PostCSS config:**
+
+```javascript
+// postcss.config.js
+module.exports = {
+  plugins: [
+    require('autoprefixer'),
+    require('cssnano')({ preset: 'default' })
+  ]
+};
+```
+
+```css
+/* Input CSS */
+.element {
+  display: grid;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+/* Output after Autoprefixer */
+.element {
+  display: grid;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+```
+
+> **Tip:** PostCSS and Sass are complementary, not mutually exclusive. Many projects compile Sass first and then run PostCSS on the output for autoprefixing and minification.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is lazy loading and how is it applied in CSS contexts?
+
+**Lazy loading** defers loading of non-critical resources until they are needed — typically when they enter or approach the viewport. This reduces initial page weight and improves Time to Interactive (TTI).
+
+**1. Native image lazy loading (HTML attribute):**
+
+```html
+<!-- Browser defers network request until image is near the viewport -->
+<img src="large-photo.jpg" loading="lazy" alt="Description" width="800" height="600">
+<iframe src="embed.html" loading="lazy"></iframe>
+```
+
+> Always specify `width` and `height` on lazy images to prevent layout shift (CLS).
+
+**2. CSS background image lazy loading (via JavaScript + class toggle):**
+
+CSS `background-image` has no native `loading` attribute. Use the **Intersection Observer API** to add a class when the element enters the viewport:
+
+```css
+/* Default: no background loaded */
+.lazy-bg {
+  background-color: #f0f0f0;  /* placeholder color */
+  min-height: 400px;
+}
+
+/* Class applied when element is near viewport */
+.lazy-bg.is-loaded {
+  background-image: url('hero-large.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
+
+```javascript
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-loaded');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { rootMargin: '200px' }); // load 200px before entering viewport
+
+document.querySelectorAll('.lazy-bg').forEach(el => observer.observe(el));
+```
+
+**3. Lazy loading non-critical CSS:**
+
+```html
+<!-- Preload the stylesheet but don\'t block rendering -->
+<link rel="preload" href="non-critical.css" as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="non-critical.css"></noscript>
+```
+
+**4. Font lazy loading with `font-display`:**
+
+```css
+@font-face {
+  font-family: 'MyFont';
+  src: url('font.woff2') format('woff2');
+  font-display: swap;   /* show fallback font instantly; swap when custom font loads */
+}
+```
+
+| `font-display` value | Behaviour |
+|----------------------|-----------|
+| `auto` | Browser default |
+| `block` | Short invisible period, then swap |
+| `swap` | Immediate fallback font, swap when loaded |
+| `fallback` | Short invisible period, then fallback; no late swap |
+| `optional` | Use only if immediately available (cached) |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is critical CSS and why is it important for performance?
+
+**Critical CSS** is the minimum CSS required to render the **above-the-fold** (initially visible) content of a page without any render-blocking network requests. Inlining it in the `<head>` eliminates the round-trip delay of an external stylesheet fetch, significantly improving **First Contentful Paint (FCP)**.
+
+**The problem:**
+
+Every `<link rel="stylesheet">` in the `<head>` is **render-blocking** — the browser will not paint anything until the full stylesheet has been downloaded and parsed.
+
+**The solution — inline critical, load the rest async:**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Critical CSS inlined: no network request required to paint above the fold -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body  { margin: 0; font-family: system-ui, sans-serif; }
+    nav   { display: flex; align-items: center; padding: 1rem 2rem; background: #fff; }
+    .hero { height: 100vh; background: #3498db; display: flex; align-items: center;
+            justify-content: center; }
+    .hero h1 { color: #fff; font-size: clamp(2rem, 5vw, 4rem); margin: 0; }
+  </style>
+
+  <!-- Non-critical CSS loaded asynchronously — does NOT block rendering -->
+  <link rel="preload" href="styles.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+</head>
+<body>
+  <nav>...</nav>
+  <section class="hero"><h1>Welcome</h1></section>
+  <!-- rest of page... -->
+</body>
+</html>
+```
+
+**What to include in critical CSS:**
+- CSS resets / box-sizing
+- Font declarations (`@font-face`) used above the fold
+- Layout styles for the navigation and hero section
+- Typography for any visible headings
+
+**Tools to extract critical CSS automatically:**
+
+| Tool | Description |
+|------|-------------|
+| **[Critical](https://github.com/addyosmani/critical)** | Node.js CLI by Addy Osmani; integrates with Gulp/Webpack |
+| **[Penthouse](https://github.com/pocketjoso/penthouse)** | Generates critical CSS from a live URL |
+| **Next.js / Vite** | Built-in critical CSS extraction in production builds |
+
+> **Performance impact:** Inlining critical CSS typically reduces FCP by 200–600 ms on slow 3G connections, directly improving Core Web Vitals scores.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is CSS `scroll-snap` and how do you implement it?
+
+CSS Scroll Snap lets you define **snap points** along a scroll container so that scrolling snaps precisely to specified positions — creating smooth, paged, or carousel-style experiences without JavaScript.
+
+**Container properties:**
+
+| Property | Description |
+|----------|-------------|
+| `scroll-snap-type` | Enables snapping: axis (`x`, `y`, `both`) + strictness (`mandatory`, `proximity`) |
+| `scroll-padding` | Offset from the container edge at which snap points are calculated |
+
+**Item properties:**
+
+| Property | Description |
+|----------|-------------|
+| `scroll-snap-align` | Where on the item the snap point is: `start`, `center`, `end` |
+| `scroll-snap-stop` | `normal` (default) or `always` — forces stop at every snap point even during fast scrolling |
+| `scroll-margin` | Offset between the snap point and the item\'s edge |
+
+**Example — horizontal carousel:**
+
+```css
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;  /* snap on x-axis, always snaps */
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 0 1rem;
+
+  /* Hide scrollbar (optional) */
+  scrollbar-width: none; /* Firefox */
+}
+.carousel::-webkit-scrollbar { display: none; }
+
+.carousel-item {
+  flex: 0 0 100%;          /* each item is full width */
+  scroll-snap-align: start; /* snap to the start of each item */
+}
+```
+
+**Example — vertical full-page scroll:**
+
+```css
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+```
+
+**`mandatory` vs `proximity`:**
+
+| Value | Behaviour |
+|-------|-----------|
+| `mandatory` | Always snaps to a snap point after scrolling ends |
+| `proximity` | Snaps only when the scroll position is close to a snap point |
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the `pointer-events` property in CSS?
+
+`pointer-events` controls whether and how an element responds to mouse/touch/pointer interactions.
+
+| Value | Description |
+|-------|-------------|
+| `auto` | Default — normal pointer interaction |
+| `none` | Element ignores **all** pointer events (clicks, hover, cursor) — events pass through to elements below |
+| `visiblePainted`, `visibleFill`, etc. | SVG-specific values |
+
+**Common use cases:**
+
+```css
+/* Disable clicking on a button during loading */
+.button--loading {
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Make an overlay transparent to mouse events (click-through overlay) */
+.tooltip-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none; /* clicks pass through to elements beneath */
+}
+
+/* Re-enable on a specific child inside a pointer-events:none parent */
+.parent { pointer-events: none; }
+.parent .clickable-child { pointer-events: auto; }
+
+/* Disable hover effects on an icon inside a button */
+button .icon {
+  pointer-events: none; /* prevents icon from being the event target */
+}
+```
+
+> **Important:** `pointer-events: none` only affects CSS and DOM pointer events. The element is still in the DOM, still participates in layout, and is still focusable via keyboard — so it is **not** equivalent to `disabled` for accessibility purposes.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the CSS `@layer` rule and why is it useful?
+
+`@layer` (CSS Cascade Layers, introduced in CSS 2022) lets you explicitly control the order of specificity between groups of styles. Layers defined earlier have **lower priority** than layers defined later, regardless of selector specificity within them.
+
+**Problem it solves:** In large codebases or when combining third-party styles with your own, specificity conflicts are hard to manage. `@layer` provides an ordered structure.
+
+**Syntax:**
+
+```css
+/* 1. Declare layer order (lowest → highest priority) */
+@layer reset, base, components, utilities;
+
+/* 2. Assign styles to layers */
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; }
+}
+
+@layer base {
+  h1 { font-size: 2rem; color: #333; }
+  a  { color: blue; }
+}
+
+@layer components {
+  .card { border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+  .btn  { padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+}
+
+@layer utilities {
+  .text-center { text-align: center; }
+  .mt-4        { margin-top: 1rem; }
+}
+```
+
+**Key rules:**
+
+- Unlayered styles always win over layered styles, regardless of specificity.
+- Within a layer, normal specificity and source order rules apply.
+- Layers can be imported: `@import url('base.css') layer(base);`
+
+**Practical example — overriding third-party CSS:**
+
+```css
+/* Put third-party styles in a low-priority layer */
+@layer vendor {
+  @import url('bootstrap.css');
+}
+
+/* Your styles are unlayered — they always win */
+.btn { background: #3498db; color: white; } /* overrides Bootstrap without !important */
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What are CSS Logical Properties and why are they important?
+
+CSS Logical Properties map physical directions (`top`, `right`, `bottom`, `left`) to **logical flow-relative** equivalents that adapt automatically to text direction (`ltr` / `rtl`) and writing mode (horizontal / vertical).
+
+**Physical → Logical mapping (for horizontal `ltr` writing):**
+
+| Physical property | Logical equivalent | Meaning |
+|-------------------|--------------------|---------|
+| `margin-top` | `margin-block-start` | Margin at the start of the block axis |
+| `margin-bottom` | `margin-block-end` | Margin at the end of the block axis |
+| `margin-left` | `margin-inline-start` | Margin at the start of the inline axis |
+| `margin-right` | `margin-inline-end` | Margin at the end of the inline axis |
+| `width` | `inline-size` | Size along the inline axis |
+| `height` | `block-size` | Size along the block axis |
+| `top` | `inset-block-start` | Offset at block start |
+| `left` | `inset-inline-start` | Offset at inline start |
+
+**Shorthand logical properties:**
+
+```css
+.element {
+  margin-block: 1rem 2rem;    /* margin-block-start: 1rem; margin-block-end: 2rem */
+  margin-inline: auto;        /* center horizontally in both ltr and rtl */
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-block-end: 1px solid #ccc;  /* bottom border in ltr, top in btm-to-top */
+  inset-inline-start: 0;      /* left: 0 in ltr; right: 0 in rtl */
+}
+```
+
+**Why they matter for internationalization:**
+
+```css
+/* Physical — breaks in RTL languages */
+.sidebar { margin-left: 2rem; }
+
+/* Logical — automatically flips to margin-right in RTL */
+.sidebar { margin-inline-start: 2rem; }
+```
+
+With `direction: rtl` or `writing-mode: vertical-rl`, logical properties reorient automatically.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is `content-visibility` and how does it improve CSS rendering performance?
+
+`content-visibility` is a CSS property that allows the browser to **skip rendering** (layout, paint, compositing) of an element\'s subtree until it is near the viewport. This can dramatically improve initial page load and scroll performance for long pages.
+
+| Value | Description |
+|-------|-------------|
+| `visible` | Default — element is always rendered |
+| `hidden` | Like `display: none` for rendering, but the subtree is maintained in memory (instant reveal) |
+| `auto` | Browser skips off-screen rendering; renders when near the viewport |
+
+**`content-visibility: auto` — the performance property:**
+
+```css
+.article-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px; /* estimated height for layout placeholder */
+}
+```
+
+The browser skips rendering `.article-section` elements that are off-screen. When the user scrolls near them, they are rendered on demand. `contain-intrinsic-size` tells the browser how much space to reserve for the un-rendered element so the scrollbar doesn\'t jump.
+
+**Real-world results:** Google reports up to **7× rendering time improvement** on long article pages.
+
+**`content-visibility: hidden` — for off-screen panels:**
+
+```css
+.tab-panel:not(.active) {
+  content-visibility: hidden; /* skips render, but preserves state */
+}
+.tab-panel.active {
+  content-visibility: visible; /* instant restore from memory */
+}
+```
+
+Unlike `display: none`, elements with `content-visibility: hidden` maintain their layout state and can be revealed instantly.
+
+> **Browser support:** Chrome 85+, Edge 85+. Not yet in Firefox or Safari (falls back to `visible` — safe to use progressively).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you calculate CSS specificity with a worked example?
+
+Specificity is calculated as a three-part value **(A, B, C)** where **A > B > C** — a higher value in A always beats a higher value in C, regardless of count.
+
+| Selector type | A (IDs) | B (Classes, attributes, pseudo-classes) | C (Elements, pseudo-elements) |
+|---------------|:-------:|:---------------------------------------:|:-----------------------------:|
+| Inline `style=""` | — | — | — | *(always wins over selectors)* |
+| `#id` | +1 | | |
+| `.class`, `[attr]`, `:hover` | | +1 | |
+| `div`, `p`, `::before` | | | +1 |
+| `*`, `:is()`, `:not()`, `:has()` | 0 | 0 | 0 *(but their arguments count)* |
+| `!important` | Overrides all | | |
+
+**Worked examples:**
+
+```css
+/* Specificity: (0, 0, 1) — one element */
+p { color: black; }
+
+/* Specificity: (0, 1, 0) — one class */
+.intro { color: blue; }
+
+/* Specificity: (0, 1, 1) — one class + one element */
+p.intro { color: green; }
+
+/* Specificity: (1, 0, 0) — one ID */
+#hero { color: red; }
+
+/* Specificity: (1, 1, 1) — ID + class + element */
+#hero .intro p { color: purple; }
+
+/* Specificity: (0, 2, 1) — two classes + one element */
+div.card.featured { color: orange; }
+
+/* Specificity: (0, 1, 2) — one pseudo-class + two elements */
+a:hover span { color: pink; }
+
+/* :is() — takes specificity of most specific argument */
+:is(#hero, .box) p { } /* → (1, 0, 1) because #hero is most specific */
+
+/* :where() — always 0 specificity */
+:where(.card, #hero) p { } /* → (0, 0, 1) */
+```
+
+**Quiz — which rule wins?**
+
+```css
+/* Rule 1: (0, 2, 1) */
+.nav .link a { color: blue; }
+
+/* Rule 2: (1, 0, 0) */
+#main { color: red; }
+
+/* Rule 3: (0, 1, 1) — applies last in source */
+nav a { color: green; }
+```
+
+For `<a>` inside `<nav class="nav">` inside `<div id="main">`:
+- Rule 1 wins because it directly targets the `<a>` element with (0, 2, 1) vs (1, 0, 0) from Rule 2 — **wait**, ID wins over classes. Rule 2 is (1, 0, 0) but it doesn\'t target `<a>`. Rule 1 targets `<a>` with (0, 2, 1), so **Rule 1 wins** for the anchor\'s color.
+
+> **Tip:** Use DevTools → Elements → Computed tab to inspect the winning rule and see all competing declarations crossed out.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
