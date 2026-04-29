@@ -2,7 +2,7 @@
 
 <br/>
 
-#### Animation Properties
+## Animation Properties
 
 |Sl.No| Property            | Description                     |
 |-----|---------------------|---------------------------------|
@@ -15,9 +15,14 @@
 | 07. |animation-name  |Specifies the name of @keyframes defined animations that should be applied to the selected element.|
 | 08. |animation-play-state |Specifies whether the animation is running or paused.|
 | 09. |animation-timing-function |Specifies how a CSS animation should progress over the duration of each cycle.|
+| 10. |animation-composition     |Specifies how an animation\'s effect value combines with the underlying value of the property being animated.|
+| 11. |animation-timeline        |Specifies the timeline that is used to control the progress of a CSS animation.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Background Properties
+## Background Properties
 
 |Sl.No|Property	             | Description                                                                    |
 |-----|----------------------|--------------------------------------------------------------------------------|
@@ -31,12 +36,15 @@
 | 08. |background-repeat	 |Sets how a background image will be repeated                                   |
 | 09. |background-size	     |Specifies the size of the background image(s)                                  |
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Border Properties
+## Border Properties
 
 |Sl.No|Property	             | Description                                                                    |
 |-----|----------------------|--------------------------------------------------------------------------------|
-| 01. |border	             |Sets the width, style, and color for all four sides of an element's border.|
+| 01. |border	             |Sets the width, style, and color for all four sides of an element\'s border.|
 | 02. |border-bottom	     |Sets the width, style, and color of the bottom border of an element.|
 | 03. |border-bottom-color	 |Sets the color of the bottom border of an element.|
 | 04. |border-bottom-left-radius |Defines the shape of the bottom-left border corner of an element.|
@@ -68,16 +76,25 @@
 | 31. |border-top-width	      |Sets the width of the top border of an element.|
 | 32. |border-width	          |Sets the width of the border on all the four sides of an element.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Color Properties
+## Color Properties
 
 |Sl.No|Property	     |Description                                 |
 |-----|--------------|--------------------------------------------|
 |01.  |color	     |Specify the color of the text of an element.|
 |02.  |opacity 	     |Specifies the transparency of an element.|
+|03.  |accent-color |Sets the accent color for UI controls like checkboxes, radio buttons, and range inputs.|
+|04.  |caret-color  |Sets the color of the text insertion cursor (caret) in an editable field.|
+|05.  |color-scheme |Indicates which color schemes (light/dark) an element can be rendered in.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Dimension Properties
+## Dimension Properties
 
 |Sl.No|Property	     |Description                                 |
 |-----|--------------|--------------------------------------------|
@@ -87,9 +104,15 @@
 | 04. |min-height	 |Specify the minimum height of an element.|
 | 05. |min-width	 |Specify the minimum width of an element.|
 | 06. |width	     |Specify the width of an element.|
+| 07. |aspect-ratio |Sets a preferred aspect ratio for the box, used in the calculation of auto sizes.|
+| 08. |inline-size  |Defines the horizontal or vertical size of an element\'s box depending on its writing mode.|
+| 09. |block-size   |Defines the horizontal or vertical size of an element\'s box depending on its writing mode.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Generated Content Properties
+## Generated Content Properties
 
 |Sl.No|Property	     |Description                                 |
 |-----|--------------|--------------------------------------------|
@@ -99,11 +122,15 @@
 | 04. |counter-increment| Increments one or more counter values.|
 
 
-#### Flexible Box Layout
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Flexible Box Layout
 
 |Sl.No|Property	      |Description                                 |
 |-----|---------------|--------------------------------------------|
-| 01. |align-content  |Specifies the alignment of flexible container's items within the flex container.|
+| 01. |align-content  |Specifies the alignment of flexible container\'s items within the flex container.|
 | 02. |align-items 	  |Specifies the default alignment for items within the flex container.|
 | 03. |align-self 	  |Specifies the alignment for selected items within the flex container.|
 | 04. |flex 	      |Specifies the components of a flexible length.|
@@ -115,9 +142,20 @@
 | 10. |flex-wrap 	  |Specifies whether the flexible items should wrap or not.|
 | 11. |justify-content|Specifies how flex items are aligned along the main axis of the flex container after any flexible lengths  and auto margins have been resolved.|
 | 12. |order 	      |Specifies the order in which a flex items are displayed and laid out within a flex container.|
+| 13. |gap           |A shorthand for row-gap and column-gap in flex and grid containers.|
+| 14. |row-gap       |Sets the size of the gap between rows in a flex or grid container.|
+| 15. |column-gap    |Sets the size of the gap between columns in a flex or grid container.|
+| 16. |justify-items |Defines the default justify-self for all items within the container.|
+| 17. |justify-self  |Sets the way a single box is justified inside its alignment container along the inline axis.|
+| 18. |place-content |A shorthand for align-content and justify-content.|
+| 19. |place-items   |A shorthand for align-items and justify-items.|
+| 20. |place-self    |A shorthand for align-self and justify-self.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Font Properties
+## Font Properties
 
 |Sl.No|Property	      |Description                                                 |
 |-----|---------------|------------------------------------------------------------|
@@ -129,9 +167,17 @@
 | 06. |font-style	  |Defines the font style for the text.|
 | 07. |font-variant	  |Specify the font variant.|
 | 08. |font-weight	  |Specify the font weight of the text.|
+| 09. |font-feature-settings  |Allows control over advanced typographic features in OpenType fonts.|
+| 10. |font-kerning           |Controls the use of the kerning information stored in a font.|
+| 11. |font-optical-sizing    |Sets whether text rendering is optimized for viewing at different sizes.|
+| 12. |font-synthesis         |Controls which missing typefaces (bold, italic, small-caps) may be synthesized by the browser.|
+| 13. |font-variation-settings|Provides low-level control over OpenType or TrueType font variations.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### List Properties
+## List Properties
 
 |Sl.No|Property	            |Description                                            |
 |-----|---------------------|-------------------------------------------------------|
@@ -140,8 +186,11 @@
 | 03. |list-style-position	|Specifies the position of the list-item marker.|
 | 04. |list-style-type	    |Specifies the marker style for a list-item.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Margin Properties
+## Margin Properties
 
 |Sl.No|Property	            |Description                                      |
 |-----|---------------------|-------------------------------------------------|
@@ -151,9 +200,11 @@
 | 04. |margin-right	        |Sets the right margin of the element.|
 | 05. |margin-top	        |Sets the top margin of the element.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-
-#### Multi-column Layout Properties
+## Multi-column Layout Properties
 
 |Sl.No|Property	            |Description                                      |
 |-----|---------------------|-------------------------------------------------|
@@ -168,19 +219,25 @@
 | 09. |column-width 	    |Specifies the optimal width of the columns in a multi-column element.|
 | 10. |columns 	            |A shorthand property for setting column-width and column-count properties.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Outline Properties
+## Outline Properties
 
 |Sl.No|Property	            |Description                                                                 |
 |-----|---------------------|----------------------------------------------------------------------------|
-| 01. |outline	            |Sets the width, style, and color for all four sides of an element's outline.|
+| 01. |outline	            |Sets the width, style, and color for all four sides of an element\'s outline.|
 | 02. |outline-color	    |Sets the color of the outline.|
 | 03. |outline-offset 	    |Set the space between an outline and the border edge of an element.|
 | 04. |outline-style	    |Sets a style for an outline.|
 | 05. |outline-width	    |Sets the width of the outline.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Padding Properties
+## Padding Properties
 
 |Sl.No|Property	            |Description                                       |
 |-----|---------------------|--------------------------------------------------|
@@ -190,28 +247,25 @@
 | 04. |padding-right	    |Sets the padding to the right side of an element.|
 | 05. |padding-top	        |Sets the padding to the top side of an element.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Print Properties
-
-|Sl.No|Property	            |Description                            |
-|-----|---------------------|---------------------------------------|
-| 01. |page-break-after	    |Insert a page breaks after an element. |
-| 02. |page-break-before	|Insert a page breaks before an element.|
-| 03. |page-break-inside	|Insert a page breaks inside an element.|
-
-
-#### Table Properties
+## Table Properties
 
 |Sl.No|Property	            |Description                            |
 |-----|---------------------|---------------------------------------|
 | 01. |border-collapse	    |Specifies whether table cell borders are connected or separated.|
 | 02. |border-spacing	    |Sets the spacing between the borders of adjacent table cells.|
-| 03. |caption-side	        |Specify the position of table's caption.|
+| 03. |caption-side	        |Specify the position of table\'s caption.|
 | 04. |empty-cells	        |Show or hide borders and backgrounds of empty table cells.|
 | 05. |table-layout	        |Specifies a table layout algorithm.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Text Properties
+## Text Properties
 
 |Sl.No|Property	            |Description                            |
 |-----|---------------------|---------------------------------------|
@@ -234,10 +288,21 @@
 | 17. |word-spacing	         |Sets the spacing between words.|
 | 18. |white-space	         |Specifies how white space inside the element is handled.|
 | 19. |word-break 	         |Specifies how to break lines within words.|
-| 20. |word-wrap 	         |Specifies whether to break words when the content overflows the boundaries of its container.|
+| 20. |overflow-wrap         |Specifies whether the browser may break lines within words to prevent overflow.|
+| 21. |writing-mode          |Specifies whether lines of text are laid out horizontally or vertically.|
+| 22. |text-underline-offset |Sets the offset distance of an underline text decoration line from its original position.|
+| 23. |text-emphasis         |A shorthand for text-emphasis-style and text-emphasis-color.|
+| 24. |text-emphasis-color   |Sets the color of emphasis marks.|
+| 25. |text-emphasis-position|Sets where emphasis marks are drawn relative to the text.|
+| 26. |text-emphasis-style   |Sets the appearance of emphasis marks on the text.|
+| 27. |unicode-bidi          |Specifies how the Unicode Bidirectional Algorithm should handle bidirectional text in the element.|
+| 28. |text-rendering        |Provides information to the rendering engine about what to optimize for when rendering text.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Transform Properties
+## Transform Properties
 
 |Sl.No|Property	            |Description                            |
 |-----|---------------------|---------------------------------------|
@@ -248,8 +313,11 @@
 | 05. |transform-origin 	|Defines the origin of transformation for an element.|
 | 06. |transform-style  	|Specifies how nested elements are rendered in 3D space.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Transitions Properties
+## Transitions Properties
 
 |Sl.No|Property	            |Description                            |
 |-----|---------------------|---------------------------------------|
@@ -259,8 +327,11 @@
 | 04. |transition-property 	|Specifies the names of the CSS properties to which a transition effect should be applied.|
 | 05. |transition-timing-function |	Specifies the speed curve of the transition effect.|
 
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
-#### Visual formatting Properties
+## Visual formatting Properties
 
 |Sl.No|Property	            |Description                            |
 |-----|---------------------|---------------------------------------|
@@ -273,12 +344,105 @@
 | 07. |float	            |Specifies whether or not a box should float.|
 | 08. |clear	            |Specifies the placement of an element in relation to floating elements.|
 | 09. |z-index	            |Specifies a layering or stacking order for positioned elements.|
-| 10. |overflow	            |Specifies the treatment of content that overflows the element's box.|
-| 11. |overflow-x 	        |Specifies how to manage the content when it overflows the width of the element's content area.|
-| 12. |overflow-y 	        |Specifies how to manage the content when it overflows the height of the element's content area.|
+| 10. |overflow	            |Specifies the treatment of content that overflows the element\'s box.|
+| 11. |overflow-x 	        |Specifies how to manage the content when it overflows the width of the element\'s content area.|
+| 12. |overflow-y 	        |Specifies how to manage the content when it overflows the height of the element\'s content area.|
 | 13. |resize 	            |Specifies whether or not an element is resizable by the user.|
-| 14. |clip	                |Defines the clipping region.|
-| 15. |visibility	        |Specifies whether or not an element is visible.|
-| 16. |cursor	            |Specify the type of cursor.|
-| 17. |box-shadow 	        |Applies one or more drop-shadows to the element's box.|
-| 18. |box-sizing 	        |Alter the default CSS box model.|
+| 14. |visibility	        |Specifies whether or not an element is visible.|
+| 15. |cursor	            |Specify the type of cursor.|
+| 16. |box-shadow 	        |Applies one or more drop-shadows to the element\'s box.|
+| 17. |box-sizing 	        |Alter the default CSS box model.|
+| 18. |appearance           |Controls the native appearance of an element based on the operating system theme.|
+| 19. |contain              |Indicates that an element and its contents are as independent as possible from the rest of the document.|
+| 20. |isolation            |Defines whether an element must create a new stacking context.|
+| 21. |mix-blend-mode       |Sets how an element\'s content should blend with its parent\'s content and background.|
+| 22. |object-fit           |Specifies how a replaced element\'s content (image/video) is resized to fit its container.|
+| 23. |object-position      |Specifies the alignment of the replaced element\'s content within its box.|
+| 24. |pointer-events       |Specifies under what circumstances an element can become the target of pointer events.|
+| 25. |user-select          |Controls whether the user can select text within the element.|
+| 26. |will-change          |Hints to the browser about what kind of changes to expect to allow optimization ahead of time.|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Grid Layout Properties
+
+|Sl.No|Property	                |Description                                 |
+|-----|------------------------|--------------------------------------------|
+| 01. |grid                    |A shorthand for grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns and grid-auto-flow.|
+| 02. |grid-area               |Specifies a grid item\'s size and location within a grid by contributing lines, spans or nothing.|
+| 03. |grid-auto-columns       |Sets the size of implicitly created grid columns.|
+| 04. |grid-auto-flow          |Controls how auto-placed items are inserted in the grid (row, column, or dense packing).|
+| 05. |grid-auto-rows          |Sets the size of implicitly created grid rows.|
+| 06. |grid-column             |A shorthand for grid-column-start and grid-column-end.|
+| 07. |grid-column-end         |Specifies where to end the grid item in the column direction.|
+| 08. |grid-column-start       |Specifies where to start the grid item in the column direction.|
+| 09. |grid-row                |A shorthand for grid-row-start and grid-row-end.|
+| 10. |grid-row-end            |Specifies where to end the grid item in the row direction.|
+| 11. |grid-row-start          |Specifies where to start the grid item in the row direction.|
+| 12. |grid-template           |A shorthand for grid-template-rows, grid-template-columns and grid-template-areas.|
+| 13. |grid-template-areas     |Specifies how to display columns and rows using named grid item areas.|
+| 14. |grid-template-columns   |Defines the line names and track sizing functions of the grid columns.|
+| 15. |grid-template-rows      |Defines the line names and track sizing functions of the grid rows.|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Filter Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |filter               |Applies graphical effects like blur, brightness, contrast, or color shift to an element.|
+| 02. |backdrop-filter      |Applies graphical effects to the area behind an element (requires the element to be at least partially transparent).|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Masking Properties
+
+|Sl.No|Property	            |Description                            |
+|-----|---------------------|---------------------------------------|
+| 01. |clip-path            |Specifies the clipping region using a basic shape, SVG source, or geometry box.|
+| 02. |mask                 |A shorthand property for all the mask-* properties.|
+| 03. |mask-clip            |Specifies the area which is affected by the mask image.|
+| 04. |mask-composite       |Specifies the compositing operation used on the current mask layer with those below it.|
+| 05. |mask-image           |Specifies an image to be used as a mask layer for an element.|
+| 06. |mask-mode            |Specifies whether the mask layer image is treated as a luminance or alpha mask.|
+| 07. |mask-origin          |Specifies the origin position of the mask layer image.|
+| 08. |mask-position        |Sets the starting position of a mask layer image within the mask positioning area.|
+| 09. |mask-repeat          |Specifies whether and how a mask image is repeated (tiled).|
+| 10. |mask-size            |Specifies the size of a mask layer image.|
+| 11. |mask-type            |Specifies whether an SVG mask element is treated as a luminance or alpha mask.|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Scroll Properties
+
+|Sl.No|Property	              |Description                            |
+|-----|-----------------------|---------------------------------------|
+| 01. |scroll-behavior        |Specifies the scrolling behavior for a scrolling box when triggered by navigation or CSSOM scrolling API.|
+| 02. |scroll-margin          |A shorthand for all the scroll-margin longhands (top, right, bottom, left).|
+| 03. |scroll-margin-bottom   |Sets the scroll margin on the bottom of an element.|
+| 04. |scroll-margin-left     |Sets the scroll margin on the left of an element.|
+| 05. |scroll-margin-right    |Sets the scroll margin on the right of an element.|
+| 06. |scroll-margin-top      |Sets the scroll margin on the top of an element.|
+| 07. |scroll-padding         |A shorthand for all the scroll-padding longhands.|
+| 08. |scroll-padding-bottom  |Sets the scroll padding on the bottom of the scroll container.|
+| 09. |scroll-padding-left    |Sets the scroll padding on the left of the scroll container.|
+| 10. |scroll-padding-right   |Sets the scroll padding on the right of the scroll container.|
+| 11. |scroll-padding-top     |Sets the scroll padding on the top of the scroll container.|
+| 12. |scroll-snap-align      |Specifies the box\'s snap position as an alignment of its snap area within its snap container.|
+| 13. |scroll-snap-stop       |Specifies whether the scroll container is allowed to pass over possible snap positions.|
+| 14. |scroll-snap-type       |Specifies how strictly snap points are enforced on the scroll container.|
+| 15. |overscroll-behavior    |Specifies what the browser does when reaching the boundary of a scrolling area.|
+| 16. |overscroll-behavior-x  |Specifies the overscroll behavior for the horizontal axis.|
+| 17. |overscroll-behavior-y  |Specifies the overscroll behavior for the vertical axis.|
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
