@@ -32,12 +32,67 @@
 * [Accessibility & CSS](#-24-accessibility--css)
 * [Advanced Layout Scenarios](#-25-advanced-layout-scenarios)
 * [Modern CSS Features](#-26-modern-css-features)
+* [Bootstrap CSS](#-27-bootstrap-css)
 
 <br/>
 
 ## # 1. Introduction
 
-### Q. On a webpage, you want to use borders and explore various border styles. Which option is not a border style you can use?
+<br>
+
+## Q. While working on a webpage for yous scheduler app, you want to print a list. However, you want to avoid the hassle of writing so many properties separately, so you decide to use the shorthand property, Choose the correct option in this regard. 
+
+- A) 
+```css
+ul
+{
+    list-style: list-style-type list-style-position list-style-image;
+}
+```
+Where list-style-type will be displayed. If for some reason the image cannot be displayed, list-style-position displays whether the list marker should be displayed inside or outside the content flow, and list-style-image specifies the image that should be displayed as a list marker.
+- B) 
+```css
+ul
+{
+    list-style: list-style-type list-style-image list-style-position;
+}
+```
+Where list-style-type will be displayed. If for some reason the image cannot be displayed, list-style-position displays whether the list marker should be displayed inside or outside the content flow, and list-style-image specifies the image that should be displayed as a list marker.  
+- C) 
+```css
+ul
+{
+    list-style: list-style-type list-style-image list-style-position;
+}
+```
+Where list-style-type will be displayed. If for some reason the image cannot be displayed, list-style-position displays if the list marker should be displayed on top, bottom, left or right of the webpage, and list-style-image specifies the image that should be displayed as a list marker.
+- D) None of the options
+
+
+**Answer: A)**
+
+> The CSS `list-style` shorthand order is **`list-style-type list-style-position list-style-image`**. Option A uses the correct order and correctly describes `list-style-position` as controlling whether the marker appears **inside or outside** the content flow. Option B has the wrong order (image before position). Option C also has the wrong order and incorrectly describes `list-style-position` as placing the marker at top/bottom/left/right — those are not valid `list-style-position` values (`inside` and `outside` are).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex has defined a CSS rule in an external stylesheet but wants to override it with a more specific rule defined directly in the HTML file. Which option should he use to ensure the rule takes precedence?
+
+- A) Inline style  
+- B) External stylesheet  
+- C) Internal stylesheet
+- D) !important declaration
+
+**Answer: A) Inline style**
+
+> An **inline style** (`style="..."` attribute on the HTML element) is written directly in the HTML file and carries a specificity of `1-0-0-0`, which overrides any rule from an external or internal stylesheet targeting the same property. An internal stylesheet (`<style>` in `<head>`) can also override an external one if the selector is more specific, but an inline style is the most direct way to guarantee precedence from within the HTML file itself.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. On a webpage, you want to use borders and explore various border styles. Which option is not a border style you can use?
 
 - A) None  
 - B) Double  
@@ -52,7 +107,7 @@
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer writes the following rule. Which CSS version introduced the `border-radius` property?
+## Q. A developer writes the following rule. Which CSS version introduced the `border-radius` property?
 
 ```css
 div {
@@ -73,7 +128,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A stylesheet contains both inline styles and an external stylesheet. The inline style sets `color: red` and the external stylesheet sets `color: blue`. What color will the text be?
+## Q. A stylesheet contains both inline styles and an external stylesheet. The inline style sets `color: red` and the external stylesheet sets `color: blue`. What color will the text be?
 
 - A) Blue — external stylesheets always win  
 - B) Red — inline styles have the highest specificity  
@@ -90,7 +145,39 @@ div {
 
 ## # 2. Box Model
 
-### Q. Consider the following code. What will be the size of the margin after it collapses?
+<br>
+
+## Q. While working on a web page, you want to add a similar set of margins to an element and all the elements within that element. What will you use for the margin properties?
+
+- A) Auto  
+- B) Inherit  
+- C) Default 
+- D) It is not possible to use a similar set of margins for the mentioned elements
+
+**Answer: B) Inherit**
+
+> The `inherit` CSS value causes an element to take the computed value of the same property from its parent. Setting `margin: inherit` on an element means it will use the same margin as its parent, and any child elements that also use `inherit` (or are set to inherit by default) will propagate the same margin value throughout the subtree. `auto` resolves to a browser-calculated value; `default` is not a valid CSS keyword for `margin`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. You are working on a website layout that requires precise control over the spacing and positioning of elements. You want to ensure that the width and height of an element include the content, padding, border, and margin. Which CSS property can be used to achieve this?
+
+- A) box-sizing: content-box;  
+- B) box-sizing: padding-box;  
+- C) box-sizing: border-box; 
+- D) box-sizing: margin-box;  
+
+**Answer: C) `box-sizing: border-box`**
+
+> `box-sizing: border-box` makes the declared `width` and `height` include the **content, padding, and border** — so the element never grows beyond its set size when padding or border is added. Note: `margin` is never included in any `box-sizing` value; it always adds space outside the box. `content-box` (the default) includes only the content area. `padding-box` was never widely implemented, and `margin-box` does not exist in CSS.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Consider the following code. What will be the size of the margin after it collapses?
 
 ```css
 Code: h1 {
@@ -114,7 +201,7 @@ h2 {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer sets `width: 200px` and `padding: 20px` on a `div` with the default box model. What is the rendered width?
+## Q. A developer sets `width: 200px` and `padding: 20px` on a `div` with the default box model. What is the rendered width?
 
 ```css
 div {
@@ -137,7 +224,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. After adding `box-sizing: border-box`, what is the rendered width of the same `div`?
+## Q. After adding `box-sizing: border-box`, what is the rendered width of the same `div`?
 
 ```css
 div {
@@ -161,7 +248,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants 10px vertical spacing between paragraphs but margin collapsing is causing issues. Which scenario triggers margin collapsing?
+## Q. A developer wants 10px vertical spacing between paragraphs but margin collapsing is causing issues. Which scenario triggers margin collapsing?
 
 - A) Two `inline` elements adjacent to each other  
 - B) Two block-level siblings whose margins touch  
@@ -178,7 +265,84 @@ div {
 
 ## # 3. Selectors & Specificity
 
-### Q. Which selector has the highest specificity?
+<br>
+
+## Q. As an experienced CSS developer, you must style a website for a client. What is the difference in CSS between an element selector, a class selector and and ID selector?
+
+- A) An element selector targets a specific HTML element, a class selector targets elements with a specific class attribute, and ID selector targets a specific element with a unique ID attribute.
+- B) An element selector targets all elements in a document, a class selector targets the first element with a specific class attribute, and an ID selector targets elements with a specific ID attribute.
+- C) An element selector targets elements with a specific ID attribute, a class selector targets all elements in a document, and an ID selector targets the first element with a specific class attribute.  
+- D) An element selector targets elements with a specific class attribute, a class selector targets a specific HTML element, and an ID selector targets elements with a specific ID attribute.   
+
+**Answer: A) Element selector → HTML tag; class selector → class attribute; ID selector → unique ID**
+
+> An **element selector** (e.g., `p`, `div`) targets all HTML elements of that tag type. A **class selector** (e.g., `.highlight`) targets every element sharing a specific `class` attribute value. An **ID selector** (e.g., `#header`) targets the single element with that unique `id` attribute. IDs must be unique per page, giving ID selectors higher specificity (`0-1-0-0`) than class selectors (`0-0-1-0`) and element selectors (`0-0-0-1`).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex must style all paragraph that are direct children of the `<div>` element with the class "content" in a large web application. Which CSS selector should he use to achieve this? 
+
+- A) .container p
+- B) .container > p
+- C) .container + p   
+- D) .container ~ p   
+
+**Answer: B) `.container > p`**
+
+> The **child combinator** (`>`) selects only elements that are **direct children** of the specified parent. `.container > p` targets `<p>` elements immediately inside `.container`, skipping any nested descendants. `.container p` (descendant combinator) would match `<p>` at any depth; `.container + p` selects a `<p>` immediately after `.container`; `.container ~ p` selects all subsequent `<p>` siblings.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex has to style a paragraph element with the class "highlighted". Which CSS selector should he use to target the element?
+
+- A) #highlighted
+- B) .highlighted
+- C) `<highlighted>`   
+- D) highlighted   
+
+**Answer: B) `.highlighted`**
+
+> A **class selector** uses a dot (`.`) prefix followed by the class name. `.highlighted` targets every element that has `class="highlighted"`. `#highlighted` is an ID selector; `<highlighted>` is not valid CSS syntax; `highlighted` (no prefix) is an element-type selector.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Which CSS selector combination can Alex use to apply a specific style to all anchor (link) elements within a div with the class "container"? 
+
+- A) .container > a
+- B) .container a
+- C) .container + a   
+- D) .container ~ a   
+
+**Answer: B) `.container a`**
+
+> The **descendant combinator** (space) selects all `<a>` elements at any nesting depth inside `.container`. `.container > a` selects only direct children; `.container + a` selects an `<a>` immediately after `.container`; `.container ~ a` selects all `<a>` siblings after `.container`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex must style a specific paragraph element on a webpage. Which type of CSS selector should he use?
+
+- A) Element selector  
+- B) Class selector   
+- C) ID selector   
+- D) Pseudo-class selector   
+
+**Answer: C) ID selector**
+
+> An **ID selector** (`#id`) uniquely identifies a single element on the page, making it the right choice when targeting one specific element. An element selector targets all elements of that type, a class selector targets all elements sharing a class, and a pseudo-class selector targets elements in a particular state.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Which selector has the highest specificity?
 
 ```css
 /* A */ p { color: red; }
@@ -200,7 +364,7 @@ div {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer uses the `:not()` pseudo-class. What does the following selector target?
+## Q. A developer uses the `:not()` pseudo-class. What does the following selector target?
 
 ```css
 input:not([type="submit"]) {
@@ -221,7 +385,7 @@ input:not([type="submit"]) {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does the `~` combinator do?
+## Q. What does the `~` combinator do?
 
 ```css
 h2 ~ p { color: teal; }
@@ -242,7 +406,24 @@ h2 ~ p { color: teal; }
 
 ## # 4. Positioning
 
-### Q. A developer sets `position: absolute` on a child element. Where is it positioned relative to?
+<br>
+
+## Q. Alex wants to position an element relative to its normal position in the document flow without affecting the layout of other elements. Which CSS position value should he use?
+
+- A) static
+- B) relative  
+- C) absolute  
+- D) fixed  
+
+**Answer: B) `relative`**
+
+> `position: relative` moves an element visually from its normal flow position using `top`, `right`, `bottom`, or `left` offsets. Crucially, the element still **occupies its original space** in the layout — other elements are not repositioned around it. `static` (default) ignores offset properties; `absolute` removes the element from flow; `fixed` positions relative to the viewport.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. A developer sets `position: absolute` on a child element. Where is it positioned relative to?
 
 ```html
 <div style="position: relative;">
@@ -263,7 +444,7 @@ h2 ~ p { color: teal; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. `position: sticky` stops sticking when:
+## Q. `position: sticky` stops sticking when:
 
 - A) The user scrolls past its designated threshold  
 - B) The element reaches the edge of its scrolling container  
@@ -278,7 +459,7 @@ h2 ~ p { color: teal; }
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which positioning value removes an element from the normal document flow entirely?
+## Q. Which positioning value removes an element from the normal document flow entirely?
 
 - A) `relative`  
 - B) `sticky`  
@@ -295,7 +476,54 @@ h2 ~ p { color: teal; }
 
 ## # 5. Flexbox
 
-### Q. You are defining the grid-template-columns and grid-template-rows in a css grid script. This enables the naming of lines on the grid and allows you to target the grid\'s end line with -1.
+<br>
+
+## Q. You have a CSS scripting task that you need to write with respect to CSS Flexbox to handle layouts, align elements within them, and distribute spaces among the items in dynamic/responsive conditions. What are the necessary properties of CSS Flexbox?
+
+- A) flex-direction, flex-wrap, flex-flow 
+- B) height-flex, wrap-flex, css-flex 
+- C) flex-geomaps, flex-div, flex-css 
+- D) padding-flex, direction-flex, geomaps-flex   
+
+**Answer: A) `flex-direction`, `flex-wrap`, `flex-flow`**
+
+> The core CSS Flexbox properties for controlling layout direction and wrapping are: **`flex-direction`** (sets the main axis — `row`, `column`, `row-reverse`, `column-reverse`), **`flex-wrap`** (controls whether items wrap onto multiple lines — `nowrap`, `wrap`, `wrap-reverse`), and **`flex-flow`** (shorthand combining both `flex-direction` and `flex-wrap`). Options B, C, and D are entirely fictitious property names not found in CSS.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. While using Flexbox, you need to define a container for it. What is the CSS to fulfil the given requirement?
+
+- A) Container: flex; 
+- B) Display: flex;  
+- C) Display: ".flex"; 
+- D) Container: '.flex';  
+
+**Answer: B) `display: flex`**
+
+> To create a **flex container**, set `display: flex` on the parent element. All direct children automatically become flex items. CSS property names are case-insensitive but must be valid — `container` is not a valid property for activating Flexbox, and values wrapped in quotes like `".flex"` are strings, not keywords. The correct declaration is simply `display: flex;`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex wants to create a responsive web page design project layout that adjusts based on the available screen width. Which CSS property should he use to divide the available space evenly among multiple elements?
+
+- A) flex-grow 
+- B) flex-wrap  
+- C) Flex-shrink  
+- D) flex-basis  
+
+**Answer: A) `flex-grow`**
+
+> `flex-grow` determines how much a flex item grows relative to its siblings when there is extra space in the container. Setting `flex-grow: 1` on all items divides the remaining space evenly. `flex-wrap` controls line-wrapping; `flex-shrink` controls shrinking; `flex-basis` sets the initial size before space distribution.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. You are defining the grid-template-columns and grid-template-rows in a css grid script. This enables the naming of lines on the grid and allows you to target the grid\'s end line with -1.
 
 What kind of grid pattern does the scenario illustrate?
 
@@ -312,7 +540,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants to center a child both horizontally and vertically inside a flex container. Which is correct?
+## Q. A developer wants to center a child both horizontally and vertically inside a flex container. Which is correct?
 
 ```css
 .container {
@@ -334,7 +562,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does `flex: 1` shorthand expand to?
+## Q. What does `flex: 1` shorthand expand to?
 
 - A) `flex-grow: 1; flex-shrink: 0; flex-basis: 0`  
 - B) `flex-grow: 1; flex-shrink: 1; flex-basis: 0%`  
@@ -349,7 +577,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A flex container has `flex-wrap: wrap`. Child items each have `flex-basis: 45%`. What happens?
+## Q. A flex container has `flex-wrap: wrap`. Child items each have `flex-basis: 45%`. What happens?
 
 - A) Items overflow the container  
 - B) Items shrink to fit one row  
@@ -366,7 +594,9 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 6. CSS Grid
 
-### Q. What does the following grid create?
+<br>
+
+## Q. What does the following grid create?
 
 ```css
 .grid {
@@ -389,7 +619,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer writes `grid-column: 1 / -1`. What does this mean?
+## Q. A developer writes `grid-column: 1 / -1`. What does this mean?
 
 - A) The item starts at column 1 and ends at the second-to-last column  
 - B) The item spans from the first to the last grid line (full width)  
@@ -404,7 +634,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What is the difference between `grid-gap` and `gap`?
+## Q. What is the difference between `grid-gap` and `gap`?
 
 - A) They are completely different properties  
 - B) `gap` is the modern alias for `grid-gap`; both work the same way  
@@ -421,7 +651,39 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 7. Pseudo-classes & Pseudo-elements
 
-### Q. What is the difference between `:nth-child(2)` and `:nth-of-type(2)`?
+<br>
+
+## Q. Which pseudo-class selector styles the input field currently focused on by the user in a form?
+
+- A) :active 
+- B) :focus  
+- C) :hover
+- D) :visited
+
+**Answer: B) `:focus`**
+
+> The `:focus` pseudo-class matches an element that currently has keyboard or pointer focus — for example, an `<input>` the user has clicked into or tabbed to. `:active` fires only while the element is being pressed/clicked; `:hover` fires when the pointer is over the element; `:visited` applies to already-visited `<a>` links only.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex wants to apply a style to the first letter of each paragraph with an `<div>` element with the class "intro". How can he do this?
+
+- A) .intro p:first-child 
+- B) .intro p:first-line  
+- C) .intro p:first-letter 
+- D) .intro p:first-of-type  
+
+**Answer: C) `.intro p:first-letter`**
+
+> `::first-letter` (`:first-letter`) is a CSS pseudo-element that styles the first letter of the first line of a block-level element. `.intro p:first-letter` targets the first letter of every `<p>` inside `.intro`. `:first-child` selects the first child element; `:first-line` targets the first rendered line of text; `:first-of-type` selects the first element of a particular type.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `:nth-child(2)` and `:nth-of-type(2)`?
 
 ```html
 <div>
@@ -444,7 +706,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer uses `::before`. Which statement is correct?
+## Q. A developer uses `::before`. Which statement is correct?
 
 ```css
 .btn::before {
@@ -468,7 +730,24 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 8. Transitions & Animations
 
-### Q. What is the difference between CSS transitions and CSS animations?
+<br>
+
+## Q. You must make a really attractive webpage, so you decide to add lot of animations to it. Which components are must for an animation to work?
+
+- A) Initial and final keyframes, animation duration, and an element to bind the animation with. 
+- B) Initial and final keyframes and an element to bind the animation with.   
+- C) An element to bind the animation with.   
+- D) Initial and final keyframes, animation duration, animation delay, and an element to bind the animation with.   
+
+**Answer: A) Initial and final keyframes, animation duration, and an element to bind the animation with.**
+
+> For a CSS animation to work, you need: **keyframes** (at minimum a `from`/`0%` and `to`/`100%` defined via `@keyframes`), an **`animation-duration`** (without it, the default is `0s` and nothing plays), and an **element** to apply the animation to via `animation-name`. `animation-delay` (option D) is optional — it defaults to `0s` and is not required for the animation to function.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between CSS transitions and CSS animations?
 
 - A) Transitions can loop; animations cannot  
 - B) Animations require JavaScript; transitions do not  
@@ -483,7 +762,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer applies the following. When does the animation start?
+## Q. A developer applies the following. When does the animation start?
 
 ```css
 .box {
@@ -504,7 +783,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A `transition` is set on an element but it doesn\'t animate. What is the MOST likely cause?
+## Q. A `transition` is set on an element but it doesn\'t animate. What is the MOST likely cause?
 
 ```css
 .box {
@@ -530,7 +809,24 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 9. Transforms
 
-### Q. What does the following transform do?
+<br>
+
+## Q. Your school\'s web page contains a lot of text; while typing, you did not pay much attention to whether Caps Lock was on or off. Which option is available for text-transform to convert your text into a proper text case (uppercase,lowercase, etc)?
+
+- A) Justify  
+- B) Capitalize
+- C) Upper  
+- D) Lower  
+
+**Answer: B) `capitalize`**
+
+> The valid `text-transform` values in CSS are `none`, `capitalize`, `uppercase`, `lowercase`, and `full-width`. `capitalize` makes the first letter of each word uppercase. `uppercase` converts all text to capitals and `lowercase` converts all to lower — but neither `upper` nor `lower` (options C and D) are valid values. `justify` is a `text-align` value, not `text-transform`.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What does the following transform do?
 
 ```css
 .card {
@@ -551,7 +847,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What is the default `transform-origin`?
+## Q. What is the default `transform-origin`?
 
 - A) `0 0` (top-left corner)  
 - B) `100% 100%` (bottom-right corner)  
@@ -568,22 +864,97 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 10. Media Queries & Responsive Design
 
-### Q. Taylor is developing a responsive website using the Bootstrap framework and needs to create a container that spans the entire width of the viewport, providing a full-width layout for the client\'s content, Which class should she use to achieve this?
+<br>
 
-- A) .container  
-- B) .row
-- C) .col 
-- D) .container-fluid  
+## Q. While working on a responsive web design project, Alex wants to adjust the layout based on the user\'s device width. Which CSS feature should she use to achieve this?
 
-**Answer: D) `.container-fluid`**
+- A) Flexbox
+- B) Media queries
+- C) Pseudo-classes
+- D) Transitions
 
-> `.container-fluid` spans the full width of the viewport (`width: 100%`) at all breakpoints. `.container` uses responsive max-widths that vary per breakpoint. `.row` and `.col` are grid layout classes, not container wrappers.
+**Answer: B) Media queries**
+
+> **Media queries** (`@media`) conditionally apply CSS rules based on device characteristics such as viewport width, height, or orientation. They are the standard CSS tool for responsive design — e.g., `@media (max-width: 768px) { ... }`. Flexbox handles layout direction and alignment, pseudo-classes target element states, and transitions animate property changes — none of these adjust layout based on device width.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which keyword value(s) is/are used to define @media.display-mode?
+## Q. Given below is a code snippet:
+
+```html
+<body>
+    <p> Resize the browser window. When the width of this document is 650px.</p>
+</body>
+```
+Which CSS3 code segment should you use to make the above code compatible with the screen 650px?
+
+- A)
+```css
+@media only screen and (width: < 700px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```  
+- B) 
+```css
+@media only screen and (max-width:  650px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```  
+- C)  
+```css
+@media only screen and (min-width: 650px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```  
+- D) All the options 
+
+**Answer: B) `@media only screen and (max-width: 650px)`**
+
+> Option A uses invalid syntax — `(width: < 700px)` is not valid CSS; comparison operators are not used inside media feature expressions. Option B correctly uses `max-width: 650px`, which applies the styles when the viewport width is **650px or less**, matching the scenario described. Option C uses `min-width: 650px`, which applies the styles when the width is **650px or greater** — the opposite of the described intent. Option D is incorrect because A uses invalid syntax.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. In a particular web design, you must ensure that all the website pages look, work, and feel perfect on any device. Which is the most suitable option to fulfill this requirement?
+
+- A) Cascading Styling Design  
+- B) Adaptive Web Design
+- C) Adaptive Response Design 
+- D) Responsive Web Design   
+
+**Answer: D) Responsive Web Design**
+
+> **Responsive Web Design (RWD)** ensures that a website looks, works, and feels good on any device by using fluid grids, flexible images, and CSS media queries to adapt the layout to the viewport size. "Cascading Styling Design" and "Adaptive Response Design" are not real terms. Adaptive Web Design (AWD) serves different fixed layouts per device type — it does not fluidly adapt, making RWD the correct answer for universal device compatibility.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. While working on a responsive web design project, Alex wants to adjust the layout based on the user\'s device width. Which CSS feature should she use to achieve this?
+
+- A) Flexbox  
+- B) Media queries
+- C) Pseudo-classes
+- D) Transitions  
+
+**Answer: B) Media queries**
+
+> **Media queries** (`@media`) conditionally apply CSS rules based on device characteristics such as viewport width, height, or orientation. They are the standard CSS tool for responsive design — e.g., `@media (max-width: 768px) { ... }`. Flexbox handles layout direction, pseudo-classes target element states, and transitions animate property changes.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Which keyword value(s) is/are used to define @media.display-mode?
 
 1. fullscreen
 2. standalone
@@ -602,7 +973,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants a layout for screens smaller than 768px. Which media query is correct?
+## Q. A developer wants a layout for screens smaller than 768px. Which media query is correct?
 
 - A) `@media (min-width: 768px) { ... }`  
 - B) `@media (max-width: 768px) { ... }`  
@@ -617,7 +988,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does `@media print` do?
+## Q. What does `@media print` do?
 
 - A) Styles apply when the page is printed or in print preview  
 - B) Styles apply to printers connected to the PC  
@@ -632,7 +1003,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which unit is most appropriate for media query breakpoints?
+## Q. Which unit is most appropriate for media query breakpoints?
 
 - A) `px` — fixed pixel values  
 - B) `em` — scales with the browser\'s base font size, respecting user preferences  
@@ -649,7 +1020,9 @@ What kind of grid pattern does the scenario illustrate?
 
 ## # 11. CSS Variables (Custom Properties)
 
-### Q. A developer defines a CSS variable and uses it. Which is the correct syntax?
+<br>
+
+## Q. A developer defines a CSS variable and uses it. Which is the correct syntax?
 
 - A) `var-color: red;` → `color: use(color);`  
 - B) `$color: red;` → `color: $color;`  
@@ -664,7 +1037,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Where should a globally available CSS variable be declared?
+## Q. Where should a globally available CSS variable be declared?
 
 - A) Inside `body {}`  
 - B) Inside `:root {}`  
@@ -679,7 +1052,7 @@ What kind of grid pattern does the scenario illustrate?
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What happens when a fallback is provided to `var()`?
+## Q. What happens when a fallback is provided to `var()`?
 
 ```css
 color: var(--missing-color, navy);
@@ -700,7 +1073,9 @@ color: var(--missing-color, navy);
 
 ## # 12. Typography & Text
 
-### Q. A developer uses `line-height: 1.5` without a unit. What does this mean?
+<br>
+
+## Q. A developer uses `line-height: 1.5` without a unit. What does this mean?
 
 - A) 1.5 pixels  
 - B) 1.5 times the element\'s font size  
@@ -715,7 +1090,7 @@ color: var(--missing-color, navy);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which `text-overflow` value shows an ellipsis (`...`) when text overflows?
+## Q. Which `text-overflow` value shows an ellipsis (`...`) when text overflows?
 
 ```css
 .label {
@@ -740,7 +1115,9 @@ color: var(--missing-color, navy);
 
 ## # 13. Colors & Gradients
 
-### Q. What is the result of the following gradient?
+<br>
+
+## Q. What is the result of the following gradient?
 
 ```css
 background: linear-gradient(to right, #ff0000, #0000ff);
@@ -759,7 +1136,7 @@ background: linear-gradient(to right, #ff0000, #0000ff);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does `rgba(0, 0, 0, 0.5)` produce?
+## Q. What does `rgba(0, 0, 0, 0.5)` produce?
 
 - A) Black at 50% transparency  
 - B) Gray (50% between black and white)  
@@ -776,7 +1153,9 @@ background: linear-gradient(to right, #ff0000, #0000ff);
 
 ## # 14. Z-index & Stacking Context
 
-### Q. A developer sets `z-index: 999` on an element but it still appears behind another. What is the most likely reason?
+<br>
+
+## Q. A developer sets `z-index: 999` on an element but it still appears behind another. What is the most likely reason?
 
 - A) `z-index` only works with `display: flex`  
 - B) The element does not have a `position` value other than `static`  
@@ -791,7 +1170,7 @@ background: linear-gradient(to right, #ff0000, #0000ff);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which property creates a new stacking context?
+## Q. Which property creates a new stacking context?
 
 - A) `color: red`  
 - B) `opacity: 0.9`  
@@ -808,7 +1187,24 @@ background: linear-gradient(to right, #ff0000, #0000ff);
 
 ## # 15. Overflow & Clipping
 
-### Q. What is the difference between `overflow: hidden` and `overflow: clip`?
+<br>
+
+## Q. You are working on a webpage and want to disable text wrapping inside an element. Which property will help you accomplish the task?
+
+- A) Line-height  
+- B) Wrap  
+- C) White-space 
+- D) Text-indent  
+
+**Answer: C) `white-space`**
+
+> `white-space: nowrap` disables text wrapping, forcing all text to remain on a single line. `line-height` controls the vertical spacing between lines; `wrap` is not a valid CSS property; `text-indent` indents only the first line of a block.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `overflow: hidden` and `overflow: clip`?
 
 - A) They are identical  
 - B) `clip` is the older alias for `hidden`  
@@ -823,7 +1219,7 @@ background: linear-gradient(to right, #ff0000, #0000ff);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer applies `overflow: auto`. When does a scrollbar appear?
+## Q. A developer applies `overflow: auto`. When does a scrollbar appear?
 
 - A) Always, regardless of content size  
 - B) Never — `auto` disables scrollbars  
@@ -840,7 +1236,24 @@ background: linear-gradient(to right, #ff0000, #0000ff);
 
 ## # 16. Display & Visibility
 
-### Q. What is the difference between `display: none` and `visibility: hidden`?
+<br>
+
+## Q. Alex is designing a responsive website. He needs to hide an element on small screens, Which CSS property can he use?
+
+- A) display  
+- B) visibility  
+- C) opacity  
+- D) position  
+
+**Answer: A) `display`**
+
+> `display: none` completely removes the element from the layout and hides it from screen readers, making it the standard way to hide elements on small screens inside a `@media` query. `visibility: hidden` hides the element visually but still occupies space. `opacity: 0` makes it invisible but it remains interactive and takes up space. `position` does not hide elements.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. What is the difference between `display: none` and `visibility: hidden`?
 
 - A) They are the same  
 - B) `display: none` removes the element from the layout flow; `visibility: hidden` hides it but keeps its space  
@@ -855,7 +1268,7 @@ background: linear-gradient(to right, #ff0000, #0000ff);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does `display: inline-block` allow that `display: inline` does not?
+## Q. What does `display: inline-block` allow that `display: inline` does not?
 
 - A) Multiple elements per line  
 - B) Setting `width`, `height`, `margin`, and `padding` on all sides  
@@ -872,7 +1285,9 @@ background: linear-gradient(to right, #ff0000, #0000ff);
 
 ## # 17. SCSS / Sass
 
-### Q. A developer refactors CSS into SCSS using nesting. What CSS does the following SCSS produce?
+<br>
+
+## Q. A developer refactors CSS into SCSS using nesting. What CSS does the following SCSS produce?
 
 ```scss
 nav {
@@ -902,7 +1317,7 @@ nav {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer uses an SCSS `@mixin`. What is the primary benefit?
+## Q. A developer uses an SCSS `@mixin`. What is the primary benefit?
 
 ```scss
 @mixin flex-center {
@@ -929,7 +1344,7 @@ nav {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does the SCSS `%placeholder` (silent class / extend) do differently from a `@mixin`?
+## Q. What does the SCSS `%placeholder` (silent class / extend) do differently from a `@mixin`?
 
 ```scss
 %card-style {
@@ -959,7 +1374,7 @@ nav {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer uses `@use` instead of `@import` in SCSS. What is the main advantage?
+## Q. A developer uses `@use` instead of `@import` in SCSS. What is the main advantage?
 
 - A) `@use` works in plain CSS; `@import` does not  
 - B) `@use` loads modules with their own namespace, preventing variable/mixin name collisions  
@@ -974,7 +1389,7 @@ nav {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does the SCSS `@each` directive do?
+## Q. What does the SCSS `@each` directive do?
 
 ```scss
 $sizes: 1, 2, 3, 4;
@@ -999,7 +1414,7 @@ $sizes: 1, 2, 3, 4;
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer has a SCSS `@function`. What distinguishes it from a `@mixin`?
+## Q. A developer has a SCSS `@function`. What distinguishes it from a `@mixin`?
 
 ```scss
 @function rem($px) {
@@ -1024,7 +1439,7 @@ h1 {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does SCSS `darken()` do?
+## Q. What does SCSS `darken()` do?
 
 ```scss
 $primary: #3498db;
@@ -1049,22 +1464,39 @@ button:hover {
 
 ## # 18. CSS Units
 
-### Q. A developer sets `font-size: 1.5em` on a child element whose parent has `font-size: 16px`. What is the child\'s computed font size?
+<br>
+
+## Q. Which CSS property should Alex use to adjust the font size of a paragraph on his webpage?
+
+- A) font-weight  
+- B) text-decoration 
+- C) font-style
+- D) font-size 
+
+**Answer: D) font-size**
+
+> The `font-size` property sets the size of the font for an element. `font-weight` controls boldness, `text-decoration` adds underline/strikethrough effects, and `font-style` controls italic/oblique styling — none of these affect font size.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. A developer sets `font-size: 1.5em` on a child element whose parent has `font-size: 16px`. What is the child\'s computed font size?
 
 - A) 16px  
 - B) 24px  
 - C) 1.5px  
 - D) 32px  
 
-**Answer: B) 24px**
+**Answer: D) font-size**
 
-> `em` is relative to the **parent element\'s** font size. `1.5 × 16px = 24px`. Nested `em` values multiply, which can cause compounding effects.
+> The `font-size` property sets the size of the font for an element. `font-weight` controls boldness, `text-decoration` adds underline/strikethrough effects, and `font-style` controls italic/oblique styling — none of these affect font size.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What is the difference between `em` and `rem` units?
+## Q. What is the difference between `em` and `rem` units?
 
 - A) `em` is relative to the root font size; `rem` is relative to the parent font size  
 - B) `rem` is relative to the root (`<html>`) font size; `em` is relative to the current element\'s font size  
@@ -1079,7 +1511,7 @@ button:hover {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer uses `height: 100vh`. What does `1vh` represent?
+## Q. A developer uses `height: 100vh`. What does `1vh` represent?
 
 - A) 1% of the element\'s own height  
 - B) 1% of the viewport height  
@@ -1094,7 +1526,7 @@ button:hover {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which CSS unit is best suited for typography to respect user browser font-size preferences?
+## Q. Which CSS unit is best suited for typography to respect user browser font-size preferences?
 
 - A) `px` — fixed and predictable  
 - B) `pt` — points, used in print  
@@ -1111,7 +1543,9 @@ button:hover {
 
 ## # 19. CSS Functions
 
-### Q. What does `clamp(1rem, 2.5vw, 2rem)` do?
+<br>
+
+## Q. What does `clamp(1rem, 2.5vw, 2rem)` do?
 
 - A) Clamps all text inside the element to a fixed size  
 - B) Sets a value that scales with the viewport but never goes below `1rem` or above `2rem`  
@@ -1126,7 +1560,7 @@ button:hover {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does the following rule compute to on a `300px`-wide container?
+## Q. What does the following rule compute to on a `300px`-wide container?
 
 ```css
 .box {
@@ -1149,7 +1583,7 @@ button:hover {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which function selects the **smallest** value from a list?
+## Q. Which function selects the **smallest** value from a list?
 
 ```css
 width: min(50%, 400px);
@@ -1170,7 +1604,9 @@ width: min(50%, 400px);
 
 ## # 20. Floats & Block Formatting Context
 
-### Q. A parent `<div>` contains only floated children and collapses to zero height. What is the standard fix?
+<br>
+
+## Q. A parent `<div>` contains only floated children and collapses to zero height. What is the standard fix?
 
 - A) Add `overflow: visible` to the parent  
 - B) Apply `clear: both` to the parent  
@@ -1185,7 +1621,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which of the following does **NOT** create a new Block Formatting Context (BFC)?
+## Q. Which of the following does **NOT** create a new Block Formatting Context (BFC)?
 
 - A) `overflow: hidden`  
 - B) `display: flow-root`  
@@ -1200,7 +1636,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer applies `float: left` to an image inside a paragraph. What is the expected layout behavior?
+## Q. A developer applies `float: left` to an image inside a paragraph. What is the expected layout behavior?
 
 - A) The image overlaps the paragraph text  
 - B) The paragraph text wraps around the right side of the image  
@@ -1217,7 +1653,9 @@ width: min(50%, 400px);
 
 ## # 21. Filters & Blend Modes
 
-### Q. What does the following CSS do?
+<br>
+
+## Q. What does the following CSS do?
 
 ```css
 .card {
@@ -1238,7 +1676,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. What does `backdrop-filter: blur(8px)` do?
+## Q. What does `backdrop-filter: blur(8px)` do?
 
 - A) Blurs the element\'s own content  
 - B) Blurs the area **behind** the element (content rendered beneath it)  
@@ -1253,7 +1691,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer applies `mix-blend-mode: multiply` to an image. What does this do?
+## Q. A developer applies `mix-blend-mode: multiply` to an image. What does this do?
 
 - A) Multiplies the image\'s dimensions  
 - B) Blends the image with the background by multiplying color values, producing a darker result  
@@ -1270,7 +1708,9 @@ width: min(50%, 400px);
 
 ## # 22. Performance & Rendering
 
-### Q. Which CSS property promotes an element to its own compositor layer, enabling GPU-accelerated animation?
+<br>
+
+## Q. Which CSS property promotes an element to its own compositor layer, enabling GPU-accelerated animation?
 
 - A) `z-index: 9999`  
 - B) `transform: translateZ(0)` or `will-change: transform`  
@@ -1285,7 +1725,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Why should `will-change` be used sparingly?
+## Q. Why should `will-change` be used sparingly?
 
 - A) It prevents transitions from running  
 - B) Each composited layer consumes GPU memory; overuse can exhaust memory and degrade performance  
@@ -1300,7 +1740,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. When animating an element, which two CSS properties can be changed without triggering layout or paint (composite-only)?
+## Q. When animating an element, which two CSS properties can be changed without triggering layout or paint (composite-only)?
 
 - A) `width` and `height`  
 - B) `margin` and `padding`  
@@ -1315,7 +1755,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants styles for the parent selector using `&` in SCSS. What does the following produce?
+## Q. A developer wants styles for the parent selector using `&` in SCSS. What does the following produce?
 
 ```scss
 .button {
@@ -1340,7 +1780,7 @@ width: min(50%, 400px);
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. Which SCSS feature allows you to conditionally apply styles?
+## Q. Which SCSS feature allows you to conditionally apply styles?
 
 ```scss
 $theme: dark;
@@ -1369,7 +1809,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer gets a deprecation warning: `@import is deprecated`. What should they migrate to?
+## Q. A developer gets a deprecation warning: `@import is deprecated`. What should they migrate to?
 
 - A) `@require`  
 - B) `@load`  
@@ -1386,8 +1826,9 @@ body {
 
 ## # 23. CSS Architecture & Naming Conventions
 
+<br>
 
-### Q. A  front-end team is adopting BEM (Block Element Modifier) methodology. A developer is styling a navigation component with an active link. Which class name follows BEM convention correctly?
+## Q. A  front-end team is adopting BEM (Block Element Modifier) methodology. A developer is styling a navigation component with an active link. Which class name follows BEM convention correctly?
 
 - A) `.nav-link-active`
 - B) `.nav__link--active`
@@ -1402,7 +1843,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A  engineer reviews a stylesheet and notices heavy use of `!important`. What is the primary problem with overusing `!important`?
+## Q. A  engineer reviews a stylesheet and notices heavy use of `!important`. What is the primary problem with overusing `!important`?
 
 - A) It slows down CSS parsing
 - B) It breaks CSS animations permanently
@@ -1417,7 +1858,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A  team is building a design system and must choose between a CSS Reset and CSS Normalize. What is the key difference?
+## Q. A  team is building a design system and must choose between a CSS Reset and CSS Normalize. What is the key difference?
 
 - A) A CSS Reset adds default browser styles; Normalize removes all styles
 - B) A CSS Reset removes all default browser styles to a baseline; Normalize preserves useful defaults while ironing out cross-browser inconsistencies
@@ -1432,7 +1873,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. An  performance team discusses "critical CSS." What does inlining critical CSS achieve?
+## Q. An  performance team discusses "critical CSS." What does inlining critical CSS achieve?
 
 - A) It prevents the CSS file from being cached
 - B) It eliminates render-blocking requests by embedding above-the-fold styles directly in the `<head>`, allowing the browser to render visible content sooner
@@ -1447,7 +1888,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer encounters a CSS architecture pattern called SMACSS (Scalable and Modular Architecture for CSS). The pattern categorizes rules into which five groups?
+## Q. A developer encounters a CSS architecture pattern called SMACSS (Scalable and Modular Architecture for CSS). The pattern categorizes rules into which five groups?
 
 - A) Global, Local, Component, State, Theme
 - B) Base, Layout, Module, State, Theme
@@ -1462,7 +1903,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer at a large organization wants to scope CSS to individual components to prevent style leakage. Which modern CSS feature provides native style encapsulation at the browser level?
+## Q. A developer at a large organization wants to scope CSS to individual components to prevent style leakage. Which modern CSS feature provides native style encapsulation at the browser level?
 
 - A) CSS Modules
 - B) Shadow DOM with `:host` selector
@@ -1479,7 +1920,9 @@ body {
 
 ## # 24. Accessibility & CSS
 
-### Q. A  accessibility engineer reviews a site where users have set "Reduce Motion" in their OS settings, but CSS animations still play. Which media query should have been used to respect this preference?
+<br>
+
+## Q. A  accessibility engineer reviews a site where users have set "Reduce Motion" in their OS settings, but CSS animations still play. Which media query should have been used to respect this preference?
 
 ```css
 @keyframes spin {
@@ -1503,7 +1946,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer builds a site that supports dark mode. Which CSS media query and property combination correctly implements it?
+## Q. A developer builds a site that supports dark mode. Which CSS media query and property combination correctly implements it?
 
 ```css
 :root {
@@ -1530,7 +1973,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer needs to hide an element visually but keep it accessible to screen readers. Which CSS technique is correct?
+## Q. A developer needs to hide an element visually but keep it accessible to screen readers. Which CSS technique is correct?
 
 - A) `display: none`
 - B) `visibility: hidden`
@@ -1545,7 +1988,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A front-end developer uses `:focus` to style keyboard-focused buttons. A UX complaint arises: focus outlines appear when mouse users click buttons, creating visual clutter. What is the best CSS-only solution?
+## Q. A front-end developer uses `:focus` to style keyboard-focused buttons. A UX complaint arises: focus outlines appear when mouse users click buttons, creating visual clutter. What is the best CSS-only solution?
 
 - A) Remove all `:focus` styles with `outline: none`
 - B) Use `:focus-visible` instead of `:focus` — it shows the focus ring only for keyboard navigation
@@ -1560,7 +2003,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. An Amazon engineer is auditing color contrast for WCAG 2.1 AA compliance. A button has `color: #767676` on a `background: white` background. What is the issue?
+## Q. An Amazon engineer is auditing color contrast for WCAG 2.1 AA compliance. A button has `color: #767676` on a `background: white` background. What is the issue?
 
 - A) WCAG 2.1 AA requires a minimum contrast ratio of 4.5:1 for normal text; `#767676` on white is exactly 4.5:1 and just passes
 - B) WCAG 2.1 AA requires 3:1 contrast ratio; `#767676` passes
@@ -1575,7 +2018,7 @@ body {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants interactive elements to remain usable in Windows High Contrast Mode. Which CSS approach ensures borders and backgrounds are preserved?
+## Q. A developer wants interactive elements to remain usable in Windows High Contrast Mode. Which CSS approach ensures borders and backgrounds are preserved?
 
 - A) Use `color: white` and `background: black` explicitly
 - B) Use the CSS `forced-colors` media query and `@media (forced-colors: active)` to override affected styles
@@ -1592,8 +2035,9 @@ body {
 
 ## # 25. Advanced Layout Scenarios
 
+<br>
 
-### Q. An Amazon product page needs a sticky footer that always sits at the bottom of the viewport when content is short, but is pushed down by content when the page is long. Which CSS approach achieves this with minimal markup?
+## Q. An Amazon product page needs a sticky footer that always sits at the bottom of the viewport when content is short, but is pushed down by content when the page is long. Which CSS approach achieves this with minimal markup?
 
 ```css
 body {
@@ -1617,7 +2061,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer needs to maintain a 16:9 aspect ratio for embedded video containers across all viewport sizes. Which modern CSS property achieves this in a single line?
+## Q. A developer needs to maintain a 16:9 aspect ratio for embedded video containers across all viewport sizes. Which modern CSS property achieves this in a single line?
 
 ```css
 .video-wrapper {
@@ -1639,7 +2083,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A  engineer needs a component\'s layout to change based on the component\'s own width — not the viewport width. Which CSS feature enables this?
+## Q. A  engineer needs a component\'s layout to change based on the component\'s own width — not the viewport width. Which CSS feature enables this?
 
 - A) Media queries with `@media (min-width: 600px)`
 - B) CSS Container Queries with `@container` and `container-type`
@@ -1654,7 +2098,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A dashboard uses a CSS Grid layout. A developer needs the inner grid items to align to the outer grid\'s column tracks — not their own subgrid tracks. Which CSS feature allows this?
+## Q. A dashboard uses a CSS Grid layout. A developer needs the inner grid items to align to the outer grid\'s column tracks — not their own subgrid tracks. Which CSS feature allows this?
 
 ```css
 .parent {
@@ -1681,7 +2125,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer builds a card grid where all cards in the same row should have equal height (regardless of content). Which CSS property on the grid container achieves this automatically?
+## Q. A developer builds a card grid where all cards in the same row should have equal height (regardless of content). Which CSS property on the grid container achieves this automatically?
 
 ```css
 .card-grid {
@@ -1704,7 +2148,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer needs a responsive multi-column image gallery that automatically fills columns without specifying the exact number. Which CSS declaration achieves a fluid column count?
+## Q. A developer needs a responsive multi-column image gallery that automatically fills columns without specifying the exact number. Which CSS declaration achieves a fluid column count?
 
 ```css
 .gallery {
@@ -1728,8 +2172,9 @@ main {
 
 ## # 26. Modern CSS Features
 
+<br>
 
-### Q. A developer is building a design system with multiple third-party CSS libraries. Specificity conflicts cause unexpected overrides. Which CSS feature allows the developer to explicitly control the order in which stylesheet layers are applied?
+## Q. A developer is building a design system with multiple third-party CSS libraries. Specificity conflicts cause unexpected overrides. Which CSS feature allows the developer to explicitly control the order in which stylesheet layers are applied?
 
 - A) `@namespace`
 - B) `@layer`
@@ -1744,7 +2189,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. An  engineer applies `content-visibility: auto` to off-screen sections. What does this achieve?
+## Q. An  engineer applies `content-visibility: auto` to off-screen sections. What does this achieve?
 
 ```css
 .page-section {
@@ -1766,7 +2211,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer is adopting native CSS Nesting (no preprocessor). What does the following produce?
+## Q. A developer is adopting native CSS Nesting (no preprocessor). What does the following produce?
 
 ```css
 .card {
@@ -1795,7 +2240,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer needs to style a `<form>` element differently when it contains at least one invalid `<input>`. Which CSS selector achieves this without JavaScript?
+## Q. A developer needs to style a `<form>` element differently when it contains at least one invalid `<input>`. Which CSS selector achieves this without JavaScript?
 
 - A) `form ~ input:invalid { border-color: red; }`
 - B) `form:has(input:invalid) { border: 2px solid red; }`
@@ -1810,7 +2255,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer is internationalizing a web application to support both left-to-right (English) and right-to-left (Arabic) layouts. Which CSS approach avoids writing separate RTL overrides?
+## Q. A developer is internationalizing a web application to support both left-to-right (English) and right-to-left (Arabic) layouts. Which CSS approach avoids writing separate RTL overrides?
 
 ```css
 /* Instead of: */
@@ -1836,7 +2281,7 @@ main {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-### Q. A developer wants to apply a CSS custom property that can be set from JavaScript at runtime to drive a dynamic theme. Which approach is correct?
+## Q. A developer wants to apply a CSS custom property that can be set from JavaScript at runtime to drive a dynamic theme. Which approach is correct?
 
 ```js
 // JavaScript
@@ -1858,6 +2303,116 @@ document.documentElement.style.setProperty(\'--accent-color\', \'#e91e63\');
 **Answer: B) This works correctly — CSS variables set via JavaScript are reflected immediately**
 
 > CSS custom properties are live — changing them via `element.style.setProperty()` triggers a re-paint. `document.documentElement` targets the `<html>` element, making `--accent-color` available globally (same as `:root`). The fallback `#1976d2` only applies when `--accent-color` is undefined. This pattern powers runtime theming without page reload.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## # 27. BOOTSTRAP-CSS
+
+<br>
+
+## Q. You want to apply pagination to your web page using Bootstrap. Which option in Bootstrap is used to disable access to any page at a point in time?
+
+- A) Use disable = true in a class.
+- B) Use class="disabled"
+- C) Use class "enabled=false"
+- D) It is not possible to disable a page link
+
+**Answer: B) Use `class="disabled"`**
+
+> In Bootstrap, adding the `disabled` class to a pagination `<li>` element visually grays out the link and prevents interaction. For example: `<li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>`. `disable = true` and `enabled=false` are not valid Bootstrap or CSS constructs, and disabling page links is very much possible.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. While working with Bootstrap, you want to allow the web debuggers to refer to the original context from where the code was generated, What is that map file called? 
+
+- A) CSS file with .css extension
+- B) Source map file with .map extension
+- C) HTML stylesheet file with .htmlx extension
+- D) Bootstrap file with .embeded extension
+
+
+**Answer: A)**
+
+> The CSS `list-style` shorthand order is **`list-style-type list-style-position list-style-image`**. Option A uses the correct order and correctly describes `list-style-position` as controlling whether the marker appears **inside or outside** the content flow. Option B has the wrong order (image before position). Option C also has the wrong order and incorrectly describes `list-style-position` as placing the marker at top/bottom/left/right — those are not valid `list-style-position` values (`inside` and `outside` are).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex wants to leverage a CSS framework to create a responsive layout quickly for a new web development project. Which CSS framework can she use to provide a responsive grid system and various UI components?
+
+- A) Foundation  
+- B) Bulma  
+- C) Semantic UI
+- D) Twitter Bootstrap  
+
+**Answer: D) Twitter Bootstrap**
+
+> **Twitter Bootstrap** is the most widely used CSS framework, offering a responsive 12-column grid system and an extensive library of UI components (buttons, navbars, modals, cards, forms, etc.). Foundation, Bulma, and Semantic UI also provide grids and components, but Bootstrap is the most prominent answer to this scenario.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. You have a collection of images you need to make responsive using Bootstrap 4. Which attribute is used to make the images responsive?
+
+- A) img-fluid
+- B) div-container-responsive
+- C) class-set-responsive
+- D) img-embed-true 
+
+**Answer: A) `img-fluid`**
+
+> In Bootstrap 4, applying the class `img-fluid` to an `<img>` element makes it responsive. It sets `max-width: 100%` and `height: auto` so the image scales with its parent container and never overflows. `div-container-responsive`, `class-set-responsive`, and `img-embed-true` are not valid Bootstrap classes.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. While working with Bootstrap, you want to allow the web debuggers to refer to the original context from where the code was generated. What is that map file called?
+
+- A) CSS file with .css extension
+- B) Source map file with .map extension
+- C) HTML stylesheet file with .htmlx extension
+- D) Bootstrap file with .embeded extension
+
+**Answer: B) Source map file with .map extension**
+
+> A **source map** (`.map` file) is a JSON file that maps the minified/compiled output back to the original source code. When Bootstrap\'s minified CSS (e.g., `bootstrap.min.css`) is served alongside its `.map` file, browser DevTools can display the original, human-readable source lines instead of the minified output — making debugging significantly easier. `.htmlx` and `.embeded` are not real file extensions in this context.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Alex is working on a web development project for a client and must create a responsive layout using the Twitter Bootstrap Grid System. The client wants a three-column layout for larger screens, with the left and right columns having a fixed with of 200 pixels each and the center column taking up the remaining space. However, tha layout should stack the columns vertically for smaller screens.
+
+- A) col-lg-4 col-md-6 col-sm-12  
+- B) col-lg-6 col-md-4 col-sm-12 
+- C) col-lg-3 col-md-6 col-sm-12 
+- D) col-lg-8 col-md-2 col-sm-12   
+
+**Answer: A) `col-lg-4 col-md-6 col-sm-12`**
+
+> Bootstrap\'s 12-column grid divides large screens into three equal columns with `col-lg-4` (4 + 4 + 4 = 12). `col-md-6` shows two columns per row on medium screens (6 + 6 = 12, third wraps), and `col-sm-12` makes each column full-width on small screens, stacking them vertically. This is the standard Bootstrap three-column responsive pattern.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. Taylor is developing a responsive website using the Bootstrap framework and needs to create a container that spans the entire width of the viewport, providing a full-width layout for the client\'s content, Which class should she use to achieve this?
+
+- A) .container  
+- B) .row
+- C) .col 
+- D) .container-fluid  
+
+**Answer: D) `.container-fluid`**
+
+> `.container-fluid` spans the full width of the viewport (`width: 100%`) at all breakpoints. `.container` uses responsive max-widths that vary per breakpoint. `.row` and `.col` are grid layout classes, not container wrappers.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
