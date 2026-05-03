@@ -9,7 +9,7 @@
 * [CSS Coding Practice](css-practice.md)
 * [CSS3 Properties](css3-properties.md)
 * [SCSS Basics](https://github.com/learning-zone/scss-basics)
-* [CSS Multiple Choice Questions](css-multiple-choice-questions.md)
+* [CSS Multiple Choice Questions](css-mcq.md)
 
 <br/>
 
@@ -32,6 +32,8 @@
 * [Overflow & Clipping](#-15-overflow--clipping) 
 * [Display & Visibility](#-16-display--visibility) 
 * [Miscellaneous](#-17-miscellaneous) 
+* **Technical Lead Role**
+   * [Technical Lead Role](#-18-technical-lead-role) 
 
 <br/>
 
@@ -9041,6 +9043,364 @@ For `<a>` inside `<nav class="nav">` inside `<div id="main">`:
 - Rule 1 wins because it directly targets the `<a>` element with (0, 2, 1) vs (1, 0, 0) from Rule 2 — **wait**, ID wins over classes. Rule 2 is (1, 0, 0) but it doesn\'t target `<a>`. Rule 1 targets `<a>` with (0, 2, 1), so **Rule 1 wins** for the anchor\'s color.
 
 > **Tip:** Use DevTools → Elements → Computed tab to inspect the winning rule and see all competing declarations crossed out.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## # 18. TECHNICAL LEAD ROLE
+
+<br/>
+
+## Q. How do you establish and enforce CSS coding standards across a team?
+
+Standards reduce inconsistency, prevent specificity wars, and make stylesheets maintainable as the codebase grows. They must be **automated, documented, and agreed upon** — not enforced only through code review.
+
+**Tooling layer (automated enforcement):**
+
+```json
+// package.json devDependencies
+{
+  "stylelint": "...",
+  "stylelint-config-standard": "...",
+  "stylelint-order": "...",          // enforce property ordering
+  "prettier": "...",
+  "lint-staged": "...",
+  "husky": "..."
+}
+```
+
+```json
+// .stylelintrc.json
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "color-named": "never",           // no `color: red` — use variables
+    "declaration-no-important": true, // ban !important
+    "selector-max-id": 0,             // no ID selectors
+    "max-nesting-depth": 3
+  }
+}
+```
+
+Configure `husky` + `lint-staged` to run Stylelint and Prettier on every commit. Block merges in CI if linting fails.
+
+**Documentation layer:**
+
+* Maintain a **Style Guide** (`docs/css-guide.md`) covering naming convention (BEM, utility-first, etc.), file organization, when to use custom properties vs. hard-coded values, and how to handle z-index.
+* Record significant architecture decisions (e.g., "We use CSS Modules instead of global stylesheets") in ADR files.
+* Keep a shared token/variable reference so all developers use the same color, spacing, and typography values.
+
+**Social layer:**
+
+* Agree on rules as a team — standards imposed top-down are ignored.
+* Run a **quarterly CSS retrospective** to remove outdated rules, adopt new best practices, and clean up legacy patterns.
+* Use real examples from your own codebase in documentation, not abstract guidelines.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you manage CSS architecture for large-scale projects?
+
+A scalable CSS architecture prevents specificity conflicts, eliminates dead code, and makes styles predictable as the team grows.
+
+**Architecture approaches:**
+
+| Approach | Best For | Key Idea |
+|---|---|---|
+| **BEM** | Component libraries, no build tool | Block\_\_Element--Modifier naming prevents collisions |
+| **CSS Modules** | React/Vue/Svelte projects | Locally scoped class names generated at build time |
+| **CSS-in-JS** (Styled Components, Emotion) | Dynamic theming, co-located styles | Styles live next to component logic |
+| **Utility-first** (Tailwind CSS) | Rapid prototyping, design system teams | Compose from small utility classes, minimal custom CSS |
+| **ITCSS** | Large, team-based projects | Layer-based specificity order: Settings → Tools → Generic → Elements → Objects → Components → Utilities |
+
+**Key decisions for a lead:**
+
+* **Choose one approach and enforce it.** Mixed architectures (some BEM, some utility classes, some inline styles) create the worst outcome.
+* **Define a token layer.** All colors, spacing, font sizes, and breakpoints must live in CSS custom properties or a design token file — never duplicated as magic numbers.
+* **Enforce a naming convention.** Document it, enforce it in Stylelint, and use real components in your codebase as examples.
+* **Prevent dead CSS.** Use tools like PurgeCSS or Tailwind\'s built-in purging to remove unused rules before production builds.
+* **Split stylesheets** by feature or component — not by one monolithic `styles.css`. This enables parallel development and reduces merge conflicts.
+
+**File structure example (CSS Modules + feature-based):**
+
+```
+src/
+├── styles/
+│   ├── tokens.css          ← custom properties (colors, spacing, type)
+│   ├── reset.css           ← normalize browser defaults
+│   └── global.css          ← body, root-level styles only
+├── features/
+│   ├── auth/
+│   │   └── LoginForm.module.css
+│   └── dashboard/
+│       └── Dashboard.module.css
+└── shared/
+    └── components/
+        └── Button.module.css
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you conduct effective CSS code reviews?
+
+Code reviews for CSS focus on **long-term maintainability, performance, and consistency**, not just whether styles look correct in a browser.
+
+**What to check in a CSS PR:**
+
+* **Specificity**: Are selectors as simple as possible? Are ID selectors or `!important` avoided?
+* **Magic numbers**: Are hard-coded values (e.g., `margin-top: 37px`) replaced with design tokens or custom properties?
+* **Responsiveness**: Does every new layout change include media query coverage? Are breakpoints consistent with the shared breakpoint scale?
+* **Accessibility**: Does color contrast meet WCAG AA (4.5:1 for normal text)? Are focus styles visible and not suppressed (`outline: none` without a replacement)?
+* **Performance**: Are expensive properties (`box-shadow`, `filter`, `backdrop-filter`) applied inside animations where `will-change` or `transform`/`opacity`-only animations should be used instead?
+* **Browser compatibility**: Are new CSS features (`:has()`, `container queries`, `@layer`) guarded with `@supports` or tracked in the browser support matrix?
+* **Dead code**: Are unused selectors, variables, or overrides being added?
+
+**Process practices for a lead:**
+
+* **Automate the trivial** — Stylelint and Prettier handle formatting and property ordering so human review focuses on architecture and intent.
+* **Give specific, actionable feedback** — not "this is messy" but "this `z-index: 9999` belongs in the `z-index` scale defined in `tokens.css`. Let\'s add a `--z-modal` variable."
+* **Distinguish blocking vs. non-blocking comments** — prefix optional suggestions with `[nit]`.
+* **Approve and merge promptly** — stale PRs cause merge conflicts in shared stylesheets.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you handle CSS performance optimization as a tech lead?
+
+**Step 1 — Measure, don\'t guess.** Profile with real data before optimizing.
+
+* **Chrome DevTools Performance tab**: Identify long style recalculation and layout/paint tasks.
+* **Lighthouse / Web Vitals**: Track CLS (Cumulative Layout Shift), LCP (Largest Contentful Paint), and INP.
+* **Coverage tab (DevTools)**: Reveals what percentage of loaded CSS is actually used on the page.
+* **CSS Stats** (`cssstats.com`): Analyzes specificity distribution, rule count, and color/font usage.
+
+**Step 2 — Fix the highest-impact issues first.**
+
+| Issue | Symptom | Fix |
+|---|---|---|
+| Large CSS bundle | Slow FCP/LCP | PurgeCSS, CSS Modules scoping, remove dead code |
+| Render-blocking stylesheets | Delayed page render | Inline critical CSS; load non-critical async with `media="print"` trick |
+| Layout thrash | Janky scroll, high CLS | Avoid reading and writing layout properties in the same JS frame; reserve space for dynamic content |
+| Expensive animations | Dropped frames / low FPS | Animate only `transform` and `opacity`; use `will-change` sparingly on animated elements |
+| Unused custom properties | Unnecessary variable resolution | Audit and remove variables not referenced in any selector |
+
+**Step 3 — Prevent regressions.** Integrate bundle size checks in CI. Set a CSS budget (e.g., ≤ 50 KB gzipped for critical CSS) and fail builds that exceed it.
+
+**Critical CSS strategy:**
+
+```html
+<!-- Inline critical CSS for above-the-fold content -->
+<style>
+  /* minimal styles for header, hero, first viewport */
+</style>
+
+<!-- Load full stylesheet asynchronously -->
+<link rel="stylesheet" href="/styles.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/styles.css"></noscript>
+```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you manage cross-browser CSS compatibility in a team?
+
+Browser compatibility is a shared team responsibility. Managed poorly, it leads to ad-hoc hacks and inconsistent experiences.
+
+**Establish a browser support matrix:**
+
+Define and document which browsers and versions the project officially supports (e.g., last 2 versions of Chrome, Firefox, Edge, Safari; no IE). Store this in `.browserslistrc` and share it with the team.
+
+```
+# .browserslistrc
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Edge versions
+last 2 Safari versions
+> 0.5%
+not dead
+```
+
+**Tooling layer:**
+
+* **Autoprefixer** — automatically adds vendor prefixes based on the browserslist target. Integrate via PostCSS.
+* **`@supports`** — use feature queries to progressively enhance with modern CSS (container queries, `:has()`, `subgrid`) while maintaining a fallback.
+* **Browserslist** — shared config drives Autoprefixer, ESLint, Babel, and other tools consistently.
+
+**Tech lead decision guide:**
+
+| Scenario | Action |
+|---|---|
+| Feature not in support matrix | Use `@supports` with fallback or polyfill |
+| Feature widely supported | Use directly, no prefix needed |
+| Feature in partial support | Test manually in affected browsers; add to CI E2E test matrix |
+| Browser drops below threshold | Drop from support matrix, remove workarounds |
+
+**Key tools for a lead\'s compatibility workflow:**
+
+* **Can I Use** (`caniuse.com`) — check support tables before using new CSS.
+* **BrowserStack / LambdaTest** — cross-browser visual testing in CI.
+* **PostCSS** — extensible CSS processing pipeline (Autoprefixer, nesting, custom media).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you define a CSS testing strategy?
+
+CSS is notoriously difficult to test automatically. A layered strategy catches regressions before they reach production.
+
+| Layer | Tool | What it catches |
+|---|---|---|
+| **Linting** | Stylelint | Style violations, bad patterns, ordering issues |
+| **Visual regression** | Percy, Chromatic, BackstopJS | Unintended UI changes across components |
+| **Accessibility** | axe-core, Lighthouse | Color contrast failures, missing focus styles |
+| **E2E layout** | Playwright, Cypress | Layout breakage at specific viewports |
+| **Unit (design tokens)** | Jest / Vitest | Token values, CSS custom property existence |
+
+**Lead guidelines:**
+
+* **Prioritize visual regression testing** — it catches the CSS regressions that unit tests cannot. Even a small Storybook + Chromatic setup provides enormous value.
+* **Run visual tests on every PR**, not just on main — catching regressions early is far cheaper than fixing them in production.
+* **Test at multiple viewports** — at least mobile (375 px), tablet (768 px), and desktop (1440 px).
+* **Accessibility testing is non-optional** — integrate axe-core into your Playwright/Cypress test suite and fail the pipeline on new violations.
+* **Smoke-test critical pages in CI** with Lighthouse and enforce a minimum performance/accessibility score (e.g., ≥ 90).
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you mentor junior developers on CSS best practices?
+
+Mentoring on CSS is particularly valuable because CSS mistakes (specificity creep, magic numbers, ad-hoc overrides) compound quickly and are hard to reverse.
+
+**Structured practices:**
+
+* **Pair on real components**: Work alongside junior developers on actual feature work — not toy examples. Let them write the CSS while you ask guiding questions: *"Why this `margin-top` value? Can we express this with the existing spacing token?"*
+* **Deliberate PR feedback**: Instead of rewriting their CSS, leave specific educational comments. *"This `z-index: 999` will work today, but it\'s not part of our stacking scale. Let\'s use `var(--z-dropdown)` from `tokens.css` so it stays consistent across the app."*
+* **Assign growth-oriented tasks**: Move junior developers from simple layout work → responsive components → complex animations/interactions, progressing at each stage.
+* **Inspect DevTools together**: Nothing accelerates CSS learning faster than live DevTools sessions — toggling properties, tracing specificity, and debugging reflow issues in real time.
+
+**Common anti-patterns to coach out early:**
+
+| Anti-pattern | Better approach |
+|---|---|
+| `!important` to fix cascading issues | Reduce specificity of conflicting selector |
+| Magic numbers (`margin-top: 43px`) | Use spacing tokens (`var(--space-3)`) |
+| Deeply nested selectors (`.nav .list .item a span`) | Flatten to one or two levels; use BEM or Modules |
+| Duplicating color values | Define and reference custom properties |
+| `position: absolute` for every layout challenge | Learn Flexbox/Grid for the right tool |
+
+**Feedback approach:**
+
+* Give feedback **frequently and specifically**, not just in annual reviews.
+* Acknowledge growth explicitly — CSS is notoriously unintuitive, and improvements deserve recognition.
+* Encourage developers to present a CSS topic to the team (e.g., "How container queries work") — teaching is the most effective way to consolidate knowledge.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you communicate CSS technical debt to non-technical stakeholders?
+
+CSS debt is invisible to stakeholders until it causes a visible problem. Your job is to make it tangible in terms of **speed, risk, and cost**.
+
+**Strategies:**
+
+**1. Translate to business impact**
+
+Don\'t say: *"Our specificity graph looks like a skyscraper and we have 47 uses of `!important`."*
+Say: *"Updating the button style currently takes half a day because conflicting rules override each other unpredictably. Cleaning up the stylesheet for the checkout flow would reduce that to 15 minutes."*
+
+**2. Maintain a visible CSS debt backlog**
+
+Track debt items in the same issue tracker as features. Tag them with impact (speed, reliability, brand consistency) and estimated effort. This makes it easy to prioritize alongside product work.
+
+**3. Show the data**
+
+Run CSS Stats or a bundle size audit and present concrete numbers:
+- *"Our main stylesheet has grown from 80 KB to 340 KB in 18 months. 60% of rules are unused on the homepage."*
+- *"We have 312 unique color values when the design system specifies 12."*
+
+Numbers make the problem real and give stakeholders a baseline to measure improvement.
+
+**4. Propose the 20% rule**
+
+Negotiate to dedicate ~20% of each sprint to CSS refactoring and design system alignment. Frame it as: *"This prevents the cost of fixing CSS debt from compounding and keeps the team able to ship UI changes quickly."*
+
+**5. Tie debt to brand and quality**
+
+Unlike backend debt, CSS debt is often visible to users — misaligned spacing, inconsistent typography, broken layouts on some screen sizes. Frame visual consistency as a brand and quality issue, not just a developer preference.
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. How do you design and maintain a CSS design system for a team?
+
+A design system is more than a component library — it is the **single source of truth** for visual language, shared between design and engineering.
+
+**Core layers of a CSS design system:**
+
+```
+Design Tokens  ←  Primitive values (colors, spacing, type scale, shadows)
+      ↓
+Component Styles  ←  Button, Card, Input, Modal — built from tokens
+      ↓
+Page Layouts  ←  Grid systems, page templates — built from components
+      ↓
+Application  ←  Feature-specific compositions
+```
+
+**Token structure (CSS custom properties):**
+
+```css
+/* tokens.css */
+:root {
+  /* Color primitives */
+  --color-blue-500: #2563eb;
+  --color-gray-900: #111827;
+
+  /* Semantic aliases */
+  --color-primary: var(--color-blue-500);
+  --color-text: var(--color-gray-900);
+
+  /* Spacing scale (4px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* Typography */
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+
+  /* Z-index scale */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-modal: 200;
+  --z-toast: 300;
+}
+```
+
+**Lead responsibilities for a design system:**
+
+* **Partner with designers** — tokens must map 1:1 with Figma variables. Use a single source (Figma Tokens, Style Dictionary) that exports to both design and CSS formats.
+* **Enforce token usage** — Stylelint rules should ban raw color values and magic spacing numbers, forcing developers to use tokens.
+* **Version the design system** — treat it like a package; use semantic versioning and a changelog so consuming teams can upgrade safely.
+* **Document component usage** — provide a living Storybook (or equivalent) with code examples, prop tables, and accessibility notes.
+* **Establish a contribution process** — define how new tokens or components are proposed, reviewed, and added; otherwise the system grows inconsistently.
 
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
